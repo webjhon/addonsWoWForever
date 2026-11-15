@@ -2,7 +2,9 @@
 
 **Fábrica agêntica de addons para leveling Alliance 1–60, com RAG, SQLite, memória, MCP, regras de compatibilidade, testes e geração de ZIPs.**
 
-> Status da base: **funcional offline para ingestão de documentos locais, consulta, memória, validação estrutural de blueprints, empacotamento, testes Node e MCP stdio**. **Não** é uma base de quests ou API completa do WoW Forever. As referências iniciais são políticas originais + resumo comunitário não verificado. Testes no cliente real ainda são obrigatórios. A geração com LLM é opcional e requer credenciais.
+> Status da base: **funcional offline para ingestão de documentos locais, consulta, memória, validação estrutural de blueprints, empacotamento, testes Node e MCP stdio**. **Não** é uma base de quests ou API completa do WoW Forever. O pacote editorial de 15/11/2026 inclui 19 documentos originais resumindo fontes oficiais e 48 entidades estruturadas; IDs internos/rotas reais continuam pendentes. Testes no cliente real ainda são obrigatórios. A geração com LLM é opcional e requer credenciais.
+
+> Base inicial de conhecimento oficial preenchida: consulte [`docs/KNOWLEDGE-PACK-FOREVER.md`](docs/KNOWLEDGE-PACK-FOREVER.md). Os dados internos de cliente ainda precisam de exportação e verificação.
 
 ## Comece em 5 minutos
 

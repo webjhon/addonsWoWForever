@@ -1,0 +1,17 @@
+{
+  "source_id": "forever-api-index",
+  "domain": "leveling",
+  "topic": "qualidade",
+  "title": "Guia operacional de recuperação fundamentada",
+  "faction": "Alliance",
+  "alliance_access": true,
+  "min_level": 1,
+  "max_level": 60,
+  "evidence": "EXPORTED_FROM_CLIENT",
+  "license": "original-summary-reference-only",
+  "uri": "https://github.com/Atraeau/WoW-Addons/blob/main/docs/api/README.md",
+  "source_published": "2026-11-05",
+  "curated_at": "2026-11-15",
+  "build": null,
+  "note": "Resumo editorial original; não é exportação completa de quest/spell/client API."
+}

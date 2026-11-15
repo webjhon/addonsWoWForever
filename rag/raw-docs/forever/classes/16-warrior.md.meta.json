@@ -1,0 +1,17 @@
+{
+  "source_id": "blizzard-warrior-priest",
+  "domain": "leveling",
+  "topic": "classes",
+  "title": "Warrior: stance, rage e árvores revistas",
+  "faction": "Alliance",
+  "alliance_access": true,
+  "min_level": 1,
+  "max_level": 60,
+  "evidence": "OFFICIAL_DOCUMENTATION",
+  "license": "original-summary-reference-only",
+  "uri": "https://worldofwarcraft.blizzard.com/en-us/news/24301514",
+  "source_published": "2026-09-30",
+  "curated_at": "2026-11-15",
+  "build": null,
+  "note": "Resumo autoral de anúncio; requer dados de cliente para IDs, talentos e ranks."
+}

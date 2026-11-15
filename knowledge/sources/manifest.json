@@ -1,8 +1,142 @@
 {
-  "forever-addon-kit": {"uri":"https://github.com/Thunderz96/forever-addon-kit","reviewed":false,"license":"check-before-import","purpose":"Client API compatibility baseline"},
-  "wow-addons-forever": {"uri":"https://github.com/Atraeau/WoW-Addons","reviewed":false,"license":"check-before-import","purpose":"API export and types"},
-  "community-forever-addons": {"uri":"https://github.com/mparke/forever-addons","reviewed":false,"license":"check-before-import","purpose":"Tests, structure, release patterns"},
-  "petopia": {"uri":"https://www.wow-petopia.com/","reviewed":false,"license":"reference-only","purpose":"Hunter pet research; verify Forever"},
-  "warcraft-wiki": {"uri":"https://warcraft.wiki.gg/wiki/Warcraft_Wiki","reviewed":false,"license":"check-before-import","purpose":"API and game mechanics"},
-  "curseforge": {"uri":"https://www.curseforge.com/wow","reviewed":false,"license":"reference-only","purpose":"Marketplace patterns, not automatic redistribution"}
+  "forever-addon-kit": {
+    "uri": "https://github.com/Thunderz96/forever-addon-kit",
+    "reviewed": false,
+    "license": "check-before-import",
+    "purpose": "Client API compatibility baseline"
+  },
+  "wow-addons-forever": {
+    "uri": "https://github.com/Atraeau/WoW-Addons",
+    "reviewed": false,
+    "license": "check-before-import",
+    "purpose": "API export and types"
+  },
+  "community-forever-addons": {
+    "uri": "https://github.com/mparke/forever-addons",
+    "reviewed": false,
+    "license": "check-before-import",
+    "purpose": "Tests, structure, release patterns"
+  },
+  "petopia": {
+    "uri": "https://www.wow-petopia.com/",
+    "reviewed": false,
+    "license": "reference-only",
+    "purpose": "Hunter pet research; verify Forever"
+  },
+  "warcraft-wiki": {
+    "uri": "https://warcraft.wiki.gg/wiki/Warcraft_Wiki",
+    "reviewed": false,
+    "license": "check-before-import",
+    "purpose": "API and game mechanics"
+  },
+  "curseforge": {
+    "uri": "https://www.curseforge.com/wow",
+    "reviewed": false,
+    "license": "reference-only",
+    "purpose": "Marketplace patterns, not automatic redistribution"
+  },
+  "blizzard-overview": {
+    "uri": "https://worldofwarcraft.blizzard.com/en-us/news/24315643/return-to-azeroth-in-world-of-warcraft-forever",
+    "reviewed": true,
+    "license": "reference-only; original-summary-in-repository",
+    "purpose": "World of Warcraft: Forever – retorno a Azeroth",
+    "publication": "2026-10-29",
+    "curated_at": "2026-11-15",
+    "scope": "WoW Forever Alliance leveling; extract only verified information"
+  },
+  "blizzard-launch": {
+    "uri": "https://worldofwarcraft.blizzard.com/en-us/news/24315820/world-of-warcraft-forever-now-live",
+    "reviewed": true,
+    "license": "reference-only; original-summary-in-repository",
+    "purpose": "WoW Forever – lançamento",
+    "publication": "2026-11-04",
+    "curated_at": "2026-11-15",
+    "scope": "WoW Forever Alliance leveling; extract only verified information"
+  },
+  "blizzard-dungeons": {
+    "uri": "https://worldofwarcraft.blizzard.com/en-us/news/24301455/explore-the-new-dungeons-of-world-of-warcraft-forever",
+    "reviewed": true,
+    "license": "reference-only; original-summary-in-repository",
+    "purpose": "Nova coleção de masmorras",
+    "publication": "2026-10-20",
+    "curated_at": "2026-11-15",
+    "scope": "WoW Forever Alliance leveling; extract only verified information"
+  },
+  "blizzard-legacy": {
+    "uri": "https://worldofwarcraft.blizzard.com/en-gb/news/24307383/get-to-know-the-world-of-warcraft-forever-legacy-system",
+    "reviewed": true,
+    "license": "reference-only; original-summary-in-repository",
+    "purpose": "Sistema Legacy oficial",
+    "publication": "2026-09-23",
+    "curated_at": "2026-11-15",
+    "scope": "WoW Forever Alliance leveling; extract only verified information"
+  },
+  "blizzard-hunter-druid": {
+    "uri": "https://worldofwarcraft.blizzard.com/en-us/news/24301515/world-of-warcraft-forever-class-deep-dives-hunter-and-druid",
+    "reviewed": true,
+    "license": "reference-only; original-summary-in-repository",
+    "purpose": "Hunter e Druid",
+    "publication": "2026-09-30",
+    "curated_at": "2026-11-15",
+    "scope": "WoW Forever Alliance leveling; extract only verified information"
+  },
+  "blizzard-mage-shaman": {
+    "uri": "https://worldofwarcraft.blizzard.com/en-us/news/24302097",
+    "reviewed": true,
+    "license": "reference-only; original-summary-in-repository",
+    "purpose": "Mudanças oficiais das classes no Forever",
+    "publication": "2026-10",
+    "curated_at": "2026-11-15"
+  },
+  "blizzard-priest-warrior": {
+    "uri": "https://worldofwarcraft.blizzard.com/en-us/news/24301514",
+    "reviewed": true,
+    "license": "reference-only; original-summary-in-repository",
+    "purpose": "Priest e Warrior",
+    "publication": "2026-09",
+    "curated_at": "2026-11-15",
+    "scope": "WoW Forever Alliance leveling; extract only verified information"
+  },
+  "blizzard-paladin": {
+    "uri": "https://worldofwarcraft.blizzard.com/en-us/news/24302099",
+    "reviewed": true,
+    "license": "reference-only; original-summary-in-repository",
+    "purpose": "Mudanças oficiais das classes no Forever",
+    "publication": "2026-10",
+    "curated_at": "2026-11-15"
+  },
+  "blizzard-whats-new": {
+    "uri": "https://worldofwarcraft.blizzard.com/en-us/news/24315821/",
+    "reviewed": true,
+    "license": "reference-only; original-summary-in-repository",
+    "purpose": "Forever – mudanças e funcionalidades",
+    "publication": "2026-11",
+    "curated_at": "2026-11-15",
+    "scope": "WoW Forever Alliance leveling; extract only verified information"
+  },
+  "forever-api-index": {
+    "uri": "https://github.com/Atraeau/WoW-Addons/blob/main/docs/api/README.md",
+    "reviewed": true,
+    "license": "reference-only; original-summary-in-repository",
+    "purpose": "Exportação comunitária da API Forever",
+    "publication": "2026-11-05",
+    "curated_at": "2026-11-15",
+    "scope": "WoW Forever Alliance leveling; extract only verified information"
+  },
+  "blizzard-rogue-warlock": {
+    "uri": "https://worldofwarcraft.blizzard.com/en-us/news/24310968",
+    "reviewed": true,
+    "license": "reference-only; original-summary-in-repository",
+    "purpose": "Mudanças oficiais das classes no Forever",
+    "publication": "2026-10-07",
+    "curated_at": "2026-11-15"
+  },
+  "blizzard-warrior-priest": {
+    "uri": "https://worldofwarcraft.blizzard.com/en-us/news/24301514",
+    "reviewed": true,
+    "license": "reference-only; original-summary-in-repository",
+    "purpose": "Mudanças oficiais das classes no Forever",
+    "publication": "2026-09-30",
+    "curated_at": "2026-11-15"
+  }
 }

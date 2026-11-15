@@ -1,0 +1,17 @@
+{
+  "source_id": "blizzard-overview",
+  "domain": "leveling",
+  "topic": "visao-geral",
+  "title": "Azeroth Forever: escopo de leveling Alliance",
+  "faction": "Alliance",
+  "alliance_access": true,
+  "min_level": 1,
+  "max_level": 60,
+  "evidence": "OFFICIAL_DOCUMENTATION",
+  "license": "original-summary-reference-only",
+  "uri": "https://worldofwarcraft.blizzard.com/en-us/news/24315643/return-to-azeroth-in-world-of-warcraft-forever",
+  "source_published": "2026-10-29",
+  "curated_at": "2026-11-15",
+  "build": null,
+  "note": "Resumo editorial original; não é exportação completa de quest/spell/client API."
+}

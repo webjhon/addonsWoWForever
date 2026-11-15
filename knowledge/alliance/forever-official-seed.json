@@ -1,0 +1,939 @@
+{
+  "version": "2026-11-15",
+  "description": "Structured editorial extracts of Blizzard announcements, not complete client game DB",
+  "entities": [
+    {
+      "id": "forever:dungeon:hall-of-thanes",
+      "kind": "dungeon",
+      "name": "Hall of Thanes",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 13,
+      "max_level": 18,
+      "build": null,
+      "source_id": "blizzard-dungeons",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "recommended_range": [
+          13,
+          18
+        ],
+        "location_description": "Dun Morogh, abaixo de Ironforge",
+        "internal_game_id": null,
+        "quest_ids": [],
+        "access_note": "Confirmar missões, entrada, coordenadas e requisitos na build atual"
+      }
+    },
+    {
+      "id": "forever:dungeon:ruins-lordaeron",
+      "kind": "dungeon",
+      "name": "Ruins of Lordaeron",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 15,
+      "max_level": 20,
+      "build": null,
+      "source_id": "blizzard-dungeons",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "recommended_range": [
+          15,
+          20
+        ],
+        "location_description": "Tirisfal Glades, acima de Undercity",
+        "internal_game_id": null,
+        "quest_ids": [],
+        "access_note": "Confirmar missões, entrada, coordenadas e requisitos na build atual"
+      }
+    },
+    {
+      "id": "forever:dungeon:excavation-site",
+      "kind": "dungeon",
+      "name": "Excavation Site",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 24,
+      "max_level": 29,
+      "build": null,
+      "source_id": "blizzard-dungeons",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "recommended_range": [
+          24,
+          29
+        ],
+        "location_description": "Wetlands, área de Whelgar’s Excavation",
+        "internal_game_id": null,
+        "quest_ids": [],
+        "access_note": "Confirmar missões, entrada, coordenadas e requisitos na build atual"
+      }
+    },
+    {
+      "id": "forever:dungeon:city-dalaran",
+      "kind": "dungeon",
+      "name": "City of Dalaran",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 28,
+      "max_level": 33,
+      "build": null,
+      "source_id": "blizzard-dungeons",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "recommended_range": [
+          28,
+          33
+        ],
+        "location_description": "Alterac Mountains",
+        "internal_game_id": null,
+        "quest_ids": [],
+        "access_note": "Confirmar missões, entrada, coordenadas e requisitos na build atual"
+      }
+    },
+    {
+      "id": "forever:dungeon:drowned-city",
+      "kind": "dungeon",
+      "name": "The Drowned City",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 35,
+      "max_level": 40,
+      "build": null,
+      "source_id": "blizzard-dungeons",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "recommended_range": [
+          35,
+          40
+        ],
+        "location_description": "Stranglethorn Vale (costa)",
+        "internal_game_id": null,
+        "quest_ids": [],
+        "access_note": "Confirmar missões, entrada, coordenadas e requisitos na build atual"
+      }
+    },
+    {
+      "id": "forever:dungeon:kroldok",
+      "kind": "dungeon",
+      "name": "Krol’dok Stronghold",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 40,
+      "max_level": 45,
+      "build": null,
+      "source_id": "blizzard-dungeons",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "recommended_range": [
+          40,
+          45
+        ],
+        "location_description": "Riverglades",
+        "internal_game_id": null,
+        "quest_ids": [],
+        "access_note": "Confirmar missões, entrada, coordenadas e requisitos na build atual"
+      }
+    },
+    {
+      "id": "forever:dungeon:alcaz-prison",
+      "kind": "dungeon",
+      "name": "Alcaz Prison",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 48,
+      "max_level": 53,
+      "build": null,
+      "source_id": "blizzard-dungeons",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "recommended_range": [
+          48,
+          53
+        ],
+        "location_description": "Dustwallow Marsh, Alcaz Island",
+        "internal_game_id": null,
+        "quest_ids": [],
+        "access_note": "Confirmar missões, entrada, coordenadas e requisitos na build atual"
+      }
+    },
+    {
+      "id": "forever:dungeon:blackmaw-hold",
+      "kind": "dungeon",
+      "name": "Blackmaw Hold",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 55,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-dungeons",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "recommended_range": [
+          55,
+          60
+        ],
+        "location_description": "Azshara",
+        "internal_game_id": null,
+        "quest_ids": [],
+        "access_note": "Confirmar missões, entrada, coordenadas e requisitos na build atual"
+      }
+    },
+    {
+      "id": "forever:dungeon:shapers-terrace",
+      "kind": "dungeon",
+      "name": "Shaper’s Terrace",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 58,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-dungeons",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "recommended_range": [
+          58,
+          60
+        ],
+        "location_description": "Un’Goro Crater",
+        "internal_game_id": null,
+        "quest_ids": [],
+        "access_note": "Confirmar missões, entrada, coordenadas e requisitos na build atual"
+      }
+    },
+    {
+      "id": "forever:zone:zephras-isle",
+      "kind": "zone",
+      "name": "Zephras Isle",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 12,
+      "build": null,
+      "source_id": "blizzard-overview",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "recommended_range": [
+          1,
+          12
+        ],
+        "starting_area_for": "Skyborne",
+        "alliance_route_confirmed": false,
+        "map_id": null
+      }
+    },
+    {
+      "id": "forever:zone:riverglades",
+      "kind": "zone",
+      "name": "Riverglades",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-overview",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "recommended_range": null,
+        "editorial_note": "~mid-30s to mid-40s; not a validated zone minimum",
+        "map_id": null
+      }
+    },
+    {
+      "id": "forever:zone:mount-hyjal",
+      "kind": "zone",
+      "name": "Mount Hyjal",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-overview",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "recommended_range": null,
+        "map_id": null
+      }
+    },
+    {
+      "id": "forever:zone:shendralas",
+      "kind": "zone",
+      "name": "Shen’dralas",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-overview",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "recommended_range": null,
+        "map_id": null
+      }
+    },
+    {
+      "id": "forever:race_class:human-hunter",
+      "kind": "race_class",
+      "name": "Human Hunter",
+      "faction": "Alliance",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-overview",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "race": "Human",
+        "class": "Hunter",
+        "status": "officially_announced",
+        "exhaustive_list": false,
+        "requires_client_verification": true
+      }
+    },
+    {
+      "id": "forever:race_class:dwarf-shaman",
+      "kind": "race_class",
+      "name": "Dwarf Shaman",
+      "faction": "Alliance",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-overview",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "race": "Dwarf",
+        "class": "Shaman",
+        "status": "officially_announced",
+        "exhaustive_list": false,
+        "requires_client_verification": true
+      }
+    },
+    {
+      "id": "forever:race_class:gnome-priest",
+      "kind": "race_class",
+      "name": "Gnome Priest",
+      "faction": "Alliance",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-overview",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "race": "Gnome",
+        "class": "Priest",
+        "status": "officially_announced",
+        "exhaustive_list": false,
+        "requires_client_verification": true
+      }
+    },
+    {
+      "id": "forever:race_class:alliance-skyborne-mage",
+      "kind": "race_class",
+      "name": "Alliance Skyborne Mage",
+      "faction": "Alliance",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-overview",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "race": "Alliance Skyborne",
+        "class": "Mage",
+        "status": "officially_announced",
+        "exhaustive_list": false,
+        "requires_client_verification": true
+      }
+    },
+    {
+      "id": "forever:race_class:alliance-skyborne-hunter",
+      "kind": "race_class",
+      "name": "Alliance Skyborne Hunter",
+      "faction": "Alliance",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-overview",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "race": "Alliance Skyborne",
+        "class": "Hunter",
+        "status": "officially_announced",
+        "exhaustive_list": false,
+        "requires_client_verification": true
+      }
+    },
+    {
+      "id": "forever:race_class:alliance-skyborne-druid",
+      "kind": "race_class",
+      "name": "Alliance Skyborne Druid",
+      "faction": "Alliance",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-overview",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "race": "Alliance Skyborne",
+        "class": "Druid",
+        "status": "officially_announced",
+        "exhaustive_list": false,
+        "requires_client_verification": true
+      }
+    },
+    {
+      "id": "forever:race_class:alliance-skyborne-rogue",
+      "kind": "race_class",
+      "name": "Alliance Skyborne Rogue",
+      "faction": "Alliance",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-overview",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "race": "Alliance Skyborne",
+        "class": "Rogue",
+        "status": "officially_announced",
+        "exhaustive_list": false,
+        "requires_client_verification": true
+      }
+    },
+    {
+      "id": "forever:race_class:alliance-skyborne-warrior",
+      "kind": "race_class",
+      "name": "Alliance Skyborne Warrior",
+      "faction": "Alliance",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-overview",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "race": "Alliance Skyborne",
+        "class": "Warrior",
+        "status": "officially_announced",
+        "exhaustive_list": false,
+        "requires_client_verification": true
+      }
+    },
+    {
+      "id": "forever:legacy_perk:wellrested",
+      "kind": "legacy_perk",
+      "name": "Well Rested",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-legacy",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "tree": "Adventure",
+        "perk_id": null,
+        "rank": null,
+        "available_at": null,
+        "officially_named": true
+      }
+    },
+    {
+      "id": "forever:legacy_perk:thrillofadventure",
+      "kind": "legacy_perk",
+      "name": "Thrill of Adventure",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-legacy",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "tree": "Adventure",
+        "perk_id": null,
+        "rank": null,
+        "available_at": null,
+        "officially_named": true
+      }
+    },
+    {
+      "id": "forever:legacy_perk:highalert",
+      "kind": "legacy_perk",
+      "name": "High Alert",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-legacy",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "tree": "Adventure",
+        "perk_id": null,
+        "rank": null,
+        "available_at": null,
+        "officially_named": true
+      }
+    },
+    {
+      "id": "forever:legacy_perk:fieldguide",
+      "kind": "legacy_perk",
+      "name": "Field Guide",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-legacy",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "tree": "Adventure",
+        "perk_id": null,
+        "rank": null,
+        "available_at": null,
+        "officially_named": true
+      }
+    },
+    {
+      "id": "forever:legacy_perk:fieldmedicine",
+      "kind": "legacy_perk",
+      "name": "Field Medicine",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-legacy",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "tree": "Adventure",
+        "perk_id": null,
+        "rank": null,
+        "available_at": null,
+        "officially_named": true
+      }
+    },
+    {
+      "id": "forever:legacy_perk:talented",
+      "kind": "legacy_perk",
+      "name": "Talented",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-legacy",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "tree": "Adventure",
+        "perk_id": null,
+        "rank": null,
+        "available_at": null,
+        "officially_named": true
+      }
+    },
+    {
+      "id": "forever:legacy_perk:frequentflier",
+      "kind": "legacy_perk",
+      "name": "Frequent Flier",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-legacy",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "tree": "Adventure",
+        "perk_id": null,
+        "rank": null,
+        "available_at": null,
+        "officially_named": true
+      }
+    },
+    {
+      "id": "forever:legacy_perk:workingovertime",
+      "kind": "legacy_perk",
+      "name": "Working Overtime",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-legacy",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "tree": "Professions",
+        "perk_id": null,
+        "rank": null,
+        "available_at": null,
+        "officially_named": true
+      }
+    },
+    {
+      "id": "forever:legacy_perk:bountifulharvest",
+      "kind": "legacy_perk",
+      "name": "Bountiful Harvest",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-legacy",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "tree": "Professions",
+        "perk_id": null,
+        "rank": null,
+        "available_at": null,
+        "officially_named": true
+      }
+    },
+    {
+      "id": "forever:legacy_perk:bartering",
+      "kind": "legacy_perk",
+      "name": "Bartering",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-legacy",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "tree": "Professions",
+        "perk_id": null,
+        "rank": null,
+        "available_at": null,
+        "officially_named": true
+      }
+    },
+    {
+      "id": "forever:legacy_perk:performancebonus",
+      "kind": "legacy_perk",
+      "name": "Performance Bonus",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-legacy",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "tree": "Professions",
+        "perk_id": null,
+        "rank": null,
+        "available_at": null,
+        "officially_named": true
+      }
+    },
+    {
+      "id": "forever:legacy_perk:masterchef",
+      "kind": "legacy_perk",
+      "name": "Master Chef",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-legacy",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "tree": "Professions",
+        "perk_id": null,
+        "rank": null,
+        "available_at": null,
+        "officially_named": true
+      }
+    },
+    {
+      "id": "forever:legacy_perk:luremaster",
+      "kind": "legacy_perk",
+      "name": "Luremaster",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-legacy",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "tree": "Professions",
+        "perk_id": null,
+        "rank": null,
+        "available_at": null,
+        "officially_named": true
+      }
+    },
+    {
+      "id": "forever:legacy_perk:dedicatedstudy",
+      "kind": "legacy_perk",
+      "name": "Dedicated Study",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-legacy",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "tree": "Professions",
+        "perk_id": null,
+        "rank": null,
+        "available_at": null,
+        "officially_named": true
+      }
+    },
+    {
+      "id": "forever:legacy_perk:gourmand",
+      "kind": "legacy_perk",
+      "name": "Gourmand",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-legacy",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "tree": "Resourcefulness",
+        "perk_id": null,
+        "rank": null,
+        "available_at": null,
+        "officially_named": true
+      }
+    },
+    {
+      "id": "forever:legacy_perk:thequickandthedead",
+      "kind": "legacy_perk",
+      "name": "The Quick and the Dead",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-legacy",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "tree": "Resourcefulness",
+        "perk_id": null,
+        "rank": null,
+        "available_at": null,
+        "officially_named": true
+      }
+    },
+    {
+      "id": "forever:legacy_perk:reinforce",
+      "kind": "legacy_perk",
+      "name": "Reinforce",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-legacy",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "tree": "Resourcefulness",
+        "perk_id": null,
+        "rank": null,
+        "available_at": null,
+        "officially_named": true
+      }
+    },
+    {
+      "id": "forever:legacy_perk:forgreathonor",
+      "kind": "legacy_perk",
+      "name": "For Great Honor",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-legacy",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "tree": "Resourcefulness",
+        "perk_id": null,
+        "rank": null,
+        "available_at": null,
+        "officially_named": true
+      }
+    },
+    {
+      "id": "forever:legacy_perk:permanence",
+      "kind": "legacy_perk",
+      "name": "Permanence",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-legacy",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "tree": "Resourcefulness",
+        "perk_id": null,
+        "rank": null,
+        "available_at": null,
+        "officially_named": true
+      }
+    },
+    {
+      "id": "forever:legacy_perk:diplomat",
+      "kind": "legacy_perk",
+      "name": "Diplomat",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-legacy",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "tree": "Resourcefulness",
+        "perk_id": null,
+        "rank": null,
+        "available_at": null,
+        "officially_named": true
+      }
+    },
+    {
+      "id": "forever:legacy_perk:reagenteconomy",
+      "kind": "legacy_perk",
+      "name": "Reagent Economy",
+      "faction": "Neutral",
+      "alliance_access": true,
+      "min_level": 1,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-legacy",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "tree": "Resourcefulness",
+        "perk_id": null,
+        "rank": null,
+        "available_at": null,
+        "officially_named": true
+      }
+    },
+    {
+      "id": "forever:class_ability:aimed-shot",
+      "kind": "class_ability",
+      "name": "Aimed Shot",
+      "faction": "Alliance",
+      "alliance_access": true,
+      "min_level": 20,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-hunter-druid",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "class": "Hunter",
+        "level_learned": 20,
+        "spell_id": null,
+        "rank": null,
+        "requires_client_verification": true
+      }
+    },
+    {
+      "id": "forever:class_ability:fear-ward",
+      "kind": "class_ability",
+      "name": "Fear Ward",
+      "faction": "Alliance",
+      "alliance_access": true,
+      "min_level": 20,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-priest-warrior",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "class": "Priest",
+        "level_learned": 20,
+        "spell_id": null,
+        "rank": null,
+        "requires_client_verification": true
+      }
+    },
+    {
+      "id": "forever:class_ability:devouring-plague",
+      "kind": "class_ability",
+      "name": "Devouring Plague",
+      "faction": "Alliance",
+      "alliance_access": true,
+      "min_level": 20,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-priest-warrior",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "class": "Priest",
+        "level_learned": 20,
+        "spell_id": null,
+        "rank": null,
+        "requires_client_verification": true
+      }
+    },
+    {
+      "id": "forever:class_ability:divine-spirit",
+      "kind": "class_ability",
+      "name": "Divine Spirit",
+      "faction": "Alliance",
+      "alliance_access": true,
+      "min_level": 30,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-priest-warrior",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "class": "Priest",
+        "level_learned": 30,
+        "spell_id": null,
+        "rank": null,
+        "requires_client_verification": true
+      }
+    },
+    {
+      "id": "forever:class_ability:shadow-word-death",
+      "kind": "class_ability",
+      "name": "Shadow Word: Death",
+      "faction": "Alliance",
+      "alliance_access": true,
+      "min_level": 32,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-priest-warrior",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "class": "Priest",
+        "level_learned": 32,
+        "spell_id": null,
+        "rank": null,
+        "requires_client_verification": true
+      }
+    },
+    {
+      "id": "forever:class_ability:holy-strike",
+      "kind": "class_ability",
+      "name": "Holy Strike",
+      "faction": "Alliance",
+      "alliance_access": true,
+      "min_level": 6,
+      "max_level": 60,
+      "build": null,
+      "source_id": "blizzard-paladin",
+      "evidence": "OFFICIAL_DOCUMENTATION",
+      "payload": {
+        "class": "Paladin",
+        "level_learned": 6,
+        "spell_id": null,
+        "rank": null,
+        "requires_client_verification": true
+      }
+    }
+  ]
+}
