@@ -1,0 +1,9 @@
+## Interface: 16001
+## Title: Alliance Level Pulse
+## Notes: Compact leveling progress for Alliance characters 1-60 (Forever)
+## Author: WoW Addon AI Factory
+## Version: 0.1.0
+## X-Flavor: Forever
+## IconTexture: Interface\AddOns\AllianceLevelPulse\assets\Icon.tga
+## SavedVariables: AllianceLevelPulseDB
+AllianceLevelPulse.lua

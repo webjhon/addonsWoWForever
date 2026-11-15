@@ -1,0 +1,14 @@
+{
+  "note": "ALL records below are SYNTHETIC test fixtures. Not factual WoW gameplay data.",
+  "entities": [
+    {"id":"fixture:a:zone:1","kind":"zone","name":"Synthetic Alliance Training Zone","faction":"Alliance","alliance_access":true,"min_level":1,"max_level":10,"source_id":"synthetic-fixtures","evidence":"SYNTHETIC_TEST","payload":{"note":"NOT A REAL ZONE"}},
+    {"id":"fixture:a:quest:1","kind":"quest","name":"Synthetic Alliance Training Quest","faction":"Alliance","alliance_access":true,"min_level":1,"max_level":10,"source_id":"synthetic-fixtures","evidence":"SYNTHETIC_TEST","payload":{"note":"NOT A REAL QUEST"}},
+    {"id":"fixture:h:quest:1","kind":"quest","name":"Synthetic Horde Training Quest","faction":"Horde","min_level":1,"max_level":10,"source_id":"synthetic-fixtures","evidence":"SYNTHETIC_TEST","payload":{"note":"NEGATIVE TEST ONLY"}},
+    {"id":"fixture:n:zone:1","kind":"zone","name":"Synthetic Accessible Neutral Zone","faction":"Neutral","alliance_access":true,"min_level":1,"max_level":10,"source_id":"synthetic-fixtures","evidence":"SYNTHETIC_TEST"},
+    {"id":"fixture:n:zone:2","kind":"zone","name":"Synthetic Inaccessible Neutral Zone","faction":"Neutral","alliance_access":false,"min_level":1,"max_level":10,"source_id":"synthetic-fixtures","evidence":"SYNTHETIC_TEST"}
+  ],
+  "capabilities": [
+    {"id":"xp-display","status":"UNVERIFIED","build":null,"apis":["UnitXP","UnitXPMax"],"events":["PLAYER_XP_UPDATE"],"restrictions":["Confirm functions in client"],"alternatives":[],"evidence":[]},
+    {"id":"protected-combat-action","status":"PROHIBITED","build":null,"apis":[],"events":[],"restrictions":["No action automation"],"evidence":[]}
+  ]
+}

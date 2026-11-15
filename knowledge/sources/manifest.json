@@ -1,0 +1,8 @@
+{
+  "forever-addon-kit": {"uri":"https://github.com/Thunderz96/forever-addon-kit","reviewed":false,"license":"check-before-import","purpose":"Client API compatibility baseline"},
+  "wow-addons-forever": {"uri":"https://github.com/Atraeau/WoW-Addons","reviewed":false,"license":"check-before-import","purpose":"API export and types"},
+  "community-forever-addons": {"uri":"https://github.com/mparke/forever-addons","reviewed":false,"license":"check-before-import","purpose":"Tests, structure, release patterns"},
+  "petopia": {"uri":"https://www.wow-petopia.com/","reviewed":false,"license":"reference-only","purpose":"Hunter pet research; verify Forever"},
+  "warcraft-wiki": {"uri":"https://warcraft.wiki.gg/wiki/Warcraft_Wiki","reviewed":false,"license":"check-before-import","purpose":"API and game mechanics"},
+  "curseforge": {"uri":"https://www.curseforge.com/wow","reviewed":false,"license":"reference-only","purpose":"Marketplace patterns, not automatic redistribution"}
+}

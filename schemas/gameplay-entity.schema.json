@@ -1,0 +1,13 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"Versioned Alliance gameplay entity",
+  "type":"object",
+  "required":["id","kind","name","faction","source_id","evidence"],
+  "properties":{
+    "id":{"type":"string","minLength":1},"kind":{"type":"string","minLength":1},"name":{"type":"string","minLength":1},
+    "faction":{"enum":["Alliance","Neutral","Horde"]},"alliance_access":{"type":"boolean"},
+    "min_level":{"type":"integer","minimum":1,"maximum":60},"max_level":{"type":"integer","minimum":1,"maximum":60},
+    "source_id":{"type":"string","minLength":1},"evidence":{"type":"string","minLength":1},
+    "build":{"type":["string","null"]},"payload":{"type":"object"}
+  }
+}

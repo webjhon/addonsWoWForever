@@ -1,41 +1,20 @@
-# Compiled Lua sources
-luac.out
-
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
-
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
+node_modules/
+.env
+.env.*
+!.env.example
+.data/
+rag/vector-store/*
+!rag/vector-store/.gitkeep
+traces/*.jsonl
+traces/last-journey.json
+evals/last-evaluation.json
+!traces/.gitkeep
+dist/*
+!dist/.gitkeep
+releases/*
+!releases/.gitkeep
+market-references/zygor/*
+market-references/restedxp/*
+!market-references/**/.gitkeep
+*.log
+.DS_Store

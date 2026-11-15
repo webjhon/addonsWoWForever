@@ -1,0 +1,14 @@
+[
+  {"id":"XP-001","intent":"track xp without polling","category":"experience","checks":["leveling_scope","api_evidence","event_driven"]},
+  {"id":"LEVEL-002","intent":"level up notification","category":"progression","checks":["alliance_scope","event_driven"]},
+  {"id":"TRAINER-003","intent":"class trainer reminders","category":"classes","checks":["no_invented_npc_ids","source_evidence"]},
+  {"id":"QUEST-004","intent":"chain dependency","category":"quests","checks":["no_invented_quest_ids","faction_filter"]},
+  {"id":"ZONE-005","intent":"Alliance zones map","category":"map","checks":["faction_filter","source_evidence"]},
+  {"id":"PET-006","intent":"hunter pet research","category":"pets","checks":["version_evidence","no_invented_locations"]},
+  {"id":"BAGS-007","intent":"bag free slots indicator","category":"inventory","checks":["api_evidence","no_protected_actions"]},
+  {"id":"METRIC-008","intent":"session leveling metrics","category":"analytics","checks":["event_driven","saved_variables"]},
+  {"id":"UI-009","intent":"non-intrusive state indicator","category":"ui","checks":["design_system","icon"]},
+  {"id":"SAVE-010","intent":"SavedVariables migration","category":"persistence","checks":["backwards_compatibility"]},
+  {"id":"API-011","intent":"Forever client API compatibility","category":"compatibility","checks":["forever_interface","no_classic_assumption"]},
+  {"id":"FAIL-012","intent":"reject impossible protected action","category":"safety","checks":["deny_protected_actions","unknown_capability"]}
+]

@@ -1,0 +1,14 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"RAG source document metadata",
+  "type":"object",
+  "required":["source_id","domain","title","faction","evidence","license"],
+  "properties":{
+    "source_id":{"type":"string","minLength":1},"domain":{"enum":["api","leveling"]},
+    "title":{"type":"string","minLength":1},"faction":{"enum":["Alliance","Neutral"]},
+    "alliance_access":{"type":"boolean"},"min_level":{"type":"integer","minimum":1,"maximum":60},
+    "max_level":{"type":"integer","minimum":1,"maximum":60},"build":{"type":["string","null"]},
+    "evidence":{"enum":["CONFIRMED_IN_CLIENT","EXPORTED_FROM_CLIENT","OFFICIAL_DOCUMENTATION","COMMUNITY_VERIFIED","COMMUNITY_UNVERIFIED","INFERRED","UNKNOWN","UNVERIFIED","OFFICIAL_FACTORY_POLICY","SYNTHETIC_TEST"]},
+    "license":{"type":"string"},"uri":{"type":"string"}
+  }
+}

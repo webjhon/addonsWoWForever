@@ -1,0 +1,6 @@
+{
+  "blocked_protected_apis": ["CastSpellByName", "CastSpellByID", "UseAction", "RunMacroText", "AcceptTrade", "PickupSpell", "UseInventoryItem", "SendChatMessage"],
+  "deprecated_replacements": {"GetSpellInfo":"C_Spell.GetSpellInfo","GetItemInfo":"C_Item.GetItemInfo","GetContainerNumSlots":"C_Container.GetContainerNumSlots","GetAddOnMetadata":"C_AddOns.GetAddOnMetadata"},
+  "rules": ["No gameplay automation", "No bypass of combat restrictions", "No network calls from WoW Lua", "No unknown APIs treated as confirmed"],
+  "note": "This denylist is defense in depth, not an exhaustive Blizzard API validator; context and in-client verification remain required."
+}

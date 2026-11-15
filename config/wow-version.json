@@ -1,0 +1,10 @@
+{
+  "game": "World of Warcraft: Forever",
+  "interface": 16001,
+  "flavor": "Forever",
+  "version": "1.60.1",
+  "build": null,
+  "verifiedAgainstLocalClient": false,
+  "verificationCommand": "/dump select(4, GetBuildInfo())",
+  "warning": "Interface 16001 is supported by public snapshots. Confirm your current live build before each release."
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WoW Forever Alliance Leveling Addon Blueprint",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["addonName","game","faction","purpose","minLevel","maxLevel","interfaceVersion","version","eventsRegistered","apiNamespacesUsed","apiEvidence","files"],
+  "properties": {
+    "addonName": {"type":"string","pattern":"^[A-Za-z][A-Za-z0-9_]{2,55}$"},
+    "game":{"const":"WoW Forever"},
+    "faction":{"const":"Alliance"},
+    "purpose":{"const":"leveling"},
+    "minLevel":{"const":1},"maxLevel":{"const":60},
+    "interfaceVersion":{"const":16001},
+    "version":{"type":"string","pattern":"^\\d+\\.\\d+\\.\\d+$"},
+    "eventsRegistered":{"type":"array","items":{"type":"string"}},
+    "apiNamespacesUsed":{"type":"array","items":{"type":"string"}},
+    "apiEvidence":{"type":"array","items":{"type":"object","required":["symbol","status","source"],"properties":{"symbol":{"type":"string"},"status":{"enum":["CONFIRMED_IN_CLIENT","EXPORTED_FROM_CLIENT","OFFICIAL_DOCUMENTATION","COMMUNITY_VERIFIED","COMMUNITY_UNVERIFIED","UNVERIFIED"]},"source":{"type":"string"}}}},
+    "files":{"type":"array","minItems":2,"items":{"type":"object","required":["filename","content"],"properties":{"filename":{"type":"string"},"content":{"type":"string"}}}}
+  }
+}

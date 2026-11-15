@@ -1,0 +1,376 @@
+{
+  "name": "wow-addon-ai-factory",
+  "release": "0.1.0",
+  "date": "2026-11-14",
+  "scope": "WoW Forever, Alliance, leveling 1–60",
+  "files": [
+    {
+      "path": ".agents/skills/build-alliance-addon/SKILL.md",
+      "sha256": "d48d0b7cfc110c0a7ad9e9c76f115c27f9386154bbcb629f2b19cafb83fb02b6"
+    },
+    {
+      "path": ".env.example",
+      "sha256": "eb3eaf1dd95c74d41cc30dac6f50802083873a013516ceb8467e9f95fd1d1398"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "34e90faa9046897f7465265ea0b676eb31f62ca22a8b1de6302e66e64e1e3dc7"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "f01388baf5ac4ab8e954027e9c2b40e7443c0fc780520e0cd536b7b9e877dae9"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "bc918e135782fff7c552d74350dbf6c838810c6c6054969455c91f05431fca8c"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "687e6fc66cc888417464583a23f5964f042d308c1d956868ae363f20f065c67b"
+    },
+    {
+      "path": "FACTORY-WORKFLOW.md",
+      "sha256": "c691997057d5a11c9e917e6bc521b699eb8aebb2214f31e640f42432f1442df5"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "a2fe8335c308116febb9d97fbeebe7167a5e50c3cde04c0a61492745432934f0"
+    },
+    {
+      "path": "README.md",
+      "sha256": "00df8d41370601aedf84bc416544425de4d0f65c8da6b50cdca6c2a88676df01"
+    },
+    {
+      "path": "addons/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "config/models.json",
+      "sha256": "9a1b4a9c781cc5041fc4298cbc8f90bb75f5c45468e843f7e6c28c33d47af55b"
+    },
+    {
+      "path": "config/wow-version.json",
+      "sha256": "db10afa975048f25503106551ed04a4d03b490b3aaf90cf6adafcd983e86bccb"
+    },
+    {
+      "path": "context/session-history.json",
+      "sha256": "1bcdb905fd465061e1da8b9f3d40a231de74e08aec358827ecbdcb3dc025a6ef"
+    },
+    {
+      "path": "context/system-prompt.md",
+      "sha256": "91033154230e017ce18f24f115f09d487c99ea210c49a400f38733e1aca84796"
+    },
+    {
+      "path": "design-system/assets/AllianceCompass.png",
+      "sha256": "8e4efda2590f8905830aa31578e23c92e15e95d209149bb6e8ff4104dab49b98"
+    },
+    {
+      "path": "design-system/assets/AllianceCompass.tga",
+      "sha256": "b50bd2e277773cc3026763ad50dcd8339d01d689ab9a6f4f2fb59d5b41dbcb61"
+    },
+    {
+      "path": "design-system/themes/tokens.json",
+      "sha256": "67871e97aa9dfead5db71f3c13b6e9f503173c7881bba9521f77d86053beda01"
+    },
+    {
+      "path": "diagnostics/ForeverDevProbe/ForeverDevProbe.lua",
+      "sha256": "a9f491ed0b2500f968e9f6229f18a7429d23018a48295550918273a90849bd8f"
+    },
+    {
+      "path": "diagnostics/ForeverDevProbe/ForeverDevProbe.toc",
+      "sha256": "1bc799cb602d0217ee6eb50ff5a2f07d096e8245ec8e49b8859a79f42e2109e0"
+    },
+    {
+      "path": "diagnostics/ForeverDevProbe/assets/Icon.tga",
+      "sha256": "b50bd2e277773cc3026763ad50dcd8339d01d689ab9a6f4f2fb59d5b41dbcb61"
+    },
+    {
+      "path": "docs/ADDING-KNOWLEDGE.md",
+      "sha256": "76e6da0afb867f07cdd36112248b90b6427a0e2e1ceb120794a3e56bd3fb0ab3"
+    },
+    {
+      "path": "docs/ALLIANCE-SCOPE.md",
+      "sha256": "b07e25664be0a8fc17c32dbc45f35398870a6707e6ba076c1f2fdb90ab60bd7e"
+    },
+    {
+      "path": "docs/ARCHITECTURE-EXTENSION.md",
+      "sha256": "acb8b6835f19d0daca3d8d1bc50df0f49604fb621df971d5081d81e70e4b33a3"
+    },
+    {
+      "path": "docs/CLIENT-CAPABILITIES.md",
+      "sha256": "57976093133323644e4794be04e42a528166d547785b8f8bfda2c9ac280d8286"
+    },
+    {
+      "path": "docs/CURSEFORGE-RELEASE.md",
+      "sha256": "12ad2b98772fd1d57e1ebac828b122b6dfb2e0329bbb6b618cda3a819120910d"
+    },
+    {
+      "path": "docs/INTEGRATION-CONTRACTS.md",
+      "sha256": "9033f287ff0a2970900fff7372e998302d4845c497efe92b88f08c96fc31937e"
+    },
+    {
+      "path": "docs/KNOWLEDGE-SOURCES.md",
+      "sha256": "a276615fca3ab997a248810dcd3ac395f7420f7d37e0d82ad3781047151d4e06"
+    },
+    {
+      "path": "docs/MEMORY-POLICY.md",
+      "sha256": "03d14f5c28cd37200fb3e8de80dd6ff4fff79be7c2aa82a38fd761a3e09cf6b8"
+    },
+    {
+      "path": "docs/RAG-RETRIEVAL.md",
+      "sha256": "4d3d3dea925c6cf27094f265110069945b4cf0a278670e7cb22b990aae7fb5c8"
+    },
+    {
+      "path": "docs/READY-FOR-AGENT.md",
+      "sha256": "b4eb777034d81a8ac47200bed18a1075e714e932a88137437c1bc618eb9cfe05"
+    },
+    {
+      "path": "docs/TESTING-STRATEGY.md",
+      "sha256": "4ff5256959aed2972ac50b05e664043164894c9c9e2356c23ca52b5a8217c153"
+    },
+    {
+      "path": "docs/VALIDATION-REPORT.md",
+      "sha256": "73603cdb51b001f5ee490e61e40f0042bed36072ac15a1c34e6f0bd9313b8633"
+    },
+    {
+      "path": "evals/benchmarks/scenarios.json",
+      "sha256": "acf12de1a42221262fc36d056afc94ef3057deae6f2cc4b4a85760e2a40cf660"
+    },
+    {
+      "path": "evals/fixtures/alliance-level-pulse.blueprint.json",
+      "sha256": "4bd042f76a242f18874a77337df1dced3b44c7e5b3f478320187d349e45be16e"
+    },
+    {
+      "path": "evals/fixtures/probe-example.lua",
+      "sha256": "dec5632a034662b2a4b9af52416a856e42c968287f44343b7caac3052ebbcfbc"
+    },
+    {
+      "path": "evals/fixtures/synthetic-gameplay.json",
+      "sha256": "bf0ce9fedb43443b11ee64bbeaeae45dbcb5bbcc7c54e1c1b4303d783704c35d"
+    },
+    {
+      "path": "evals/run-evals.sh",
+      "sha256": "7aacd77134c6eedacf09ed4c3a59c3736fc6e6ecb86fa457c101fb3392a7a06e"
+    },
+    {
+      "path": "evals/run-evals.ts",
+      "sha256": "07e8ec86ba55969d59cc3deedf728cc65dfa3c8ce37e8ae92d7ca9575dd65664"
+    },
+    {
+      "path": "evals/wow-mock-env.lua",
+      "sha256": "7de0874eb76adf1106550710f96ca5c866023c80464c0c3b96635a23a6d7ed05"
+    },
+    {
+      "path": "examples/AllianceLevelPulse/AllianceLevelPulse.lua",
+      "sha256": "caca7206713fea910162e9df1b673a15a1fb232bfbad2b3f839699a07258959c"
+    },
+    {
+      "path": "examples/AllianceLevelPulse/AllianceLevelPulse.toc",
+      "sha256": "4203077cd1a58fc201968b69445874544d3c60a455b9be624b005e74ede624da"
+    },
+    {
+      "path": "examples/AllianceLevelPulse/assets/Icon.tga",
+      "sha256": "b50bd2e277773cc3026763ad50dcd8339d01d689ab9a6f4f2fb59d5b41dbcb61"
+    },
+    {
+      "path": "guardrails/taint-and-api-rules.json",
+      "sha256": "4bd602405319c16ec9a4743cfe46ef92c0358f244b2952f1d5296d945dffa821"
+    },
+    {
+      "path": "knowledge/alliance/repository.ts",
+      "sha256": "4033d674270817f058ca9700284354c854f9ebadb3566b1841e2c5c91eca917e"
+    },
+    {
+      "path": "knowledge/capabilities/matrix.ts",
+      "sha256": "ade237c768f49cad1e2b974159e48671fcb010ff51c640ae6e0f8a2f3e2f862a"
+    },
+    {
+      "path": "knowledge/gaps/README.md",
+      "sha256": "2655cfe474464e2d9b5c16a159d6ec08e5becba1573e75ea1b011969c70461ca"
+    },
+    {
+      "path": "knowledge/known-failures/README.md",
+      "sha256": "f3a48158c100cccadbee99c54a0e6a53414f8eec4953e3a631a95a1ea053f1eb"
+    },
+    {
+      "path": "knowledge/provenance/README.md",
+      "sha256": "3612ac2d219477373fa344838c4718b3b4cf05abf2e8c2d932c1b4bd597a0cc6"
+    },
+    {
+      "path": "knowledge/seed-docs/factory-policy.md",
+      "sha256": "9b56a70de65d4db79143a0a4903ababc97a4ad70e6cf02632754acf0f94f0bde"
+    },
+    {
+      "path": "knowledge/seed-docs/factory-policy.md.meta.json",
+      "sha256": "0e33e41ab880b472467cb1eb93561f53ebcc3d75514b07b4b893744806c8f0b6"
+    },
+    {
+      "path": "knowledge/seed-docs/forever-api-compatibility.md",
+      "sha256": "9cc5636772e4524be6b4899e74f3b0c5b39071b03621a3ae9600483fc1a77c88"
+    },
+    {
+      "path": "knowledge/seed-docs/forever-api-compatibility.md.meta.json",
+      "sha256": "665000af7cb0fa672f4338dd05f5c24e5ce92c4ba815b216a3af4983d00c9e24"
+    },
+    {
+      "path": "knowledge/sources/manifest.json",
+      "sha256": "732613b6cb104794ed1a14c8403927648d89f7b6ae94a89b6709b1ebcbab3781"
+    },
+    {
+      "path": "market-references/README.md",
+      "sha256": "f0de2bcf9c7fabac111bc4e699aee6004408640f713e0a55c0b46126e614f176"
+    },
+    {
+      "path": "market-references/restedxp/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "market-references/zygor/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mcp/README.md",
+      "sha256": "6d06e452f27b7cb8ea5ab830bf38d3251aee6513f9fe73b86fa0c541e04dd835"
+    },
+    {
+      "path": "mcp/prompts/README.md",
+      "sha256": "4b3682c7e1794dcce762f472c6465f0d97531a3603650a8deebc7fb0c2a72f0a"
+    },
+    {
+      "path": "mcp/resources/README.md",
+      "sha256": "0ad70364e7fbdc174a0d2a3965a54702f410c887b2a45ddc97a90776fc180e90"
+    },
+    {
+      "path": "mcp/server.ts",
+      "sha256": "f7a38b891b24d96cff79b8128146a2340e916924bdd5dc6b7a589edd09988db6"
+    },
+    {
+      "path": "mcp/tools/README.md",
+      "sha256": "9e232553eac9607228df9455f1344752a4e78e9b1ff8d813d52f50efba4a5fbb"
+    },
+    {
+      "path": "memory/store.ts",
+      "sha256": "9edf13ed42c7a818b27a5f340305a8c1a786a548c828f4ac1d5e2abf4a84bf7c"
+    },
+    {
+      "path": "orchestrator.ts",
+      "sha256": "4ddab9da3c874765528dbcf43bd9688d851e711568080697c026c17082692688"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "3973ac5291f039372c52d49180c6dd20d8264d94ea14f086c68575c461f3dbce"
+    },
+    {
+      "path": "package.json",
+      "sha256": "85b492ad270d08f1cef9b12bfb1497cb91772f2e0888aa74ad78bda80a2c8ecb"
+    },
+    {
+      "path": "rag/indexer.ts",
+      "sha256": "c11ea93294f3ebbc39eb3bf16fc29c0c034259353f7141f58c193e9a07da6e8f"
+    },
+    {
+      "path": "rag/raw-docs/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "rag/vector-store/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "schemas/addon-blueprint.schema.json",
+      "sha256": "40ce409e8590fb62f0b5c3928f59d5cb66dad2ba76a4e1fc5c2b1e7645b9687f"
+    },
+    {
+      "path": "schemas/gameplay-entity.schema.json",
+      "sha256": "1d245168606dbe57915eec1cd3c8ccff8bc257e311b32fdf37eef6609f1ed14b"
+    },
+    {
+      "path": "schemas/source-document.schema.json",
+      "sha256": "757cf24414d3a80ca717a9940b991b1f677d5e0f424fc4b90aee8e796930cc51"
+    },
+    {
+      "path": "scripts/factory.ts",
+      "sha256": "5abdb1b9327388e2cedf8bcc1eb49cb89231ef5fc58e61a23ed9029c309c13b8"
+    },
+    {
+      "path": "scripts/setup.ts",
+      "sha256": "43d001349045c03357fcb6ec018ce8997c6e7a83afda1c6989982a4b434cc15a"
+    },
+    {
+      "path": "src/art.ts",
+      "sha256": "6e5afd03e6a2d36d3be7c8553e13233ad9b14a192901b13c56b86c9ecec6fc49"
+    },
+    {
+      "path": "src/core.ts",
+      "sha256": "2d7342e41947e3567bff573532d60bd65825461e9067d7314d8a870cf8428203"
+    },
+    {
+      "path": "src/db.ts",
+      "sha256": "fae8430f1730824c3d7c263e234a0103168511020f011349e40c6e4d115cfd8a"
+    },
+    {
+      "path": "src/diagnostics.ts",
+      "sha256": "b4b7e7cc98737011ce5d2db03629c174da52a2306acaa4eba7d467847c7a8c14"
+    },
+    {
+      "path": "src/guards.ts",
+      "sha256": "e4bf5ad014a67995b750967970543a5ac1032049e4c11088ebb9476ca2b2b243"
+    },
+    {
+      "path": "src/llm.ts",
+      "sha256": "7aed7d69f49ac3ef9edcc5bc39733cd333eb758f49fdd4106e7524c57ce68ace"
+    },
+    {
+      "path": "src/search.ts",
+      "sha256": "c97f13f188a36054781618ab8fb4b85732a5d57b69ed779e3482f4aa4ca1b038"
+    },
+    {
+      "path": "src/zip.ts",
+      "sha256": "a33cbd040faf4ad4fff9e0d783a87c1a4e2050171cb5f7beca48ab768068e1dc"
+    },
+    {
+      "path": "tests/diagnostics.test.ts",
+      "sha256": "6ff1d35d9fa2f060cfe560174e69739832acff1c5741cd60808f3a05c5d49f05"
+    },
+    {
+      "path": "tests/factory.test.ts",
+      "sha256": "620f25e1255d24e305b7b6fc7d43eb1b15d3faa07fc8e6fcc80cf40391c7a490"
+    },
+    {
+      "path": "tests/knowledge.test.ts",
+      "sha256": "9a98c45c6e3e6e01894b12cd605fbc7385963ef1b7bc801369b953c225db566b"
+    },
+    {
+      "path": "tests/mcp.test.ts",
+      "sha256": "c03b12adf3cedd945b0fdda8aadeb1a22189e36a021bb1096dd8c0a363203f60"
+    },
+    {
+      "path": "tools/build-addon.ts",
+      "sha256": "956d59dd92c5d43cf35f36eff4f9aae8bd94cc00a16532bc2c9580c2fd1591ad"
+    },
+    {
+      "path": "tools/check-source-updates.ts",
+      "sha256": "f61e11402ff7abf5b05c98c33b8ee9639c090335838e6ff68ebbfcb041661b20"
+    },
+    {
+      "path": "tools/import-client-diagnostics.ts",
+      "sha256": "8530d21c26a5dc0d3061b0d654d5a8bc3f29b554b22c923133693bed551bbfd6"
+    },
+    {
+      "path": "tools/new-addon.ts",
+      "sha256": "8640f5eb9fcd33ea5b33088e8c712189f9432e920c004040cd06f6f684ac182d"
+    },
+    {
+      "path": "tools/search-wow-api.ts",
+      "sha256": "8d920e3a3ccc752b2fc14e2a9fba349103d463d4148337129aa325dff91b7564"
+    },
+    {
+      "path": "tools/validate-toc.ts",
+      "sha256": "97d73984615079c7f2ea40b5373efc4c6048d66378953f416a7e536cdbeac35e"
+    },
+    {
+      "path": "traces/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

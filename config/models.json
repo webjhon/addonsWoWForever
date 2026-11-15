@@ -1,0 +1,14 @@
+{
+  "enabled": false,
+  "provider": "openai-compatible",
+  "chatCompletionsUrl": "https://api.openai.com/v1/chat/completions",
+  "apiKeyEnv": "OPENAI_API_KEY",
+  "primaryModel": "gpt-4.1-mini",
+  "fallbackModels": [],
+  "maxAttempts": 2,
+  "maxOutputTokens": 12000,
+  "timeoutMs": 90000,
+  "streaming": false,
+  "promptCaching": "provider-managed-only",
+  "note": "Enable with credentials and an appropriate, available model; no free inference is bundled."
+}

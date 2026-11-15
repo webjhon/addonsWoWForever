@@ -1,0 +1,1 @@
+Evidence and license belong on every document/entity. `src/db.ts` stores metadata and `docs/KNOWLEDGE-SOURCES.md` defines its interpretation. Do not claim data is confirmed solely because a source mentions it.

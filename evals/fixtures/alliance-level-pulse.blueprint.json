@@ -1,0 +1,53 @@
+{
+  "addonName": "AllianceLevelPulse",
+  "game": "WoW Forever",
+  "faction": "Alliance",
+  "purpose": "leveling",
+  "minLevel": 1,
+  "maxLevel": 60,
+  "interfaceVersion": 16001,
+  "version": "0.1.0",
+  "eventsRegistered": [
+    "PLAYER_ENTERING_WORLD",
+    "PLAYER_XP_UPDATE",
+    "PLAYER_LEVEL_UP"
+  ],
+  "apiNamespacesUsed": [
+    "UnitFactionGroup",
+    "UnitLevel",
+    "UnitXP",
+    "UnitXPMax"
+  ],
+  "apiEvidence": [
+    {
+      "symbol": "UnitFactionGroup",
+      "status": "UNVERIFIED",
+      "source": "Confirm in client; public API exports pending"
+    },
+    {
+      "symbol": "UnitLevel",
+      "status": "UNVERIFIED",
+      "source": "Confirm in client; public API exports pending"
+    },
+    {
+      "symbol": "UnitXP",
+      "status": "UNVERIFIED",
+      "source": "Confirm in client; public API exports pending"
+    },
+    {
+      "symbol": "UnitXPMax",
+      "status": "UNVERIFIED",
+      "source": "Confirm in client; public API exports pending"
+    }
+  ],
+  "files": [
+    {
+      "filename": "AllianceLevelPulse.toc",
+      "content": "## Interface: 16001\n## Title: Alliance Level Pulse\n## Notes: Compact leveling progress for Alliance characters 1-60 (Forever)\n## Author: WoW Addon AI Factory\n## Version: 0.1.0\n## X-Flavor: Forever\n## IconTexture: Interface\\AddOns\\AllianceLevelPulse\\assets\\Icon.tga\n## SavedVariables: AllianceLevelPulseDB\nAllianceLevelPulse.lua\n"
+    },
+    {
+      "filename": "AllianceLevelPulse.lua",
+      "content": "-- WoW Forever Alliance leveling demonstration. API use needs live client confirmation.\nlocal addonName, ns = ...\nlocal frame = CreateFrame(\"Frame\", \"AllianceLevelPulseFrame\", UIParent)\nframe:SetSize(270, 74)\nframe:SetPoint(\"CENTER\", UIParent, \"CENTER\", 0, -205)\nframe:SetMovable(true)\nframe:EnableMouse(true)\nframe:RegisterForDrag(\"LeftButton\")\nframe:SetScript(\"OnDragStart\", function(self) self:StartMoving() end)\nframe:SetScript(\"OnDragStop\", function(self) self:StopMovingOrSizing() end)\nlocal bg = frame:CreateTexture(nil, \"BACKGROUND\")\nbg:SetAllPoints()\nbg:SetColorTexture(0.055, 0.09, 0.14, 0.94)\nlocal icon = frame:CreateTexture(nil, \"ARTWORK\")\nicon:SetTexture(\"Interface\\\\AddOns\\\\AllianceLevelPulse\\\\assets\\\\Icon.tga\")\nicon:SetSize(35, 35)\nicon:SetPoint(\"LEFT\", frame, \"LEFT\", 12, 0)\nlocal text = frame:CreateFontString(nil, \"OVERLAY\", \"GameFontNormal\")\ntext:SetPoint(\"TOPLEFT\", icon, \"TOPRIGHT\", 10, -1)\nlocal bar = CreateFrame(\"StatusBar\", nil, frame)\nbar:SetPoint(\"TOPLEFT\", icon, \"BOTTOMRIGHT\", 10, 15)\nbar:SetSize(186, 10)\nbar:SetStatusBarTexture(\"Interface\\\\TargetingFrame\\\\UI-StatusBar\")\nbar:SetStatusBarColor(0.18, 0.65, 0.86, 1)\nbar:SetMinMaxValues(0, 100)\n\nlocal function update()\n    if UnitFactionGroup(\"player\") ~= \"Alliance\" then frame:Hide(); return end\n    local level = UnitLevel(\"player\") or 1\n    if level < 1 or level > 60 then frame:Hide(); return end\n    if AllianceLevelPulseDB and AllianceLevelPulseDB.hidden then frame:Hide(); return end\n    frame:Show()\n    if level == 60 then text:SetText(\"Alliance  |  Level 60 reached\"); bar:SetValue(100); return end\n    local xp = UnitXP(\"player\") or 0\n    local maxXP = UnitXPMax(\"player\") or 0\n    local pct = maxXP > 0 and math.floor(xp * 100 / maxXP) or 0\n    text:SetText(string.format(\"Alliance  |  Lv %d  |  XP %d%%\", level, pct))\n    bar:SetValue(pct)\nend\nframe:RegisterEvent(\"PLAYER_ENTERING_WORLD\")\nframe:RegisterEvent(\"PLAYER_XP_UPDATE\")\nframe:RegisterEvent(\"PLAYER_LEVEL_UP\")\nframe:SetScript(\"OnEvent\", function() update() end)\nSLASH_ALLIANCELEVELPULSE1 = \"/alp\"\nSlashCmdList[\"ALLIANCELEVELPULSE\"] = function(msg)\n    AllianceLevelPulseDB = AllianceLevelPulseDB or {}\n    if msg == \"hide\" then AllianceLevelPulseDB.hidden = true\n    elseif msg == \"show\" then AllianceLevelPulseDB.hidden = false\n    else print(\"Alliance Level Pulse: /alp show | /alp hide\") end\n    update()\nend\nupdate()\n"
+    }
+  ]
+}

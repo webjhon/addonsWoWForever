@@ -1,0 +1,30 @@
+{
+  "name": "wow-addon-ai-factory",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Agent-agnostic factory for WoW Forever Alliance 1-60 leveling addons",
+  "engines": {
+    "node": ">=22.16.0"
+  },
+  "scripts": {
+    "init": "node --experimental-strip-types scripts/setup.ts",
+    "index": "node --experimental-strip-types rag/indexer.ts",
+    "index:embeddings": "node --experimental-strip-types rag/indexer.ts --embeddings",
+    "search": "node --experimental-strip-types scripts/factory.ts search",
+    "knowledge": "node --experimental-strip-types scripts/factory.ts knowledge",
+    "capability": "node --experimental-strip-types scripts/factory.ts capability",
+    "agent": "node --experimental-strip-types orchestrator.ts --prompt",
+    "example": "node --experimental-strip-types orchestrator.ts --blueprint evals/fixtures/alliance-level-pulse.blueprint.json",
+    "build": "node --experimental-strip-types tools/build-addon.ts",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "evals": "node --experimental-strip-types evals/run-evals.ts",
+    "mcp": "node --experimental-strip-types mcp/server.ts",
+    "doctor": "node --experimental-strip-types scripts/factory.ts doctor",
+    "sources:check": "node --experimental-strip-types tools/check-source-updates.ts",
+    "new": "node --experimental-strip-types tools/new-addon.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}
