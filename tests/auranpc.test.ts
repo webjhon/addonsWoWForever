@@ -103,3 +103,12 @@ test('malformed data and other players quests never manufacture own progress',()
  TEST.objectivesByID[7]={{type='monster',finished=false}};fire('QUEST_LOG_UPDATE');assert(AURA.stats.drawn==1)
  TEST.ready[7]={secret=true};fire('QUEST_LOG_UPDATE');assert(AURA.stats.drawn==0)
 `));
+test('real Forever failure: secret GUID and tooltip text, public quest relation draws without revealing identity',()=>run(`
+ accept(7);plate('nameplate1',6);TEST.npcs.nameplate1.guid={secret=true}
+ TEST.tooltips.nameplate1={lines={{type=17,leftText={secret=true}}}}
+ TEST.relations.nameplate1=true;tick();assert(AURA.stats.drawn==1)
+ local m=AURA.markers.nameplate1;assert(m.quest.text=='NPC de uma quest ativa')
+ TEST.relations.nameplate1={secret=true};tick();assert(AURA.stats.drawn==0)
+ TEST.relations.nameplate1=false;tick();assert(AURA.stats.drawn==0)
+ TEST.relations.nameplate1=true;TEST.ready[7]=true;fire('QUEST_LOG_UPDATE');assert(AURA.stats.drawn==0)
+`));

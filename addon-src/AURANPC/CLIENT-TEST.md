@@ -1,6 +1,6 @@
-# Validação no Forever — NOT_RUN
+# Validação no Forever — teste parcial executado
 
-Usuário só poderá executar depois. Primeiro use `/auranpc test`: conferir borda fixa, pulso, exclamação, texto e desaparecimento após 10s. Abra `/auranpc`: ajustar escala/altura para seu conjunto de placas. Não confundir demonstração com detecção.
+Detecção e renderização corrigidas, movimento natural de NPC, reload e opções já observados em Stockade70938; ver LIVE-TEST.md. Os demais cenários abaixo permanecem pendentes. Primeiro use `/auranpc test`: conferir borda fixa, pulso, exclamação, texto e desaparecimento após 10s. Abra `/auranpc`: ajustar escala/altura para seu conjunto de placas. Não confundir demonstração com detecção.
 
 Com uma quest aceita de abate/coleta e objetivo pendente, aproxime NPCs correspondentes ao ar livre, de frente, com placas visíveis. Confira contador **Desenhados**, compare NPCs da quest e outros NPCs. Mova a câmera e observe o NPC andando. Mate/saqueie até terminar um objetivo: somente NPCs desse objetivo devem deixar de destacar. Abandone/entregue: não pode sobrar marcador.
 

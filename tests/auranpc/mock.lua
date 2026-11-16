@@ -1,5 +1,7 @@
 -- Deterministic model; no real client frames, rendering or taint enforcement.
 AURA={};TEST.npcs={};TEST.plates={};TEST.tooltips={};TEST.cvars={nameplateShowEnemies='1'};TEST.cvarWrites={};TEST.sounds=0
+TEST.relations={}
+C_QuestLog.UnitIsRelatedToActiveQuest=function(unit)return TEST.relations[unit] or false end
 local methods=getmetatable(UIParent).__index
 function methods:GetText() return self.text end
 function methods:SetAllPoints(other)

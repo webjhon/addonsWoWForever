@@ -1,4 +1,4 @@
-✔ Shipped AURANPC ZIP matches tested blueprint, original branding, installation layout and SHA256 (67.7563ms)
+✔ Shipped AURANPC ZIP matches tested blueprint, original branding, installation layout and SHA256 (126.2153ms)
 ℹ tests 1
 ℹ suites 0
 ℹ pass 1
@@ -6,4 +6,4 @@
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 179.0028
+ℹ duration_ms 317.3812

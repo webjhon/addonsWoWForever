@@ -1,7 +1,7 @@
 {
   "installedExecutable": "1.60.1.70938",
   "interface": 16001,
-  "clientTests": "NOT_RUN",
+  "clientTests": "PARTIAL_CLIENT_TESTED",
   "sourceCommit": "bebcb6bf309cf41b41bd74f8ca651e6a105b2676",
   "sourceBranch": "Gethe/wow-ui-source forever",
   "capabilities": [
@@ -64,6 +64,15 @@
       ],
       "evidence": "Existing factory Mainline-family references; ForeverAuras 1.4.3 confirms nameplate anchoring/event architecture only. Remaining runtime behavior explicitly unverified.",
       "runtime": "UNVERIFIED"
+    },
+    {
+      "symbols": [
+        "C_QuestLog.UnitIsRelatedToActiveQuest"
+      ],
+      "file": "QuestLogDocumentation.lua",
+      "runtime": "CONFIRMED_IN_CLIENT_WITH_LIMITATIONS",
+      "evidence": "Forever70938 Stockade, 2026-11-16: public true, secret GUID/tooltip text, own marker rendered and followed NPC after fix",
+      "limitations": "Does not expose questID, NPC name or objective; generic caption only. Combat/outdoors not tested."
     }
   ],
   "decisions": [

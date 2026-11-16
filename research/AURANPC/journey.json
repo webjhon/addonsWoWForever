@@ -1,16 +1,16 @@
 {
-  "startedAt": "2026-11-16T14:01:09.470Z",
+  "startedAt": "2026-11-16T16:08:59.435Z",
   "stages": [
     {
       "name": "CONTEXT_AND_MEMORY",
-      "at": "2026-11-16T14:01:09.478Z",
+      "at": "2026-11-16T16:08:59.444Z",
       "ok": true,
       "build": null,
-      "memories": 2
+      "memories": 3
     },
     {
       "name": "RAG_AND_RESEARCH",
-      "at": "2026-11-16T14:01:09.482Z",
+      "at": "2026-11-16T16:08:59.448Z",
       "ok": true,
       "citations": [
         "community-api-snapshot",
@@ -27,13 +27,13 @@
     },
     {
       "name": "SCOPE_AND_GUARDRAILS",
-      "at": "2026-11-16T14:01:09.488Z",
+      "at": "2026-11-16T16:08:59.468Z",
       "ok": true,
       "reason": ""
     },
     {
       "name": "CAPABILITY_REVIEW",
-      "at": "2026-11-16T14:01:09.490Z",
+      "at": "2026-11-16T16:08:59.473Z",
       "ok": true,
       "unknownApis": [
         "CreateFrame",
@@ -81,7 +81,7 @@
     },
     {
       "name": "PRODUCT_QUALITY_GATE",
-      "at": "2026-11-16T14:01:10.755Z",
+      "at": "2026-11-16T16:09:02.543Z",
       "ok": true,
       "proof": {
         "ok": true,
@@ -112,13 +112,13 @@
     },
     {
       "name": "PACKAGING",
-      "at": "2026-11-16T14:01:10.756Z",
+      "at": "2026-11-16T16:09:02.544Z",
       "ok": true,
-      "zip": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\releases\\AURANPC-2.0.0-candidate.zip"
+      "zip": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\releases\\AURANPC-2.0.1-candidate.zip"
     },
     {
       "name": "REVIEW_AND_HANDOFF",
-      "at": "2026-11-16T14:01:10.757Z",
+      "at": "2026-11-16T16:09:02.545Z",
       "ok": true,
       "status": "STATIC_PASSED",
       "clientVerified": false
@@ -127,9 +127,9 @@
   "status": "STATIC_PASSED",
   "addon": "AURANPC",
   "result": {
-    "out": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\releases\\AURANPC-2.0.0-candidate.zip",
-    "files": 15,
-    "bytes": 190489,
+    "out": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\releases\\AURANPC-2.0.1-candidate.zip",
+    "files": 16,
+    "bytes": 192909,
     "status": "STATIC_PASSED",
     "addon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\addons\\AURANPC",
     "destination": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\dist\\AURANPC",
@@ -162,5 +162,5 @@
     }
   },
   "provider": null,
-  "finishedAt": "2026-11-16T14:01:10.764Z"
+  "finishedAt": "2026-11-16T16:09:02.557Z"
 }
