@@ -1,0 +1,14 @@
+{
+  "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestNPCs_Forever.lua",
+  "license": "MIT Copyright 2026 Wheelbarrel00",
+  "inputSHA256": "7a6e341ec9a9799787d91f68f95f5882b3cf42d8ac34d4232fbfd62afcee09f6",
+  "questIDs": 1454,
+  "links": 5208,
+  "fields": [
+    "kind:1=monster,3=item",
+    "zeroBasedOrdinalWithinKind",
+    "npcID"
+  ],
+  "excluded": "kind2 object IDs; runtime only accepted Alliance quests",
+  "runtimeEvidence": "COMMUNITY_UNVERIFIED"
+}

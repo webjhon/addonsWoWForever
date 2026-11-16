@@ -1,0 +1,538 @@
+TAP version 13
+# Subtest: reactive leveling recommendations vary by player XP
+ok 1 - reactive leveling recommendations vary by player XP
+  ---
+  duration_ms: 1.2712
+  type: 'test'
+  ...
+# Subtest: brand credits appear before player UI is opened
+ok 2 - brand credits appear before player UI is opened
+  ---
+  duration_ms: 0.3496
+  type: 'test'
+  ...
+# Subtest: Shipped AURANPC ZIP matches tested blueprint, original branding, installation layout and SHA256
+ok 3 - Shipped AURANPC ZIP matches tested blueprint, original branding, installation layout and SHA256
+  ---
+  duration_ms: 138.0225
+  type: 'test'
+  ...
+# Subtest: AURANPC original Lua compiles as WoW Lua 5.1
+ok 4 - AURANPC original Lua compiles as WoW Lua 5.1
+  ---
+  duration_ms: 43.4138
+  type: 'test'
+  ...
+# Subtest: accept quest automatically draws actual marker and HUD, follows plate anchor
+ok 5 - accept quest automatically draws actual marker and HUD, follows plate anchor
+  ---
+  duration_ms: 154.1035
+  type: 'test'
+  ...
+# Subtest: objective kind ordinals are separate; finished objective never reactivated by tooltip
+ok 6 - objective kind ordinals are separate; finished objective never reactivated by tooltip
+  ---
+  duration_ms: 104.0115
+  type: 'test'
+  ...
+# Subtest: completion removes marker, reaccept restores, abandonment tombstone blocks delayed log
+ok 7 - completion removes marker, reaccept restores, abandonment tombstone blocks delayed log
+  ---
+  duration_ms: 89.5305
+  type: 'test'
+  ...
+# Subtest: token reuse, remove event, missed removal and pool reuse do not leave stale marker
+ok 8 - token reuse, remove event, missed removal and pool reuse do not leave stale marker
+  ---
+  duration_ms: 80.0924
+  type: 'test'
+  ...
+# Subtest: dungeon combat preserves permitted visuals, forbidden and hidden plates are rejected
+ok 9 - dungeon combat preserves permitted visuals, forbidden and hidden plates are rejected
+  ---
+  duration_ms: 66.7953
+  type: 'test'
+  ...
+# Subtest: secret GUID and secret quest/objective/tooltip values fail closed
+ok 10 - secret GUID and secret quest/objective/tooltip values fail closed
+  ---
+  duration_ms: 66.868
+  type: 'test'
+  ...
+# Subtest: exact unique own quest title fallback; unrelated and duplicate titles do not match
+ok 11 - exact unique own quest title fallback; unrelated and duplicate titles do not match
+  ---
+  duration_ms: 46.4542
+  type: 'test'
+  ...
+# Subtest: dead kill targets are suppressed but corpse loot remains relevant
+ok 12 - dead kill targets are suppressed but corpse loot remains relevant
+  ---
+  duration_ms: 61.6422
+  type: 'test'
+  ...
+# Subtest: reload/login reconstructs quests and per-character configuration, caps allocations
+ok 13 - reload/login reconstructs quests and per-character configuration, caps allocations
+  ---
+  duration_ms: 361.2087
+  type: 'test'
+  ...
+# Subtest: out of scope or disabled automatically hides; enemy plate assistance restores local setting
+ok 14 - out of scope or disabled automatically hides; enemy plate assistance restores local setting
+  ---
+  duration_ms: 32.3954
+  type: 'test'
+  ...
+# Subtest: missing APIs fail closed; demo is distinct and settings pulse has solid fallback
+ok 15 - missing APIs fail closed; demo is distinct and settings pulse has solid fallback
+  ---
+  duration_ms: 36.5422
+  type: 'test'
+  ...
+# Subtest: events coalesce, timer does not rescan quest log; sound is private and throttled
+ok 16 - events coalesce, timer does not rescan quest log; sound is private and throttled
+  ---
+  duration_ms: 38.1121
+  type: 'test'
+  ...
+# Subtest: shipped dungeon quest2040 maps item objective to npc642 and runs outdoors or in instance
+ok 17 - shipped dungeon quest2040 maps item objective to npc642 and runs outdoors or in instance
+  ---
+  duration_ms: 47.3892
+  type: 'test'
+  ...
+# Subtest: startup discovery finds existing plates and drawing failure is never counted as drawn
+ok 18 - startup discovery finds existing plates and drawing failure is never counted as drawn
+  ---
+  duration_ms: 51.6289
+  type: 'test'
+  ...
+# Subtest: malformed data and other players quests never manufacture own progress
+ok 19 - malformed data and other players quests never manufacture own progress
+  ---
+  duration_ms: 39.7514
+  type: 'test'
+  ...
+# Subtest: curated official records are indexed and exclude Horde
+ok 20 - curated official records are indexed and exclude Horde
+  ---
+  duration_ms: 73.8258
+  type: 'test'
+  ...
+# Subtest: import SavedVariables fixture without eval
+ok 21 - import SavedVariables fixture without eval
+  ---
+  duration_ms: 13.7801
+  type: 'test'
+  ...
+# Subtest: malformed diagnostics are rejected
+ok 22 - malformed diagnostics are rejected
+  ---
+  duration_ms: 0.5646
+  type: 'test'
+  ...
+# Subtest: Shipped 3.0 ZIP matches tested blueprint, original branding, installation layout and SHA256
+ok 23 - Shipped 3.0 ZIP matches tested blueprint, original branding, installation layout and SHA256
+  ---
+  duration_ms: 23.5918
+  type: 'test'
+  ...
+# Subtest: Rebuilt product satisfies unchanged factory gates, exact authorship, branding and Lua 5.1
+ok 24 - Rebuilt product satisfies unchanged factory gates, exact authorship, branding and Lua 5.1
+  ---
+  duration_ms: 65.0077
+  type: 'test'
+  ...
+# Subtest: Factual catalog IDs come from shared bank, unknown coverage stays explicit, no fabricated coordinates
+ok 25 - Factual catalog IDs come from shared bank, unknown coverage stays explicit, no fabricated coordinates
+  ---
+  duration_ms: 3.2396
+  type: 'test'
+  ...
+# Subtest: First-open tracker has automatic preparation, pixel hunter credits and no progress controls
+ok 26 - First-open tracker has automatic preparation, pixel hunter credits and no progress controls
+  ---
+  duration_ms: 201.078
+  type: 'test'
+  ...
+# Subtest: Localized acceptance → travel → instance objective: no manual click
+ok 27 - Localized acceptance → travel → instance objective: no manual click
+  ---
+  duration_ms: 124.6525
+  type: 'test'
+  ...
+# Subtest: Real counters advance two objectives, authoritative completion then actual turn-in
+ok 28 - Real counters advance two objectives, authoritative completion then actual turn-in
+  ---
+  duration_ms: 142.711
+  type: 'test'
+  ...
+# Subtest: Other unfinished dungeon quest wins before leaving for a completed turn-in; out-of-order progress works
+ok 29 - Other unfinished dungeon quest wins before leaving for a completed turn-in; out-of-order progress works
+  ---
+  duration_ms: 94.7014
+  type: 'test'
+  ...
+# Subtest: External cavern quest is never presented as an indoor task
+ok 30 - External cavern quest is never presented as an indoor task
+  ---
+  duration_ms: 64.9517
+  type: 'test'
+  ...
+# Subtest: Abandon and missing quest are distinct from completion; repeatable log wins historical completion
+ok 31 - Abandon and missing quest are distinct from completion; repeatable log wins historical completion
+  ---
+  duration_ms: 63.3783
+  type: 'test'
+  ...
+# Subtest: Reload rehydrates real quest state per GUID and excludes interrupted XP sample
+ok 32 - Reload rehydrates real quest state per GUID and excludes interrupted XP sample
+  ---
+  duration_ms: 55.6769
+  type: 'test'
+  ...
+# Subtest: Legacy manual confirmations migrate without becoming accepted or completed quests
+ok 33 - Legacy manual confirmations migrate without becoming accepted or completed quests
+  ---
+  duration_ms: 42.6551
+  type: 'test'
+  ...
+# Subtest: Native waypoint progresses, disappears safely, never persists synthetic coordinates
+ok 34 - Native waypoint progresses, disappears safely, never persists synthetic coordinates
+  ---
+  duration_ms: 62.9408
+  type: 'test'
+  ...
+# Subtest: User tracking is preserved, explicit navigation preference can take over, disable releases only own tracking
+ok 35 - User tracking is preserved, explicit navigation preference can take over, disable releases only own tracking
+  ---
+  duration_ms: 69.6209
+  type: 'test'
+  ...
+# Subtest: Combat retains cached action, defers reads, invalidates quest XP and recovers completion
+ok 36 - Combat retains cached action, defers reads, invalidates quest XP and recovers completion
+  ---
+  duration_ms: 54.203
+  type: 'test'
+  ...
+# Subtest: Death suspends action and invalidates calibration; resurrection restores from journal
+ok 37 - Death suspends action and invalidates calibration; resurrection restores from journal
+  ---
+  duration_ms: 40.3945
+  type: 'test'
+  ...
+# Subtest: Failed quest, unavailable objectives, API absence and secret values cannot manufacture progress
+ok 38 - Failed quest, unavailable objectives, API absence and secret values cannot manufacture progress
+  ---
+  duration_ms: 54.532
+  type: 'test'
+  ...
+# Subtest: Unknown instance, uncurated dungeon, raid and Horde never receive a fabricated route
+ok 39 - Unknown instance, uncurated dungeon, raid and Horde never receive a fabricated route
+  ---
+  duration_ms: 52.0908
+  type: 'test'
+  ...
+# Subtest: Level unlock alerts deduplicate, active quests survive suggested range changes, class gates hold
+ok 40 - Level unlock alerts deduplicate, active quests survive suggested range changes, class gates hold
+  ---
+  duration_ms: 53.3209
+  type: 'test'
+  ...
+# Subtest: Event bursts coalesce and repeated reconciliation allocates no extra UI frames
+ok 41 - Event bursts coalesce and repeated reconciliation allocates no extra UI frames
+  ---
+  duration_ms: 405.9176
+  type: 'test'
+  ...
+# Subtest: Automatic XP expeditions count rollover once; no completion claims; two conservative comparable samples
+ok 42 - Automatic XP expeditions count rollover once; no completion claims; two conservative comparable samples
+  ---
+  duration_ms: 48.9429
+  type: 'test'
+  ...
+# Subtest: Quest turn-in, reload, XP anomaly, short visits and different build cannot calibrate
+ok 43 - Quest turn-in, reload, XP anomaly, short visits and different build cannot calibrate
+  ---
+  duration_ms: 62.8627
+  type: 'test'
+  ...
+# Subtest: NPC dialogue advertises actual offered quest and advances on acceptance without addon confirmation
+ok 44 - NPC dialogue advertises actual offered quest and advances on acceptance without addon confirmation
+  ---
+  duration_ms: 39.0868
+  type: 'test'
+  ...
+# Subtest: All catalog dungeons identify by build-specific instance ID despite translated or unknown names
+ok 45 - All catalog dungeons identify by build-specific instance ID despite translated or unknown names
+  ---
+  duration_ms: 78.4345
+  type: 'test'
+  ...
+# Subtest: Reload inside without quests must not start a valid new entry sample
+ok 46 - Reload inside without quests must not start a valid new entry sample
+  ---
+  duration_ms: 42.1798
+  type: 'test'
+  ...
+# Subtest: Map provenance binds 27 unique real instance IDs to target build and separate localized names
+ok 47 - Map provenance binds 27 unique real instance IDs to target build and separate localized names
+  ---
+  duration_ms: 1.9352
+  type: 'test'
+  ...
+# Subtest: Native destination text remains useful even when no coordinates are returned
+ok 48 - Native destination text remains useful even when no coordinates are returned
+  ---
+  duration_ms: 35.8282
+  type: 'test'
+  ...
+# Subtest: Hub selection switches dungeon without abandoning accepted quests; actual instance temporarily prevails
+ok 49 - Hub selection switches dungeon without abandoning accepted quests; actual instance temporarily prevails
+  ---
+  duration_ms: 46.9794
+  type: 'test'
+  ...
+# Subtest: Overview is available for all27 dungeons with access, quests and encounter metadata
+ok 50 - Overview is available for all27 dungeons with access, quests and encounter metadata
+  ---
+  duration_ms: 91.485
+  type: 'test'
+  ...
+# Subtest: Visible configuration changes actual arrow/tracker behavior and survives reload by GUID
+ok 51 - Visible configuration changes actual arrow/tracker behavior and survives reload by GUID
+  ---
+  duration_ms: 45.4223
+  type: 'test'
+  ...
+# Subtest: Own arrow has factual pickup target without quest waypoint or supertracking APIs
+ok 52 - Own arrow has factual pickup target without quest waypoint or supertracking APIs
+  ---
+  duration_ms: 41.6786
+  type: 'test'
+  ...
+# Subtest: Own direction geometry covers cardinal points and player heading
+ok 53 - Own direction geometry covers cardinal points and player heading
+  ---
+  duration_ms: 28.9932
+  type: 'test'
+  ...
+# Subtest: Arrow follows movement, marks arrival without completing quest, and hides stale heading on missing position
+ok 54 - Arrow follows movement, marks arrival without completing quest, and hides stale heading on missing position
+  ---
+  duration_ms: 33.5323
+  type: 'test'
+  ...
+# Subtest: Entrance-only source points are never used as boss coordinates inside dungeon
+ok 55 - Entrance-only source points are never used as boss coordinates inside dungeon
+  ---
+  duration_ms: 33.0747
+  type: 'test'
+  ...
+# Subtest: Encounter overview updates only from a successful real encounter event and persists through reload
+ok 56 - Encounter overview updates only from a successful real encounter event and persists through reload
+  ---
+  duration_ms: 36.9208
+  type: 'test'
+  ...
+# Subtest: Arrow ticker is bounded and cancelled when navigation disabled; no quest log polling in tick
+ok 57 - Arrow ticker is bounded and cancelled when navigation disabled; no quest log polling in tick
+  ---
+  duration_ms: 41.15
+  type: 'test'
+  ...
+# Subtest: Own routes carry versioned sources, separate pickup/turn-in and explicitly mark entrances
+ok 58 - Own routes carry versioned sources, separate pickup/turn-in and explicitly mark entrances
+  ---
+  duration_ms: 4.2177
+  type: 'test'
+  ...
+# Subtest: Own arrow never keeps a direction from secret coordinates or a different physical world
+ok 59 - Own arrow never keeps a direction from secret coordinates or a different physical world
+  ---
+  duration_ms: 31.5259
+  type: 'test'
+  ...
+# Subtest: demo blueprint is structurally valid
+ok 60 - demo blueprint is structurally valid
+  ---
+  duration_ms: 8.8143
+  type: 'test'
+  ...
+# Subtest: Horde scope is rejected
+ok 61 - Horde scope is rejected
+  ---
+  duration_ms: 3.5731
+  type: 'test'
+  ...
+# Subtest: wrong client interface is rejected
+ok 62 - wrong client interface is rejected
+  ---
+  duration_ms: 3.0089
+  type: 'test'
+  ...
+# Subtest: protected action and deprecated API are rejected
+ok 63 - protected action and deprecated API are rejected
+  ---
+  duration_ms: 1.3273
+  type: 'test'
+  ...
+# Subtest: TOC icon required
+ok 64 - TOC icon required
+  ---
+  duration_ms: 2.1629
+  type: 'test'
+  ...
+# Subtest: unsafe paths rejected
+ok 65 - unsafe paths rejected
+  ---
+  duration_ms: 4.8598
+  type: 'test'
+  ...
+# Subtest: actual ZIP candidate exists with original icon
+ok 66 - actual ZIP candidate exists with original icon
+  ---
+  duration_ms: 332.4438
+  type: 'test'
+  ...
+# Subtest: all released addons require live telemetry and proactive action
+ok 67 - all released addons require live telemetry and proactive action
+  ---
+  duration_ms: 10.1761
+  type: 'test'
+  ...
+# Subtest: all released addons have Tonho Contrabando metadata and first-open branding
+ok 68 - all released addons have Tonho Contrabando metadata and first-open branding
+  ---
+  duration_ms: 291.2561
+  type: 'test'
+  ...
+# Subtest: Alliance only and accessible neutrals; Horde hidden
+ok 69 - Alliance only and accessible neutrals; Horde hidden
+  ---
+  duration_ms: 31.5472
+  type: 'test'
+  ...
+# Subtest: FTS knowledge returns provenance and respects domain
+ok 70 - FTS knowledge returns provenance and respects domain
+  ---
+  duration_ms: 25.4521
+  type: 'test'
+  ...
+# Subtest: memories persist provenance and capabilities default to UNVERIFIED
+ok 71 - memories persist provenance and capabilities default to UNVERIFIED
+  ---
+  duration_ms: 25.3124
+  type: 'test'
+  ...
+# Subtest: MCP initialize/list/read and capabilities
+ok 72 - MCP initialize/list/read and capabilities
+  ---
+  duration_ms: 11.7168
+  type: 'test'
+  ...
+# Subtest: benchmark coverage and original icon exist
+ok 73 - benchmark coverage and original icon exist
+  ---
+  duration_ms: 2.5429
+  type: 'test'
+  ...
+# Subtest: reviewed factual pack has typed data, individual IDs and explicit incomplete coverage
+ok 74 - reviewed factual pack has typed data, individual IDs and explicit incomplete coverage
+  ---
+  duration_ms: 79.8566
+  type: 'test'
+  ...
+# Subtest: schema blocks copied page prose, arbitrary fields and unsupported coordinates
+ok 75 - schema blocks copied page prose, arbitrary fields and unsupported coordinates
+  ---
+  duration_ms: 194.0603
+  type: 'test'
+  ...
+# Subtest: source URLs must stay on Forever and never become unreviewed sources
+ok 76 - source URLs must stay on Forever and never become unreviewed sources
+  ---
+  duration_ms: 227.0331
+  type: 'test'
+  ...
+# Subtest: IDs require matching individual source and every known field needs provenance
+ok 77 - IDs require matching individual source and every known field needs provenance
+  ---
+  duration_ms: 109.2216
+  type: 'test'
+  ...
+# Subtest: no Horde, false Alliance access or unearned client verification can be imported
+ok 78 - no Horde, false Alliance access or unearned client verification can be imported
+  ---
+  duration_ms: 125.2234
+  type: 'test'
+  ...
+# Subtest: duplicate entities, conflicting identifiers and dangling graph endpoints are rejected
+ok 79 - duplicate entities, conflicting identifiers and dangling graph endpoints are rejected
+  ---
+  duration_ms: 102.2051
+  type: 'test'
+  ...
+# Subtest: prerequisite cycles and duplicate edges cannot be mistaken for usable chains
+ok 80 - prerequisite cycles and duplicate edges cannot be mistaken for usable chains
+  ---
+  duration_ms: 70.4455
+  type: 'test'
+  ...
+# Subtest: first import indexes entities, source records, relations and level-aware factual RAG
+ok 81 - first import indexes entities, source records, relations and level-aware factual RAG
+  ---
+  duration_ms: 110.1182
+  type: 'test'
+  ...
+# Subtest: reimport is idempotent and does not rewrite unchanged import evidence
+ok 82 - reimport is idempotent and does not rewrite unchanged import evidence
+  ---
+  duration_ms: 120.5772
+  type: 'test'
+  ...
+# Subtest: updated pack removes retired entities, relations and their old FTS documents only
+ok 83 - updated pack removes retired entities, relations and their old FTS documents only
+  ---
+  duration_ms: 157.5741
+  type: 'test'
+  ...
+# Subtest: unknown faction records and their edges never enter operational SQL or RAG
+ok 84 - unknown faction records and their edges never enter operational SQL or RAG
+  ---
+  duration_ms: 62.4526
+  type: 'test'
+  ...
+# Subtest: invalid update fails before writes and database constraint failures roll back the entire replacement
+ok 85 - invalid update fails before writes and database constraint failures roll back the entire replacement
+  ---
+  duration_ms: 116.1718
+  type: 'test'
+  ...
+# Subtest: entity planning context preserves unknown eligibility and both graph directions
+ok 86 - entity planning context preserves unknown eligibility and both graph directions
+  ---
+  duration_ms: 57.9985
+  type: 'test'
+  ...
+# Subtest: MCP exposes coverage and entity lookup as distinct discovery capabilities
+ok 87 - MCP exposes coverage and entity lookup as distinct discovery capabilities
+  ---
+  duration_ms: 22.6305
+  type: 'test'
+  ...
+# Subtest: index CLI actually runs on Windows and can be invoked again without duplicated documents
+ok 88 - index CLI actually runs on Windows and can be invoked again without duplicated documents
+  ---
+  duration_ms: 274.2772
+  type: 'test'
+  ...
+1..88
+# tests 88
+# suites 0
+# pass 88
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2856.5746

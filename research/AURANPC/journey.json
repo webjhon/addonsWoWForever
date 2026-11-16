@@ -1,0 +1,166 @@
+{
+  "startedAt": "2026-11-16T14:01:09.470Z",
+  "stages": [
+    {
+      "name": "CONTEXT_AND_MEMORY",
+      "at": "2026-11-16T14:01:09.478Z",
+      "ok": true,
+      "build": null,
+      "memories": 2
+    },
+    {
+      "name": "RAG_AND_RESEARCH",
+      "at": "2026-11-16T14:01:09.482Z",
+      "ok": true,
+      "citations": [
+        "community-api-snapshot",
+        "whf:source:world-map",
+        "whf:source:world-map",
+        "blizzard-overview",
+        "forever-api-index",
+        "blizzard-hunter-druid",
+        "whf:source:world-map",
+        "whf:source:world-map",
+        "whf:source:quest-95250",
+        "blizzard-dungeons"
+      ]
+    },
+    {
+      "name": "SCOPE_AND_GUARDRAILS",
+      "at": "2026-11-16T14:01:09.488Z",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "name": "CAPABILITY_REVIEW",
+      "at": "2026-11-16T14:01:09.490Z",
+      "ok": true,
+      "unknownApis": [
+        "CreateFrame",
+        "UnitGUID",
+        "UnitName",
+        "UnitLevel",
+        "UnitFactionGroup",
+        "UnitIsDeadOrGhost",
+        "InCombatLockdown",
+        "GetTime",
+        "issecretvalue",
+        "issecrettable",
+        "C_NamePlate.GetNamePlates",
+        "C_NamePlate.GetNamePlateForUnit",
+        "C_TooltipInfo.GetUnit",
+        "Enum.TooltipDataLineType.QuestTitle",
+        "C_QuestLog.GetNumQuestLogEntries",
+        "C_QuestLog.GetInfo",
+        "C_QuestLog.GetQuestObjectives",
+        "C_QuestLog.IsComplete",
+        "C_QuestLog.IsFailed",
+        "C_CVar.GetCVar",
+        "C_CVar.SetCVar",
+        "C_Timer.After",
+        "C_Timer.NewTicker",
+        "PlaySound",
+        "SOUNDKIT.RAID_WARNING",
+        "Frame.IsForbidden",
+        "Frame.CreateAnimationGroup",
+        "PLAYER_LOGIN",
+        "PLAYER_ENTERING_WORLD",
+        "PLAYER_LEVEL_UP",
+        "QUEST_ACCEPTED",
+        "QUEST_LOG_UPDATE",
+        "QUEST_WATCH_UPDATE",
+        "QUEST_REMOVED",
+        "QUEST_TURNED_IN",
+        "NAME_PLATE_UNIT_ADDED",
+        "NAME_PLATE_UNIT_REMOVED",
+        "PLAYER_REGEN_ENABLED",
+        "CVAR_UPDATE",
+        "PLAYER_LOGOUT"
+      ],
+      "clientVerificationRequired": true
+    },
+    {
+      "name": "PRODUCT_QUALITY_GATE",
+      "at": "2026-11-16T14:01:10.755Z",
+      "ok": true,
+      "proof": {
+        "ok": true,
+        "errors": [],
+        "signals": [
+          "character",
+          "level",
+          "quests",
+          "combat"
+        ],
+        "reactiveEvents": [
+          "PLAYER_LEVEL_UP",
+          "QUEST_ACCEPTED",
+          "QUEST_LOG_UPDATE",
+          "QUEST_WATCH_UPDATE",
+          "QUEST_REMOVED",
+          "QUEST_TURNED_IN",
+          "NAME_PLATE_UNIT_ADDED",
+          "NAME_PLATE_UNIT_REMOVED",
+          "PLAYER_REGEN_ENABLED",
+          "CVAR_UPDATE",
+          "PLAYER_LOGOUT"
+        ],
+        "scenarios": 3,
+        "testFile": "tests/auranpc.test.ts",
+        "acceptanceTests": "PASSED"
+      }
+    },
+    {
+      "name": "PACKAGING",
+      "at": "2026-11-16T14:01:10.756Z",
+      "ok": true,
+      "zip": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\releases\\AURANPC-2.0.0-candidate.zip"
+    },
+    {
+      "name": "REVIEW_AND_HANDOFF",
+      "at": "2026-11-16T14:01:10.757Z",
+      "ok": true,
+      "status": "STATIC_PASSED",
+      "clientVerified": false
+    }
+  ],
+  "status": "STATIC_PASSED",
+  "addon": "AURANPC",
+  "result": {
+    "out": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\releases\\AURANPC-2.0.0-candidate.zip",
+    "files": 15,
+    "bytes": 190489,
+    "status": "STATIC_PASSED",
+    "addon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\addons\\AURANPC",
+    "destination": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\dist\\AURANPC",
+    "marketingIcon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\releases\\AURANPC-icon.png",
+    "productQuality": {
+      "ok": true,
+      "errors": [],
+      "signals": [
+        "character",
+        "level",
+        "quests",
+        "combat"
+      ],
+      "reactiveEvents": [
+        "PLAYER_LEVEL_UP",
+        "QUEST_ACCEPTED",
+        "QUEST_LOG_UPDATE",
+        "QUEST_WATCH_UPDATE",
+        "QUEST_REMOVED",
+        "QUEST_TURNED_IN",
+        "NAME_PLATE_UNIT_ADDED",
+        "NAME_PLATE_UNIT_REMOVED",
+        "PLAYER_REGEN_ENABLED",
+        "CVAR_UPDATE",
+        "PLAYER_LOGOUT"
+      ],
+      "scenarios": 3,
+      "testFile": "tests/auranpc.test.ts",
+      "acceptanceTests": "PASSED"
+    }
+  },
+  "provider": null,
+  "finishedAt": "2026-11-16T14:01:10.764Z"
+}

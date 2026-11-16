@@ -1,0 +1,61 @@
+{
+  "status": "STATIC_PASSED",
+  "mockStatus": "MOCK_PASSED",
+  "clientVerified": false,
+  "clientTests": "NOT_RUN",
+  "version": "2.0.0",
+  "tests": {
+    "passed": 88,
+    "count": 88
+  },
+  "logs": [
+    {
+      "label": "prepare",
+      "exit": 0
+    },
+    {
+      "label": "node-tests",
+      "exit": 0
+    },
+    {
+      "label": "factory-evals",
+      "exit": 0
+    },
+    {
+      "label": "doctor",
+      "exit": 0
+    },
+    {
+      "label": "example",
+      "exit": 0
+    },
+    {
+      "label": "prepare",
+      "exit": 0
+    },
+    {
+      "label": "final-package-tests",
+      "exit": 0
+    },
+    {
+      "label": "preview-settings",
+      "exit": 0
+    },
+    {
+      "label": "preview-highlight",
+      "exit": 0
+    },
+    {
+      "label": "preview-complete",
+      "exit": 0
+    }
+  ],
+  "zip": "AURANPC-2.0.0-candidate.zip",
+  "zipBytes": 190489,
+  "sha256": "0aaad47a821b5cf512001310f4e27b09aba37bb48a8ffdacc1bdd4befa89b46a",
+  "interface": 16001,
+  "installedExecutable": "1.60.1.70938",
+  "visuals": "OWN_2D_NAMEPLATE_OVERLAY",
+  "sharedSideEffects": "NONE",
+  "crc32": "PASSED"
+}

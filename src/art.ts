@@ -8,6 +8,7 @@ const TABLE=crcTable();
 function crc(bytes){let c=0xffffffff;for(const b of bytes)c=TABLE[(c^b)&255]^(c>>>8);return(c^0xffffffff)>>>0;}
 function pngChunk(type,data){const name=Buffer.from(type);const block=Buffer.alloc(8+data.length+4);block.writeUInt32BE(data.length,0);name.copy(block,4);data.copy(block,8);block.writeUInt32BE(crc(Buffer.concat([name,data])),8+data.length);return block;}
 function drawArt(name,size){
+ if(name==='AURANPC')return pixelAuraNPC(size);
  if(name==='AllianceDungeonTrail')return pixelDungeonTrail(size);
  const seed=crypto.createHash('sha256').update(name).digest();
  const accent=[76+seed[0]%75,128+seed[1]%75,175+seed[2]%70];
@@ -32,6 +33,25 @@ function drawArt(name,size){
   const idx=(y*size+x)*4; pixels[idx]=Math.max(0,Math.min(255,rgb[0]));pixels[idx+1]=Math.max(0,Math.min(255,rgb[1]));pixels[idx+2]=Math.max(0,Math.min(255,rgb[2]));pixels[idx+3]=255;
  }
  return pixels;
+}
+// Original 32px NPC portrait, warning badge and yellow focus brackets.
+function pixelAuraNPC(size){
+ const out=Buffer.alloc(size*size*4);
+ for(let y=0;y<size;y++)for(let x=0;x<size;x++){
+  const u=Math.floor(x*32/size),v=Math.floor(y*32/size);
+  let c=[9,17,26];
+  if(u>3&&u<28&&v>3&&v<29)c=[20,32,39];
+  const bracket=(u===3||u===4||u===27||u===28)&&(v>=6&&v<=26)||(v===5||v===6||v===26||v===27)&&(u>=3&&u<=9||u>=23&&u<=28);
+  if(bracket)c=[255,214,18];
+  if(u>=12&&u<=19&&v>=10&&v<=17)c=[232,188,131];
+  if(u>=11&&u<=20&&v>=9&&v<=11)c=[94,63,36];
+  if(u>=10&&u<=21&&v>=19&&v<=25)c=[61,141,177];
+  if((u===14||u===18)&&v===14)c=[17,26,30];
+  if(u>=23&&u<=25&&v>=8&&v<=16)c=[255,240,105];
+  if(u>=23&&u<=25&&v>=18&&v<=20)c=[255,240,105];
+  const i=(y*size+x)*4;out[i]=c[0];out[i+1]=c[1];out[i+2]=c[2];out[i+3]=255;
+ }
+ return out;
 }
 // Original code-native pixel identity: draw at 32 px, nearest-neighbor scale.
 function pixelDungeonTrail(size){

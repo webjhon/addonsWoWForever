@@ -1,0 +1,76 @@
+{
+  "installedExecutable": "1.60.1.70938",
+  "interface": 16001,
+  "clientTests": "NOT_RUN",
+  "sourceCommit": "bebcb6bf309cf41b41bd74f8ca651e6a105b2676",
+  "sourceBranch": "Gethe/wow-ui-source forever",
+  "capabilities": [
+    {
+      "symbols": [
+        "C_NamePlate.GetNamePlateForUnit",
+        "C_NamePlate.GetNamePlates"
+      ],
+      "file": "NamePlateDocumentation.lua",
+      "evidence": "versioned public documentation; includeForbidden defaults false",
+      "runtime": "UNVERIFIED",
+      "limitations": "Only accessible public frames. Never request forbidden frames."
+    },
+    {
+      "symbols": [
+        "C_QuestLog.GetInfo",
+        "C_QuestLog.GetQuestObjectives",
+        "C_QuestLog.IsComplete",
+        "C_QuestLog.IsFailed",
+        "QUEST_ACCEPTED"
+      ],
+      "file": "QuestLogDocumentation.lua",
+      "evidence": "quest objectives type/text/finished; QUEST_ACCEPTED payload ONE questId",
+      "runtime": "UNVERIFIED"
+    },
+    {
+      "symbols": [
+        "C_TooltipInfo.GetUnit",
+        "Enum.TooltipDataLineType.QuestTitle"
+      ],
+      "file": "TooltipInfoDocumentation.lua / TooltipInfoSharedDocumentation.lua",
+      "evidence": "GetUnit returns TooltipData; QuestTitle enum17",
+      "runtime": "UNVERIFIED",
+      "limitations": "Exact unique localized quest title match only; no invented questID field; dynamic leftText population in current client remains unverified."
+    },
+    {
+      "symbols": [
+        "UnitGUID",
+        "UnitName",
+        "UnitIsDeadOrGhost",
+        "UnitLevel",
+        "UnitFactionGroup"
+      ],
+      "file": "UnitDocumentation.lua",
+      "evidence": "public signatures; all returned values gated before comparison",
+      "runtime": "UNVERIFIED"
+    },
+    {
+      "symbols": [
+        "Frame.IsForbidden",
+        "Frame.SetPoint",
+        "CreateAnimationGroup",
+        "Alpha.SetFromAlpha",
+        "Alpha.SetToAlpha",
+        "C_CVar.GetCVar",
+        "C_CVar.SetCVar",
+        "C_Timer.NewTicker",
+        "C_Timer.After",
+        "PlaySound"
+      ],
+      "evidence": "Existing factory Mainline-family references; ForeverAuras 1.4.3 confirms nameplate anchoring/event architecture only. Remaining runtime behavior explicitly unverified.",
+      "runtime": "UNVERIFIED"
+    }
+  ],
+  "decisions": [
+    "No 3D world projection API claimed",
+    "No native quest circles or boss flag dependency",
+    "Own yellow frame border and pulse animations; automatic quest-state reconciliation",
+    "No group writes or protected gameplay actions",
+    "Forbidden nameplates are unavailable, never bypassed"
+  ]
+}
