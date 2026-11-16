@@ -33,7 +33,7 @@ function methods:GetWidth() return self.width end
 function methods:GetHeight() return self.height end
 function methods:SetPoint(...) table.insert(self.points,{...}) end
 function methods:ClearAllPoints() self.points={} end
-function methods:GetPoint() return "CENTER",UIParent,"CENTER",0,0 end
+function methods:GetPoint() local p=self.points[1];if p and #p==5 then return table.unpack(p)end;return "CENTER",UIParent,"CENTER",0,0 end
 function methods:SetAllPoints() end
 function methods:SetClampedToScreen() end
 function methods:SetMovable() end
@@ -41,9 +41,9 @@ function methods:EnableMouse() end
 function methods:RegisterForDrag() end
 function methods:SetScript(k,v) self.scripts[k]=v end
 function methods:RegisterEvent(e) self[e]=true end
-function methods:StartMoving() end
-function methods:StopMovingOrSizing() end
-function methods:SetFrameStrata() end
+function methods:StartMoving() self.moving=true end
+function methods:StopMovingOrSizing() self.moving=false end
+function methods:SetFrameStrata(value) self.strata=value end
 function methods:Show() local changed=not self.shown;self.shown=true;if changed and self.scripts.OnShow then self.scripts.OnShow(self) end end
 function methods:Hide() self.shown=false end
 function methods:SetScale(s) self.scale=s end

@@ -1,16 +1,16 @@
 {
-  "startedAt": "2026-11-16T13:01:59.834Z",
+  "startedAt": "2026-11-16T17:47:28.964Z",
   "stages": [
     {
       "name": "CONTEXT_AND_MEMORY",
-      "at": "2026-11-16T13:01:59.839Z",
+      "at": "2026-11-16T17:47:28.971Z",
       "ok": true,
       "build": null,
-      "memories": 2
+      "memories": 4
     },
     {
       "name": "RAG_AND_RESEARCH",
-      "at": "2026-11-16T13:01:59.848Z",
+      "at": "2026-11-16T17:47:28.985Z",
       "ok": true,
       "citations": [
         "forever-api-index",
@@ -27,13 +27,13 @@
     },
     {
       "name": "SCOPE_AND_GUARDRAILS",
-      "at": "2026-11-16T13:01:59.852Z",
+      "at": "2026-11-16T17:47:29.002Z",
       "ok": true,
       "reason": ""
     },
     {
       "name": "CAPABILITY_REVIEW",
-      "at": "2026-11-16T13:01:59.853Z",
+      "at": "2026-11-16T17:47:29.003Z",
       "ok": true,
       "unknownApis": [
         "UnitFactionGroup",
@@ -45,7 +45,7 @@
     },
     {
       "name": "PRODUCT_QUALITY_GATE",
-      "at": "2026-11-16T13:02:00.122Z",
+      "at": "2026-11-16T17:47:29.591Z",
       "ok": true,
       "proof": {
         "ok": true,
@@ -65,13 +65,13 @@
     },
     {
       "name": "PACKAGING",
-      "at": "2026-11-16T13:02:00.122Z",
+      "at": "2026-11-16T17:47:29.594Z",
       "ok": true,
-      "zip": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-product\\releases\\AllianceLevelPulse-0.1.0-candidate.zip"
+      "zip": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\releases\\AllianceLevelPulse-0.1.0-candidate.zip"
     },
     {
       "name": "REVIEW_AND_HANDOFF",
-      "at": "2026-11-16T13:02:00.122Z",
+      "at": "2026-11-16T17:47:29.594Z",
       "ok": true,
       "status": "STATIC_PASSED",
       "clientVerified": false
@@ -80,13 +80,13 @@
   "status": "STATIC_PASSED",
   "addon": "AllianceLevelPulse",
   "result": {
-    "out": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-product\\releases\\AllianceLevelPulse-0.1.0-candidate.zip",
+    "out": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\releases\\AllianceLevelPulse-0.1.0-candidate.zip",
     "files": 8,
-    "bytes": 186328,
+    "bytes": 186329,
     "status": "STATIC_PASSED",
-    "addon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-product\\addons\\AllianceLevelPulse",
-    "destination": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-product\\dist\\AllianceLevelPulse",
-    "marketingIcon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-product\\releases\\AllianceLevelPulse-icon.png",
+    "addon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\addons\\AllianceLevelPulse",
+    "destination": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\dist\\AllianceLevelPulse",
+    "marketingIcon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\releases\\AllianceLevelPulse-icon.png",
     "productQuality": {
       "ok": true,
       "errors": [],
@@ -104,5 +104,5 @@
     }
   },
   "provider": null,
-  "finishedAt": "2026-11-16T13:02:00.125Z"
+  "finishedAt": "2026-11-16T17:47:29.600Z"
 }

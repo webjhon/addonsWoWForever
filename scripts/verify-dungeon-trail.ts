@@ -13,7 +13,7 @@ function run(args,label){
 }
 run(['scripts/prepare-dungeon-trail.mjs'],'prepare');
 const initial=await executeJourney({blueprintPath:path.join(dir,'AllianceDungeonTrail.blueprint.json')});assert.equal(initial.status,'STATIC_PASSED',initial.error);
-fs.writeFileSync(path.join(ROOT,'releases/AllianceDungeonTrail-3.0.0-candidate.sha256'),sha(fs.readFileSync(initial.result.out))+'  AllianceDungeonTrail-3.0.0-candidate.zip\n');
+fs.writeFileSync(path.join(ROOT,'releases/AllianceDungeonTrail-3.1.0-candidate.sha256'),sha(fs.readFileSync(initial.result.out))+'  AllianceDungeonTrail-3.1.0-candidate.zip\n');
 const tests=run(['--experimental-strip-types','--test','--test-reporter=tap',...fs.readdirSync(path.join(ROOT,'tests')).filter(f=>f.endsWith('.test.ts')).map(f=>'tests/'+f)],'node-tests');
 run(['--experimental-strip-types','evals/run-evals.ts'],'factory-evals');
 run(['--experimental-strip-types','scripts/factory.ts','doctor'],'doctor');
@@ -21,19 +21,19 @@ run(['--experimental-strip-types','orchestrator.ts','--blueprint','evals/fixture
 const count=Number(tests.match(/# tests (\d+)/)?.[1]),passed=Number(tests.match(/# pass (\d+)/)?.[1]);
 assert.ok(count>=58&&passed===count);
 const at=new Date().toISOString();
-const report=`# AllianceDungeonTrail 3.0.0 — relatório executado
+const report=`# AllianceDungeonTrail 3.1.0 — relatório executado
 
-Execução: ${at}. Node ${process.version}. **${passed}/${count} testes aprovados**, incluindo36 cenários específicos. STATIC_PASSED/MOCK_PASSED. **Nenhum teste dentro do WoW realizado.**
+Execução: ${at}. Node ${process.version}. **${passed}/${count} testes aprovados**, incluindo40 cenários específicos. STATIC_PASSED/MOCK_PASSED. **PARTIAL_CLIENT_TESTED**: inspeção real da interface e navegação externa; consulte LIVE-TEST.md.
 
 Interface reconstruída: hub com seletor das27 dungeons, overview de acesso/encontros/quests, configurações persistentes e tracker separado. Plano escolhido é preservado; instância atual prevalece temporariamente. A seta é desenhada e rotacionada por código original e arte própria, com distância em linha reta e chegada que não conclui quest. Ticker limitado atualiza só geometria, sem consultar diário.
 
-Cenários executados: seleção pela interface sem abandonar quests; entrada/saída e retomada de plano; configurações/GUID/reload; overview das27; setas sem C_SuperTrack/GetNextWaypoint; geometria cardinal e giro; movimento/chegada; perda de mapa; boss observado por evento; cancelamento do ticker; progressão autoritativa anterior, combate, morte, abandono e migração.
+Cenários automatizados (mock): seleção pela interface sem abandonar quests; entrada/saída e retomada de plano; configurações/GUID/reload; overview das27; setas sem C_SuperTrack/GetNextWaypoint; geometria cardinal e giro; movimento/chegada; perda de mapa; boss observado por evento; cancelamento do ticker; progressão autoritativa anterior, combate, morte, abandono e migração.
 
 Dados próprios embarcados: coordenadas factuais MIT versionadas para48 coletas,55 entregas,16 entradas; áreas de objetivos selecionadas por tipo/máscara; catálogo de encontros da tabela DB2 da build70938. Referências comunitárias continuam UNVERIFIED em runtime. Ponto de entrada nunca vira coordenada de boss. **Não há pathfinding nem cobertura de posições internas garantida.**
 
 Fengari executa Lua5.3 em mock; luaparse valida sintaxe5.1. Evals, doctor, exemplo e jornada determinística executados. Gates/autoria preservados. Verificação de conteúdo do ZIP, CRC32, TOC, branding, ícone e Arrow.tga. Prévias de hub/configurações/quests/seta são cenas de mock, não capturas do jogo.
 
-Pendente para aprovação final: validar no Forever70938 as APIs de posição/rumo, direção visual da seta, fontes/escala/scroll, eventos reais de encontros, coordenadas comunitárias e utilidade em sessão de leveling. Quatro dungeons continuam sem quests curadas; overview não é mapa geométrico nem lista garantida de bosses ativos da fase. Nenhum resultado foi promovido a CLIENT_VERIFIED.
+Executado no Forever70938: caminhada curta com atualização de distância/direção, troca de dungeon, arraste, posições após reload, pausa persistente, fechar/recuperar overlays, configurações/rolagem e correção de cliques sobre o tracker nativo. Pendente: progressão real de quests, combate, encontros, entrada/saída de instâncias, cobertura das rotas e utilidade prolongada de leveling. Quatro dungeons continuam sem quests curadas; overview não é mapa geométrico nem lista garantida de bosses ativos da fase. Nenhum resultado foi promovido a CLIENT_VERIFIED.
 `;
 for(const p of [path.join(ROOT,'addon-src/AllianceDungeonTrail/TEST-REPORT.md'),path.join(dir,'TEST-REPORT.md')])fs.writeFileSync(p,report);
 run(['scripts/prepare-dungeon-trail.mjs'],'prepare-final');
@@ -57,9 +57,10 @@ const toc=entries.get('AllianceDungeonTrail/AllianceDungeonTrail.toc').toString(
 for(const [name,source] of [['TonhoBranding.lua','design-system/branding/TonhoBranding.lua'],['assets/TonhoHunter.tga','design-system/branding/TonhoHunter.tga']])assert.deepEqual(entries.get('AllianceDungeonTrail/'+name),fs.readFileSync(path.join(ROOT,source)));
 const icon=entries.get('AllianceDungeonTrail/assets/Icon.tga');assert.equal(icon.readUInt16LE(12),512);assert.equal(icon.readUInt16LE(14),512);assert.equal(icon[16],32);assert.equal(icon.length,18+512*512*4);
 const metadata=JSON.parse(entries.get('AllianceDungeonTrail/FACTORY-VALIDATION.json').toString());assert.equal(metadata.clientVerified,false);assert.equal(metadata.interface,16001);assert.equal(metadata.productQuality.acceptanceTests,'PASSED');
-const verification={at,addon:b.addonName,version:b.version,status:'STATIC_PASSED',mockStatus:'MOCK_PASSED',clientVerified:false,tests:{count,passed},logs,files:entries.size,zipBytes:zip.length,sha256:sha(zip),zip:path.basename(journey.result.out),verifiedBlueprintFiles:b.files.map(f=>f.filename),crc32:'ALL_PASSED',branding:'INJECTED_AND_VERIFIED',tga:'512x512x32 / original 32px pixel art',installedExecutableVersion:'1.60.1.70938',liveClientTests:'NOT_RUN'};
+const verification={at,addon:b.addonName,version:b.version,status:'STATIC_PASSED',mockStatus:'MOCK_PASSED',clientVerified:false,tests:{count,passed},logs,files:entries.size,zipBytes:zip.length,sha256:sha(zip),zip:path.basename(journey.result.out),verifiedBlueprintFiles:b.files.map(f=>f.filename),crc32:'ALL_PASSED',branding:'INJECTED_AND_VERIFIED',tga:'512x512x32 / original 32px pixel art',installedExecutableVersion:'1.60.1.70938',liveClientTests:'PARTIAL_CLIENT_TESTED',liveReport:'LIVE-TEST.md'};
 writeJSON(path.join(dir,'package-verification.json'),verification);
-fs.writeFileSync(path.join(ROOT,'releases/AllianceDungeonTrail-3.0.0-candidate.sha256'),verification.sha256+'  '+verification.zip+'\n');
+fs.writeFileSync(path.join(ROOT,'releases/AllianceDungeonTrail-3.1.0-candidate.sha256'),verification.sha256+'  '+verification.zip+'\n');
+run(['--experimental-strip-types','--test','tests/dungeon-package.test.ts'],'final-package-tests');
 for(const state of ['overview','settings','navigation','quests'])run(['scripts/preview-dungeon-trail.mjs',state],'preview-'+state);
 for(const ext of ['png','svg'])fs.copyFileSync(path.join(dir,'UI-overview.'+ext),path.join(dir,'UI-preview.'+ext));
 console.log(JSON.stringify(verification,null,2));

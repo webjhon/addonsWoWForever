@@ -10,7 +10,7 @@ import {run} from './dungeon-trail/harness.ts';
 const require=createRequire(import.meta.url),parser=require('luaparse');
 const blueprint=()=>JSON.parse(fs.readFileSync(path.join(ROOT,'research/AllianceDungeonTrail/AllianceDungeonTrail.blueprint.json'),'utf8'));
 test('Rebuilt product satisfies unchanged factory gates, exact authorship, branding and Lua 5.1',()=>{
- const b=blueprint();assert.deepEqual(validateBlueprint(b).errors,[]);assert.equal(b.version,'3.0.0');
+ const b=blueprint();assert.deepEqual(validateBlueprint(b).errors,[]);assert.equal(b.version,'3.1.0');
  assert.equal(verifyProductContract(b).ok,true);
  for(const f of b.files){if(f.filename.endsWith('.lua'))parser.parse(f.content,{luaVersion:'5.1'});assert.equal(fs.readFileSync(path.join(ROOT,'addon-src/AllianceDungeonTrail',f.filename),'utf8').replaceAll('\r\n','\n'),f.content);}
  const bad=structuredClone(b);bad.files.find(f=>f.filename.endsWith('.toc')).content=bad.files.find(f=>f.filename.endsWith('.toc')).content.replace('Tonho Contrabando','Alliance Addon Factory');
@@ -232,4 +232,36 @@ test('Own arrow never keeps a direction from secret coordinates or a different p
  DT.updateArrow();assert(not DT.arrow.texture:IsShown());assert(DT.arrow.status.text:find('continente'))
  C_Map.GetWorldPosFromMapPos=function()return 0,{GetXY=function()return {secret=true},1 end}end
  DT.updateArrow();assert(not DT.arrow.texture:IsShown());assert(DT.arrow.status.text:find('indisponível'))
+`));
+test('Live UI regression: arrow drag saves position, lock/combat block movement, character layout is isolated',()=>run(`
+ DT.guide('pickup',DT.findDungeon('deadmines'),{id=2040})
+ DT.arrow.scripts.OnDragStart();assert(DT.arrow.moving)
+ DT.arrow:ClearAllPoints();DT.arrow:SetPoint('CENTER',UIParent,'CENTER',-250,120);DT.arrow.scripts.OnDragStop()
+ assert(not DT.arrow.moving and DT.state().layout.arrow.x==-250)
+ DT.init();DT.reconcile();local _,_,_,x,y=DT.arrow:GetPoint();assert(x==-250 and y==120 and DT.navGoal)
+ DT.option('lockArrow',true);DT.arrow.scripts.OnDragStart();assert(not DT.arrow.moving)
+ DT.option('lockArrow',false);TEST.combat=true;DT.arrow.scripts.OnDragStart();assert(not DT.arrow.moving);TEST.combat=false
+ accept(2040);DT.guide('entrance',DT.findDungeon('deadmines'));clickTab('QUESTS');clickTab('ACOMPANHAR OBJETIVO');assert(not DT.state().navChoice)
+ DT.init();DT.reconcile();assert(not DT.navOverride)
+ TEST.guid='Player-new-layout';DT.init();DT.reconcile();local _,_,_,nx,ny=DT.arrow:GetPoint();assert(nx==0 and ny==210)
+`));
+test('Live UI regression: pause removes all guidance and ticker, survives reload, selection resumes without quest loss',()=>run(`
+ accept(2040);DT.guide('entrance',DT.findDungeon('deadmines'));local t=TEST.tickers[#TEST.tickers]
+ clickTab('PAUSAR GUIA');assert(DT.state().paused and not DT.state().plan and not DT.navGoal)
+ assert(not DT.arrow:IsShown() and not DT.tracker:IsShown() and t.cancelled);assert(DT.current().quests[2040])
+ fire('QUEST_LOG_UPDATE');DT.init();DT.reconcile();assert(DT.state().paused and not DT.arrow:IsShown())
+ DT.selectPlan('wailing');assert(not DT.state().paused and DT.action.dungeon.key=='wailing' and DT.current().quests[2040])
+`));
+test('Live UI regression: arrow close affects only arrow; tracker close and main toggle remain recoverable',()=>run(`
+ DT.guide('entrance',DT.findDungeon('deadmines'));DT.arrow.close.scripts.OnClick();assert(not DT.state().options.arrow and not DT.arrow:IsShown())
+ assert(not DT.state().paused and DT.tracker:IsShown());clickTab('X');assert(not DT.tracker:IsShown())
+ DT.command('');assert(not DT.frame:IsShown());DT.command('');assert(DT.frame:IsShown() and DT.tracker:IsShown())
+ DT.command('ocultar');assert(DT.state().paused and not DT.frame:IsShown());DT.command('retomar');assert(not DT.state().paused)
+`));
+test('Live UI regression: main panel is above gameplay overlays, no empty floating navigation, reset all positions',()=>run(`
+ assert(DT.frame.strata=='FULLSCREEN_DIALOG' and DT.arrow.strata=='DIALOG' and DT.tracker.strata=='DIALOG')
+ accept(2040);enter('deadmines');assert(not DT.navGoal and not DT.arrow:IsShown())
+ DT.tracker.scripts.OnDragStart();assert(DT.tracker.moving);DT.tracker:ClearAllPoints();DT.tracker:SetPoint('CENTER',UIParent,'CENTER',100,-100)
+ DT.tracker.scripts.OnDragStop();assert(DT.state().layout.tracker.x==100)
+ DT.resetPositions();local p,_,_,x=DT.tracker:GetPoint();assert(p=='RIGHT' and x==-24 and next(DT.state().layout)==nil)
 `));

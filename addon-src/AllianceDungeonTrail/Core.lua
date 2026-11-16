@@ -1,5 +1,5 @@
 local _, A = ...
-A.version="3.0.0"
+A.version="3.1.0"
 local char, snapshot
 local scheduled=false
 local function completed(id)

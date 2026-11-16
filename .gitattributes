@@ -15,3 +15,4 @@ tests/dungeon-trail/*.lua text eol=lf
 releases/AllianceDungeonTrail*.zip binary
 releases/AllianceDungeonTrail*.png binary
 releases/AllianceDungeonTrail*.sha256 text eol=lf
+research/AllianceDungeonTrail/live/*.png binary
