@@ -31,3 +31,7 @@ You are an engineering agent operating a **closed, evidence-based journey**. Thi
 Read context and project memory -> retrieve API/gameplay evidence -> verify client capability -> create blueprint -> implement -> guardrails -> evals -> review -> package candidate -> require client verification before publishing as tested.
 
 Local commands: `npm run init`, `npm test`, `npm run doctor`, `npm run search -- "API"`, `npm run example`, `npm run mcp`.
+
+## Learned live-client skills
+
+Before implementing or revising an addon, route through knowledge/lessons/live-client.json using npm run skills:context -- "feature description". Apply verify-wow-client for acceptance planning; build-wow-ui for panels/navigation; highlight-quest-npcs for NPC/nameplate work. Read the selected SKILL.md and the linked session evidence. Selection is engineering context, not proof of execution or runtime certification. Reproduce applicable failures and turn them into acceptance scenarios; document unavailable client tests rather than simulating a pass.

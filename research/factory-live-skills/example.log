@@ -1,0 +1,136 @@
+
+> wow-addon-ai-factory@0.1.0 example
+> node --experimental-strip-types orchestrator.ts --blueprint evals/fixtures/alliance-level-pulse.blueprint.json
+
+{
+  "startedAt": "2026-11-16T18:03:12.672Z",
+  "stages": [
+    {
+      "name": "CONTEXT_AND_MEMORY",
+      "at": "2026-11-16T18:03:12.680Z",
+      "ok": true,
+      "build": null,
+      "memories": 1
+    },
+    {
+      "name": "RAG_AND_RESEARCH",
+      "at": "2026-11-16T18:03:12.690Z",
+      "ok": true,
+      "citations": [
+        "forever-api-index",
+        "factory-wowhead-knowledge-map",
+        "blizzard-overview",
+        "forever-live-client-lessons-2026-11-16",
+        "forever-api-index",
+        "whf:source:quest-456",
+        "whf:source:npc-820",
+        "whf:source:npc-234",
+        "whf:source:npc-265003",
+        "whf:source:npc-246016"
+      ]
+    },
+    {
+      "name": "LEARNED_CLIENT_SKILLS",
+      "at": "2026-11-16T18:03:12.701Z",
+      "ok": true,
+      "selected": [
+        {
+          "id": "verify-wow-client",
+          "path": ".agents/skills/verify-wow-client/SKILL.md",
+          "evidence": [
+            "research/AURANPC/LIVE-SESSION-2026-11-16.md",
+            "research/AllianceDungeonTrail/LIVE-TEST.md"
+          ]
+        },
+        {
+          "id": "build-wow-ui",
+          "path": ".agents/skills/build-wow-ui/SKILL.md",
+          "evidence": [
+            "research/AllianceDungeonTrail/LIVE-TEST.md"
+          ]
+        }
+      ],
+      "status": "PARTIAL_CLIENT_TESTED",
+      "clientVerified": false
+    },
+    {
+      "name": "SCOPE_AND_GUARDRAILS",
+      "at": "2026-11-16T18:03:12.704Z",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "name": "CAPABILITY_REVIEW",
+      "at": "2026-11-16T18:03:12.705Z",
+      "ok": true,
+      "unknownApis": [
+        "UnitFactionGroup",
+        "UnitLevel",
+        "UnitXP",
+        "UnitXPMax"
+      ],
+      "clientVerificationRequired": true
+    },
+    {
+      "name": "PRODUCT_QUALITY_GATE",
+      "at": "2026-11-16T18:03:12.964Z",
+      "ok": true,
+      "proof": {
+        "ok": true,
+        "errors": [],
+        "signals": [
+          "level",
+          "xp"
+        ],
+        "reactiveEvents": [
+          "PLAYER_XP_UPDATE",
+          "PLAYER_LEVEL_UP"
+        ],
+        "scenarios": 3,
+        "testFile": "tests/alliance-level-pulse.test.ts",
+        "acceptanceTests": "PASSED"
+      }
+    },
+    {
+      "name": "PACKAGING",
+      "at": "2026-11-16T18:03:12.964Z",
+      "ok": true,
+      "zip": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\live-client-skills\\releases\\AllianceLevelPulse-0.1.0-candidate.zip"
+    },
+    {
+      "name": "REVIEW_AND_HANDOFF",
+      "at": "2026-11-16T18:03:12.965Z",
+      "ok": true,
+      "status": "STATIC_PASSED",
+      "clientVerified": false
+    }
+  ],
+  "status": "STATIC_PASSED",
+  "addon": "AllianceLevelPulse",
+  "result": {
+    "out": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\live-client-skills\\releases\\AllianceLevelPulse-0.1.0-candidate.zip",
+    "files": 8,
+    "bytes": 186329,
+    "status": "STATIC_PASSED",
+    "addon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\live-client-skills\\addons\\AllianceLevelPulse",
+    "destination": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\live-client-skills\\dist\\AllianceLevelPulse",
+    "marketingIcon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\live-client-skills\\releases\\AllianceLevelPulse-icon.png",
+    "productQuality": {
+      "ok": true,
+      "errors": [],
+      "signals": [
+        "level",
+        "xp"
+      ],
+      "reactiveEvents": [
+        "PLAYER_XP_UPDATE",
+        "PLAYER_LEVEL_UP"
+      ],
+      "scenarios": 3,
+      "testFile": "tests/alliance-level-pulse.test.ts",
+      "acceptanceTests": "PASSED"
+    }
+  },
+  "provider": null,
+  "finishedAt": "2026-11-16T18:03:12.967Z"
+}

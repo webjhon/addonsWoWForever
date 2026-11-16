@@ -1,3 +1,4 @@
+import {learnedSkillContext} from '../src/learned-skills.ts';
 import {ROOT,readJSON} from '../src/core.ts';
 import {openDb,queryAlliance,capability,getMemories} from '../src/db.ts';
 import {searchKnowledge} from '../src/search.ts';
@@ -6,7 +7,8 @@ import {knowledgeCoverage,entityContext} from '../knowledge/ingest/wowhead-forev
 const [cmd,...rest]=process.argv.slice(2);
 async function main(){
  const db=openDb();
- if(cmd==='doctor'){
+ if(cmd==='skills'){console.log(JSON.stringify(learnedSkillContext(rest.join(' ')),null,2));
+ }else if(cmd==='doctor'){
   const result={node:process.version,interface:readJSON(ROOT+'/config/wow-version.json').interface,docs:db.prepare('SELECT COUNT(*) n FROM docs').get().n,entities:db.prepare('SELECT COUNT(*) n FROM entities').get().n,memories:db.prepare('SELECT COUNT(*) n FROM memories').get().n,apiKeyPresent:!!process.env.OPENAI_API_KEY};console.log(JSON.stringify(result,null,2));
  }else if(cmd==='search'){
   let level=1,domain=null;const words=[];
