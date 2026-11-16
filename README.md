@@ -25,6 +25,14 @@ Dados Map70938 em [knowledge/alliance/forever-dungeon-maps.json](knowledge/allia
 
 `npm run dungeon:verify` executa suíte completa, evals, exemplo, empacotamento com gates e verificação integral do ZIP. Prévia de três estados marcada como mock em `research/AllianceDungeonTrail/UI-*.png`.
 
+## AURANPC candidata
+
+Gerencia automaticamente o círculo nativo de quest do Forever (`ShowQuestUnitCircles`) para Alliance 1–60. Não cria aura 3D personalizada nem promete marcar todo NPC de qualquer quest. O motor do jogo seleciona e acompanha as unidades; aparência, movimento e dungeons ainda precisam de teste visual real.
+
+[ZIP](releases/AURANPC-1.0.0-candidate.zip) · [Pasta instalável](addons/AURANPC) · [Instalação e limites](addons/AURANPC/INSTALL.md) · [Relatório](research/AURANPC/TEST-REPORT.md). `/auranpc` abre status; uso normal dispensa painel. Créditos Tonho Contrabando e identidade pixel art.
+
+`npm run auranpc:verify` executa preparação, testes, evals, empacotamento com gates, integridade do ZIP e prévias do painel marcadas como mock.
+
 ## Comece em 5 minutos
 
 Requisitos: **Node.js 22.16+ (recomendado Node 24 LTS)**. A instalação básica não exige Python, serviços externos, credenciais, IDE nem dependências npm de runtime. SQLite é fornecido pelo `node:sqlite` (em Node 22 pode exibir um aviso de API experimental).

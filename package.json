@@ -29,7 +29,10 @@
     "mcp": "node --experimental-strip-types mcp/server.ts",
     "doctor": "node --experimental-strip-types scripts/factory.ts doctor",
     "sources:check": "node --experimental-strip-types tools/check-source-updates.ts",
-    "new": "node --experimental-strip-types tools/new-addon.ts"
+    "new": "node --experimental-strip-types tools/new-addon.ts",
+    "auranpc:prepare": "node scripts/prepare-auranpc.mjs",
+    "auranpc:verify": "node --experimental-strip-types scripts/verify-auranpc.ts",
+    "auranpc:preview": "node scripts/preview-auranpc.mjs"
   },
   "dependencies": {
     "ajv": "8.20.0"
