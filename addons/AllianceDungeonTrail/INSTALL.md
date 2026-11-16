@@ -1,34 +1,25 @@
-# Instalação — AllianceDungeonTrail 2.0
+# AllianceDungeonTrail 3.0 — instalação e uso
 
-Descompacte `AllianceDungeonTrail-2.0.0-candidate.zip` e copie a pasta `AllianceDungeonTrail` para `_forever_/Interface/AddOns/`. A pasta deve conter `AllianceDungeonTrail.toc` diretamente. Substitua a pasta antiga inteira para evitar arquivos obsoletos. Reinicie o jogo ou use `/reload`.
+Extraia `AllianceDungeonTrail-3.0.0-candidate.zip` e copie a pasta `AllianceDungeonTrail` para `_forever_/Interface/AddOns/`, substituindo a pasta anterior inteira. O TOC deve ficar diretamente nessa pasta. Reinicie ou use `/reload`.
 
-O tracker abre com a próxima ação. Jogue normalmente: aceite quests na janela do WoW, faça objetivos e entre na dungeon. O addon detecta essas mudanças. Ele não aceita/entrega quests nem movimenta o personagem.
+`/adt` abre o hub. Escolha qualquer uma das27 dungeons na lateral (páginas e filtro por faixa). A seleção passa a ser seu plano; você não precisa abandonar quests de outra dungeon. A instância em que você realmente está sempre prevalece durante a run; ao sair, o plano escolhido é retomado. MODO AUTOMÁTICO volta à recomendação por contexto.
 
-- `/adt`: reabrir o tracker.
-- `–` / `+`: modo compacto/expandido; arraste pelo painel para reposicionar.
-- `SEGUIR QUEST`: assumir explicitamente rastreamento nativo quando outra marcação já está ativa.
-- `/adt navegacao off` / `/adt navegacao on`: preferência de navegação.
-- `/adt resetpos`: centralizar janela.
-- `/adt diagnostico`: build observada, estado e APIs essenciais ausentes.
+- **Visão geral:** acesso, níveis, referências, catálogo de encontros e estados reais das quests. Encontros observados por evento são indicados; a ordem do catálogo não é caminho geométrico nem garantia de fase ativa.
+- **Quests:** coleta, objetivo, entrega e opções de guiar. Esses botões escolhem intenção/destino; nunca confirmam progresso. O diário e eventos continuam sendo autoridade.
+- **Configurações:** seta própria, tracker, avisos, escala, unidades, proximidade de chegada e integração opcional com rastreio do jogo. Preferências por personagem.
+- **Tracker:** orientação atual durante o jogo, separado do hub. OPÇÕES abre configurações.
+- **Seta própria:** o addon escolhe um ponto da base embarcada, calcula rumo/distância pela posição/rotação pública do personagem e desenha sua própria textura. Não requer TomTom, Questie, C_SuperTrack ou GetNextWaypoint. Chegar ao local não completa quest.
 
-Créditos: **Tonho Contrabando**. O Hunter pixel art aparece na primeira abertura por sessão. Ícone original de portal/escadaria.
+Outros comandos: `/adt config`, `/adt auto`, `/adt dungeon deadmines`, `/adt diagnostico`, `/adt navegacao off`, `/adt navegacao on`, `/adt resetpos`.
 
-Migração: confirmações e vínculos manuais da versão1 não provam progresso e são descartados; o diário real reconstrói a jornada. Estado e preferências separados por personagem. Não há botões de marcar objetivo ou registrar run.
+## Cobertura e limites
 
-## O que a candidata cobre
+Catálogo de27 dungeons, quests selecionadas em23. Coordenadas comunitárias versionadas:48 coletas,55 entregas,16 entradas e áreas de objetivos. Referências podem mudar por fase/build. A seta aponta em **linha reta**; não calcula caminho por paredes, transporte ou relevo. Posição indisponível/outro continente/combate interrompem a indicação direcional, com estado explícito.
 
-Alliance1–60; identificação de27 instâncias por IDs Map da build70938, quests selecionadas em23; aceites/objetivos/entrega por ID, ofertas do NPC, instância, avisos de faixa e expedições de XP observadas. Waypoints vêm exclusivamente do cliente, quando disponíveis. Referências comunitárias de NPC/boss/área continuam dependentes da fase atual.
+**Não há posições internas garantidas.** Muitos dados de quests internas registram somente a entrada da instância; esses pontos nunca são apresentados como localização do boss. Dentro, acompanhe objetivos reais e referências de encontros. Visão geral não é mapa topográfico. Shadowfang Keep, Alcaz Prison, Blackmaw Hold e Shaper's Terrace continuam sem guia de quests curado; dados ausentes são mostrados como lacuna.
 
-Shadowfang Keep, Alcaz Prison, Blackmaw Hold e Shaper's Terrace ainda estão bloqueadas por dados de quests. Em mapas compartilhados, combine a ala com o grupo. Estimativas são de segmentos de expedição semelhantes, não contagem comprovada de clears; não garantem níveis futuros. Sem waypoint, a orientação usa o objetivo real e referências textuais.
+Autores/créditos: **Tonho Contrabando**, Hunter pixel art e ícone original. Coordenadas selecionadas da fonte MIT EverythingQuests com atribuição em THIRD-PARTY.md; nenhuma implementação ou texto de guia copiado.
 
-## Validação no jogo pendente — não executada
+## Verificação real pendente
 
-1. Confirmar `/dump GetBuildInfo()` e interface16001; conferir ausência de erro Lua no login e créditos na primeira abertura.
-2. Aceitar uma quest reconhecida; observar mudança sem clicar no addon. Conferir título localizado, objetivos e contadores reais.
-3. Entrar na dungeon, completar objetivos fora de ordem, saquear e entregar. Observar prioridade de outras tarefas internas antes da entrega.
-4. Conferir seta/posição quando o cliente fornecer waypoint; testar perda de waypoint e rastreamento externo preservado. Não esperar pathfinding indoor.
-5. Testar combate, morte, retorno à vida, abandono, `/reload`, logout e outro personagem. Confirmar recuperação sem falsa conclusão.
-6. Inspecionar fontes, pixel art, recorte de texto, escala e arraste em resolução real; conferir erros e taint em sessão prolongada.
-7. Para estimativa, observar ao menos duas expedições comparáveis sem quests; confirmar que morte, entrega, reload e visitas curtas não calibram.
-
-Status de entrega: candidato técnico, **NÃO CLIENT_VERIFIED**. O relatório distingue testes executados de testes pendentes.
+Nenhum teste no WoW foi executado nesta candidata. Antes de aprovar: confirmar GetBuildInfo/interface16001 na build instalada70938; testar direção visual com personagem girando/andando; coleta e entrega com pontos factuais; troca de plano antes/durante/depois de dungeon; scroll/escala/abas em resolução real; objetivos, encontros, combate, morte e reload; ausência de erros/taint. Mock e CI verdes não provam essas condições.

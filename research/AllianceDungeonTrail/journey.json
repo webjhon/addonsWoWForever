@@ -1,39 +1,39 @@
 {
-  "startedAt": "2026-11-16T03:35:01.036Z",
+  "startedAt": "2026-11-16T13:02:00.205Z",
   "stages": [
     {
       "name": "CONTEXT_AND_MEMORY",
-      "at": "2026-11-16T03:35:01.047Z",
+      "at": "2026-11-16T13:02:00.211Z",
       "ok": true,
       "build": null,
-      "memories": 5
+      "memories": 2
     },
     {
       "name": "RAG_AND_RESEARCH",
-      "at": "2026-11-16T03:35:01.052Z",
+      "at": "2026-11-16T13:02:00.214Z",
       "ok": true,
       "citations": [
         "community-api-snapshot",
         "whf:source:world-map",
         "whf:source:world-map",
-        "original-dungeon-trail-research",
-        "original-dungeon-trail-research",
-        "whf:source:world-map",
-        "whf:source:world-map",
         "blizzard-overview",
         "forever-api-index",
-        "blizzard-hunter-druid"
+        "blizzard-hunter-druid",
+        "whf:source:world-map",
+        "whf:source:world-map",
+        "whf:source:quest-95250",
+        "blizzard-dungeons"
       ]
     },
     {
       "name": "SCOPE_AND_GUARDRAILS",
-      "at": "2026-11-16T03:35:01.070Z",
+      "at": "2026-11-16T13:02:00.227Z",
       "ok": true,
       "reason": ""
     },
     {
       "name": "CAPABILITY_REVIEW",
-      "at": "2026-11-16T03:35:01.075Z",
+      "at": "2026-11-16T13:02:00.231Z",
       "ok": true,
       "unknownApis": [
         "C_GossipInfo.GetAvailableQuests",
@@ -55,6 +55,11 @@
         "GetRealZoneText",
         "GetZoneText",
         "C_Timer.After",
+        "C_Timer.NewTicker",
+        "CreateVector2D",
+        "GetPlayerFacing",
+        "C_Map.GetPlayerMapPosition",
+        "C_Map.GetWorldPosFromMapPos",
         "C_QuestLog.GetNumQuestLogEntries",
         "C_QuestLog.GetInfo",
         "C_QuestLog.GetQuestObjectives",
@@ -69,6 +74,7 @@
         "C_SuperTrack.GetSuperTrackedQuestID",
         "C_SuperTrack.IsSuperTrackingAnything",
         "C_SuperTrack.SetSuperTrackedQuestID",
+        "ENCOUNTER_END",
         "PLAYER_LOGIN",
         "PLAYER_ENTERING_WORLD",
         "ZONE_CHANGED_NEW_AREA",
@@ -98,7 +104,7 @@
     },
     {
       "name": "PRODUCT_QUALITY_GATE",
-      "at": "2026-11-16T03:35:03.134Z",
+      "at": "2026-11-16T13:02:02.358Z",
       "ok": true,
       "proof": {
         "ok": true,
@@ -112,6 +118,7 @@
           "combat"
         ],
         "reactiveEvents": [
+          "ENCOUNTER_END",
           "ZONE_CHANGED_NEW_AREA",
           "ZONE_CHANGED",
           "PLAYER_MAP_CHANGED",
@@ -135,20 +142,20 @@
           "GOSSIP_OPTIONS_REFRESHED",
           "GOSSIP_CLOSED"
         ],
-        "scenarios": 3,
+        "scenarios": 4,
         "testFile": "tests/dungeon-trail.test.ts",
         "acceptanceTests": "PASSED"
       }
     },
     {
       "name": "PACKAGING",
-      "at": "2026-11-16T03:35:03.135Z",
+      "at": "2026-11-16T13:02:02.359Z",
       "ok": true,
-      "zip": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-rebuild\\releases\\AllianceDungeonTrail-2.0.0-candidate.zip"
+      "zip": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-product\\releases\\AllianceDungeonTrail-3.0.0-candidate.zip"
     },
     {
       "name": "REVIEW_AND_HANDOFF",
-      "at": "2026-11-16T03:35:03.137Z",
+      "at": "2026-11-16T13:02:02.360Z",
       "ok": true,
       "status": "STATIC_PASSED",
       "clientVerified": false
@@ -157,13 +164,13 @@
   "status": "STATIC_PASSED",
   "addon": "AllianceDungeonTrail",
   "result": {
-    "out": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-rebuild\\releases\\AllianceDungeonTrail-2.0.0-candidate.zip",
-    "files": 15,
-    "bytes": 188192,
+    "out": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-product\\releases\\AllianceDungeonTrail-3.0.0-candidate.zip",
+    "files": 18,
+    "bytes": 201710,
     "status": "STATIC_PASSED",
-    "addon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-rebuild\\addons\\AllianceDungeonTrail",
-    "destination": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-rebuild\\dist\\AllianceDungeonTrail",
-    "marketingIcon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-rebuild\\releases\\AllianceDungeonTrail-icon.png",
+    "addon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-product\\addons\\AllianceDungeonTrail",
+    "destination": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-product\\dist\\AllianceDungeonTrail",
+    "marketingIcon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-product\\releases\\AllianceDungeonTrail-icon.png",
     "productQuality": {
       "ok": true,
       "errors": [],
@@ -176,6 +183,7 @@
         "combat"
       ],
       "reactiveEvents": [
+        "ENCOUNTER_END",
         "ZONE_CHANGED_NEW_AREA",
         "ZONE_CHANGED",
         "PLAYER_MAP_CHANGED",
@@ -199,11 +207,11 @@
         "GOSSIP_OPTIONS_REFRESHED",
         "GOSSIP_CLOSED"
       ],
-      "scenarios": 3,
+      "scenarios": 4,
       "testFile": "tests/dungeon-trail.test.ts",
       "acceptanceTests": "PASSED"
     }
   },
   "provider": null,
-  "finishedAt": "2026-11-16T03:35:03.145Z"
+  "finishedAt": "2026-11-16T13:02:02.367Z"
 }

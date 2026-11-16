@@ -81,7 +81,7 @@ function drawDungeonTrail(size){
 }
 function writeTga(file,pixels,size){
  const header=Buffer.alloc(18);header[2]=2;header.writeUInt16LE(size,12);header.writeUInt16LE(size,14);header[16]=32;header[17]=0x28;const body=Buffer.alloc(size*size*4);
- for(let i=0;i<size*size;i++){body[i*4]=pixels[i*4+2];body[i*4+1]=pixels[i*4+1];body[i*4+2]=pixels[i*4];body[i*4+3]=255;}
+ for(let i=0;i<size*size;i++){body[i*4]=pixels[i*4+2];body[i*4+1]=pixels[i*4+1];body[i*4+2]=pixels[i*4];body[i*4+3]=pixels[i*4+3];}
  fs.writeFileSync(file,Buffer.concat([header,body]));
 }
 function writePng(file,pixels,size){
@@ -92,5 +92,11 @@ function writePng(file,pixels,size){
 export function generateAddonArt(name,assetDir,marketingDir){
  ensureDir(assetDir);ensureDir(marketingDir);const size=512;const pixels=drawArt(name,size);
  const tga=path.join(assetDir,'Icon.tga'),png=path.join(marketingDir,name+'-icon.png');
- writeTga(tga,pixels,size);writePng(png,pixels,size);return {tga,png};
+ writeTga(tga,pixels,size);writePng(png,pixels,size);
+ if(name==='AllianceDungeonTrail'){
+  const arrow=Buffer.alloc(64*64*4),poly=[[32,3],[7,31],[24,27],[24,58],[40,58],[40,27],[57,31]];
+  for(let y=0;y<64;y++)for(let x=0;x<64;x++){let hit=false;for(let i=0,j=poly.length-1;i<poly.length;j=i++){const a=poly[i],b=poly[j];if((a[1]>y)!=(b[1]>y)&&x<(b[0]-a[0])*(y-a[1])/(b[1]-a[1])+a[0])hit=!hit;}if(hit){const p=(y*64+x)*4;arrow[p]=242;arrow[p+1]=197;arrow[p+2]=105;arrow[p+3]=255;}}
+  writeTga(path.join(assetDir,'Arrow.tga'),arrow,64);
+ }
+ return {tga,png};
 }

@@ -1,0 +1,4363 @@
+{
+  "schema": 1,
+  "referenceBuild": "1.60.1.70938 for DB2; community points versioned separately",
+  "clientVerified": false,
+  "evidence": "COMMUNITY_UNVERIFIED",
+  "license": "MIT for EverythingQuests data; selected factual DB2 names/IDs",
+  "rights": "Selected numeric route facts only; no guide prose or implementation copied.",
+  "sources": [
+    {
+      "file": "QuestCoords_Forever-reference.lua",
+      "uri": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua",
+      "sha256": "3e6eb213306775e740dd35e366d2d6ece8178c8d0a770b3a75c916812e216b65"
+    },
+    {
+      "file": "QuestTurnIn_Forever-reference.lua",
+      "uri": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua",
+      "sha256": "726e4c041f875cb9f4c16916050bb7b0d31315e90acdc9de85a35c6c1df3c9f2"
+    },
+    {
+      "file": "spawns-reference.lua",
+      "uri": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua",
+      "sha256": "4de913de6776689922ccda6f2957d54a80e7eabb007a6bd050419faf92cf10f0"
+    },
+    {
+      "file": "DungeonEncounter-reference.csv",
+      "uri": "https://wago.tools/db2/DungeonEncounter/csv?build=1.60.1.70938&locale=enUS",
+      "sha256": "8e0b39eacaef229c083dff18ad4926ccf8fd3babd586ac0a2300586bb00ad245"
+    },
+    {
+      "file": "UiMap-reference.csv",
+      "uri": "https://wago.tools/db2/UiMap/csv?build=1.60.1.70938&locale=enUS",
+      "sha256": "1f4aac70eaac015b1d2d0ea0faf6e3d7fb2cf7afdf45e5bb6772d9b80a72346b"
+    }
+  ],
+  "points": {
+    "166": {
+      "pickup": [
+        {
+          "map": 1436,
+          "x": 0.5633,
+          "y": 0.4752,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1436,
+          "x": 0.5633,
+          "y": 0.4752,
+          "kind": 1,
+          "entrance": false,
+          "npc": 234,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1436,
+          "x": 0.425,
+          "y": 0.717,
+          "kind": 3,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "167": {
+      "pickup": [
+        {
+          "map": 1436,
+          "x": 0.4222,
+          "y": 0.8261,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1453,
+          "x": 0.7031,
+          "y": 0.4082,
+          "kind": 1,
+          "entrance": false,
+          "npc": 656,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1436,
+          "x": 0.4222,
+          "y": 0.8261,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "168": {
+      "pickup": [
+        {
+          "map": 1436,
+          "x": 0.4161,
+          "y": 0.8167,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1453,
+          "x": 0.7031,
+          "y": 0.4082,
+          "kind": 1,
+          "entrance": false,
+          "npc": 656,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1436,
+          "x": 0.4071,
+          "y": 0.8181,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1436,
+          "x": 0.4152,
+          "y": 0.8135,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1436,
+          "x": 0.4137,
+          "y": 0.8319,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1436,
+          "x": 0.4069,
+          "y": 0.8229,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1436,
+          "x": 0.4086,
+          "y": 0.8081,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1436,
+          "x": 0.4214,
+          "y": 0.8298,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1436,
+          "x": 0.41,
+          "y": 0.8274,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1436,
+          "x": 0.4215,
+          "y": 0.8136,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1436,
+          "x": 0.4108,
+          "y": 0.8096,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1436,
+          "x": 0.4244,
+          "y": 0.8331,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "214": {
+      "pickup": [
+        {
+          "map": 1436,
+          "x": 0.4219,
+          "y": 0.7683,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1436,
+          "x": 0.5667,
+          "y": 0.4735,
+          "kind": 1,
+          "entrance": false,
+          "npc": 820,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1436,
+          "x": 0.396,
+          "y": 0.7755,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1436,
+          "x": 0.422,
+          "y": 0.7449,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1436,
+          "x": 0.4169,
+          "y": 0.7608,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1436,
+          "x": 0.4236,
+          "y": 0.7969,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1436,
+          "x": 0.4382,
+          "y": 0.7702,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1436,
+          "x": 0.437,
+          "y": 0.7432,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1436,
+          "x": 0.4049,
+          "y": 0.7825,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1436,
+          "x": 0.3995,
+          "y": 0.7848,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1436,
+          "x": 0.4249,
+          "y": 0.804,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1436,
+          "x": 0.4288,
+          "y": 0.726,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1436,
+          "x": 0.4268,
+          "y": 0.7832,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1436,
+          "x": 0.4151,
+          "y": 0.7533,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "373": {
+      "pickup": [
+        {
+          "map": 1453,
+          "x": 0.5774,
+          "y": 0.4786,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1453,
+          "x": 0.5774,
+          "y": 0.4786,
+          "kind": 1,
+          "entrance": false,
+          "npc": 1646,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": []
+    },
+    "377": {
+      "pickup": [
+        {
+          "map": 1431,
+          "x": 0.7192,
+          "y": 0.4779,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1431,
+          "x": 0.7192,
+          "y": 0.4779,
+          "kind": 1,
+          "entrance": false,
+          "npc": 270,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1453,
+          "x": 0.5241,
+          "y": 0.7001,
+          "kind": 3,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "378": {
+      "pickup": [
+        {
+          "map": 1437,
+          "x": 0.4967,
+          "y": 0.1823,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1437,
+          "x": 0.4967,
+          "y": 0.1823,
+          "kind": 1,
+          "entrance": false,
+          "npc": 1074,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1453,
+          "x": 0.5241,
+          "y": 0.7001,
+          "kind": 3,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "386": {
+      "pickup": [
+        {
+          "map": 1433,
+          "x": 0.2117,
+          "y": 0.4658,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1433,
+          "x": 0.2117,
+          "y": 0.4658,
+          "kind": 1,
+          "entrance": false,
+          "npc": 859,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1453,
+          "x": 0.5241,
+          "y": 0.7001,
+          "kind": 3,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "387": {
+      "pickup": [
+        {
+          "map": 1453,
+          "x": 0.5149,
+          "y": 0.6938,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1453,
+          "x": 0.5149,
+          "y": 0.6938,
+          "kind": 1,
+          "entrance": false,
+          "npc": 1719,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1453,
+          "x": 0.5241,
+          "y": 0.7001,
+          "kind": 1,
+          "entrance": true,
+          "mask": 7,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "388": {
+      "pickup": [
+        {
+          "map": 1453,
+          "x": 0.7378,
+          "y": 0.5465,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1453,
+          "x": 0.7378,
+          "y": 0.5465,
+          "kind": 1,
+          "entrance": false,
+          "npc": 1721,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1453,
+          "x": 0.5241,
+          "y": 0.7001,
+          "kind": 3,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "391": {
+      "pickup": [
+        {
+          "map": 1453,
+          "x": 0.5149,
+          "y": 0.6938,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1453,
+          "x": 0.5149,
+          "y": 0.6938,
+          "kind": 1,
+          "entrance": false,
+          "npc": 1719,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1453,
+          "x": 0.5241,
+          "y": 0.7001,
+          "kind": 3,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "959": {
+      "pickup": [
+        {
+          "map": 1413,
+          "x": 0.4569,
+          "y": 0.3362,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1413,
+          "x": 0.6309,
+          "y": 0.3761,
+          "kind": 1,
+          "entrance": false,
+          "npc": 3665,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1413,
+          "x": 0.4569,
+          "y": 0.3362,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "971": {
+      "pickup": [
+        {
+          "map": 1441,
+          "x": 0.3376,
+          "y": 0.3999,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1455,
+          "x": 0.5083,
+          "y": 0.0562,
+          "kind": 1,
+          "entrance": false,
+          "npc": 2786,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1441,
+          "x": 0.3376,
+          "y": 0.3999,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1441,
+          "x": 0.3934,
+          "y": 0.4153,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1441,
+          "x": 0.3179,
+          "y": 0.3258,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "1050": {
+      "pickup": [
+        {
+          "map": 1455,
+          "x": 0.7497,
+          "y": 0.1248,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1455,
+          "x": 0.7497,
+          "y": 0.1248,
+          "kind": 1,
+          "entrance": false,
+          "npc": 3979,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1420,
+          "x": 0.826,
+          "y": 0.338,
+          "kind": 3,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "1053": {
+      "pickup": [
+        {
+          "map": 1424,
+          "x": 0.5147,
+          "y": 0.5835,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1424,
+          "x": 0.5147,
+          "y": 0.5835,
+          "kind": 1,
+          "entrance": false,
+          "npc": 3980,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1420,
+          "x": 0.826,
+          "y": 0.338,
+          "kind": 1,
+          "entrance": true,
+          "mask": 15,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "1101": {
+      "pickup": [
+        {
+          "map": 1444,
+          "x": 0.8964,
+          "y": 0.4657,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1444,
+          "x": 0.8964,
+          "y": 0.4657,
+          "kind": 1,
+          "entrance": false,
+          "npc": 4048,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1413,
+          "x": 0.429,
+          "y": 0.902,
+          "kind": 3,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "1142": {
+      "pickup": [
+        {
+          "map": 1457,
+          "x": 0.6954,
+          "y": 0.6775,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1457,
+          "x": 0.6954,
+          "y": 0.6775,
+          "kind": 1,
+          "entrance": false,
+          "npc": 4521,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1413,
+          "x": 0.429,
+          "y": 0.902,
+          "kind": 3,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "1144": {
+      "pickup": [],
+      "turnin": [
+        {
+          "map": 1413,
+          "x": 0.429,
+          "y": 0.902,
+          "kind": 1,
+          "entrance": true,
+          "npc": 0,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": []
+    },
+    "1198": {
+      "pickup": [],
+      "turnin": [
+        {
+          "map": 1440,
+          "x": 0.145,
+          "y": 0.142,
+          "kind": 1,
+          "entrance": true,
+          "npc": 0,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": []
+    },
+    "1199": {
+      "pickup": [
+        {
+          "map": 1457,
+          "x": 0.5524,
+          "y": 0.2399,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1457,
+          "x": 0.5524,
+          "y": 0.2399,
+          "kind": 1,
+          "entrance": false,
+          "npc": 4784,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1440,
+          "x": 0.145,
+          "y": 0.142,
+          "kind": 3,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "1200": {
+      "pickup": [
+        {
+          "map": 1457,
+          "x": 0.5616,
+          "y": 0.2439,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1457,
+          "x": 0.5616,
+          "y": 0.2439,
+          "kind": 1,
+          "entrance": false,
+          "npc": 4783,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1440,
+          "x": 0.145,
+          "y": 0.142,
+          "kind": 3,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "1221": {
+      "pickup": [
+        {
+          "map": 1413,
+          "x": 0.6233,
+          "y": 0.3762,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1413,
+          "x": 0.6237,
+          "y": 0.3762,
+          "kind": 1,
+          "entrance": false,
+          "npc": 3446,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1413,
+          "x": 0.6232,
+          "y": 0.3761,
+          "kind": 3,
+          "entrance": false,
+          "mask": 14,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1413,
+          "x": 0.429,
+          "y": 0.902,
+          "kind": 3,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "1275": {
+      "pickup": [
+        {
+          "map": 1439,
+          "x": 0.3192,
+          "y": 0.928,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1439,
+          "x": 0.3833,
+          "y": 0.4304,
+          "kind": 1,
+          "entrance": false,
+          "npc": 8997,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1439,
+          "x": 0.3149,
+          "y": 0.9159,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1439,
+          "x": 0.3086,
+          "y": 0.9272,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1439,
+          "x": 0.3396,
+          "y": 0.9443,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1439,
+          "x": 0.3207,
+          "y": 0.9308,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1439,
+          "x": 0.3119,
+          "y": 0.9259,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1439,
+          "x": 0.3475,
+          "y": 0.9338,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1439,
+          "x": 0.3117,
+          "y": 0.9356,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1439,
+          "x": 0.3094,
+          "y": 0.9183,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1439,
+          "x": 0.3388,
+          "y": 0.9368,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1440,
+          "x": 0.1352,
+          "y": 0.1222,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1440,
+          "x": 0.1304,
+          "y": 0.1312,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1440,
+          "x": 0.1387,
+          "y": 0.1061,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1440,
+          "x": 0.1378,
+          "y": 0.1167,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "1446": {
+      "pickup": [
+        {
+          "map": 1425,
+          "x": 0.3375,
+          "y": 0.7521,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1425,
+          "x": 0.3375,
+          "y": 0.7521,
+          "kind": 1,
+          "entrance": false,
+          "npc": 5598,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1435,
+          "x": 0.699,
+          "y": 0.535,
+          "kind": 3,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "1486": {
+      "pickup": [
+        {
+          "map": 1413,
+          "x": 0.4737,
+          "y": 0.3368,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1413,
+          "x": 0.4599,
+          "y": 0.3566,
+          "kind": 1,
+          "entrance": false,
+          "npc": 5767,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1413,
+          "x": 0.4649,
+          "y": 0.3419,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1413,
+          "x": 0.4709,
+          "y": 0.3287,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1413,
+          "x": 0.4896,
+          "y": 0.3398,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1413,
+          "x": 0.4595,
+          "y": 0.3361,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1413,
+          "x": 0.4614,
+          "y": 0.3526,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1413,
+          "x": 0.4824,
+          "y": 0.3222,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1413,
+          "x": 0.4809,
+          "y": 0.3461,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1413,
+          "x": 0.4632,
+          "y": 0.3254,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1413,
+          "x": 0.4737,
+          "y": 0.3368,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1413,
+          "x": 0.4941,
+          "y": 0.3317,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1413,
+          "x": 0.459,
+          "y": 0.356,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1413,
+          "x": 0.4579,
+          "y": 0.3409,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "1487": {
+      "pickup": [
+        {
+          "map": 1413,
+          "x": 0.4601,
+          "y": 0.3574,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1413,
+          "x": 0.4601,
+          "y": 0.3574,
+          "kind": 1,
+          "entrance": false,
+          "npc": 5768,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1413,
+          "x": 0.46,
+          "y": 0.365,
+          "kind": 1,
+          "entrance": true,
+          "mask": 15,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "1491": {
+      "pickup": [
+        {
+          "map": 1413,
+          "x": 0.4758,
+          "y": 0.3305,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1413,
+          "x": 0.6237,
+          "y": 0.3762,
+          "kind": 1,
+          "entrance": false,
+          "npc": 3446,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1413,
+          "x": 0.4874,
+          "y": 0.321,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1413,
+          "x": 0.4911,
+          "y": 0.3338,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1413,
+          "x": 0.4791,
+          "y": 0.3397,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1413,
+          "x": 0.4759,
+          "y": 0.3258,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1413,
+          "x": 0.4755,
+          "y": 0.3428,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1413,
+          "x": 0.4605,
+          "y": 0.3386,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1413,
+          "x": 0.4586,
+          "y": 0.3336,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "1654": {
+      "pickup": [
+        {
+          "map": 1426,
+          "x": 0.5249,
+          "y": 0.3692,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1426,
+          "x": 0.5249,
+          "y": 0.3692,
+          "kind": 1,
+          "entrance": false,
+          "npc": 6181,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1421,
+          "x": 0.448,
+          "y": 0.678,
+          "kind": 3,
+          "entrance": true,
+          "mask": 4,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1436,
+          "x": 0.425,
+          "y": 0.717,
+          "kind": 3,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "2040": {
+      "pickup": [
+        {
+          "map": 1453,
+          "x": 0.6263,
+          "y": 0.3411,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1453,
+          "x": 0.6263,
+          "y": 0.3411,
+          "kind": 1,
+          "entrance": false,
+          "npc": 6579,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1436,
+          "x": 0.425,
+          "y": 0.717,
+          "kind": 3,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "2278": {
+      "pickup": [],
+      "turnin": [
+        {
+          "map": 1418,
+          "x": 0.446,
+          "y": 0.121,
+          "kind": 2,
+          "entrance": true,
+          "npc": 0,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        },
+        {
+          "map": 1418,
+          "x": 0.652,
+          "y": 0.435,
+          "kind": 2,
+          "entrance": true,
+          "npc": 0,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": []
+    },
+    "2398": {
+      "pickup": [],
+      "turnin": [
+        {
+          "map": 1418,
+          "x": 0.446,
+          "y": 0.121,
+          "kind": 1,
+          "entrance": true,
+          "npc": 0,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        },
+        {
+          "map": 1418,
+          "x": 0.652,
+          "y": 0.435,
+          "kind": 1,
+          "entrance": true,
+          "npc": 0,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": []
+    },
+    "2768": {
+      "pickup": [
+        {
+          "map": 1446,
+          "x": 0.5246,
+          "y": 0.2851,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1446,
+          "x": 0.5246,
+          "y": 0.2851,
+          "kind": 1,
+          "entrance": false,
+          "npc": 7407,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1446,
+          "x": 0.387,
+          "y": 0.201,
+          "kind": 3,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "2770": {
+      "pickup": [
+        {
+          "map": 1441,
+          "x": 0.7814,
+          "y": 0.7712,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1441,
+          "x": 0.7814,
+          "y": 0.7712,
+          "kind": 1,
+          "entrance": false,
+          "npc": 4453,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": []
+    },
+    "2904": {
+      "pickup": [
+        {
+          "map": 1434,
+          "x": 0.276,
+          "y": 0.7748,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1434,
+          "x": 0.276,
+          "y": 0.7748,
+          "kind": 1,
+          "entrance": false,
+          "npc": 7853,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": []
+    },
+    "2922": {
+      "pickup": [
+        {
+          "map": 1426,
+          "x": 0.1978,
+          "y": 0.3193,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1455,
+          "x": 0.6955,
+          "y": 0.5033,
+          "kind": 1,
+          "entrance": false,
+          "npc": 7944,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1426,
+          "x": 0.1978,
+          "y": 0.3193,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "2924": {
+      "pickup": [
+        {
+          "map": 1455,
+          "x": 0.6792,
+          "y": 0.461,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1455,
+          "x": 0.6792,
+          "y": 0.461,
+          "kind": 1,
+          "entrance": false,
+          "npc": 6169,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1426,
+          "x": 0.243,
+          "y": 0.398,
+          "kind": 3,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "2926": {
+      "pickup": [
+        {
+          "map": 1426,
+          "x": 0.4589,
+          "y": 0.4939,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1426,
+          "x": 0.4589,
+          "y": 0.4939,
+          "kind": 1,
+          "entrance": false,
+          "npc": 1268,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": []
+    },
+    "2928": {
+      "pickup": [
+        {
+          "map": 1426,
+          "x": 0.209,
+          "y": 0.3602,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1453,
+          "x": 0.6263,
+          "y": 0.3411,
+          "kind": 1,
+          "entrance": false,
+          "npc": 6579,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1426,
+          "x": 0.2179,
+          "y": 0.3313,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1426,
+          "x": 0.2173,
+          "y": 0.3404,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1426,
+          "x": 0.181,
+          "y": 0.3925,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1426,
+          "x": 0.209,
+          "y": 0.3602,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1426,
+          "x": 0.2209,
+          "y": 0.3414,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1426,
+          "x": 0.1968,
+          "y": 0.3671,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1426,
+          "x": 0.1932,
+          "y": 0.388,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1426,
+          "x": 0.2181,
+          "y": 0.322,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1426,
+          "x": 0.1978,
+          "y": 0.3193,
+          "kind": 3,
+          "entrance": false,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "2929": {
+      "pickup": [
+        {
+          "map": 1455,
+          "x": 0.6875,
+          "y": 0.4897,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1455,
+          "x": 0.6875,
+          "y": 0.4897,
+          "kind": 1,
+          "entrance": false,
+          "npc": 7937,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1426,
+          "x": 0.243,
+          "y": 0.398,
+          "kind": 1,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "2930": {
+      "pickup": [
+        {
+          "map": 1455,
+          "x": 0.6983,
+          "y": 0.481,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1455,
+          "x": 0.6983,
+          "y": 0.481,
+          "kind": 1,
+          "entrance": false,
+          "npc": 7950,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": []
+    },
+    "2962": {
+      "pickup": [
+        {
+          "map": 1426,
+          "x": 0.4589,
+          "y": 0.4939,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1426,
+          "x": 0.4589,
+          "y": 0.4939,
+          "kind": 1,
+          "entrance": false,
+          "npc": 1268,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": []
+    },
+    "3373": {
+      "pickup": [],
+      "turnin": [
+        {
+          "map": 1435,
+          "x": 0.699,
+          "y": 0.535,
+          "kind": 2,
+          "entrance": true,
+          "npc": 0,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": []
+    },
+    "3636": {
+      "pickup": [
+        {
+          "map": 1453,
+          "x": 0.5031,
+          "y": 0.4547,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1453,
+          "x": 0.5031,
+          "y": 0.4547,
+          "kind": 1,
+          "entrance": false,
+          "npc": 1284,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1413,
+          "x": 0.49,
+          "y": 0.939,
+          "kind": 1,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "4241": {
+      "pickup": [],
+      "turnin": [
+        {
+          "map": 1427,
+          "x": 0.348,
+          "y": 0.853,
+          "kind": 1,
+          "entrance": true,
+          "npc": 0,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        },
+        {
+          "map": 1428,
+          "x": 0.294,
+          "y": 0.383,
+          "kind": 1,
+          "entrance": true,
+          "npc": 0,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": []
+    },
+    "4263": {
+      "pickup": [
+        {
+          "map": 1428,
+          "x": 0.8541,
+          "y": 0.7006,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1428,
+          "x": 0.8541,
+          "y": 0.7006,
+          "kind": 1,
+          "entrance": false,
+          "npc": 9561,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1427,
+          "x": 0.348,
+          "y": 0.853,
+          "kind": 1,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1428,
+          "x": 0.294,
+          "y": 0.383,
+          "kind": 1,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "4701": {
+      "pickup": [
+        {
+          "map": 1428,
+          "x": 0.8582,
+          "y": 0.6895,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1428,
+          "x": 0.8582,
+          "y": 0.6895,
+          "kind": 1,
+          "entrance": false,
+          "npc": 9562,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1427,
+          "x": 0.348,
+          "y": 0.853,
+          "kind": 1,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1428,
+          "x": 0.294,
+          "y": 0.383,
+          "kind": 1,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "5243": {
+      "pickup": [
+        {
+          "map": 1423,
+          "x": 0.7189,
+          "y": 0.4829,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1423,
+          "x": 0.7189,
+          "y": 0.4829,
+          "kind": 1,
+          "entrance": false,
+          "npc": 11036,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1423,
+          "x": 0.2652,
+          "y": 0.1036,
+          "kind": 3,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1423,
+          "x": 0.4145,
+          "y": 0.1774,
+          "kind": 3,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "5251": {
+      "pickup": [
+        {
+          "map": 1423,
+          "x": 0.7163,
+          "y": 0.5009,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1423,
+          "x": 0.7163,
+          "y": 0.5009,
+          "kind": 1,
+          "entrance": false,
+          "npc": 11039,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1423,
+          "x": 0.2652,
+          "y": 0.1036,
+          "kind": 1,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1423,
+          "x": 0.4145,
+          "y": 0.1774,
+          "kind": 1,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1423,
+          "x": 0.2652,
+          "y": 0.1036,
+          "kind": 2,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1423,
+          "x": 0.4145,
+          "y": 0.1774,
+          "kind": 2,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "5343": {
+      "pickup": [
+        {
+          "map": 1422,
+          "x": 0.4345,
+          "y": 0.8373,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1422,
+          "x": 0.4345,
+          "y": 0.8373,
+          "kind": 1,
+          "entrance": false,
+          "npc": 11023,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1422,
+          "x": 0.697,
+          "y": 0.732,
+          "kind": 3,
+          "entrance": true,
+          "mask": 15,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "5382": {
+      "pickup": [
+        {
+          "map": 1422,
+          "x": 0.7022,
+          "y": 0.7371,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1422,
+          "x": 0.7022,
+          "y": 0.7371,
+          "kind": 1,
+          "entrance": false,
+          "npc": 11216,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1422,
+          "x": 0.697,
+          "y": 0.732,
+          "kind": 2,
+          "entrance": true,
+          "mask": 3,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        },
+        {
+          "map": 1422,
+          "x": 0.697,
+          "y": 0.732,
+          "kind": 1,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "5525": {
+      "pickup": [],
+      "turnin": [
+        {
+          "map": 1444,
+          "x": 0.592,
+          "y": 0.451,
+          "kind": 1,
+          "entrance": true,
+          "npc": 0,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1444,
+          "x": 0.592,
+          "y": 0.451,
+          "kind": 3,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "5529": {
+      "pickup": [
+        {
+          "map": 1423,
+          "x": 0.7166,
+          "y": 0.4994,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1423,
+          "x": 0.7166,
+          "y": 0.4994,
+          "kind": 1,
+          "entrance": false,
+          "npc": 11035,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1422,
+          "x": 0.697,
+          "y": 0.732,
+          "kind": 1,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "6981": {
+      "pickup": [
+        {
+          "map": 1413,
+          "x": 0.4818,
+          "y": 0.3278,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1413,
+          "x": 0.4818,
+          "y": 0.3278,
+          "kind": 1,
+          "entrance": false,
+          "npc": 8418,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": []
+    },
+    "7044": {
+      "pickup": [],
+      "turnin": [],
+      "objectives": [
+        {
+          "map": 1443,
+          "x": 0.291,
+          "y": 0.625,
+          "kind": 3,
+          "entrance": true,
+          "mask": 3,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "7065": {
+      "pickup": [
+        {
+          "map": 1443,
+          "x": 0.6383,
+          "y": 0.1067,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1443,
+          "x": 0.6383,
+          "y": 0.1067,
+          "kind": 1,
+          "entrance": false,
+          "npc": 13698,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1443,
+          "x": 0.291,
+          "y": 0.625,
+          "kind": 1,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "7488": {
+      "pickup": [
+        {
+          "map": 1444,
+          "x": 0.3038,
+          "y": 0.4617,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestCoords_Forever.lua"
+        }
+      ],
+      "turnin": [
+        {
+          "map": 1444,
+          "x": 0.3038,
+          "y": 0.4617,
+          "kind": 1,
+          "entrance": false,
+          "npc": 7877,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestTurnIn_Forever.lua"
+        }
+      ],
+      "objectives": [
+        {
+          "map": 1444,
+          "x": 0.592,
+          "y": 0.451,
+          "kind": 3,
+          "entrance": true,
+          "mask": 1,
+          "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua"
+        }
+      ]
+    },
+    "92489": {
+      "pickup": [],
+      "turnin": [],
+      "objectives": []
+    },
+    "92753": {
+      "pickup": [],
+      "turnin": [],
+      "objectives": []
+    },
+    "94982": {
+      "pickup": [],
+      "turnin": [],
+      "objectives": []
+    },
+    "94984": {
+      "pickup": [],
+      "turnin": [],
+      "objectives": []
+    },
+    "95250": {
+      "pickup": [],
+      "turnin": [],
+      "objectives": []
+    },
+    "95772": {
+      "pickup": [],
+      "turnin": [],
+      "objectives": []
+    },
+    "95788": {
+      "pickup": [],
+      "turnin": [],
+      "objectives": []
+    },
+    "95789": {
+      "pickup": [],
+      "turnin": [],
+      "objectives": []
+    },
+    "96403": {
+      "pickup": [],
+      "turnin": [],
+      "objectives": []
+    },
+    "98423": {
+      "pickup": [],
+      "turnin": [],
+      "objectives": []
+    }
+  },
+  "dungeons": {
+    "thanes": {
+      "entrance": null,
+      "encounters": [
+        {
+          "id": 3493,
+          "name": "Faldrim Anvilmar",
+          "order": 0,
+          "ids": [
+            3493
+          ]
+        },
+        {
+          "id": 3495,
+          "name": "Infurnus",
+          "order": 2000,
+          "ids": [
+            3495
+          ]
+        },
+        {
+          "id": 3494,
+          "name": "Plunder",
+          "order": 2500,
+          "ids": [
+            3494
+          ]
+        },
+        {
+          "id": 3496,
+          "name": "Durgen Dirgehammer",
+          "order": 3000,
+          "ids": [
+            3496
+          ]
+        }
+      ]
+    },
+    "lordaeron": {
+      "entrance": null,
+      "encounters": [
+        {
+          "id": 3353,
+          "name": "Witherfang",
+          "order": 0,
+          "ids": [
+            3353
+          ]
+        },
+        {
+          "id": 3357,
+          "name": "The Abandoned",
+          "order": 250,
+          "ids": [
+            3357
+          ]
+        },
+        {
+          "id": 3355,
+          "name": "The Butcher",
+          "order": 500,
+          "ids": [
+            3355
+          ]
+        },
+        {
+          "id": 3408,
+          "name": "Lordaeron Captain",
+          "order": 2000,
+          "ids": [
+            3408
+          ]
+        },
+        {
+          "id": 3411,
+          "name": "Viktor the Vile",
+          "order": 3000,
+          "ids": [
+            3411
+          ]
+        },
+        {
+          "id": 3412,
+          "name": "Bjork",
+          "order": 4000,
+          "ids": [
+            3412
+          ]
+        },
+        {
+          "id": 3354,
+          "name": "Rath'mael",
+          "order": 5000,
+          "ids": [
+            3354
+          ]
+        }
+      ]
+    },
+    "deadmines": {
+      "entrance": {
+        "map": 1436,
+        "x": 0.425,
+        "y": 0.717,
+        "kind": 3,
+        "entrance": true,
+        "mask": 1,
+        "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua",
+        "count": 3
+      },
+      "encounters": [
+        {
+          "id": 2741,
+          "name": "Rhahk'Zor",
+          "order": 0,
+          "ids": [
+            2741
+          ]
+        },
+        {
+          "id": 2742,
+          "name": "Sneed",
+          "order": 1000,
+          "ids": [
+            2742
+          ]
+        },
+        {
+          "id": 3676,
+          "name": "Miner Johnson",
+          "order": 1500,
+          "ids": [
+            3676
+          ]
+        },
+        {
+          "id": 2743,
+          "name": "Gilnid",
+          "order": 2000,
+          "ids": [
+            2743
+          ]
+        },
+        {
+          "id": 2744,
+          "name": "Captain Greenskin",
+          "order": 3000,
+          "ids": [
+            2744
+          ]
+        },
+        {
+          "id": 2745,
+          "name": "Mr. Smite",
+          "order": 4000,
+          "ids": [
+            2745
+          ]
+        },
+        {
+          "id": 2746,
+          "name": "Cookie",
+          "order": 5000,
+          "ids": [
+            2746
+          ]
+        },
+        {
+          "id": 2747,
+          "name": "Edwin VanCleef",
+          "order": 6000,
+          "ids": [
+            2747
+          ]
+        }
+      ]
+    },
+    "wailing": {
+      "entrance": {
+        "map": 1413,
+        "x": 0.46,
+        "y": 0.365,
+        "kind": 1,
+        "entrance": true,
+        "mask": 15,
+        "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua",
+        "count": 1
+      },
+      "encounters": [
+        {
+          "id": 585,
+          "name": "Lady Anacondra",
+          "order": 0,
+          "ids": [
+            585
+          ]
+        },
+        {
+          "id": 586,
+          "name": "Lord Cobrahn",
+          "order": 1000,
+          "ids": [
+            586
+          ]
+        },
+        {
+          "id": 587,
+          "name": "Kresh",
+          "order": 2000,
+          "ids": [
+            587
+          ]
+        },
+        {
+          "id": 588,
+          "name": "Lord Pythas",
+          "order": 3000,
+          "ids": [
+            588
+          ]
+        },
+        {
+          "id": 589,
+          "name": "Skum",
+          "order": 4000,
+          "ids": [
+            589
+          ]
+        },
+        {
+          "id": 590,
+          "name": "Lord Serpentis",
+          "order": 5000,
+          "ids": [
+            590
+          ]
+        },
+        {
+          "id": 591,
+          "name": "Verdan the Everliving",
+          "order": 6000,
+          "ids": [
+            591
+          ]
+        },
+        {
+          "id": 592,
+          "name": "Mutanus the Devourer",
+          "order": 7000,
+          "ids": [
+            592
+          ]
+        }
+      ]
+    },
+    "shadowfang": {
+      "entrance": null,
+      "encounters": [
+        {
+          "id": 2748,
+          "name": "Rethilgore",
+          "order": 0,
+          "ids": [
+            2748
+          ]
+        },
+        {
+          "id": 2749,
+          "name": "Razorclaw the Butcher",
+          "order": 1000,
+          "ids": [
+            2749
+          ]
+        },
+        {
+          "id": 2750,
+          "name": "Baron Silverlaine",
+          "order": 2000,
+          "ids": [
+            2750
+          ]
+        },
+        {
+          "id": 2751,
+          "name": "Commander Springvale",
+          "order": 3000,
+          "ids": [
+            2751
+          ]
+        },
+        {
+          "id": 2752,
+          "name": "Odo the Blindwatcher",
+          "order": 4000,
+          "ids": [
+            2752
+          ]
+        },
+        {
+          "id": 2753,
+          "name": "Fenrus the Devourer",
+          "order": 5000,
+          "ids": [
+            2753
+          ]
+        },
+        {
+          "id": 2754,
+          "name": "Wolf Master Nandos",
+          "order": 6000,
+          "ids": [
+            2754
+          ]
+        },
+        {
+          "id": 2755,
+          "name": "Archmage Arugal",
+          "order": 7000,
+          "ids": [
+            2755
+          ]
+        }
+      ]
+    },
+    "blackfathom": {
+      "entrance": {
+        "map": 1440,
+        "x": 0.145,
+        "y": 0.142,
+        "kind": 3,
+        "entrance": true,
+        "mask": 1,
+        "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua",
+        "count": 2
+      },
+      "encounters": [
+        {
+          "id": 2916,
+          "name": "Ghamoo-ra",
+          "order": -6000,
+          "ids": [
+            2916
+          ]
+        },
+        {
+          "id": 2915,
+          "name": "Lady Sarevess",
+          "order": -5000,
+          "ids": [
+            2915
+          ]
+        },
+        {
+          "id": 2914,
+          "name": "Geilhast",
+          "order": -4000,
+          "ids": [
+            2914
+          ]
+        },
+        {
+          "id": 2913,
+          "name": "Lorgus Jett",
+          "order": -3000,
+          "ids": [
+            2913
+          ]
+        }
+      ]
+    },
+    "stockade": {
+      "entrance": {
+        "map": 1453,
+        "x": 0.5241,
+        "y": 0.7001,
+        "kind": 3,
+        "entrance": true,
+        "mask": 1,
+        "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua",
+        "count": 6
+      },
+      "encounters": [
+        {
+          "id": 2756,
+          "name": "Targorr the Dread",
+          "order": 0,
+          "ids": [
+            2756
+          ]
+        },
+        {
+          "id": 2757,
+          "name": "Kam Deepfury",
+          "order": 1000,
+          "ids": [
+            2757
+          ]
+        },
+        {
+          "id": 2758,
+          "name": "Hamhock",
+          "order": 2000,
+          "ids": [
+            2758
+          ]
+        },
+        {
+          "id": 2759,
+          "name": "Dextren Ward",
+          "order": 3000,
+          "ids": [
+            2759
+          ]
+        },
+        {
+          "id": 2760,
+          "name": "Bazil Thredd",
+          "order": 4000,
+          "ids": [
+            2760
+          ]
+        }
+      ]
+    },
+    "excavation": {
+      "entrance": null,
+      "encounters": [
+        {
+          "id": 3480,
+          "name": "Saltspine",
+          "order": 0,
+          "ids": [
+            3480
+          ]
+        },
+        {
+          "id": 3481,
+          "name": "Shadetooth",
+          "order": 1000,
+          "ids": [
+            3481
+          ]
+        },
+        {
+          "id": 3644,
+          "name": "Highland Horror",
+          "order": 1500,
+          "ids": [
+            3644
+          ]
+        },
+        {
+          "id": 3482,
+          "name": "Relic Guardian",
+          "order": 2000,
+          "ids": [
+            3482
+          ]
+        }
+      ]
+    },
+    "dalaran": {
+      "entrance": null,
+      "encounters": [
+        {
+          "id": 3298,
+          "name": "Arcane Anomaly",
+          "order": 0,
+          "ids": [
+            3298
+          ]
+        },
+        {
+          "id": 3299,
+          "name": "Fel Ancient",
+          "order": 1000,
+          "ids": [
+            3299
+          ]
+        },
+        {
+          "id": 3300,
+          "name": "Mana Devourer",
+          "order": 2000,
+          "ids": [
+            3300
+          ]
+        },
+        {
+          "id": 3301,
+          "name": "Mana Elemental",
+          "order": 3000,
+          "ids": [
+            3301
+          ]
+        },
+        {
+          "id": 3302,
+          "name": "Unstable Sentinel",
+          "order": 4000,
+          "ids": [
+            3302
+          ]
+        },
+        {
+          "id": 3310,
+          "name": "Lyn the Ignored",
+          "order": 6000,
+          "ids": [
+            3310
+          ]
+        },
+        {
+          "id": 3311,
+          "name": "Atrexis the Grave Knight",
+          "order": 7000,
+          "ids": [
+            3311
+          ]
+        },
+        {
+          "id": 3312,
+          "name": "Mana Wraith",
+          "order": 8000,
+          "ids": [
+            3312
+          ]
+        },
+        {
+          "id": 3303,
+          "name": "Shade of the Archmage",
+          "order": 9000,
+          "ids": [
+            3303
+          ]
+        }
+      ]
+    },
+    "kraul": {
+      "entrance": {
+        "map": 1413,
+        "x": 0.429,
+        "y": 0.902,
+        "kind": 3,
+        "entrance": true,
+        "mask": 1,
+        "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua",
+        "count": 3
+      },
+      "encounters": [
+        {
+          "id": 2773,
+          "name": "Roogug",
+          "order": 0,
+          "ids": [
+            2773
+          ]
+        },
+        {
+          "id": 2774,
+          "name": "Aggem Thorncurse",
+          "order": 1000,
+          "ids": [
+            2774
+          ]
+        },
+        {
+          "id": 2775,
+          "name": "Death Speaker Jargba",
+          "order": 2000,
+          "ids": [
+            2775
+          ]
+        },
+        {
+          "id": 2776,
+          "name": "Overlord Ramtusk",
+          "order": 3000,
+          "ids": [
+            2776
+          ]
+        },
+        {
+          "id": 2777,
+          "name": "Agathelos the Raging",
+          "order": 4000,
+          "ids": [
+            2777
+          ]
+        },
+        {
+          "id": 2778,
+          "name": "Charlga Razorflank",
+          "order": 5000,
+          "ids": [
+            2778
+          ]
+        }
+      ]
+    },
+    "gnomeregan": {
+      "entrance": {
+        "map": 1426,
+        "x": 0.243,
+        "y": 0.398,
+        "kind": 1,
+        "entrance": true,
+        "mask": 1,
+        "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua",
+        "count": 2
+      },
+      "encounters": [
+        {
+          "id": 2769,
+          "name": "Viscous Fallout",
+          "order": 1000,
+          "ids": [
+            2769
+          ]
+        },
+        {
+          "id": 2770,
+          "name": "Electrocutioner 6000",
+          "order": 2000,
+          "ids": [
+            2770
+          ]
+        },
+        {
+          "id": 2771,
+          "name": "Crowd Pummeler 9-60",
+          "order": 3000,
+          "ids": [
+            2771
+          ]
+        },
+        {
+          "id": 2772,
+          "name": "Mekgineer Thermaplugg",
+          "order": 4000,
+          "ids": [
+            2772
+          ]
+        }
+      ]
+    },
+    "scarlet": {
+      "entrance": {
+        "map": 1420,
+        "x": 0.826,
+        "y": 0.338,
+        "kind": 1,
+        "entrance": true,
+        "mask": 15,
+        "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua",
+        "count": 2
+      },
+      "encounters": [
+        {
+          "id": 444,
+          "name": "Interrogator Vishas",
+          "order": 0,
+          "ids": [
+            444
+          ]
+        },
+        {
+          "id": 2779,
+          "name": "Bloodmage Thalnos",
+          "order": 1000,
+          "ids": [
+            2779
+          ]
+        },
+        {
+          "id": 446,
+          "name": "Houndmaster Loksey",
+          "order": 2000,
+          "ids": [
+            446
+          ]
+        },
+        {
+          "id": 447,
+          "name": "Arcanist Doan",
+          "order": 3000,
+          "ids": [
+            447
+          ]
+        },
+        {
+          "id": 448,
+          "name": "Herod",
+          "order": 4000,
+          "ids": [
+            448
+          ]
+        },
+        {
+          "id": 449,
+          "name": "High Inquisitor Fairbanks",
+          "order": 5000,
+          "ids": [
+            449
+          ]
+        },
+        {
+          "id": 450,
+          "name": "High Inquisitor Whitemane",
+          "order": 6000,
+          "ids": [
+            450
+          ]
+        }
+      ]
+    },
+    "drowned": {
+      "entrance": null,
+      "encounters": [
+        {
+          "id": 3474,
+          "name": "Zul'Alai",
+          "order": 0,
+          "ids": [
+            3474
+          ]
+        },
+        {
+          "id": 3475,
+          "name": "Var'Taka",
+          "order": 1000,
+          "ids": [
+            3475
+          ]
+        },
+        {
+          "id": 3476,
+          "name": "Captain Dreadrise",
+          "order": 2000,
+          "ids": [
+            3476
+          ]
+        },
+        {
+          "id": 3478,
+          "name": "Deathless Guardians",
+          "order": 3000,
+          "ids": [
+            3478
+          ]
+        },
+        {
+          "id": 3511,
+          "name": "Primeval Elemental",
+          "order": 5000,
+          "ids": [
+            3511
+          ]
+        },
+        {
+          "id": 3479,
+          "name": "Min'loth the Serpent",
+          "order": 6000,
+          "ids": [
+            3479
+          ]
+        }
+      ]
+    },
+    "downs": {
+      "entrance": {
+        "map": 1413,
+        "x": 0.49,
+        "y": 0.939,
+        "kind": 1,
+        "entrance": true,
+        "mask": 1,
+        "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua",
+        "count": 1
+      },
+      "encounters": [
+        {
+          "id": 2780,
+          "name": "Tuten'kash",
+          "order": 0,
+          "ids": [
+            2780
+          ]
+        },
+        {
+          "id": 2781,
+          "name": "Plaguemaw the Rotting",
+          "order": 1000,
+          "ids": [
+            2781
+          ]
+        },
+        {
+          "id": 2782,
+          "name": "Mordresh Fire Eye",
+          "order": 2000,
+          "ids": [
+            2782
+          ]
+        },
+        {
+          "id": 2783,
+          "name": "Ragglesnout",
+          "order": 3000,
+          "ids": [
+            2783
+          ]
+        },
+        {
+          "id": 2784,
+          "name": "Glutton",
+          "order": 4000,
+          "ids": [
+            2784
+          ]
+        },
+        {
+          "id": 2785,
+          "name": "Amnennar the Coldbringer",
+          "order": 5000,
+          "ids": [
+            2785
+          ]
+        }
+      ]
+    },
+    "uldaman": {
+      "entrance": null,
+      "encounters": [
+        {
+          "id": 547,
+          "name": "Revelosh",
+          "order": 0,
+          "ids": [
+            547
+          ]
+        },
+        {
+          "id": 548,
+          "name": "The Lost Dwarves",
+          "order": 1000,
+          "ids": [
+            548
+          ]
+        },
+        {
+          "id": 549,
+          "name": "Ironaya",
+          "order": 2000,
+          "ids": [
+            549
+          ]
+        },
+        {
+          "id": 1887,
+          "name": "Obsidian Sentinel",
+          "order": 3000,
+          "ids": [
+            1887
+          ]
+        },
+        {
+          "id": 551,
+          "name": "Ancient Stone Keeper",
+          "order": 4000,
+          "ids": [
+            551
+          ]
+        },
+        {
+          "id": 552,
+          "name": "Galgann Firehammer",
+          "order": 5000,
+          "ids": [
+            552
+          ]
+        },
+        {
+          "id": 553,
+          "name": "Grimlok",
+          "order": 6000,
+          "ids": [
+            553
+          ]
+        },
+        {
+          "id": 554,
+          "name": "Archaedas",
+          "order": 7000,
+          "ids": [
+            554
+          ]
+        }
+      ]
+    },
+    "kroldok": {
+      "entrance": null,
+      "encounters": [
+        {
+          "id": 3450,
+          "name": "Slavecrusher Grox",
+          "order": 1000,
+          "ids": [
+            3450
+          ]
+        },
+        {
+          "id": 3452,
+          "name": "Twilight Commander Zarmok",
+          "order": 1500,
+          "ids": [
+            3452
+          ]
+        },
+        {
+          "id": 3453,
+          "name": "Handler Ashka",
+          "order": 4000,
+          "ids": [
+            3453
+          ]
+        },
+        {
+          "id": 3449,
+          "name": "Nar'gurk",
+          "order": 4500,
+          "ids": [
+            3449
+          ]
+        },
+        {
+          "id": 3451,
+          "name": "Overseer Mugg",
+          "order": 5000,
+          "ids": [
+            3451
+          ]
+        }
+      ]
+    },
+    "zulfarrak": {
+      "entrance": {
+        "map": 1446,
+        "x": 0.387,
+        "y": 0.201,
+        "kind": 3,
+        "entrance": true,
+        "mask": 1,
+        "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua",
+        "count": 1
+      },
+      "encounters": [
+        {
+          "id": 593,
+          "name": "Hydromancer Velratha",
+          "order": 0,
+          "ids": [
+            593
+          ]
+        },
+        {
+          "id": 594,
+          "name": "Gahz'rilla",
+          "order": 1000,
+          "ids": [
+            594
+          ]
+        },
+        {
+          "id": 595,
+          "name": "Antu'sul",
+          "order": 2000,
+          "ids": [
+            595
+          ]
+        },
+        {
+          "id": 596,
+          "name": "Theka the Martyr",
+          "order": 3000,
+          "ids": [
+            596
+          ]
+        },
+        {
+          "id": 597,
+          "name": "Witch Doctor Zum'rah",
+          "order": 4000,
+          "ids": [
+            597
+          ]
+        },
+        {
+          "id": 598,
+          "name": "Nekrum Gutchewer",
+          "order": 5000,
+          "ids": [
+            598
+          ]
+        },
+        {
+          "id": 599,
+          "name": "Shadowpriest Sezz'ziz",
+          "order": 6000,
+          "ids": [
+            599
+          ]
+        },
+        {
+          "id": 600,
+          "name": "Chief Ukorz Sandscalp",
+          "order": 7000,
+          "ids": [
+            600
+          ]
+        }
+      ]
+    },
+    "maraudon": {
+      "entrance": {
+        "map": 1443,
+        "x": 0.291,
+        "y": 0.625,
+        "kind": 3,
+        "entrance": true,
+        "mask": 3,
+        "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua",
+        "count": 2
+      },
+      "encounters": [
+        {
+          "id": 422,
+          "name": "Noxxion",
+          "order": 0,
+          "ids": [
+            422
+          ]
+        },
+        {
+          "id": 423,
+          "name": "Razorlash",
+          "order": 1000,
+          "ids": [
+            423
+          ]
+        },
+        {
+          "id": 427,
+          "name": "Tinkerer Gizlock",
+          "order": 1500,
+          "ids": [
+            427
+          ]
+        },
+        {
+          "id": 424,
+          "name": "Lord Vyletongue",
+          "order": 2000,
+          "ids": [
+            424
+          ]
+        },
+        {
+          "id": 425,
+          "name": "Celebras the Cursed",
+          "order": 3000,
+          "ids": [
+            425
+          ]
+        },
+        {
+          "id": 426,
+          "name": "Landslide",
+          "order": 4000,
+          "ids": [
+            426
+          ]
+        },
+        {
+          "id": 428,
+          "name": "Rotgrip",
+          "order": 6000,
+          "ids": [
+            428
+          ]
+        },
+        {
+          "id": 429,
+          "name": "Princess Theradras",
+          "order": 7000,
+          "ids": [
+            429
+          ]
+        }
+      ]
+    },
+    "alcaz": {
+      "entrance": null,
+      "encounters": [
+        {
+          "id": 3403,
+          "name": "Overseer Wrex",
+          "order": 0,
+          "ids": [
+            3403
+          ]
+        },
+        {
+          "id": 3410,
+          "name": "Tidemistress Ca'zass",
+          "order": 500,
+          "ids": [
+            3410
+          ]
+        },
+        {
+          "id": 3418,
+          "name": "Katerina the Cleaner",
+          "order": 625,
+          "ids": [
+            3418
+          ]
+        },
+        {
+          "id": 3415,
+          "name": "The Questioner",
+          "order": 750,
+          "ids": [
+            3415
+          ]
+        },
+        {
+          "id": 3409,
+          "name": "Blazeroar",
+          "order": 1000,
+          "ids": [
+            3409
+          ]
+        }
+      ]
+    },
+    "temple": {
+      "entrance": {
+        "map": 1435,
+        "x": 0.699,
+        "y": 0.535,
+        "kind": 3,
+        "entrance": true,
+        "mask": 1,
+        "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua",
+        "count": 1
+      },
+      "encounters": [
+        {
+          "id": 3582,
+          "name": "Atal'alarion",
+          "order": 0,
+          "ids": [
+            3582
+          ]
+        },
+        {
+          "id": 3583,
+          "name": "Avatar of Hakkar",
+          "order": 1000,
+          "ids": [
+            3583
+          ]
+        },
+        {
+          "id": 3584,
+          "name": "Shade of Eranikus",
+          "order": 2000,
+          "ids": [
+            3584
+          ]
+        },
+        {
+          "id": 3585,
+          "name": "Hazzas",
+          "order": 3000,
+          "ids": [
+            3585
+          ]
+        },
+        {
+          "id": 3586,
+          "name": "Morphaz",
+          "order": 4000,
+          "ids": [
+            3586
+          ]
+        },
+        {
+          "id": 3587,
+          "name": "Weaver",
+          "order": 5000,
+          "ids": [
+            3587
+          ]
+        },
+        {
+          "id": 3588,
+          "name": "Dreamscythe",
+          "order": 6000,
+          "ids": [
+            3588
+          ]
+        },
+        {
+          "id": 3589,
+          "name": "Jammal'an the Prophet",
+          "order": 7000,
+          "ids": [
+            3589
+          ]
+        }
+      ]
+    },
+    "depths": {
+      "entrance": {
+        "map": 1427,
+        "x": 0.348,
+        "y": 0.853,
+        "kind": 1,
+        "entrance": true,
+        "mask": 1,
+        "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua",
+        "count": 1
+      },
+      "encounters": [
+        {
+          "id": 227,
+          "name": "High Interrogator Gerstahn",
+          "order": 0,
+          "ids": [
+            227
+          ]
+        },
+        {
+          "id": 228,
+          "name": "Lord Roccor",
+          "order": 1000,
+          "ids": [
+            228
+          ]
+        },
+        {
+          "id": 229,
+          "name": "Houndmaster Grebmar",
+          "order": 2000,
+          "ids": [
+            229
+          ]
+        },
+        {
+          "id": 230,
+          "name": "Ring of Law",
+          "order": 3000,
+          "ids": [
+            230
+          ]
+        },
+        {
+          "id": 231,
+          "name": "Pyromancer Loregrain",
+          "order": 4000,
+          "ids": [
+            231
+          ]
+        },
+        {
+          "id": 232,
+          "name": "Lord Incendius",
+          "order": 5000,
+          "ids": [
+            232
+          ]
+        },
+        {
+          "id": 233,
+          "name": "Warder Stilgiss",
+          "order": 6000,
+          "ids": [
+            233
+          ]
+        },
+        {
+          "id": 234,
+          "name": "Fineous Darkvire",
+          "order": 7000,
+          "ids": [
+            234
+          ]
+        },
+        {
+          "id": 235,
+          "name": "Bael'Gar",
+          "order": 8000,
+          "ids": [
+            235
+          ]
+        },
+        {
+          "id": 236,
+          "name": "General Angerforge",
+          "order": 9000,
+          "ids": [
+            236
+          ]
+        },
+        {
+          "id": 237,
+          "name": "Golem Lord Argelmach",
+          "order": 10000,
+          "ids": [
+            237
+          ]
+        },
+        {
+          "id": 238,
+          "name": "Hurley Blackbreath",
+          "order": 11000,
+          "ids": [
+            238
+          ]
+        },
+        {
+          "id": 239,
+          "name": "Phalanx",
+          "order": 12000,
+          "ids": [
+            239
+          ]
+        },
+        {
+          "id": 240,
+          "name": "Ribbly Screwspigot",
+          "order": 13000,
+          "ids": [
+            240
+          ]
+        },
+        {
+          "id": 241,
+          "name": "Plugger Spazzring",
+          "order": 14000,
+          "ids": [
+            241
+          ]
+        },
+        {
+          "id": 2791,
+          "name": "The Vault",
+          "order": 14500,
+          "ids": [
+            2791
+          ]
+        },
+        {
+          "id": 242,
+          "name": "Ambassador Flamelash",
+          "order": 15000,
+          "ids": [
+            242
+          ]
+        },
+        {
+          "id": 243,
+          "name": "The Seven",
+          "order": 16000,
+          "ids": [
+            243
+          ]
+        },
+        {
+          "id": 244,
+          "name": "Magmus",
+          "order": 17000,
+          "ids": [
+            244
+          ]
+        },
+        {
+          "id": 2789,
+          "name": "Princess Moira Bronzebeard",
+          "order": 18000,
+          "ids": [
+            2789
+          ]
+        },
+        {
+          "id": 2790,
+          "name": "Emperor Dagran Thaurissan",
+          "order": 19000,
+          "ids": [
+            2790
+          ]
+        }
+      ]
+    },
+    "diremaul": {
+      "entrance": {
+        "map": 1444,
+        "x": 0.592,
+        "y": 0.451,
+        "kind": 3,
+        "entrance": true,
+        "mask": 1,
+        "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua",
+        "count": 2
+      },
+      "encounters": [
+        {
+          "id": 343,
+          "name": "Zevrim Thornhoof",
+          "order": 0,
+          "ids": [
+            343
+          ]
+        },
+        {
+          "id": 344,
+          "name": "Hydrospawn",
+          "order": 1000,
+          "ids": [
+            344
+          ]
+        },
+        {
+          "id": 345,
+          "name": "Lethtendris",
+          "order": 2000,
+          "ids": [
+            345
+          ]
+        },
+        {
+          "id": 2792,
+          "name": "Pusillin",
+          "order": 2500,
+          "ids": [
+            2792
+          ]
+        },
+        {
+          "id": 346,
+          "name": "Alzzin the Wildshaper",
+          "order": 3000,
+          "ids": [
+            346
+          ]
+        },
+        {
+          "id": 350,
+          "name": "Tendris Warpwood",
+          "order": 3500,
+          "ids": [
+            350
+          ]
+        },
+        {
+          "id": 347,
+          "name": "Illyanna Ravenoak",
+          "order": 4000,
+          "ids": [
+            347
+          ]
+        },
+        {
+          "id": 348,
+          "name": "Magister Kalendris",
+          "order": 5000,
+          "ids": [
+            348
+          ]
+        },
+        {
+          "id": 349,
+          "name": "Immol'thar",
+          "order": 6000,
+          "ids": [
+            349
+          ]
+        },
+        {
+          "id": 361,
+          "name": "Prince Tortheldrin",
+          "order": 7000,
+          "ids": [
+            361
+          ]
+        },
+        {
+          "id": 362,
+          "name": "Guard Mol'dar",
+          "order": 8000,
+          "ids": [
+            362
+          ]
+        },
+        {
+          "id": 363,
+          "name": "Stomper Kreeg",
+          "order": 9000,
+          "ids": [
+            363
+          ]
+        },
+        {
+          "id": 364,
+          "name": "Guard Fengus",
+          "order": 10000,
+          "ids": [
+            364
+          ]
+        },
+        {
+          "id": 365,
+          "name": "Guard Slip'kik",
+          "order": 11000,
+          "ids": [
+            365
+          ]
+        },
+        {
+          "id": 366,
+          "name": "Captain Kromcrush",
+          "order": 12000,
+          "ids": [
+            366
+          ]
+        },
+        {
+          "id": 367,
+          "name": "Cho'Rush the Observer",
+          "order": 13000,
+          "ids": [
+            367
+          ]
+        },
+        {
+          "id": 368,
+          "name": "King Gordok",
+          "order": 14000,
+          "ids": [
+            368
+          ]
+        },
+        {
+          "id": 2793,
+          "name": "Lord Hel'nurath",
+          "order": 15000,
+          "ids": [
+            2793
+          ]
+        },
+        {
+          "id": 2794,
+          "name": "Tsu'zee",
+          "order": 16000,
+          "ids": [
+            2794
+          ]
+        }
+      ]
+    },
+    "blackmaw": {
+      "entrance": null,
+      "encounters": [
+        {
+          "id": 3315,
+          "name": "Withermaw",
+          "order": 0,
+          "ids": [
+            3315
+          ]
+        },
+        {
+          "id": 3316,
+          "name": "Impaan the Imprisoner",
+          "order": 1000,
+          "ids": [
+            3316
+          ]
+        },
+        {
+          "id": 3327,
+          "name": "Elder Shaman Bloodmane",
+          "order": 2000,
+          "ids": [
+            3327
+          ]
+        },
+        {
+          "id": 3322,
+          "name": "Bonesnout the Unbroken",
+          "order": 3000,
+          "ids": [
+            3322
+          ]
+        },
+        {
+          "id": 3334,
+          "name": "Varrox Bleakhoof",
+          "order": 4000,
+          "ids": [
+            3334
+          ]
+        },
+        {
+          "id": 3323,
+          "name": "Blackmaw Behemoth",
+          "order": 5000,
+          "ids": [
+            3323
+          ]
+        },
+        {
+          "id": 3336,
+          "name": "Unbound Spirit",
+          "order": 6000,
+          "ids": [
+            3336
+          ]
+        }
+      ]
+    },
+    "lower-spire": {
+      "entrance": {
+        "map": 1427,
+        "x": 0.348,
+        "y": 0.853,
+        "kind": 1,
+        "entrance": true,
+        "mask": 1,
+        "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua",
+        "count": 1
+      },
+      "encounters": [
+        {
+          "id": 270,
+          "name": "Mother Smolderweb",
+          "order": 3000,
+          "ids": [
+            270
+          ]
+        }
+      ]
+    },
+    "stratholme": {
+      "entrance": {
+        "map": 1423,
+        "x": 0.2652,
+        "y": 0.1036,
+        "kind": 3,
+        "entrance": true,
+        "mask": 1,
+        "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua",
+        "count": 3
+      },
+      "encounters": [
+        {
+          "id": 473,
+          "name": "Hearthsinger Forresten",
+          "order": 1000,
+          "ids": [
+            473
+          ]
+        },
+        {
+          "id": 474,
+          "name": "Timmy the Cruel",
+          "order": 2000,
+          "ids": [
+            474
+          ]
+        },
+        {
+          "id": 476,
+          "name": "Malor the Zealous",
+          "order": 2500,
+          "ids": [
+            476
+          ]
+        },
+        {
+          "id": 475,
+          "name": "Cannon Master Willey",
+          "order": 3000,
+          "ids": [
+            475
+          ]
+        },
+        {
+          "id": 477,
+          "name": "Archivist Galford",
+          "order": 5000,
+          "ids": [
+            477
+          ]
+        },
+        {
+          "id": 478,
+          "name": "Balnazzar",
+          "order": 6000,
+          "ids": [
+            478
+          ]
+        },
+        {
+          "id": 472,
+          "name": "The Unforgiven",
+          "order": 6500,
+          "ids": [
+            472
+          ]
+        },
+        {
+          "id": 479,
+          "name": "Baroness Anastari",
+          "order": 7000,
+          "ids": [
+            479
+          ]
+        },
+        {
+          "id": 480,
+          "name": "Nerub'enkan",
+          "order": 8000,
+          "ids": [
+            480
+          ]
+        },
+        {
+          "id": 481,
+          "name": "Maleki the Pallid",
+          "order": 9000,
+          "ids": [
+            481
+          ]
+        },
+        {
+          "id": 482,
+          "name": "Magistrate Barthilas",
+          "order": 10000,
+          "ids": [
+            482
+          ]
+        },
+        {
+          "id": 483,
+          "name": "Ramstein the Gorger",
+          "order": 11000,
+          "ids": [
+            483
+          ]
+        },
+        {
+          "id": 484,
+          "name": "Baron Rivendare",
+          "order": 12000,
+          "ids": [
+            484
+          ]
+        },
+        {
+          "id": 2795,
+          "name": "Black Guard Swordsmith",
+          "order": 13000,
+          "ids": [
+            2795
+          ]
+        },
+        {
+          "id": 2796,
+          "name": "Crimson Hammersmith",
+          "order": 14000,
+          "ids": [
+            2796
+          ]
+        },
+        {
+          "id": 2797,
+          "name": "Ezra Grimm",
+          "order": 15000,
+          "ids": [
+            2797
+          ]
+        },
+        {
+          "id": 2798,
+          "name": "Postmaster Malown",
+          "order": 16000,
+          "ids": [
+            2798
+          ]
+        },
+        {
+          "id": 2799,
+          "name": "Skul",
+          "order": 17000,
+          "ids": [
+            2799
+          ]
+        },
+        {
+          "id": 2800,
+          "name": "Stonespine",
+          "order": 18000,
+          "ids": [
+            2800
+          ]
+        }
+      ]
+    },
+    "scholomance": {
+      "entrance": {
+        "map": 1422,
+        "x": 0.697,
+        "y": 0.732,
+        "kind": 1,
+        "entrance": true,
+        "mask": 1,
+        "source": "https://github.com/wheelbarrel00/EverythingQuests/blob/9c1ce1e44238d8c6c8ca36d8f49836fde70b564f/Data/QuestSpawns_Forever.lua",
+        "count": 4
+      },
+      "encounters": [
+        {
+          "id": 2805,
+          "name": "Kirtonos",
+          "order": -1000,
+          "ids": [
+            2805
+          ]
+        },
+        {
+          "id": 2804,
+          "name": "Jandice Barov",
+          "order": -500,
+          "ids": [
+            2804
+          ]
+        },
+        {
+          "id": 2811,
+          "name": "Rattlegore",
+          "order": -250,
+          "ids": [
+            2811
+          ]
+        },
+        {
+          "id": 2809,
+          "name": "Marduk Blackpool",
+          "order": -125,
+          "ids": [
+            2809
+          ]
+        },
+        {
+          "id": 2813,
+          "name": "Vectus",
+          "order": -62,
+          "ids": [
+            2813
+          ]
+        },
+        {
+          "id": 3055,
+          "name": "Kormok",
+          "order": -46,
+          "ids": [
+            3055
+          ]
+        },
+        {
+          "id": 2810,
+          "name": "Ras Frostwhisperer",
+          "order": -31,
+          "ids": [
+            2810
+          ]
+        },
+        {
+          "id": 2803,
+          "name": "Instructor Malicia",
+          "order": -15,
+          "ids": [
+            2803
+          ]
+        },
+        {
+          "id": 2802,
+          "name": "Doctor Theolen Krastinov",
+          "order": -7,
+          "ids": [
+            2802
+          ]
+        },
+        {
+          "id": 2808,
+          "name": "Lorekeeper Polkelt",
+          "order": 7000,
+          "ids": [
+            2808
+          ]
+        },
+        {
+          "id": 2812,
+          "name": "The Ravenian",
+          "order": 11000,
+          "ids": [
+            2812
+          ]
+        },
+        {
+          "id": 2807,
+          "name": "Lord Alexei Barov",
+          "order": 11250,
+          "ids": [
+            2807
+          ]
+        },
+        {
+          "id": 2806,
+          "name": "Lady Illucia Barov",
+          "order": 11500,
+          "ids": [
+            2806
+          ]
+        },
+        {
+          "id": 2801,
+          "name": "Darkmaster Gandling",
+          "order": 12000,
+          "ids": [
+            2801
+          ]
+        }
+      ]
+    },
+    "shapers": {
+      "entrance": null,
+      "encounters": [
+        {
+          "id": 3498,
+          "name": "Titanosaur",
+          "order": 0,
+          "ids": [
+            3498
+          ]
+        },
+        {
+          "id": 3499,
+          "name": "Ravasaur Hunters",
+          "order": 1000,
+          "ids": [
+            3499
+          ]
+        },
+        {
+          "id": 3500,
+          "name": "Thunderhoof",
+          "order": 2000,
+          "ids": [
+            3500
+          ]
+        },
+        {
+          "id": 3501,
+          "name": "Venomridge",
+          "order": 3000,
+          "ids": [
+            3501
+          ]
+        },
+        {
+          "id": 3507,
+          "name": "Direhorn Matriarch",
+          "order": 3500,
+          "ids": [
+            3507
+          ]
+        },
+        {
+          "id": 3503,
+          "name": "Cinder",
+          "order": 5000,
+          "ids": [
+            3503
+          ]
+        },
+        {
+          "id": 3504,
+          "name": "King Op",
+          "order": 6000,
+          "ids": [
+            3504
+          ]
+        },
+        {
+          "id": 3597,
+          "name": "Snowtalon",
+          "order": 6500,
+          "ids": [
+            3597
+          ]
+        },
+        {
+          "id": 3505,
+          "name": "Bolt",
+          "order": 7000,
+          "ids": [
+            3505
+          ]
+        },
+        {
+          "id": 3600,
+          "name": "Vitrix",
+          "order": 7500,
+          "ids": [
+            3600
+          ]
+        },
+        {
+          "id": 3502,
+          "name": "Nanaya",
+          "order": 8000,
+          "ids": [
+            3502
+          ]
+        }
+      ]
+    }
+  }
+}

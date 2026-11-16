@@ -61,7 +61,7 @@ function A.snapshot()
                 for j=1,math.min(#objectives,30) do
                     local o=objectives[j]
                     if not A.table(o) or not A.plain(o.finished) or not A.plain(o.text) then item.objectivesOK=false;break end
-                    item.objectives[#item.objectives+1]={text=A.str(o.text),done=o.finished==true,count=A.num(o.numFulfilled),total=A.num(o.numRequired),index=j}
+                    item.objectives[#item.objectives+1]={kind=A.str(o.type),text=A.str(o.text),done=o.finished==true,count=A.num(o.numFulfilled),total=A.num(o.numRequired),index=j}
                 end
             end
             s.quests[id]=item

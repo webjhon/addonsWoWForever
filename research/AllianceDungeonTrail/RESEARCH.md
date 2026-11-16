@@ -33,3 +33,15 @@ Reconstrução original em 16/11/2026. Escopo Alliance 1–60. O contrato anteri
 - Algumas instâncias compartilham mapa/alas. LBRS usa Map229 e guia apenas objetivos inferiores; mapa não comprova qual ala o grupo pretende percorrer. Nenhum attunement/raid é incluído.
 - Dungeons novas podem estar indisponíveis apesar de existirem na tabela Map. Dados de tabela não são acesso garantido.
 - Renderização, escala, texturas, eventos reais, taint e disponibilidade dos waypoints precisam de sessão de jogo antes de aprovação final. Candidato técnico não implica aprovação do produto.
+
+## Reconstrução 3.0 — substitui a decisão de interface/navegação2.0
+
+Motivo: avaliação real do usuário reprovou a experiência anterior, apesar dos testes. Novos requisitos e critérios estão em PRODUCT-3-ACCEPTANCE.md; revisão atual em PRODUCT-REVIEW.md. Preservados os adaptadores/estados úteis; adicionados hub/plano/configuração e motor próprio de seta.
+
+Dados de rota selecionados da fonte **MIT EverythingQuests**, revisão9c1ce1e44238d8c6c8ca36d8f49836fde70b564f: QuestCoords_Forever, QuestTurnIn_Forever e QuestSpawns_Forever. Importador literal AST não executa código externo nem copia passos de guia. Coordenadas de coleta e entrega são separadas; máscara de objetivos é por tipo, não índice global. Pontos explicitamente marcados como entrada não são usados como posições internas. Proveniência por ponto, arquivos/hashes e versão em knowledge/alliance/dungeon-trail-routes.json. Atribuição MIT segue no ZIP.
+
+Catálogo de encontros e UIMapIDs referenciados em DB2 público da build70938 (Wago), nomes/IDs factuais selecionados sem tabela completa ou descrição redistribuída. Catálogo não estabelece fase ativa ou percurso otimizado. Fonte QuestieDB foi considerada, mas não utilizada para exportar dados devido à ambiguidade de licença histórica; nenhuma base privada foi lida.
+
+Novas APIs: C_Map.GetPlayerMapPosition, GetWorldPosFromMapPos, CreateVector2D, GetPlayerFacing, C_Timer.NewTicker e Texture:SetRotation. Assinaturas de mapa consultadas na UI Blizzard Forever bebcb6bf309cf41b41bd74f8ca651e6a105b2676; presença no snapshot69893; runtime70938 continua UNVERIFIED. Matemática e desenho são originais; bibliotecas/arte TomTom não foram copiadas. Fonte pública TomTom foi consultada apenas como referência geral de convenção de rumo, sem incorporar implementação.
+
+Seta usa direção/distância direta em coordenadas de mundo, não caminho navegável por geometria. Ticker limitado a5Hz e cancelado ao perder destino/desativar; não faz polling do diário. Em combate o desenho direcional é pausado e nenhuma conclusão é inferida pela chegada. Testes de cardinalidade/rumo e getters secretos são simulações, não comprovação visual em cliente.

@@ -10,7 +10,7 @@ import {run} from './dungeon-trail/harness.ts';
 const require=createRequire(import.meta.url),parser=require('luaparse');
 const blueprint=()=>JSON.parse(fs.readFileSync(path.join(ROOT,'research/AllianceDungeonTrail/AllianceDungeonTrail.blueprint.json'),'utf8'));
 test('Rebuilt product satisfies unchanged factory gates, exact authorship, branding and Lua 5.1',()=>{
- const b=blueprint();assert.deepEqual(validateBlueprint(b).errors,[]);assert.equal(b.version,'2.0.0');
+ const b=blueprint();assert.deepEqual(validateBlueprint(b).errors,[]);assert.equal(b.version,'3.0.0');
  assert.equal(verifyProductContract(b).ok,true);
  for(const f of b.files){if(f.filename.endsWith('.lua'))parser.parse(f.content,{luaVersion:'5.1'});assert.equal(fs.readFileSync(path.join(ROOT,'addon-src/AllianceDungeonTrail',f.filename),'utf8').replaceAll('\r\n','\n'),f.content);}
  const bad=structuredClone(b);bad.files.find(f=>f.filename.endsWith('.toc')).content=bad.files.find(f=>f.filename.endsWith('.toc')).content.replace('Tonho Contrabando','Alliance Addon Factory');
@@ -71,18 +71,18 @@ test('Legacy manual confirmations migrate without becoming accepted or completed
  assert(DT.action.kind=='PREPARE')
 `));
 test('Native waypoint progresses, disappears safely, never persists synthetic coordinates',()=>run(`
- TEST.waypoints[2040]={map=7,x=.4,y=.6};accept(2040);assert(DT.action.nav.map==7);assert(TEST.tracked==2040)
- TEST.waypoints[2040]={map=8,x=.2,y=.3};fire('QUEST_POI_UPDATE');assert(DT.action.nav.map==8);assert(visibleText('Map 8'))
- TEST.waypoints[2040]=nil;fire('WAYPOINT_UPDATE');assert(not DT.action.nav);assert(TEST.tracked==0);assert(visibleText('Sem marcador'))
+ DT.option('nativeTracking',true);TEST.waypoints[2040]={map=7,x=.4,y=.6};accept(2040);assert(DT.action.nav.map==7);assert(TEST.tracked==2040)
+ TEST.waypoints[2040]={map=8,x=.2,y=.3};fire('QUEST_POI_UPDATE');assert(DT.action.nav.map==8)
+ TEST.waypoints[2040]=nil;fire('WAYPOINT_UPDATE');assert(not DT.action.nav);assert(TEST.tracked==0);assert(DT.navGoal)
  TEST.waypoints[2040]={map=7,x=2,y=.5};fire('WAYPOINT_UPDATE');assert(not DT.action.nav)
  assert(DT.state().waypoints==nil)
 `));
 test('User tracking is preserved, explicit navigation preference can take over, disable releases only own tracking',()=>run(`
- TEST.tracked=999;TEST.waypoints[2040]={map=7,x=.4,y=.6};accept(2040);assert(TEST.tracked==999)
+ DT.option('nativeTracking',true);TEST.tracked=999;TEST.waypoints[2040]={map=7,x=.4,y=.6};accept(2040);assert(TEST.tracked==999)
  DT.track(DT.action,true);assert(TEST.tracked==2040)
- DT.command('navegacao off');assert(TEST.tracked==0)
+ DT.option('nativeTracking',false);assert(TEST.tracked==0)
  TEST.tracked=999;DT.command('navegacao off');assert(TEST.tracked==999)
- TEST.otherPin=true;TEST.tracked=0;DT.command('navegacao on');assert(TEST.tracked==0)
+ TEST.otherPin=true;TEST.tracked=0;DT.option('nativeTracking',true);assert(TEST.tracked==0)
 `));
 test('Combat retains cached action, defers reads, invalidates quest XP and recovers completion',()=>run(`
  accept(2040);enter('deadmines');local reads=TEST.reads;TEST.combat=true;fire('PLAYER_REGEN_DISABLED')
@@ -164,4 +164,72 @@ test('Native destination text remains useful even when no coordinates are return
  C_QuestLog.GetNextWaypointText=function()return 'Retorne a Shoni em Ventobravo' end
  accept(2040);TEST.ready[2040]=true;fire('QUEST_LOG_UPDATE')
  assert(DT.action.kind=='TURN_IN' and not DT.action.nav);assert(visibleText('Retorne a Shoni em Ventobravo'))
+`));
+
+test('Hub selection switches dungeon without abandoning accepted quests; actual instance temporarily prevails',()=>run(`
+ accept(2040);assert(DT.action.dungeon.key=='deadmines')
+ clickTab('VISÃO GERAL')
+ local clicked=false;for _,f in ipairs(TEST.frames)do if f.caption and f.caption.text and f.caption.text:find('Wailing Caverns',1,true) and f.scripts.OnClick then f.scripts.OnClick(f);clicked=true;break end end
+ assert(clicked and DT.state().plan=='wailing');assert(DT.action.dungeon.key=='wailing');assert(DT.current().quests[2040])
+ enter('deadmines');assert(DT.action.dungeon.key=='deadmines');assert(DT.state().plan=='wailing')
+ leave();assert(DT.action.dungeon.key=='wailing');DT.selectPlan(nil);assert(not DT.state().plan)
+`));
+test('Overview is available for all27 dungeons with access, quests and encounter metadata',()=>run(`
+ for _,d in ipairs(DT.catalog)do DT.selectPlan(d.key);assert(DT.viewDungeon().key==d.key);assert(DT.overviews[d.key]);assert(visibleText(d.name))end
+ DT.selectPlan('deadmines');assert(visibleText('Rhahk'))
+`));
+test('Visible configuration changes actual arrow/tracker behavior and survives reload by GUID',()=>run(`
+ clickTab('CONFIGURAÇÕES');assert(visibleText('Seta de navegação própria'))
+ DT.option('arrow',false);assert(not DT.arrow:IsShown());DT.option('tracker',false);assert(not DT.tracker:IsShown())
+ DT.option('scale',1.2);DT.option('units','jd');DT.init();DT.reconcile()
+ assert(not DT.state().options.arrow and DT.state().options.scale==1.2 and DT.state().options.units=='jd')
+ TEST.guid='Player-new';DT.init();DT.reconcile();assert(DT.state().options.arrow and DT.state().options.scale==1)
+`));
+test('Own arrow has factual pickup target without quest waypoint or supertracking APIs',()=>run(`
+ C_SuperTrack=nil;C_QuestLog.GetNextWaypoint=nil;C_QuestLog.GetNextWaypointForMap=nil
+ DT.selectPlan('deadmines');DT.guide('pickup',DT.findDungeon('deadmines'),{id=2040})
+ assert(DT.navGoal and DT.navGoal.map==1453);assert(math.abs(DT.navGoal.x-.6263)<.00001)
+ assert(DT.arrow.texture:IsShown());assert(DT.arrow.distance>0);assert(TEST.trackCalls==0)
+`));
+test('Own direction geometry covers cardinal points and player heading',()=>run(`
+ local r,d=DT.bearing(100,0,0);assert(math.abs(r)<.00001 and d==100)
+ r=DT.bearing(0,-100,0);assert(math.abs(r+math.pi/2)<.00001)
+ r=DT.bearing(-100,0,0);assert(math.abs(math.abs(r)-math.pi)<.00001)
+ r=DT.bearing(0,100,0);assert(math.abs(r-math.pi/2)<.00001)
+ r=DT.bearing(0,-100,-math.pi/2);assert(math.abs(r)<.00001)
+`));
+test('Arrow follows movement, marks arrival without completing quest, and hides stale heading on missing position',()=>run(`
+ DT.guide('pickup',DT.findDungeon('deadmines'),{id=2040});local before=DT.arrow.distance
+ TEST.px=.6263;TEST.py=.3411;DT.updateArrow();assert(DT.arrow.distance<1);assert(not DT.arrow.texture:IsShown())
+ assert(DT.arrow.status.text:find('chegou'));assert(not DT.state().completed[2040])
+ TEST.px=.2;TEST.py=.2;DT.updateArrow();assert(DT.arrow.texture:IsShown() and DT.arrow.distance~=before)
+ TEST.positionMissing=true;DT.updateArrow();assert(not DT.arrow.texture:IsShown());assert(DT.arrow.status.text:find('indisponível'))
+`));
+test('Entrance-only source points are never used as boss coordinates inside dungeon',()=>run(`
+ accept(2040);enter('deadmines');assert(not DT.navGoal);assert(not DT.arrow.texture:IsShown())
+ assert(DT.arrow.status.text:find('Interior'))
+`));
+test('Encounter overview updates only from a successful real encounter event and persists through reload',()=>run(`
+ enter('deadmines');local d=DT.findDungeon('deadmines');local b=DT.overviews.deadmines.encounters[1]
+ assert(not DT.bossObserved(d,b));fire('ENCOUNTER_END',b.id,b.name,1,5,0);assert(not DT.bossObserved(d,b))
+ fire('ENCOUNTER_END',b.id,b.name,1,5,1);assert(DT.bossObserved(d,b));DT.init();DT.reconcile();assert(DT.bossObserved(d,b))
+`));
+test('Arrow ticker is bounded and cancelled when navigation disabled; no quest log polling in tick',()=>run(`
+ DT.guide('pickup',DT.findDungeon('deadmines'),{id=2040});local t=TEST.tickers[#TEST.tickers];local reads=TEST.reads
+ for i=1,30 do t.callback()end;assert(TEST.reads==reads)
+ DT.option('arrow',false);assert(t.cancelled);assert(not DT.arrow:IsShown())
+`));
+test('Own routes carry versioned sources, separate pickup/turn-in and explicitly mark entrances',()=>{
+ const p=JSON.parse(fs.readFileSync(path.join(ROOT,'knowledge/alliance/dungeon-trail-routes.json'),'utf8'));
+ assert.equal(p.clientVerified,false);assert.equal(Object.keys(p.dungeons).length,27);assert.equal(Object.keys(p.points).length,66);
+ for(const r of Object.values(p.points) as any[])for(const kind of ['pickup','turnin','objectives'])for(const point of r[kind]){assert.ok(point.map>0&&point.x>=0&&point.x<=1&&point.y>=0&&point.y<=1);assert.ok(point.source.includes('9c1ce1e44238d8c6c8ca36d8f49836fde70b564f'));}
+ assert.ok(p.points[2040].turnin[0].npc>0);assert.ok(p.points[2040].objectives.every(p=>p.entrance));
+});
+
+test('Own arrow never keeps a direction from secret coordinates or a different physical world',()=>run(`
+ DT.guide('pickup',DT.findDungeon('deadmines'),{id=2040});assert(DT.arrow.texture:IsShown())
+ C_Map.GetWorldPosFromMapPos=function(map,point)if map==1453 then return 1,CreateVector2D(0,0)end;return 0,CreateVector2D(0,0)end
+ DT.updateArrow();assert(not DT.arrow.texture:IsShown());assert(DT.arrow.status.text:find('continente'))
+ C_Map.GetWorldPosFromMapPos=function()return 0,{GetXY=function()return {secret=true},1 end}end
+ DT.updateArrow();assert(not DT.arrow.texture:IsShown());assert(DT.arrow.status.text:find('indisponível'))
 `));
