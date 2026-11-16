@@ -1,16 +1,16 @@
 {
-  "startedAt": "2026-11-16T13:02:00.205Z",
+  "startedAt": "2026-11-16T17:47:29.810Z",
   "stages": [
     {
       "name": "CONTEXT_AND_MEMORY",
-      "at": "2026-11-16T13:02:00.211Z",
+      "at": "2026-11-16T17:47:29.821Z",
       "ok": true,
       "build": null,
-      "memories": 2
+      "memories": 4
     },
     {
       "name": "RAG_AND_RESEARCH",
-      "at": "2026-11-16T13:02:00.214Z",
+      "at": "2026-11-16T17:47:29.833Z",
       "ok": true,
       "citations": [
         "community-api-snapshot",
@@ -27,15 +27,22 @@
     },
     {
       "name": "SCOPE_AND_GUARDRAILS",
-      "at": "2026-11-16T13:02:00.227Z",
+      "at": "2026-11-16T17:47:29.866Z",
       "ok": true,
       "reason": ""
     },
     {
       "name": "CAPABILITY_REVIEW",
-      "at": "2026-11-16T13:02:00.231Z",
+      "at": "2026-11-16T17:47:29.876Z",
       "ok": true,
       "unknownApis": [
+        "Frame.SetFrameLevel",
+        "Frame.GetPoint",
+        "Frame.SetMovable",
+        "Frame.RegisterForDrag",
+        "Frame.StartMoving",
+        "Frame.StopMovingOrSizing",
+        "Frame.SetFrameStrata",
         "C_GossipInfo.GetAvailableQuests",
         "CreateFrame",
         "UnitFactionGroup",
@@ -104,7 +111,7 @@
     },
     {
       "name": "PRODUCT_QUALITY_GATE",
-      "at": "2026-11-16T13:02:02.358Z",
+      "at": "2026-11-16T17:47:37.533Z",
       "ok": true,
       "proof": {
         "ok": true,
@@ -149,13 +156,13 @@
     },
     {
       "name": "PACKAGING",
-      "at": "2026-11-16T13:02:02.359Z",
+      "at": "2026-11-16T17:47:37.535Z",
       "ok": true,
-      "zip": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-product\\releases\\AllianceDungeonTrail-3.0.0-candidate.zip"
+      "zip": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\releases\\AllianceDungeonTrail-3.1.0-candidate.zip"
     },
     {
       "name": "REVIEW_AND_HANDOFF",
-      "at": "2026-11-16T13:02:02.360Z",
+      "at": "2026-11-16T17:47:37.536Z",
       "ok": true,
       "status": "STATIC_PASSED",
       "clientVerified": false
@@ -164,13 +171,13 @@
   "status": "STATIC_PASSED",
   "addon": "AllianceDungeonTrail",
   "result": {
-    "out": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-product\\releases\\AllianceDungeonTrail-3.0.0-candidate.zip",
-    "files": 18,
-    "bytes": 201710,
+    "out": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\releases\\AllianceDungeonTrail-3.1.0-candidate.zip",
+    "files": 19,
+    "bytes": 205153,
     "status": "STATIC_PASSED",
-    "addon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-product\\addons\\AllianceDungeonTrail",
-    "destination": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-product\\dist\\AllianceDungeonTrail",
-    "marketingIcon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-product\\releases\\AllianceDungeonTrail-icon.png",
+    "addon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\addons\\AllianceDungeonTrail",
+    "destination": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\dist\\AllianceDungeonTrail",
+    "marketingIcon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\releases\\AllianceDungeonTrail-icon.png",
     "productQuality": {
       "ok": true,
       "errors": [],
@@ -213,5 +220,5 @@
     }
   },
   "provider": null,
-  "finishedAt": "2026-11-16T13:02:02.367Z"
+  "finishedAt": "2026-11-16T17:47:37.546Z"
 }

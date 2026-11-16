@@ -2,8 +2,8 @@ local _, ns = ...
 local A=ns
 local gold={.93,.77,.46};local textColor={.86,.92,.95};local muted={.53,.65,.73};local teal={.35,.81,.75}
 local f=CreateFrame('Frame','AllianceDungeonTrailFrame',UIParent);f:Hide();ns.TonhoBranding:RegisterWindow(f);A.frame=f
-f:SetSize(890,610);f:SetPoint('CENTER',UIParent,'CENTER',0,0);f:SetClampedToScreen(true);f:SetMovable(true);f:EnableMouse(true);f:RegisterForDrag('LeftButton')
-f:SetScript('OnDragStart',function()if not InCombatLockdown() then f:StartMoving() end end);f:SetScript('OnDragStop',function()f:StopMovingOrSizing()end)
+f:SetSize(890,610);f:SetFrameStrata('FULLSCREEN_DIALOG');f:SetFrameLevel(100);f:SetPoint('CENTER',UIParent,'CENTER',0,80);f:SetClampedToScreen(true);f:SetMovable(true);f:EnableMouse(true);f:RegisterForDrag('LeftButton')
+f:SetScript('OnDragStart',function()if not InCombatLockdown() then f:StartMoving() end end);f:SetScript('OnDragStop',function()f:StopMovingOrSizing();A.savePosition(f,'hub')end)
 local function panel(frame,r,g,b)local t=frame:CreateTexture(nil,'BACKGROUND');t:SetAllPoints();t:SetColorTexture(r,g,b,.97);return t end
 panel(f,.025,.045,.068)
 local function label(parent,x,y,w,h,size,color)
@@ -11,7 +11,8 @@ local function label(parent,x,y,w,h,size,color)
 end
 local function button(parent,caption,x,y,w,h,fn)
  local b=CreateFrame('Button',nil,parent);b:SetPoint('TOPLEFT',parent,'TOPLEFT',x,-y);b:SetSize(w,h);panel(b,.075,.14,.18)
- b.caption=label(b,10,8,w-16,h-10,11,gold);b.caption:SetText(caption);b:SetScript('OnClick',fn);return b
+ local padding=w<40 and 4 or 10
+ b.caption=label(b,padding,8,w-padding-6,h-10,11,gold);b.caption:SetText(caption);b:SetScript('OnClick',fn);return b
 end
 local icon=f:CreateTexture(nil,'ARTWORK');icon:SetPoint('TOPLEFT',f,'TOPLEFT',20,-18);icon:SetSize(42,42);icon:SetTexture('Interface\\AddOns\\AllianceDungeonTrail\\assets\\Icon.tga')
 label(f,76,20,640,24,20,gold):SetText('ALLIANCE DUNGEON TRAIL')
@@ -25,7 +26,8 @@ for i=1,8 do local slot=i;dungeonButtons[i]=button(f,'',20,164+(i-1)*43,250,38,f
 button(f,'<',20,518,50,30,function()page=math.max(1,page-1);A.render()end)
 local pageText=label(f,83,526,115,20,11,muted)
 button(f,'>',220,518,50,30,function()page=page+1;A.render()end)
-button(f,'MODO AUTOMÁTICO',20,563,250,30,function()A.selectPlan(nil)end)
+button(f,'AUTOMÁTICO',20,563,120,30,function()A.selectPlan(nil)end)
+local pauseButton=button(f,'PAUSAR GUIA',150,563,120,30,function()A.pauseGuide(not A.state().paused)end)
 local tabButtons={}
 for i,v in ipairs({{'overview','VISÃO GERAL'},{'quests','QUESTS'},{'settings','CONFIGURAÇÕES'}}) do local key=v[1];tabButtons[key]=button(f,v[2],294+(i-1)*192,89,184,33,function()tab=key;A.render()end) end
 local name=label(f,294,142,570,34,22,gold);local meta=label(f,294,184,570,28,11,muted)
@@ -44,21 +46,29 @@ for i,v in ipairs(choices) do local key=v[1];optionButtons[i]=button(child,'',4,
 optionButtons[5]=button(child,'',4,176,526,36,function()local s=A.state().options.scale;A.option('scale',s<.9 and 1 or (s<1.1 and 1.2 or .8))end)
 optionButtons[6]=button(child,'',4,219,526,36,function()A.option('units',A.state().options.units=='m' and 'jd' or 'm')end)
 optionButtons[7]=button(child,'',4,262,526,36,function()A.option('arrival',A.state().options.arrival>=30 and 10 or A.state().options.arrival+10)end)
+optionButtons[8]=button(child,'',4,305,526,36,function()A.option('lockArrow',not A.state().options.lockArrow)end)
+optionButtons[9]=button(child,'RESTAURAR POSIÇÕES DOS PAINÉIS',4,348,526,36,function()A.resetPositions();A.render()end)
 local tracker=CreateFrame('Frame','AllianceDungeonTrailTracker',UIParent);tracker:SetSize(334,240);tracker:SetPoint('RIGHT',UIParent,'RIGHT',-24,0);tracker:SetClampedToScreen(true);panel(tracker,.025,.045,.068);A.tracker=tracker
+tracker:SetFrameStrata('DIALOG');tracker:SetFrameLevel(20);tracker:SetMovable(true);tracker:EnableMouse(true);tracker:RegisterForDrag('LeftButton')
+tracker:SetScript('OnDragStart',function()if not InCombatLockdown() then tracker:StartMoving() end end)
+tracker:SetScript('OnDragStop',function()tracker:StopMovingOrSizing();A.savePosition(tracker,'tracker')end)
 local stage=label(tracker,16,14,220,20,10,teal);local actionTitle=label(tracker,16,42,302,62,18,gold);local actionDetail=label(tracker,16,112,302,80,11,textColor);local actionNav=label(tracker,16,202,302,28,10,muted)
-button(tracker,'OPÇÕES',230,8,88,28,function()tab='settings';f:Show();A.render()end)
+button(tracker,'OPÇÕES',210,8,80,28,function()tab='settings';f:Show();A.render()end)
+button(tracker,'X',298,8,24,28,function()A.state().hidden=true;A.render()end)
 local states={ACTIVE='NO DIÁRIO',READY='PRONTA PARA ENTREGAR',TURNED_IN='ENTREGUE',MISSING='AUSENTE • NÃO CONCLUÍDA',AVAILABLE_UNKNOWN='OFERTA POTENCIAL',FAILED='FALHOU'}
 function A.render()
  local s,a,char=A.current(),A.action,A.state();if not s or not a or not char then return end
  local opts=char.options
+ A.loadPosition(f,'hub');A.loadPosition(tracker,'tracker')
  if not A.allowed(s) then f:Hide();tracker:Hide();if A.arrow then A.arrow:Hide()end;return end
  f:SetScale(math.min(opts.scale,UIParent:GetWidth()/920,UIParent:GetHeight()/640));tracker:SetScale(opts.scale)
  if not char.ui3Seen and not A.pending then char.ui3Seen=true;f:Show() end
- if opts.tracker and not char.hidden then tracker:Show()else tracker:Hide()end
+ if opts.tracker and not char.hidden and not char.paused then tracker:Show()else tracker:Hide()end
+ pauseButton.caption:SetText(char.paused and 'RETOMAR GUIA' or 'PAUSAR GUIA')
  stage:SetText(A.pending and 'COMBATE • ATUALIZAÇÃO PENDENTE' or 'AGORA • '..a.kind)
  actionTitle:SetText(a.title);actionDetail:SetText(a.detail:sub(1,310));actionNav:SetText(A.navGoal and ('Seta: '..A.navGoal.title) or 'Sem marcador nesta etapa • veja as referências')
  local d=A.viewDungeon();if lastView~=d.key or lastTab~=tab then scrollValue=0;lastView=d.key;lastTab=tab end;name:SetText(d.name);meta:SetText('Níveis '..d.level..'–'..d.high..'  •  '..d.zone..'  •  '..#d.quests..' quests selecionadas')
- subtitle:SetText('TONHO CONTRABANDO  /  NÍVEL '..s.level..'  /  '..(char.plan and 'PLANO ESCOLHIDO' or 'MODO AUTOMÁTICO')..(s.inside and '  /  EM INSTÂNCIA' or ''))
+ subtitle:SetText('TONHO CONTRABANDO  /  NÍVEL '..s.level..'  /  '..(char.paused and 'GUIA PAUSADO' or (char.plan and 'PLANO ESCOLHIDO' or 'MODO AUTOMÁTICO'))..(s.inside and '  /  EM INSTÂNCIA' or ''))
  local eligible={};for _,entry in ipairs(A.catalog)do if not filtered or entry.level<=s.level and s.level<=entry.high then eligible[#eligible+1]=entry end end
  local pages=math.max(1,math.ceil(#eligible/8));page=math.min(page,pages);pageText:SetText(page..' / '..pages)
  filter.caption:SetText(filtered and 'FAIXA ATUAL • CLIQUE PARA TODAS' or 'TODAS AS DUNGEONS')
@@ -83,7 +93,7 @@ function A.render()
     card.title=label(card,12,10,510,36,12,gold);card.detail=label(card,12,50,510,70,11,textColor)
     card.button=button(card,'',12,132,240,28,function(self)
      local row=self.row;local kind=row.state=='READY'and'turnin'or(row.live and'objective'or'pickup')
-     if kind=='objective'then A.navOverride=nil;A.state().focusQuest=row.q.id;A.reconcile()else A.guide(kind,A.viewDungeon(),row.q)end
+     if kind=='objective'then A.navOverride=nil;A.state().navChoice=nil;A.state().focusQuest=row.q.id;A.reconcile()else A.guide(kind,A.viewDungeon(),row.q)end
     end);questCards[i]=card
    end
    local card=questCards[i];card:ClearAllPoints();card:SetPoint('TOPLEFT',child,'TOPLEFT',0,-(36+(i-1)*184));card:Show()
@@ -92,26 +102,32 @@ function A.render()
    card.button.row=r;card.button.caption:SetText(r.state=='READY'and'GUIAR ENTREGA'or(r.live and'ACOMPANHAR OBJETIVO'or'GUIAR COLETA'))
   end
  else
+  meta:SetText('CONFIGURAÇÕES • role com o mouse para ver todas as opções')
   local opts=char.options
   for i,v in ipairs(choices)do optionButtons[i]:Show();optionButtons[i].caption:SetText(v[2]..'  •  '..(opts[v[1]]and'LIGADO'or'DESLIGADO'))end
   optionButtons[5]:Show();optionButtons[5].caption:SetText('Escala da interface • '..math.floor(opts.scale*100)..'%')
   optionButtons[6]:Show();optionButtons[6].caption:SetText('Distância • '..opts.units..' (linha reta)')
   optionButtons[7]:Show();optionButtons[7].caption:SetText('Chegada à área • '..opts.arrival..' jardas')
+  optionButtons[8]:Show();optionButtons[8].caption:SetText('Travar posição da flecha • '..(opts.lockArrow and 'SIM' or 'NÃO'))
+  optionButtons[9]:Show()
  end
- body:SetText(table.concat(lines,'\n'));bodyHeight=tab=='settings'and 310 or (tab=='quests'and math.max(280,42+#rows*184)or math.max(280,body:GetStringHeight()+55));body:SetHeight(bodyHeight);child:SetHeight(bodyHeight)
+ body:SetText(table.concat(lines,'\n'));bodyHeight=tab=='settings'and 395 or (tab=='quests'and math.max(280,42+#rows*184)or math.max(280,body:GetStringHeight()+55));body:SetHeight(bodyHeight);child:SetHeight(bodyHeight)
  scrollValue=math.min(scrollValue,math.max(0,bodyHeight-276));scroll:SetVerticalScroll(scrollValue)
  if A.updateArrow then A.updateArrow()end
 end
 A.makeArrow()
 function A.command(value)
  value=(value or ''):lower()
+ if value=='' and f:IsShown() then f:Hide();return end
+ if value=='ocultar' or value=='limpar' then A.pauseGuide(true);f:Hide();return end
+ if value=='retomar' then A.pauseGuide(false);return end
  if value=='diagnostico'then A.diagnostics();return end
  if value=='auto'then A.selectPlan(nil);return end
  local key=value:match('^dungeon%s+(.+)$');if key then A.selectPlan(key);return end
  if value=='navegacao off'then A.option('arrow',false);return end
  if value=='navegacao on'then A.option('arrow',true);return end
  if value=='config'then tab='settings'end
- if value=='resetpos'then f:ClearAllPoints();f:SetPoint('CENTER',UIParent,'CENTER',0,0)end
+ if value=='resetpos'then A.resetPositions()end
  if A.state()then A.state().hidden=false end;A.reconcile();if not A.pending then f:Show()end
 end
 SLASH_ALLIANCEDUNGEONTRAIL1='/adt';SLASH_ALLIANCEDUNGEONTRAIL2='/dungeontrail';SlashCmdList.ALLIANCEDUNGEONTRAIL=A.command

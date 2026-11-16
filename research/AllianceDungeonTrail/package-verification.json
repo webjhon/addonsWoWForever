@@ -1,13 +1,13 @@
 {
-  "at": "2026-11-16T13:02:00.140Z",
+  "at": "2026-11-16T17:47:29.641Z",
   "addon": "AllianceDungeonTrail",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "status": "STATIC_PASSED",
   "mockStatus": "MOCK_PASSED",
   "clientVerified": false,
   "tests": {
-    "count": 71,
-    "passed": 71
+    "count": 92,
+    "passed": 92
   },
   "logs": [
     {
@@ -41,10 +41,10 @@
       "signal": null
     }
   ],
-  "files": 18,
-  "zipBytes": 201710,
-  "sha256": "d76a9d1add37e21f89918f959fdd3bb3ecdbdb25b83c5f6a768ecc7717af4f5c",
-  "zip": "AllianceDungeonTrail-3.0.0-candidate.zip",
+  "files": 19,
+  "zipBytes": 205153,
+  "sha256": "2b2c85034c129d9692e866a5391b3686c0b1a1c944aad7dc079cdb3e0179ce99",
+  "zip": "AllianceDungeonTrail-3.1.0-candidate.zip",
   "verifiedBlueprintFiles": [
     "Adapters.lua",
     "AllianceDungeonTrail.toc",
@@ -52,6 +52,7 @@
     "Core.lua",
     "Data.lua",
     "INSTALL.md",
+    "LIVE-TEST.md",
     "Navigation.lua",
     "Product.lua",
     "TEST-REPORT.md",
@@ -62,5 +63,6 @@
   "branding": "INJECTED_AND_VERIFIED",
   "tga": "512x512x32 / original 32px pixel art",
   "installedExecutableVersion": "1.60.1.70938",
-  "liveClientTests": "NOT_RUN"
+  "liveClientTests": "PARTIAL_CLIENT_TESTED",
+  "liveReport": "LIVE-TEST.md"
 }

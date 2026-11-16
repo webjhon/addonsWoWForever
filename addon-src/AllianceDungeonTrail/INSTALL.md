@@ -1,6 +1,6 @@
 # AllianceDungeonTrail 3.0 — instalação e uso
 
-Extraia `AllianceDungeonTrail-3.0.0-candidate.zip` e copie a pasta `AllianceDungeonTrail` para `_forever_/Interface/AddOns/`, substituindo a pasta anterior inteira. O TOC deve ficar diretamente nessa pasta. Reinicie ou use `/reload`.
+Extraia `AllianceDungeonTrail-3.1.0-candidate.zip` e copie a pasta `AllianceDungeonTrail` para `_forever_/Interface/AddOns/`, substituindo a pasta anterior inteira. O TOC deve ficar diretamente nessa pasta. Reinicie ou use `/reload`.
 
 `/adt` abre o hub. Escolha qualquer uma das27 dungeons na lateral (páginas e filtro por faixa). A seleção passa a ser seu plano; você não precisa abandonar quests de outra dungeon. A instância em que você realmente está sempre prevalece durante a run; ao sair, o plano escolhido é retomado. MODO AUTOMÁTICO volta à recomendação por contexto.
 
@@ -23,3 +23,5 @@ Autores/créditos: **Tonho Contrabando**, Hunter pixel art e ícone original. Co
 ## Verificação real pendente
 
 Nenhum teste no WoW foi executado nesta candidata. Antes de aprovar: confirmar GetBuildInfo/interface16001 na build instalada70938; testar direção visual com personagem girando/andando; coleta e entrega com pontos factuais; troca de plano antes/durante/depois de dungeon; scroll/escala/abas em resolução real; objetivos, encontros, combate, morte e reload; ausência de erros/taint. Mock e CI verdes não provam essas condições.
+
+3.1.0: arraste flecha/tracker/painel para reposicionar; posições são salvas por personagem. X da flecha desliga apenas a seta; X do tracker oculta apenas o tracker. /adt abre/fecha o painel; /adt ocultar pausa o guia inteiro sem abandonar quests; /adt retomar retoma; /adt resetpos restaura posições. Selecionar dungeon ou guiar um ponto retoma explicitamente. Configurações incluem trava da flecha e restauração de posições, acessíveis rolando a lista.

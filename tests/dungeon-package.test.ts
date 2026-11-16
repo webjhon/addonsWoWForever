@@ -6,11 +6,11 @@ import zlib from 'node:zlib';
 import crypto from 'node:crypto';
 import {ROOT} from '../src/core.ts';
 
-test('Shipped 3.0 ZIP matches tested blueprint, original branding, installation layout and SHA256',()=>{
- const filename='AllianceDungeonTrail-3.0.0-candidate.zip';
+test('Shipped 3.1 ZIP matches tested blueprint, original branding, installation layout and SHA256',()=>{
+ const filename='AllianceDungeonTrail-3.1.0-candidate.zip';
  const bytes=fs.readFileSync(path.join(ROOT,'releases',filename));
  const hash=crypto.createHash('sha256').update(bytes).digest('hex');
- assert.equal(fs.readFileSync(path.join(ROOT,'releases/AllianceDungeonTrail-3.0.0-candidate.sha256'),'utf8').trim(),hash+'  '+filename);
+ assert.equal(fs.readFileSync(path.join(ROOT,'releases/AllianceDungeonTrail-3.1.0-candidate.sha256'),'utf8').trim(),hash+'  '+filename);
  const entries=new Map<string,Buffer>();let offset=0;
  while(bytes.readUInt32LE(offset)===0x04034b50){
   const size=bytes.readUInt32LE(offset+18),n=bytes.readUInt16LE(offset+26),extra=bytes.readUInt16LE(offset+28);

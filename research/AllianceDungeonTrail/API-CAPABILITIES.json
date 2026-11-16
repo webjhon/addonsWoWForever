@@ -3,7 +3,7 @@
   "referenceBranch": "forever",
   "installedExecutable": "1.60.1.70938",
   "interface": 16001,
-  "clientExecuted": false,
+  "clientExecuted": true,
   "rights": "Original factual summary of API metadata; no implementation copied.",
   "assessments": [
     {
@@ -124,6 +124,48 @@
       "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
       "currentBuildStatus": "UNVERIFIED",
       "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/GossipInfoDocumentation.lua"
+    },
+    {
+      "symbol": "Frame.GetPoint",
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "SUPPORTED_WITH_LIMITATIONS",
+      "evidence": "LIVE-TEST.md — executed own-frame UI interactions on 1.60.1.70938; no combat validation"
+    },
+    {
+      "symbol": "Frame.SetMovable",
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "SUPPORTED_WITH_LIMITATIONS",
+      "evidence": "LIVE-TEST.md — executed own-frame UI interactions on 1.60.1.70938; no combat validation"
+    },
+    {
+      "symbol": "Frame.RegisterForDrag",
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "SUPPORTED_WITH_LIMITATIONS",
+      "evidence": "LIVE-TEST.md — executed own-frame UI interactions on 1.60.1.70938; no combat validation"
+    },
+    {
+      "symbol": "Frame.StartMoving",
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "SUPPORTED_WITH_LIMITATIONS",
+      "evidence": "LIVE-TEST.md — executed own-frame UI interactions on 1.60.1.70938; no combat validation"
+    },
+    {
+      "symbol": "Frame.StopMovingOrSizing",
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "SUPPORTED_WITH_LIMITATIONS",
+      "evidence": "LIVE-TEST.md — executed own-frame UI interactions on 1.60.1.70938; no combat validation"
+    },
+    {
+      "symbol": "Frame.SetFrameStrata",
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "SUPPORTED_WITH_LIMITATIONS",
+      "evidence": "LIVE-TEST.md — executed own-frame UI interactions on 1.60.1.70938; no combat validation"
+    },
+    {
+      "symbol": "Frame.SetFrameLevel",
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "SUPPORTED_WITH_LIMITATIONS",
+      "evidence": "LIVE-TEST.md — executed own-frame UI interactions on 1.60.1.70938; no combat validation"
     }
   ],
   "restrictions": [
@@ -132,5 +174,23 @@
     "Native quest supertracking is informational; never move, accept, turn in or fight.",
     "Only manipulate own quest tracking unless player explicitly requests takeover.",
     "Gossip offers describe the currently open NPC dialogue, not global eligibility."
-  ]
+  ],
+  "liveVerification": {
+    "status": "PARTIAL_CLIENT_TESTED",
+    "date": "2026-11-16",
+    "report": "LIVE-TEST.md",
+    "observed": [
+      "arrow updates during short walk outside instance",
+      "frame dragging and position recovery after reload",
+      "quest log import of two Stockade quests",
+      "guide switch and pause/resume",
+      "frame priority and close controls"
+    ],
+    "notTested": [
+      "combat",
+      "quest accept/objective/turn-in transitions",
+      "instance entry",
+      "all dungeon routes"
+    ]
+  }
 }

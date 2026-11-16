@@ -15,6 +15,7 @@ function A.waypoint(id,s)
     return {map=map,x=x,y=y,name=A.table(info) and A.str(info.name) or ("Mapa "..map),text=A.str(A.safe(Q.GetNextWaypointText,id))}
 end
 function A.track(action,force)
+    if A.state().paused then action=nil end
     if A.state().options and not A.state().options.nativeTracking then action=nil end
     local S=C_SuperTrack or {}
     if A.truth(A.safe(function() return InCombatLockdown() end)) then return end
@@ -76,11 +77,12 @@ function A.setGoal(s)
     if ticker then ticker:Cancel();ticker=nil end
     local a=A.action;local d=a and a.dungeon;local candidates,name
     A.navGoal=nil
+    if A.state().paused then A.updateArrow();return end
     if not A.allowed(s) or s.dead or a.kind=="BLOCKED" or a.kind=="OUT_OF_SCOPE" then A.updateArrow();return end
     local override=A.navOverride
     if override and override.id then
         local live=s.quests[override.id]
-        if (override.kind=='pickup' and live) or (override.kind=='turnin' and not live) then A.navOverride=nil;override=nil end
+        if (override.kind=='pickup' and live) or (override.kind=='turnin' and not live) then A.navOverride=nil;A.state().navChoice=nil;override=nil end
     end
     if override and (not s.inside or (d and d.key==override.dungeon)) then
         d=A.findDungeon(override.dungeon)
@@ -111,13 +113,14 @@ end
 function A.updateArrow()
     if not A.arrow or not A.state() then return end
     local frame=A.arrow;local opt=A.state().options;local s=A.current()
-    if not opt.arrow or not A.allowed(s) then frame:Hide();return end
+    A.loadPosition(frame,'arrow')
+    if not opt.arrow or A.state().paused or not A.allowed(s) then frame:Hide();return end
     frame:SetScale(opt.scale);frame:Show()
     local goal=A.navGoal
     frame.title:SetText(goal and goal.title or "Sem ponto de navegação nesta etapa")
     frame.texture:Hide()
     if A.truth(A.safe(function()return InCombatLockdown() end)) then frame.status:SetText('Navegação pausada em combate');return end
-    if not goal then frame.status:SetText(s.inside and 'Interior: acompanhe os objetivos e encontros' or 'Consulte o overview para referências');return end
+    if not goal then frame.status:SetText(s.inside and 'Interior: acompanhe os objetivos e encontros' or 'Consulte o overview para referências');frame:Hide();return end
     local pc,px,py=player();local gc,gx,gy=world(goal)
     if not pc or not px or not py or not gc or not gx or not gy then frame.status:SetText('Posição ou mapa indisponível');return end
     if pc~=gc then frame.status:SetText('Outro mapa/continente • viaje até a região');return end
@@ -134,4 +137,10 @@ function A.makeArrow()
     local texture=f:CreateTexture(nil,'ARTWORK');texture:SetSize(62,62);texture:SetPoint('TOP',f,'TOP',0,0);texture:SetTexture('Interface\\AddOns\\AllianceDungeonTrail\\assets\\Arrow.tga')
     local function label(y,w,size)local t=f:CreateFontString(nil,'OVERLAY');t:SetPoint('TOP',f,'TOP',0,-y);t:SetSize(w,32);t:SetFont(STANDARD_TEXT_FONT or 'Fonts\\FRIZQT__.TTF',size,'');t:SetTextColor(.95,.82,.53);return t end
     f.title=label(66,260,11);f.status=label(101,280,10);f.texture=texture;f:Hide();A.arrow=f
+    f:SetFrameStrata('DIALOG');f:SetFrameLevel(10);f:SetMovable(true);f:EnableMouse(true);f:RegisterForDrag('LeftButton')
+    f:SetScript('OnDragStart',function()if not InCombatLockdown() and A.state() and not A.state().options.lockArrow then f:StartMoving() end end)
+    f:SetScript('OnDragStop',function()f:StopMovingOrSizing();if A.state() then A.savePosition(f,'arrow') end end)
+    local close=CreateFrame('Button',nil,f);close:SetSize(24,24);close:SetPoint('TOPRIGHT',f,'TOPRIGHT',0,0)
+    local glyph=close:CreateFontString(nil,'OVERLAY');glyph:SetFont(STANDARD_TEXT_FONT or 'Fonts\\FRIZQT__.TTF',15,'OUTLINE');glyph:SetPoint('CENTER');glyph:SetText('X');glyph:SetTextColor(1,.8,.45)
+    close:SetScript('OnClick',function()A.option('arrow',false)end);f.close=close
 end

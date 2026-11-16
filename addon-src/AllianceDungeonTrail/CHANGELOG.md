@@ -1,9 +1,7 @@
-# 3.0.0 candidata
+# 3.1.0 candidata — revisão ao vivo
 
-Hub reconstruído com seleção livre das27 dungeons, overview contextual de acesso/encontros/quests, configurações persistentes e tracker independente. Plano explícito supera foco antigo fora da instância; contexto real prevalece dentro dela e plano é retomado na saída.
+Seta, hub e tracker arrastáveis com posições persistidas por personagem. Trava opcional da seta e restauração de posições. Pausar/retomar guia sem abandonar quests, inclusive após reload. Fechamento individual dos overlays; /adt alterna o hub e recupera o tracker.
 
-Seta própria com textura original, cálculo de rumo/distância, chegada, tratamento de mapa ausente e ticker limitado. Base factual MIT embarcada para coleta, entrega, entrada e áreas de objetivo; não depende de navegação do jogo. Integração com rastreamento externo é opcional e desligada por padrão.
+Corrigidos conflitos de clique com barras e tracker nativo, posição inicial do hub e texto da seta sem destino. Seleção explícita de navegação é recuperada por personagem, validando dados salvos.
 
-Mantido acompanhamento automático de objetivos/entrega, recuperação e estimativas conservadoras. Overview de encontros avança após evento confirmado, preserva reload e não permite check manual de conclusão. Atualizados testes de produto/pacote, sem reduzir gates.
-
-Limites: sem pathfinding ou posições internas garantidas, cobertura parcial de quests/entradas e nenhum teste em jogo realizado. Nova candidata não é aprovação visual ou de gameplay.
+Verificação parcial real no Forever70938: caminhada e atualização da seta, troca de dungeon, abertura, fechamento, arraste, persistência, pausa, rolagem e sobreposição. Consulte LIVE-TEST.md e TEST-REPORT.md para limites. Sem pathfinding ou cobertura interna garantida. Mantidos eventos e acompanhamento automático existentes; nenhuma conclusão manual de quest adicionada.
