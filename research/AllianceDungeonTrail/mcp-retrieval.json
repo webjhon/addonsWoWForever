@@ -1,0 +1,136 @@
+{
+  "at": "2026-11-16T01:06:29.699Z",
+  "results": [
+    {
+      "name": "search_wow_api",
+      "args": {
+        "query": "C_QuestLog UnitXP UnitLevel PLAYER_LEVEL_UP"
+      },
+      "result": [
+        {
+          "id": "30132dca9db90c7d17acec5d",
+          "title": "WoW Forever API client baseline",
+          "content": "# Forever client compatibility baseline\r\nPublic community snapshots for World of Warcraft: Forever show an interface value of 16001 on the 1.60.x client line, and Mainline-family API shape rather than Classic Era API assumptions. Verify this locally using /dump select(4, GetBuildInfo()).\r\nPotentially relevant functions and events (e.g. UnitXP, UnitXPMax, UnitLevel, UnitFactionGroup, PLAYER_XP_UPDATE, PLAYER_LEVEL_UP) are candidates only until confirmed against the target client build.\r\nSource research: https://github.com/Thunderz96/forever-addon-kit and https://github.com/Atraeau/WoW-Addons . This is a summarized original note, not a copied source export.\r\n",
+          "domain": "api",
+          "score": 1,
+          "method": "lexical",
+          "source_id": "community-api-snapshot",
+          "uri": "https://github.com/Thunderz96/forever-addon-kit",
+          "build": null,
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "license": "original"
+        }
+      ]
+    },
+    {
+      "name": "search_leveling_knowledge",
+      "args": {
+        "query": "dungeon quest leveling"
+      },
+      "result": [
+        {
+          "id": "1d689d30effb406608591536",
+          "title": "Alliance 1–60 factory policy",
+          "content": "# Factory policy (original)\r\nThis is an original operational document, not a game database.\r\nWoW Forever leveling is restricted to Alliance characters 1 through 60.\r\nUnknown quest identifiers, pet spawn locations, legacy talents, new dungeons and abilities must be verified against the actual Forever client or a version-matched source.\r\nFor addon API work, prefer Forever-compatible export and Mainline client API evidence; never assume Classic Era interfaces are interchangeable.\r\nDo not circumvent combat restrictions or secret-value rules. Never automate gameplay.\r\nThe factory can create a candidate ZIP, but only in-client validation can establish CLIENT_VERIFIED.\r\n",
+          "domain": "leveling",
+          "score": 1,
+          "method": "lexical",
+          "source_id": "original-factory-policy",
+          "uri": null,
+          "build": null,
+          "evidence": "OFFICIAL_FACTORY_POLICY",
+          "license": "original"
+        }
+      ]
+    },
+    {
+      "name": "query_alliance_records",
+      "args": {
+        "kind": "dungeon",
+        "level": 20
+      },
+      "result": []
+    },
+    {
+      "name": "get_project_memory",
+      "args": {
+        "kind": "decision"
+      },
+      "result": []
+    },
+    {
+      "name": "get_project_memory",
+      "args": {
+        "kind": "failure"
+      },
+      "result": []
+    },
+    {
+      "name": "check_client_capability",
+      "args": {
+        "id": "indoor-navigation"
+      },
+      "result": {
+        "id": "indoor-navigation",
+        "status": "UNVERIFIED",
+        "reason": "No verified capability for this build",
+        "evidence": []
+      }
+    },
+    {
+      "name": "check_client_capability",
+      "args": {
+        "id": "quest-journal"
+      },
+      "result": {
+        "id": "quest-journal",
+        "status": "UNVERIFIED",
+        "reason": "No verified capability for this build",
+        "evidence": []
+      }
+    },
+    {
+      "name": "check_client_capability",
+      "args": {
+        "id": "xp-display"
+      },
+      "result": {
+        "id": "xp-display",
+        "status": "UNVERIFIED",
+        "build": null,
+        "apis": [
+          "UnitXP",
+          "UnitXPMax"
+        ],
+        "events": [
+          "PLAYER_XP_UPDATE"
+        ],
+        "restrictions": [
+          "Confirm functions in client"
+        ],
+        "alternatives": [],
+        "evidence": [],
+        "updated_at": "2026-11-16T00:49:17.599Z"
+      }
+    },
+    {
+      "name": "check_client_capability",
+      "args": {
+        "id": "protected-combat-action"
+      },
+      "result": {
+        "id": "protected-combat-action",
+        "status": "PROHIBITED",
+        "build": null,
+        "apis": [],
+        "events": [],
+        "restrictions": [
+          "No action automation"
+        ],
+        "alternatives": [],
+        "evidence": [],
+        "updated_at": "2026-11-16T00:49:17.599Z"
+      }
+    }
+  ]
+}

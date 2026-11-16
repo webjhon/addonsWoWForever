@@ -1,0 +1,86 @@
+{
+  "startedAt": "2026-11-16T01:15:54.434Z",
+  "stages": [
+    {
+      "name": "CONTEXT_AND_MEMORY",
+      "at": "2026-11-16T01:15:54.438Z",
+      "ok": true,
+      "build": null,
+      "memories": 4
+    },
+    {
+      "name": "RAG_AND_RESEARCH",
+      "at": "2026-11-16T01:15:54.440Z",
+      "ok": true,
+      "citations": [
+        "original-dungeon-trail-research",
+        "original-dungeon-trail-research",
+        "community-api-snapshot"
+      ]
+    },
+    {
+      "name": "SCOPE_AND_GUARDRAILS",
+      "at": "2026-11-16T01:15:54.446Z",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "name": "CAPABILITY_REVIEW",
+      "at": "2026-11-16T01:15:54.447Z",
+      "ok": true,
+      "unknownApis": [
+        "CreateFrame",
+        "UnitFactionGroup",
+        "UnitLevel",
+        "UnitXP",
+        "UnitXPMax",
+        "UnitGUID",
+        "UnitClass",
+        "GetBuildInfo",
+        "InCombatLockdown",
+        "issecretvalue",
+        "issecrettable",
+        "C_QuestLog.GetNumQuestLogEntries",
+        "C_QuestLog.GetInfo",
+        "C_QuestLog.GetQuestObjectives",
+        "C_QuestLog.IsComplete",
+        "C_QuestLog.IsQuestFlaggedCompleted",
+        "date",
+        "PLAYER_LOGIN",
+        "PLAYER_ENTERING_WORLD",
+        "PLAYER_XP_UPDATE",
+        "PLAYER_LEVEL_UP",
+        "QUEST_LOG_UPDATE",
+        "QUEST_TURNED_IN",
+        "PLAYER_REGEN_ENABLED"
+      ],
+      "clientVerificationRequired": true
+    },
+    {
+      "name": "PACKAGING",
+      "at": "2026-11-16T01:15:54.587Z",
+      "ok": true,
+      "zip": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\addonsWoWForever\\releases\\AllianceDungeonTrail-1.0.0-candidate.zip"
+    },
+    {
+      "name": "REVIEW_AND_HANDOFF",
+      "at": "2026-11-16T01:15:54.588Z",
+      "ok": true,
+      "status": "STATIC_PASSED",
+      "clientVerified": false
+    }
+  ],
+  "status": "STATIC_PASSED",
+  "addon": "AllianceDungeonTrail",
+  "result": {
+    "out": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\addonsWoWForever\\releases\\AllianceDungeonTrail-1.0.0-candidate.zip",
+    "files": 11,
+    "bytes": 50448,
+    "status": "STATIC_PASSED",
+    "addon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\addonsWoWForever\\addons\\AllianceDungeonTrail",
+    "destination": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\addonsWoWForever\\dist\\AllianceDungeonTrail",
+    "marketingIcon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\addonsWoWForever\\releases\\AllianceDungeonTrail-icon.png"
+  },
+  "provider": null,
+  "finishedAt": "2026-11-16T01:15:54.590Z"
+}

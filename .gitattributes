@@ -1,0 +1,11 @@
+addon-src/AllianceDungeonTrail/** text eol=lf
+addons/AllianceDungeonTrail/** text eol=lf
+addons/AllianceDungeonTrail/assets/*.tga binary
+research/AllianceDungeonTrail/** text eol=lf
+research/AllianceDungeonTrail/*.png binary
+scripts/*dungeon-trail* text eol=lf
+tests/dungeon-trail.test.ts text eol=lf
+tests/dungeon-trail/*.lua text eol=lf
+releases/AllianceDungeonTrail*.zip binary
+releases/AllianceDungeonTrail*.png binary
+releases/AllianceDungeonTrail*.sha256 text eol=lf

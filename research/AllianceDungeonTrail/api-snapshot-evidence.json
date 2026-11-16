@@ -1,0 +1,100 @@
+{
+  "client": {
+    "locale": "enUS",
+    "version": "1.60.1",
+    "project": 1,
+    "interface": 16001,
+    "build": "69893"
+  },
+  "commit": "8dc297689059dd204bf8663a05aaa36d6a628b76",
+  "source": "https://github.com/Thunderz96/forever-addon-kit/blob/8dc297689059dd204bf8663a05aaa36d6a628b76/data/forever_api.json • captured 1.60.1 build 69893 / interface 16001; presence only, current signatures and restrictions UNVERIFIED",
+  "license": "MIT",
+  "sha256": "9338ff128715bc2627598ffe598a8ff116f4d68e82a5718ceb6181016e76b101",
+  "symbols": [
+    {
+      "symbol": "CreateFrame",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "UnitFactionGroup",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "UnitLevel",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "UnitXP",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "UnitXPMax",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "UnitGUID",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "UnitClass",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "GetBuildInfo",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "InCombatLockdown",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "issecretvalue",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "issecrettable",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "C_QuestLog.GetNumQuestLogEntries",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "C_QuestLog.GetInfo",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "C_QuestLog.GetQuestObjectives",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "C_QuestLog.IsComplete",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "C_QuestLog.IsQuestFlaggedCompleted",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "date",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    }
+  ]
+}
