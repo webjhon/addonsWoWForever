@@ -1,0 +1,333 @@
+{
+  "records": [
+    {
+      "id": "whf:npc:5694",
+      "kind": "npc",
+      "name": "High Sorcerer Andromath",
+      "game_id": 5694,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:npc-5694"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "zone": "Stormwind City"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:npc-5694"
+        ],
+        "faction": [
+          "whf:source:npc-5694"
+        ],
+        "alliance_access": [
+          "whf:source:npc-5694"
+        ],
+        "game_id": [
+          "whf:source:npc-5694"
+        ],
+        "facts.zone": [
+          "whf:source:npc-5694"
+        ]
+      },
+      "issues": [
+        "Faction denotes Alliance information access, not this NPC’s reaction, flags or spawn availability."
+      ]
+    },
+    {
+      "id": "whf:npc:246016",
+      "kind": "npc",
+      "name": "Arcanic Enigma",
+      "game_id": 246016,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:npc-246016"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "zone": "Alterac Mountains"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:npc-246016"
+        ],
+        "faction": [
+          "whf:source:npc-246016"
+        ],
+        "alliance_access": [
+          "whf:source:npc-246016"
+        ],
+        "game_id": [
+          "whf:source:npc-246016"
+        ],
+        "facts.zone": [
+          "whf:source:npc-246016"
+        ]
+      },
+      "issues": [
+        "Faction denotes Alliance information access, not this NPC’s reaction, flags or spawn availability."
+      ]
+    },
+    {
+      "id": "whf:npc:956",
+      "kind": "npc",
+      "name": "Dorin Songblade",
+      "game_id": 956,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:npc-956"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "zone": "Redridge Mountains"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:npc-956"
+        ],
+        "faction": [
+          "whf:source:npc-956"
+        ],
+        "alliance_access": [
+          "whf:source:npc-956"
+        ],
+        "game_id": [
+          "whf:source:npc-956"
+        ],
+        "facts.zone": [
+          "whf:source:npc-956"
+        ]
+      },
+      "issues": [
+        "Faction denotes Alliance information access, not this NPC’s reaction, flags or spawn availability."
+      ]
+    },
+    {
+      "id": "whf:npc:656",
+      "kind": "npc",
+      "name": "Wilder Thistlenettle",
+      "game_id": 656,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:npc-656"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "zone": "Stormwind City"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:npc-656"
+        ],
+        "faction": [
+          "whf:source:npc-656"
+        ],
+        "alliance_access": [
+          "whf:source:npc-656"
+        ],
+        "game_id": [
+          "whf:source:npc-656"
+        ],
+        "facts.zone": [
+          "whf:source:npc-656"
+        ]
+      },
+      "issues": [
+        "Faction denotes Alliance information access, not this NPC’s reaction, flags or spawn availability."
+      ]
+    },
+    {
+      "id": "whf:npc:6579",
+      "kind": "npc",
+      "name": "Shoni the Shilent",
+      "game_id": 6579,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:npc-6579"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "zone": "Stormwind City"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:npc-6579"
+        ],
+        "faction": [
+          "whf:source:npc-6579"
+        ],
+        "alliance_access": [
+          "whf:source:npc-6579"
+        ],
+        "game_id": [
+          "whf:source:npc-6579"
+        ],
+        "facts.zone": [
+          "whf:source:npc-6579"
+        ]
+      },
+      "issues": [
+        "Faction denotes Alliance information access, not this NPC’s reaction, flags or spawn availability."
+      ]
+    },
+    {
+      "id": "whf:npc:820",
+      "kind": "npc",
+      "name": "Scout Riell",
+      "game_id": 820,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:npc-820"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "zone": "Westfall"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:npc-820"
+        ],
+        "faction": [
+          "whf:source:npc-820"
+        ],
+        "alliance_access": [
+          "whf:source:npc-820"
+        ],
+        "game_id": [
+          "whf:source:npc-820"
+        ],
+        "facts.zone": [
+          "whf:source:npc-820"
+        ]
+      },
+      "issues": [
+        "Faction denotes Alliance information access, not this NPC’s reaction, flags or spawn availability."
+      ]
+    },
+    {
+      "id": "whf:npc:234",
+      "kind": "npc",
+      "name": "Gryan Stoutmantle",
+      "game_id": 234,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:npc-234"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "zone": "Westfall"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:npc-234"
+        ],
+        "faction": [
+          "whf:source:npc-234"
+        ],
+        "alliance_access": [
+          "whf:source:npc-234"
+        ],
+        "game_id": [
+          "whf:source:npc-234"
+        ],
+        "facts.zone": [
+          "whf:source:npc-234"
+        ]
+      },
+      "issues": [
+        "Faction denotes Alliance information access, not this NPC’s reaction, flags or spawn availability."
+      ]
+    },
+    {
+      "id": "whf:npc:265003",
+      "kind": "npc",
+      "name": "Thom Filch",
+      "game_id": 265003,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:npc-265003"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "zone": "Ironforge"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:npc-265003"
+        ],
+        "faction": [
+          "whf:source:npc-265003"
+        ],
+        "alliance_access": [
+          "whf:source:npc-265003"
+        ],
+        "game_id": [
+          "whf:source:npc-265003"
+        ],
+        "facts.zone": [
+          "whf:source:npc-265003"
+        ]
+      },
+      "issues": [
+        "Faction denotes Alliance information access, not this NPC’s reaction, flags or spawn availability."
+      ]
+    }
+  ],
+  "relations": []
+}

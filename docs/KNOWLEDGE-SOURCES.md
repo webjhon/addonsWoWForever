@@ -2,6 +2,8 @@
 
 `knowledge/sources/manifest.json` lista **candidatos** para revisão (URLs não garantem licença, validade ou atualização). A ferramenta `npm run sources:check` pode verificar disponibilidade de links via HEAD quando houver rede; isso **não** equivale a verificar o conteúdo. Nenhum scraper reprocessa websites automaticamente na versão inicial.
 
+O pacote factual curado Wowhead Forever é uma via separada, descrita em [WOWHEAD-KNOWLEDGE.md](WOWHEAD-KNOWLEDGE.md). Fontes por campo estão em seu manifesto, com `content_mode: factual-reference` e direitos restritos à referência. Não há autorização implícita de copiar guias, comentários, ativos ou espelhar o banco. `COMMUNITY_UNVERIFIED` não é promovido por um importador a `CONFIRMED_IN_CLIENT`.
+
 ## Evidência
 
 - `CONFIRMED_IN_CLIENT`: testado em jogo na build registrada.

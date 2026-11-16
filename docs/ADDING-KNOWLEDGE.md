@@ -1,5 +1,9 @@
 # Acrescentar conhecimento confiável
 
+## Pacote factual Wowhead Forever
+
+Veja [WOWHEAD-KNOWLEDGE.md](WOWHEAD-KNOWLEDGE.md). O manifesto em `knowledge/packs/wowhead-forever/` referencia JSON por categoria em `knowledge/alliance/`. `npm run knowledge:validate` aplica JSON Schema e verificações de proveniência/grafo; `init` ou `knowledge:refresh` realiza ingestão transacional e idempotente. `knowledge:coverage` expõe lacunas, e `knowledge:export` produz TXT/JSON locais. O importador não busca páginas nem autoriza espelhamento. Identificadores desconhecidos e requisitos conflitantes permanecem null.
+
 ## Texto de referência
 
 Crie `rag/raw-docs/minha-fonte.md` apenas com texto original, licenciado ou cuja indexação seja autorizada e um arquivo `minha-fonte.md.meta.json`:

@@ -1,17 +1,10 @@
 # WoW Forever Alliance Addon AI Factory
 
-## Alliance Dungeon Trail — candidato 1.0.0
+## Banco factual Wowhead Forever
 
-Addon standalone para Alliance 1–60: avisos por faixa, seleção de dungeons, quests e referências textuais, checklist do diário, registro de runs e estimativas por XP medida. Interface própria com ícone de portal; sem automação de gameplay.
+A fábrica possui agora **176 entidades curadas**, incluindo **72 quests com IDs**, **124 relações** e **89 referências**, organizadas por categoria em `knowledge/alliance/`. A inicialização importa os fatos no SQLite e no RAG com fonte por campo e lacunas explícitas. É um catálogo parcial comunitário, não uma base completa ou confirmada no cliente.
 
-- **Instalar:** [ZIP candidato](releases/AllianceDungeonTrail-1.0.0-candidate.zip), extraindo em `_forever_/Interface/AddOns/`. Abra com `/adt`.
-- **Pasta pronta:** [`addons/AllianceDungeonTrail/`](addons/AllianceDungeonTrail/).
-- **Instruções e limites:** [INSTALL.md](addons/AllianceDungeonTrail/INSTALL.md).
-- **Testes:** [relatório](research/AllianceDungeonTrail/TEST-REPORT.md), [integridade do ZIP](research/AllianceDungeonTrail/package-verification.json) e [prévia do mock](research/AllianceDungeonTrail/UI-preview.png).
-- **Pesquisa e decisões:** [RESEARCH.md](research/AllianceDungeonTrail/RESEARCH.md); [blueprint](research/AllianceDungeonTrail/AllianceDungeonTrail.blueprint.json).
-- **Reproduzir:** `npm ci --ignore-scripts`, `npm run init`, `npm run dungeon:verify`.
-
-27 dungeons e 63 quests selecionadas; quatro entradas dependem do diário e de notas pessoais. Não é um catálogo exaustivo. **26 testes automatizados aprovados; nenhum teste em jogo realizado.** O ZIP é um candidato instalável, ainda sem status CLIENT_VERIFIED. Interface alvo 16001; executável instalado observado 1.60.1.70938.
+Leia [o guia de dados e uso pelos agentes](docs/WOWHEAD-KNOWLEDGE.md), [o manifesto](knowledge/packs/wowhead-forever/manifest.json) e [a cobertura](knowledge/gaps/wowhead-forever.json). Use `npm run knowledge:validate`, `npm run init` e `npm run knowledge:coverage`. `npm run knowledge:export` gera TXT e JSON locais. No MCP, consulte `get_knowledge_coverage` e `get_gameplay_entity` antes de preencher requisitos de um addon. Não há crawler ou cópia de textos/ativos do Wowhead.
 
 **Fábrica agêntica de addons para leveling Alliance 1–60, com RAG, SQLite, memória, MCP, regras de compatibilidade, testes e geração de ZIPs.**
 

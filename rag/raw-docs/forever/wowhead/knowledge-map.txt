@@ -1,0 +1,13 @@
+Mapa de pesquisa Wowhead Forever para a fábrica Alliance 1–60
+
+O pacote local contém referências factuais de quests, dungeons, zonas, NPCs, itens, profissões, famílias de pets e classes. Ele é parcial e comunitário; não comprova suporte de API nem execução em cliente.
+
+Comece por get_knowledge_coverage. Consulte search_leveling_knowledge com o nível adequado e query_alliance_records por tipo. Use get_gameplay_entity para receber um ID com os campos originais, fonte por campo, relações nas duas direções e problemas conhecidos. Um grafo parcial não fornece uma sequência completa de pré-quests.
+
+Níveis exigidos e faixas recomendadas são campos diferentes. Uma faixa editorial de zona não estabelece nível mínimo. Um requisito null significa desconhecido, não elegibilidade no nível 1. Rótulos de dungeon e profissão sem game_id não podem ser convertidos em IDs de mapa, instância ou spell por suposição.
+
+Os nomes curados são enUS. O addon deve preferir IDs para relacionar quests em outros idiomas. Um resultado de página de quest em /forever/ pode incluir comentários herdados de outras versões; estes não são fatos confirmados da build atual. Dê preferência aos campos de objetivos e às evidências do cliente, mantendo divergências explícitas.
+
+O importador não acessa a rede. Valida JSON Schema, referências, IDs, campos com fontes e ciclos de pré-requisitos antes de iniciar a transação. Facção desconhecida ou acesso não estabelecido ficam fora do SQLite operacional e do RAG. Cada atualização substitui apenas o namespace reservado whf e remove fatos obsoletos do pacote, com rollback se houver referências externas conflitantes.
+
+Use knowledge:validate para checar os JSON; init ou knowledge:refresh para ingestão; knowledge:export para gerar cópias locais TXT e JSON. Publicar um espelho de artigos, comentários, guias, capturas ou ativos do site não é permitido por esta rotina. Uma nova licença ou autorização precisa de revisão própria antes de ampliar a ingestão.

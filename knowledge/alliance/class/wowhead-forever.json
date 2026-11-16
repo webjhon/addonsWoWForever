@@ -1,0 +1,311 @@
+{
+  "records": [
+    {
+      "id": "whf:class:druid",
+      "kind": "class",
+      "name": "Druid",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:database"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:database"
+        ],
+        "faction": [
+          "whf:source:database"
+        ],
+        "alliance_access": [
+          "whf:source:database"
+        ]
+      },
+      "issues": [
+        "Taxonomy only: race combinations, ability IDs and talent ranks require separate evidence."
+      ]
+    },
+    {
+      "id": "whf:class:hunter",
+      "kind": "class",
+      "name": "Hunter",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:database"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:database"
+        ],
+        "faction": [
+          "whf:source:database"
+        ],
+        "alliance_access": [
+          "whf:source:database"
+        ]
+      },
+      "issues": [
+        "Taxonomy only: race combinations, ability IDs and talent ranks require separate evidence."
+      ]
+    },
+    {
+      "id": "whf:class:mage",
+      "kind": "class",
+      "name": "Mage",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:database"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:database"
+        ],
+        "faction": [
+          "whf:source:database"
+        ],
+        "alliance_access": [
+          "whf:source:database"
+        ]
+      },
+      "issues": [
+        "Taxonomy only: race combinations, ability IDs and talent ranks require separate evidence."
+      ]
+    },
+    {
+      "id": "whf:class:paladin",
+      "kind": "class",
+      "name": "Paladin",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:database"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:database"
+        ],
+        "faction": [
+          "whf:source:database"
+        ],
+        "alliance_access": [
+          "whf:source:database"
+        ]
+      },
+      "issues": [
+        "Taxonomy only: race combinations, ability IDs and talent ranks require separate evidence."
+      ]
+    },
+    {
+      "id": "whf:class:priest",
+      "kind": "class",
+      "name": "Priest",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:database"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:database"
+        ],
+        "faction": [
+          "whf:source:database"
+        ],
+        "alliance_access": [
+          "whf:source:database"
+        ]
+      },
+      "issues": [
+        "Taxonomy only: race combinations, ability IDs and talent ranks require separate evidence."
+      ]
+    },
+    {
+      "id": "whf:class:rogue",
+      "kind": "class",
+      "name": "Rogue",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:database"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:database"
+        ],
+        "faction": [
+          "whf:source:database"
+        ],
+        "alliance_access": [
+          "whf:source:database"
+        ]
+      },
+      "issues": [
+        "Taxonomy only: race combinations, ability IDs and talent ranks require separate evidence."
+      ]
+    },
+    {
+      "id": "whf:class:shaman",
+      "kind": "class",
+      "name": "Shaman",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:database"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:database"
+        ],
+        "faction": [
+          "whf:source:database"
+        ],
+        "alliance_access": [
+          "whf:source:database"
+        ]
+      },
+      "issues": [
+        "Taxonomy only: race combinations, ability IDs and talent ranks require separate evidence."
+      ]
+    },
+    {
+      "id": "whf:class:warlock",
+      "kind": "class",
+      "name": "Warlock",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:database"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:database"
+        ],
+        "faction": [
+          "whf:source:database"
+        ],
+        "alliance_access": [
+          "whf:source:database"
+        ]
+      },
+      "issues": [
+        "Taxonomy only: race combinations, ability IDs and talent ranks require separate evidence."
+      ]
+    },
+    {
+      "id": "whf:class:warrior",
+      "kind": "class",
+      "name": "Warrior",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:database"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:database"
+        ],
+        "faction": [
+          "whf:source:database"
+        ],
+        "alliance_access": [
+          "whf:source:database"
+        ]
+      },
+      "issues": [
+        "Taxonomy only: race combinations, ability IDs and talent ranks require separate evidence."
+      ]
+    }
+  ],
+  "relations": []
+}

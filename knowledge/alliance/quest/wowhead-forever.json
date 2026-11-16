@@ -1,0 +1,3836 @@
+{
+  "records": [
+    {
+      "id": "whf:quest:96403",
+      "kind": "quest",
+      "name": "Important Heirlooms",
+      "game_id": 96403,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-96403",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 10,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Hall of Thanes",
+        "giver": "Thom Filch",
+        "zone": "Ironforge",
+        "objectives": [
+          {
+            "target": "Dwarven Heirloom",
+            "quantity": 8,
+            "type": "collect"
+          }
+        ]
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-96403"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-96403"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.objectives": [
+          "whf:source:quest-96403"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:98423",
+      "kind": "quest",
+      "name": "The Treaty of Understanding",
+      "game_id": 98423,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-98423",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 9,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Hall of Thanes",
+        "giver": null,
+        "zone": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-98423"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-98423"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:95250",
+      "kind": "quest",
+      "name": "Abominable Creatures",
+      "game_id": 95250,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-95250",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Ruins of Lordaeron",
+        "giver": "Captain Truman",
+        "zone": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-95250"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-95250"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal.",
+        "Conflicting required levels: guide 16 versus community report 15. Required level remains null."
+      ]
+    },
+    {
+      "id": "whf:quest:168",
+      "kind": "quest",
+      "name": "Collecting Memories",
+      "game_id": 168,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-168",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 14,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "The Deadmines",
+        "giver": "Wilder Thistlenettle",
+        "zone": "Stormwind City",
+        "objectives": [
+          {
+            "target": "Miners' Union Card",
+            "quantity": 4,
+            "type": "collect"
+          }
+        ]
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-168"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-168"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.objectives": [
+          "whf:source:quest-168"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:167",
+      "kind": "quest",
+      "name": "Oh Brother...",
+      "game_id": 167,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-167",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 15,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "The Deadmines",
+        "giver": "Wilder Thistlenettle",
+        "zone": "Stormwind City"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-167"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-167"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:2040",
+      "kind": "quest",
+      "name": "Underground Assault",
+      "game_id": 2040,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-2040",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 15,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "The Deadmines",
+        "giver": "Shoni the Shilent",
+        "zone": "Stormwind City"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-2040"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-2040"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:373",
+      "kind": "quest",
+      "name": "The Unsent Letter",
+      "game_id": 373,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-373",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 16,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "The Deadmines",
+        "giver": null,
+        "zone": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-373"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-373"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:214",
+      "kind": "quest",
+      "name": "Red Silk Bandanas",
+      "game_id": 214,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-214",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 14,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "The Deadmines",
+        "giver": "Scout Riell",
+        "zone": "Westfall"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-214"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-214"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:166",
+      "kind": "quest",
+      "name": "The Defias Brotherhood",
+      "game_id": 166,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-166",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 14,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "The Deadmines",
+        "giver": "Gryan Stoutmantle",
+        "zone": "Westfall"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-166"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-166"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:92753",
+      "kind": "quest",
+      "name": "Destruction in Deadmines",
+      "game_id": 92753,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-92753",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "The Deadmines",
+        "giver": "Alba Fairmoon",
+        "zone": "Westfall"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-92753"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-92753"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal.",
+        "Conflicting required levels: guide 14 versus database index 9. Required level remains null."
+      ]
+    },
+    {
+      "id": "whf:quest:1654",
+      "kind": "quest",
+      "name": "The Test of Righteousness",
+      "game_id": 1654,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-1654",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 20,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "The Deadmines",
+        "giver": "Jordan Stilwell",
+        "zone": "Ironforge",
+        "class": "PALADIN"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-1654"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-1654"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.class": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:1491",
+      "kind": "quest",
+      "name": "Smart Drinks",
+      "game_id": 1491,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-1491",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 13,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Wailing Caverns",
+        "giver": "Mebok Mizzyrix",
+        "zone": "The Barrens"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-1491"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-1491"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:959",
+      "kind": "quest",
+      "name": "Trouble at the Docks",
+      "game_id": 959,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-959",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 14,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Wailing Caverns",
+        "giver": "Crane Operator Bigglefuzz",
+        "zone": "The Barrens"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-959"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-959"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:1486",
+      "kind": "quest",
+      "name": "Deviate Hides",
+      "game_id": 1486,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-1486",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 13,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Wailing Caverns",
+        "giver": "Nalpak",
+        "zone": "The Barrens"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-1486"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-1486"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:1487",
+      "kind": "quest",
+      "name": "Deviate Eradication",
+      "game_id": 1487,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-1487",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 15,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Wailing Caverns",
+        "giver": "Ebru",
+        "zone": "The Barrens"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-1487"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-1487"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:6981",
+      "kind": "quest",
+      "name": "The Glowing Shard",
+      "game_id": 6981,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-6981",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 15,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Wailing Caverns",
+        "giver": null,
+        "zone": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-6981"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-6981"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:971",
+      "kind": "quest",
+      "name": "Knowledge in the Deeps",
+      "game_id": 971,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-971",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 10,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Blackfathom Deeps",
+        "giver": "Gerrig Bonegrip",
+        "zone": "Ironforge"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-971"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-971"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:1275",
+      "kind": "quest",
+      "name": "Researching the Corruption",
+      "game_id": 1275,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-1275",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 18,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Blackfathom Deeps",
+        "giver": "Gershala Nightwhisper",
+        "zone": "Darkshore"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-1275"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-1275"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:1199",
+      "kind": "quest",
+      "name": "Twilight Falls",
+      "game_id": 1199,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-1199",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 20,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Blackfathom Deeps",
+        "giver": "Argent Guard Manados",
+        "zone": "Darnassus"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-1199"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-1199"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:1198",
+      "kind": "quest",
+      "name": "In Search of Thaelrid",
+      "game_id": 1198,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-1198",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 18,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Blackfathom Deeps",
+        "giver": "Dawnwatcher Shaedlass",
+        "zone": "Darnassus"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-1198"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-1198"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:1200",
+      "kind": "quest",
+      "name": "Blackfathom Villainy",
+      "game_id": 1200,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-1200",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 18,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Blackfathom Deeps",
+        "giver": "Argent Guard Thaelrid",
+        "zone": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-1200"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-1200"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:387",
+      "kind": "quest",
+      "name": "Quell the Uprising",
+      "game_id": 387,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-387",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 22,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "The Stockade",
+        "giver": "Warden Thelwater",
+        "zone": "Stormwind City"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-387"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-387"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:388",
+      "kind": "quest",
+      "name": "The Color of Blood",
+      "game_id": 388,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-388",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 22,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "The Stockade",
+        "giver": "Nikova Raskol",
+        "zone": "Stormwind City"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-388"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-388"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:377",
+      "kind": "quest",
+      "name": "Crime and Punishment",
+      "game_id": 377,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-377",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 22,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "The Stockade",
+        "giver": "Councilman Millstipe",
+        "zone": "Duskwood"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-377"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-377"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:386",
+      "kind": "quest",
+      "name": "What Comes Around...",
+      "game_id": 386,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-386",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 22,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "The Stockade",
+        "giver": "Guard Berton",
+        "zone": "Redridge Mountains"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-386"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-386"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:378",
+      "kind": "quest",
+      "name": "The Fury Runs Deep",
+      "game_id": 378,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-378",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 25,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "The Stockade",
+        "giver": "Motley Garmason",
+        "zone": "Wetlands"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-378"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-378"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:391",
+      "kind": "quest",
+      "name": "The Stockade Riots",
+      "game_id": 391,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-391",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 16,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "The Stockade",
+        "giver": "Warden Thelwater",
+        "zone": "Stormwind City"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-391"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-391"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal.",
+        "The Unsent Letter is a chain origin, not asserted as a direct prerequisite edge."
+      ]
+    },
+    {
+      "id": "whf:quest:95772",
+      "kind": "quest",
+      "name": "Songblade Search",
+      "game_id": 95772,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-95772",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 24,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Excavation Site: Wetlands",
+        "giver": "Dorin Songblade",
+        "zone": "Redridge Mountains"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-95772"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-95772"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal.",
+        "Community reports disagree about launch availability. No availability guarantee."
+      ]
+    },
+    {
+      "id": "whf:quest:2922",
+      "kind": "quest",
+      "name": "Save Techbot's Brain!",
+      "game_id": 2922,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-2922",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 20,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Gnomeregan",
+        "giver": "Tinkmaster Overspark",
+        "zone": "Ironforge"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-2922"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-2922"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:2928",
+      "kind": "quest",
+      "name": "Gyrodrillmatic Excavationators",
+      "game_id": 2928,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-2928",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 20,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Gnomeregan",
+        "giver": "Shoni the Shilent",
+        "zone": "Stormwind City"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-2928"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-2928"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:2924",
+      "kind": "quest",
+      "name": "Essential Artificials",
+      "game_id": 2924,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-2924",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 24,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Gnomeregan",
+        "giver": "Klockmort Spannerspan",
+        "zone": "Ironforge"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-2924"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-2924"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:2930",
+      "kind": "quest",
+      "name": "Data Rescue",
+      "game_id": 2930,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-2930",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 25,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Gnomeregan",
+        "giver": "Master Mechanic Castpipe",
+        "zone": "Ironforge"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-2930"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-2930"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:2929",
+      "kind": "quest",
+      "name": "The Grand Betrayal",
+      "game_id": 2929,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-2929",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 25,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Gnomeregan",
+        "giver": "High Tinker Mekkatorque",
+        "zone": "Ironforge"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-2929"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-2929"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:2926",
+      "kind": "quest",
+      "name": "Gnogaine",
+      "game_id": 2926,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-2926",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 20,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Gnomeregan",
+        "giver": "Ozzie Togglevolt",
+        "zone": "Dun Morogh"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-2926"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-2926"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:2962",
+      "kind": "quest",
+      "name": "The Only Cure is More Green Glow",
+      "game_id": 2962,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-2962",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 20,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Gnomeregan",
+        "giver": "Ozzie Togglevolt",
+        "zone": "Dun Morogh"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-2962"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-2962"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:2904",
+      "kind": "quest",
+      "name": "A Fine Mess",
+      "game_id": 2904,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-2904",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 20,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Gnomeregan",
+        "giver": "Kernobee",
+        "zone": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-2904"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-2904"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:92489",
+      "kind": "quest",
+      "name": "Power Overwhelming",
+      "game_id": 92489,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-92489",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 24,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "City of Dalaran",
+        "giver": "High Sorcerer Andromath",
+        "zone": "Stormwind City",
+        "objectives": [
+          {
+            "target": "Arcanic Enigma",
+            "quantity": 1,
+            "type": "kill"
+          }
+        ]
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-92489"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-92489"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.objectives": [
+          "whf:source:quest-92489"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:1101",
+      "kind": "quest",
+      "name": "The Crone of the Kraul",
+      "game_id": 1101,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-1101",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 29,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Razorfen Kraul",
+        "giver": "Falfindel Waywarder",
+        "zone": "Feralas"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-1101"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-1101"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:1142",
+      "kind": "quest",
+      "name": "Mortality Wanes",
+      "game_id": 1142,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-1142",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 25,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Razorfen Kraul",
+        "giver": "Heralath Fallowbrook",
+        "zone": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-1142"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-1142"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:1221",
+      "kind": "quest",
+      "name": "Blueleaf Tubers",
+      "game_id": 1221,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-1221",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 20,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Razorfen Kraul",
+        "giver": "Mebok Mizzyrix",
+        "zone": "The Barrens"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-1221"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-1221"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:1144",
+      "kind": "quest",
+      "name": "Willix the Importer",
+      "game_id": 1144,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-1144",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 22,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Razorfen Kraul",
+        "giver": "Willix the Importer",
+        "zone": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-1144"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-1144"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:95788",
+      "kind": "quest",
+      "name": "Magics of the Drowned City",
+      "game_id": 95788,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-95788",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 30,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "The Drowned City",
+        "giver": "Loremaster Dibbs",
+        "zone": "Hillsbrad Foothills",
+        "objectives": [
+          {
+            "target": "I'lalai Fetish",
+            "quantity": 5,
+            "type": "collect"
+          }
+        ]
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-95788"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-95788"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.objectives": [
+          "whf:source:quest-95788"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:95789",
+      "kind": "quest",
+      "name": "Shady Saltseers",
+      "game_id": 95789,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-95789",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 34,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "The Drowned City",
+        "giver": "Krazek",
+        "zone": "Stranglethorn Vale",
+        "objectives": [
+          {
+            "target": "Voodoo-Infused Artifact",
+            "quantity": 10,
+            "type": "collect"
+          }
+        ]
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-95789"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-95789"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.objectives": [
+          "whf:source:quest-95789"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:1050",
+      "kind": "quest",
+      "name": "Mythology of the Titans",
+      "game_id": 1050,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-1050",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 28,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Scarlet Monastery",
+        "giver": "Librarian Mae Paledust",
+        "zone": "Ironforge"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-1050"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-1050"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:1053",
+      "kind": "quest",
+      "name": "In the Name of the Light",
+      "game_id": 1053,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-1053",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 34,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Scarlet Monastery",
+        "giver": "Raleigh the Devout",
+        "zone": "Hillsbrad Foothills"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-1053"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-1053"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:3636",
+      "kind": "quest",
+      "name": "Bring the Light",
+      "game_id": 3636,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-3636",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 39,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Razorfen Downs",
+        "giver": "Archbishop Benedictus",
+        "zone": "Stormwind City"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-3636"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-3636"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:2398",
+      "kind": "quest",
+      "name": "The Lost Dwarves",
+      "game_id": 2398,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-2398",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 35,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Uldaman",
+        "giver": "Prospector Stormpike",
+        "zone": "Ironforge"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-2398"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-2398"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:2278",
+      "kind": "quest",
+      "name": "The Platinum Discs",
+      "game_id": 2278,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-2278",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 40,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Uldaman",
+        "giver": null,
+        "zone": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-2278"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-2278"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:94982",
+      "kind": "quest",
+      "name": "Eye of Mugg",
+      "game_id": 94982,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-94982",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 40,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Krol'dok Stronghold",
+        "giver": "Commander Brant",
+        "zone": "Riverglades"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-94982"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-94982"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:94984",
+      "kind": "quest",
+      "name": "Tome of Twilight",
+      "game_id": 94984,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-94984",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 39,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Krol'dok Stronghold",
+        "giver": "Ashe Amberhall",
+        "zone": "Riverglades"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-94984"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-94984"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:2768",
+      "kind": "quest",
+      "name": "Divino-matic Rod",
+      "game_id": 2768,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-2768",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 40,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Zul'Farrak",
+        "giver": "Chief Engineer Bilgewhizzle",
+        "zone": "Tanaris"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-2768"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-2768"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:2770",
+      "kind": "quest",
+      "name": "Gahz'rilla",
+      "game_id": 2770,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-2770",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 40,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Zul'Farrak",
+        "giver": "Wizzle Brassbolts",
+        "zone": "Thousand Needles"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-2770"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-2770"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:7065",
+      "kind": "quest",
+      "name": "Corruption of Earth and Seed",
+      "game_id": 7065,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-7065",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 45,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Maraudon",
+        "giver": "Keeper Marandis",
+        "zone": "Desolace"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-7065"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-7065"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:7044",
+      "kind": "quest",
+      "name": "Legends of Maraudon",
+      "game_id": 7044,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-7044",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 41,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Maraudon",
+        "giver": "Cavindra",
+        "zone": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-7044"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-7044"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:1446",
+      "kind": "quest",
+      "name": "Jammal'an the Prophet",
+      "game_id": 1446,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-1446",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 38,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Temple of Atal'Hakkar",
+        "giver": "Atal'ai Exile",
+        "zone": "The Hinterlands"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-1446"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-1446"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:3373",
+      "kind": "quest",
+      "name": "The Essence of Eranikus",
+      "game_id": 3373,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-3373",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 48,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Temple of Atal'Hakkar",
+        "giver": null,
+        "zone": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-3373"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-3373"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:4263",
+      "kind": "quest",
+      "name": "Incendius!",
+      "game_id": 4263,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-4263",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 48,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Blackrock Depths",
+        "giver": "Jalinda Sprig",
+        "zone": "Burning Steppes"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-4263"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-4263"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:4241",
+      "kind": "quest",
+      "name": "Marshal Windsor",
+      "game_id": 4241,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-4241",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 48,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Blackrock Depths",
+        "giver": "Marshal Maxwell",
+        "zone": "Burning Steppes"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-4241"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-4241"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:7488",
+      "kind": "quest",
+      "name": "Lethtendris's Web",
+      "game_id": 7488,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-7488",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 54,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dire Maul",
+        "giver": "Latronicus Moonspear",
+        "zone": "Feralas"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-7488"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-7488"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:5525",
+      "kind": "quest",
+      "name": "Free Knot!",
+      "game_id": 5525,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-5525",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 56,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dire Maul",
+        "giver": "Knot Thimblejack",
+        "zone": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-5525"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-5525"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:4701",
+      "kind": "quest",
+      "name": "Put Her Down",
+      "game_id": 4701,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-4701",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 55,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Lower Blackrock Spire",
+        "giver": "Helendis Riverhorn",
+        "zone": "Burning Steppes"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-4701"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-4701"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:5343",
+      "kind": "quest",
+      "name": "Barov Family Fortune",
+      "game_id": 5343,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-5343",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 52,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Scholomance",
+        "giver": "Weldon Barov",
+        "zone": "Western Plaguelands"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-5343"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-5343"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:5529",
+      "kind": "quest",
+      "name": "Plagued Hatchlings",
+      "game_id": 5529,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-5529",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 55,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Scholomance",
+        "giver": "Betina Bigglezink",
+        "zone": "Eastern Plaguelands"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-5529"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-5529"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:5382",
+      "kind": "quest",
+      "name": "Doctor Theolen Krastinov, the Butcher",
+      "game_id": 5382,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-5382",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 55,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Scholomance",
+        "giver": "Eva Sarkhoff",
+        "zone": "Western Plaguelands"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-5382"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-5382"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:5251",
+      "kind": "quest",
+      "name": "The Archivist",
+      "game_id": 5251,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-5251",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 55,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Stratholme",
+        "giver": "Duke Nicholas Zverenhoff",
+        "zone": "Eastern Plaguelands"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-5251"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-5251"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:5243",
+      "kind": "quest",
+      "name": "Houses of the Holy",
+      "game_id": 5243,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-5243",
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 55,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Stratholme",
+        "giver": "Leonid Barthalomew",
+        "zone": "Eastern Plaguelands"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-5243"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "game_id": [
+          "whf:source:quest-5243"
+        ],
+        "facts.required_level": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.giver": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.zone": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Prerequisite graph and availability are partial; compare with the active client journal."
+      ]
+    },
+    {
+      "id": "whf:quest:179",
+      "kind": "quest",
+      "name": "Dwarven Outfitters",
+      "game_id": 179,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-179"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "zone": "Dun Morogh",
+        "giver": "Sten Stoutarm",
+        "category": "Open world",
+        "objectives": [
+          {
+            "target": "Tough Wolf Meat",
+            "quantity": 8,
+            "type": "collect"
+          }
+        ]
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-179"
+        ],
+        "faction": [
+          "whf:source:quest-179"
+        ],
+        "alliance_access": [
+          "whf:source:quest-179"
+        ],
+        "game_id": [
+          "whf:source:quest-179"
+        ],
+        "facts.zone": [
+          "whf:source:quest-179"
+        ],
+        "facts.giver": [
+          "whf:source:quest-179"
+        ],
+        "facts.category": [
+          "whf:source:quest-179"
+        ],
+        "facts.objectives": [
+          "whf:source:quest-179"
+        ]
+      },
+      "issues": [
+        "Unknown fields are intentionally not filled from Classic/Retail equivalents."
+      ]
+    },
+    {
+      "id": "whf:quest:783",
+      "kind": "quest",
+      "name": "A Threat Within",
+      "game_id": 783,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-783"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "zone": "Elwynn Forest",
+        "giver": null,
+        "category": "Open world"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-783"
+        ],
+        "faction": [
+          "whf:source:quest-783"
+        ],
+        "alliance_access": [
+          "whf:source:quest-783"
+        ],
+        "game_id": [
+          "whf:source:quest-783"
+        ],
+        "facts.zone": [
+          "whf:source:quest-783"
+        ],
+        "facts.category": [
+          "whf:source:quest-783"
+        ]
+      },
+      "issues": [
+        "Unknown fields are intentionally not filled from Classic/Retail equivalents."
+      ]
+    },
+    {
+      "id": "whf:quest:456",
+      "kind": "quest",
+      "name": "The Balance of Nature",
+      "game_id": 456,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-456"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 1,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "zone": "Teldrassil",
+        "giver": "Conservator Ilthalaine",
+        "category": "Open world",
+        "objectives": [
+          {
+            "target": "Young Nightsaber",
+            "quantity": 7,
+            "type": "kill"
+          },
+          {
+            "target": "Young Thistle Boar",
+            "quantity": 4,
+            "type": "kill"
+          }
+        ]
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-456"
+        ],
+        "faction": [
+          "whf:source:quest-456"
+        ],
+        "alliance_access": [
+          "whf:source:quest-456"
+        ],
+        "game_id": [
+          "whf:source:quest-456"
+        ],
+        "facts.required_level": [
+          "whf:source:quest-456"
+        ],
+        "facts.zone": [
+          "whf:source:quest-456"
+        ],
+        "facts.giver": [
+          "whf:source:quest-456"
+        ],
+        "facts.category": [
+          "whf:source:quest-456"
+        ],
+        "facts.objectives": [
+          "whf:source:quest-456"
+        ]
+      },
+      "issues": [
+        "Unknown fields are intentionally not filled from Classic/Retail equivalents.",
+        "Quest-level metadata differs between Quick Facts and listing; quest_level remains null."
+      ]
+    },
+    {
+      "id": "whf:quest:457",
+      "kind": "quest",
+      "name": "The Balance of Nature",
+      "game_id": 457,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-457"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "zone": "Teldrassil",
+        "giver": "Conservator Ilthalaine",
+        "category": "Open world"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-457"
+        ],
+        "faction": [
+          "whf:source:quest-457"
+        ],
+        "alliance_access": [
+          "whf:source:quest-457"
+        ],
+        "game_id": [
+          "whf:source:quest-457"
+        ],
+        "facts.zone": [
+          "whf:source:quest-457"
+        ],
+        "facts.giver": [
+          "whf:source:quest-457"
+        ],
+        "facts.category": [
+          "whf:source:quest-457"
+        ]
+      },
+      "issues": [
+        "Unknown fields are intentionally not filled from Classic/Retail equivalents.",
+        "Objective counters disagree with historical progress prose; use current objective panel."
+      ]
+    },
+    {
+      "id": "whf:quest:176",
+      "kind": "quest",
+      "name": "WANTED: \"Hogger\"",
+      "game_id": 176,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-176"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 5,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "zone": "Elwynn Forest",
+        "giver": null,
+        "category": "Open world"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-176"
+        ],
+        "faction": [
+          "whf:source:quest-176"
+        ],
+        "alliance_access": [
+          "whf:source:quest-176"
+        ],
+        "game_id": [
+          "whf:source:quest-176"
+        ],
+        "facts.required_level": [
+          "whf:source:quest-176"
+        ],
+        "facts.zone": [
+          "whf:source:quest-176"
+        ],
+        "facts.category": [
+          "whf:source:quest-176"
+        ]
+      },
+      "issues": [
+        "Unknown fields are intentionally not filled from Classic/Retail equivalents."
+      ]
+    },
+    {
+      "id": "whf:quest:3101",
+      "kind": "quest",
+      "name": "Consecrated Letter",
+      "game_id": 3101,
+      "faction": "Alliance",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:quest-3101"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": 1,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "zone": "Elwynn Forest",
+        "giver": "Marshal McBride",
+        "category": "Open world",
+        "class": "PALADIN",
+        "race": "Human"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:quest-3101"
+        ],
+        "faction": [
+          "whf:source:quest-3101"
+        ],
+        "alliance_access": [
+          "whf:source:quest-3101"
+        ],
+        "game_id": [
+          "whf:source:quest-3101"
+        ],
+        "facts.required_level": [
+          "whf:source:quest-3101"
+        ],
+        "facts.zone": [
+          "whf:source:quest-3101"
+        ],
+        "facts.giver": [
+          "whf:source:quest-3101"
+        ],
+        "facts.category": [
+          "whf:source:quest-3101"
+        ],
+        "facts.class": [
+          "whf:source:quest-3101"
+        ],
+        "facts.race": [
+          "whf:source:quest-3101"
+        ]
+      },
+      "issues": [
+        "Unknown fields are intentionally not filled from Classic/Retail equivalents."
+      ]
+    }
+  ],
+  "relations": []
+}

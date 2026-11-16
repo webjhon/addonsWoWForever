@@ -1,0 +1,1677 @@
+{
+  "records": [
+    {
+      "id": "whf:zone:dun-morogh",
+      "kind": "zone",
+      "name": "Dun Morogh",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          4,
+          12
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:elwynn-forest",
+      "kind": "zone",
+      "name": "Elwynn Forest",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          5,
+          10
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:westfall",
+      "kind": "zone",
+      "name": "Westfall",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          9,
+          18
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:loch-modan",
+      "kind": "zone",
+      "name": "Loch Modan",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          10,
+          18
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:silverpine-forest",
+      "kind": "zone",
+      "name": "Silverpine Forest",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          10,
+          20
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:redridge-mountains",
+      "kind": "zone",
+      "name": "Redridge Mountains",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          15,
+          25
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:duskwood",
+      "kind": "zone",
+      "name": "Duskwood",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          19,
+          30
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:wetlands",
+      "kind": "zone",
+      "name": "Wetlands",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          20,
+          30
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:hillsbrad-foothills",
+      "kind": "zone",
+      "name": "Hillsbrad Foothills",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          20,
+          31
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:alterac-mountains",
+      "kind": "zone",
+      "name": "Alterac Mountains",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          27,
+          39
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:arathi-highlands",
+      "kind": "zone",
+      "name": "Arathi Highlands",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          30,
+          40
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:stranglethorn-vale",
+      "kind": "zone",
+      "name": "Stranglethorn Vale",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          30,
+          44
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:swamp-of-sorrows",
+      "kind": "zone",
+      "name": "Swamp of Sorrows",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          36,
+          43
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:riverglades",
+      "kind": "zone",
+      "name": "Riverglades",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          36,
+          44
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:badlands",
+      "kind": "zone",
+      "name": "Badlands",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          36,
+          45
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:the-hinterlands",
+      "kind": "zone",
+      "name": "The Hinterlands",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          41,
+          49
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:searing-gorge",
+      "kind": "zone",
+      "name": "Searing Gorge",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          43,
+          48
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:blasted-lands",
+      "kind": "zone",
+      "name": "Blasted Lands",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          46,
+          55
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:western-plaguelands",
+      "kind": "zone",
+      "name": "Western Plaguelands",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          46,
+          57
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:burning-steppes",
+      "kind": "zone",
+      "name": "Burning Steppes",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          50,
+          59
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:deadwind-pass",
+      "kind": "zone",
+      "name": "Deadwind Pass",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          50,
+          60
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:eastern-plaguelands",
+      "kind": "zone",
+      "name": "Eastern Plaguelands",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          54,
+          59
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:teldrassil",
+      "kind": "zone",
+      "name": "Teldrassil",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          5,
+          11
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:the-barrens",
+      "kind": "zone",
+      "name": "The Barrens",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          10,
+          25
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:darkshore",
+      "kind": "zone",
+      "name": "Darkshore",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          11,
+          19
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:stonetalon-mountains",
+      "kind": "zone",
+      "name": "Stonetalon Mountains",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          15,
+          25
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:ashenvale",
+      "kind": "zone",
+      "name": "Ashenvale",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          19,
+          30
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:thousand-needles",
+      "kind": "zone",
+      "name": "Thousand Needles",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          24,
+          35
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:desolace",
+      "kind": "zone",
+      "name": "Desolace",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          30,
+          39
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:dustwallow-marsh",
+      "kind": "zone",
+      "name": "Dustwallow Marsh",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          36,
+          43
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:feralas",
+      "kind": "zone",
+      "name": "Feralas",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          40,
+          50
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:tanaris",
+      "kind": "zone",
+      "name": "Tanaris",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          40,
+          50
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:azshara",
+      "kind": "zone",
+      "name": "Azshara",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          42,
+          55
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:felwood",
+      "kind": "zone",
+      "name": "Felwood",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          47,
+          54
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:ungoro-crater",
+      "kind": "zone",
+      "name": "Un'Goro Crater",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          48,
+          55
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:silithus",
+      "kind": "zone",
+      "name": "Silithus",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          55,
+          59
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:winterspring",
+      "kind": "zone",
+      "name": "Winterspring",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          55,
+          60
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    },
+    {
+      "id": "whf:zone:zephras-isle",
+      "kind": "zone",
+      "name": "Zephras Isle",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:world-map"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": [
+          3,
+          12
+        ],
+        "coordinates": null,
+        "range_type": "EDITORIAL_RECOMMENDATION"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:world-map"
+        ],
+        "faction": [
+          "whf:source:world-map"
+        ],
+        "alliance_access": [
+          "whf:source:world-map"
+        ],
+        "facts.recommended_range": [
+          "whf:source:world-map"
+        ],
+        "facts.range_type": [
+          "whf:source:world-map"
+        ]
+      },
+      "issues": [
+        "Editorial range is not a game minimum or proof of Alliance quest coverage."
+      ]
+    }
+  ],
+  "relations": []
+}

@@ -7,6 +7,7 @@ You are an engineering agent operating a **closed, evidence-based journey**. Thi
 - Do not produce Horde-only, raids/endgame, PvP-only, botting or automation add-ons.
 - Confirm the target interface/build from `config/wow-version.json` AND the real client when possible. Current reference interface is 16001, not a generic Retail number. Forever uses Mainline-family APIs; do not assume Classic Era APIs.
 - Follow `FACTORY-WORKFLOW.md` and `.agents/skills/build-alliance-addon/SKILL.md`. Use `knowledge/` and RAG before code generation.
+- Run `npm run knowledge:coverage` (or MCP `get_knowledge_coverage`) before relying on gameplay data. Read `docs/WOWHEAD-KNOWLEDGE.md`; query typed records and `get_gameplay_entity` for field provenance. Null requirements/IDs and partial prerequisite graphs must never be filled from Classic/Retail assumptions.
 - Every nontrivial API/quest/spell/event claim must have versioned evidence, or be marked UNVERIFIED. Never invent identifiers or coordinates.
 - Respect taint, protected actions, secret values and the WoW addon security model.
 - Treat Zygor/RestedXP and third-party references as copyrighted material. Analyze general UI patterns only with appropriate rights; do not publish copied guide steps, code or art.

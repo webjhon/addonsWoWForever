@@ -1,0 +1,1236 @@
+{
+  "records": [],
+  "relations": [
+    {
+      "from_id": "whf:quest:96403",
+      "to_id": "whf:dungeon:hall-of-thanes",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-96403"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:98423",
+      "to_id": "whf:dungeon:hall-of-thanes",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-98423"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:95250",
+      "to_id": "whf:dungeon:ruins-of-lordaeron",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-95250"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:168",
+      "to_id": "whf:dungeon:the-deadmines",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-168"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:167",
+      "to_id": "whf:dungeon:the-deadmines",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-167"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:2040",
+      "to_id": "whf:dungeon:the-deadmines",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-2040"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:373",
+      "to_id": "whf:dungeon:the-deadmines",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-373"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:214",
+      "to_id": "whf:dungeon:the-deadmines",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-214"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:166",
+      "to_id": "whf:dungeon:the-deadmines",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-166"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:92753",
+      "to_id": "whf:dungeon:the-deadmines",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-92753"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1654",
+      "to_id": "whf:dungeon:the-deadmines",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-1654"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1491",
+      "to_id": "whf:dungeon:wailing-caverns",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-1491"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:959",
+      "to_id": "whf:dungeon:wailing-caverns",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-959"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1486",
+      "to_id": "whf:dungeon:wailing-caverns",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-1486"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1487",
+      "to_id": "whf:dungeon:wailing-caverns",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-1487"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:6981",
+      "to_id": "whf:dungeon:wailing-caverns",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-6981"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:971",
+      "to_id": "whf:dungeon:blackfathom-deeps",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-971"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1275",
+      "to_id": "whf:dungeon:blackfathom-deeps",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-1275"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1199",
+      "to_id": "whf:dungeon:blackfathom-deeps",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-1199"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1198",
+      "to_id": "whf:dungeon:blackfathom-deeps",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-1198"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1200",
+      "to_id": "whf:dungeon:blackfathom-deeps",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-1200"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:387",
+      "to_id": "whf:dungeon:the-stockade",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-387"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:388",
+      "to_id": "whf:dungeon:the-stockade",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-388"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:377",
+      "to_id": "whf:dungeon:the-stockade",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-377"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:386",
+      "to_id": "whf:dungeon:the-stockade",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-386"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:378",
+      "to_id": "whf:dungeon:the-stockade",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-378"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:391",
+      "to_id": "whf:dungeon:the-stockade",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-391"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:95772",
+      "to_id": "whf:dungeon:excavation-site-wetlands",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-95772"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:2922",
+      "to_id": "whf:dungeon:gnomeregan",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-2922"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:2928",
+      "to_id": "whf:dungeon:gnomeregan",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-2928"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:2924",
+      "to_id": "whf:dungeon:gnomeregan",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-2924"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:2930",
+      "to_id": "whf:dungeon:gnomeregan",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-2930"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:2929",
+      "to_id": "whf:dungeon:gnomeregan",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-2929"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:2926",
+      "to_id": "whf:dungeon:gnomeregan",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-2926"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:2962",
+      "to_id": "whf:dungeon:gnomeregan",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-2962"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:2904",
+      "to_id": "whf:dungeon:gnomeregan",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-2904"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:92489",
+      "to_id": "whf:dungeon:city-of-dalaran",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-92489"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1101",
+      "to_id": "whf:dungeon:razorfen-kraul",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-1101"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1142",
+      "to_id": "whf:dungeon:razorfen-kraul",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-1142"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1221",
+      "to_id": "whf:dungeon:razorfen-kraul",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-1221"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1144",
+      "to_id": "whf:dungeon:razorfen-kraul",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-1144"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:95788",
+      "to_id": "whf:dungeon:the-drowned-city",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-95788"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:95789",
+      "to_id": "whf:dungeon:the-drowned-city",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-95789"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1050",
+      "to_id": "whf:dungeon:scarlet-monastery",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-1050"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1053",
+      "to_id": "whf:dungeon:scarlet-monastery",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-1053"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:3636",
+      "to_id": "whf:dungeon:razorfen-downs",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-3636"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:2398",
+      "to_id": "whf:dungeon:uldaman",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-2398"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:2278",
+      "to_id": "whf:dungeon:uldaman",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-2278"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:94982",
+      "to_id": "whf:dungeon:kroldok-stronghold",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-94982"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:94984",
+      "to_id": "whf:dungeon:kroldok-stronghold",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-94984"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:2768",
+      "to_id": "whf:dungeon:zulfarrak",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-2768"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:2770",
+      "to_id": "whf:dungeon:zulfarrak",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-2770"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:7065",
+      "to_id": "whf:dungeon:maraudon",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-7065"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:7044",
+      "to_id": "whf:dungeon:maraudon",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-7044"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1446",
+      "to_id": "whf:dungeon:temple-of-atalhakkar",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-1446"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:3373",
+      "to_id": "whf:dungeon:temple-of-atalhakkar",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-3373"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:4263",
+      "to_id": "whf:dungeon:blackrock-depths",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-4263"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:4241",
+      "to_id": "whf:dungeon:blackrock-depths",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-4241"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:7488",
+      "to_id": "whf:dungeon:dire-maul",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-7488"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:5525",
+      "to_id": "whf:dungeon:dire-maul",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-5525"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:4701",
+      "to_id": "whf:dungeon:lower-blackrock-spire",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-4701"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:5343",
+      "to_id": "whf:dungeon:scholomance",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-5343"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:5529",
+      "to_id": "whf:dungeon:scholomance",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-5529"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:5382",
+      "to_id": "whf:dungeon:scholomance",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-5382"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:5251",
+      "to_id": "whf:dungeon:stratholme",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-5251"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:5243",
+      "to_id": "whf:dungeon:stratholme",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests",
+        "whf:source:quest-5243"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1654",
+      "to_id": "whf:dungeon:shadowfang-keep",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1654",
+      "to_id": "whf:dungeon:blackfathom-deeps",
+      "type": "associated_with",
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:2962",
+      "to_id": "whf:quest:2926",
+      "type": "requires_quest",
+      "source_ids": [
+        "whf:source:quest-2962",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1200",
+      "to_id": "whf:quest:1198",
+      "type": "requires_quest",
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:214",
+      "to_id": "whf:zone:westfall",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-214",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:166",
+      "to_id": "whf:zone:westfall",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-166",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:92753",
+      "to_id": "whf:zone:westfall",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-92753",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1491",
+      "to_id": "whf:zone:the-barrens",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-1491",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:959",
+      "to_id": "whf:zone:the-barrens",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-959",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1486",
+      "to_id": "whf:zone:the-barrens",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-1486",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1487",
+      "to_id": "whf:zone:the-barrens",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-1487",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1275",
+      "to_id": "whf:zone:darkshore",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-1275",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:377",
+      "to_id": "whf:zone:duskwood",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-377",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:386",
+      "to_id": "whf:zone:redridge-mountains",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-386",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:378",
+      "to_id": "whf:zone:wetlands",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-378",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:95772",
+      "to_id": "whf:zone:redridge-mountains",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-95772",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:2926",
+      "to_id": "whf:zone:dun-morogh",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-2926",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:2962",
+      "to_id": "whf:zone:dun-morogh",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-2962",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1101",
+      "to_id": "whf:zone:feralas",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-1101",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1221",
+      "to_id": "whf:zone:the-barrens",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-1221",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:95788",
+      "to_id": "whf:zone:hillsbrad-foothills",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-95788",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:95789",
+      "to_id": "whf:zone:stranglethorn-vale",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-95789",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1053",
+      "to_id": "whf:zone:hillsbrad-foothills",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-1053",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:94982",
+      "to_id": "whf:zone:riverglades",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-94982",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:94984",
+      "to_id": "whf:zone:riverglades",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-94984",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:2768",
+      "to_id": "whf:zone:tanaris",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-2768",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:2770",
+      "to_id": "whf:zone:thousand-needles",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-2770",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:7065",
+      "to_id": "whf:zone:desolace",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-7065",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:1446",
+      "to_id": "whf:zone:the-hinterlands",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-1446",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:4263",
+      "to_id": "whf:zone:burning-steppes",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-4263",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:4241",
+      "to_id": "whf:zone:burning-steppes",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-4241",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:7488",
+      "to_id": "whf:zone:feralas",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-7488",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:4701",
+      "to_id": "whf:zone:burning-steppes",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-4701",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:5343",
+      "to_id": "whf:zone:western-plaguelands",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-5343",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:5529",
+      "to_id": "whf:zone:eastern-plaguelands",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-5529",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:5382",
+      "to_id": "whf:zone:western-plaguelands",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-5382",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:5251",
+      "to_id": "whf:zone:eastern-plaguelands",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-5251",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:5243",
+      "to_id": "whf:zone:eastern-plaguelands",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-5243",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:179",
+      "to_id": "whf:zone:dun-morogh",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-179"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:783",
+      "to_id": "whf:zone:elwynn-forest",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-783"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:456",
+      "to_id": "whf:zone:teldrassil",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-456"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:457",
+      "to_id": "whf:zone:teldrassil",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-457"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:176",
+      "to_id": "whf:zone:elwynn-forest",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-176"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:3101",
+      "to_id": "whf:zone:elwynn-forest",
+      "type": "located_in",
+      "source_ids": [
+        "whf:source:quest-3101"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:96403",
+      "to_id": "whf:npc:265003",
+      "type": "given_by",
+      "source_ids": [
+        "whf:source:quest-96403",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:168",
+      "to_id": "whf:npc:656",
+      "type": "given_by",
+      "source_ids": [
+        "whf:source:quest-168",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:167",
+      "to_id": "whf:npc:656",
+      "type": "given_by",
+      "source_ids": [
+        "whf:source:quest-167",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:2040",
+      "to_id": "whf:npc:6579",
+      "type": "given_by",
+      "source_ids": [
+        "whf:source:quest-2040",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:214",
+      "to_id": "whf:npc:820",
+      "type": "given_by",
+      "source_ids": [
+        "whf:source:quest-214",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:166",
+      "to_id": "whf:npc:234",
+      "type": "given_by",
+      "source_ids": [
+        "whf:source:quest-166",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:95772",
+      "to_id": "whf:npc:956",
+      "type": "given_by",
+      "source_ids": [
+        "whf:source:quest-95772",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:2928",
+      "to_id": "whf:npc:6579",
+      "type": "given_by",
+      "source_ids": [
+        "whf:source:quest-2928",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:92489",
+      "to_id": "whf:npc:5694",
+      "type": "given_by",
+      "source_ids": [
+        "whf:source:quest-92489",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:92489",
+      "to_id": "whf:npc:246016",
+      "type": "objective_npc",
+      "source_ids": [
+        "whf:source:quest-92489",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:96403",
+      "to_id": "whf:item:274289",
+      "type": "objective_item",
+      "source_ids": [
+        "whf:source:quest-96403",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:95788",
+      "to_id": "whf:item:270343",
+      "type": "objective_item",
+      "source_ids": [
+        "whf:source:quest-95788",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:95789",
+      "to_id": "whf:item:270333",
+      "type": "objective_item",
+      "source_ids": [
+        "whf:source:quest-95789",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    },
+    {
+      "from_id": "whf:quest:168",
+      "to_id": "whf:item:1894",
+      "type": "objective_item",
+      "source_ids": [
+        "whf:source:quest-168",
+        "whf:source:dungeon-quests"
+      ],
+      "evidence": "COMMUNITY_UNVERIFIED"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "factory://knowledge-pack",
+  "title": "Reviewed factual Forever knowledge pack",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "namespace", "revision", "game", "scope", "content_mode", "sources", "files", "gaps"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "id": {"const": "wowhead-forever"},
+    "namespace": {"const": "whf"},
+    "revision": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}\\.\\d+$"},
+    "game": {"const": "WoW Forever"},
+    "scope": {"const": "Alliance leveling 1-60"},
+    "content_mode": {"const": "factual-curation-no-mirror"},
+    "sources": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/source"}},
+    "files": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^knowledge/alliance/[a-z_-]+/wowhead-forever\\.json$"}},
+    "gaps": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1, "maxLength": 400}}
+  },
+  "$defs": {
+    "source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "uri", "title", "reviewed", "accessed_at", "patch", "build", "content_mode", "rights"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^whf:[a-z0-9:_-]+$"},
+        "uri": {"type": "string", "pattern": "^https://www\\.wowhead\\.com/forever/[^?#\\s]+$"},
+        "title": {"type": "string", "minLength": 1, "maxLength": 180},
+        "reviewed": {"const": true},
+        "accessed_at": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+        "patch": {"type": ["string", "null"]}, "build": {"type": ["string", "null"]},
+        "content_mode": {"const": "factual-reference"},
+        "rights": {"const": "reference-only; no license to mirror site text, guides, comments or assets"}
+      }
+    },
+    "nullableLevel": {"type": ["integer", "null"], "minimum": 1, "maximum": 60},
+    "refs": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^whf:[a-z0-9:_-]+$"}},
+    "label": {"type": ["string", "null"], "maxLength": 180},
+    "range": {"anyOf": [{"type": "null"}, {"type": "array", "prefixItems": [{"type":"integer","minimum":1,"maximum":60},{"type":"integer","minimum":1,"maximum":60}], "minItems": 2, "maxItems": 2}]},
+    "facts": {
+      "type": "object", "additionalProperties": false,
+      "required": ["required_level", "quest_level", "recommended_range", "coordinates"],
+      "properties": {
+        "required_level": {"$ref": "#/$defs/nullableLevel"}, "quest_level": {"$ref": "#/$defs/nullableLevel"},
+        "recommended_range": {"$ref": "#/$defs/range"}, "coordinates": {"const": null},
+        "range_type": {"enum": ["EDITORIAL_RECOMMENDATION", "UNKNOWN"]},
+        "category": {"$ref": "#/$defs/label"}, "zone": {"$ref": "#/$defs/label"},
+        "giver": {"$ref": "#/$defs/label"}, "turn_in": {"$ref": "#/$defs/label"},
+        "target": {"$ref": "#/$defs/label"}, "class": {"$ref": "#/$defs/label"}, "race": {"$ref": "#/$defs/label"},
+        "camp_effect": {"$ref": "#/$defs/label"}, "family_ability": {"$ref": "#/$defs/label"},
+        "aliases": {"type": "array", "uniqueItems": true, "items": {"type": "string", "maxLength": 120}},
+        "objectives": {"type": "array", "maxItems": 12, "items": {"type": "object", "additionalProperties": false, "required": ["target", "quantity", "type"], "properties": {"target": {"type": "string", "minLength":1,"maxLength":120}, "quantity": {"type": "integer", "minimum":1,"maximum":10000}, "type": {"enum": ["collect","kill","speak"]}}}}
+      }
+    },
+    "record": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "kind", "name", "game_id", "faction", "alliance_access", "source_ids", "patch", "build", "evidence", "facts", "field_sources", "issues"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^whf:[a-z_]+:[a-z0-9_-]+$"},
+        "kind": {"enum": ["quest","dungeon","zone","npc","item","object","class","profession","pet_family","flight_master","ability"]},
+        "name": {"type": "string", "minLength": 1, "maxLength": 180},
+        "game_id": {"type": ["integer", "null"], "minimum": 1},
+        "faction": {"enum": ["Alliance","Neutral","Unknown"]}, "alliance_access": {"type": "boolean"},
+        "source_ids": {"$ref": "#/$defs/refs"},
+        "patch": {"type": ["string", "null"]}, "build": {"type": ["string", "null"]},
+        "evidence": {"enum": ["COMMUNITY_UNVERIFIED","UNVERIFIED"]},
+        "facts": {"$ref": "#/$defs/facts"},
+        "field_sources": {"type": "object", "additionalProperties": {"$ref": "#/$defs/refs"}},
+        "issues": {"type": "array", "items": {"type": "string", "minLength": 1, "maxLength": 300}}
+      }
+    },
+    "relation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["from_id", "to_id", "type", "source_ids", "evidence"],
+      "properties": {
+        "from_id": {"type": "string", "pattern": "^whf:[a-z_]+:[a-z0-9_-]+$"},
+        "to_id": {"type": "string", "pattern": "^whf:[a-z_]+:[a-z0-9_-]+$"},
+        "type": {"enum": ["associated_with","given_by","turn_in_to","requires_quest","objective_item","objective_npc","located_in"]},
+        "source_ids": {"$ref": "#/$defs/refs"}, "evidence": {"enum": ["COMMUNITY_UNVERIFIED","UNVERIFIED"]}
+      }
+    },
+    "shard": {
+      "type": "object", "additionalProperties": false, "required": ["records", "relations"],
+      "properties": {"records": {"type": "array", "items": {"$ref": "#/$defs/record"}}, "relations": {"type": "array", "items": {"$ref": "#/$defs/relation"}}}
+    }
+  }
+}

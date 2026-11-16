@@ -8,6 +8,7 @@ Turn a request into an original, installable addon candidate for WoW Forever, **
 1. **Scope**: Alliance 1–60, leveling utility. Reject or narrow out-of-scope requests.
 2. **Source intake**: obtain technical documentation and gameplay references; record provenance, license and build. Do not read private proprietary guide files without authorized rights.
 3. **Research & memory**: query both RAG domains, the structured knowledge bank, recorded decisions and known failures. Use `npm run search -- "query"` or MCP tools.
+   Consult `get_knowledge_coverage` and `get_gameplay_entity` for the reviewed factual pack; inspect per-field evidence and unresolved gaps. Use `--level` and `--domain` for CLI searches when relevant. A partial community catalog is not client-verified gameplay data.
 4. **Capability check**: classify each critical API as SUPPORTED, SUPPORTED_WITH_LIMITATIONS, UNVERIFIED, UNSUPPORTED or PROHIBITED. Unknown never equals supported.
 5. **Design**: write a schema-valid JSON blueprint with a `## IconTexture:` TOC tag, a lightweight polished UI and allowed source paths. Document source citations in `apiEvidence`.
 6. **Implementation**: create event-driven original Lua/XML. Use no protected action automation, secrets workarounds or exotic dependencies.

@@ -1,0 +1,461 @@
+{
+  "records": [
+    {
+      "id": "whf:profession:alchemy",
+      "kind": "profession",
+      "name": "Alchemy",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:professions"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "camp_effect": "Regeneração de mana"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:professions"
+        ],
+        "faction": [
+          "whf:source:professions"
+        ],
+        "alliance_access": [
+          "whf:source:professions"
+        ],
+        "facts.camp_effect": [
+          "whf:source:professions"
+        ]
+      },
+      "issues": [
+        "Recipe IDs, skill thresholds, trainer ranks and coordinates need separate profession-specific verification."
+      ]
+    },
+    {
+      "id": "whf:profession:blacksmithing",
+      "kind": "profession",
+      "name": "Blacksmithing",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:professions"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "camp_effect": "Força"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:professions"
+        ],
+        "faction": [
+          "whf:source:professions"
+        ],
+        "alliance_access": [
+          "whf:source:professions"
+        ],
+        "facts.camp_effect": [
+          "whf:source:professions"
+        ]
+      },
+      "issues": [
+        "Recipe IDs, skill thresholds, trainer ranks and coordinates need separate profession-specific verification."
+      ]
+    },
+    {
+      "id": "whf:profession:enchanting",
+      "kind": "profession",
+      "name": "Enchanting",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:professions"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "camp_effect": "Armadura, atributos e resistências"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:professions"
+        ],
+        "faction": [
+          "whf:source:professions"
+        ],
+        "alliance_access": [
+          "whf:source:professions"
+        ],
+        "facts.camp_effect": [
+          "whf:source:professions"
+        ]
+      },
+      "issues": [
+        "Recipe IDs, skill thresholds, trainer ranks and coordinates need separate profession-specific verification."
+      ]
+    },
+    {
+      "id": "whf:profession:engineering",
+      "kind": "profession",
+      "name": "Engineering",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:professions"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "camp_effect": "Vendedor"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:professions"
+        ],
+        "faction": [
+          "whf:source:professions"
+        ],
+        "alliance_access": [
+          "whf:source:professions"
+        ],
+        "facts.camp_effect": [
+          "whf:source:professions"
+        ]
+      },
+      "issues": [
+        "Recipe IDs, skill thresholds, trainer ranks and coordinates need separate profession-specific verification."
+      ]
+    },
+    {
+      "id": "whf:profession:herbalism",
+      "kind": "profession",
+      "name": "Herbalism",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:professions"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "camp_effect": "Intelecto"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:professions"
+        ],
+        "faction": [
+          "whf:source:professions"
+        ],
+        "alliance_access": [
+          "whf:source:professions"
+        ],
+        "facts.camp_effect": [
+          "whf:source:professions"
+        ]
+      },
+      "issues": [
+        "Recipe IDs, skill thresholds, trainer ranks and coordinates need separate profession-specific verification."
+      ]
+    },
+    {
+      "id": "whf:profession:leatherworking",
+      "kind": "profession",
+      "name": "Leatherworking",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:professions"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "camp_effect": "Descanso de XP"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:professions"
+        ],
+        "faction": [
+          "whf:source:professions"
+        ],
+        "alliance_access": [
+          "whf:source:professions"
+        ],
+        "facts.camp_effect": [
+          "whf:source:professions"
+        ]
+      },
+      "issues": [
+        "Recipe IDs, skill thresholds, trainer ranks and coordinates need separate profession-specific verification."
+      ]
+    },
+    {
+      "id": "whf:profession:mining",
+      "kind": "profession",
+      "name": "Mining",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:professions"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "camp_effect": "Poder de ataque corpo a corpo"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:professions"
+        ],
+        "faction": [
+          "whf:source:professions"
+        ],
+        "alliance_access": [
+          "whf:source:professions"
+        ],
+        "facts.camp_effect": [
+          "whf:source:professions"
+        ]
+      },
+      "issues": [
+        "Recipe IDs, skill thresholds, trainer ranks and coordinates need separate profession-specific verification."
+      ]
+    },
+    {
+      "id": "whf:profession:skinning",
+      "kind": "profession",
+      "name": "Skinning",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:professions"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "camp_effect": "Crítico"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:professions"
+        ],
+        "faction": [
+          "whf:source:professions"
+        ],
+        "alliance_access": [
+          "whf:source:professions"
+        ],
+        "facts.camp_effect": [
+          "whf:source:professions"
+        ]
+      },
+      "issues": [
+        "Recipe IDs, skill thresholds, trainer ranks and coordinates need separate profession-specific verification."
+      ]
+    },
+    {
+      "id": "whf:profession:tailoring",
+      "kind": "profession",
+      "name": "Tailoring",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:professions"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "camp_effect": "Espírito"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:professions"
+        ],
+        "faction": [
+          "whf:source:professions"
+        ],
+        "alliance_access": [
+          "whf:source:professions"
+        ],
+        "facts.camp_effect": [
+          "whf:source:professions"
+        ]
+      },
+      "issues": [
+        "Recipe IDs, skill thresholds, trainer ranks and coordinates need separate profession-specific verification."
+      ]
+    },
+    {
+      "id": "whf:profession:cooking",
+      "kind": "profession",
+      "name": "Cooking",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:professions"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "camp_effect": "Comida de vigor"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:professions"
+        ],
+        "faction": [
+          "whf:source:professions"
+        ],
+        "alliance_access": [
+          "whf:source:professions"
+        ],
+        "facts.camp_effect": [
+          "whf:source:professions"
+        ]
+      },
+      "issues": [
+        "Recipe IDs, skill thresholds, trainer ranks and coordinates need separate profession-specific verification."
+      ]
+    },
+    {
+      "id": "whf:profession:first-aid",
+      "kind": "profession",
+      "name": "First Aid",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:professions"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "camp_effect": "Vigor"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:professions"
+        ],
+        "faction": [
+          "whf:source:professions"
+        ],
+        "alliance_access": [
+          "whf:source:professions"
+        ],
+        "facts.camp_effect": [
+          "whf:source:professions"
+        ]
+      },
+      "issues": [
+        "Recipe IDs, skill thresholds, trainer ranks and coordinates need separate profession-specific verification."
+      ]
+    },
+    {
+      "id": "whf:profession:fishing",
+      "kind": "profession",
+      "name": "Fishing",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:professions"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "camp_effect": "Atributos"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:professions"
+        ],
+        "faction": [
+          "whf:source:professions"
+        ],
+        "alliance_access": [
+          "whf:source:professions"
+        ],
+        "facts.camp_effect": [
+          "whf:source:professions"
+        ]
+      },
+      "issues": [
+        "Recipe IDs, skill thresholds, trainer ranks and coordinates need separate profession-specific verification."
+      ]
+    }
+  ],
+  "relations": []
+}
