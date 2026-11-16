@@ -1,3 +1,16 @@
+# CHANGELOG
+
+## [0.2.0] — 2026-11-15 — Quality and identity hardening
+
+- Créditos universais `Tonho Contrabando` no TOC, splash de abertura e ícone Hunter pixel art gerados no build.
+- Contrato de interatividade para TODOS os addons: dados do personagem, eventos, transições, orientação automática e recuperação.
+- Validação estática de fontes reais em `src/product-quality.ts`, schema ampliado e testes específicos obrigatórios no empacotador.
+- Verificações de identidade e saída ZIP; exceção de rascunho apenas em `npm run new`, que não libera um release.
+- Instruções de feature branch + PR obrigatório para revisão e aprovação humana.
+- Documentação de limites: testes locais não equivalem a teste no cliente real.
+
+## Anteriores
+
 ## Atualização de conhecimento — 2026-11-15
 
 - Adicionados 19 documentos autorais de referência World of Warcraft: Forever, Alliance 1–60, com proveniência e URLs oficiais.

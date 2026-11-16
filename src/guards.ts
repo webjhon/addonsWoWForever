@@ -1,10 +1,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {ROOT,requireName,readJSON} from './core.ts';
+import {verifyProductContract} from './product-quality.ts';
 export function validateToc(toc, name, interfaceVersion=16001) {
  const errors=[];const tags=Object.fromEntries([...toc.matchAll(/^##\s*([\w-]+):\s*(.+)$/gm)].map(m=>[m[1].toLowerCase(),m[2].trim()]));
  if(!tags.interface?.split(',').map(s=>s.trim()).includes(String(interfaceVersion)))errors.push(`TOC must declare Interface ${interfaceVersion}`);
- for(const tag of ['title','notes','version','icontexture'])if(!tags[tag])errors.push(`TOC missing ## ${tag}`);
+ for(const tag of ['title','notes','version','icontexture','author'])if(!tags[tag])errors.push(`TOC missing ## ${tag}`);
+ if(tags.author !== 'Tonho Contrabando')errors.push('TOC Author must be exactly Tonho Contrabando');
  if(!/^##\s*X-Flavor:\s*Forever\s*$/mi.test(toc))errors.push('TOC requires ## X-Flavor: Forever');
  const entries=toc.split(/\r?\n/).map(s=>s.trim()).filter(s=>s&&!s.startsWith('#'));
  if(!entries.some(s=>s.toLowerCase().endsWith('.lua')))errors.push('TOC must list Lua source');
@@ -27,7 +29,7 @@ export function scanLua(content){
  if(/\bOnUpdate\b/.test(stripped))errors.push('OnUpdate requires a documented performance exception; use events where possible');
  return {ok:errors.length===0,errors};
 }
-export function validateBlueprint(b){
+export function validateBlueprint(b,{draft=false}={}){
  const errors=[];
  try{requireName(b?.addonName);}catch(e){errors.push(e.message);}
  const cfg=readJSON(path.join(ROOT,'config/wow-version.json'));
@@ -53,5 +55,6 @@ export function validateBlueprint(b){
  if(!Array.isArray(b?.apiEvidence)) errors.push('apiEvidence array is mandatory');
  else if(Array.isArray(b?.apiNamespacesUsed)) for(const sym of b.apiNamespacesUsed){if(!b.apiEvidence.some(e=>e.symbol===sym&&e.status&&e.source))errors.push('Missing API evidence for '+sym);}
  if(!Array.isArray(b?.eventsRegistered)||!Array.isArray(b?.apiNamespacesUsed))errors.push('API/event arrays mandatory');
+ if(!draft){const product=verifyProductContract(b);errors.push(...product.errors);}
  return {ok:errors.length===0,errors,interface:cfg.interface};
 }

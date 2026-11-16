@@ -1,16 +1,21 @@
 # WoW Forever Alliance Addon AI Factory
 
-## Banco factual Wowhead Forever
-
-A fábrica possui agora **176 entidades curadas**, incluindo **72 quests com IDs**, **124 relações** e **89 referências**, organizadas por categoria em `knowledge/alliance/`. A inicialização importa os fatos no SQLite e no RAG com fonte por campo e lacunas explícitas. É um catálogo parcial comunitário, não uma base completa ou confirmada no cliente.
-
-Leia [o guia de dados e uso pelos agentes](docs/WOWHEAD-KNOWLEDGE.md), [o manifesto](knowledge/packs/wowhead-forever/manifest.json) e [a cobertura](knowledge/gaps/wowhead-forever.json). Use `npm run knowledge:validate`, `npm run init` e `npm run knowledge:coverage`. `npm run knowledge:export` gera TXT e JSON locais. No MCP, consulte `get_knowledge_coverage` e `get_gameplay_entity` antes de preencher requisitos de um addon. Não há crawler ou cópia de textos/ativos do Wowhead.
-
 **Fábrica agêntica de addons para leveling Alliance 1–60, com RAG, SQLite, memória, MCP, regras de compatibilidade, testes e geração de ZIPs.**
 
 > Status da base: **funcional offline para ingestão de documentos locais, consulta, memória, validação estrutural de blueprints, empacotamento, testes Node e MCP stdio**. **Não** é uma base de quests ou API completa do WoW Forever. O pacote editorial de 15/11/2026 inclui 19 documentos originais resumindo fontes oficiais e 48 entidades estruturadas; IDs internos/rotas reais continuam pendentes. Testes no cliente real ainda são obrigatórios. A geração com LLM é opcional e requer credenciais.
 
 > Base inicial de conhecimento oficial preenchida: consulte [`docs/KNOWLEDGE-PACK-FOREVER.md`](docs/KNOWLEDGE-PACK-FOREVER.md). Os dados internos de cliente ainda precisam de exportação e verificação.
+
+
+## Padrão de criação profissional (v0.2)
+
+Todo novo addon deve conectar-se a dados reais do personagem, reagir a eventos, orientar a próxima ação e preservar progresso — **não** pode ser apenas uma lista ou checklist manual. Os contratos são validados em `src/product-quality.ts` e os testes específicos são executados em `tools/build-addon.ts`. Sem evidência/compatibilidade suficiente, a entrega deve ser bloqueada. Leia `docs/PROFESSIONAL-INTERACTIVITY.md`.
+
+**Créditos universais:** autor `Tonho Contrabando`, Hunter em pixel art e splash na primeira abertura. O empacotador injeta os recursos; cada addon registra sua janela com `ns.TonhoBranding:RegisterWindow(mainFrame)`. Detalhes em `docs/TONHO-BRANDING.md`.
+
+**Entrega via PR:** branch de funcionalidade, arquivos em `addons/<addon>/`, ZIP candidato em `releases/`, testes, imagens e relatório para o usuário aprovar antes de incorporar à `main`. O código local não abre PR sozinho; a etapa deve ser executada pelo agente que possui permissão GitHub.
+
+O exemplo `AllianceLevelPulse` é apenas uma demonstração de funcionamento do pipeline, não referência de acabamento premium.
 
 ## Comece em 5 minutos
 
