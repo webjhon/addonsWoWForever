@@ -1,0 +1,8 @@
+{
+  "node": "v24.18.0",
+  "interface": 16001,
+  "docs": 209,
+  "entities": 229,
+  "memories": 4,
+  "apiKeyPresent": false
+}

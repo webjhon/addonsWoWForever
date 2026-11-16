@@ -1,0 +1,616 @@
+{
+  "at": "2026-11-16T04:15:09.079Z",
+  "results": [
+    {
+      "name": "search_wow_api",
+      "args": {
+        "query": "ShowQuestUnitCircles"
+      },
+      "result": []
+    },
+    {
+      "name": "search_leveling_knowledge",
+      "args": {
+        "query": "quest",
+        "level": 17
+      },
+      "result": [
+        {
+          "id": "whf:doc:whf:quest:3101",
+          "title": "Consecrated Letter quest",
+          "content": "{\"entity\":\"Consecrated Letter\",\"kind\":\"quest\",\"id\":\"whf:quest:3101\",\"game_id\":3101,\"faction\":\"Alliance\",\"facts\":{\"required_level\":1,\"quest_level\":null,\"recommended_range\":null,\"coordinates\":null,\"zone\":\"Elwynn Forest\",\"giver\":\"Marshal McBride\",\"category\":\"Open world\",\"class\":\"PALADIN\",\"race\":\"Human\"},\"evidence\":\"COMMUNITY_UNVERIFIED\",\"patch\":\"1.60.1\",\"build\":null,\"field_sources\":{\"name\":[\"whf:source:quest-3101\"],\"faction\":[\"whf:source:quest-3101\"],\"alliance_access\":[\"whf:source:quest-3101\"],\"game_id\":[\"whf:source:quest-3101\"],\"facts.required_level\":[\"whf:source:quest-3101\"],\"facts.zone\":[\"whf:source:quest-3101\"],\"facts.giver\":[\"whf:source:quest-3101\"],\"facts.category\":[\"whf:source:quest-3101\"],\"facts.class\":[\"whf:source:quest-3101\"],\"facts.race\":[\"whf:source:quest-3101\"]},\"sources\":[{\"id\":\"whf:source:quest-3101\",\"uri\":\"https://www.wowhead.com/forever/quest=3101/consecrated-letter\"}],\"issues\":[\"Unknown fields are intentionally not filled from Classic/Retail equivalents.\"],\"warning\":\"Discovery only; verify eligibility and current client before generating guide steps.\"}",
+          "domain": "leveling",
+          "score": 1,
+          "method": "lexical",
+          "source_id": "whf:source:quest-3101",
+          "uri": "https://www.wowhead.com/forever/quest=3101/consecrated-letter",
+          "build": null,
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "license": "original-factual-curation"
+        },
+        {
+          "id": "whf:doc:whf:quest:456",
+          "title": "The Balance of Nature quest",
+          "content": "{\"entity\":\"The Balance of Nature\",\"kind\":\"quest\",\"id\":\"whf:quest:456\",\"game_id\":456,\"faction\":\"Alliance\",\"facts\":{\"required_level\":1,\"quest_level\":null,\"recommended_range\":null,\"coordinates\":null,\"zone\":\"Teldrassil\",\"giver\":\"Conservator Ilthalaine\",\"category\":\"Open world\",\"objectives\":[{\"target\":\"Young Nightsaber\",\"quantity\":7,\"type\":\"kill\"},{\"target\":\"Young Thistle Boar\",\"quantity\":4,\"type\":\"kill\"}]},\"evidence\":\"COMMUNITY_UNVERIFIED\",\"patch\":\"1.60.1\",\"build\":null,\"field_sources\":{\"name\":[\"whf:source:quest-456\"],\"faction\":[\"whf:source:quest-456\"],\"alliance_access\":[\"whf:source:quest-456\"],\"game_id\":[\"whf:source:quest-456\"],\"facts.required_level\":[\"whf:source:quest-456\"],\"facts.zone\":[\"whf:source:quest-456\"],\"facts.giver\":[\"whf:source:quest-456\"],\"facts.category\":[\"whf:source:quest-456\"],\"facts.objectives\":[\"whf:source:quest-456\"]},\"sources\":[{\"id\":\"whf:source:quest-456\",\"uri\":\"https://www.wowhead.com/forever/quest=456/the-balance-of-nature\"}],\"issues\":[\"Unknown fields are intentionally not filled from Classic/Retail equivalents.\",\"Quest-level metadata differs between Quick Facts and listing; quest_level remains null.\"],\"warning\":\"Discovery only; verify eligibility and current client before generating guide steps.\"}",
+          "domain": "leveling",
+          "score": 1,
+          "method": "lexical",
+          "source_id": "whf:source:quest-456",
+          "uri": "https://www.wowhead.com/forever/quest=456/the-balance-of-nature",
+          "build": null,
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "license": "original-factual-curation"
+        },
+        {
+          "id": "whf:doc:whf:quest:176",
+          "title": "WANTED: \"Hogger\" quest",
+          "content": "{\"entity\":\"WANTED: \\\"Hogger\\\"\",\"kind\":\"quest\",\"id\":\"whf:quest:176\",\"game_id\":176,\"faction\":\"Alliance\",\"facts\":{\"required_level\":5,\"quest_level\":null,\"recommended_range\":null,\"coordinates\":null,\"zone\":\"Elwynn Forest\",\"giver\":null,\"category\":\"Open world\"},\"evidence\":\"COMMUNITY_UNVERIFIED\",\"patch\":\"1.60.1\",\"build\":null,\"field_sources\":{\"name\":[\"whf:source:quest-176\"],\"faction\":[\"whf:source:quest-176\"],\"alliance_access\":[\"whf:source:quest-176\"],\"game_id\":[\"whf:source:quest-176\"],\"facts.required_level\":[\"whf:source:quest-176\"],\"facts.zone\":[\"whf:source:quest-176\"],\"facts.category\":[\"whf:source:quest-176\"]},\"sources\":[{\"id\":\"whf:source:quest-176\",\"uri\":\"https://www.wowhead.com/forever/quest=176/wanted-hogger\"}],\"issues\":[\"Unknown fields are intentionally not filled from Classic/Retail equivalents.\"],\"warning\":\"Discovery only; verify eligibility and current client before generating guide steps.\"}",
+          "domain": "leveling",
+          "score": 1,
+          "method": "lexical",
+          "source_id": "whf:source:quest-176",
+          "uri": "https://www.wowhead.com/forever/quest=176/wanted-hogger",
+          "build": null,
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "license": "original-factual-curation"
+        },
+        {
+          "id": "whf:doc:whf:quest:179",
+          "title": "Dwarven Outfitters quest",
+          "content": "{\"entity\":\"Dwarven Outfitters\",\"kind\":\"quest\",\"id\":\"whf:quest:179\",\"game_id\":179,\"faction\":\"Alliance\",\"facts\":{\"required_level\":null,\"quest_level\":null,\"recommended_range\":null,\"coordinates\":null,\"zone\":\"Dun Morogh\",\"giver\":\"Sten Stoutarm\",\"category\":\"Open world\",\"objectives\":[{\"target\":\"Tough Wolf Meat\",\"quantity\":8,\"type\":\"collect\"}]},\"evidence\":\"COMMUNITY_UNVERIFIED\",\"patch\":\"1.60.1\",\"build\":null,\"field_sources\":{\"name\":[\"whf:source:quest-179\"],\"faction\":[\"whf:source:quest-179\"],\"alliance_access\":[\"whf:source:quest-179\"],\"game_id\":[\"whf:source:quest-179\"],\"facts.zone\":[\"whf:source:quest-179\"],\"facts.giver\":[\"whf:source:quest-179\"],\"facts.category\":[\"whf:source:quest-179\"],\"facts.objectives\":[\"whf:source:quest-179\"]},\"sources\":[{\"id\":\"whf:source:quest-179\",\"uri\":\"https://www.wowhead.com/forever/quest=179/dwarven-outfitters\"}],\"issues\":[\"Unknown fields are intentionally not filled from Classic/Retail equivalents.\"],\"warning\":\"Discovery only; verify eligibility and current client before generating guide steps.\"}",
+          "domain": "leveling",
+          "score": 1,
+          "method": "lexical",
+          "source_id": "whf:source:quest-179",
+          "uri": "https://www.wowhead.com/forever/quest=179/dwarven-outfitters",
+          "build": null,
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "license": "original-factual-curation"
+        },
+        {
+          "id": "whf:doc:whf:quest:783",
+          "title": "A Threat Within quest",
+          "content": "{\"entity\":\"A Threat Within\",\"kind\":\"quest\",\"id\":\"whf:quest:783\",\"game_id\":783,\"faction\":\"Alliance\",\"facts\":{\"required_level\":null,\"quest_level\":null,\"recommended_range\":null,\"coordinates\":null,\"zone\":\"Elwynn Forest\",\"giver\":null,\"category\":\"Open world\"},\"evidence\":\"COMMUNITY_UNVERIFIED\",\"patch\":\"1.60.1\",\"build\":null,\"field_sources\":{\"name\":[\"whf:source:quest-783\"],\"faction\":[\"whf:source:quest-783\"],\"alliance_access\":[\"whf:source:quest-783\"],\"game_id\":[\"whf:source:quest-783\"],\"facts.zone\":[\"whf:source:quest-783\"],\"facts.category\":[\"whf:source:quest-783\"]},\"sources\":[{\"id\":\"whf:source:quest-783\",\"uri\":\"https://www.wowhead.com/forever/quest=783/a-threat-within\"}],\"issues\":[\"Unknown fields are intentionally not filled from Classic/Retail equivalents.\"],\"warning\":\"Discovery only; verify eligibility and current client before generating guide steps.\"}",
+          "domain": "leveling",
+          "score": 1,
+          "method": "lexical",
+          "source_id": "whf:source:quest-783",
+          "uri": "https://www.wowhead.com/forever/quest=783/a-threat-within",
+          "build": null,
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "license": "original-factual-curation"
+        },
+        {
+          "id": "whf:doc:whf:quest:457",
+          "title": "The Balance of Nature quest",
+          "content": "{\"entity\":\"The Balance of Nature\",\"kind\":\"quest\",\"id\":\"whf:quest:457\",\"game_id\":457,\"faction\":\"Alliance\",\"facts\":{\"required_level\":null,\"quest_level\":null,\"recommended_range\":null,\"coordinates\":null,\"zone\":\"Teldrassil\",\"giver\":\"Conservator Ilthalaine\",\"category\":\"Open world\"},\"evidence\":\"COMMUNITY_UNVERIFIED\",\"patch\":\"1.60.1\",\"build\":null,\"field_sources\":{\"name\":[\"whf:source:quest-457\"],\"faction\":[\"whf:source:quest-457\"],\"alliance_access\":[\"whf:source:quest-457\"],\"game_id\":[\"whf:source:quest-457\"],\"facts.zone\":[\"whf:source:quest-457\"],\"facts.giver\":[\"whf:source:quest-457\"],\"facts.category\":[\"whf:source:quest-457\"]},\"sources\":[{\"id\":\"whf:source:quest-457\",\"uri\":\"https://www.wowhead.com/forever/quest=457/the-balance-of-nature\"}],\"issues\":[\"Unknown fields are intentionally not filled from Classic/Retail equivalents.\",\"Objective counters disagree with historical progress prose; use current objective panel.\"],\"warning\":\"Discovery only; verify eligibility and current client before generating guide steps.\"}",
+          "domain": "leveling",
+          "score": 1,
+          "method": "lexical",
+          "source_id": "whf:source:quest-457",
+          "uri": "https://www.wowhead.com/forever/quest=457/the-balance-of-nature",
+          "build": null,
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "license": "original-factual-curation"
+        },
+        {
+          "id": "whf:doc:whf:quest:373",
+          "title": "The Unsent Letter quest",
+          "content": "{\"entity\":\"The Unsent Letter\",\"kind\":\"quest\",\"id\":\"whf:quest:373\",\"game_id\":373,\"faction\":\"Alliance\",\"facts\":{\"required_level\":16,\"quest_level\":null,\"recommended_range\":null,\"coordinates\":null,\"category\":\"The Deadmines\",\"giver\":null,\"zone\":null},\"evidence\":\"COMMUNITY_UNVERIFIED\",\"patch\":\"1.60.1\",\"build\":null,\"field_sources\":{\"name\":[\"whf:source:quest-373\"],\"faction\":[\"whf:source:dungeon-quests\"],\"alliance_access\":[\"whf:source:dungeon-quests\"],\"game_id\":[\"whf:source:quest-373\"],\"facts.required_level\":[\"whf:source:dungeon-quests\"],\"facts.category\":[\"whf:source:dungeon-quests\"]},\"sources\":[{\"id\":\"whf:source:quest-373\",\"uri\":\"https://www.wowhead.com/forever/quest=373/the-unsent-letter\"},{\"id\":\"whf:source:dungeon-quests\",\"uri\":\"https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location\"}],\"issues\":[\"Prerequisite graph and availability are partial; compare with the active client journal.\"],\"warning\":\"Discovery only; verify eligibility and current client before generating guide steps.\"}",
+          "domain": "leveling",
+          "score": 1,
+          "method": "lexical",
+          "source_id": "whf:source:quest-373",
+          "uri": "https://www.wowhead.com/forever/quest=373/the-unsent-letter",
+          "build": null,
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "license": "original-factual-curation"
+        },
+        {
+          "id": "whf:doc:whf:quest:6981",
+          "title": "The Glowing Shard quest",
+          "content": "{\"entity\":\"The Glowing Shard\",\"kind\":\"quest\",\"id\":\"whf:quest:6981\",\"game_id\":6981,\"faction\":\"Neutral\",\"facts\":{\"required_level\":15,\"quest_level\":null,\"recommended_range\":null,\"coordinates\":null,\"category\":\"Wailing Caverns\",\"giver\":null,\"zone\":null},\"evidence\":\"COMMUNITY_UNVERIFIED\",\"patch\":\"1.60.1\",\"build\":null,\"field_sources\":{\"name\":[\"whf:source:quest-6981\"],\"faction\":[\"whf:source:dungeon-quests\"],\"alliance_access\":[\"whf:source:dungeon-quests\"],\"game_id\":[\"whf:source:quest-6981\"],\"facts.required_level\":[\"whf:source:dungeon-quests\"],\"facts.category\":[\"whf:source:dungeon-quests\"]},\"sources\":[{\"id\":\"whf:source:quest-6981\",\"uri\":\"https://www.wowhead.com/forever/quest=6981/the-glowing-shard\"},{\"id\":\"whf:source:dungeon-quests\",\"uri\":\"https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location\"}],\"issues\":[\"Prerequisite graph and availability are partial; compare with the active client journal.\"],\"warning\":\"Discovery only; verify eligibility and current client before generating guide steps.\"}",
+          "domain": "leveling",
+          "score": 1,
+          "method": "lexical",
+          "source_id": "whf:source:quest-6981",
+          "uri": "https://www.wowhead.com/forever/quest=6981/the-glowing-shard",
+          "build": null,
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "license": "original-factual-curation"
+        }
+      ]
+    },
+    {
+      "name": "query_alliance_records",
+      "args": {
+        "kind": "npc",
+        "level": 17
+      },
+      "result": [
+        {
+          "id": "whf:npc:246016",
+          "kind": "npc",
+          "name": "Arcanic Enigma",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:npc-246016",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:npc:246016",
+            "kind": "npc",
+            "name": "Arcanic Enigma",
+            "game_id": 246016,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:npc-246016"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "zone": "Alterac Mountains"
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:npc-246016"
+              ],
+              "faction": [
+                "whf:source:npc-246016"
+              ],
+              "alliance_access": [
+                "whf:source:npc-246016"
+              ],
+              "game_id": [
+                "whf:source:npc-246016"
+              ],
+              "facts.zone": [
+                "whf:source:npc-246016"
+              ]
+            },
+            "issues": [
+              "Faction denotes Alliance information access, not this NPC’s reaction, flags or spawn availability."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T04:07:33.403Z"
+        },
+        {
+          "id": "whf:npc:956",
+          "kind": "npc",
+          "name": "Dorin Songblade",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:npc-956",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:npc:956",
+            "kind": "npc",
+            "name": "Dorin Songblade",
+            "game_id": 956,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:npc-956"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "zone": "Redridge Mountains"
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:npc-956"
+              ],
+              "faction": [
+                "whf:source:npc-956"
+              ],
+              "alliance_access": [
+                "whf:source:npc-956"
+              ],
+              "game_id": [
+                "whf:source:npc-956"
+              ],
+              "facts.zone": [
+                "whf:source:npc-956"
+              ]
+            },
+            "issues": [
+              "Faction denotes Alliance information access, not this NPC’s reaction, flags or spawn availability."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T04:07:33.403Z"
+        },
+        {
+          "id": "whf:npc:234",
+          "kind": "npc",
+          "name": "Gryan Stoutmantle",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:npc-234",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:npc:234",
+            "kind": "npc",
+            "name": "Gryan Stoutmantle",
+            "game_id": 234,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:npc-234"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "zone": "Westfall"
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:npc-234"
+              ],
+              "faction": [
+                "whf:source:npc-234"
+              ],
+              "alliance_access": [
+                "whf:source:npc-234"
+              ],
+              "game_id": [
+                "whf:source:npc-234"
+              ],
+              "facts.zone": [
+                "whf:source:npc-234"
+              ]
+            },
+            "issues": [
+              "Faction denotes Alliance information access, not this NPC’s reaction, flags or spawn availability."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T04:07:33.404Z"
+        },
+        {
+          "id": "whf:npc:5694",
+          "kind": "npc",
+          "name": "High Sorcerer Andromath",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:npc-5694",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:npc:5694",
+            "kind": "npc",
+            "name": "High Sorcerer Andromath",
+            "game_id": 5694,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:npc-5694"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "zone": "Stormwind City"
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:npc-5694"
+              ],
+              "faction": [
+                "whf:source:npc-5694"
+              ],
+              "alliance_access": [
+                "whf:source:npc-5694"
+              ],
+              "game_id": [
+                "whf:source:npc-5694"
+              ],
+              "facts.zone": [
+                "whf:source:npc-5694"
+              ]
+            },
+            "issues": [
+              "Faction denotes Alliance information access, not this NPC’s reaction, flags or spawn availability."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T04:07:33.403Z"
+        },
+        {
+          "id": "whf:npc:820",
+          "kind": "npc",
+          "name": "Scout Riell",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:npc-820",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:npc:820",
+            "kind": "npc",
+            "name": "Scout Riell",
+            "game_id": 820,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:npc-820"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "zone": "Westfall"
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:npc-820"
+              ],
+              "faction": [
+                "whf:source:npc-820"
+              ],
+              "alliance_access": [
+                "whf:source:npc-820"
+              ],
+              "game_id": [
+                "whf:source:npc-820"
+              ],
+              "facts.zone": [
+                "whf:source:npc-820"
+              ]
+            },
+            "issues": [
+              "Faction denotes Alliance information access, not this NPC’s reaction, flags or spawn availability."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T04:07:33.404Z"
+        },
+        {
+          "id": "whf:npc:6579",
+          "kind": "npc",
+          "name": "Shoni the Shilent",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:npc-6579",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:npc:6579",
+            "kind": "npc",
+            "name": "Shoni the Shilent",
+            "game_id": 6579,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:npc-6579"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "zone": "Stormwind City"
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:npc-6579"
+              ],
+              "faction": [
+                "whf:source:npc-6579"
+              ],
+              "alliance_access": [
+                "whf:source:npc-6579"
+              ],
+              "game_id": [
+                "whf:source:npc-6579"
+              ],
+              "facts.zone": [
+                "whf:source:npc-6579"
+              ]
+            },
+            "issues": [
+              "Faction denotes Alliance information access, not this NPC’s reaction, flags or spawn availability."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T04:07:33.403Z"
+        },
+        {
+          "id": "whf:npc:265003",
+          "kind": "npc",
+          "name": "Thom Filch",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:npc-265003",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:npc:265003",
+            "kind": "npc",
+            "name": "Thom Filch",
+            "game_id": 265003,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:npc-265003"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "zone": "Ironforge"
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:npc-265003"
+              ],
+              "faction": [
+                "whf:source:npc-265003"
+              ],
+              "alliance_access": [
+                "whf:source:npc-265003"
+              ],
+              "game_id": [
+                "whf:source:npc-265003"
+              ],
+              "facts.zone": [
+                "whf:source:npc-265003"
+              ]
+            },
+            "issues": [
+              "Faction denotes Alliance information access, not this NPC’s reaction, flags or spawn availability."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T04:07:33.404Z"
+        },
+        {
+          "id": "whf:npc:656",
+          "kind": "npc",
+          "name": "Wilder Thistlenettle",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:npc-656",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:npc:656",
+            "kind": "npc",
+            "name": "Wilder Thistlenettle",
+            "game_id": 656,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:npc-656"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "zone": "Stormwind City"
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:npc-656"
+              ],
+              "faction": [
+                "whf:source:npc-656"
+              ],
+              "alliance_access": [
+                "whf:source:npc-656"
+              ],
+              "game_id": [
+                "whf:source:npc-656"
+              ],
+              "facts.zone": [
+                "whf:source:npc-656"
+              ]
+            },
+            "issues": [
+              "Faction denotes Alliance information access, not this NPC’s reaction, flags or spawn availability."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T04:07:33.403Z"
+        }
+      ]
+    },
+    {
+      "name": "get_project_memory",
+      "args": {
+        "kind": "decision"
+      },
+      "result": []
+    },
+    {
+      "name": "get_project_memory",
+      "args": {
+        "kind": "failure"
+      },
+      "result": []
+    },
+    {
+      "name": "check_client_capability",
+      "args": {
+        "id": "quest-unit-circles"
+      },
+      "result": {
+        "id": "quest-unit-circles",
+        "status": "UNVERIFIED",
+        "reason": "No verified capability for this build",
+        "evidence": []
+      }
+    }
+  ]
+}

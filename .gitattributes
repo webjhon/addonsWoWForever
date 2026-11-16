@@ -15,3 +15,14 @@ tests/dungeon-trail/*.lua text eol=lf
 releases/AllianceDungeonTrail*.zip binary
 releases/AllianceDungeonTrail*.png binary
 releases/AllianceDungeonTrail*.sha256 text eol=lf
+addon-src/AURANPC/** text eol=lf
+addons/AURANPC/** text eol=lf
+addons/AURANPC/assets/*.tga binary
+research/AURANPC/** text eol=lf
+research/AURANPC/*.png binary
+scripts/*auranpc* text eol=lf
+tests/auranpc* text eol=lf
+releases/AURANPC*.zip binary
+releases/AURANPC*.png binary
+releases/AURANPC*.sha256 text eol=lf
+tests/auranpc/** text eol=lf

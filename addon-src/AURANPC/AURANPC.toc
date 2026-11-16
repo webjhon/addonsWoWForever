@@ -1,0 +1,10 @@
+## Interface: 16001
+## Title: AURANPC
+## Notes: Native quest unit circles with automatic scope, recovery and conflict detection.
+## Author: Tonho Contrabando
+## Version: 1.0.0
+## X-Flavor: Forever
+## IconTexture: Interface\AddOns\AURANPC\assets\Icon.tga
+## SavedVariables: AURANPCDB
+Core.lua
+UI.lua

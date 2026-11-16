@@ -7,7 +7,26 @@ function crcTable(){return Array.from({length:256},(_,i)=>{let c=i;for(let b=0;b
 const TABLE=crcTable();
 function crc(bytes){let c=0xffffffff;for(const b of bytes)c=TABLE[(c^b)&255]^(c>>>8);return(c^0xffffffff)>>>0;}
 function pngChunk(type,data){const name=Buffer.from(type);const block=Buffer.alloc(8+data.length+4);block.writeUInt32BE(data.length,0);name.copy(block,4);data.copy(block,8);block.writeUInt32BE(crc(Buffer.concat([name,data])),8+data.length);return block;}
+// Original pixel NPC + yellow quest ring, no third-party assets.
+function drawAuraNPC(size){
+ const pixels=Buffer.alloc(size*size*4);
+ for(let y=0;y<size;y++)for(let x=0;x<size;x++){
+  const px=Math.floor(x*32/size),py=Math.floor(y*32/size);
+  let c=[9,17,24];
+  if(px===1||px===30||py===1||py===30)c=[113,87,31];
+  const ring=((px-15.5)/12)**2+((py-24)/4)**2;
+  if(ring>.62&&ring<1.3)c=ring>.83&&ring<1.06?[255,217,61]:[151,112,22];
+  if(py>=14&&py<=23&&Math.abs(px-15.5)<=4)c=[52,74,81];
+  if(py>=16&&py<=21&&Math.abs(px-15.5)>=4&&Math.abs(px-15.5)<=6)c=[157,119,71];
+  if(py>=9&&py<=14&&Math.abs(px-15.5)<=3)c=[222,179,115];
+  if(py===9&&Math.abs(px-15.5)<=3)c=[97,67,39];
+  if(py>=22&&py<=26&&(px===13||px===14||px===17||px===18))c=[113,129,132];
+  if((py>=3&&py<=6||py===8)&&(px===15||px===16))c=[255,224,83];
+  const i=(y*size+x)*4;pixels[i]=c[0];pixels[i+1]=c[1];pixels[i+2]=c[2];pixels[i+3]=255;
+ }return pixels;
+}
 function drawArt(name,size){
+ if(name==='AURANPC')return drawAuraNPC(size);
  if(name==='AllianceDungeonTrail')return pixelDungeonTrail(size);
  const seed=crypto.createHash('sha256').update(name).digest();
  const accent=[76+seed[0]%75,128+seed[1]%75,175+seed[2]%70];

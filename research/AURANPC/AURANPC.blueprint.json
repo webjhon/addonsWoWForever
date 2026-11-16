@@ -1,0 +1,273 @@
+{
+  "addonName": "AURANPC",
+  "game": "WoW Forever",
+  "faction": "Alliance",
+  "purpose": "leveling",
+  "minLevel": 1,
+  "maxLevel": 60,
+  "interfaceVersion": 16001,
+  "version": "1.0.0",
+  "eventsRegistered": [
+    "PLAYER_LOGIN",
+    "PLAYER_ENTERING_WORLD",
+    "PLAYER_LEVEL_UP",
+    "QUEST_ACCEPTED",
+    "QUEST_REMOVED",
+    "QUEST_TURNED_IN",
+    "QUEST_LOG_UPDATE",
+    "QUEST_WATCH_UPDATE",
+    "PLAYER_TARGET_CHANGED",
+    "ZONE_CHANGED_NEW_AREA",
+    "CVAR_UPDATE",
+    "PLAYER_REGEN_ENABLED",
+    "PLAYER_REGEN_DISABLED",
+    "PLAYER_LOGOUT"
+  ],
+  "apiNamespacesUsed": [
+    "CreateFrame",
+    "UnitGUID",
+    "UnitLevel",
+    "UnitFactionGroup",
+    "UnitIsQuestBoss",
+    "InCombatLockdown",
+    "GetInstanceInfo",
+    "GetBuildInfo",
+    "GetRealZoneText",
+    "issecretvalue",
+    "issecrettable",
+    "C_Timer.After",
+    "C_QuestLog.GetNumQuestLogEntries",
+    "C_CVar.GetCVar",
+    "C_CVar.GetCVarInfo",
+    "C_CVar.SetCVar",
+    "ShowQuestUnitCircles"
+  ],
+  "apiEvidence": [
+    {
+      "symbol": "CreateFrame",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "UnitGUID",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "UnitLevel",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "UnitFactionGroup",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "UnitIsQuestBoss",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitDocumentation.lua • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "InCombatLockdown",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "GetInstanceInfo",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "GetBuildInfo",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "GetRealZoneText",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "issecretvalue",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "issecrettable",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "C_Timer.After",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "C_QuestLog.GetNumQuestLogEntries",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "C_CVar.GetCVar",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/CVarDocumentation.lua • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "C_CVar.GetCVarInfo",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/CVarDocumentation.lua • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "C_CVar.SetCVar",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/CVarDocumentation.lua • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "ShowQuestUnitCircles",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_SettingsDefinitions_Frame/Nameplates.lua"
+    },
+    {
+      "symbol": "PLAYER_LOGIN",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "PLAYER_ENTERING_WORLD",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "PLAYER_LEVEL_UP",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "QUEST_ACCEPTED",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "QUEST_REMOVED",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "QUEST_TURNED_IN",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "QUEST_LOG_UPDATE",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "QUEST_WATCH_UPDATE",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "PLAYER_TARGET_CHANGED",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "ZONE_CHANGED_NEW_AREA",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "CVAR_UPDATE",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "PLAYER_REGEN_ENABLED",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "PLAYER_REGEN_DISABLED",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    },
+    {
+      "symbol": "PLAYER_LOGOUT",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ • Forever reference documented; installed70938 runtime and native rendering NOT_RUN. research/AURANPC/RESEARCH.md"
+    }
+  ],
+  "files": [
+    {
+      "filename": "AURANPC.toc",
+      "content": "## Interface: 16001\n## Title: AURANPC\n## Notes: Native quest unit circles with automatic scope, recovery and conflict detection.\n## Author: Tonho Contrabando\n## Version: 1.0.0\n## X-Flavor: Forever\n## IconTexture: Interface\\AddOns\\AURANPC\\assets\\Icon.tga\n## SavedVariables: AURANPCDB\nCore.lua\nUI.lua\n"
+    },
+    {
+      "filename": "CHANGELOG.md",
+      "content": "# AURANPC 1.0.0 candidata\n\nIntegração original do círculo nativo de quest com ativação automática Alliance1–60, restauração conservadora, preferências por personagem e detecção de conflitos. Reage a quests, alvo, zona e combate sem controles de progresso. Interface opcional de status, autoria Tonho Contrabando, Hunter pixel art compartilhado e ícone próprio NPC/círculo amarelo.\n\nApenas candidato técnico. Nenhum efeito visual foi verificado dentro do jogo; nenhuma aura3D personalizada, acesso a NPC arbitrário ou cobertura total de doadores/entregadores é alegado.\n"
+    },
+    {
+      "filename": "Core.lua",
+      "content": "local _, ns = ...\nlocal A=ns\nA.version=\"1.0.0\"\nlocal CVAR=\"ShowQuestUnitCircles\"\nlocal db,char,guid\nlocal queued=false\nfunction A.plain(v)\n    if issecretvalue and issecretvalue(v) then return false end\n    return not (type(v)==\"table\" and issecrettable and issecrettable(v))\nend\nfunction A.safe(fn,...)\n    if type(fn)~=\"function\" then return nil end\n    local ok,a,b,c,d,e,f,g,h=pcall(fn,...)\n    if not ok then return nil end\n    for i=1,8 do if not A.plain(select(i,a,b,c,d,e,f,g,h)) then return nil end end\n    return a,b,c,d,e,f,g,h\nend\nfunction A.text(v) return A.plain(v) and type(v)==\"string\" and v:gsub(\"|\",\"||\"):sub(1,300) or \"\" end\nfunction A.number(v) if A.plain(v) and type(v)==\"number\" and v==v and v>=0 and v<1000000000 then return v end end\nlocal function combat() return A.safe(function() return InCombatLockdown() end)==true end\nfunction A.state() return char end\nfunction A.database() return db end\nfunction A.init()\n    guid=A.text(A.safe(function() return UnitGUID(\"player\") end))\n    if guid==\"\" then return false end\n    if type(AURANPCDB)~=\"table\" then AURANPCDB={} end\n    db=AURANPCDB;db.schema=1\n    if type(db.characters)~=\"table\" then db.characters={} end\n    if type(db.characters[guid])~=\"table\" then db.characters[guid]={enabled=true} end\n    char=db.characters[guid]\n    if char.enabled==nil then char.enabled=true end\n    if type(db.lease)~=\"table\" or db.lease.before~=\"0\" or type(db.lease.owner)~=\"string\" then db.lease=nil end\n    return true\nend\nlocal function value()\n    local v=A.safe(function() return C_CVar.GetCVar(CVAR) end)\n    if v==\"0\" or v==\"1\" then return v end\nend\nlocal function writable()\n    local v,_,_,_,locked,secure,readonly=A.safe(function() return C_CVar.GetCVarInfo(CVAR) end)\n    return (v==\"0\" or v==\"1\") and locked==false and secure==false and readonly==false\nend\nlocal function write(v)\n    if combat() or not writable() then return false end\n    local ok=A.safe(function() return C_CVar.SetCVar(CVAR,v) end)\n    return ok==true and value()==v\nend\nfunction A.release()\n    if not db or not db.lease then return true end\n    if combat() then return false end\n    local current=value()\n    if current==nil then return false end\n    if current==\"1\" and not write(db.lease.before) then return false end\n    db.lease=nil\n    return true\nend\nlocal function snapshot()\n    local s={level=A.number(A.safe(function() return UnitLevel(\"player\") end)),\n        faction=A.text(A.safe(function() return UnitFactionGroup(\"player\") end)),native=value()}\n    local _,kind=A.safe(GetInstanceInfo);s.kind=A.text(kind)\n    s.zone=A.text(A.safe(function() return GetRealZoneText() end))\n    local _,quests=A.safe(function() return C_QuestLog.GetNumQuestLogEntries() end);s.quests=A.number(quests)\n    s.questTarget=A.safe(UnitIsQuestBoss,\"target\");if type(s.questTarget)~=\"boolean\" then s.questTarget=nil end\n    s.scope=s.faction==\"Alliance\" and s.level and s.level>=1 and s.level<=60 and (s.kind==\"none\" or s.kind==\"party\")\n    return s\nend\nlocal function result(state,title,detail)\n    A.status={state=state,title=title,detail=detail}\n    if (state==\"BLOCKED\" or state==\"CONFLICT\" or state==\"RESTORE_PENDING\") and A.warned~=state then\n        A.warned=state;print(\"|cffffd54fAURANPC|r \"..title..\". /auranpc para detalhes.\")\n    end\n    if A.render then A.render() end\nend\nfunction A.reconcile()\n    queued=false\n    if not char and not A.init() then result(\"BLOCKED\",\"Aguardando personagem\",\"Não foi possível identificar este personagem.\");return end\n    if combat() then result(\"DEFERRED\",\"Atualização após combate\",\"O indicador já ativado continua sob controle do jogo. Alterações de configuração serão retomadas ao sair de combate.\");return end\n    A.context=snapshot()\n    local s=A.context\n    if not s.scope or not char.enabled then\n        local restored=A.release()\n        result(restored and (s.scope and \"PAUSED\" or \"OUT_OF_SCOPE\") or \"RESTORE_PENDING\",s.scope and \"Gerenciamento pausado\" or \"Fora do escopo Alliance 1–60\",\n            restored and \"A configuração anterior foi preservada. Abra as opções para retomar quando desejar.\" or \"Não foi possível restaurar o ajuste anterior. O addon tentará novamente no próximo evento.\")\n        return\n    end\n    if s.native==nil then result(\"BLOCKED\",\"Círculo de quest indisponível\",\"Esta configuração não está disponível com segurança neste cliente. Nenhum efeito foi aplicado.\");return end\n    -- Detect competing settings before a new write; never fight another addon.\n    if db.lease and db.lease.owner~=guid then\n        if not A.release() then result(\"RESTORE_PENDING\",\"Restaurando personagem anterior\",\"A configuração anterior ainda não pôde ser restaurada.\");return end\n        s.native=value()\n    end\n    if db.lease and s.native~=\"1\" then local applied=db.lease.applied;db.lease=nil;if applied then char.conflict=true end end\n    if char.conflict then result(\"CONFLICT\",\"Outro ajuste desativou os círculos\",\"O AURANPC respeitou a mudança. Use REATIVAR nas opções se quiser assumir este ajuste novamente.\");return end\n    if s.native==\"0\" then\n        if not writable() then result(\"BLOCKED\",\"Configuração bloqueada pelo cliente\",\"Não foi possível habilitar o indicador nativo. Nenhuma restrição será contornada.\");return end\n        -- Save the original value before mutation, including across reload.\n        db.lease={before=\"0\",owner=guid,applied=false}\n        if not write(\"1\") then if value()==\"0\" then db.lease=nil end;result(\"BLOCKED\",\"Ativação não confirmada\",\"O cliente não confirmou a alteração. Nenhum destaque visual foi comprovado.\");return end\n        s.native=\"1\";db.lease.applied=true\n    elseif db.lease then db.lease.applied=true\n    end\n    local line=s.quests==0 and \"Sem quests no diário. Aceite uma quest para acompanhar seus objetivos. \" or (s.quests==1 and \"1 quest no diário. \" or (s.quests and (s.quests..\" quests no diário. \") or \"Quantidade de quests indisponível. \"))\n    local target=s.questTarget==true and \"O alvo atual tem marca de quest do cliente. \" or \"\"\n    result(\"ACTIVE\",\"Círculos nativos habilitados\",line..target..\"Procure o círculo ao redor dos NPCs reconhecidos pelo jogo como relevantes. O próprio jogo acompanha o movimento e o progresso.\")\nend\nfunction A.schedule()\n    if queued then return end\n    queued=true\n    if C_Timer and type(C_Timer.After)==\"function\" then C_Timer.After(.1,A.reconcile) else A.reconcile() end\nend\nfunction A.setEnabled(enabled)\n    if not char then return end\n    char.enabled=enabled==true\n    if enabled then char.conflict=nil end\n    A.reconcile()\nend\nfunction A.command(command)\n    command=(command or \"\"):lower()\n    if command==\"on\" then A.setEnabled(true)\n    elseif command==\"off\" then A.setEnabled(false)\n    elseif command==\"status\" then\n        local version,build,_,interface=A.safe(GetBuildInfo)\n        print(\"AURANPC \"..A.version..\" | \"..(A.status and A.status.state or \"INITIALIZING\")..\" | \"..A.text(version)..\" / \"..A.text(build)..\" / interface \"..(A.number(interface) or 0))\n    elseif A.frame then A.reconcile();if not combat() then A.frame:Show() end end\nend\nA.events=CreateFrame(\"Frame\")\nfor _,event in ipairs({\"PLAYER_LOGIN\",\"PLAYER_ENTERING_WORLD\",\"PLAYER_LEVEL_UP\",\"QUEST_ACCEPTED\",\"QUEST_REMOVED\",\"QUEST_TURNED_IN\",\"QUEST_LOG_UPDATE\",\"QUEST_WATCH_UPDATE\",\"PLAYER_TARGET_CHANGED\",\"ZONE_CHANGED_NEW_AREA\",\"CVAR_UPDATE\",\"PLAYER_REGEN_ENABLED\",\"PLAYER_REGEN_DISABLED\",\"PLAYER_LOGOUT\"}) do pcall(A.events.RegisterEvent,A.events,event) end\nA.events:SetScript(\"OnEvent\",function(_,event)\n    if event==\"PLAYER_LOGOUT\" then A.release();return end\n    if event==\"PLAYER_LOGIN\" then A.init() end\n    A.schedule()\nend)\nSLASH_AURANPC1=\"/auranpc\"\nSlashCmdList.AURANPC=A.command\n"
+    },
+    {
+      "filename": "INSTALL.md",
+      "content": "# AURANPC — instalação e uso\n\nExtraia `AURANPC-1.0.0-candidate.zip` e copie a pasta `AURANPC` para `_forever_/Interface/AddOns/`. O arquivo `AURANPC.toc` deve estar diretamente nessa pasta. Reinicie o cliente ou use `/reload`.\n\nAURANPC habilita automaticamente **o círculo nativo de unidades de quest** para Alliance níveis1–60. Não é necessário selecionar NPCs nem manter um painel aberto. O motor do jogo identifica as unidades relevantes, mantém o indicador no cenário e acompanha o movimento. Mundo aberto e dungeons party usam o mesmo recurso.\n\n- `/auranpc`: abrir status/opções e créditos Tonho Contrabando.\n- `/auranpc on`: reativar gerenciamento, inclusive após conflito com outro ajuste.\n- `/auranpc off`: pausar e restaurar somente a configuração que o addon alterou.\n- `/auranpc status`: imprimir estado e build observada.\n\nSe o círculo já estava habilitado antes do addon, pausar preserva essa configuração original. Se outro addon o desligar, AURANPC informa conflito nas opções e cede controle; não cria disputa contínua de configurações. Alterações em combate aguardam o fim do combate. Preferências são separadas por personagem.\n\nAntes de remover/desativar o addon no gerenciador, use `/auranpc off` para restaurar o ajuste anterior; código desativado não consegue executar restauração.\n\n## Limites importantes\n\nO destaque é o **círculo nativo no chão**, normalmente amarelo, não um efeito de partículas3D novo nem um contorno personalizável do corpo inteiro. O jogo determina cor, formato e quais unidades participam. Não há API verificada para aplicar livremente uma aura3D a todo NPC de qualquer quest. Não se promete círculo em todo doador/entregador de quest, quests não aceitas ou NPC sem marca nativa. Não são alterados nameplates, arquivos de gráficos ou restrições de instância.\n\nAtivar a configuração não comprova que um círculo foi renderizado. Caso o cliente não exponha o ajuste público ou o bloqueie, o addon informa indisponibilidade. Runtime e aparência em Forever70938 ainda precisam de teste real. Nenhum teste em jogo foi realizado nesta candidata.\n\n## Verificação no cliente pendente\n\n1. Confirmar `/dump GetBuildInfo()` e carregamento sem erros; abrir `/auranpc` e conferir créditos/ícone pixel art.\n2. Com uma quest aceita de matar/coletar, verificar um NPC reconhecido pelo jogo: círculo no chão, cor e atualização após progresso/entrega.\n3. Observar esse NPC andando, sem selecioná-lo e com placas de nome desligadas. Confirmar que o círculo pertence à unidade e permanece enquanto ela se move.\n4. Repetir em dungeon party; verificar comportamento com friendly NPCs e alvos sem relevância. Ausência de marca nativa não é substituída por um efeito inventado.\n5. Testar combate, reload, desativação, logout e outro personagem; conferir restauração do ajuste anterior e conflitos com outros addons.\n\nStatus: candidata técnica; **não CLIENT_VERIFIED**.\n"
+    },
+    {
+      "filename": "TEST-REPORT.md",
+      "content": "# AURANPC — relatório executado\n\nExecução: 2026-11-16T04:20:02.998Z. Node v24.18.0. **STATIC_PASSED / MOCK_PASSED. CLIENT_VERIFIED: NÃO. Nenhum teste em jogo realizado.**\n\n- Suíte completa: **76/76**, zero falhas. Inclui15 testes do motor AURANPC e um teste do ZIP distribuído, além das suítes existentes. Logs completos em node-tests.log.\n- Fengari executou código original e branding da fábrica: ativação do CVar com readback, nenhuma escrita redundante, quests/alvo/contexto, mundo/party, pausa e restauração, conflitos externos, combate/retomada, API ausente/secreta/locked/secure/readOnly, falha de escrita/restauração, reload/GUID, Horde/nível61/raid/PvP, rajadas de eventos e primeira abertura.\n- **O mock não renderiza círculos no mundo.** Transitar para party no mock prova somente que a política não desliga o recurso, não que o círculo aparece em uma dungeon real. Movimento, cor amarela, seleção de NPC e renderização do motor precisam de verificação visual no cliente.\n- Sintaxe Lua5.1 validada por luaparse; execução headless Fengari Lua5.3 não reproduz cliente, taint ou valores secretos reais. Nenhum validador enfraquecido.\n- Evals, doctor, exemplo e jornada obrigatória executados. Empacotador executa os testes específicos antes do ZIP. Conteúdos, CRC32, TOC, ordem de carga, autoria Tonho Contrabando, branding/Hunter e ícone original512×512 verificados.\n- Três prévias mostram o painel em ativo, conflito e bloqueado, executando código real no mock. São aproximações de fontes/posicionamento, não capturas do WoW nem prova da aura no cenário.\n\nA implementação gerencia **ShowQuestUnitCircles**, recurso nativo documentado na UI Forever. Não cria aura3D arbitrária nem controla cor/formato/cobertura de doadores/entregadores. Runtime70938 e aparência continuam UNVERIFIED. Ver RESEARCH.md para fontes, capacidade e revisão crítica; INSTALL.md contém o roteiro de validação real. Não publicar como testado no cliente antes dessa etapa.\n"
+    },
+    {
+      "filename": "UI.lua",
+      "content": "local _, ns = ...\nlocal A=ns\nlocal f=CreateFrame(\"Frame\",\"AURANPCFrame\",UIParent)\nf:Hide()\nns.TonhoBranding:RegisterWindow(f)\nA.frame=f\nf:SetSize(420,330);f:SetPoint(\"CENTER\",UIParent,\"CENTER\",0,0);f:SetClampedToScreen(true)\nf:EnableMouse(true);f:SetMovable(true);f:RegisterForDrag(\"LeftButton\");f:SetFrameStrata(\"DIALOG\")\nf:SetScript(\"OnDragStart\",function() if not InCombatLockdown() then f:StartMoving() end end)\nf:SetScript(\"OnDragStop\",function() f:StopMovingOrSizing() end)\nlocal bg=f:CreateTexture(nil,\"BACKGROUND\");bg:SetAllPoints();bg:SetColorTexture(.025,.04,.055,.98)\nlocal edge=f:CreateTexture(nil,\"ARTWORK\");edge:SetPoint(\"TOPLEFT\",f,\"TOPLEFT\",0,0);edge:SetSize(420,3);edge:SetColorTexture(1,.78,.19,1)\nlocal function text(x,y,w,h,size,color)\n local t=f:CreateFontString(nil,\"OVERLAY\");t:SetPoint(\"TOPLEFT\",f,\"TOPLEFT\",x,-y);t:SetSize(w,h);t:SetFont(STANDARD_TEXT_FONT or \"Fonts\\\\FRIZQT__.TTF\",size,\"\");t:SetJustifyH(\"LEFT\");t:SetJustifyV(\"TOP\");t:SetTextColor(unpack(color));return t\nend\nlocal icon=f:CreateTexture(nil,\"ARTWORK\");icon:SetSize(42,42);icon:SetPoint(\"TOPLEFT\",f,\"TOPLEFT\",18,-19);icon:SetTexture(\"Interface\\\\AddOns\\\\AURANPC\\\\assets\\\\Icon.tga\")\ntext(74,20,300,25,20,{1,.81,.28}):SetText(\"AURANPC\")\ntext(75,48,310,20,10,{.6,.7,.76}):SetText(\"QUEST EM DESTAQUE • TONHO CONTRABANDO\")\nlocal status=text(20,90,380,48,18,{.92,.95,.96})\nlocal detail=text(20,147,380,89,12,{.78,.84,.88})\nlocal place=text(20,242,380,24,10,{.55,.67,.73})\nlocal function button(caption,x,width,fn)\n local b=CreateFrame(\"Button\",nil,f);b:SetSize(width,30);b:SetPoint(\"TOPLEFT\",f,\"TOPLEFT\",x,-282)\n local bg=b:CreateTexture(nil,\"BACKGROUND\");bg:SetAllPoints();bg:SetColorTexture(.16,.14,.065,1)\n local t=b:CreateFontString(nil,\"OVERLAY\");t:SetPoint(\"CENTER\",b,\"CENTER\",0,0);t:SetFont(STANDARD_TEXT_FONT or \"Fonts\\\\FRIZQT__.TTF\",11,\"\");t:SetTextColor(1,.85,.4);t:SetText(caption);b:SetScript(\"OnClick\",fn)\nend\nbutton(\"REATIVAR\",20,112,function() A.setEnabled(true) end)\nbutton(\"PAUSAR\",145,112,function() A.setEnabled(false) end)\nbutton(\"FECHAR\",270,130,function() f:Hide() end)\nfunction A.render()\n local s=A.status;if not s then return end\n status:SetText(s.title);detail:SetText(s.detail)\n place:SetText(A.context and ((A.context.kind==\"party\" and \"DUNGEON\" or \"MUNDO\")..\" • \"..A.context.zone) or \"Aguardando dados do personagem\")\nend\n"
+    }
+  ],
+  "interactivity": {
+    "playerBenefit": "Deixar visível o círculo nativo em NPCs relevantes para quests, acompanhados pelo próprio motor do jogo, sem selecionar ou marcar cada NPC.",
+    "liveSignals": [
+      "character",
+      "level",
+      "quests",
+      "map",
+      "combat"
+    ],
+    "automaticTransitions": [
+      {
+        "trigger": "Login elegível ou retomada após combate com configuração nativa desligada",
+        "response": "Habilita o recurso nativo quando público e permitido, confirma leitura e guarda valor anterior para restauração."
+      },
+      {
+        "trigger": "Quest aceita, objetivo alterado, entrega ou mudança de alvo/zona",
+        "response": "Reconciliar contexto e próxima ação sem escritas repetidas; o motor nativo atualiza relevância e segue movimento."
+      },
+      {
+        "trigger": "Alteração externa da configuração, saída do escopo ou pausa",
+        "response": "Ceder a conflito sem loop de disputa ou restaurar somente alteração própria; preservar ajuste original."
+      }
+    ],
+    "nextBestAction": "Procurar unidades com o círculo nativo para executar objetivos; no painel indicar alvo marcado pelo cliente, ausência de quests, bloqueio ou reativação necessária.",
+    "recovery": "Preferência por GUID, lease conservador da configuração original no SavedVariables, reconciliação no login e retomada fora de combate; API ausente não se torna sucesso.",
+    "manualAsFallbackOnly": true,
+    "acceptanceScenarios": [
+      {
+        "given": "Personagem Alliance1–60 com círculos desativados e CVar público",
+        "when": "Login ocorre e depois há eventos de quests e zona",
+        "then": "Ativar uma vez, confirmar leitura e manter sem exigir cliques de progresso ou repetir escritas."
+      },
+      {
+        "given": "Círculos habilitados pelo addon e personagem em combate",
+        "when": "Pausa é solicitada e depois o combate termina",
+        "then": "Adiar a escrita e restaurar somente o valor anterior quando permitido."
+      },
+      {
+        "given": "Addon controla o ajuste nativo e outro ajuste altera para zero",
+        "when": "Recebe CVAR_UPDATE e outros eventos repetidos",
+        "then": "Ceder controle e mostrar conflito sem combater o outro ajuste; reativar apenas por preferência explícita."
+      }
+    ],
+    "testFile": "tests/auranpc.test.ts"
+  }
+}

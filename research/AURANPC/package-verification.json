@@ -1,0 +1,61 @@
+{
+  "at": "2026-11-16T04:20:02.998Z",
+  "addon": "AURANPC",
+  "version": "1.0.0",
+  "status": "STATIC_PASSED",
+  "mockStatus": "MOCK_PASSED",
+  "clientVerified": false,
+  "tests": {
+    "count": 76,
+    "passed": 76
+  },
+  "logs": [
+    {
+      "label": "prepare",
+      "status": 0,
+      "signal": null
+    },
+    {
+      "label": "node-tests",
+      "status": 0,
+      "signal": null
+    },
+    {
+      "label": "factory-evals",
+      "status": 0,
+      "signal": null
+    },
+    {
+      "label": "doctor",
+      "status": 0,
+      "signal": null
+    },
+    {
+      "label": "example",
+      "status": 0,
+      "signal": null
+    },
+    {
+      "label": "prepare-final",
+      "status": 0,
+      "signal": null
+    }
+  ],
+  "files": 12,
+  "zipBytes": 170902,
+  "sha256": "a9e104818c816c607ffe0871a8ac5eeefe2615c5f5a67697c78493a6cf37f6d4",
+  "zip": "AURANPC-1.0.0-candidate.zip",
+  "verifiedBlueprintFiles": [
+    "AURANPC.toc",
+    "CHANGELOG.md",
+    "Core.lua",
+    "INSTALL.md",
+    "TEST-REPORT.md",
+    "UI.lua"
+  ],
+  "crc32": "ALL_PASSED",
+  "branding": "INJECTED_AND_VERIFIED",
+  "tga": "512x512x32 / original 32px pixel art",
+  "installedExecutableVersion": "1.60.1.70938",
+  "liveClientTests": "NOT_RUN"
+}
