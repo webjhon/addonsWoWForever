@@ -1,0 +1,6 @@
+knowledge/ingest/** text eol=lf
+knowledge/packs/** text eol=lf
+knowledge/alliance/*/wowhead-forever.json text eol=lf
+schemas/knowledge-pack.schema.json text eol=lf
+rag/raw-docs/forever/wowhead/** text eol=lf
+tests/wowhead-knowledge.test.ts text eol=lf

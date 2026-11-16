@@ -6,14 +6,18 @@ import {openDb,getMemories,recordMemory,capability} from './src/db.ts';
 import {validateBlueprint} from './src/guards.ts';
 import {buildAddon} from './tools/build-addon.ts';
 import {createBlueprintWithLLM} from './src/llm.ts';
+import {importKnowledgePack} from './knowledge/ingest/wowhead-forever.ts';
 export async function executeJourney({blueprintPath,prompt}={}){
  const state={startedAt:now(),stages:[],status:'RUNNING'};
+ let db;
  function step(name,result){state.stages.push({name,at:now(),...result});appendTrace('journey-step',{name,ok:result.ok,addon:state.addon||null});if(!result.ok)throw Error(name+': '+(result.reason||'failed'));}
  try{
   const cfg=readJSON(path.join(ROOT,'config/wow-version.json'));
-  const db=openDb();
+  db=openDb();
   const memories=getMemories(db,{limit:12});
   step('CONTEXT_AND_MEMORY',{ok:true,build:cfg.build,memories:memories.length});
+  const knowledge=importKnowledgePack(db);
+  step('KNOWLEDGE_PACK_REVIEW',{ok:true,dataset:knowledge.dataset,revision:knowledge.revision,records:knowledge.records,complete:knowledge.complete,clientVerified:false,gaps:knowledge.gaps});
   const subject=prompt || blueprintPath || '';
   const docs=await searchKnowledge(subject,{db,limit:10});
   step('RAG_AND_RESEARCH',{ok:true,citations:docs.map(x=>x.source_id)});
@@ -34,8 +38,8 @@ export async function executeJourney({blueprintPath,prompt}={}){
   // The release is a candidate. Only an actual game session can provide CLIENT_VERIFIED.
   step('REVIEW_AND_HANDOFF',{ok:true,status:'STATIC_PASSED',clientVerified:false});
   recordMemory(db,'project','Built '+blueprint.addonName,'Candidate at '+result.out,{addon:blueprint.addonName,evidence:docs.map(x=>x.source_id),build:cfg.build||null});
-  db.close();state.status='STATIC_PASSED';state.result=result;state.provider=provider;
- }catch(e){state.status='FAILED';state.error=e.message;}
+  state.status='STATIC_PASSED';state.result=result;state.provider=provider;
+ }catch(e){state.status='FAILED';state.error=e.message;}finally{db?.close();}
  state.finishedAt=now();
  const history=readJSON(path.join(ROOT,'context/session-history.json'),{schemaVersion:1,sessions:[]});
  history.sessions=[...(history.sessions||[]),{at:state.finishedAt,addon:state.addon||null,status:state.status,steps:state.stages.map(s=>s.name)}].slice(-100);

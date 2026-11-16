@@ -1,0 +1,38 @@
+{
+  "curatedAt": "2026-11-15",
+  "method": "User-directed review of public Forever reference pages; manual factual selection, no crawler or mirrored prose",
+  "sourceManifest": "knowledge/packs/wowhead-forever/manifest.json",
+  "packHash": "6281300db2407b83d3d06d044ff30db1db2a67766cc924d5211b9a90e7e02201",
+  "rights": {
+    "terms": "https://corp.fanbyte.com/legal/terms",
+    "termsRevision": "2025-05-14",
+    "robots": "https://www.wowhead.com/robots.txt",
+    "reviewedAt": "2026-11-15",
+    "mirrorAuthorized": false,
+    "storedContent": "Point facts, identifiers, labels, numeric references, source links, original notes",
+    "sourceMaterialRelicensed": false
+  },
+  "acquisitionGaps": [
+    "Some short-form quest URLs were inaccessible through the research tool; no inferred Classic/Retail substitute was imported.",
+    "The terms-of-service shortcut was inaccessible; the publisher’s linked legal terms were reviewed instead.",
+    "No complete website export, source HTML archive, live API validation or in-client test was obtained."
+  ],
+  "fieldEvidence": "Each known field references reviewed source IDs; all current records remain COMMUNITY_UNVERIFIED.",
+  "counts": {
+    "quest": 72,
+    "dungeon": 24,
+    "zone": 38,
+    "npc": 8,
+    "item": 4,
+    "object": 0,
+    "class": 9,
+    "profession": 12,
+    "pet_family": 9,
+    "flight_master": 0,
+    "ability": 0
+  },
+  "unresolvedRequirements": {
+    "quest": 5
+  },
+  "coverageComplete": false
+}

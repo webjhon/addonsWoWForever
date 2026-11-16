@@ -8,6 +8,10 @@
     "node": ">=22.16.0"
   },
   "scripts": {
+    "knowledge:validate": "node --experimental-strip-types scripts/knowledge-pack.ts validate",
+    "knowledge:coverage": "node --experimental-strip-types scripts/knowledge-pack.ts coverage",
+    "knowledge:refresh": "node --experimental-strip-types scripts/knowledge-pack.ts refresh",
+    "knowledge:export": "node --experimental-strip-types scripts/knowledge-pack.ts export",
     "init": "node --experimental-strip-types scripts/setup.ts",
     "index": "node --experimental-strip-types rag/indexer.ts",
     "index:embeddings": "node --experimental-strip-types rag/indexer.ts --embeddings",
@@ -24,7 +28,8 @@
     "sources:check": "node --experimental-strip-types tools/check-source-updates.ts",
     "new": "node --experimental-strip-types tools/new-addon.ts"
   },
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "ajv": "8.20.0"
+  },
   "license": "MIT"
 }

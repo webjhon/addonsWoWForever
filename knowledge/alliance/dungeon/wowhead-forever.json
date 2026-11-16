@@ -1,0 +1,1018 @@
+{
+  "records": [
+    {
+      "id": "whf:dungeon:hall-of-thanes",
+      "kind": "dungeon",
+      "name": "Hall of Thanes",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": []
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:ruins-of-lordaeron",
+      "kind": "dungeon",
+      "name": "Ruins of Lordaeron",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": []
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:the-deadmines",
+      "kind": "dungeon",
+      "name": "The Deadmines",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": []
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:wailing-caverns",
+      "kind": "dungeon",
+      "name": "Wailing Caverns",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": []
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:shadowfang-keep",
+      "kind": "dungeon",
+      "name": "Shadowfang Keep",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": []
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:blackfathom-deeps",
+      "kind": "dungeon",
+      "name": "Blackfathom Deeps",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": []
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:the-stockade",
+      "kind": "dungeon",
+      "name": "The Stockade",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": [
+          "The Stockades",
+          "Stormwind Stockade"
+        ]
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:excavation-site-wetlands",
+      "kind": "dungeon",
+      "name": "Excavation Site: Wetlands",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": []
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:gnomeregan",
+      "kind": "dungeon",
+      "name": "Gnomeregan",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": []
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:city-of-dalaran",
+      "kind": "dungeon",
+      "name": "City of Dalaran",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": []
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:razorfen-kraul",
+      "kind": "dungeon",
+      "name": "Razorfen Kraul",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": []
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:the-drowned-city",
+      "kind": "dungeon",
+      "name": "The Drowned City",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": []
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:scarlet-monastery",
+      "kind": "dungeon",
+      "name": "Scarlet Monastery",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": []
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:razorfen-downs",
+      "kind": "dungeon",
+      "name": "Razorfen Downs",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": []
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:uldaman",
+      "kind": "dungeon",
+      "name": "Uldaman",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": []
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:kroldok-stronghold",
+      "kind": "dungeon",
+      "name": "Krol'dok Stronghold",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": []
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:zulfarrak",
+      "kind": "dungeon",
+      "name": "Zul'Farrak",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": []
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:maraudon",
+      "kind": "dungeon",
+      "name": "Maraudon",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": []
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:temple-of-atalhakkar",
+      "kind": "dungeon",
+      "name": "Temple of Atal'Hakkar",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": [
+          "Sunken Temple"
+        ]
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:blackrock-depths",
+      "kind": "dungeon",
+      "name": "Blackrock Depths",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": []
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:dire-maul",
+      "kind": "dungeon",
+      "name": "Dire Maul",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": []
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:lower-blackrock-spire",
+      "kind": "dungeon",
+      "name": "Lower Blackrock Spire",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": []
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:scholomance",
+      "kind": "dungeon",
+      "name": "Scholomance",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": []
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    },
+    {
+      "id": "whf:dungeon:stratholme",
+      "kind": "dungeon",
+      "name": "Stratholme",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:dungeon-quests"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "category": "Dungeon",
+        "aliases": []
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:dungeon-quests"
+        ],
+        "faction": [
+          "whf:source:dungeon-quests"
+        ],
+        "alliance_access": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.category": [
+          "whf:source:dungeon-quests"
+        ],
+        "facts.aliases": [
+          "whf:source:dungeon-quests"
+        ]
+      },
+      "issues": [
+        "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+      ]
+    }
+  ],
+  "relations": []
+}

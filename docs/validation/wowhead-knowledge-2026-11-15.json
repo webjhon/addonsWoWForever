@@ -1,0 +1,143 @@
+{
+  "at": "2026-11-16T02:27:01.777Z",
+  "base": "80a0738ae386d1a4412f6e4cbda9e88475c7dc24",
+  "node": "v24.18.0",
+  "status": "STATIC_PASSED",
+  "clientTests": "NOT_RUN",
+  "schema": {
+    "ok": true,
+    "records": 176,
+    "relations": 124,
+    "sources": 89
+  },
+  "coverage": {
+    "dataset": "wowhead-forever",
+    "revision": "2026-11-15.1",
+    "complete": false,
+    "clientVerified": false,
+    "counts": {
+      "quest": 72,
+      "dungeon": 24,
+      "zone": 38,
+      "npc": 8,
+      "item": 4,
+      "object": 0,
+      "class": 9,
+      "profession": 12,
+      "pet_family": 9,
+      "flight_master": 0,
+      "ability": 0
+    },
+    "records": 176,
+    "operationalRecords": 176,
+    "quarantined": [],
+    "relations": 124,
+    "operationalRelations": 124,
+    "sources": 89,
+    "missingGameIds": {
+      "dungeon": 24,
+      "zone": 38,
+      "profession": 12,
+      "pet_family": 9,
+      "class": 9
+    },
+    "unknownRequirements": {
+      "quest": 5
+    },
+    "recordsWithIssues": 172,
+    "gaps": [
+      "Partial factual catalog, not a copy or exhaustive export of Wowhead. The quest listing reports 6,140 results with a 1,000-display cap; this is not an Alliance denominator.",
+      "No source record or gameplay claim is CLIENT_VERIFIED. Website patch labels do not establish the installed client build.",
+      "No operational coordinates, UI map IDs, flight-master graph, travel costs or spawn timers were obtained.",
+      "No complete quest chains, class/race matrix, spell ranks, recipe database, loot tables or XP formula were imported.",
+      "Alcaz Prison, Blackmaw Hold and Shaper’s Terrace quest coverage remains absent; consult phase availability separately.",
+      "Missing required levels remain null and must not be interpreted as level-1 eligibility.",
+      "Community comments and legacy Classic/Retail text are not authoritative current Forever data.",
+      "Source terms restrict redistribution; no crawler, HTML mirror, screenshots, guide steps or article/comment prose is included."
+    ]
+  },
+  "packHash": "6281300db2407b83d3d06d044ff30db1db2a67766cc924d5211b9a90e7e02201",
+  "tests": {
+    "passed": 30,
+    "total": 30,
+    "files": [
+      "tests/curated-knowledge.test.ts",
+      "tests/diagnostics.test.ts",
+      "tests/factory.test.ts",
+      "tests/knowledge.test.ts",
+      "tests/mcp.test.ts",
+      "tests/wowhead-knowledge.test.ts"
+    ],
+    "output": "✔ curated official records are indexed and exclude Horde (87.3189ms)\n✔ import SavedVariables fixture without eval (17.4207ms)\n✔ malformed diagnostics are rejected (0.6621ms)\n✔ demo blueprint is structurally valid (11.1113ms)\n✔ Horde scope is rejected (6.7813ms)\n✔ wrong client interface is rejected (5.5879ms)\n✔ protected action and deprecated API are rejected (7.9364ms)\n✔ TOC icon required (3.1677ms)\n✔ unsafe paths rejected (8.121ms)\n✔ actual ZIP candidate exists with original icon (243.6951ms)\n✔ Alliance only and accessible neutrals; Horde hidden (46.8844ms)\n✔ FTS knowledge returns provenance and respects domain (34.3726ms)\n✔ memories persist provenance and capabilities default to UNVERIFIED (33.9157ms)\n✔ MCP initialize/list/read and capabilities (12.0102ms)\n✔ benchmark coverage and original icon exist (2.9439ms)\n✔ reviewed factual pack has typed data, individual IDs and explicit incomplete coverage (52.014ms)\n✔ schema blocks copied page prose, arbitrary fields and unsupported coordinates (98.6822ms)\n✔ source URLs must stay on Forever and never become unreviewed sources (131.6739ms)\n✔ IDs require matching individual source and every known field needs provenance (97.3024ms)\n✔ no Horde, false Alliance access or unearned client verification can be imported (90.7996ms)\n✔ duplicate entities, conflicting identifiers and dangling graph endpoints are rejected (72.5486ms)\n✔ prerequisite cycles and duplicate edges cannot be mistaken for usable chains (44.3723ms)\n✔ first import indexes entities, source records, relations and level-aware factual RAG (71.2422ms)\n✔ reimport is idempotent and does not rewrite unchanged import evidence (90.153ms)\n✔ updated pack removes retired entities, relations and their old FTS documents only (129.6404ms)\n✔ unknown faction records and their edges never enter operational SQL or RAG (69.783ms)\n✔ invalid update fails before writes and database constraint failures roll back the entire replacement (124.4845ms)\n✔ entity planning context preserves unknown eligibility and both graph directions (67.7198ms)\n✔ MCP exposes coverage and entity lookup as distinct discovery capabilities (22.2194ms)\n✔ index CLI actually runs on Windows and can be invoked again without duplicated documents (293.5918ms)\nℹ tests 30\nℹ suites 0\nℹ pass 30\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 2189.5934\n"
+  },
+  "dependencyAudit": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "dependencies": {
+      "prod": 6,
+      "dev": 0,
+      "optional": 0,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 5
+    }
+  },
+  "journey": {
+    "status": "STATIC_PASSED",
+    "stages": [
+      {
+        "name": "CONTEXT_AND_MEMORY",
+        "ok": true
+      },
+      {
+        "name": "KNOWLEDGE_PACK_REVIEW",
+        "ok": true
+      },
+      {
+        "name": "RAG_AND_RESEARCH",
+        "ok": true
+      },
+      {
+        "name": "SCOPE_AND_GUARDRAILS",
+        "ok": true
+      },
+      {
+        "name": "CAPABILITY_REVIEW",
+        "ok": true
+      },
+      {
+        "name": "PACKAGING",
+        "ok": true
+      },
+      {
+        "name": "REVIEW_AND_HANDOFF",
+        "ok": true
+      }
+    ],
+    "clientVerified": false
+  },
+  "mcpSmoke": [
+    {
+      "name": "get_knowledge_coverage",
+      "ok": true
+    },
+    {
+      "name": "get_gameplay_entity",
+      "ok": true
+    },
+    {
+      "name": "query_alliance_records",
+      "ok": true
+    },
+    {
+      "name": "search_leveling_knowledge",
+      "ok": true
+    }
+  ]
+}

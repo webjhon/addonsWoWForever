@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import {fileURLToPath} from 'node:url';
 import {ROOT,sha,readJSON} from '../src/core.ts';
 import {openDb,upsertDoc} from '../src/db.ts';
 import {embed} from '../src/search.ts';
@@ -15,7 +16,7 @@ export async function indexDocuments({withEmbeddings=false,dirs=[path.join(ROOT,
    for(let offset=0,n=0;offset<raw.length;offset+=1000,n++){
      const content=raw.slice(offset,offset+1200);if(!content.trim())continue;
      const id=sha(rel+':'+n).slice(0,24);const current=db.prepare('SELECT hash FROM docs WHERE id=?').get(id);
-     if(current?.hash===sha(content)){skipped++;continue;}
+     if(current?.hash===sha(content)){skipped++;if(offset+1200>=raw.length)break;continue;}
      upsertDoc(db,{id,source_id:meta.source_id||rel,domain:meta.domain||'api',title:meta.title||path.basename(f),content,faction:meta.faction||'Alliance',alliance_access:meta.alliance_access!==false,build:meta.build||null,evidence:meta.evidence||'COMMUNITY_UNVERIFIED',license:meta.license||'original',uri:meta.uri||null});changed++;
      if(withEmbeddings){const vec=await embed(content);db.prepare('INSERT OR REPLACE INTO doc_vectors(doc_id,model,vector) VALUES(?,?,?)').run(id,process.env.EMBEDDING_MODEL||'text-embedding-3-small',JSON.stringify(vec));vectors++;}
      if(offset+1200>=raw.length)break;
@@ -23,4 +24,4 @@ export async function indexDocuments({withEmbeddings=false,dirs=[path.join(ROOT,
  }
  db.close();return {changed,skipped,vectors};
 }
-if(process.argv[1] && path.resolve(process.argv[1])===path.resolve(new URL(import.meta.url).pathname))indexDocuments({withEmbeddings:process.argv.includes('--embeddings')}).then(console.log).catch(e=>{console.error(e);process.exitCode=1;});
+if(process.argv[1] && path.resolve(process.argv[1])===fileURLToPath(import.meta.url))indexDocuments({withEmbeddings:process.argv.includes('--embeddings')}).then(console.log).catch(e=>{console.error(e);process.exitCode=1;});

@@ -4,13 +4,18 @@ import {ROOT} from '../src/core.ts';
 import {openDb,upsertEntity,setCapability} from '../src/db.ts';
 import {indexDocuments} from '../rag/indexer.ts';
 import {seedForever} from '../knowledge/alliance/seed-forever.ts';
+import {importKnowledgePack} from '../knowledge/ingest/wowhead-forever.ts';
 export async function setup(){
  const db=openDb();
+ let curated,wowhead;
+ try{
  const fixtures=JSON.parse(fs.readFileSync(path.join(ROOT,'evals/fixtures/synthetic-gameplay.json'),'utf8'));
  for(const e of fixtures.entities)upsertEntity(db,e);
  for(const c of fixtures.capabilities)setCapability(db,c);
- const curated=seedForever(db);
- db.close(); const result=await indexDocuments();
- return {status:'READY_FOR_OFFLINE_TESTS',index:result,curated,note:'Synthetic fixtures are test-only; additional Forever entities are editorial Blizzard summaries, not client-extracted IDs'};
+ curated=seedForever(db);
+ wowhead=importKnowledgePack(db);
+ }finally{db.close();}
+ const result=await indexDocuments();
+ return {status:'READY_FOR_OFFLINE_TESTS',index:result,curated,wowhead,note:'Fixtures are synthetic. Wowhead facts are a partial community reference, never client verification or a complete quest database.'};
 }
 if(process.argv[1]?.endsWith('setup.ts'))setup().then(console.log).catch(e=>{console.error(e);process.exitCode=1;});

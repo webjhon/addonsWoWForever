@@ -1,0 +1,347 @@
+{
+  "records": [
+    {
+      "id": "whf:pet_family:fox",
+      "kind": "pet_family",
+      "name": "Fox",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:hunter-pets"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "family_ability": "Trickster's Dance"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:hunter-pets"
+        ],
+        "faction": [
+          "whf:source:hunter-pets"
+        ],
+        "alliance_access": [
+          "whf:source:hunter-pets"
+        ],
+        "facts.family_ability": [
+          "whf:source:hunter-pets"
+        ]
+      },
+      "issues": [
+        "Family labels do not establish creature IDs, tameability, spawn coordinates or spell ranks."
+      ]
+    },
+    {
+      "id": "whf:pet_family:cat",
+      "kind": "pet_family",
+      "name": "Cat",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:hunter-pets"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "family_ability": "Prowl"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:hunter-pets"
+        ],
+        "faction": [
+          "whf:source:hunter-pets"
+        ],
+        "alliance_access": [
+          "whf:source:hunter-pets"
+        ],
+        "facts.family_ability": [
+          "whf:source:hunter-pets"
+        ]
+      },
+      "issues": [
+        "Family labels do not establish creature IDs, tameability, spawn coordinates or spell ranks."
+      ]
+    },
+    {
+      "id": "whf:pet_family:raptor",
+      "kind": "pet_family",
+      "name": "Raptor",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:hunter-pets"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "family_ability": "Savage Rend"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:hunter-pets"
+        ],
+        "faction": [
+          "whf:source:hunter-pets"
+        ],
+        "alliance_access": [
+          "whf:source:hunter-pets"
+        ],
+        "facts.family_ability": [
+          "whf:source:hunter-pets"
+        ]
+      },
+      "issues": [
+        "Family labels do not establish creature IDs, tameability, spawn coordinates or spell ranks."
+      ]
+    },
+    {
+      "id": "whf:pet_family:carrion-bird",
+      "kind": "pet_family",
+      "name": "Carrion Bird",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:hunter-pets"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "family_ability": "Demoralizing Screech"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:hunter-pets"
+        ],
+        "faction": [
+          "whf:source:hunter-pets"
+        ],
+        "alliance_access": [
+          "whf:source:hunter-pets"
+        ],
+        "facts.family_ability": [
+          "whf:source:hunter-pets"
+        ]
+      },
+      "issues": [
+        "Family labels do not establish creature IDs, tameability, spawn coordinates or spell ranks."
+      ]
+    },
+    {
+      "id": "whf:pet_family:bird-of-prey",
+      "kind": "pet_family",
+      "name": "Bird of Prey",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:hunter-pets"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "family_ability": "Mine!"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:hunter-pets"
+        ],
+        "faction": [
+          "whf:source:hunter-pets"
+        ],
+        "alliance_access": [
+          "whf:source:hunter-pets"
+        ],
+        "facts.family_ability": [
+          "whf:source:hunter-pets"
+        ]
+      },
+      "issues": [
+        "Family labels do not establish creature IDs, tameability, spawn coordinates or spell ranks."
+      ]
+    },
+    {
+      "id": "whf:pet_family:wolf",
+      "kind": "pet_family",
+      "name": "Wolf",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:hunter-pets"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "family_ability": "Furious Howl"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:hunter-pets"
+        ],
+        "faction": [
+          "whf:source:hunter-pets"
+        ],
+        "alliance_access": [
+          "whf:source:hunter-pets"
+        ],
+        "facts.family_ability": [
+          "whf:source:hunter-pets"
+        ]
+      },
+      "issues": [
+        "Family labels do not establish creature IDs, tameability, spawn coordinates or spell ranks."
+      ]
+    },
+    {
+      "id": "whf:pet_family:boar",
+      "kind": "pet_family",
+      "name": "Boar",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:hunter-pets"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "family_ability": "Charge"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:hunter-pets"
+        ],
+        "faction": [
+          "whf:source:hunter-pets"
+        ],
+        "alliance_access": [
+          "whf:source:hunter-pets"
+        ],
+        "facts.family_ability": [
+          "whf:source:hunter-pets"
+        ]
+      },
+      "issues": [
+        "Family labels do not establish creature IDs, tameability, spawn coordinates or spell ranks."
+      ]
+    },
+    {
+      "id": "whf:pet_family:spider",
+      "kind": "pet_family",
+      "name": "Spider",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:hunter-pets"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "family_ability": "Web"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:hunter-pets"
+        ],
+        "faction": [
+          "whf:source:hunter-pets"
+        ],
+        "alliance_access": [
+          "whf:source:hunter-pets"
+        ],
+        "facts.family_ability": [
+          "whf:source:hunter-pets"
+        ]
+      },
+      "issues": [
+        "Family labels do not establish creature IDs, tameability, spawn coordinates or spell ranks."
+      ]
+    },
+    {
+      "id": "whf:pet_family:turtle",
+      "kind": "pet_family",
+      "name": "Turtle",
+      "game_id": null,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:hunter-pets"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null,
+        "family_ability": "Shell Shield"
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:hunter-pets"
+        ],
+        "faction": [
+          "whf:source:hunter-pets"
+        ],
+        "alliance_access": [
+          "whf:source:hunter-pets"
+        ],
+        "facts.family_ability": [
+          "whf:source:hunter-pets"
+        ]
+      },
+      "issues": [
+        "Family labels do not establish creature IDs, tameability, spawn coordinates or spell ranks."
+      ]
+    }
+  ],
+  "relations": []
+}

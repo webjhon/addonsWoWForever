@@ -5,6 +5,7 @@
 3. Leia `config/wow-version.json`; peça confirmação da build real antes de afirmar compatibilidade.
 4. Consulte `rag/`, `knowledge/`, `memory/` e `market-references/README.md`. Use apenas referências autorizadas.
 5. Para novo addon, faça pesquisa de APIs, capacidades e fatos de leveling; registre fontes por função e quest. Se não souber, marque desconhecido e gere alternativas honestas.
+   Consulte `get_knowledge_coverage`, as fontes por campo de `get_gameplay_entity` e `docs/WOWHEAD-KNOWLEDGE.md`. A fábrica agora possui um catálogo factual parcial de quests e outras entidades Forever, importado por `npm run init`; não confunda referência comunitária com confirmação em cliente.
 6. Defina UI original e um blueprint conforme o schema. O gerador de arte criará ícone próprio por nome; para publicação de alto padrão, revise a arte com o usuário.
 7. Execute a jornada `orchestrator.ts --blueprint ...`. Se falhar, corrija a causa e repita; não altere manualmente o relatório para passar.
 8. Guarde o candidato em `releases/`. Verifique dentro do WoW, corrija bugs do cliente e gere novo pacote.

@@ -1,0 +1,145 @@
+{
+  "records": [
+    {
+      "id": "whf:item:274289",
+      "kind": "item",
+      "name": "Dwarven Heirloom",
+      "game_id": 274289,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:item-274289"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:item-274289"
+        ],
+        "faction": [
+          "whf:source:item-274289"
+        ],
+        "alliance_access": [
+          "whf:source:item-274289"
+        ],
+        "game_id": [
+          "whf:source:item-274289"
+        ]
+      },
+      "issues": []
+    },
+    {
+      "id": "whf:item:270343",
+      "kind": "item",
+      "name": "I'lalai Fetish",
+      "game_id": 270343,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:item-270343"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:item-270343"
+        ],
+        "faction": [
+          "whf:source:item-270343"
+        ],
+        "alliance_access": [
+          "whf:source:item-270343"
+        ],
+        "game_id": [
+          "whf:source:item-270343"
+        ]
+      },
+      "issues": []
+    },
+    {
+      "id": "whf:item:270333",
+      "kind": "item",
+      "name": "Voodoo-Infused Artifact",
+      "game_id": 270333,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:item-270333"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:item-270333"
+        ],
+        "faction": [
+          "whf:source:item-270333"
+        ],
+        "alliance_access": [
+          "whf:source:item-270333"
+        ],
+        "game_id": [
+          "whf:source:item-270333"
+        ]
+      },
+      "issues": []
+    },
+    {
+      "id": "whf:item:1894",
+      "kind": "item",
+      "name": "Miners' Union Card",
+      "game_id": 1894,
+      "faction": "Neutral",
+      "alliance_access": true,
+      "source_ids": [
+        "whf:source:item-1894"
+      ],
+      "patch": "1.60.1",
+      "build": null,
+      "evidence": "COMMUNITY_UNVERIFIED",
+      "facts": {
+        "required_level": null,
+        "quest_level": null,
+        "recommended_range": null,
+        "coordinates": null
+      },
+      "field_sources": {
+        "name": [
+          "whf:source:item-1894"
+        ],
+        "faction": [
+          "whf:source:item-1894"
+        ],
+        "alliance_access": [
+          "whf:source:item-1894"
+        ],
+        "game_id": [
+          "whf:source:item-1894"
+        ]
+      },
+      "issues": []
+    }
+  ],
+  "relations": []
+}

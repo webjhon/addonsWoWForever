@@ -8,8 +8,11 @@ import {buildAddon} from '../tools/build-addon.ts';
 import {validateBlueprint} from '../src/guards.ts';
 import {importProbe} from '../src/diagnostics.ts';
 import {runEvals} from '../evals/run-evals.ts';
+import {knowledgeCoverage,entityContext} from '../knowledge/ingest/wowhead-forever.ts';
 const info={name:'wow-forever-alliance-factory',version:'0.1.0'};
 const toolSpecs=[
+ {name:'get_knowledge_coverage',description:'Report factual pack counts, unknown IDs/requirements and unresolved gaps; never asserts completeness or client verification',inputSchema:{type:'object',properties:{}}},
+ {name:'get_gameplay_entity',description:'Read an Alliance-accessible entity and both directions of its partial evidence graph; level is planning context, not proof of eligibility',inputSchema:{type:'object',properties:{id:{type:'string'},level:{type:'integer',minimum:1,maximum:60}},required:['id']}},
  {name:'search_wow_api',description:'Search evidence-tracked Forever API documentation (RAG)',inputSchema:{type:'object',properties:{query:{type:'string'},level:{type:'integer'}},required:['query']}},
  {name:'search_leveling_knowledge',description:'Search Alliance 1-60 RAG documents',inputSchema:{type:'object',properties:{query:{type:'string'},level:{type:'integer'}},required:['query']}},
  {name:'query_alliance_records',description:'Query structured, faction-filtered Alliance game entities',inputSchema:{type:'object',properties:{kind:{type:'string'},level:{type:'integer'},query:{type:'string'}},required:['kind']}},
@@ -25,6 +28,8 @@ const toolSpecs=[
 async function callTool(name,args={}){
  const db=openDb();try{
   switch(name){
+    case 'get_knowledge_coverage':return knowledgeCoverage();
+    case 'get_gameplay_entity':return entityContext(db,args.id,{level:args.level??1});
     case 'search_wow_api':return await searchKnowledge(args.query,{db,domain:'api',level:args.level||1});
     case 'search_leveling_knowledge':return await searchKnowledge(args.query,{db,domain:'leveling',level:args.level||1});
     case 'query_alliance_records':return queryAlliance(db,{kind:args.kind,level:args.level||1,q:args.query||''});
