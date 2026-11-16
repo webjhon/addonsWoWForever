@@ -1,0 +1,11 @@
+## Interface: 16001
+## Title: Alliance Dungeon Trail
+## Notes: Alliance 1-60 dungeon planner, quest checklist and measured run estimates.
+## Author: Alliance Addon Factory
+## Version: 1.0.0
+## X-Flavor: Forever
+## IconTexture: Interface\AddOns\AllianceDungeonTrail\assets\Icon.tga
+## SavedVariables: AllianceDungeonTrailDB
+Data.lua
+Core.lua
+UI.lua

@@ -8,6 +8,9 @@
     "node": ">=22.16.0"
   },
   "scripts": {
+    "dungeon:prepare": "node scripts/prepare-dungeon-trail.mjs",
+    "dungeon:verify": "node --experimental-strip-types scripts/verify-dungeon-trail.ts",
+    "dungeon:preview": "node scripts/preview-dungeon-trail.mjs",
     "init": "node --experimental-strip-types scripts/setup.ts",
     "index": "node --experimental-strip-types rag/indexer.ts",
     "index:embeddings": "node --experimental-strip-types rag/indexer.ts --embeddings",
@@ -24,7 +27,10 @@
     "sources:check": "node --experimental-strip-types tools/check-source-updates.ts",
     "new": "node --experimental-strip-types tools/new-addon.ts"
   },
-  "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "fengari": "^0.1.5",
+    "luaparse": "^0.3.1"
+  },
   "license": "MIT"
 }

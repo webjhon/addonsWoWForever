@@ -1,0 +1,2 @@
+Version 1.0.0 - Candidate package created by WoW Addon AI Factory.
+Client-side verification pending.
