@@ -1,0 +1,47 @@
+{
+  "at": "2026-11-16T01:14:09.863Z",
+  "sources": {
+    "forever-addon-kit": {
+      "status": "REACHABLE",
+      "code": 200,
+      "etag": "W/\"d1487b6a43b92fe7db34cecda0e3c7dd\"",
+      "lastModified": null,
+      "sourceReviewed": false
+    },
+    "wow-addons-forever": {
+      "status": "REACHABLE",
+      "code": 200,
+      "etag": "W/\"03792e749e5a40d734418de45dc30477\"",
+      "lastModified": null,
+      "sourceReviewed": false
+    },
+    "community-forever-addons": {
+      "status": "REACHABLE",
+      "code": 200,
+      "etag": "W/\"152edf8312ad218d5be0d56c3b1744a1\"",
+      "lastModified": null,
+      "sourceReviewed": false
+    },
+    "petopia": {
+      "status": "REACHABLE",
+      "code": 200,
+      "etag": "W/\"575fa118-37\"",
+      "lastModified": "Tue, 14 Jun 2016 06:15:52 GMT",
+      "sourceReviewed": false
+    },
+    "warcraft-wiki": {
+      "status": "REACHABLE",
+      "code": 200,
+      "etag": null,
+      "lastModified": "Sun, 15 Nov 2026 17:28:15 GMT",
+      "sourceReviewed": false
+    },
+    "curseforge": {
+      "status": "HTTP_ERROR",
+      "code": 403,
+      "etag": null,
+      "lastModified": null,
+      "sourceReviewed": false
+    }
+  }
+}

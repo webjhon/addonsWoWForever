@@ -1,0 +1,7 @@
+{
+  "at": "2026-11-16T01:15:54.247Z",
+  "tests": "PASSED",
+  "testOutput": "✔ import SavedVariables fixture without eval (8.2386ms)\n✔ malformed diagnostics are rejected (0.3387ms)\n✔ demo blueprint is structurally valid (8.4624ms)\n✔ Horde scope is rejected (6.0604ms)\n✔ wrong client interface is rejected (5.521ms)\n✔ protected action and deprecated API are rejected (5.409ms)\n✔ TOC icon required (2.3861ms)\n✔ unsafe paths rejected (7.5386ms)\n✔ actual ZIP candidate exists with original icon (167.1351ms)\n✔ Alliance only and accessible neutrals; Horde hidden (33.6419ms)\n✔ FTS knowledge returns provenance and respects domain (25.5225ms)\n✔ memories persist provenance and capabilities default to UNVERIFIED (27.1078ms)\n✔ MCP initialize/list/read and capabilities (11.6823ms)\n✔ benchmark coverage and original icon exist (2.1727ms)\nℹ tests 14\nℹ suites 0\nℹ pass 14\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 409.1483\n",
+  "luaMock": "NOT_RUN_NO_LUA_INTERPRETER",
+  "client": "NOT_RUN_NO_GAME_CLIENT"
+}
