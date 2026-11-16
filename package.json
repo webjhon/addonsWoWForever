@@ -8,6 +8,9 @@
     "node": ">=22.16.0"
   },
   "scripts": {
+    "dungeon:prepare": "node scripts/prepare-dungeon-trail.mjs",
+    "dungeon:verify": "node --experimental-strip-types scripts/verify-dungeon-trail.ts",
+    "dungeon:preview": "node scripts/preview-dungeon-trail.mjs",
     "knowledge:validate": "node --experimental-strip-types scripts/knowledge-pack.ts validate",
     "knowledge:coverage": "node --experimental-strip-types scripts/knowledge-pack.ts coverage",
     "knowledge:refresh": "node --experimental-strip-types scripts/knowledge-pack.ts refresh",
@@ -31,5 +34,10 @@
   "dependencies": {
     "ajv": "8.20.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@resvg/resvg-js": "2.6.2",
+    "fengari": "0.1.5",
+    "luaparse": "0.3.1"
+  }
 }
