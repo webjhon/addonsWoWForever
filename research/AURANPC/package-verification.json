@@ -2,11 +2,11 @@
   "status": "STATIC_PASSED",
   "mockStatus": "MOCK_PASSED",
   "clientVerified": false,
-  "clientTests": "NOT_RUN",
-  "version": "2.0.0",
+  "clientTests": "PARTIAL_CLIENT_TESTED",
+  "version": "2.0.1",
   "tests": {
-    "passed": 88,
-    "count": 88
+    "passed": 89,
+    "count": 89
   },
   "logs": [
     {
@@ -50,9 +50,9 @@
       "exit": 0
     }
   ],
-  "zip": "AURANPC-2.0.0-candidate.zip",
-  "zipBytes": 190489,
-  "sha256": "0aaad47a821b5cf512001310f4e27b09aba37bb48a8ffdacc1bdd4befa89b46a",
+  "zip": "AURANPC-2.0.1-candidate.zip",
+  "zipBytes": 192909,
+  "sha256": "e2ef789215f9a2977e57f45d0deb6ef4632ddc131b0c501d794df8bd35bbbe2c",
   "interface": 16001,
   "installedExecutable": "1.60.1.70938",
   "visuals": "OWN_2D_NAMEPLATE_OVERLAY",

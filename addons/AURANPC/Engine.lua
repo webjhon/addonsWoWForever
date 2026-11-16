@@ -84,6 +84,13 @@ function ns.Match(unit)
     for _, match in ipairs(npc and ns.byNPC[npc] or {}) do
         if dead ~= true or match.loot then return match end
     end
+    -- Live Forever70938: GUID and tooltip text can be secret even out of combat.
+    -- This public relation is an independent API result, not a decoded secret.
+    -- It does not identify WHICH quest: never invent a quest ID/title here.
+    local related=ns.Read(function() return C_QuestLog.UnitIsRelatedToActiveQuest(unit) end)
+    if related==true then
+        return {id=0,title='NPC de uma quest ativa',objective='Confira interação ou saque',relation=true}
+    end
     -- Tooltip fallback uses exact UNIQUE active quest title, never generic quest-boss flags.
     local tooltip = ns.Read(function() return C_TooltipInfo.GetUnit(unit) end)
     local lines = type(tooltip)=='table' and ns.Public(tooltip.lines) and tooltip.lines

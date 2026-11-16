@@ -2,12 +2,12 @@ import fs from 'node:fs';
 import path from 'node:path';
 const root=path.resolve(import.meta.dirname,'..'),out=path.join(root,'addon-src/AURANPC');
 const events=['PLAYER_LOGIN','PLAYER_ENTERING_WORLD','PLAYER_LEVEL_UP','QUEST_ACCEPTED','QUEST_LOG_UPDATE','QUEST_WATCH_UPDATE','QUEST_REMOVED','QUEST_TURNED_IN','NAME_PLATE_UNIT_ADDED','NAME_PLATE_UNIT_REMOVED','PLAYER_REGEN_ENABLED','CVAR_UPDATE','PLAYER_LOGOUT'];
-const api=['CreateFrame','UnitGUID','UnitName','UnitLevel','UnitFactionGroup','UnitIsDeadOrGhost','InCombatLockdown','GetTime','issecretvalue','issecrettable','C_NamePlate.GetNamePlates','C_NamePlate.GetNamePlateForUnit','C_TooltipInfo.GetUnit','Enum.TooltipDataLineType.QuestTitle','C_QuestLog.GetNumQuestLogEntries','C_QuestLog.GetInfo','C_QuestLog.GetQuestObjectives','C_QuestLog.IsComplete','C_QuestLog.IsFailed','C_CVar.GetCVar','C_CVar.SetCVar','C_Timer.After','C_Timer.NewTicker','PlaySound','SOUNDKIT.RAID_WARNING','Frame.IsForbidden','Frame.CreateAnimationGroup'];
+const api=['C_QuestLog.UnitIsRelatedToActiveQuest','CreateFrame','UnitGUID','UnitName','UnitLevel','UnitFactionGroup','UnitIsDeadOrGhost','InCombatLockdown','GetTime','issecretvalue','issecrettable','C_NamePlate.GetNamePlates','C_NamePlate.GetNamePlateForUnit','C_TooltipInfo.GetUnit','Enum.TooltipDataLineType.QuestTitle','C_QuestLog.GetNumQuestLogEntries','C_QuestLog.GetInfo','C_QuestLog.GetQuestObjectives','C_QuestLog.IsComplete','C_QuestLog.IsFailed','C_CVar.GetCVar','C_CVar.SetCVar','C_Timer.After','C_Timer.NewTicker','PlaySound','SOUNDKIT.RAID_WARNING','Frame.IsForbidden','Frame.CreateAnimationGroup'];
 fs.writeFileSync(path.join(out,'AURANPC.toc'),`## Interface: 16001
 ## Title: AURANPC
 ## Notes: Own local animated per-NPC quest highlights, live objective detection and diagnostics. Alliance leveling 1-60.
 ## Author: Tonho Contrabando
-## Version: 2.0.0
+## Version: 2.0.1
 ## X-Flavor: Forever
 ## IconTexture: Interface\\AddOns\\AURANPC\\assets\\Icon.tga
 ## SavedVariables: AURANPCDB
@@ -34,6 +34,6 @@ const interactivity={
  ],testFile:'tests/auranpc.test.ts'
 };
 const source='https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. All current runtime claims UNVERIFIED.';
-const b={addonName:'AURANPC',game:'WoW Forever',faction:'Alliance',purpose:'leveling',minLevel:1,maxLevel:60,interfaceVersion:16001,version:'2.0.0',eventsRegistered:events,apiNamespacesUsed:api,apiEvidence:[...api,...events].map(symbol=>({symbol,status:'UNVERIFIED',source})),interactivity,files:fs.readdirSync(out).filter(f=>/\.(lua|toc|md)$/.test(f)).sort().map(filename=>({filename,content:fs.readFileSync(path.join(out,filename),'utf8').replaceAll('\r\n','\n')}))};
+const b={addonName:'AURANPC',game:'WoW Forever',faction:'Alliance',purpose:'leveling',minLevel:1,maxLevel:60,interfaceVersion:16001,version:'2.0.1',eventsRegistered:events,apiNamespacesUsed:api,apiEvidence:[...api,...events].map(symbol=>({symbol,status:symbol==='C_QuestLog.UnitIsRelatedToActiveQuest'?'CONFIRMED_IN_CLIENT':'UNVERIFIED',source:symbol==='C_QuestLog.UnitIsRelatedToActiveQuest'?'Forever1.60.1.70938, 2026-11-16, Stockade, public relation true despite secret GUID/text; own marker observed following NPC. See LIVE-SESSION-2026-11-16.md':source})),interactivity,files:fs.readdirSync(out).filter(f=>/\.(lua|toc|md)$/.test(f)).sort().map(filename=>({filename,content:fs.readFileSync(path.join(out,filename),'utf8').replaceAll('\r\n','\n')}))};
 fs.writeFileSync(path.join(root,'research/AURANPC/AURANPC.blueprint.json'),JSON.stringify(b,null,2)+'\n');
-console.log('Prepared AURANPC 2.0.0 original renderer and behavioral contract.');
+console.log('Prepared AURANPC 2.0.1 original renderer and behavioral contract.');

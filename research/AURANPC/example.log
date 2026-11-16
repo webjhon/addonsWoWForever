@@ -1,16 +1,16 @@
 {
-  "startedAt": "2026-11-16T14:01:09.107Z",
+  "startedAt": "2026-11-16T16:08:58.701Z",
   "stages": [
     {
       "name": "CONTEXT_AND_MEMORY",
-      "at": "2026-11-16T14:01:09.111Z",
+      "at": "2026-11-16T16:08:58.713Z",
       "ok": true,
       "build": null,
-      "memories": 2
+      "memories": 3
     },
     {
       "name": "RAG_AND_RESEARCH",
-      "at": "2026-11-16T14:01:09.119Z",
+      "at": "2026-11-16T16:08:58.728Z",
       "ok": true,
       "citations": [
         "forever-api-index",
@@ -27,13 +27,13 @@
     },
     {
       "name": "SCOPE_AND_GUARDRAILS",
-      "at": "2026-11-16T14:01:09.123Z",
+      "at": "2026-11-16T16:08:58.738Z",
       "ok": true,
       "reason": ""
     },
     {
       "name": "CAPABILITY_REVIEW",
-      "at": "2026-11-16T14:01:09.123Z",
+      "at": "2026-11-16T16:08:58.739Z",
       "ok": true,
       "unknownApis": [
         "UnitFactionGroup",
@@ -45,7 +45,7 @@
     },
     {
       "name": "PRODUCT_QUALITY_GATE",
-      "at": "2026-11-16T14:01:09.387Z",
+      "at": "2026-11-16T16:08:59.281Z",
       "ok": true,
       "proof": {
         "ok": true,
@@ -65,13 +65,13 @@
     },
     {
       "name": "PACKAGING",
-      "at": "2026-11-16T14:01:09.388Z",
+      "at": "2026-11-16T16:08:59.282Z",
       "ok": true,
       "zip": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\releases\\AllianceLevelPulse-0.1.0-candidate.zip"
     },
     {
       "name": "REVIEW_AND_HANDOFF",
-      "at": "2026-11-16T14:01:09.388Z",
+      "at": "2026-11-16T16:08:59.283Z",
       "ok": true,
       "status": "STATIC_PASSED",
       "clientVerified": false
@@ -82,7 +82,7 @@
   "result": {
     "out": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\releases\\AllianceLevelPulse-0.1.0-candidate.zip",
     "files": 8,
-    "bytes": 186328,
+    "bytes": 186329,
     "status": "STATIC_PASSED",
     "addon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\addons\\AllianceLevelPulse",
     "destination": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\pulsar-rebuild\\dist\\AllianceLevelPulse",
@@ -104,5 +104,5 @@
     }
   },
   "provider": null,
-  "finishedAt": "2026-11-16T14:01:09.391Z"
+  "finishedAt": "2026-11-16T16:08:59.287Z"
 }
