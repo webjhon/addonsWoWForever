@@ -1,55 +1,35 @@
-# Alliance Dungeon Trail — pesquisa e decisões
+# AllianceDungeonTrail 2.0 — pesquisa e decisões
 
-Pesquisa em 15/11/2026 (America/Sao_Paulo). Addon original, Alliance, leveling 1–60.
+Reconstrução original em 16/11/2026. Escopo Alliance 1–60. O contrato anterior de confirmação manual foi substituído; a pesquisa v1 está em archive/ e não descreve o produto atual.
 
-## Fontes, versões e direitos
+## Fontes e capacidade
 
-| Fonte | Versão / evidência | Uso e direitos |
-|---|---|---|
-| `config/wow-version.json` | Interface 16001, linha 1.60.1; build não preenchida | Contrato do projeto, MIT |
-| [Snapshot público de APIs](https://github.com/Thunderz96/forever-addon-kit/blob/8dc297689059dd204bf8663a05aaa36d6a628b76/data/forever_api.json) | Captura enUS 1.60.1, build 69893, interface 16001 | MIT; somente presença de símbolos extraída, sem copiar implementação |
-| [Anúncio oficial de dungeons](https://news.blizzard.com/en-us/article/24301455/explore-the-new-dungeons-of-world-of-warcraft-forever) | Faixas publicadas para Forever | Referência factual; não redistribuir texto/artes da Blizzard |
-| [Índice de quests Forever](https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location) | Patch 1.60.1, atualização 15/11/2026 | Referência factual de seleção, requisitos e nomes; nenhuma reprodução de guia |
-| Method, páginas de [Deadmines](https://www.method.gg/wow-forever/dungeons/the-deadmines), [Stockade](https://www.method.gg/wow-forever/dungeons/the-stockade), [Gnomeregan](https://www.method.gg/wow-forever/dungeons/gnomeregan), [Blackfathom](https://www.method.gg/wow-forever/dungeons/blackfathom-deeps), [Wailing Caverns](https://www.method.gg/wow-forever/dungeons/wailing-caverns), [Razorfen Kraul](https://www.method.gg/wow-forever/dungeons/razorfen-kraul) | Guias autorais Forever; divergências com outros guias existem | Referência factual; sem código, texto de passos ou arte copiados |
-| Páginas individuais de quests | URLs por registro em `catalog.json`; IDs obtidos dos links consultados | Descrições originais em português; nomes e relações factuais; nenhuma coordenada inventada |
-| Cliente instalado, leitura do executável | `Wow.exe` FileVersion `1.60.1.70938`, flavor `wowf` | Somente metadados locais; não prova execução, interface em memória ou API funcional |
+- Configuração: interface 16001, build em runtime ainda não confirmada. Executável local lido como 1.60.1.70938; não há processo WoW ativo durante a inspeção.
+- Documentação da UI Blizzard **branch Forever**, commit `bebcb6bf309cf41b41bd74f8ca651e6a105b2676`, de 13/11/2026: QuestLogDocumentation, MapDocumentation, InstanceDocumentation, SuperTrackManagerDocumentation e GossipInfoDocumentation. Consultadas assinaturas, retornos, eventos e restrições. Referências por símbolo em API-CAPABILITIES.json. Apenas resumo factual original redistribuído, sem implementação Blizzard copiada.
+- Snapshot público MIT Thunderz96/forever-addon-kit `8dc297689059dd204bf8663a05aaa36d6a628b76`, 1.60.1.69893/interface16001: presença de símbolos. Não é prova de assinatura atual ou execução.
+- **Map DB2 build 1.60.1.70938**, enUS e ptBR, consultas públicas em wago.tools: 27 identificadores de instância e nomes localizados extraídos e cruzados por ID. Dados selecionados, URLs e hashes SHA256 em `knowledge/alliance/forever-dungeon-maps.json`. Nenhuma tabela completa, descrição ou arte redistribuída. IDs Map/instance não são UIMapIDs: jamais utilizados como coordenadas de waypoint.
+- Quests: IDs e requisitos vêm da curadoria factual Wowhead Forever existente (`knowledge/alliance/quest/wowhead-forever.json`), relações parciais do mesmo pacote; nomes/NPCs/referências autorais anteriores foram preservados onde úteis. Cada registro tem sua URL individual. Dados comunitários continuam COMMUNITY_UNVERIFIED para disponibilidade/fase atual. Nenhum título traduzido é necessário para ligar o diário: a ligação é pelo ID.
+- Referência adicional da quest 2040: https://www.wowhead.com/forever/quest=2040/underground-assault . Relação factual com Sneed's Shredder/sala dos goblins; comentários históricos não são promovidos a confirmação Forever. Não importar coordenadas ou texto dos comentários. GetQuestObjectives é a autoridade para crédito.
+- Faixas das dungeons novas: anúncio Blizzard https://news.blizzard.com/en-us/article/24301455/explore-the-new-dungeons-of-world-of-warcraft-forever ; faixas de catálogo são sugestões e não mínimos de quest/entrada. Divergência histórica Excavation 24–29 / referência 26–31 permanece explicitada no catálogo.
+- Nenhum arquivo de Zygor/RestedXP foi aberto, copiado ou redistribuído nesta reconstrução.
 
-As páginas individuais de quests incluem dados legados e comentários históricos. O domínio `/forever/` não torna cada comentário uma confirmação do cliente atual. Por isso todos os registros comunitários permanecem `COMMUNITY_UNVERIFIED` em relação à build instalada. Faixas do anúncio oficial são `OFFICIAL_DOCUMENTATION`, sem afirmar disponibilidade atual. O catálogo é uma seleção, não uma lista completa de todas as quests.
+## Decisões funcionais
 
-O primeiro URL oficial em `worldofwarcraft.blizzard.com` retornou 403; foi consultado o mesmo artigo no domínio `news.blizzard.com`. Páginas Method para diversas dungeons tardias estavam inacessíveis; não foram utilizadas como comprovação. Foram consultadas páginas individuais Wowhead de quests em seu lugar. Não foram lidos arquivos proprietários de Zygor/RestedXP, inclusive os instalados no computador.
+1. **Reconciliação, não contador de cliques.** Eventos agrupados por 150 ms produzem snapshot normalizado. Diário, instância, nível, XP, personagem e oferta atual do NPC alimentam uma decisão. Objetivos, aceite, entrega e entrada não têm controles manuais.
+2. **Quest em andamento prevalece sobre histórico.** Isso permite repetíveis. Ausência é MISSING, nunca TURNED_IN. Somente evento de entrega ou flag real confirma entrega. Falta de API/retorno não gera conclusão.
+3. **Prioridade de jogo.** Instância real prevalece sobre plano anterior. Dentro dela, outras tarefas internas pendentes precedem saída para entregar. Objetivos externos ao portal são separados. Oferta real do NPC é indicada no diálogo; preparação fora dele é apenas potencial, sem afirmar elegibilidade completa. Morte/escopo/dados indisponíveis são estados próprios.
+4. **Navegação nativa original na integração.** GetNextWaypoint retorna mapID,x,y; GetNextWaypointForMap retorna x,y no mapa consultado. Validar valores não secretos e faixa 0–1. Não calcular caminho ou distância por paredes. SetSuperTrackedQuestID é informativo e condicionado à disponibilidade de waypoint; preservar rastreamento externo salvo solicitação explícita em SEGUIR QUEST. Remover apenas rastreamento próprio ao deixar de ser útil. Não criar pins fixos nem guardar coordenadas.
+5. **Recuperação.** Estado por GUID. Migração v1 descarta checks/vínculos manuais como fonte de progresso. Login/reload reconcilia o diário; amostra de XP interrompida é excluída e retomada dentro da instância não se torna uma entrada válida. Posição/visibilidade/preferência de navegação persistem.
+6. **Combate.** Exibir a última orientação com atualização pendente, sem abrir splash em combate; adiar leituras/rastreamento até regen. Evento de entrega ainda conserva seu ID público e invalida calibração. Sem OnUpdate, loops por frame ou ações protegidas.
+7. **Estimativa honesta.** Entrada e saída detectam segmentos de expedição, não clears. Usar duas amostras positivas >=5 min, sem quests ativas/aceites/entregas/morte/reload/lacunas, mesma build, últimas24h e níveis próximos. Intervalo empírico de níveis fracionários até próxima faixa; não promete XP futura. No máximo20 amostras por personagem. Trocar de instância ou sair fecha segmento, XP externa não é atribuída ao segmento anterior.
+8. **Identidade.** Tonho Contrabando em TOC e splash compartilhado obrigatório. Ícone específico portal/escadaria redesenhado pelo gerador original em grade32px, upscale nearest-neighbor. Tracker compacto opcional, posição arrastável, próximo objetivo em destaque.
 
-## Recuperação e memória
+## Limites reais e condições de aprovação
 
-Antes da implementação: `npm run init`, `doctor`, `search -- "dungeon quest leveling"`, `search -- "UnitXP C_QuestLog"`, `knowledge -- dungeon dungeon 20`, `capability -- indoor-navigation`; leitura de políticas, gaps e falhas conhecidas. A base inicial tinha dois documentos, cinco entidades sintéticas e nenhum registro real de dungeon. Os fixtures não foram usados como fatos de gameplay.
-
-`scripts/research-dungeon-trail.ts` consulta as ferramentas MCP locais por meio do dispatcher real: os dois domínios RAG, entidades Alliance, capacidades, decisões e falhas. Salva os resultados em `mcp-retrieval.json`, extrai apenas a presença dos símbolos do snapshot licenciado, registra os gaps e adiciona resumos originais ao banco. Não depende de chave de API nem de embeddings pagos.
-
-## ADR-001: sem navegação indoor
-
-Não há prova da disponibilidade de coordenadas navegáveis em todas as instâncias na build atual. A capacidade permanece `UNVERIFIED`; setas indoor não são implementadas. O guia usa NPCs, bosses, alas, objetos, diário e notas pessoais. Não tenta contornar limitações de mapas ou valores secretos.
-
-## ADR-002: previsão empírica, sem XP inventada
-
-São exigidas duas runs marcadas como repetição, com XP positiva, no mesmo dia/build e nível inicial a até dois níveis do atual. Guardam-se no máximo 12 runs por dungeon. Runs com entregas detectadas são excluídas, assim como leituras incompletas e saltos de múltiplos níveis. O primeiro percurso com quests usa o modo padrão `com quests` e não calibra o estimador.
-
-Para o próximo nível: teto da XP restante dividida pela média observada de XP/run. Para a próxima faixa: distância em níveis fracionários dividida pelo ganho fracionário observado por run, exibindo intervalo por melhor/pior amostra. É uma heurística, não uma soma das tabelas futuras de XP. Não se promete atingir a próxima dungeon só repetindo uma instância. O jogador deve descartar runs com deslocamentos, boosts, mudanças relevantes de grupo ou bônus. Uma entrega não detectada, exploração e mudanças de bônus ainda podem contaminar amostras.
-
-## ADR-003: diário por ID e fallback explícito
-
-IDs curados só entram quando extraídos de página individual consultada. Quests sem ID usam correspondência exata do título; ao encontrar, o vínculo é preservado por personagem. Em outros idiomas ou divergências, o jogador vincula um ID presente no próprio diário. A ausência de uma quest não é tratada como concluída: pode ser não obtida, abandonada, bloqueada ou indisponível. `PEGUEI (manual)`, `NO DIÁRIO`, `PRONTA PARA ENTREGAR` e `ENTREGUE` são estados distintos.
-
-## ADR-004: eventos e restrições
-
-Não há `OnUpdate`, combate automatizado, envio de chat, aceite/entrega automática ou reset de instância. O addon esconde sua janela em combate e adia leituras até `PLAYER_REGEN_ENABLED`; a XP acumulada é reconciliada. Valores secretos são recusados, não convertidos ou revelados. Registro de entrada/saída é explícito: mudanças de zona apenas lembram o jogador de conferir a run. Reload/logout descarta a amostra ativa e conserva o checklist.
-
-## Lacunas obrigatórias
-
-- Interface 16001 é alvo de configuração/snapshot, ainda não confirmada com `GetBuildInfo()` executado neste cliente.
-- Build instalada 70938 é posterior à captura 69893; assinaturas, retornos, eventos, fontes, arte e restrições atuais exigem jogo real.
-- Sem quests curadas para Shadowfang Keep, Alcaz Prison, Blackmaw Hold e Shaper's Terrace. O diário e as notas pessoais funcionam nessas entradas, mas não substituem um guia pesquisado completo.
-- Novas dungeons tardias podem estar indisponíveis na fase atual. Estão identificadas como disponibilidade `UNVERIFIED`.
-- Excavation Site tem divergência 24–29 versus 26–31; usa-se sugestão conservadora 26–31, sem afirmar nível mínimo de entrada.
-- Pré-requisitos e requisitos de classe completos não são resolvidos automaticamente. Apenas a quest curada de paladino é filtrada por classe; outras quests de classe podem ser adicionadas do diário.
-- O addon não conhece todas as possíveis quests de cada dungeon, inclusive cadeias locais e segredos.
-- UI premium é uma implementação original, com ícone próprio de portal e escadaria; legibilidade e renderização final no WoW ainda exigem inspeção real.
-- Nenhum teste em jogo foi realizado nesta entrega.
+- Nenhum teste dentro do WoW foi executado. Presença de cliente instalado/dados DB2 não é CLIENT_VERIFIED. Assinaturas documentadas são SUPPORTED_WITH_LIMITATIONS na referência e UNVERIFIED em runtime70938.
+- 27 instâncias identificadas; quests selecionadas em23. Shadowfang Keep, Alcaz Prison, Blackmaw Hold e Shaper's Terrace não têm guia curado e exibem bloqueio por dados, sem checklist substituto. Cobertura não é exaustiva.
+- Catálogo não é um solucionador completo de todos os pré-requisitos, raças e fases. Classes explicitamente conhecidas são filtradas; oferta real do NPC prevalece. Quest desconhecida ainda não recebe guia pesquisado.
+- Ausência de waypoint impede seta/localização precisa; objetivo ao vivo e referência de boss/área continuam disponíveis. Coleta de quest ainda não aceita não tem coordenada inventada. Quando o destino de entrega não tem referência distinta curada, somente o destino do cliente é autoritativo; a UI identifica o NPC de coleta como tal.
+- Algumas instâncias compartilham mapa/alas. LBRS usa Map229 e guia apenas objetivos inferiores; mapa não comprova qual ala o grupo pretende percorrer. Nenhum attunement/raid é incluído.
+- Dungeons novas podem estar indisponíveis apesar de existirem na tabela Map. Dados de tabela não são acesso garantido.
+- Renderização, escala, texturas, eventos reais, taint e disponibilidade dos waypoints precisam de sessão de jogo antes de aprovação final. Candidato técnico não implica aprovação do produto.

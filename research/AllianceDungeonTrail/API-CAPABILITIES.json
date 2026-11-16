@@ -1,0 +1,136 @@
+{
+  "referenceCommit": "bebcb6bf309cf41b41bd74f8ca651e6a105b2676",
+  "referenceBranch": "forever",
+  "installedExecutable": "1.60.1.70938",
+  "interface": 16001,
+  "clientExecuted": false,
+  "rights": "Original factual summary of API metadata; no implementation copied.",
+  "assessments": [
+    {
+      "symbol": "C_QuestLog.GetInfo",
+      "documentationFound": true,
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua"
+    },
+    {
+      "symbol": "C_QuestLog.GetNumQuestLogEntries",
+      "documentationFound": true,
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua"
+    },
+    {
+      "symbol": "C_QuestLog.GetQuestObjectives",
+      "documentationFound": true,
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua"
+    },
+    {
+      "symbol": "C_QuestLog.IsComplete",
+      "documentationFound": true,
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua"
+    },
+    {
+      "symbol": "C_QuestLog.IsFailed",
+      "documentationFound": true,
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua"
+    },
+    {
+      "symbol": "C_QuestLog.IsQuestFlaggedCompleted",
+      "documentationFound": true,
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua"
+    },
+    {
+      "symbol": "C_QuestLog.GetNextWaypoint",
+      "documentationFound": true,
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua"
+    },
+    {
+      "symbol": "C_QuestLog.GetNextWaypointForMap",
+      "documentationFound": true,
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua"
+    },
+    {
+      "symbol": "C_QuestLog.GetNextWaypointText",
+      "documentationFound": true,
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua"
+    },
+    {
+      "symbol": "C_Map.GetBestMapForUnit",
+      "documentationFound": true,
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/MapDocumentation.lua"
+    },
+    {
+      "symbol": "C_Map.GetMapInfo",
+      "documentationFound": true,
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/MapDocumentation.lua"
+    },
+    {
+      "symbol": "GetInstanceInfo",
+      "documentationFound": true,
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/InstanceDocumentation.lua"
+    },
+    {
+      "symbol": "IsInInstance",
+      "documentationFound": true,
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/InstanceDocumentation.lua"
+    },
+    {
+      "symbol": "C_SuperTrack.GetSuperTrackedQuestID",
+      "documentationFound": true,
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/SuperTrackManagerDocumentation.lua"
+    },
+    {
+      "symbol": "C_SuperTrack.IsSuperTrackingAnything",
+      "documentationFound": true,
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/SuperTrackManagerDocumentation.lua"
+    },
+    {
+      "symbol": "C_SuperTrack.SetSuperTrackedQuestID",
+      "documentationFound": true,
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/SuperTrackManagerDocumentation.lua"
+    },
+    {
+      "symbol": "C_GossipInfo.GetAvailableQuests",
+      "documentationFound": true,
+      "referenceCapability": "SUPPORTED_WITH_LIMITATIONS",
+      "currentBuildStatus": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/GossipInfoDocumentation.lua"
+    }
+  ],
+  "restrictions": [
+    "Missing or secret quest/instance values block progress reconciliation.",
+    "Waypoint APIs may return nothing, including indoors. No hardcoded coordinates.",
+    "Native quest supertracking is informational; never move, accept, turn in or fight.",
+    "Only manipulate own quest tracking unless player explicitly requests takeover.",
+    "Gossip offers describe the currently open NPC dialogue, not global eligibility."
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "startedAt": "2026-11-16T03:35:00.583Z",
+  "stages": [
+    {
+      "name": "CONTEXT_AND_MEMORY",
+      "at": "2026-11-16T03:35:00.588Z",
+      "ok": true,
+      "build": null,
+      "memories": 5
+    },
+    {
+      "name": "RAG_AND_RESEARCH",
+      "at": "2026-11-16T03:35:00.591Z",
+      "ok": true,
+      "citations": [
+        "forever-api-index",
+        "factory-wowhead-knowledge-map",
+        "blizzard-overview",
+        "forever-api-index",
+        "original-dungeon-trail-research",
+        "original-dungeon-trail-research",
+        "whf:source:quest-456",
+        "whf:source:npc-820",
+        "whf:source:npc-234",
+        "whf:source:npc-265003"
+      ]
+    },
+    {
+      "name": "SCOPE_AND_GUARDRAILS",
+      "at": "2026-11-16T03:35:00.597Z",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "name": "CAPABILITY_REVIEW",
+      "at": "2026-11-16T03:35:00.598Z",
+      "ok": true,
+      "unknownApis": [
+        "UnitFactionGroup",
+        "UnitLevel",
+        "UnitXP",
+        "UnitXPMax"
+      ],
+      "clientVerificationRequired": true
+    },
+    {
+      "name": "PRODUCT_QUALITY_GATE",
+      "at": "2026-11-16T03:35:00.928Z",
+      "ok": true,
+      "proof": {
+        "ok": true,
+        "errors": [],
+        "signals": [
+          "level",
+          "xp"
+        ],
+        "reactiveEvents": [
+          "PLAYER_XP_UPDATE",
+          "PLAYER_LEVEL_UP"
+        ],
+        "scenarios": 3,
+        "testFile": "tests/alliance-level-pulse.test.ts",
+        "acceptanceTests": "PASSED"
+      }
+    },
+    {
+      "name": "PACKAGING",
+      "at": "2026-11-16T03:35:00.929Z",
+      "ok": true,
+      "zip": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-rebuild\\releases\\AllianceLevelPulse-0.1.0-candidate.zip"
+    },
+    {
+      "name": "REVIEW_AND_HANDOFF",
+      "at": "2026-11-16T03:35:00.929Z",
+      "ok": true,
+      "status": "STATIC_PASSED",
+      "clientVerified": false
+    }
+  ],
+  "status": "STATIC_PASSED",
+  "addon": "AllianceLevelPulse",
+  "result": {
+    "out": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-rebuild\\releases\\AllianceLevelPulse-0.1.0-candidate.zip",
+    "files": 8,
+    "bytes": 186329,
+    "status": "STATIC_PASSED",
+    "addon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-rebuild\\addons\\AllianceLevelPulse",
+    "destination": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-rebuild\\dist\\AllianceLevelPulse",
+    "marketingIcon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\dungeon-trail-rebuild\\releases\\AllianceLevelPulse-icon.png",
+    "productQuality": {
+      "ok": true,
+      "errors": [],
+      "signals": [
+        "level",
+        "xp"
+      ],
+      "reactiveEvents": [
+        "PLAYER_XP_UPDATE",
+        "PLAYER_LEVEL_UP"
+      ],
+      "scenarios": 3,
+      "testFile": "tests/alliance-level-pulse.test.ts",
+      "acceptanceTests": "PASSED"
+    }
+  },
+  "provider": null,
+  "finishedAt": "2026-11-16T03:35:00.933Z"
+}

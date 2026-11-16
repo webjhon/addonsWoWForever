@@ -1,0 +1,290 @@
+{
+  "build": "1.60.1.70938",
+  "interface": 16001,
+  "retrievedAt": "2026-11-16",
+  "clientExecuted": false,
+  "evidence": "CLIENT_DATA_REFERENCE_NOT_RUNTIME_VERIFIED",
+  "sources": [
+    {
+      "sha256": "a4fa6474f5bba3dc815f0e78943b3a907840b8f44bba605d4ff0680048994908",
+      "uri": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS"
+    },
+    {
+      "sha256": "b74bccf24078947e5fb78ae9d3e99b81d949d9b74f388fb9f2fd784775a7cbf5",
+      "uri": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=ptBR"
+    }
+  ],
+  "rights": "Selected factual identifiers and localized names only; no full table, descriptions, art or implementation redistributed.",
+  "records": [
+    {
+      "key": "thanes",
+      "instanceID": 3065,
+      "aliases": [
+        "The Hall of Thanes",
+        "Salão dos Thanes"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "lordaeron",
+      "instanceID": 2999,
+      "aliases": [
+        "Ruins of Lordaeron",
+        "Ruínas de Lordaeron"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "deadmines",
+      "instanceID": 36,
+      "aliases": [
+        "Deadmines",
+        "Minas Mortas"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "wailing",
+      "instanceID": 43,
+      "aliases": [
+        "Wailing Caverns",
+        "Caverna Ululante"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "shadowfang",
+      "instanceID": 33,
+      "aliases": [
+        "Shadowfang Keep",
+        "Bastilha da Presa Negra"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "blackfathom",
+      "instanceID": 48,
+      "aliases": [
+        "Blackfathom Deeps",
+        "Profundezas Negras"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "stockade",
+      "instanceID": 34,
+      "aliases": [
+        "Stormwind Stockade",
+        "Cárcere de Ventobravo"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "excavation",
+      "instanceID": 2998,
+      "aliases": [
+        "Excavation Site: Wetlands",
+        "Sítio de Escavação: Pantanal"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "dalaran",
+      "instanceID": 2959,
+      "aliases": [
+        "City of Dalaran",
+        "Dalaran"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "kraul",
+      "instanceID": 47,
+      "aliases": [
+        "Razorfen Kraul",
+        "Urzal dos Tuscos"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "gnomeregan",
+      "instanceID": 90,
+      "aliases": [
+        "Gnomeregan",
+        "Gnomeregan"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "scarlet",
+      "instanceID": 189,
+      "aliases": [
+        "Scarlet Monastery",
+        "Monastério Escarlate"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": true
+    },
+    {
+      "key": "drowned",
+      "instanceID": 2970,
+      "aliases": [
+        "The Drowned City",
+        "A Cidade Afogada"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "downs",
+      "instanceID": 129,
+      "aliases": [
+        "Razorfen Downs",
+        "Urzal dos Mortos"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "uldaman",
+      "instanceID": 70,
+      "aliases": [
+        "Uldaman",
+        "Uldaman"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "kroldok",
+      "instanceID": 3039,
+      "aliases": [
+        "Krol'dok Stronghold",
+        "Fortaleza de Krol'Dok"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "zulfarrak",
+      "instanceID": 209,
+      "aliases": [
+        "Zul'Farrak",
+        "Zul'Farrak"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "maraudon",
+      "instanceID": 349,
+      "aliases": [
+        "Maraudon",
+        "Maraudon"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "alcaz",
+      "instanceID": 2994,
+      "aliases": [
+        "Alcaz Prison",
+        "Prisão de Alcaz"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "temple",
+      "instanceID": 109,
+      "aliases": [
+        "Sunken Temple",
+        "Templo Submerso"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "depths",
+      "instanceID": 230,
+      "aliases": [
+        "Blackrock Depths",
+        "Abismo Rocha Negra"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "diremaul",
+      "instanceID": 429,
+      "aliases": [
+        "Dire Maul",
+        "Gládio Cruel"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": true
+    },
+    {
+      "key": "blackmaw",
+      "instanceID": 2974,
+      "aliases": [
+        "Blackmaw Hold",
+        "Gruta Bocanera"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "lower-spire",
+      "instanceID": 229,
+      "aliases": [
+        "Blackrock Spire",
+        "Pico da Rocha Negra"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": true
+    },
+    {
+      "key": "stratholme",
+      "instanceID": 329,
+      "aliases": [
+        "Stratholme",
+        "Stratholme"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "scholomance",
+      "instanceID": 289,
+      "aliases": [
+        "Scholomance",
+        "Scolomântia"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    },
+    {
+      "key": "shapers",
+      "instanceID": 3001,
+      "aliases": [
+        "The Shaper's Terrace",
+        "O Terraço do Moldador"
+      ],
+      "sourceType": "Map DB2 / InstanceType 1",
+      "sharedWings": false
+    }
+  ]
+}

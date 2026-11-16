@@ -17,6 +17,14 @@ Todo novo addon deve conectar-se a dados reais do personagem, reagir a eventos, 
 
 O exemplo `AllianceLevelPulse` é apenas uma demonstração de funcionamento do pipeline, não referência de acabamento premium.
 
+## AllianceDungeonTrail 2.0 candidata
+
+Reconstruído com objetivos ao vivo, entrada automática, progresso/entrega por ID, navegação nativa quando disponível e créditos Tonho Contrabando. Fontes em `addon-src/AllianceDungeonTrail`; pasta instalável em [addons/AllianceDungeonTrail](addons/AllianceDungeonTrail); [ZIP2.0](releases/AllianceDungeonTrail-2.0.0-candidate.zip), [instalação](addons/AllianceDungeonTrail/INSTALL.md), [relatório](research/AllianceDungeonTrail/TEST-REPORT.md), [revisão crítica](research/AllianceDungeonTrail/PRODUCT-REVIEW.md).
+
+Dados Map70938 em [knowledge/alliance/forever-dungeon-maps.json](knowledge/alliance/forever-dungeon-maps.json): IDs de instância e nomes enUS/ptBR, com fonte/hash. Não são coordenadas nem UIMapIDs. Runtime e gameplay continuam pendentes de teste real; quatro guias sem quests estão bloqueados por dados. A candidata não implica aprovação do produto.
+
+`npm run dungeon:verify` executa suíte completa, evals, exemplo, empacotamento com gates e verificação integral do ZIP. Prévia de três estados marcada como mock em `research/AllianceDungeonTrail/UI-*.png`.
+
 ## Comece em 5 minutos
 
 Requisitos: **Node.js 22.16+ (recomendado Node 24 LTS)**. A instalação básica não exige Python, serviços externos, credenciais, IDE nem dependências npm de runtime. SQLite é fornecido pelo `node:sqlite` (em Node 22 pode exibir um aviso de API experimental).

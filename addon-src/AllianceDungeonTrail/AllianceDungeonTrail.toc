@@ -1,11 +1,13 @@
 ## Interface: 16001
 ## Title: Alliance Dungeon Trail
-## Notes: Alliance 1-60 dungeon planner, quest checklist and measured run estimates.
-## Author: Alliance Addon Factory
-## Version: 1.0.0
+## Notes: Reactive dungeon companion: live objectives, next action and native quest navigation.
+## Author: Tonho Contrabando
+## Version: 2.0.0
 ## X-Flavor: Forever
 ## IconTexture: Interface\AddOns\AllianceDungeonTrail\assets\Icon.tga
 ## SavedVariables: AllianceDungeonTrailDB
 Data.lua
+Adapters.lua
+Navigation.lua
 Core.lua
 UI.lua

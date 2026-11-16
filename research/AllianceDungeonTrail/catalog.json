@@ -17,7 +17,13 @@
         "id": 96403,
         "source": "https://www.wowhead.com/forever/quest=96403",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 10,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Ironforge",
+        "giver": "Thom Filch"
       },
       {
         "key": "thanes-2",
@@ -27,9 +33,24 @@
         "id": 98423,
         "source": "https://www.wowhead.com/forever/quest=98423",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 9,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": true,
+        "pickupZone": null,
+        "giver": null
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 3065,
+    "aliases": [
+      "The Hall of Thanes",
+      "Salão dos Thanes"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "lordaeron",
@@ -49,9 +70,24 @@
         "id": 95250,
         "source": "https://www.wowhead.com/forever/quest=95250",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": null,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": null,
+        "giver": "Captain Truman"
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 2999,
+    "aliases": [
+      "Ruins of Lordaeron",
+      "Ruínas de Lordaeron"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "deadmines",
@@ -68,75 +104,140 @@
         "name": "Collecting Memories",
         "pickup": "Wilder Thistlenettle • Dwarven District, Stormwind.",
         "guide": "Explore a seção não instanciada das minas. Confira os itens exigidos no diário.",
-        "source": "https://www.method.gg/wow-forever/dungeons/the-deadmines",
+        "source": "https://www.wowhead.com/forever/quest=168",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 168,
+        "required": 14,
+        "requires": [],
+        "phase": "outside",
+        "insidePickup": false,
+        "pickupZone": "Stormwind City",
+        "giver": "Wilder Thistlenettle"
       },
       {
         "key": "deadmines-2",
         "name": "Oh Brother...",
         "pickup": "Wilder Thistlenettle • Dwarven District, Stormwind.",
         "guide": "Resolva o objetivo na caverna anterior ao portal; não deixe para a run interna.",
-        "source": "https://www.method.gg/wow-forever/dungeons/the-deadmines",
+        "source": "https://www.wowhead.com/forever/quest=167",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 167,
+        "required": 15,
+        "requires": [],
+        "phase": "outside",
+        "insidePickup": false,
+        "pickupZone": "Stormwind City",
+        "giver": "Wilder Thistlenettle"
       },
       {
         "key": "deadmines-3",
         "name": "Underground Assault",
         "pickup": "Shoni the Shilent • Dwarven District, Stormwind.",
-        "guide": "Objetivo dentro da dungeon. Use o nome do alvo mostrado no diário como referência; confira o saque.",
-        "source": "https://www.method.gg/wow-forever/dungeons/the-deadmines",
+        "guide": "Sneed’s Shredder • sala dos goblins, após Rhahk’Zor. Saque a máquina e confira Gnoam Sprecklesprocket no diário.",
+        "source": "https://www.wowhead.com/forever/quest=2040",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 2040,
+        "required": 15,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Stormwind City",
+        "giver": "Shoni the Shilent"
       },
       {
         "key": "deadmines-4",
         "name": "Red Silk Bandanas",
         "pickup": "Scout Riell • Sentinel Hill. Requer a cadeia Defias.",
         "guide": "Confira as bandanas no diário ao longo da run. Saque os inimigos e revise a quantidade antes de sair.",
-        "source": "https://www.method.gg/wow-forever/dungeons/the-deadmines",
+        "source": "https://www.wowhead.com/forever/quest=214",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 214,
+        "required": 14,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Westfall",
+        "giver": "Scout Riell"
       },
       {
         "key": "deadmines-5",
         "name": "The Defias Brotherhood",
         "pickup": "Gryan Stoutmantle • Sentinel Hill. Termine a cadeia anterior.",
         "guide": "Use Edwin VanCleef como marco final da expedição. Confira o objetivo e o item antes de voltar a Gryan.",
-        "source": "https://www.method.gg/wow-forever/dungeons/the-deadmines",
+        "source": "https://www.wowhead.com/forever/quest=166",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 166,
+        "required": 14,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Westfall",
+        "giver": "Gryan Stoutmantle"
       },
       {
         "key": "deadmines-6",
         "name": "Destruction in Deadmines",
         "pickup": "Alba Fairmoon • cadeia iniciada em Testing the Wells.",
         "guide": "Só entre com a etapa correta no diário; siga os objetivos dessa etapa e confira todos antes da saída.",
-        "source": "https://www.method.gg/wow-forever/dungeons/the-deadmines",
+        "source": "https://www.wowhead.com/forever/quest=92753",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 92753,
+        "required": null,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Westfall",
+        "giver": "Alba Fairmoon"
       },
       {
         "key": "deadmines-7",
         "name": "The Unsent Letter",
         "pickup": "Saque de Edwin VanCleef.",
         "guide": "Inspecione o saque do último boss. A carta inicia uma continuação que pode levar às quests de Stockade.",
-        "source": "https://www.method.gg/wow-forever/dungeons/the-deadmines",
+        "source": "https://www.wowhead.com/forever/quest=373",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 373,
+        "required": 16,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": true,
+        "pickupZone": null,
+        "giver": null
       },
       {
         "key": "deadmines-8",
         "name": "The Test of Righteousness",
         "pickup": "Jordan Stilwell • Ironforge. Cadeia Tome of Valor; paladino.",
         "guide": "Quest de classe com objetivos em várias dungeons. Confira apenas a parte local e preserve os demais itens.",
-        "source": "https://www.method.gg/wow-forever/dungeons/the-deadmines",
+        "source": "https://www.wowhead.com/forever/quest=1654",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
         "faction": "AllianceAccessible",
-        "class": "PALADIN"
+        "class": "PALADIN",
+        "id": 1654,
+        "required": 20,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Ironforge",
+        "giver": "Jordan Stilwell"
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 36,
+    "aliases": [
+      "Deadmines",
+      "Minas Mortas"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "wailing",
@@ -153,47 +254,91 @@
         "name": "Smart Drinks",
         "pickup": "Mebok Mizzyrix • Ratchet. Faça Raptor Horns antes.",
         "guide": "Observe o contador do diário ao saquear; não suponha que uma run fornece todos os itens.",
-        "source": "https://www.method.gg/wow-forever/dungeons/wailing-caverns",
+        "source": "https://www.wowhead.com/forever/quest=1491",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 1491,
+        "required": 13,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "The Barrens",
+        "giver": "Mebok Mizzyrix"
       },
       {
         "key": "wailing-2",
         "name": "Trouble at the Docks",
         "pickup": "Crane Operator Bigglefuzz • Ratchet.",
         "guide": "Compare o alvo do diário com os inimigos da caverna. Confira o saque antes de prosseguir.",
-        "source": "https://www.method.gg/wow-forever/dungeons/wailing-caverns",
+        "source": "https://www.wowhead.com/forever/quest=959",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 959,
+        "required": 14,
+        "requires": [],
+        "phase": "outside",
+        "insidePickup": false,
+        "pickupZone": "The Barrens",
+        "giver": "Crane Operator Bigglefuzz"
       },
       {
         "key": "wailing-3",
         "name": "Deviate Eradication",
         "pickup": "Ebru • caverna da entrada.",
         "guide": "Cheque cada tipo de criatura no diário; um tipo pendente pode exigir revisitar uma ramificação.",
-        "source": "https://www.method.gg/wow-forever/dungeons/wailing-caverns",
+        "source": "https://www.wowhead.com/forever/quest=1487",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 1487,
+        "required": 15,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "The Barrens",
+        "giver": "Ebru"
       },
       {
         "key": "wailing-4",
         "name": "Deviate Hides",
         "pickup": "Nalpak • caverna da entrada.",
         "guide": "Saque as criaturas e acompanhe as peles. Combine com o grupo uma revisão antes de encerrar.",
-        "source": "https://www.method.gg/wow-forever/dungeons/wailing-caverns",
+        "source": "https://www.wowhead.com/forever/quest=1486",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 1486,
+        "required": 13,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "The Barrens",
+        "giver": "Nalpak"
       },
       {
         "key": "wailing-5",
         "name": "The Glowing Shard",
         "pickup": "Item de Mutanus the Devourer.",
         "guide": "Confira o saque ao final do evento. Sputtervalve em Ratchet é a referência para a continuação.",
-        "source": "https://www.method.gg/wow-forever/dungeons/wailing-caverns",
+        "source": "https://www.wowhead.com/forever/quest=6981",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 6981,
+        "required": 15,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": true,
+        "pickupZone": null,
+        "giver": null
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 43,
+    "aliases": [
+      "Wailing Caverns",
+      "Caverna Ululante"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "shadowfang",
@@ -204,7 +349,16 @@
     "access": "Viagem em território hostil. Sem guia geral de quests Alliance validado; importe suas quests de classe.",
     "source": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
     "evidence": "COMMUNITY_UNVERIFIED • referência 1.60.1; conferir no cliente",
-    "quests": []
+    "quests": [],
+    "covered": false,
+    "instanceID": 33,
+    "aliases": [
+      "Shadowfang Keep",
+      "Bastilha da Presa Negra"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "blackfathom",
@@ -221,47 +375,93 @@
         "name": "Knowledge in the Deeps",
         "pickup": "Gerrig Bonegrip • Forlorn Cave, Ironforge.",
         "guide": "Procure o objeto descrito no diário; confira inventário antes de voltar a Ironforge.",
-        "source": "https://www.method.gg/wow-forever/dungeons/blackfathom-deeps",
+        "source": "https://www.wowhead.com/forever/quest=971",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 971,
+        "required": 10,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Ironforge",
+        "giver": "Gerrig Bonegrip"
       },
       {
         "key": "blackfathom-2",
         "name": "Researching the Corruption",
         "pickup": "Gershala Nightwhisper • Auberdine.",
         "guide": "Confira o contador de pesquisa enquanto explora e saqueia a dungeon.",
-        "source": "https://www.method.gg/wow-forever/dungeons/blackfathom-deeps",
+        "source": "https://www.wowhead.com/forever/quest=1275",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 1275,
+        "required": 18,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Darkshore",
+        "giver": "Gershala Nightwhisper"
       },
       {
         "key": "blackfathom-3",
         "name": "Twilight Falls",
         "pickup": "Argent Guard Manados • Craftsman’s Terrace, Darnassus.",
         "guide": "Use os cultistas Twilight como referência e confira os itens indicados no diário.",
-        "source": "https://www.method.gg/wow-forever/dungeons/blackfathom-deeps",
+        "source": "https://www.wowhead.com/forever/quest=1199",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 1199,
+        "required": 20,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Darnassus",
+        "giver": "Argent Guard Manados"
       },
       {
         "key": "blackfathom-4",
         "name": "In Search of Thaelrid",
         "pickup": "Dawnwatcher Shaedlass • Darnassus.",
         "guide": "Procure Argent Guard Thaelrid perto da região de Ghamoo-ra; confirme a continuação com ele.",
-        "source": "https://www.method.gg/wow-forever/dungeons/blackfathom-deeps",
+        "source": "https://www.wowhead.com/forever/quest=1198",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 1198,
+        "required": 18,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Darnassus",
+        "giver": "Dawnwatcher Shaedlass"
       },
       {
         "key": "blackfathom-5",
         "name": "Blackfathom Villainy",
         "pickup": "Argent Guard Thaelrid • dentro da dungeon; etapa anterior necessária.",
         "guide": "Leia a missão recebida de Thaelrid antes de avançar. Confira alvo, saque e destino de entrega no diário.",
-        "source": "https://www.method.gg/wow-forever/dungeons/blackfathom-deeps",
+        "source": "https://www.wowhead.com/forever/quest=1200",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 1200,
+        "required": 18,
+        "requires": [
+          1198
+        ],
+        "phase": "inside",
+        "insidePickup": true,
+        "pickupZone": null,
+        "giver": "Argent Guard Thaelrid"
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 48,
+    "aliases": [
+      "Blackfathom Deeps",
+      "Profundezas Negras"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "stockade",
@@ -278,56 +478,107 @@
         "name": "Quell the Uprising",
         "pickup": "Warden Thelwater • fora da prisão.",
         "guide": "Confira os tipos de prisioneiros no diário antes de deixar os corredores.",
-        "source": "https://www.method.gg/wow-forever/dungeons/the-stockade",
+        "source": "https://www.wowhead.com/forever/quest=387",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 387,
+        "required": 22,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Stormwind City",
+        "giver": "Warden Thelwater"
       },
       {
         "key": "stockade-2",
         "name": "The Color of Blood",
         "pickup": "Nikova Raskol • Old Town, Stormwind.",
         "guide": "Saque os prisioneiros e confira a coleta do diário antes da saída.",
-        "source": "https://www.method.gg/wow-forever/dungeons/the-stockade",
+        "source": "https://www.wowhead.com/forever/quest=388",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 388,
+        "required": 22,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Stormwind City",
+        "giver": "Nikova Raskol"
       },
       {
         "key": "stockade-3",
         "name": "Crime and Punishment",
         "pickup": "Councilman Millstipe • Darkshire.",
         "guide": "Procure Targorr the Dread nas celas do primeiro corredor; confira o item exigido.",
-        "source": "https://www.method.gg/wow-forever/dungeons/the-stockade",
+        "source": "https://www.wowhead.com/forever/quest=377",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 377,
+        "required": 22,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Duskwood",
+        "giver": "Councilman Millstipe"
       },
       {
         "key": "stockade-4",
         "name": "What Comes Around...",
         "pickup": "Guard Berton • Lakeshire.",
         "guide": "Dextren Ward fica ao fim do corredor esquerdo; confira o saque solicitado.",
-        "source": "https://www.method.gg/wow-forever/dungeons/the-stockade",
+        "source": "https://www.wowhead.com/forever/quest=386",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 386,
+        "required": 22,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Redridge Mountains",
+        "giver": "Guard Berton"
       },
       {
         "key": "stockade-5",
         "name": "The Fury Runs Deep",
         "pickup": "Motley Garmason • Dun Modr. Requer The Dark Iron War.",
         "guide": "Kam Deepfury é a referência no corredor direito; confira o objetivo no diário.",
-        "source": "https://www.method.gg/wow-forever/dungeons/the-stockade",
+        "source": "https://www.wowhead.com/forever/quest=378",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 378,
+        "required": 25,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Wetlands",
+        "giver": "Motley Garmason"
       },
       {
         "key": "stockade-6",
         "name": "The Stockade Riots",
         "pickup": "Warden Thelwater • continuação de The Unsent Letter.",
         "guide": "Procure Bazil Thredd e confira a conclusão da etapa antes de voltar ao carcereiro.",
-        "source": "https://www.method.gg/wow-forever/dungeons/the-stockade",
+        "source": "https://www.wowhead.com/forever/quest=391",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 391,
+        "required": 16,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Stormwind City",
+        "giver": "Warden Thelwater"
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 34,
+    "aliases": [
+      "Stormwind Stockade",
+      "Cárcere de Ventobravo"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "excavation",
@@ -347,9 +598,24 @@
         "id": 95772,
         "source": "https://www.wowhead.com/forever/quest=95772",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 24,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Redridge Mountains",
+        "giver": "Dorin Songblade"
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 2998,
+    "aliases": [
+      "Excavation Site: Wetlands",
+      "Sítio de Escavação: Pantanal"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "dalaran",
@@ -369,9 +635,24 @@
         "id": 92489,
         "source": "https://www.wowhead.com/forever/quest=92489",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 24,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Stormwind City",
+        "giver": "High Sorcerer Andromath"
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 2959,
+    "aliases": [
+      "City of Dalaran",
+      "Dalaran"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "kraul",
@@ -388,38 +669,75 @@
         "name": "The Crone of the Kraul",
         "pickup": "Falfindel Waywarder • Feralas; requer Lonebrow’s Journal.",
         "guide": "Charlga Razorflank é a referência de boss para esta cadeia. Confira o item do diário.",
-        "source": "https://www.method.gg/wow-forever/dungeons/razorfen-kraul",
+        "source": "https://www.wowhead.com/forever/quest=1101",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 1101,
+        "required": 29,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Feralas",
+        "giver": "Falfindel Waywarder"
       },
       {
         "key": "kraul-2",
         "name": "Mortality Wanes",
         "pickup": "Heralath Fallowbrook • dentro da instância.",
         "guide": "Procure o NPC interno e leia o objetivo antes de abandonar a área do boss final.",
-        "source": "https://www.method.gg/wow-forever/dungeons/razorfen-kraul",
+        "source": "https://www.wowhead.com/forever/quest=1142",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 1142,
+        "required": 25,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": true,
+        "pickupZone": null,
+        "giver": "Heralath Fallowbrook"
       },
       {
         "key": "kraul-3",
         "name": "Blueleaf Tubers",
         "pickup": "Mebok Mizzyrix • Ratchet. Recolha também os itens da quest próximos dele.",
         "guide": "Use manualmente os itens conforme o diário. Confira a coleta de tubérculos antes de sair.",
-        "source": "https://www.method.gg/wow-forever/dungeons/razorfen-kraul",
+        "source": "https://www.wowhead.com/forever/quest=1221",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 1221,
+        "required": 20,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "The Barrens",
+        "giver": "Mebok Mizzyrix"
       },
       {
         "key": "kraul-4",
         "name": "Willix the Importer",
         "pickup": "Willix • dentro da dungeon.",
         "guide": "Combine o início da escolta com o grupo; permaneça com o NPC e confirme o crédito ao terminar.",
-        "source": "https://www.method.gg/wow-forever/dungeons/razorfen-kraul",
+        "source": "https://www.wowhead.com/forever/quest=1144",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 1144,
+        "required": 22,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": true,
+        "pickupZone": null,
+        "giver": "Willix the Importer"
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 47,
+    "aliases": [
+      "Razorfen Kraul",
+      "Urzal dos Tuscos"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "gnomeregan",
@@ -436,47 +754,141 @@
         "name": "Save Techbot's Brain!",
         "pickup": "Tinkmaster Overspark • Tinkertown, Ironforge.",
         "guide": "Techbot está fora da seção instanciada; revise essa quest antes de atravessar o portal.",
-        "source": "https://www.method.gg/wow-forever/dungeons/gnomeregan",
+        "source": "https://www.wowhead.com/forever/quest=2922",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 2922,
+        "required": 20,
+        "requires": [],
+        "phase": "outside",
+        "insidePickup": false,
+        "pickupZone": "Ironforge",
+        "giver": "Tinkmaster Overspark"
       },
       {
         "key": "gnomeregan-2",
         "name": "Essential Artificials",
         "pickup": "Klockmort Spannerspan • Tinkertown, Ironforge.",
         "guide": "Use os objetos descritos no diário como referência nas salas; revise a coleta antes de sair.",
-        "source": "https://www.method.gg/wow-forever/dungeons/gnomeregan",
+        "source": "https://www.wowhead.com/forever/quest=2924",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 2924,
+        "required": 24,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Ironforge",
+        "giver": "Klockmort Spannerspan"
       },
       {
         "key": "gnomeregan-3",
         "name": "Data Rescue",
         "pickup": "Master Mechanic Castpipe • Tinkertown, Ironforge.",
         "guide": "Confira as etapas de dados do diário antes de avançar entre as seções da cidade.",
-        "source": "https://www.method.gg/wow-forever/dungeons/gnomeregan",
+        "source": "https://www.wowhead.com/forever/quest=2930",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 2930,
+        "required": 25,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Ironforge",
+        "giver": "Master Mechanic Castpipe"
       },
       {
         "key": "gnomeregan-4",
         "name": "The Grand Betrayal",
         "pickup": "High Tinker Mekkatorque • Tinkertown, Ironforge.",
         "guide": "Mekgineer Thermaplugg é o marco final; confira o crédito da quest antes de encerrar.",
-        "source": "https://www.method.gg/wow-forever/dungeons/gnomeregan",
+        "source": "https://www.wowhead.com/forever/quest=2929",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 2929,
+        "required": 25,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Ironforge",
+        "giver": "High Tinker Mekkatorque"
       },
       {
         "key": "gnomeregan-5",
         "name": "Gnogaine",
         "pickup": "Ozzie Togglevolt • Kharanos.",
         "guide": "A primeira parte é externa. Volte a Ozzie para pegar The Only Cure is More Green Glow antes da run interna.",
-        "source": "https://www.method.gg/wow-forever/dungeons/gnomeregan",
+        "source": "https://www.wowhead.com/forever/quest=2926",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "id": 2926,
+        "required": 20,
+        "requires": [],
+        "phase": "outside",
+        "insidePickup": false,
+        "pickupZone": "Dun Morogh",
+        "giver": "Ozzie Togglevolt"
+      },
+      {
+        "key": "gnomeregan-2928",
+        "name": "Gyrodrillmatic Excavationators",
+        "pickup": "Shoni the Shilent • Stormwind City",
+        "guide": "Siga o objetivo localizado do diário. Dados específicos de sala ainda não curados.",
+        "source": "https://www.wowhead.com/forever/quest=2928",
+        "evidence": "COMMUNITY_UNVERIFIED",
+        "faction": "AllianceAccessible",
+        "id": 2928,
+        "required": 20,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Stormwind City",
+        "giver": "Shoni the Shilent"
+      },
+      {
+        "key": "gnomeregan-2962",
+        "name": "The Only Cure is More Green Glow",
+        "pickup": "Ozzie Togglevolt • Dun Morogh",
+        "guide": "Siga o objetivo localizado do diário. Dados específicos de sala ainda não curados.",
+        "source": "https://www.wowhead.com/forever/quest=2962",
+        "evidence": "COMMUNITY_UNVERIFIED",
+        "faction": "AllianceAccessible",
+        "id": 2962,
+        "required": 20,
+        "requires": [
+          2926
+        ],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Dun Morogh",
+        "giver": "Ozzie Togglevolt"
+      },
+      {
+        "key": "gnomeregan-2904",
+        "name": "A Fine Mess",
+        "pickup": "Kernobee",
+        "guide": "Siga o objetivo localizado do diário. Dados específicos de sala ainda não curados.",
+        "source": "https://www.wowhead.com/forever/quest=2904",
+        "evidence": "COMMUNITY_UNVERIFIED",
+        "faction": "AllianceAccessible",
+        "id": 2904,
+        "required": 20,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": null,
+        "giver": "Kernobee"
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 90,
+    "aliases": [
+      "Gnomeregan",
+      "Gnomeregan"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "scarlet",
@@ -496,7 +908,13 @@
         "id": 1050,
         "source": "https://www.wowhead.com/forever/quest=1050",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 28,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Ironforge",
+        "giver": "Librarian Mae Paledust"
       },
       {
         "key": "scarlet-2",
@@ -506,9 +924,24 @@
         "id": 1053,
         "source": "https://www.wowhead.com/forever/quest=1053",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 34,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Hillsbrad Foothills",
+        "giver": "Raleigh the Devout"
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 189,
+    "aliases": [
+      "Scarlet Monastery",
+      "Monastério Escarlate"
+    ],
+    "sharedWings": true,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "drowned",
@@ -528,7 +961,13 @@
         "id": 95788,
         "source": "https://www.wowhead.com/forever/quest=95788",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 30,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Hillsbrad Foothills",
+        "giver": "Loremaster Dibbs"
       },
       {
         "key": "drowned-2",
@@ -538,9 +977,24 @@
         "id": 95789,
         "source": "https://www.wowhead.com/forever/quest=95789",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 34,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Stranglethorn Vale",
+        "giver": "Krazek"
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 2970,
+    "aliases": [
+      "The Drowned City",
+      "A Cidade Afogada"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "downs",
@@ -560,9 +1014,24 @@
         "id": 3636,
         "source": "https://www.wowhead.com/forever/quest=3636",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 39,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Stormwind City",
+        "giver": "Archbishop Benedictus"
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 129,
+    "aliases": [
+      "Razorfen Downs",
+      "Urzal dos Mortos"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "uldaman",
@@ -582,7 +1051,13 @@
         "id": 2398,
         "source": "https://www.wowhead.com/forever/quest=2398",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 35,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Ironforge",
+        "giver": "Prospector Stormpike"
       },
       {
         "key": "uldaman-2",
@@ -592,9 +1067,24 @@
         "id": 2278,
         "source": "https://www.wowhead.com/forever/quest=2278",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 40,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": true,
+        "pickupZone": null,
+        "giver": null
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 70,
+    "aliases": [
+      "Uldaman",
+      "Uldaman"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "kroldok",
@@ -614,7 +1104,13 @@
         "id": 94982,
         "source": "https://www.wowhead.com/forever/quest=94982",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 40,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Riverglades",
+        "giver": "Commander Brant"
       },
       {
         "key": "kroldok-2",
@@ -624,9 +1120,24 @@
         "id": 94984,
         "source": "https://www.wowhead.com/forever/quest=94984",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 39,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Riverglades",
+        "giver": "Ashe Amberhall"
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 3039,
+    "aliases": [
+      "Krol'dok Stronghold",
+      "Fortaleza de Krol'Dok"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "zulfarrak",
@@ -646,7 +1157,13 @@
         "id": 2768,
         "source": "https://www.wowhead.com/forever/quest=2768",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 40,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Tanaris",
+        "giver": "Chief Engineer Bilgewhizzle"
       },
       {
         "key": "zulfarrak-2",
@@ -656,9 +1173,24 @@
         "id": 2770,
         "source": "https://www.wowhead.com/forever/quest=2770",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 40,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Thousand Needles",
+        "giver": "Wizzle Brassbolts"
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 209,
+    "aliases": [
+      "Zul'Farrak",
+      "Zul'Farrak"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "maraudon",
@@ -678,7 +1210,13 @@
         "id": 7065,
         "source": "https://www.wowhead.com/forever/quest=7065",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 45,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Desolace",
+        "giver": "Keeper Marandis"
       },
       {
         "key": "maraudon-2",
@@ -688,9 +1226,24 @@
         "id": 7044,
         "source": "https://www.wowhead.com/forever/quest=7044",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 41,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": null,
+        "giver": "Cavindra"
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 349,
+    "aliases": [
+      "Maraudon",
+      "Maraudon"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "alcaz",
@@ -701,7 +1254,16 @@
     "access": "Ilha de Alcaz. Sem quests Alliance verificadas nesta edição: use Diário para checklist e notas próprias.",
     "source": "https://news.blizzard.com/en-us/article/24301455/explore-the-new-dungeons-of-world-of-warcraft-forever",
     "evidence": "OFFICIAL_DOCUMENTATION • anúncio; disponibilidade e quests UNVERIFIED",
-    "quests": []
+    "quests": [],
+    "covered": false,
+    "instanceID": 2994,
+    "aliases": [
+      "Alcaz Prison",
+      "Prisão de Alcaz"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "temple",
@@ -721,7 +1283,13 @@
         "id": 1446,
         "source": "https://www.wowhead.com/forever/quest=1446",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 38,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "The Hinterlands",
+        "giver": "Atal'ai Exile"
       },
       {
         "key": "temple-2",
@@ -731,9 +1299,24 @@
         "id": 3373,
         "source": "https://www.wowhead.com/forever/quest=3373",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 48,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": true,
+        "pickupZone": null,
+        "giver": null
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 109,
+    "aliases": [
+      "Sunken Temple",
+      "Templo Submerso"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "depths",
@@ -753,7 +1336,13 @@
         "id": 4263,
         "source": "https://www.wowhead.com/forever/quest=4263",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 48,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Burning Steppes",
+        "giver": "Jalinda Sprig"
       },
       {
         "key": "depths-2",
@@ -763,9 +1352,24 @@
         "id": 4241,
         "source": "https://www.wowhead.com/forever/quest=4241",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 48,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Burning Steppes",
+        "giver": "Marshal Maxwell"
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 230,
+    "aliases": [
+      "Blackrock Depths",
+      "Abismo Rocha Negra"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "diremaul",
@@ -785,7 +1389,13 @@
         "id": 7488,
         "source": "https://www.wowhead.com/forever/quest=7488",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 54,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Feralas",
+        "giver": "Latronicus Moonspear"
       },
       {
         "key": "diremaul-2",
@@ -795,9 +1405,24 @@
         "id": 5525,
         "source": "https://www.wowhead.com/forever/quest=5525",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 56,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": true,
+        "pickupZone": null,
+        "giver": "Knot Thimblejack"
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 429,
+    "aliases": [
+      "Dire Maul",
+      "Gládio Cruel"
+    ],
+    "sharedWings": true,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "blackmaw",
@@ -808,7 +1433,16 @@
     "access": "Confira o acesso e a disponibilidade no cliente. Sem quests curadas; importe suas missões do diário.",
     "source": "https://news.blizzard.com/en-us/article/24301455/explore-the-new-dungeons-of-world-of-warcraft-forever",
     "evidence": "OFFICIAL_DOCUMENTATION • anúncio; disponibilidade e quests UNVERIFIED",
-    "quests": []
+    "quests": [],
+    "covered": false,
+    "instanceID": 2974,
+    "aliases": [
+      "Blackmaw Hold",
+      "Gruta Bocanera"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "lower-spire",
@@ -828,9 +1462,24 @@
         "id": 4701,
         "source": "https://www.wowhead.com/forever/quest=4701",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 55,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Burning Steppes",
+        "giver": "Helendis Riverhorn"
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 229,
+    "aliases": [
+      "Blackrock Spire",
+      "Pico da Rocha Negra"
+    ],
+    "sharedWings": true,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "stratholme",
@@ -850,7 +1499,13 @@
         "id": 5251,
         "source": "https://www.wowhead.com/forever/quest=5251",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 55,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Eastern Plaguelands",
+        "giver": "Duke Nicholas Zverenhoff"
       },
       {
         "key": "stratholme-2",
@@ -860,9 +1515,24 @@
         "id": 5243,
         "source": "https://www.wowhead.com/forever/quest=5243",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 55,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Eastern Plaguelands",
+        "giver": "Leonid Barthalomew"
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 329,
+    "aliases": [
+      "Stratholme",
+      "Stratholme"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "scholomance",
@@ -882,7 +1552,13 @@
         "id": 5343,
         "source": "https://www.wowhead.com/forever/quest=5343",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 52,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Western Plaguelands",
+        "giver": "Weldon Barov"
       },
       {
         "key": "scholomance-2",
@@ -892,7 +1568,13 @@
         "id": 5529,
         "source": "https://www.wowhead.com/forever/quest=5529",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 55,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Eastern Plaguelands",
+        "giver": "Betina Bigglezink"
       },
       {
         "key": "scholomance-3",
@@ -902,9 +1584,24 @@
         "id": 5382,
         "source": "https://www.wowhead.com/forever/quest=5382",
         "evidence": "COMMUNITY_UNVERIFIED • cliente pendente",
-        "faction": "AllianceAccessible"
+        "faction": "AllianceAccessible",
+        "required": 55,
+        "requires": [],
+        "phase": "inside",
+        "insidePickup": false,
+        "pickupZone": "Western Plaguelands",
+        "giver": "Eva Sarkhoff"
       }
-    ]
+    ],
+    "covered": true,
+    "instanceID": 289,
+    "aliases": [
+      "Scholomance",
+      "Scolomântia"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   },
   {
     "key": "shapers",
@@ -915,6 +1612,15 @@
     "access": "Colinas ao norte de Un’Goro. Confira cristais e consoles no diário; sem catálogo de quests validado nesta edição.",
     "source": "https://news.blizzard.com/en-us/article/24301455/explore-the-new-dungeons-of-world-of-warcraft-forever",
     "evidence": "OFFICIAL_DOCUMENTATION • anúncio; disponibilidade e quests UNVERIFIED",
-    "quests": []
+    "quests": [],
+    "covered": false,
+    "instanceID": 3001,
+    "aliases": [
+      "The Shaper's Terrace",
+      "O Terraço do Moldador"
+    ],
+    "sharedWings": false,
+    "mapSource": "https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS",
+    "mapBuild": "1.60.1.70938"
   }
 ]
