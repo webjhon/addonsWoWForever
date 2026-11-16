@@ -1,40 +1,17 @@
-# Relatório de testes — Alliance Dungeon Trail 1.0.0
+# Relatório executado — AllianceDungeonTrail2.0.0
 
-Execução registrada: 2026-11-16T01:15:54.370Z. Status: STATIC_PASSED e MOCK_PASSED. **CLIENT_VERIFIED: não. Nenhum teste dentro do WoW foi realizado.**
+Execução: 2026-11-16T03:35:00.948Z. Node v24.18.0. **STATIC_PASSED / MOCK_PASSED. CLIENT_VERIFIED: NÃO. Nenhum teste dentro do WoW foi realizado.**
 
-## Evidência executada
+- Suíte completa: **60/60**, zero falhas. Inclui comportamento do addon em Fengari e testes da fábrica/base factual. Logs integrais em node-tests.log; cenários detalhados em tests/dungeon-trail.test.ts.
+- Motor Lua executado em cenários de aceite localizado, viagem/entrada, objetivos fora de ordem, confirmação autoritativa, entrega/abandono, oferta do NPC, mapa/waypoint ausente, rastreamento externo, combate/retomada, morte/ressurreição, reload/GUID, migração de checks antigos, API ausente/valores secretos simulados, rajadas de eventos e calibração de XP conservadora. Não são só testes de regex ou presença de campos.
+- Luaparse valida sintaxe Lua5.1; Fengari executa semântica Lua5.3. Mock não reproduz cliente, taint, valores secretos reais, renderização ou gameplay.
+- Os validadores novos de qualidade/autoria permanecem intactos. O teste legado foi substituído por contrato2.0 e verificações de rejeição para autoria antiga/contrato ausente. Empacotador também executa a suíte específica antes de criar ZIP.
+- Identificação das27 instâncias testada com IDs factuais da tabela Map70938 e nomes localizados; quests selecionadas têm IDs da base factual compartilhada. Dados DB2 são referência da build, não execução no jogo.
+- Evals, doctor, exemplo e jornada determinística executados. Ver pacote e hashes em package-verification.json. Conteúdos do ZIP são comparados com o blueprint e branding injetado; CRC32, TOC, autoria, ordem de carga, Hunter, íconeTGA512×512×32 e metadados conferidos.
+- Três prévias vêm da cena do mock executando o código real: preparação, objetivo e entrega. Fontes/posicionamento aproximados, explicitamente marcadas **não são capturas do WoW**. Não comprovam aparência no cliente.
 
-- Node v24.18.0: 26/26 testes aprovados, incluindo 14 testes existentes da fábrica e 12 específicos do addon.
-- Sintaxe de todos os arquivos Lua validada como Lua 5.1 por luaparse. Execução headless por Fengari (semântica Lua 5.3); não é um cliente WoW nem reproduz taint/restrições reais.
-- Blueprint, escopo Alliance 1–60, interface 16001, TOC, arquivos referenciados, ícone e scans de APIs protegidas aprovados.
-- Cenários headless: avisos sem duplicação; preparação nível 1; duas runs de calibração; descarte; XP zero; passagem de nível sem contagem duplicada; entregas excluídas da previsão; build/dia; combate e retomada; títulos traduzidos por ID; progresso e entrega; checks manuais distintos; notas; reload e separação por personagem; Horde/nível 61 ocultos; API ausente; valores secretos simulados e dados inválidos.
-- Todas as 27 dungeons e quatro abas renderizadas pelo mock. Pool de frames estável após eventos repetidos; não há OnUpdate.
-- Avaliação interna da fábrica: os 14 testes originais passaram. O campo luaMock do avaliador informa ausência de executável nativo lua; os testes Fengari acima foram executados separadamente e fazem parte de npm test.
-- Doctor e jornada determinística executados. O empacotamento é feito exclusivamente por executeJourney/orchestrator e tools/build-addon.ts.
-- Checagem HEAD de fontes públicas executada: cinco URLs acessíveis (HTTP 200); CurseForge respondeu HTTP 403. Isso não bloqueia o ZIP local e não é validação de conteúdo dessas páginas.
-- ZIP final é descomprimido em memória pelo verificador; todos os conteúdos do blueprint, CRC32, tamanho, nomes de caminhos e metadados são conferidos. Ícone TGA 512×512, 32 bits, e PNG de divulgação gerados pela fábrica.
-- Inspeção visual do ícone e de uma prévia PNG da cena real do mock realizada durante o desenvolvimento. Essa prévia usa aproximações de fontes/scroll e está marcada como simulação; não é captura de tela do jogo.
+## Limites e revisão
 
-## Correções e revisão
+Ver PRODUCT-REVIEW.md, RESEARCH.md e API-CAPABILITIES.json. O executável instalado é1.60.1.70938; interface16001 ainda requer confirmação por GetBuildInfo em sessão real. APIs estão documentadas na branch Forever da UI Blizzard, com runtime desta build UNVERIFIED. Quatro guias continuam bloqueados por falta de dados de quests; catálogo selecionado, pré-requisitos parciais e disponibilidade de fase não garantida. Navegação usa exclusivamente waypoint/texto do cliente; sem ele não há seta precisa. Não há pathfinding indoor. Estimativa mede expedições comparáveis, não clears confirmados nem XP futura garantida.
 
-- Leitura e aritmética adiadas durante combate; recuperação de XP em PLAYER_REGEN_ENABLED.
-- Vínculo automático por título preservado por ID para não perder o estado após a entrega.
-- Entrega de quest também invalida uso da run como repetição quando o evento ocorre em combate.
-- Troca de aba/dungeon volta o scroll ao início. Janela ajusta escala ao tamanho do UIParent.
-- Histórico limitado a 12 amostras por dungeon e personagem; reload descarta run incompleta.
-- Ícone específico de portal substitui o motivo genérico de bússola apenas para este addon.
-- Prévia SVG: corrigida a exclusão de textos inteiramente fora da área de recorte para evitar falha do renderizador resvg. Não era uma falha observada no WoW.
-
-## Evidência de cliente e limites
-
-O executável instalado foi lido como **1.60.1.70938**, flavor wowf. Não havia processo WoW em execução na verificação. O snapshot público consultado é **1.60.1.69893 / interface 16001**; os 17 símbolos usados foram encontrados nele, mas presença não prova assinaturas ou suporte na build atual. Nenhuma API foi promovida a CONFIRMED_IN_CLIENT.
-
-O campo client=NOT_RUN_NO_GAME_CLIENT do avaliador original é uma mensagem fixa da ferramenta, não uma detecção de instalação. Nesta máquina há cliente instalado; o estado correto desta entrega é NÃO EXECUTADO NO JOGO.
-
-Faixas são sugestões, não níveis mínimos garantidos. Há 63 quests selecionadas, sem cobertura exaustiva; quatro dungeons não têm quests curadas. Novas dungeons tardias têm disponibilidade não confirmada. Não há coordenadas nem navegação indoor. A previsão usa XP observada e heurística de níveis fracionários, com incerteza sobre XP futura, bônus e composição do grupo.
-
-## Pendente no jogo
-
-Confirmar GetBuildInfo/interface; carregamento do addon; ícone e fontes; drag/escala/scroll em resolução real; quests e NPCs nas instâncias; idioma do diário; XP e eventos reais; passagem para 60; persistência SavedVariables; restrições em combate; erros Lua e taint; disponibilidade e requisitos de todas as dungeons. O roteiro completo está em INSTALL.md.
-
-Logs reproduzíveis: research/AllianceDungeonTrail/node-tests.log, factory-evals.log, doctor.log, journey.json, api-snapshot-evidence.json e package-verification.json no repositório. Sem publicação em CurseForge nem alegação de testes em jogo.
+Antes de aprovação final: executar roteiro de INSTALL.md no WoW, conferir eventos reais, objetivos/entregas, textura/fontes/escala, taint, reload, classe/idioma e utilidade durante sessão prolongada. **Não aprovado como produto final; PR candidato para revisão do usuário, sem merge automático.**

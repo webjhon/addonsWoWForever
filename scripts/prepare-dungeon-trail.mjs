@@ -103,33 +103,32 @@ q(a,'Plagued Hatchlings','Betina Bigglezink • Light’s Hope Chapel.','Procure
 q(a,'Doctor Theolen Krastinov, the Butcher','Eva Sarkhoff • Caer Darrow.','Krastinov e os restos mencionados no diário são referências distintas; confira todos os objetivos.',5382,quest(5382));
 a=d('blackmaw','Blackmaw Hold',55,60,'Azshara','Confira o acesso e a disponibilidade no cliente. Sem quests curadas; importe suas missões do diário.',official,'OFFICIAL_DOCUMENTATION • anúncio; disponibilidade e quests UNVERIFIED');
 a=d('shapers',"Shaper's Terrace",58,60,'Un’Goro Crater','Colinas ao norte de Un’Goro. Confira cristais e consoles no diário; sem catálogo de quests validado nesta edição.',official,'OFFICIAL_DOCUMENTATION • anúncio; disponibilidade e quests UNVERIFIED');
-// Stable order makes equal-level alternatives visible without inventing an optimal route.
+// Data is reconciled with the shared factual bank; runtime never matches localized titles.
+const bank=JSON.parse(fs.readFileSync(path.join(root,'knowledge/alliance/quest/wowhead-forever.json'),'utf8')).records;
+const relations=JSON.parse(fs.readFileSync(path.join(root,'knowledge/alliance/relations/wowhead-forever.json'),'utf8')).relations;
+for(const dg of catalog){
+ for(const record of bank.filter(r=>r.facts.category===dg.name)){
+  let item=dg.quests.find(q=>q.id===record.game_id||q.name===record.name);
+  if(!item){item={key:dg.key+'-'+record.game_id,name:record.name,pickup:[record.facts.giver,record.facts.zone].filter(Boolean).join(' • '),guide:'Siga o objetivo localizado do diário. Dados específicos de sala ainda não curados.',source:quest(record.game_id),evidence:record.evidence,faction:'AllianceAccessible'};dg.quests.push(item);}
+  item.id=record.game_id;item.required=record.facts.required_level;item.source=quest(item.id);
+  item.requires=relations.filter(r=>r.type==='requires_quest'&&r.from_id===record.id).map(r=>Number(r.to_id.split(':').pop()));
+  item.phase=[168,167,2922,2926,959].includes(item.id)?'outside':'inside';
+  item.insidePickup=[98423,373,6981,1200,1142,1144,2278,3373,5525].includes(item.id);
+  item.pickupZone=record.facts.zone;item.giver=record.facts.giver;
+ }
+ dg.quests=dg.quests.filter(q=>q.id);dg.covered=dg.quests.length>0;
+}
+const assault=catalog.find(d=>d.key==='deadmines').quests.find(q=>q.id===2040);
+assault.guide='Sneed’s Shredder • sala dos goblins, após Rhahk’Zor. Saque a máquina e confira Gnoam Sprecklesprocket no diário.';
+const maps=JSON.parse(fs.readFileSync(path.join(root,'knowledge/alliance/forever-dungeon-maps.json'),'utf8').replace(/^\uFEFF/,''));
+for(const dg of catalog){const m=maps.records.find(r=>r.key===dg.key);if(!m)throw Error('Missing factual instance map: '+dg.key);Object.assign(dg,{instanceID:m.instanceID,aliases:m.aliases,sharedWings:m.sharedWings,mapSource:maps.sources[0].uri,mapBuild:maps.build});}
 catalog.sort((a,b)=>a.level-b.level);
 function lua(v){
- if(v===null)return 'nil'; if(typeof v==='string')return JSON.stringify(v);
+ if(v===null)return 'nil';if(typeof v==='string')return JSON.stringify(v);
  if(typeof v==='number'||typeof v==='boolean')return String(v);
  if(Array.isArray(v))return '{'+v.map(lua).join(',\n')+'}';
  return '{'+Object.entries(v).map(([k,x])=>'['+lua(k)+']='+lua(x)).join(',')+'}';
 }
 fs.writeFileSync(path.join(out,'Data.lua'),'local _, A = ...\nA.catalog = '+lua(catalog)+'\n');
 fs.writeFileSync(path.join(root,'research/AllianceDungeonTrail/catalog.json'),JSON.stringify(catalog,null,2)+'\n');
-const toc=`## Interface: 16001
-## Title: Alliance Dungeon Trail
-## Notes: Alliance 1-60 dungeon planner, quest checklist and measured run estimates.
-## Author: Alliance Addon Factory
-## Version: 1.0.0
-## X-Flavor: Forever
-## IconTexture: Interface\\AddOns\\AllianceDungeonTrail\\assets\\Icon.tga
-## SavedVariables: AllianceDungeonTrailDB
-Data.lua
-Core.lua
-UI.lua
-`;
-fs.writeFileSync(path.join(out,'AllianceDungeonTrail.toc'),toc);
-const api=['CreateFrame','UnitFactionGroup','UnitLevel','UnitXP','UnitXPMax','UnitGUID','UnitClass','GetBuildInfo','InCombatLockdown','issecretvalue','issecrettable','C_QuestLog.GetNumQuestLogEntries','C_QuestLog.GetInfo','C_QuestLog.GetQuestObjectives','C_QuestLog.IsComplete','C_QuestLog.IsQuestFlaggedCompleted','date'];
-const source='https://github.com/Thunderz96/forever-addon-kit/blob/8dc297689059dd204bf8663a05aaa36d6a628b76/data/forever_api.json • captured 1.60.1 build 69893 / interface 16001; presence only, current signatures and restrictions UNVERIFIED';
-const files=fs.readdirSync(out).filter(f=>/\.(lua|toc|md)$/.test(f)).map(filename=>({filename,content:fs.readFileSync(path.join(out,filename),'utf8')}));
-const blueprint={addonName:'AllianceDungeonTrail',game:'WoW Forever',faction:'Alliance',purpose:'leveling',minLevel:1,maxLevel:60,interfaceVersion:16001,version:'1.0.0',eventsRegistered:['PLAYER_LOGIN','PLAYER_ENTERING_WORLD','PLAYER_XP_UPDATE','PLAYER_LEVEL_UP','QUEST_LOG_UPDATE','QUEST_TURNED_IN','PLAYER_REGEN_ENABLED'],apiNamespacesUsed:api,apiEvidence:api.map(symbol=>({symbol,status:'UNVERIFIED',source})),files};
-blueprint.apiEvidence.push(...blueprint.eventsRegistered.map(symbol=>({symbol,status:'UNVERIFIED',source:'Event names/signatures not established by the function-presence snapshot; manual 70938 client observation required. research/AllianceDungeonTrail/RESEARCH.md'})));
-fs.writeFileSync(path.join(root,'research/AllianceDungeonTrail/AllianceDungeonTrail.blueprint.json'),JSON.stringify(blueprint,null,2)+'\n');
-console.log(`Prepared ${catalog.length} dungeons, ${catalog.reduce((n,d)=>n+d.quests.length,0)} curated quests; blueprint regenerated from original sources.`);
+await import('./blueprint-dungeon-trail.mjs');

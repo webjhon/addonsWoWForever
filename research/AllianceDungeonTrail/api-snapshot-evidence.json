@@ -7,10 +7,16 @@
     "build": "69893"
   },
   "commit": "8dc297689059dd204bf8663a05aaa36d6a628b76",
-  "source": "https://github.com/Thunderz96/forever-addon-kit/blob/8dc297689059dd204bf8663a05aaa36d6a628b76/data/forever_api.json • captured 1.60.1 build 69893 / interface 16001; presence only, current signatures and restrictions UNVERIFIED",
+  "source": "https://github.com/Thunderz96/forever-addon-kit/blob/8dc297689059dd204bf8663a05aaa36d6a628b76/data/forever_api.json",
+  "signaturesReference": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever branch, 2026-11-13). Signatures documented; current installed 70938 runtime UNVERIFIED. See API-CAPABILITIES.json.",
   "license": "MIT",
   "sha256": "9338ff128715bc2627598ffe598a8ff116f4d68e82a5718ceb6181016e76b101",
   "symbols": [
+    {
+      "symbol": "C_GossipInfo.GetAvailableQuests",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
     {
       "symbol": "CreateFrame",
       "present": true,
@@ -47,7 +53,17 @@
       "currentClientStatus": "UNVERIFIED"
     },
     {
+      "symbol": "UnitIsDeadOrGhost",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
       "symbol": "GetBuildInfo",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "GetServerTime",
       "present": true,
       "currentClientStatus": "UNVERIFIED"
     },
@@ -63,6 +79,31 @@
     },
     {
       "symbol": "issecrettable",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "GetInstanceInfo",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "IsInInstance",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "GetRealZoneText",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "GetZoneText",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "C_Timer.After",
       "present": true,
       "currentClientStatus": "UNVERIFIED"
     },
@@ -87,12 +128,52 @@
       "currentClientStatus": "UNVERIFIED"
     },
     {
+      "symbol": "C_QuestLog.IsFailed",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
       "symbol": "C_QuestLog.IsQuestFlaggedCompleted",
       "present": true,
       "currentClientStatus": "UNVERIFIED"
     },
     {
-      "symbol": "date",
+      "symbol": "C_QuestLog.GetNextWaypoint",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "C_QuestLog.GetNextWaypointForMap",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "C_QuestLog.GetNextWaypointText",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "C_Map.GetBestMapForUnit",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "C_Map.GetMapInfo",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "C_SuperTrack.GetSuperTrackedQuestID",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "C_SuperTrack.IsSuperTrackingAnything",
+      "present": true,
+      "currentClientStatus": "UNVERIFIED"
+    },
+    {
+      "symbol": "C_SuperTrack.SetSuperTrackedQuestID",
       "present": true,
       "currentClientStatus": "UNVERIFIED"
     }

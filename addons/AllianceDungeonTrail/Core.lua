@@ -1,266 +1,278 @@
 local _, A = ...
-A.version = "1.0.0"
-A.rows, A.journal = {}, {}
-local db, char
-local function plain(v)
-    return not (issecretvalue and issecretvalue(v)) and not (issecrettable and type(v)=="table" and issecrettable(v))
-end
-local function safe(fn, ...)
-    if type(fn) ~= "function" then return nil end
-    local ok, value = pcall(fn, ...)
-    if ok and plain(value) then return value end
-end
-A.safe = safe
-function A.text(v)
-    if not plain(v) or type(v) ~= "string" then return "" end
-    return v:gsub("|", "||"):sub(1, 1200)
-end
-function A.number(v)
-    if plain(v) and type(v) == "number" and v == v and v >= 0 and v < 1000000000 then return v end
-end
-local function sample()
-    return A.number(safe(UnitLevel, "player")), A.number(safe(UnitXP, "player")), A.number(safe(UnitXPMax, "player"))
-end
-function A.allowed()
-    local level = A.number(safe(UnitLevel, "player"))
-    return safe(UnitFactionGroup, "player") == "Alliance" and level and level >= 1 and level <= 60
-end
-function A.message(s)
-    if A.allowed() then print("|cffdfba72Dungeon Trail|r  " .. s) end
-end
-function A.dungeon()
-    return A.catalog[char and char.selected or 1]
+A.version="2.0.0"
+local char, snapshot
+local scheduled=false
+local function completed(id)
+    return (char and char.completed[id]==true) or A.truth(A.safe((C_QuestLog or {}).IsQuestFlaggedCompleted,id))
 end
 function A.state() return char end
+function A.current() return snapshot end
+function A.allowed(s)
+    return s and s.faction=="Alliance" and s.level and s.level>=1 and s.level<=60
+end
 function A.init()
-    AllianceDungeonTrailDB = type(AllianceDungeonTrailDB) == "table" and AllianceDungeonTrailDB or {}
-    db = AllianceDungeonTrailDB
-    db.schema, db.characters = 1, type(db.characters) == "table" and db.characters or {}
-    local key = safe(UnitGUID, "player")
-    if type(key) ~= "string" then return false end
-    db.characters[key] = type(db.characters[key]) == "table" and db.characters[key] or {}
-    char = db.characters[key]
-    for _, k in ipairs({"checks", "bindings", "notes", "history", "notified", "custom", "completed"}) do
-        if type(char[k]) ~= "table" then char[k] = {} end
+    local guid=A.str(A.safe(function() return UnitGUID("player") end))
+    if guid=="" then return false end
+    if not A.table(AllianceDungeonTrailDB) then AllianceDungeonTrailDB={} end
+    local db=AllianceDungeonTrailDB
+    if not A.table(db.characters) then db.characters={} end
+    if not A.table(db.characters[guid]) then db.characters[guid]={} end
+    char=db.characters[guid]
+    A.freshLogin=true
+    if char.schema~=2 then
+        -- A v1 checkbox/binding is never evidence of real progress.
+        local position=A.table(char.position) and char.position or nil
+        for k in pairs(char) do char[k]=nil end
+        char.schema=2;char.position=position
     end
-    if not A.catalog[char.selected or 0] then
-        char.selected = 1
-        local level=A.number(safe(UnitLevel,"player")) or 1
-        for i,d in ipairs(A.catalog) do if d.level<=level and level<=d.high then char.selected=i end end
+    for _,key in ipairs({"completed","seen","notified","history","instances"}) do
+        if not A.table(char[key]) then char[key]={} end
     end
-    -- A reloaded session cannot safely attribute XP across logout or a reset.
-    if char.run then char.run = nil; A.message("Run interrompida por reload/logout: amostra descartada; checklist preservado.") end
+    if char.run then char.run=nil;char.recovery="Expedição anterior excluída da estimativa após reload." end
     return true
 end
+function A.findDungeon(key)
+    for _,d in ipairs(A.catalog) do if d.key==key then return d end end
+end
+function A.questAllowed(q,s)
+    return (not q.class or q.class==s.class) and (not q.required or q.required<=s.level)
+end
+function A.questState(q,s)
+    local live=s.quests[q.id]
+    -- Repeatable quests currently in the log take precedence over historical completion.
+    if live then
+        if live.failed then return "FAILED",live end
+        if live.complete then return "READY",live end
+        return "ACTIVE",live
+    end
+    if completed(q.id) then return "TURNED_IN" end
+    if char.seen[q.id] then return "MISSING" end
+    return "AVAILABLE_UNKNOWN"
+end
+local function matchDungeon(s)
+    for _,d in ipairs(A.catalog) do if s.instanceID==d.instanceID then return d end end
+    local observed=s.instanceID and char.instances[s.instanceID]
+    if observed then return A.findDungeon(observed) end
+    for _,d in ipairs(A.catalog) do
+        local matches=s.instance==d.name or s.mapName==d.name
+        for _,alias in ipairs(d.aliases or {}) do if s.instance==alias or s.mapName==alias then matches=true end end
+        if matches then
+            if s.instanceID then char.instances[s.instanceID]=d.key end
+            return d
+        end
+    end
+end
+function A.recommend(s)
+    local selected,score
+    for _,d in ipairs(A.catalog) do
+        if d.covered and d.level<=s.level and s.level<=d.high then
+            local value=d.level+((s.zone==d.zone or s.mapName==d.zone) and 10 or 0)
+            if not score or value>score then selected=d;score=value end
+        end
+    end
+    return selected
+end
 function A.nextDungeon(level)
-    for _, d in ipairs(A.catalog) do
-        if d.level > level then return d end
-    end
+    for _,d in ipairs(A.catalog) do if d.covered and d.level>level then return d end end
 end
-function A.unlocks()
-    if not char or not A.allowed() then return end
-    local level = sample()
-    if not level then return end
-    local names = {}
-    for _, d in ipairs(A.catalog) do
-        if level >= d.level and level <= d.high and not char.notified[d.key] then
-            char.notified[d.key] = true
-            names[#names+1] = d.name
+local function activeCount(d,s)
+    local n=0;for _,q in ipairs(d.quests) do if s.quests[q.id] then n=n+1 end end;return n
+end
+local function selectDungeon(s)
+    if s.inside then return matchDungeon(s) end
+    -- Ready turn-ins across the whole catalog cannot be lost at a level boundary.
+    for _,d in ipairs(A.catalog) do
+        for _,q in ipairs(d.quests) do if s.quests[q.id] and s.quests[q.id].complete then return d end end
+    end
+    local prior=A.findDungeon(char.focusDungeon)
+    if prior and activeCount(prior,s)>0 then return prior end
+    for _,d in ipairs(A.catalog) do if activeCount(d,s)>0 then return d end end
+    if prior and prior.covered and prior.level<=s.level and s.level<=prior.high then return prior end
+    return A.recommend(s)
+end
+local function make(kind,title,detail,d,q)
+    return {kind=kind,title=title,detail=detail or "",dungeon=d,quest=q,id=q and q.id}
+end
+local function objective(d,q,live,s)
+    if live.failed then return make("FAILED","Quest falhou: "..live.title,"Abandone/reobtenha a quest conforme o diário. O addon não declara conclusão.",d,q) end
+    if not live.objectivesOK then return make("WAIT_DATA","Aguardando objetivos do cliente",live.title.." • nenhuma conclusão será presumida.",d,q) end
+    for _,o in ipairs(live.objectives) do
+        if not o.done then
+            local a=make("OBJECTIVE",o.text~="" and o.text or live.title,q.guide,d,q)
+            a.objective=o.index;a.count=o.count;a.total=o.total;a.questTitle=live.title
+            return a
         end
     end
-    if #names > 0 then A.message("Faixa sugerida disponível: " .. table.concat(names, ", ") .. ". Abra /adt. Confira acesso e grupo.") end
+    return make("VERIFY","Confira a interação ou saque pendente",live.title.." • objetivos contabilizados; aguardando confirmação de conclusão pelo diário. "..q.guide,d,q)
 end
-function A.select(index)
-    if not char or not A.catalog[index] then return end
-    char.selected = index
-    if A.scroll then A.scroll:SetVerticalScroll(0) end
-    A.refresh()
-end
-function A.check(key)
-    if not char or not A.allowed() then return end
-    char.checks[key] = not char.checks[key]
-    A.refresh()
-end
-function A.questKey(d, q, i) return d.key .. ":" .. (q.id or q.key or i) end
-function A.quests(d)
-    local list = {}
-    local class = safe(function() if UnitClass then return select(2, UnitClass("player")) end end)
-    for _, q in ipairs(d.quests) do
-        if not q.class or q.class == class then list[#list+1] = q end
-    end
-    for _, q in ipairs(char.custom[d.key] or {}) do list[#list+1] = q end
-    return list
-end
-function A.readJournal()
-    A.journal = {}
-    local Q = C_QuestLog or {}
-    local n = A.number(safe(Q.GetNumQuestLogEntries))
-    if not n then A.journalStatus = "Diário indisponível: use a confirmação manual."; return end
-    for i = 1, math.min(n, 200) do
-        local info = safe(Q.GetInfo, i)
-        if type(info) == "table" and plain(info.isHeader) and not info.isHeader then
-            local id = A.number(info.questID)
-            local title = A.text(info.title)
-            if id and id > 0 and title ~= "" then A.journal[#A.journal+1] = {id=id, title=title} end
+local function candidateQuest(d,s)
+    for _,q in ipairs(d.quests) do
+        if A.questAllowed(q,s) and not q.insidePickup and not s.quests[q.id] and not completed(q.id) then
+            local prerequisites=true
+            for _,id in ipairs(q.requires or {}) do if not completed(id) then prerequisites=false end end
+            if prerequisites then return q end
         end
     end
-    A.journalStatus = #A.journal .. " quests no diário. Vincule por ID em qualquer idioma."
 end
-function A.questStatus(d, q, i)
-    local key = A.questKey(d, q, i)
-    local id = char.bindings[key] or q.id
-    local Q = C_QuestLog or {}
-    if id and (char.completed[id] or safe(Q.IsQuestFlaggedCompleted, id) == true) then return "ENTREGUE", {}, id end
-    local found
-    for _, entry in ipairs(A.journal) do
-        if entry.id == id or (not id and entry.title == q.name) then found = entry.id; break end
+function A.decide(s)
+    if not A.allowed(s) then return make("OUT_OF_SCOPE","Alliance • leveling 1–60","Este personagem está fora do escopo.") end
+    if not s.contextOK or not s.journalOK or type((C_QuestLog or {}).IsComplete)~="function" or type((C_QuestLog or {}).GetQuestObjectives)~="function" then
+        return make("BLOCKED","Acompanhamento indisponível","Não foi possível ler instância/diário com segurança. /adt diagnostico informa as APIs ausentes; não há progresso manual substituto.")
     end
-    if not found then
-        return char.checks[key .. ":picked"] and "PEGUEI (manual)" or "A OBTER", {}, id
+    if s.dead then return make("RECOVER","Retorne ao corpo ou ressuscite","Seu objetivo será restaurado automaticamente ao voltar à vida.") end
+    if s.inside and s.kind~="party" then return make("OUT_OF_SCOPE","Fora de uma dungeon de leveling","Acompanhamento suspenso nesta instância.") end
+    local d=selectDungeon(s)
+    if s.inside and not d then return make("COVERAGE_GAP","Instância ainda não identificada",s.instance.." • nenhum vínculo com uma dungeon foi presumido. Identificação localizada requer validação; não confundir quests carregadas com a instância atual.") end
+    if not d then
+        if s.level==60 then return make("FINISHED","Leveling 1–60 concluído","A jornada de leveling termina aqui.") end
+        local first=A.catalog[1]
+        return make("PRE_LEVEL","Prepare seu primeiro grupo",first.name.." • faixa sugerida "..first.level.."–"..first.high..". Acompanhe o nível; avisarei quando chegar à faixa.",first)
     end
-    char.bindings[key] = found
-    local objectives, raw = {}, safe(Q.GetQuestObjectives, found)
-    if type(raw) == "table" then
-        for j, o in ipairs(raw) do
-            if j > 40 then break end
-            if type(o) == "table" then
-                local text = A.text(o.text)
-                if text ~= "" then objectives[#objectives+1] = {text=text, done=plain(o.finished) and o.finished == true} end
+    for _,offeredDungeon in ipairs(A.catalog) do
+        if not s.inside or offeredDungeon.key==d.key then
+            for _,q in ipairs(offeredDungeon.quests) do
+                if s.offers[q.id] and not s.quests[q.id] then
+                    local a=make("OFFERED","Aceite: "..s.offers[q.id],"Quest oferecida agora pelo NPC. Aceite na janela do jogo; eu reconheço o aceite e passo ao próximo objetivo.",offeredDungeon,q)
+                    a.id=nil;return a
+                end
             end
         end
     end
-    local complete = safe(Q.IsComplete, found)
-    return complete == true and "PRONTA PARA ENTREGAR" or "NO DIÁRIO", objectives, found
-end
-function A.bind(questIndex, id)
-    if not char or not A.allowed() then return false end
-    local d = A.dungeon()
-    local q = A.quests(d)[questIndex]
-    if not q or not id or id < 1 or id % 1 ~= 0 then return false end
-    for _, e in ipairs(A.journal) do
-        if e.id == id then char.bindings[A.questKey(d,q,questIndex)] = id; A.refresh(); return true end
-    end
-    A.message("ID ausente do diário; abra a aba Diário e confira.")
-    return false
-end
-function A.addQuest(id)
-    if not char or not A.allowed() then return false end
-    local d = A.dungeon()
-    for _, e in ipairs(A.journal) do
-        if e.id == id then
-            for _, q in ipairs(A.quests(d)) do if q.id == id then return false end end
-            char.custom[d.key] = char.custom[d.key] or {}
-            table.insert(char.custom[d.key], {id=id, name=e.title, pickup="Adicionada do seu diário.", guide="Leia os objetivos abaixo. Registre uma referência com /adt nota N texto.", source="Diário do jogador", evidence="PLAYER_RECORD"})
-            A.refresh(); return true
+    char.focusDungeon=d.key
+    if s.inside and not d.covered then return make("COVERAGE_GAP","Guia desta dungeon bloqueado por dados",d.name.." • quests/objetivos locais ainda não curados. Não há checklist manual substituto.",d) end
+    local active,ready={},{}
+    for _,q in ipairs(d.quests) do
+        local state,live=A.questState(q,s)
+        if live then
+            if state=="READY" then ready[#ready+1]={q=q,live=live}
+            elseif not s.inside or q.phase~="outside" then active[#active+1]={q=q,live=live} end
         end
     end
-    return false
+    if s.inside and #active>0 then
+        local chosen=active[1]
+        local tracked=A.num(A.safe((C_SuperTrack or {}).GetSuperTrackedQuestID))
+        for _,v in ipairs(active) do if v.q.id==char.focusQuest then chosen=v end end
+        for _,v in ipairs(active) do if v.q.id==tracked then chosen=v end end
+        return objective(d,chosen.q,chosen.live,s)
+    end
+    if #ready>0 then
+        local q,live=ready[1].q,ready[1].live
+        return make("TURN_IN","Entregue: "..live.title,"Destino do diário tem prioridade. Referência de coleta: "..q.pickup..(s.inside and " • há quest pronta; outras quests externas podem continuar pendentes." or ""),d,q)
+    end
+    if #active>0 then
+        local chosen=active[1]
+        for _,v in ipairs(active) do if v.q.id==char.focusQuest then chosen=v end end
+        if chosen.q.phase=="outside" then return objective(d,chosen.q,chosen.live,s) end
+        return make("TRAVEL","Vá para "..d.name,d.access.." • "..chosen.live.title.." aceita; objetivo: "..chosen.q.guide,d,chosen.q)
+    end
+    if s.inside then
+        return make("EXPLORE","Continue com o grupo",d.name.." • sem objetivos internos aceitos pendentes. Observe quests oferecidas e saque; a próxima quest aceita será acompanhada automaticamente.",d)
+    end
+    if s.level==60 then return make("FINISHED","Leveling 1–60 concluído","Entregas pendentes continuam acompanhadas quando estiverem no diário.") end
+    local q=candidateQuest(d,s)
+    if q then
+        local a=make("PREPARE","Procure: "..q.name,q.pickup.." • oferta potencial: pré-requisitos e fase precisam ser confirmados pelo NPC. Ao aceitar, eu acompanho automaticamente.",d,q)
+        a.id=nil -- An unaccepted quest has no authoritative live navigation.
+        return a
+    end
+    return make("TRAVEL","Forme grupo para "..d.name,d.access.." • quests conhecidas resolvidas ou indisponíveis; a entrada é detectada automaticamente.",d)
 end
-function A.startRun()
-    if not char or safe(InCombatLockdown) or not A.allowed() or char.run then return false end
-    local level, xp, max = sample()
-    if not level or not xp or not max or max <= 0 or level == 60 then return false end
-    char.run = {dungeon=A.dungeon().key, level=level, lastLevel=level, lastXP=xp, lastMax=max, gain=0, fraction=0, valid=true, repeatRun=char.repeatRun == true}
-    A.message("Entrada registrada. Finalize ao terminar; descarte se sair ou trocar de grupo. Runs com quests não alimentam a previsão.")
-    A.refresh(); return true
-end
-function A.recordXP()
-    local r = char and char.run
-    if not r then return end
-    local l,x,m = sample()
-    if not l or not x or not m or m <= 0 then r.valid=false; return end
-    local gain
-    if l == r.lastLevel then gain = x-r.lastXP
-    elseif l == r.lastLevel+1 then gain = r.lastMax-r.lastXP+x
-    else r.valid=false end
-    if gain and gain >= 0 then
-        r.gain = r.gain+gain
-        if l == r.lastLevel then r.fraction = r.fraction+gain/r.lastMax
-        else r.fraction = r.fraction+(r.lastMax-r.lastXP)/r.lastMax+x/m end
-    else r.valid=false end
-    r.lastLevel,r.lastXP,r.lastMax=l,x,m
-end
-function A.finishRun(discard)
-    if not char or not char.run then return false end
-    if not discard and safe(InCombatLockdown) then return false end
-    A.recordXP()
+local function updateXP(s)
     local r=char.run
-    char.run=nil
-    if not discard then
-        local _, build = GetBuildInfo()
-        local h=char.history[r.dungeon] or {}
-        h[#h+1]={level=r.level,gain=r.gain,fraction=r.fraction,valid=r.valid,repeatRun=r.repeatRun,build=A.text(build),day=safe(date,"%Y-%m-%d") or "session"}
-        while #h>12 do table.remove(h,1) end
-        char.history[r.dungeon]=h
-        A.message("Run registrada: " .. math.floor(r.gain) .. " XP" .. (r.valid and "." or " (excluída da previsão: leitura incompleta)."))
-    end
-    A.refresh(); return true
+    if not r then return end
+    if not s.xp or not s.max or s.max<=0 or not s.level or r.build~=s.build or not r.lastXP then r.valid=false;return end
+    local delta
+    if s.level==r.lastLevel and s.xp>=r.lastXP then delta=s.xp-r.lastXP
+    elseif s.level==r.lastLevel+1 then delta=r.lastMax-r.lastXP+s.xp
+    else r.valid=false end
+    if delta then r.gain=r.gain+delta;r.fraction=r.fraction+delta/r.lastMax end
+    r.lastXP,r.lastMax,r.lastLevel=s.xp,s.max,s.level
+    if s.dead then r.valid=false end
 end
-function A.estimate()
-    local l,x,m=sample()
-    if not l or not x or not m or m<=0 or l==60 then return "Nível 60: jornada concluída." end
-    local n,total,fraction,low,high=0,0,0,nil,nil
-    local _, build=GetBuildInfo()
-    build=A.text(build)
-    local day=safe(date,"%Y-%m-%d") or "session"
-    for _, r in ipairs(char.history[A.dungeon().key] or {}) do
-        if r.valid and r.repeatRun and r.gain>0 and math.abs(r.level-l)<=2 and r.build==build and r.day==day then
-            n=n+1; total=total+r.gain; fraction=fraction+r.fraction
-            low=not low and r.fraction or math.min(low,r.fraction)
-            high=not high and r.fraction or math.max(high,r.fraction)
+local function reconcileRun(s)
+    local d=s.inside and s.kind=="party" and matchDungeon(s)
+    local key=d and d.key
+    local r=char.run
+    -- Never attribute the exit event's outdoor XP to an indoor segment.
+    if r and r.key~=key then
+        r.duration=(s.now and r.started and s.now-r.started) or 0
+        r.valid=r.valid and r.duration>=300 and r.gain>0 and r.build==s.build and s.level-r.level<=2
+        char.history[#char.history+1]={key=r.key,gain=r.gain,fraction=r.fraction,level=r.level,build=r.build,at=s.now,valid=r.valid,duration=r.duration}
+        while #char.history>20 do table.remove(char.history,1) end
+        char.run=nil
+    end
+    if key and not char.run then
+        char.run={key=key,build=s.build,level=s.level,lastLevel=s.level,lastXP=s.xp,lastMax=s.max,gain=0,fraction=0,started=s.now,
+            valid=not A.freshLogin and s.xp~=nil and s.max~=nil and s.max>0 and activeCount(d,s)==0 and not s.dead}
+    elseif key then updateXP(s) end
+end
+function A.estimate(s)
+    local d=A.action and A.action.dungeon
+    if not d or s.level>=60 then return "" end
+    local gains,lo,hi={},nil,nil
+    for _,r in ipairs(char.history) do
+        if r.valid and r.key==d.key and r.build==s.build and r.at and s.now and s.now-r.at>=0 and s.now-r.at<=86400 and math.abs(s.level-r.level)<=2 and r.fraction>0 then
+            gains[#gains+1]=r.fraction;lo=math.min(lo or r.fraction,r.fraction);hi=math.max(hi or r.fraction,r.fraction)
         end
     end
-    if n<2 then return "Faça 2 runs de repetição hoje para calibrar. Amostras: " .. n .. "/2. A primeira visita com quests fica fora da previsão." end
-    local next=A.nextDungeon(l)
-    local remaining=next and (next.level-l-x/m) or (60-l-x/m)
-    local target=next and next.name or "nível 60"
-    local best=math.max(1,math.ceil(remaining/high))
-    local worst=math.max(1,math.ceil(remaining/low))
-    return string.format("Próximo nível: ~%d runs. Até %s (heurística): %d–%d runs; média ~%d. %d amostras locais.\nXP futura, bônus, grupo e resets podem alterar tudo. Sem garantia; recalcule a cada nível.",math.ceil((m-x)/(total/n)),target,best,worst,math.ceil(remaining/(fraction/n)),n)
+    if #gains<2 then return "Previsão aprendendo • "..#gains.."/2 expedições comparáveis sem quests. Entrada e saída são automáticas." end
+    local nextD=A.nextDungeon(s.level)
+    if not nextD or not s.xp or not s.max or s.max<=0 then return "Sem próxima faixa conhecida para estimar." end
+    local remaining=nextD.level-s.level-s.xp/s.max
+    return "Até "..nextD.name..": ~"..math.max(1,math.ceil(remaining/hi)).."–"..math.max(1,math.ceil(remaining/lo)).." expedições semelhantes ("..#gains.." amostras). Heurística, não clears confirmados nem XP futura garantida."
 end
-function A.refresh()
-    if not char then return end
+function A.reconcile()
+    scheduled=false
+    if not char and not A.init() then return end
+    if A.truth(A.safe(function() return InCombatLockdown() end)) then A.pending=true;if A.render then A.render() end;return end
+    A.pending=false
+    snapshot=A.snapshot()
+    local s=snapshot
+    if A.allowed(s) and s.contextOK and s.journalOK then
+        for id in pairs(s.quests) do char.seen[id]=true end
+        reconcileRun(s)
+        if char.run and (not s.journalOK or activeCount(A.findDungeon(char.run.key),s)>0) then char.run.valid=false end
+        for _,d in ipairs(A.catalog) do
+            if d.level<=s.level and s.level<=d.high and not char.notified[d.key] then
+                char.notified[d.key]=true
+                print("|cffdfba72Dungeon Trail|r Nova faixa sugerida: "..d.name.." ("..d.level.."–"..d.high.."). Acesso não garantido.")
+            end
+        end
+    elseif char.run then char.run.valid=false end
+    A.freshLogin=false
+    A.action=A.decide(s)
+    char.focusQuest=A.action.id
+    if A.action.id and s.quests[A.action.id] and A.action.kind~="WAIT_DATA" then
+        A.action.nav=A.waypoint(A.action.id,s)
+        A.action.waypointText=A.str(A.safe((C_QuestLog or {}).GetNextWaypointText,A.action.id))
+        if A.action.waypointText~="" then A.action.detail=A.action.waypointText.."\n"..A.action.detail end
+    end
+    A.track(A.action)
     if A.render then A.render() end
 end
-function A.command(msg)
-    if not char or safe(InCombatLockdown) or not A.allowed() then return end
-    local cmd, rest = (msg or ""):match("^(%S*)%s*(.-)$")
-    if cmd=="vincular" then local a,b=rest:match("^(%d+)%s+(%d+)$"); A.bind(tonumber(a),tonumber(b))
-    elseif cmd=="adicionar" then A.addQuest(tonumber(rest))
-    elseif cmd=="fonte" then
-        local q=A.quests(A.dungeon())[tonumber(rest)]
-        if q then A.message(A.text(q.source)) end
-    elseif cmd=="nota" then
-        local i,note=rest:match("^(%d+)%s+(.+)$")
-        local d=A.dungeon(); i=tonumber(i)
-        local q=i and A.quests(d)[i]
-        if q then char.notes[A.questKey(d,q,i)]=A.text(note); A.refresh() end
-    elseif cmd=="entrar" then A.startRun()
-    elseif cmd=="fim" then A.finishRun(false)
-    elseif cmd=="descartar" then A.finishRun(true)
-    elseif cmd=="ocultar" then char.hidden=true; A.refresh()
-    elseif cmd=="ajuda" then A.message("/adt | entrar | fim | descartar | adicionar ID | vincular N ID | nota N texto | ocultar. Escolha a dungeon antes de registrar a entrada.")
-    else char.hidden=false; A.refresh() end
+function A.schedule()
+    if scheduled then return end
+    scheduled=true
+    if C_Timer and type(C_Timer.After)=="function" then C_Timer.After(.15,A.reconcile) else A.reconcile() end
 end
-local events=CreateFrame("Frame")
-A.events=events
-for _, event in ipairs({"PLAYER_LOGIN","PLAYER_ENTERING_WORLD","PLAYER_XP_UPDATE","PLAYER_LEVEL_UP","QUEST_LOG_UPDATE","QUEST_TURNED_IN","PLAYER_REGEN_ENABLED"}) do pcall(events.RegisterEvent, events,event) end
-events:SetScript("OnEvent",function(_,event,...)
-    if not char then if event~="PLAYER_LOGIN" and event~="PLAYER_ENTERING_WORLD" then return end; if not A.init() then return end end
-    if event=="QUEST_TURNED_IN" and char.run then char.run.repeatRun=false end
-    -- Do not inspect journal/progression while combat restrictions may apply.
-    if safe(InCombatLockdown) then A.refresh(); return end
-    if not A.allowed() then if char.run then char.run=nil end; A.refresh(); return end
-    if event=="PLAYER_XP_UPDATE" or event=="PLAYER_LEVEL_UP" or event=="PLAYER_REGEN_ENABLED" then A.recordXP() end
-    if event=="QUEST_TURNED_IN" then
-        local id=A.number((...)); if id then char.completed[id]=true end
-        if char.run then char.run.repeatRun=false end
+function A.diagnostics()
+    local missing={}
+    for _,name in ipairs({"GetNumQuestLogEntries","GetInfo","GetQuestObjectives","IsComplete"}) do
+        if type((C_QuestLog or {})[name])~="function" then missing[#missing+1]="C_QuestLog."..name end
     end
-    if event=="PLAYER_ENTERING_WORLD" and char.run then
-        -- Zone transitions are only a reminder; entry/exit remain explicit.
-        A.message("Mudança de zona: confira a run ativa. Descarte se houve XP fora da dungeon.")
+    print("Dungeon Trail "..A.version.." • build "..A.build().." • "..(A.action and A.action.kind or "INITIALIZING").." • APIs ausentes: "..(#missing>0 and table.concat(missing,", ") or "nenhuma das essenciais"))
+end
+A.events=CreateFrame("Frame")
+local events={"PLAYER_LOGIN","PLAYER_ENTERING_WORLD","ZONE_CHANGED_NEW_AREA","ZONE_CHANGED","PLAYER_MAP_CHANGED","PLAYER_LEVEL_UP","PLAYER_XP_UPDATE","QUEST_ACCEPTED","QUEST_REMOVED","QUEST_TURNED_IN","QUEST_LOG_UPDATE","QUEST_WATCH_UPDATE","QUEST_POI_UPDATE","QUEST_DATA_LOAD_RESULT","WAYPOINT_UPDATE","PLAYER_REGEN_DISABLED","PLAYER_REGEN_ENABLED","PLAYER_DEAD","PLAYER_ALIVE","PLAYER_UNGHOST","SUPER_TRACKED_QUEST_CHANGED","GOSSIP_SHOW","GOSSIP_OPTIONS_REFRESHED","GOSSIP_CLOSED"}
+A.registrationErrors={}
+for _,event in ipairs(events) do local ok=pcall(A.events.RegisterEvent,A.events,event);if not ok then A.registrationErrors[#A.registrationErrors+1]=event end end
+A.events:SetScript("OnEvent",function(_,event,id)
+    if event=="PLAYER_LOGIN" then A.init() end
+    if event=="GOSSIP_SHOW" or event=="GOSSIP_OPTIONS_REFRESHED" then A.gossipOpen=true end
+    if event=="GOSSIP_CLOSED" or event=="PLAYER_ENTERING_WORLD" then A.gossipOpen=false end
+    if char and event=="QUEST_TURNED_IN" then
+        id=A.num(id);if id and id>0 then char.completed[id]=true end
     end
-    A.readJournal(); A.unlocks(); A.refresh()
+    if char and char.run and (event=="QUEST_TURNED_IN" or event=="QUEST_ACCEPTED" or event=="PLAYER_DEAD" ) then char.run.valid=false end
+    A.schedule()
 end)
-SLASH_ALLIANCEDUNGEONTRAIL1="/adt"
-SlashCmdList.ALLIANCEDUNGEONTRAIL=A.command

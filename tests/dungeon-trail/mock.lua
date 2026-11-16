@@ -44,7 +44,7 @@ function methods:RegisterEvent(e) self[e]=true end
 function methods:StartMoving() end
 function methods:StopMovingOrSizing() end
 function methods:SetFrameStrata() end
-function methods:Show() self.shown=true end
+function methods:Show() local changed=not self.shown;self.shown=true;if changed and self.scripts.OnShow then self.scripts.OnShow(self) end end
 function methods:Hide() self.shown=false end
 function methods:SetScale(s) self.scale=s end
 function methods:CreateTexture() return frame("Texture",nil,self) end
@@ -70,9 +70,40 @@ function methods:SetVerticalScroll(n) self.scroll=n end
 UIParent=frame("Frame","UIParent"); UIParent:SetSize(1920,1080)
 function CreateFrame(kind,name,parent) return frame(kind,name,parent or UIParent) end
 DT={}
-function fire(event,...) DT.events.scripts.OnEvent(DT.events,event,...) end
+function fire(event,...) DT.events.scripts.OnEvent(DT.events,event,...);if not TEST.defer then flush() end end
 function findDungeon(key) for i,d in ipairs(DT.catalog) do if d.key==key then return i end end end
 function clickTab(name)
  for _,f in ipairs(TEST.frames) do if f.caption and f.caption.text==name and f.scripts.OnClick then f.scripts.OnClick(f);return end end
  error("Tab not found: "..name)
 end
+
+TEST.now=100000;TEST.kind='none';TEST.instance='';TEST.instanceID=0;TEST.map=1;TEST.mapName='Westfall';TEST.tracked=0
+TEST.objectivesByID={};TEST.ready={};TEST.finished={};TEST.waypoints={};TEST.timers={};TEST.reads=0;TEST.trackCalls=0
+function issecrettable(v) return type(v)=='table' and v.secretTable==true end
+function UnitIsDeadOrGhost() return TEST.dead==true end
+function GetServerTime() return TEST.now end
+function GetRealZoneText() return TEST.mapName end
+function GetZoneText() return TEST.mapName end
+function GetInstanceInfo() return TEST.instance,TEST.kind,1,'Normal',5,0,false,TEST.instanceID end
+function IsInInstance() return TEST.kind~='none',TEST.kind end
+C_Timer={After=function(delay,fn) TEST.timers[#TEST.timers+1]=fn end}
+function flush() local tries=0;while #TEST.timers>0 do local q=TEST.timers;TEST.timers={};for _,fn in ipairs(q) do fn() end;tries=tries+1;assert(tries<20,'timer feedback loop') end end
+C_Map={GetBestMapForUnit=function()return TEST.map end,GetMapInfo=function(id)return {name=id==TEST.map and TEST.mapName or 'Map '..id} end}
+C_QuestLog.GetNumQuestLogEntries=function() TEST.reads=TEST.reads+1;return #TEST.journal end
+C_QuestLog.GetQuestObjectives=function(id)return TEST.objectivesByID[id] or {{text='Objetivo do cliente 0/1',finished=false,numFulfilled=0,numRequired=1}} end
+C_QuestLog.IsComplete=function(id)return TEST.ready[id] or false end
+C_QuestLog.IsFailed=function(id)return TEST.failed==id end
+C_QuestLog.IsQuestFlaggedCompleted=function(id)return TEST.finished[id] or false end
+C_QuestLog.GetNextWaypoint=function(id)local p=TEST.waypoints[id];if p then return p.map,p.x,p.y end end
+C_QuestLog.GetNextWaypointForMap=function(id,map)local p=TEST.waypoints[id];if p and p.map==map then return p.x,p.y end end
+C_QuestLog.GetNextWaypointText=function(id)return TEST.waypoints[id] and 'Destino ao vivo' end
+C_SuperTrack={GetSuperTrackedQuestID=function()return TEST.tracked end,IsSuperTrackingAnything=function()return TEST.otherPin or TEST.tracked>0 end,
+SetSuperTrackedQuestID=function(id)assert(not TEST.combat,'tracking in combat');TEST.trackCalls=TEST.trackCalls+1;TEST.tracked=id end}
+function methods:IsShown() return self.shown end
+function methods:SetFrameLevel() end
+function methods:HookScript(k,fn)local old=self.scripts[k];self.scripts[k]=function(...)if old then old(...) end;fn(...) end end
+function accept(id,title)TEST.journal[#TEST.journal+1]={questID=id,title=title or 'Título localizado',isHeader=false};fire('QUEST_ACCEPTED',id)end
+function enter(key)local d=DT.catalog[findDungeon(key)];TEST.kind='party';TEST.instance=d.name;TEST.instanceID=d.instanceID;TEST.map=TEST.instanceID;TEST.mapName=d.name;fire('PLAYER_ENTERING_WORLD')end
+function leave()TEST.kind='none';TEST.instance='';TEST.map=1;TEST.mapName='Westfall';fire('PLAYER_ENTERING_WORLD')end
+function visibleText(fragment)for _,f in ipairs(TEST.frames)do if f.text and f.text:find(fragment,1,true)then return true end end;return false end
+C_GossipInfo={GetAvailableQuests=function()return TEST.offers or {}end}

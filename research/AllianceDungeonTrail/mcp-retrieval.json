@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-16T01:06:29.699Z",
+  "at": "2026-11-16T03:33:14.793Z",
   "results": [
     {
       "name": "search_wow_api",
@@ -29,6 +29,71 @@
       },
       "result": [
         {
+          "id": "63f92f78ed4febf149667af8",
+          "title": "Talentos Legacy por árvore e impacto no leveling",
+          "content": "ando aplicável.\r\n- **Bartering**: reduz preços de vendedores.\r\n- **Performance Bonus**: pode aumentar Merchant's Favor de facções de comércio.\r\n- **Master Chef**: chance de produção adicional na culinária.\r\n- **Luremaster**: chance de pescar peixes extras.\r\n- **Dedicated Study**: recurso diário relacionado à evolução de profissões.\r\n\r\n## Resourcefulness\r\n- **Gourmand**: aumenta duração de bônus obtidos por alimentos.\r\n- **The Quick and the Dead**: facilita recuperação após morte.\r\n- **Reinforce**: reduz desgaste de equipamentos ao morrer.\r\n- **For Great Honor**: maior ganho de Honor, não é prioridade de leveling PvE.\r\n- **Permanence**: prolonga buffs de grupo, raid e camping.\r\n- **Diplomat**: bônus de reputação.\r\n- **Reagent Economy**: reduz a necessidade de reagentes compráveis em habilidades e recursos básicos de camping.\r\n\r\n## Prioridade como inteligência de produto\r\nO agente pode considerar Well Rested, Frequent Flier, Talented, Thrill of Adventure, Bartering e Reinforce como candidatos a estudos de UX voltados a leveling; **não** declarar uma ordem ótima universal sem simulação e fontes adicionais.\r\n",
+          "domain": "leveling",
+          "score": 1,
+          "method": "lexical",
+          "source_id": "blizzard-legacy",
+          "uri": "https://worldofwarcraft.blizzard.com/en-gb/news/24307383/get-to-know-the-world-of-warcraft-forever-legacy-system",
+          "build": null,
+          "evidence": "OFFICIAL_DOCUMENTATION",
+          "license": "original-summary-reference-only"
+        },
+        {
+          "id": "50301eb40c455817b717e77a",
+          "title": "Hunter Forever: mudanças para leveling e pets",
+          "content": "colher indicadores ou cálculos.\r\n- Ao sugerir prioridades de treino, verificar spellIDs, nível e instrutor atualizados.\r\n- Não extrapolar conteúdo do Petopia Classic sem validação.\r\n- Evitar automatizar combate ou ações protegidas.\r\n",
+          "domain": "leveling",
+          "score": 1,
+          "method": "lexical",
+          "source_id": "blizzard-hunter-druid",
+          "uri": "https://worldofwarcraft.blizzard.com/en-us/news/24301515/world-of-warcraft-forever-class-deep-dives-hunter-and-druid",
+          "build": null,
+          "evidence": "OFFICIAL_DOCUMENTATION",
+          "license": "original-summary-reference-only"
+        },
+        {
+          "id": "4f0026f7af6fce80357b94b7",
+          "title": "Camping, rested XP e recursos de leveling",
+          "content": "# Camping e experiência de descanso\r\n\r\nForever introduz Camping como parte das interações ao ar livre. Os jogadores podem participar de acampamentos e obter efeitos de descanso e buffs nas condições descritas pela Blizzard.\r\n\r\n## Relação com Legacy\r\nWell Rested pode alterar a velocidade e o teto da experiência de descanso. Field Guide pode modificar disponibilidade de recursos de camping. Permanence pode prolongar buffs de camping. Não presumir que esses bônus são expostos em uma única API identificável.\r\n\r\n## Aplicações para addons\r\n- Painel explicativo sobre estados e bônus de descanso quando dados são observáveis.\r\n- Comparação de efeitos verificados entre sessões.\r\n- Avisos contextuais sem simular timers inexistentes.\r\n- Interface discreta e minimalista, considerando que a sessão de leveling já contém muitos elementos.\r\n\r\nEvitar mecânicas inventadas de fabricação, pré-requisitos, materiais ou duração de buffs; dados detalhados precisam de fonte específica.\r\n",
+          "domain": "leveling",
+          "score": 1,
+          "method": "lexical",
+          "source_id": "blizzard-whats-new",
+          "uri": "https://worldofwarcraft.blizzard.com/en-us/news/24315821/",
+          "build": null,
+          "evidence": "OFFICIAL_DOCUMENTATION",
+          "license": "original-summary-reference-only"
+        },
+        {
+          "id": "7063536ae9878453c65ebfe5",
+          "title": "Azeroth Forever: escopo de leveling Alliance",
+          "content": "assic em rotas verificadas do Forever.\r\n- Uma solicitação de quest tracking depende de IDs, cadeias e flags reais do cliente ou fonte validada.\r\n\r\n## Estado deste documento\r\nConhecimento editorial baseado em anúncio oficial, não exportação completa dos dados do jogo. Sem IDs de quest, NPCs ou coordenadas inventados.\r\n",
+          "domain": "leveling",
+          "score": 1,
+          "method": "lexical",
+          "source_id": "blizzard-overview",
+          "uri": "https://worldofwarcraft.blizzard.com/en-us/news/24315643/return-to-azeroth-in-world-of-warcraft-forever",
+          "build": null,
+          "evidence": "OFFICIAL_DOCUMENTATION",
+          "license": "original-summary-reference-only"
+        },
+        {
+          "id": "be01f94450eb7df9c82603c5",
+          "title": "Oportunidades reais de addon de leveling Alliance",
+          "content": "isitos de chains; não lançar sem QuestIDs e relações com evidência.\r\n7. **Camping Companion**: estados de descanso e benefícios disponíveis; precisa de observação real e proteção contra API secreta.\r\n\r\n## Critério de qualidade\r\nNão gerar um addon como concluído apenas por existir código Lua. Cada pacote deve conter instalação correta, ícone original, testes, descrição de capacidade, limites e indicação explícita de 'não testado no cliente' até haver evidência.\r\n",
+          "domain": "leveling",
+          "score": 1,
+          "method": "lexical",
+          "source_id": "blizzard-overview",
+          "uri": "https://worldofwarcraft.blizzard.com/en-us/news/24315643/return-to-azeroth-in-world-of-warcraft-forever",
+          "build": null,
+          "evidence": "OFFICIAL_DOCUMENTATION",
+          "license": "original-summary-reference-only"
+        },
+        {
           "id": "1d689d30effb406608591536",
           "title": "Alliance 1–60 factory policy",
           "content": "# Factory policy (original)\r\nThis is an original operational document, not a game database.\r\nWoW Forever leveling is restricted to Alliance characters 1 through 60.\r\nUnknown quest identifiers, pet spawn locations, legacy talents, new dungeons and abilities must be verified against the actual Forever client or a version-matched source.\r\nFor addon API work, prefer Forever-compatible export and Mainline client API evidence; never assume Classic Era interfaces are interchangeable.\r\nDo not circumvent combat restrictions or secret-value rules. Never automate gameplay.\r\nThe factory can create a candidate ZIP, but only in-client validation can establish CLIENT_VERIFIED.\r\n",
@@ -40,6 +105,32 @@
           "build": null,
           "evidence": "OFFICIAL_FACTORY_POLICY",
           "license": "original"
+        },
+        {
+          "id": "13dea474d23200d28e456b7d",
+          "title": "Warlock: Banes, pets e especializações",
+          "content": "# Warlock (Alliance) no Forever\r\n\r\nO anúncio oficial destaca **Banes** como categoria distinta de maldições utilitárias e revisões de sinergia entre magias de Shadow, Fire e pets. Curse of Agony e Curse of Doom são descritas como Banes; o comportamento de alguns efeitos de curses foi adaptado. Demônios passam a escalar com atributos do personagem, conforme a descrição da Blizzard.\r\n\r\n## Para leveling\r\n- Um addon informativo sobre efeitos deveria verificar como o cliente expõe Banes e Curses antes de contabilizar debuffs.\r\n- Um assistente de pet deve consultar as APIs de unidade e pets para Warlock, sem assumir que são equivalentes às de Hunter.\r\n- Tree planner: Affliction, Demonology e Destruction foram atualizadas; **Incinerate** aparece na documentação como novo marco de 31 pontos em Destruction.\r\n- Não gerar automações de rotação nem sequências de magias executadas automaticamente.\r\n",
+          "domain": "leveling",
+          "score": 1,
+          "method": "lexical",
+          "source_id": "blizzard-rogue-warlock",
+          "uri": "https://worldofwarcraft.blizzard.com/en-us/news/24310968",
+          "build": null,
+          "evidence": "OFFICIAL_DOCUMENTATION",
+          "license": "original-summary-reference-only"
+        },
+        {
+          "id": "0907a4ca223d42675acba337",
+          "title": "Oportunidades reais de addon de leveling Alliance",
+          "content": "# Backlog orientado por funcionalidades observáveis\r\n\r\nA fábrica deve propor addons diferentes, conforme necessidades concretas do jogador da Alliance entre nível 1–60, mas sem depender de suposições sobre APIs ou IDs.\r\n\r\n## Ideias com dependências verificáveis\r\n1. **XP Pulse**: progresso de experiência e tempo de sessão; exige APIs e eventos de XP, interface compacta e SavedVariables.\r\n2. **Dungeon Roadmap**: índice de masmorras por intervalo de nível; usa faixas publicadas e informa que a elegibilidade de quests requer validação.\r\n3. **Legacy Planner**: catálogo de perks, decisões por personagem, dúvidas de progressão; ferramenta informativa inicialmente, podendo integrar dados do cliente quando API validada.\r\n4. **Alliance Class Trainer**: alertas e roteiros de treinamento; requer dados reais de spells, custos e instrutores por build.\r\n5. **Hunter Pet Journal**: caderno de pets e famílias; exige catálogo validado antes de fornecer localização exata.\r\n6. **Quest Readiness**: pré-requisitos de chains; não lançar sem QuestIDs e relações com evidência.\r\n7. **Camping Companion**: estados de descanso e benefícios disponíveis; precisa de observação real e proteção contra API secreta.\r\n",
+          "domain": "leveling",
+          "score": 1,
+          "method": "lexical",
+          "source_id": "blizzard-overview",
+          "uri": "https://worldofwarcraft.blizzard.com/en-us/news/24315643/return-to-azeroth-in-world-of-warcraft-forever",
+          "build": null,
+          "evidence": "OFFICIAL_DOCUMENTATION",
+          "license": "original-summary-reference-only"
         }
       ]
     },
@@ -49,21 +140,1679 @@
         "kind": "dungeon",
         "level": 20
       },
-      "result": []
+      "result": [
+        {
+          "id": "whf:dungeon:blackfathom-deeps",
+          "kind": "dungeon",
+          "name": "Blackfathom Deeps",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:blackfathom-deeps",
+            "kind": "dungeon",
+            "name": "Blackfathom Deeps",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": []
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.205Z"
+        },
+        {
+          "id": "whf:dungeon:blackrock-depths",
+          "kind": "dungeon",
+          "name": "Blackrock Depths",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:blackrock-depths",
+            "kind": "dungeon",
+            "name": "Blackrock Depths",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": []
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.208Z"
+        },
+        {
+          "id": "whf:dungeon:city-of-dalaran",
+          "kind": "dungeon",
+          "name": "City of Dalaran",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:city-of-dalaran",
+            "kind": "dungeon",
+            "name": "City of Dalaran",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": []
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.206Z"
+        },
+        {
+          "id": "whf:dungeon:dire-maul",
+          "kind": "dungeon",
+          "name": "Dire Maul",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:dire-maul",
+            "kind": "dungeon",
+            "name": "Dire Maul",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": []
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.208Z"
+        },
+        {
+          "id": "whf:dungeon:excavation-site-wetlands",
+          "kind": "dungeon",
+          "name": "Excavation Site: Wetlands",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:excavation-site-wetlands",
+            "kind": "dungeon",
+            "name": "Excavation Site: Wetlands",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": []
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.206Z"
+        },
+        {
+          "id": "whf:dungeon:gnomeregan",
+          "kind": "dungeon",
+          "name": "Gnomeregan",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:gnomeregan",
+            "kind": "dungeon",
+            "name": "Gnomeregan",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": []
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.206Z"
+        },
+        {
+          "id": "whf:dungeon:hall-of-thanes",
+          "kind": "dungeon",
+          "name": "Hall of Thanes",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:hall-of-thanes",
+            "kind": "dungeon",
+            "name": "Hall of Thanes",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": []
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.204Z"
+        },
+        {
+          "id": "whf:dungeon:kroldok-stronghold",
+          "kind": "dungeon",
+          "name": "Krol'dok Stronghold",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:kroldok-stronghold",
+            "kind": "dungeon",
+            "name": "Krol'dok Stronghold",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": []
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.207Z"
+        },
+        {
+          "id": "whf:dungeon:lower-blackrock-spire",
+          "kind": "dungeon",
+          "name": "Lower Blackrock Spire",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:lower-blackrock-spire",
+            "kind": "dungeon",
+            "name": "Lower Blackrock Spire",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": []
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.208Z"
+        },
+        {
+          "id": "whf:dungeon:maraudon",
+          "kind": "dungeon",
+          "name": "Maraudon",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:maraudon",
+            "kind": "dungeon",
+            "name": "Maraudon",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": []
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.208Z"
+        },
+        {
+          "id": "whf:dungeon:razorfen-downs",
+          "kind": "dungeon",
+          "name": "Razorfen Downs",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:razorfen-downs",
+            "kind": "dungeon",
+            "name": "Razorfen Downs",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": []
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.206Z"
+        },
+        {
+          "id": "whf:dungeon:razorfen-kraul",
+          "kind": "dungeon",
+          "name": "Razorfen Kraul",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:razorfen-kraul",
+            "kind": "dungeon",
+            "name": "Razorfen Kraul",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": []
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.206Z"
+        },
+        {
+          "id": "whf:dungeon:ruins-of-lordaeron",
+          "kind": "dungeon",
+          "name": "Ruins of Lordaeron",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:ruins-of-lordaeron",
+            "kind": "dungeon",
+            "name": "Ruins of Lordaeron",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": []
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.204Z"
+        },
+        {
+          "id": "forever:dungeon:ruins-lordaeron",
+          "kind": "dungeon",
+          "name": "Ruins of Lordaeron",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 15,
+          "max_level": 20,
+          "build": null,
+          "source_id": "blizzard-dungeons",
+          "evidence": "OFFICIAL_DOCUMENTATION",
+          "payload": {
+            "recommended_range": [
+              15,
+              20
+            ],
+            "location_description": "Tirisfal Glades, acima de Undercity",
+            "internal_game_id": null,
+            "quest_ids": [],
+            "access_note": "Confirmar missões, entrada, coordenadas e requisitos na build atual"
+          },
+          "updated_at": "2026-11-16T03:05:58.136Z"
+        },
+        {
+          "id": "dungeon-trail:lordaeron",
+          "kind": "dungeon",
+          "name": "Ruins of Lordaeron",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 15,
+          "max_level": 20,
+          "build": null,
+          "source_id": "https://news.blizzard.com/en-us/article/24301455/explore-the-new-dungeons-of-world-of-warcraft-forever",
+          "evidence": "OFFICIAL_DOCUMENTATION • faixa publicada; build atual não confirmada",
+          "payload": {
+            "suggestedRange": true,
+            "questCount": 1,
+            "availability": "UNVERIFIED"
+          },
+          "updated_at": "2026-11-16T03:27:21.954Z"
+        },
+        {
+          "id": "whf:dungeon:scarlet-monastery",
+          "kind": "dungeon",
+          "name": "Scarlet Monastery",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:scarlet-monastery",
+            "kind": "dungeon",
+            "name": "Scarlet Monastery",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": []
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.206Z"
+        },
+        {
+          "id": "whf:dungeon:scholomance",
+          "kind": "dungeon",
+          "name": "Scholomance",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:scholomance",
+            "kind": "dungeon",
+            "name": "Scholomance",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": []
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.208Z"
+        },
+        {
+          "id": "whf:dungeon:shadowfang-keep",
+          "kind": "dungeon",
+          "name": "Shadowfang Keep",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:shadowfang-keep",
+            "kind": "dungeon",
+            "name": "Shadowfang Keep",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": []
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.205Z"
+        },
+        {
+          "id": "whf:dungeon:stratholme",
+          "kind": "dungeon",
+          "name": "Stratholme",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:stratholme",
+            "kind": "dungeon",
+            "name": "Stratholme",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": []
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.208Z"
+        },
+        {
+          "id": "whf:dungeon:temple-of-atalhakkar",
+          "kind": "dungeon",
+          "name": "Temple of Atal'Hakkar",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:temple-of-atalhakkar",
+            "kind": "dungeon",
+            "name": "Temple of Atal'Hakkar",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": [
+                "Sunken Temple"
+              ]
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.208Z"
+        },
+        {
+          "id": "whf:dungeon:the-deadmines",
+          "kind": "dungeon",
+          "name": "The Deadmines",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:the-deadmines",
+            "kind": "dungeon",
+            "name": "The Deadmines",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": []
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.205Z"
+        },
+        {
+          "id": "dungeon-trail:deadmines",
+          "kind": "dungeon",
+          "name": "The Deadmines",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 17,
+          "max_level": 26,
+          "build": null,
+          "source_id": "https://www.method.gg/wow-forever/dungeons/the-deadmines",
+          "evidence": "COMMUNITY_UNVERIFIED • referência 1.60.1; conferir no cliente",
+          "payload": {
+            "suggestedRange": true,
+            "questCount": 8,
+            "availability": "UNVERIFIED"
+          },
+          "updated_at": "2026-11-16T03:27:21.955Z"
+        },
+        {
+          "id": "whf:dungeon:the-drowned-city",
+          "kind": "dungeon",
+          "name": "The Drowned City",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:the-drowned-city",
+            "kind": "dungeon",
+            "name": "The Drowned City",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": []
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.206Z"
+        },
+        {
+          "id": "whf:dungeon:the-stockade",
+          "kind": "dungeon",
+          "name": "The Stockade",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:the-stockade",
+            "kind": "dungeon",
+            "name": "The Stockade",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": [
+                "The Stockades",
+                "Stormwind Stockade"
+              ]
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.206Z"
+        },
+        {
+          "id": "whf:dungeon:uldaman",
+          "kind": "dungeon",
+          "name": "Uldaman",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:uldaman",
+            "kind": "dungeon",
+            "name": "Uldaman",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": []
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.207Z"
+        },
+        {
+          "id": "whf:dungeon:wailing-caverns",
+          "kind": "dungeon",
+          "name": "Wailing Caverns",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:wailing-caverns",
+            "kind": "dungeon",
+            "name": "Wailing Caverns",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": []
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.205Z"
+        },
+        {
+          "id": "dungeon-trail:wailing",
+          "kind": "dungeon",
+          "name": "Wailing Caverns",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 17,
+          "max_level": 25,
+          "build": null,
+          "source_id": "https://www.method.gg/wow-forever/dungeons/wailing-caverns",
+          "evidence": "COMMUNITY_UNVERIFIED • referência 1.60.1; conferir no cliente",
+          "payload": {
+            "suggestedRange": true,
+            "questCount": 5,
+            "availability": "UNVERIFIED"
+          },
+          "updated_at": "2026-11-16T03:27:21.955Z"
+        },
+        {
+          "id": "whf:dungeon:zulfarrak",
+          "kind": "dungeon",
+          "name": "Zul'Farrak",
+          "faction": "Neutral",
+          "alliance_access": 1,
+          "min_level": 1,
+          "max_level": 60,
+          "build": null,
+          "source_id": "whf:source:dungeon-quests",
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "payload": {
+            "id": "whf:dungeon:zulfarrak",
+            "kind": "dungeon",
+            "name": "Zul'Farrak",
+            "game_id": null,
+            "faction": "Neutral",
+            "alliance_access": true,
+            "source_ids": [
+              "whf:source:dungeon-quests"
+            ],
+            "patch": "1.60.1",
+            "build": null,
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "facts": {
+              "required_level": null,
+              "quest_level": null,
+              "recommended_range": null,
+              "coordinates": null,
+              "category": "Dungeon",
+              "aliases": []
+            },
+            "field_sources": {
+              "name": [
+                "whf:source:dungeon-quests"
+              ],
+              "faction": [
+                "whf:source:dungeon-quests"
+              ],
+              "alliance_access": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.category": [
+                "whf:source:dungeon-quests"
+              ],
+              "facts.aliases": [
+                "whf:source:dungeon-quests"
+              ]
+            },
+            "issues": [
+              "Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference."
+            ],
+            "dataset": "wowhead-forever",
+            "eligibility": "UNVERIFIED",
+            "requires_client_verification": true
+          },
+          "updated_at": "2026-11-16T03:05:58.207Z"
+        }
+      ]
     },
     {
       "name": "get_project_memory",
       "args": {
         "kind": "decision"
       },
-      "result": []
+      "result": [
+        {
+          "id": "6d998cf3a08382d66f9e",
+          "kind": "decision",
+          "addon": "AllianceDungeonTrail",
+          "title": "Dungeon Trail 2: live reconciliation and native navigation",
+          "body": "Quest IDs and live objectives drive progression; instance identity uses Map DB2 70938; preserve external tracking. No manual progress controls.",
+          "evidence": [
+            "research/AllianceDungeonTrail/REBUILD-ACCEPTANCE.md",
+            "research/AllianceDungeonTrail/API-CAPABILITIES.json"
+          ],
+          "build": null,
+          "created_at": "2026-11-16T03:27:21.960Z"
+        }
+      ]
+    },
+    {
+      "name": "get_knowledge_coverage",
+      "args": {},
+      "result": {
+        "dataset": "wowhead-forever",
+        "revision": "2026-11-15.1",
+        "complete": false,
+        "clientVerified": false,
+        "counts": {
+          "quest": 72,
+          "dungeon": 24,
+          "zone": 38,
+          "npc": 8,
+          "item": 4,
+          "object": 0,
+          "class": 9,
+          "profession": 12,
+          "pet_family": 9,
+          "flight_master": 0,
+          "ability": 0
+        },
+        "records": 176,
+        "operationalRecords": 176,
+        "quarantined": [],
+        "relations": 124,
+        "operationalRelations": 124,
+        "sources": 89,
+        "missingGameIds": {
+          "dungeon": 24,
+          "zone": 38,
+          "profession": 12,
+          "pet_family": 9,
+          "class": 9
+        },
+        "unknownRequirements": {
+          "quest": 5
+        },
+        "recordsWithIssues": 172,
+        "gaps": [
+          "Partial factual catalog, not a copy or exhaustive export of Wowhead. The quest listing reports 6,140 results with a 1,000-display cap; this is not an Alliance denominator.",
+          "No source record or gameplay claim is CLIENT_VERIFIED. Website patch labels do not establish the installed client build.",
+          "No operational coordinates, UI map IDs, flight-master graph, travel costs or spawn timers were obtained.",
+          "No complete quest chains, class/race matrix, spell ranks, recipe database, loot tables or XP formula were imported.",
+          "Alcaz Prison, Blackmaw Hold and Shaper’s Terrace quest coverage remains absent; consult phase availability separately.",
+          "Missing required levels remain null and must not be interpreted as level-1 eligibility.",
+          "Community comments and legacy Classic/Retail text are not authoritative current Forever data.",
+          "Source terms restrict redistribution; no crawler, HTML mirror, screenshots, guide steps or article/comment prose is included."
+        ]
+      }
+    },
+    {
+      "name": "get_gameplay_entity",
+      "args": {
+        "id": "whf:quest:2040",
+        "level": 17
+      },
+      "result": {
+        "id": "whf:quest:2040",
+        "kind": "quest",
+        "name": "Underground Assault",
+        "faction": "Alliance",
+        "alliance_access": 1,
+        "min_level": 15,
+        "max_level": 60,
+        "build": null,
+        "source_id": "whf:source:quest-2040",
+        "evidence": "COMMUNITY_UNVERIFIED",
+        "payload": {
+          "id": "whf:quest:2040",
+          "kind": "quest",
+          "name": "Underground Assault",
+          "game_id": 2040,
+          "faction": "Alliance",
+          "alliance_access": true,
+          "source_ids": [
+            "whf:source:quest-2040",
+            "whf:source:dungeon-quests"
+          ],
+          "patch": "1.60.1",
+          "build": null,
+          "evidence": "COMMUNITY_UNVERIFIED",
+          "facts": {
+            "required_level": 15,
+            "quest_level": null,
+            "recommended_range": null,
+            "coordinates": null,
+            "category": "The Deadmines",
+            "giver": "Shoni the Shilent",
+            "zone": "Stormwind City"
+          },
+          "field_sources": {
+            "name": [
+              "whf:source:quest-2040"
+            ],
+            "faction": [
+              "whf:source:dungeon-quests"
+            ],
+            "alliance_access": [
+              "whf:source:dungeon-quests"
+            ],
+            "game_id": [
+              "whf:source:quest-2040"
+            ],
+            "facts.required_level": [
+              "whf:source:dungeon-quests"
+            ],
+            "facts.category": [
+              "whf:source:dungeon-quests"
+            ],
+            "facts.giver": [
+              "whf:source:dungeon-quests"
+            ],
+            "facts.zone": [
+              "whf:source:dungeon-quests"
+            ]
+          },
+          "issues": [
+            "Prerequisite graph and availability are partial; compare with the active client journal."
+          ],
+          "dataset": "wowhead-forever",
+          "eligibility": "COMMUNITY_REFERENCE_ONLY",
+          "requires_client_verification": true
+        },
+        "updated_at": "2026-11-16T03:05:58.209Z",
+        "levelContext": 17,
+        "meetsReferenceMinimum": true,
+        "availability": "UNVERIFIED",
+        "relations": [
+          {
+            "id": "whf:relation:f0868939c49784261a838b28",
+            "from_id": "whf:quest:2040",
+            "to_id": "whf:dungeon:the-deadmines",
+            "relation": "associated_with",
+            "source_id": "whf:source:dungeon-quests",
+            "name": "The Deadmines",
+            "kind": "dungeon",
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "build": null,
+            "direction": "outgoing"
+          },
+          {
+            "id": "whf:relation:ae99404033741de5ca029589",
+            "from_id": "whf:quest:2040",
+            "to_id": "whf:npc:6579",
+            "relation": "given_by",
+            "source_id": "whf:source:quest-2040",
+            "name": "Shoni the Shilent",
+            "kind": "npc",
+            "evidence": "COMMUNITY_UNVERIFIED",
+            "build": null,
+            "direction": "outgoing"
+          }
+        ],
+        "graphComplete": false
+      }
     },
     {
       "name": "get_project_memory",
       "args": {
         "kind": "failure"
       },
-      "result": []
+      "result": [
+        {
+          "id": "f7dccabb6431dc9b1071",
+          "kind": "failure",
+          "addon": "AllianceDungeonTrail",
+          "title": "Legacy v1 test contradicts current product contract",
+          "body": "Main d187e520 failed 1/46: legacy blueprint lacks authorship and interactivity. Replace product and behavior tests, never relax validators.",
+          "evidence": [
+            "research/AllianceDungeonTrail/RESEARCH.md"
+          ],
+          "build": null,
+          "created_at": "2026-11-16T03:27:21.960Z"
+        }
+      ]
     },
     {
       "name": "check_client_capability",
@@ -73,8 +1822,19 @@
       "result": {
         "id": "indoor-navigation",
         "status": "UNVERIFIED",
-        "reason": "No verified capability for this build",
-        "evidence": []
+        "build": null,
+        "apis": [],
+        "events": [],
+        "restrictions": [
+          "No live 70938 client execution; Forever UI signatures documented; nullable/secret data must be rejected"
+        ],
+        "alternatives": [
+          "Live objective with original boss/area reference when native waypoint is unavailable"
+        ],
+        "evidence": [
+          "research/AllianceDungeonTrail/API-CAPABILITIES.json"
+        ],
+        "updated_at": "2026-11-16T03:27:21.959Z"
       }
     },
     {
@@ -85,8 +1845,19 @@
       "result": {
         "id": "quest-journal",
         "status": "UNVERIFIED",
-        "reason": "No verified capability for this build",
-        "evidence": []
+        "build": null,
+        "apis": [],
+        "events": [],
+        "restrictions": [
+          "No live 70938 client execution; Forever UI signatures documented; nullable/secret data must be rejected"
+        ],
+        "alternatives": [
+          "Block essential missing reads; never substitute manual progress"
+        ],
+        "evidence": [
+          "research/AllianceDungeonTrail/API-CAPABILITIES.json"
+        ],
+        "updated_at": "2026-11-16T03:27:21.959Z"
       }
     },
     {
@@ -98,19 +1869,18 @@
         "id": "xp-display",
         "status": "UNVERIFIED",
         "build": null,
-        "apis": [
-          "UnitXP",
-          "UnitXPMax"
-        ],
-        "events": [
-          "PLAYER_XP_UPDATE"
-        ],
+        "apis": [],
+        "events": [],
         "restrictions": [
-          "Confirm functions in client"
+          "No live 70938 client execution; Forever UI signatures documented; nullable/secret data must be rejected"
         ],
-        "alternatives": [],
-        "evidence": [],
-        "updated_at": "2026-11-16T00:49:17.599Z"
+        "alternatives": [
+          "Block essential missing reads; never substitute manual progress"
+        ],
+        "evidence": [
+          "research/AllianceDungeonTrail/API-CAPABILITIES.json"
+        ],
+        "updated_at": "2026-11-16T03:27:21.960Z"
       }
     },
     {
@@ -129,7 +1899,7 @@
         ],
         "alternatives": [],
         "evidence": [],
-        "updated_at": "2026-11-16T00:49:17.599Z"
+        "updated_at": "2026-11-16T03:05:58.134Z"
       }
     }
   ]
