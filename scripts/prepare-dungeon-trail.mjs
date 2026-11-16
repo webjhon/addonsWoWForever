@@ -127,8 +127,9 @@ function lua(v){
  if(v===null)return 'nil';if(typeof v==='string')return JSON.stringify(v);
  if(typeof v==='number'||typeof v==='boolean')return String(v);
  if(Array.isArray(v))return '{'+v.map(lua).join(',\n')+'}';
- return '{'+Object.entries(v).map(([k,x])=>'['+lua(k)+']='+lua(x)).join(',')+'}';
+ return '{'+Object.entries(v).map(([k,x])=>'['+lua(/^\d+$/.test(k)?Number(k):k)+']='+lua(x)).join(',')+'}';
 }
-fs.writeFileSync(path.join(out,'Data.lua'),'local _, A = ...\nA.catalog = '+lua(catalog)+'\n');
+const routes=JSON.parse(fs.readFileSync(path.join(root,'knowledge/alliance/dungeon-trail-routes.json'),'utf8'));
+fs.writeFileSync(path.join(out,'Data.lua'),'local _, A = ...\nA.catalog = '+lua(catalog)+'\nA.routes = '+lua(routes.points)+'\nA.overviews = '+lua(routes.dungeons)+'\n');
 fs.writeFileSync(path.join(root,'research/AllianceDungeonTrail/catalog.json'),JSON.stringify(catalog,null,2)+'\n');
 await import('./blueprint-dungeon-trail.mjs');

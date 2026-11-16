@@ -1,5 +1,5 @@
 local _, A = ...
-A.version="2.0.0"
+A.version="3.0.0"
 local char, snapshot
 local scheduled=false
 local function completed(id)
@@ -28,6 +28,7 @@ function A.init()
     for _,key in ipairs({"completed","seen","notified","history","instances"}) do
         if not A.table(char[key]) then char[key]={} end
     end
+    if A.initOptions then A.initOptions(char) end
     if char.run then char.run=nil;char.recovery="Expedição anterior excluída da estimativa após reload." end
     return true
 end
@@ -75,11 +76,13 @@ end
 function A.nextDungeon(level)
     for _,d in ipairs(A.catalog) do if d.covered and d.level>level then return d end end
 end
+A.instanceDungeon=matchDungeon
 local function activeCount(d,s)
     local n=0;for _,q in ipairs(d.quests) do if s.quests[q.id] then n=n+1 end end;return n
 end
 local function selectDungeon(s)
     if s.inside then return matchDungeon(s) end
+    if char.plan then local planned=A.findDungeon(char.plan);if planned then return planned end end
     -- Ready turn-ins across the whole catalog cannot be lost at a level boundary.
     for _,d in ipairs(A.catalog) do
         for _,q in ipairs(d.quests) do if s.quests[q.id] and s.quests[q.id].complete then return d end end
@@ -202,6 +205,7 @@ local function reconcileRun(s)
         char.run=nil
     end
     if key and not char.run then
+        if not A.freshLogin then char.encounters[key]={} end
         char.run={key=key,build=s.build,level=s.level,lastLevel=s.level,lastXP=s.xp,lastMax=s.max,gain=0,fraction=0,started=s.now,
             valid=not A.freshLogin and s.xp~=nil and s.max~=nil and s.max>0 and activeCount(d,s)==0 and not s.dead}
     elseif key then updateXP(s) end
@@ -235,7 +239,7 @@ function A.reconcile()
         for _,d in ipairs(A.catalog) do
             if d.level<=s.level and s.level<=d.high and not char.notified[d.key] then
                 char.notified[d.key]=true
-                print("|cffdfba72Dungeon Trail|r Nova faixa sugerida: "..d.name.." ("..d.level.."–"..d.high.."). Acesso não garantido.")
+                if not char.options or char.options.alerts then print("|cffdfba72Dungeon Trail|r Nova faixa sugerida: "..d.name.." ("..d.level.."–"..d.high.."). Acesso não garantido.") end
             end
         end
     elseif char.run then char.run.valid=false end
@@ -248,6 +252,7 @@ function A.reconcile()
         if A.action.waypointText~="" then A.action.detail=A.action.waypointText.."\n"..A.action.detail end
     end
     A.track(A.action)
+    if A.setGoal then A.setGoal(s) end
     if A.render then A.render() end
 end
 function A.schedule()
@@ -263,13 +268,14 @@ function A.diagnostics()
     print("Dungeon Trail "..A.version.." • build "..A.build().." • "..(A.action and A.action.kind or "INITIALIZING").." • APIs ausentes: "..(#missing>0 and table.concat(missing,", ") or "nenhuma das essenciais"))
 end
 A.events=CreateFrame("Frame")
-local events={"PLAYER_LOGIN","PLAYER_ENTERING_WORLD","ZONE_CHANGED_NEW_AREA","ZONE_CHANGED","PLAYER_MAP_CHANGED","PLAYER_LEVEL_UP","PLAYER_XP_UPDATE","QUEST_ACCEPTED","QUEST_REMOVED","QUEST_TURNED_IN","QUEST_LOG_UPDATE","QUEST_WATCH_UPDATE","QUEST_POI_UPDATE","QUEST_DATA_LOAD_RESULT","WAYPOINT_UPDATE","PLAYER_REGEN_DISABLED","PLAYER_REGEN_ENABLED","PLAYER_DEAD","PLAYER_ALIVE","PLAYER_UNGHOST","SUPER_TRACKED_QUEST_CHANGED","GOSSIP_SHOW","GOSSIP_OPTIONS_REFRESHED","GOSSIP_CLOSED"}
+local events={"PLAYER_LOGIN","PLAYER_ENTERING_WORLD","ZONE_CHANGED_NEW_AREA","ZONE_CHANGED","PLAYER_MAP_CHANGED","PLAYER_LEVEL_UP","PLAYER_XP_UPDATE","QUEST_ACCEPTED","QUEST_REMOVED","QUEST_TURNED_IN","QUEST_LOG_UPDATE","QUEST_WATCH_UPDATE","QUEST_POI_UPDATE","QUEST_DATA_LOAD_RESULT","WAYPOINT_UPDATE","PLAYER_REGEN_DISABLED","PLAYER_REGEN_ENABLED","PLAYER_DEAD","PLAYER_ALIVE","PLAYER_UNGHOST","SUPER_TRACKED_QUEST_CHANGED","ENCOUNTER_END","GOSSIP_SHOW","GOSSIP_OPTIONS_REFRESHED","GOSSIP_CLOSED"}
 A.registrationErrors={}
 for _,event in ipairs(events) do local ok=pcall(A.events.RegisterEvent,A.events,event);if not ok then A.registrationErrors[#A.registrationErrors+1]=event end end
-A.events:SetScript("OnEvent",function(_,event,id)
+A.events:SetScript("OnEvent",function(_,event,id,name,difficulty,groupSize,success)
     if event=="PLAYER_LOGIN" then A.init() end
     if event=="GOSSIP_SHOW" or event=="GOSSIP_OPTIONS_REFRESHED" then A.gossipOpen=true end
     if event=="GOSSIP_CLOSED" or event=="PLAYER_ENTERING_WORLD" then A.gossipOpen=false end
+    if char and event=="ENCOUNTER_END" and A.numberSafeSuccess then A.numberSafeSuccess(id,success) end
     if char and event=="QUEST_TURNED_IN" then
         id=A.num(id);if id and id>0 then char.completed[id]=true end
     end

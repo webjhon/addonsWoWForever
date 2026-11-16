@@ -1,8 +1,8 @@
 ## Interface: 16001
 ## Title: Alliance Dungeon Trail
-## Notes: Reactive dungeon companion: live objectives, next action and native quest navigation.
+## Notes: Reactive dungeon companion: live objectives, next action and own directional arrow, planning hub and live quest progression.
 ## Author: Tonho Contrabando
-## Version: 2.0.0
+## Version: 3.0.0
 ## X-Flavor: Forever
 ## IconTexture: Interface\AddOns\AllianceDungeonTrail\assets\Icon.tga
 ## SavedVariables: AllianceDungeonTrailDB
@@ -11,4 +11,5 @@ Data.lua
 Adapters.lua
 Navigation.lua
 Core.lua
+Product.lua
 UI.lua

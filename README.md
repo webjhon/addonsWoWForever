@@ -17,9 +17,9 @@ Todo novo addon deve conectar-se a dados reais do personagem, reagir a eventos, 
 
 O exemplo `AllianceLevelPulse` é apenas uma demonstração de funcionamento do pipeline, não referência de acabamento premium.
 
-## AllianceDungeonTrail 2.0 candidata
+## AllianceDungeonTrail 3.0 candidata
 
-Reconstruído com objetivos ao vivo, entrada automática, progresso/entrega por ID, navegação nativa quando disponível e créditos Tonho Contrabando. Fontes em `addon-src/AllianceDungeonTrail`; pasta instalável em [addons/AllianceDungeonTrail](addons/AllianceDungeonTrail); [ZIP2.0](releases/AllianceDungeonTrail-2.0.0-candidate.zip), [instalação](addons/AllianceDungeonTrail/INSTALL.md), [relatório](research/AllianceDungeonTrail/TEST-REPORT.md), [revisão crítica](research/AllianceDungeonTrail/PRODUCT-REVIEW.md).
+Reconstruído com objetivos ao vivo, entrada automática, progresso/entrega por ID, seta própria com cálculo de rumo/distância, seletor livre de27 dungeons, overview e configurações e créditos Tonho Contrabando. Fontes em `addon-src/AllianceDungeonTrail`; pasta instalável em [addons/AllianceDungeonTrail](addons/AllianceDungeonTrail); [ZIP3.0](releases/AllianceDungeonTrail-3.0.0-candidate.zip), [instalação](addons/AllianceDungeonTrail/INSTALL.md), [relatório](research/AllianceDungeonTrail/TEST-REPORT.md), [revisão crítica](research/AllianceDungeonTrail/PRODUCT-REVIEW.md).
 
 Dados Map70938 em [knowledge/alliance/forever-dungeon-maps.json](knowledge/alliance/forever-dungeon-maps.json): IDs de instância e nomes enUS/ptBR, com fonte/hash. Não são coordenadas nem UIMapIDs. Runtime e gameplay continuam pendentes de teste real; quatro guias sem quests estão bloqueados por dados. A candidata não implica aprovação do produto.
 

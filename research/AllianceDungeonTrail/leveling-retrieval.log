@@ -1,0 +1,110 @@
+
+> wow-addon-ai-factory@0.1.0 search
+> node --experimental-strip-types scripts/factory.ts search dungeon quest --domain leveling --level 20
+
+[
+  {
+    "id": "whf:doc:whf:dungeon:gnomeregan",
+    "title": "Gnomeregan dungeon",
+    "content": "{\"entity\":\"Gnomeregan\",\"kind\":\"dungeon\",\"id\":\"whf:dungeon:gnomeregan\",\"game_id\":null,\"faction\":\"Neutral\",\"facts\":{\"required_level\":null,\"quest_level\":null,\"recommended_range\":null,\"coordinates\":null,\"category\":\"Dungeon\",\"aliases\":[]},\"evidence\":\"COMMUNITY_UNVERIFIED\",\"patch\":\"1.60.1\",\"build\":null,\"field_sources\":{\"name\":[\"whf:source:dungeon-quests\"],\"faction\":[\"whf:source:dungeon-quests\"],\"alliance_access\":[\"whf:source:dungeon-quests\"],\"facts.category\":[\"whf:source:dungeon-quests\"],\"facts.aliases\":[\"whf:source:dungeon-quests\"]},\"sources\":[{\"id\":\"whf:source:dungeon-quests\",\"uri\":\"https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location\"}],\"issues\":[\"Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference.\"],\"warning\":\"Discovery only; verify eligibility and current client before generating guide steps.\"}",
+    "domain": "leveling",
+    "score": 1,
+    "method": "lexical",
+    "source_id": "whf:source:dungeon-quests",
+    "uri": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
+    "build": null,
+    "evidence": "COMMUNITY_UNVERIFIED",
+    "license": "original-factual-curation"
+  },
+  {
+    "id": "whf:doc:whf:dungeon:uldaman",
+    "title": "Uldaman dungeon",
+    "content": "{\"entity\":\"Uldaman\",\"kind\":\"dungeon\",\"id\":\"whf:dungeon:uldaman\",\"game_id\":null,\"faction\":\"Neutral\",\"facts\":{\"required_level\":null,\"quest_level\":null,\"recommended_range\":null,\"coordinates\":null,\"category\":\"Dungeon\",\"aliases\":[]},\"evidence\":\"COMMUNITY_UNVERIFIED\",\"patch\":\"1.60.1\",\"build\":null,\"field_sources\":{\"name\":[\"whf:source:dungeon-quests\"],\"faction\":[\"whf:source:dungeon-quests\"],\"alliance_access\":[\"whf:source:dungeon-quests\"],\"facts.category\":[\"whf:source:dungeon-quests\"],\"facts.aliases\":[\"whf:source:dungeon-quests\"]},\"sources\":[{\"id\":\"whf:source:dungeon-quests\",\"uri\":\"https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location\"}],\"issues\":[\"Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference.\"],\"warning\":\"Discovery only; verify eligibility and current client before generating guide steps.\"}",
+    "domain": "leveling",
+    "score": 1,
+    "method": "lexical",
+    "source_id": "whf:source:dungeon-quests",
+    "uri": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
+    "build": null,
+    "evidence": "COMMUNITY_UNVERIFIED",
+    "license": "original-factual-curation"
+  },
+  {
+    "id": "whf:doc:whf:dungeon:maraudon",
+    "title": "Maraudon dungeon",
+    "content": "{\"entity\":\"Maraudon\",\"kind\":\"dungeon\",\"id\":\"whf:dungeon:maraudon\",\"game_id\":null,\"faction\":\"Neutral\",\"facts\":{\"required_level\":null,\"quest_level\":null,\"recommended_range\":null,\"coordinates\":null,\"category\":\"Dungeon\",\"aliases\":[]},\"evidence\":\"COMMUNITY_UNVERIFIED\",\"patch\":\"1.60.1\",\"build\":null,\"field_sources\":{\"name\":[\"whf:source:dungeon-quests\"],\"faction\":[\"whf:source:dungeon-quests\"],\"alliance_access\":[\"whf:source:dungeon-quests\"],\"facts.category\":[\"whf:source:dungeon-quests\"],\"facts.aliases\":[\"whf:source:dungeon-quests\"]},\"sources\":[{\"id\":\"whf:source:dungeon-quests\",\"uri\":\"https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location\"}],\"issues\":[\"Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference.\"],\"warning\":\"Discovery only; verify eligibility and current client before generating guide steps.\"}",
+    "domain": "leveling",
+    "score": 1,
+    "method": "lexical",
+    "source_id": "whf:source:dungeon-quests",
+    "uri": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
+    "build": null,
+    "evidence": "COMMUNITY_UNVERIFIED",
+    "license": "original-factual-curation"
+  },
+  {
+    "id": "whf:doc:whf:dungeon:scholomance",
+    "title": "Scholomance dungeon",
+    "content": "{\"entity\":\"Scholomance\",\"kind\":\"dungeon\",\"id\":\"whf:dungeon:scholomance\",\"game_id\":null,\"faction\":\"Neutral\",\"facts\":{\"required_level\":null,\"quest_level\":null,\"recommended_range\":null,\"coordinates\":null,\"category\":\"Dungeon\",\"aliases\":[]},\"evidence\":\"COMMUNITY_UNVERIFIED\",\"patch\":\"1.60.1\",\"build\":null,\"field_sources\":{\"name\":[\"whf:source:dungeon-quests\"],\"faction\":[\"whf:source:dungeon-quests\"],\"alliance_access\":[\"whf:source:dungeon-quests\"],\"facts.category\":[\"whf:source:dungeon-quests\"],\"facts.aliases\":[\"whf:source:dungeon-quests\"]},\"sources\":[{\"id\":\"whf:source:dungeon-quests\",\"uri\":\"https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location\"}],\"issues\":[\"Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference.\"],\"warning\":\"Discovery only; verify eligibility and current client before generating guide steps.\"}",
+    "domain": "leveling",
+    "score": 1,
+    "method": "lexical",
+    "source_id": "whf:source:dungeon-quests",
+    "uri": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
+    "build": null,
+    "evidence": "COMMUNITY_UNVERIFIED",
+    "license": "original-factual-curation"
+  },
+  {
+    "id": "whf:doc:whf:dungeon:stratholme",
+    "title": "Stratholme dungeon",
+    "content": "{\"entity\":\"Stratholme\",\"kind\":\"dungeon\",\"id\":\"whf:dungeon:stratholme\",\"game_id\":null,\"faction\":\"Neutral\",\"facts\":{\"required_level\":null,\"quest_level\":null,\"recommended_range\":null,\"coordinates\":null,\"category\":\"Dungeon\",\"aliases\":[]},\"evidence\":\"COMMUNITY_UNVERIFIED\",\"patch\":\"1.60.1\",\"build\":null,\"field_sources\":{\"name\":[\"whf:source:dungeon-quests\"],\"faction\":[\"whf:source:dungeon-quests\"],\"alliance_access\":[\"whf:source:dungeon-quests\"],\"facts.category\":[\"whf:source:dungeon-quests\"],\"facts.aliases\":[\"whf:source:dungeon-quests\"]},\"sources\":[{\"id\":\"whf:source:dungeon-quests\",\"uri\":\"https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location\"}],\"issues\":[\"Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference.\"],\"warning\":\"Discovery only; verify eligibility and current client before generating guide steps.\"}",
+    "domain": "leveling",
+    "score": 1,
+    "method": "lexical",
+    "source_id": "whf:source:dungeon-quests",
+    "uri": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
+    "build": null,
+    "evidence": "COMMUNITY_UNVERIFIED",
+    "license": "original-factual-curation"
+  },
+  {
+    "id": "whf:doc:whf:dungeon:zulfarrak",
+    "title": "Zul'Farrak dungeon",
+    "content": "{\"entity\":\"Zul'Farrak\",\"kind\":\"dungeon\",\"id\":\"whf:dungeon:zulfarrak\",\"game_id\":null,\"faction\":\"Neutral\",\"facts\":{\"required_level\":null,\"quest_level\":null,\"recommended_range\":null,\"coordinates\":null,\"category\":\"Dungeon\",\"aliases\":[]},\"evidence\":\"COMMUNITY_UNVERIFIED\",\"patch\":\"1.60.1\",\"build\":null,\"field_sources\":{\"name\":[\"whf:source:dungeon-quests\"],\"faction\":[\"whf:source:dungeon-quests\"],\"alliance_access\":[\"whf:source:dungeon-quests\"],\"facts.category\":[\"whf:source:dungeon-quests\"],\"facts.aliases\":[\"whf:source:dungeon-quests\"]},\"sources\":[{\"id\":\"whf:source:dungeon-quests\",\"uri\":\"https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location\"}],\"issues\":[\"Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference.\"],\"warning\":\"Discovery only; verify eligibility and current client before generating guide steps.\"}",
+    "domain": "leveling",
+    "score": 1,
+    "method": "lexical",
+    "source_id": "whf:source:dungeon-quests",
+    "uri": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
+    "build": null,
+    "evidence": "COMMUNITY_UNVERIFIED",
+    "license": "original-factual-curation"
+  },
+  {
+    "id": "whf:doc:whf:dungeon:the-deadmines",
+    "title": "The Deadmines dungeon",
+    "content": "{\"entity\":\"The Deadmines\",\"kind\":\"dungeon\",\"id\":\"whf:dungeon:the-deadmines\",\"game_id\":null,\"faction\":\"Neutral\",\"facts\":{\"required_level\":null,\"quest_level\":null,\"recommended_range\":null,\"coordinates\":null,\"category\":\"Dungeon\",\"aliases\":[]},\"evidence\":\"COMMUNITY_UNVERIFIED\",\"patch\":\"1.60.1\",\"build\":null,\"field_sources\":{\"name\":[\"whf:source:dungeon-quests\"],\"faction\":[\"whf:source:dungeon-quests\"],\"alliance_access\":[\"whf:source:dungeon-quests\"],\"facts.category\":[\"whf:source:dungeon-quests\"],\"facts.aliases\":[\"whf:source:dungeon-quests\"]},\"sources\":[{\"id\":\"whf:source:dungeon-quests\",\"uri\":\"https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location\"}],\"issues\":[\"Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference.\"],\"warning\":\"Discovery only; verify eligibility and current client before generating guide steps.\"}",
+    "domain": "leveling",
+    "score": 1,
+    "method": "lexical",
+    "source_id": "whf:source:dungeon-quests",
+    "uri": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
+    "build": null,
+    "evidence": "COMMUNITY_UNVERIFIED",
+    "license": "original-factual-curation"
+  },
+  {
+    "id": "whf:doc:whf:dungeon:wailing-caverns",
+    "title": "Wailing Caverns dungeon",
+    "content": "{\"entity\":\"Wailing Caverns\",\"kind\":\"dungeon\",\"id\":\"whf:dungeon:wailing-caverns\",\"game_id\":null,\"faction\":\"Neutral\",\"facts\":{\"required_level\":null,\"quest_level\":null,\"recommended_range\":null,\"coordinates\":null,\"category\":\"Dungeon\",\"aliases\":[]},\"evidence\":\"COMMUNITY_UNVERIFIED\",\"patch\":\"1.60.1\",\"build\":null,\"field_sources\":{\"name\":[\"whf:source:dungeon-quests\"],\"faction\":[\"whf:source:dungeon-quests\"],\"alliance_access\":[\"whf:source:dungeon-quests\"],\"facts.category\":[\"whf:source:dungeon-quests\"],\"facts.aliases\":[\"whf:source:dungeon-quests\"]},\"sources\":[{\"id\":\"whf:source:dungeon-quests\",\"uri\":\"https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location\"}],\"issues\":[\"Recommended levels, instance IDs, entrance coordinates and current availability not established by this reference.\"],\"warning\":\"Discovery only; verify eligibility and current client before generating guide steps.\"}",
+    "domain": "leveling",
+    "score": 1,
+    "method": "lexical",
+    "source_id": "whf:source:dungeon-quests",
+    "uri": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
+    "build": null,
+    "evidence": "COMMUNITY_UNVERIFIED",
+    "license": "original-factual-curation"
+  }
+]

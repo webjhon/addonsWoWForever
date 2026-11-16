@@ -1,0 +1,5 @@
+
+> wow-addon-ai-factory@0.1.0 search
+> node --experimental-strip-types scripts/factory.ts search map --domain api
+
+[]

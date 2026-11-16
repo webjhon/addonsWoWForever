@@ -107,3 +107,11 @@ function enter(key)local d=DT.catalog[findDungeon(key)];TEST.kind='party';TEST.i
 function leave()TEST.kind='none';TEST.instance='';TEST.map=1;TEST.mapName='Westfall';fire('PLAYER_ENTERING_WORLD')end
 function visibleText(fragment)for _,f in ipairs(TEST.frames)do if f.text and f.text:find(fragment,1,true)then return true end end;return false end
 C_GossipInfo={GetAvailableQuests=function()return TEST.offers or {}end}
+
+function methods:EnableMouseWheel()end
+function methods:SetRotation(v)self.rotation=v end
+function GetPlayerFacing()return TEST.facing or 0 end
+function CreateVector2D(x,y)return {GetXY=function()return x,y end}end
+C_Map.GetPlayerMapPosition=function(map,unit)if TEST.positionMissing then return nil end;return CreateVector2D(TEST.px or .5,TEST.py or .5)end
+C_Map.GetWorldPosFromMapPos=function(map,point)local x,y=point:GetXY();return TEST.world or 0,CreateVector2D(-y*1000,-x*1000)end
+C_Timer.NewTicker=function(interval,fn)local t={callback=fn};function t:Cancel()self.cancelled=true end;TEST.tickers=TEST.tickers or {};table.insert(TEST.tickers,t);return t end

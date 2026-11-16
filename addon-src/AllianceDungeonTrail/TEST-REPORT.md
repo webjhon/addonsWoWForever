@@ -1,17 +1,13 @@
-# Relatório executado — AllianceDungeonTrail2.0.0
+# AllianceDungeonTrail 3.0.0 — relatório executado
 
-Execução: 2026-11-16T03:35:00.948Z. Node v24.18.0. **STATIC_PASSED / MOCK_PASSED. CLIENT_VERIFIED: NÃO. Nenhum teste dentro do WoW foi realizado.**
+Execução: 2026-11-16T13:02:00.140Z. Node v24.18.0. **71/71 testes aprovados**, incluindo36 cenários específicos. STATIC_PASSED/MOCK_PASSED. **Nenhum teste dentro do WoW realizado.**
 
-- Suíte completa: **60/60**, zero falhas. Inclui comportamento do addon em Fengari e testes da fábrica/base factual. Logs integrais em node-tests.log; cenários detalhados em tests/dungeon-trail.test.ts.
-- Motor Lua executado em cenários de aceite localizado, viagem/entrada, objetivos fora de ordem, confirmação autoritativa, entrega/abandono, oferta do NPC, mapa/waypoint ausente, rastreamento externo, combate/retomada, morte/ressurreição, reload/GUID, migração de checks antigos, API ausente/valores secretos simulados, rajadas de eventos e calibração de XP conservadora. Não são só testes de regex ou presença de campos.
-- Luaparse valida sintaxe Lua5.1; Fengari executa semântica Lua5.3. Mock não reproduz cliente, taint, valores secretos reais, renderização ou gameplay.
-- Os validadores novos de qualidade/autoria permanecem intactos. O teste legado foi substituído por contrato2.0 e verificações de rejeição para autoria antiga/contrato ausente. Empacotador também executa a suíte específica antes de criar ZIP.
-- Identificação das27 instâncias testada com IDs factuais da tabela Map70938 e nomes localizados; quests selecionadas têm IDs da base factual compartilhada. Dados DB2 são referência da build, não execução no jogo.
-- Evals, doctor, exemplo e jornada determinística executados. Ver pacote e hashes em package-verification.json. Conteúdos do ZIP são comparados com o blueprint e branding injetado; CRC32, TOC, autoria, ordem de carga, Hunter, íconeTGA512×512×32 e metadados conferidos.
-- Três prévias vêm da cena do mock executando o código real: preparação, objetivo e entrega. Fontes/posicionamento aproximados, explicitamente marcadas **não são capturas do WoW**. Não comprovam aparência no cliente.
+Interface reconstruída: hub com seletor das27 dungeons, overview de acesso/encontros/quests, configurações persistentes e tracker separado. Plano escolhido é preservado; instância atual prevalece temporariamente. A seta é desenhada e rotacionada por código original e arte própria, com distância em linha reta e chegada que não conclui quest. Ticker limitado atualiza só geometria, sem consultar diário.
 
-## Limites e revisão
+Cenários executados: seleção pela interface sem abandonar quests; entrada/saída e retomada de plano; configurações/GUID/reload; overview das27; setas sem C_SuperTrack/GetNextWaypoint; geometria cardinal e giro; movimento/chegada; perda de mapa; boss observado por evento; cancelamento do ticker; progressão autoritativa anterior, combate, morte, abandono e migração.
 
-Ver PRODUCT-REVIEW.md, RESEARCH.md e API-CAPABILITIES.json. O executável instalado é1.60.1.70938; interface16001 ainda requer confirmação por GetBuildInfo em sessão real. APIs estão documentadas na branch Forever da UI Blizzard, com runtime desta build UNVERIFIED. Quatro guias continuam bloqueados por falta de dados de quests; catálogo selecionado, pré-requisitos parciais e disponibilidade de fase não garantida. Navegação usa exclusivamente waypoint/texto do cliente; sem ele não há seta precisa. Não há pathfinding indoor. Estimativa mede expedições comparáveis, não clears confirmados nem XP futura garantida.
+Dados próprios embarcados: coordenadas factuais MIT versionadas para48 coletas,55 entregas,16 entradas; áreas de objetivos selecionadas por tipo/máscara; catálogo de encontros da tabela DB2 da build70938. Referências comunitárias continuam UNVERIFIED em runtime. Ponto de entrada nunca vira coordenada de boss. **Não há pathfinding nem cobertura de posições internas garantida.**
 
-Antes de aprovação final: executar roteiro de INSTALL.md no WoW, conferir eventos reais, objetivos/entregas, textura/fontes/escala, taint, reload, classe/idioma e utilidade durante sessão prolongada. **Não aprovado como produto final; PR candidato para revisão do usuário, sem merge automático.**
+Fengari executa Lua5.3 em mock; luaparse valida sintaxe5.1. Evals, doctor, exemplo e jornada determinística executados. Gates/autoria preservados. Verificação de conteúdo do ZIP, CRC32, TOC, branding, ícone e Arrow.tga. Prévias de hub/configurações/quests/seta são cenas de mock, não capturas do jogo.
+
+Pendente para aprovação final: validar no Forever70938 as APIs de posição/rumo, direção visual da seta, fontes/escala/scroll, eventos reais de encontros, coordenadas comunitárias e utilidade em sessão de leveling. Quatro dungeons continuam sem quests curadas; overview não é mapa geométrico nem lista garantida de bosses ativos da fase. Nenhum resultado foi promovido a CLIENT_VERIFIED.

@@ -13,7 +13,7 @@ export function run(code:string){
  };
  try{
   exec(fs.readFileSync(path.join(ROOT,'tests/dungeon-trail/mock.lua'),'utf8'),'mock');
-  for(const f of ['design-system/branding/TonhoBranding.lua',...['Data.lua','Adapters.lua','Navigation.lua','Core.lua','UI.lua'].map(f=>'addon-src/AllianceDungeonTrail/'+f)]){
+  for(const f of ['design-system/branding/TonhoBranding.lua',...['Data.lua','Adapters.lua','Navigation.lua','Core.lua','Product.lua','UI.lua'].map(f=>'addon-src/AllianceDungeonTrail/'+f)]){
    exec(`local function chunk(...)\n${fs.readFileSync(path.join(ROOT,f),'utf8')}\nend\nchunk('AllianceDungeonTrail', DT)`,f);
   }
   exec("fire('PLAYER_LOGIN')",'login');exec(code,'scenario');
