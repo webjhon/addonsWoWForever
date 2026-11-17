@@ -21,6 +21,20 @@
   "quarantined": [],
   "relations": 124,
   "operationalRelations": 124,
+  "byFaction": {
+    "Alliance": {
+      "records": 176,
+      "quests": 72,
+      "complete": false,
+      "clientVerified": false
+    },
+    "Horde": {
+      "records": 0,
+      "quests": 0,
+      "complete": false,
+      "clientVerified": false
+    }
+  },
   "sources": 89,
   "missingGameIds": {
     "dungeon": 24,

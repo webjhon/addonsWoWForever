@@ -131,3 +131,5 @@ Os dados reais de quests, talentos Legacy, novas zonas, pets e dungeons **não e
 Leia `docs/READY-FOR-AGENT.md` e `docs/TESTING-STRATEGY.md` antes de desenvolver ou distribuir novos addons.
 
 **Licença MIT aplicável ao código original da fábrica. World of Warcraft e marcas associadas pertencem a seus respectivos titulares.**
+
+Dual-faction policy (2026-11-17): all new or revised addons use faction:"Both" and the factionSupport contract. Read docs/FACTION-SUPPORT.md and config/faction-policy.json. Detect player faction, isolate faction-specific facts/routes, handle unknown faction safely, and execute acceptance tests for Alliance AND Horde. Historical exact single-faction candidates are preserved by hash, never relabeled as Horde-compatible; any changed candidate must migrate. Legacy neutral/Alliance-accessible knowledge does not imply Horde eligibility. Missing Horde facts remain explicit gaps.

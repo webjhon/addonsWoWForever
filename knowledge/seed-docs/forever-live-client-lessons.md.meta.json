@@ -2,9 +2,11 @@
   "source_id": "forever-live-client-lessons-2026-11-16",
   "title": "Falhas e acertos observados no cliente Forever70938",
   "domain": "api",
-  "faction": "Alliance",
+  "faction": "Neutral",
   "license": "original",
   "evidence": "PARTIAL_CLIENT_TESTED",
   "build": 70938,
-  "uri": "knowledge/seed-docs/forever-live-client-lessons.md"
+  "uri": "knowledge/seed-docs/forever-live-client-lessons.md",
+  "alliance_access": true,
+  "horde_access": true
 }

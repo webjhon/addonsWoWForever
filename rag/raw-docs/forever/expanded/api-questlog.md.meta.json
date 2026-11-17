@@ -2,8 +2,9 @@
   "source_id": "rag-expanded:api-questlog",
   "domain": "api",
   "title": "Diário de quests: aceitação, objetivos e entrega",
-  "faction": "Alliance",
+  "faction": "Neutral",
   "alliance_access": true,
+  "horde_access": true,
   "min_level": 1,
   "max_level": 60,
   "evidence": "STATIC_API_DOCUMENTATION",
@@ -22,7 +23,7 @@
     "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua",
     "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua"
   ],
-  "abstract": "Escopo: Alliance1–60, interface16001. Snapshot documental bebcb6bf309cf41b41bd74f8ca651e6a105b2676. Runtime das funções abaixo permanece UNVERIFIED até teste específico. O diário é a fonte de progresso, não os cliques no painel. Diferenciar quest não aceita, ativa com objetivos pendentes, pronta para entregar, entregue, falhou e dados indisponíveis. Uma quest que some pode ter sido abandonada; isso não prova entrega. O resultado booleano de relação de unidade com quest não identifica qual quest.",
+  "abstract": "Escopo: Alliance e Horde1–60, interface16001. Snapshot documental bebcb6bf309cf41b41bd74f8ca651e6a105b2676. Runtime das funções abaixo permanece UNVERIFIED até teste específico. O diário é a fonte de progresso, não os cliques no painel. Diferenciar quest não aceita, ativa com objetivos pendentes, pronta para entregar, entregue, falhou e dados indisponíveis. Uma quest que some pode ter sido abandonada; isso não prova entrega. O resultado booleano de relação de unidade com quest não identifica qual quest.",
   "build": null,
   "note": "Original synthesis. Documentary/gameplay references do not grant global client verification."
 }

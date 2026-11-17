@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "WoW Forever Alliance Leveling Addon Blueprint",
+  "title": "WoW Forever Alliance and Horde Leveling Addon Blueprint",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -27,7 +27,12 @@
       "const": "WoW Forever"
     },
     "faction": {
-      "const": "Alliance"
+      "enum": [
+        "Both",
+        "Alliance",
+        "Horde"
+      ],
+      "description": "Both required for new/revised addons; exact historical single-faction candidates remain labeled."
     },
     "purpose": {
       "const": "leveling"
@@ -208,6 +213,64 @@
           "pattern": "^tests/[A-Za-z0-9_.-]+\\.test\\.ts$"
         }
       }
+    },
+    "factionSupport": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "dataStrategy",
+        "unknownFaction",
+        "acceptanceFactions",
+        "testFile"
+      ],
+      "properties": {
+        "dataStrategy": {
+          "enum": [
+            "shared-live-state",
+            "partitioned-data"
+          ]
+        },
+        "unknownFaction": {
+          "type": "string",
+          "minLength": 16
+        },
+        "acceptanceFactions": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "Alliance",
+              "Horde"
+            ]
+          }
+        },
+        "testFile": {
+          "type": "string",
+          "pattern": "^tests/[A-Za-z0-9_.-]+\\.test\\.ts$"
+        }
+      }
     }
-  }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "faction": {
+            "const": "Both"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "factionSupport"
+        ],
+        "properties": {
+          "factionSupport": {
+            "$ref": "#/properties/factionSupport"
+          }
+        }
+      }
+    }
+  ]
 }

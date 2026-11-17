@@ -3,7 +3,7 @@
   "domain": "api",
   "topic": "api",
   "title": "API Forever: referência, cliente e restrições",
-  "faction": "Alliance",
+  "faction": "Neutral",
   "alliance_access": true,
   "min_level": 1,
   "max_level": 60,
@@ -13,5 +13,6 @@
   "source_published": "2026-11-05",
   "curated_at": "2026-11-15",
   "build": null,
-  "note": "Resumo documental de terceiro; não é execução própria no cliente nem confirmação de todas as funções."
+  "note": "Resumo documental de terceiro; não é execução própria no cliente nem confirmação de todas as funções.",
+  "horde_access": true
 }

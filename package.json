@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Agent-agnostic factory for WoW Forever Alliance 1-60 leveling addons",
+  "description": "Agent-agnostic factory for WoW Forever Alliance and Horde 1-60 leveling addons",
   "engines": {
     "node": ">=22.16.0"
   },

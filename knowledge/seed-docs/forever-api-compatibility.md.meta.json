@@ -1,1 +1,11 @@
-{"source_id":"community-api-snapshot","domain":"api","title":"WoW Forever API client baseline","faction":"Alliance","evidence":"COMMUNITY_UNVERIFIED","license":"original","uri":"https://github.com/Thunderz96/forever-addon-kit"}
+{
+  "source_id": "community-api-snapshot",
+  "domain": "api",
+  "title": "WoW Forever API client baseline",
+  "faction": "Neutral",
+  "evidence": "COMMUNITY_UNVERIFIED",
+  "license": "original",
+  "uri": "https://github.com/Thunderz96/forever-addon-kit",
+  "alliance_access": true,
+  "horde_access": true
+}

@@ -17,3 +17,5 @@ Use para marcação/destaque de NPCs ou nameplates ligados a quests. Leia resear
 - Teste desativar/reativar, pulso independente, movimento da unidade, reciclagem, dados secretos e perda de associação; quests concluídas, abate/saque, combate, mundo aberto e densidade são cenários separados. Sessão de Stockade não aprova os demais.
 
 Referência original: addon-src/AURANPC/Engine.lua e tests/auranpc*. O relatório factual é mais específico que o status global de um pacote.
+
+Faction coverage: new/revised addons support Alliance and Horde. Plan and record acceptance separately for both, including unknown faction and reload/character changes. Shared rendering/API lessons may be reused; historical Alliance observations do not certify Horde quests, routing or live behavior. Apply docs/FACTION-SUPPORT.md.

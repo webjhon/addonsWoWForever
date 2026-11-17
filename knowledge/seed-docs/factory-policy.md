@@ -1,6 +1,6 @@
 # Factory policy (original)
 This is an original operational document, not a game database.
-WoW Forever leveling is restricted to Alliance characters 1 through 60.
+WoW Forever leveling supports BOTH Alliance and Horde characters 1 through 60. All new or revised addons must detect faction and keep faction-specific content isolated. Legacy neutral records do not imply Horde access.
 Unknown quest identifiers, pet spawn locations, legacy talents, new dungeons and abilities must be verified against the actual Forever client or a version-matched source.
 For addon API work, prefer Forever-compatible export and Mainline client API evidence; never assume Classic Era interfaces are interchangeable.
 Do not circumvent combat restrictions or secret-value rules. Never automate gameplay.

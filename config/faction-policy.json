@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "effectiveFrom": "2026-11-17",
+  "defaultFaction": "Both",
+  "supportedPlayerFactions": [
+    "Alliance",
+    "Horde"
+  ],
+  "levelRange": [
+    1,
+    60
+  ],
+  "rule": "Every new or revised addon supports both factions. Historical exact candidates remain explicitly single-faction until rebuilt; this exception cannot approve changed code.",
+  "legacyCandidates": [
+    {
+      "file": "research/AURANPC/AURANPC.blueprint.json",
+      "addon": "AURANPC",
+      "version": "2.0.1",
+      "faction": "Alliance",
+      "sha256": "c10bef077e155f16a8955e87e4e3b9e1710cd8988ae5d525ce99cfc185335f22",
+      "status": "HISTORICAL_SINGLE_FACTION",
+      "hordeRuntime": "NOT_TESTED",
+      "migration": "REQUIRED_BEFORE_NEXT_REVISION"
+    },
+    {
+      "file": "research/AllianceDungeonTrail/AllianceDungeonTrail.blueprint.json",
+      "addon": "AllianceDungeonTrail",
+      "version": "3.1.0",
+      "faction": "Alliance",
+      "sha256": "166a53bf671610b1cf67a04f48c717a8c74320edf30c8ff99c550029d81e109a",
+      "status": "HISTORICAL_SINGLE_FACTION",
+      "hordeRuntime": "NOT_TESTED",
+      "migration": "REQUIRED_BEFORE_NEXT_REVISION"
+    }
+  ]
+}

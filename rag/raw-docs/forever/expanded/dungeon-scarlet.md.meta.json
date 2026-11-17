@@ -4,6 +4,7 @@
   "title": "Scarlet Monastery — quests, contexto e lacunas para Alliance",
   "faction": "Alliance",
   "alliance_access": true,
+  "horde_access": false,
   "min_level": 1,
   "max_level": 60,
   "evidence": "COMMUNITY_UNVERIFIED",

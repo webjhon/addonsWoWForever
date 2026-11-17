@@ -7,7 +7,7 @@ import {validateBlueprint,scanLua,validateToc} from '../src/guards.ts';
 import {buildAddon} from '../tools/build-addon.ts';
 const fixture=path.join(ROOT,'evals/fixtures/alliance-level-pulse.blueprint.json');
 test('demo blueprint is structurally valid',()=>assert.equal(validateBlueprint(readJSON(fixture)).ok,true));
-test('Horde scope is rejected',()=>{const b=readJSON(fixture);b.faction='Horde';assert.equal(validateBlueprint(b).ok,false);});
+test('New single-faction candidates are rejected by dual-faction policy',()=>{const b=readJSON(fixture);b.faction='Horde';assert.equal(validateBlueprint(b).ok,false);});
 test('wrong client interface is rejected',()=>{const b=readJSON(fixture);b.interfaceVersion=120000;assert.equal(validateBlueprint(b).ok,false);});
 test('protected action and deprecated API are rejected',()=>{assert.equal(scanLua('UseAction(1)').ok,false);assert.equal(scanLua('GetSpellInfo(123)').ok,false);assert.equal(scanLua('-- UseAction(1)\nprint("UseAction(1)")').ok,true);});
 test('TOC icon required',()=>{const b=readJSON(fixture);const toc=b.files[0].content.replace(/^## IconTexture:.*\n/m,'');assert.equal(validateToc(toc,b.addonName,16001).ok,false);});

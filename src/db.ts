@@ -1,4 +1,5 @@
 import path from 'node:path';
+import {accessFlags,factionScope,sharedAccess} from './factions.ts';
 import { DatabaseSync } from 'node:sqlite';
 import { DATA_DIR, ensureDir, now, sha } from './core.ts';
 const SCHEMA = `
@@ -25,30 +26,36 @@ export function openDb(filename=path.join(DATA_DIR,'factory.sqlite')) {
   ensureDir(path.dirname(filename)); const db=new DatabaseSync(filename);
   db.exec(SCHEMA);
   if(!db.prepare('PRAGMA table_info(doc_vectors)').all().some(c=>c.name==='content_hash'))db.exec('ALTER TABLE doc_vectors ADD COLUMN content_hash TEXT');
+  for(const table of ['docs','entities'])if(!db.prepare('PRAGMA table_info('+table+')').all().some(c=>c.name==='horde_access')){
+    db.exec('ALTER TABLE '+table+' ADD COLUMN horde_access INTEGER NOT NULL DEFAULT 0');
+    db.exec("UPDATE "+table+" SET horde_access=1,alliance_access=0 WHERE faction='Horde'");
+  }
   db.prepare('INSERT OR IGNORE INTO schema_migrations(version,applied_at) VALUES(1,?)').run(now());
   return db;
 }
 export function upsertDoc(db, doc) {
   if(!doc.id||!doc.source_id||!doc.domain||!doc.title||!doc.content) throw new Error('Document fields missing');
-  if(doc.faction==='Horde') throw new Error('Horde data forbidden in operational RAG');
+  if(!['Alliance','Horde','Neutral'].includes(doc.faction||'Alliance'))throw Error('Invalid document faction');
+  const flags=accessFlags({...doc,faction:doc.faction||'Alliance'});
   const h=sha(doc.content);
   const old=db.prepare('SELECT hash FROM docs WHERE id=?').get(doc.id);
   if(old&&old.hash!==h)db.prepare('DELETE FROM doc_vectors WHERE doc_id=?').run(doc.id);
-  db.prepare(`INSERT INTO docs(id,source_id,domain,title,content,hash,faction,alliance_access,min_level,max_level,build,evidence,license,uri,updated_at)
-  VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET source_id=excluded.source_id, domain=excluded.domain,title=excluded.title,content=excluded.content,hash=excluded.hash,faction=excluded.faction,alliance_access=excluded.alliance_access,min_level=excluded.min_level,max_level=excluded.max_level,build=excluded.build,evidence=excluded.evidence,license=excluded.license,uri=excluded.uri,updated_at=excluded.updated_at`).run(
-  doc.id,doc.source_id,doc.domain,doc.title,doc.content,h,doc.faction||'Alliance',doc.alliance_access===false?0:1,doc.min_level??1,doc.max_level??60,doc.build||null,doc.evidence||'UNKNOWN',doc.license||'original',doc.uri||null,now());
+  db.prepare(`INSERT INTO docs(id,source_id,domain,title,content,hash,faction,alliance_access,horde_access,min_level,max_level,build,evidence,license,uri,updated_at)
+  VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET source_id=excluded.source_id, domain=excluded.domain,title=excluded.title,content=excluded.content,hash=excluded.hash,faction=excluded.faction,alliance_access=excluded.alliance_access,horde_access=excluded.horde_access,min_level=excluded.min_level,max_level=excluded.max_level,build=excluded.build,evidence=excluded.evidence,license=excluded.license,uri=excluded.uri,updated_at=excluded.updated_at`).run(
+  doc.id,doc.source_id,doc.domain,doc.title,doc.content,h,doc.faction||'Alliance',flags.alliance?1:0,flags.horde?1:0,doc.min_level??1,doc.max_level??60,doc.build||null,doc.evidence||'UNKNOWN',doc.license||'original',doc.uri||null,now());
   return doc.id;
 }
 export function upsertEntity(db,e) {
   if(!e.id || !e.kind || !e.name || !e.source_id || !e.evidence) throw new Error('Entity requires id, kind, name, source_id, evidence');
   if(!['Alliance','Neutral','Horde'].includes(e.faction)) throw new Error('Invalid faction');
-  const allowed=e.faction==='Alliance'||(e.faction==='Neutral'&&e.alliance_access===true);
-  db.prepare(`INSERT INTO entities(id,kind,name,faction,alliance_access,min_level,max_level,build,source_id,evidence,payload,updated_at)
-    VALUES(?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET name=excluded.name, faction=excluded.faction,alliance_access=excluded.alliance_access,min_level=excluded.min_level,max_level=excluded.max_level,build=excluded.build,source_id=excluded.source_id,evidence=excluded.evidence,payload=excluded.payload,updated_at=excluded.updated_at`).run(e.id,e.kind,e.name,e.faction,allowed?1:0,e.min_level??1,e.max_level??60,e.build||null,e.source_id,e.evidence,JSON.stringify(e.payload||{}),now());
+  const flags=accessFlags(e),allowed=flags.alliance;
+  db.prepare(`INSERT INTO entities(id,kind,name,faction,alliance_access,horde_access,min_level,max_level,build,source_id,evidence,payload,updated_at)
+    VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET name=excluded.name, faction=excluded.faction,alliance_access=excluded.alliance_access,horde_access=excluded.horde_access,min_level=excluded.min_level,max_level=excluded.max_level,build=excluded.build,source_id=excluded.source_id,evidence=excluded.evidence,payload=excluded.payload,updated_at=excluded.updated_at`).run(e.id,e.kind,e.name,e.faction,allowed?1:0,flags.horde?1:0,e.min_level??1,e.max_level??60,e.build||null,e.source_id,e.evidence,JSON.stringify(e.payload||{}),now());
+
 }
-export function queryAlliance(db,{kind,level=1,q='',build}={}) {
+export function queryFaction(db,{kind,level=1,q='',build,faction='Alliance'}={}) {
   if(!Number.isInteger(level)||level<1||level>60) throw new Error('Level out of scope');
-  let sql=`SELECT * FROM entities WHERE faction IN ('Alliance','Neutral') AND alliance_access=1 AND min_level<=? AND max_level>=?`;
+  let sql='SELECT * FROM entities WHERE '+factionScope(faction)+' AND min_level<=? AND max_level>=?';
   const args=[level,level];
   if(kind) {sql+=' AND kind=?';args.push(kind);}
   if(q) {sql+=' AND name LIKE ?';args.push('%'+q.replace(/[%_]/g,'')+'%');}
@@ -56,14 +63,15 @@ export function queryAlliance(db,{kind,level=1,q='',build}={}) {
   sql+=' ORDER BY kind,name LIMIT 100';
   return db.prepare(sql).all(...args).map(r=>({...r,payload:JSON.parse(r.payload)}));
 }
+export function queryAlliance(db,options={}){return queryFaction(db,{...options,faction:'Alliance'});}
 export function linkEntities(db,e) {
   for(const k of ['id','from_id','to_id','relation','source_id']) if(!e[k]) throw new Error('Missing relation '+k);
-  const src=db.prepare('SELECT alliance_access FROM entities WHERE id=?').get(e.from_id);
-  const dst=db.prepare('SELECT alliance_access FROM entities WHERE id=?').get(e.to_id);
-  if(!src?.alliance_access||!dst?.alliance_access) throw new Error('Relation includes an inaccessible entity');
+  const src=db.prepare('SELECT faction,alliance_access,horde_access FROM entities WHERE id=?').get(e.from_id);
+  const dst=db.prepare('SELECT faction,alliance_access,horde_access FROM entities WHERE id=?').get(e.to_id);
+  if(!src||!dst||!sharedAccess({...src,alliance_access:!!src.alliance_access,horde_access:!!src.horde_access},{...dst,alliance_access:!!dst.alliance_access,horde_access:!!dst.horde_access})) throw new Error('Relation includes an inaccessible entity');
   db.prepare('INSERT OR REPLACE INTO relations(id,from_id,to_id,relation,source_id) VALUES(?,?,?,?,?)').run(e.id,e.from_id,e.to_id,e.relation,e.source_id);
 }
-export function getRelations(db,id) {return db.prepare(`SELECT r.relation, e.id,e.name,e.kind,e.faction FROM relations r JOIN entities e ON e.id=r.to_id WHERE r.from_id=? AND e.alliance_access=1`).all(id);}
+export function getRelations(db,id,{faction='Alliance'}={}) {const source=db.prepare('SELECT id FROM entities WHERE id=? AND '+factionScope(faction)).get(id);if(!source)return [];return db.prepare('SELECT r.relation,e.id,e.name,e.kind,e.faction FROM relations r JOIN entities e ON e.id=r.to_id WHERE r.from_id=? AND '+factionScope(faction,'e')).all(id);}
 export function recordMemory(db,kind,title,body,{addon=null,evidence=[],build=null}={}) {
   const id=sha(kind+title+addon+body).slice(0,20);
   db.prepare('INSERT OR REPLACE INTO memories(id,kind,addon,title,body,evidence,build,created_at) VALUES(?,?,?,?,?,?,?,?)').run(id,kind,addon,title,body,JSON.stringify(evidence),build,now());return id;

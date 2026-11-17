@@ -1,14 +1,14 @@
 ---
 name: build-alliance-addon
-description: Follow the rigorous WoW Forever Alliance leveling addon engineering journey and package a candidate artifact.
+description: Follow the rigorous WoW Forever Alliance and Horde leveling addon engineering journey and package a candidate artifact.
 ---
 # Build Alliance Addon
 
 Use this Skill when a user asks for a new or revised WoW Forever addon. Read `AGENTS.md`, `FACTORY-WORKFLOW.md`, `config/wow-version.json` and `docs/READY-FOR-AGENT.md` first.
 
 1. First read `docs/PROFESSIONAL-INTERACTIVITY.md` and `docs/TONHO-BRANDING.md`. All addons MUST be player-connected reactive products: never lists, reading screens, manually maintained progress or checkbox-only guides. Explicitly define what the addon observes and automatically changes in gameplay. Do not write code if benefit/data are insufficient.
-2. Confirm it benefits Alliance leveling 1–60; reject Horde/endgame/pvp/bots.
-3. Run `npm run doctor` and `npm run search -- "feature keywords"`. Ask the MCP tools for API evidence, capabilities, relevant Alliance records and known failures. Consult market references **only for lawful feature analysis**.
+2. Confirm it benefits BOTH Alliance and Horde leveling 1–60; reject endgame/pvp/bots.
+3. Run `npm run doctor` and `npm run search -- "feature keywords"`. Ask the MCP tools for API evidence, capabilities, records filtered for each player faction and known failures. Consult market references **only for lawful feature analysis**.
 3a. Before designing the acceptance scenarios, run npm run skills:context -- "feature description" and read the selected local skills from knowledge/lessons/live-client.json. Apply verify-wow-client for planning/actual client verification, build-wow-ui for panels/navigation and highlight-quest-npcs for NPC/nameplate features. Reuse the failures and successes only within the scope stated by their session reports. The selection is recorded in the journey and injected into the configured LLM path; it is not proof of following the instructions. Preserve clientVerified:false for incomplete real validation.
 
 4. Separate verified data from hypotheses; do not invent unverified quest IDs, APIs or coordinates. If evidence insufficient, mark UNVERIFIED and document the risk.
@@ -27,3 +27,5 @@ Before designing **every addon**, apply .agents/skills/apply-reference-patterns/
 RAG maintenance: run npm run init and npm run rag:status before research. Init materializes the reviewed expanded corpus and imports only hash-matching portable vectors. Neural retrieval requires one explicit npm run rag:model download; searches never download weights or call a paid embedding API automatically. After source changes, rerun init and npm run rag:embed; check npm run rag:eval and preserve documentary/partial evidence status. See rag/README.md.
 
 Local client intake: before design read .agents/skills/inspect-local-client/SKILL.md and run npm run client:context. The journey records LOCAL_CLIENT_EVIDENCE and rejects a known configured-build mismatch. Refresh after a client update. Disk documentation never certifies runtime APIs; see docs/CLIENT-INTAKE.md.
+
+Dual-faction policy (2026-11-17): all new or revised addons use faction:"Both" and the factionSupport contract. Read docs/FACTION-SUPPORT.md and config/faction-policy.json. Detect player faction, isolate faction-specific facts/routes, handle unknown faction safely, and execute acceptance tests for Alliance AND Horde. Historical exact single-faction candidates are preserved by hash, never relabeled as Horde-compatible; any changed candidate must migrate. Legacy neutral/Alliance-accessible knowledge does not imply Horde eligibility. Missing Horde facts remain explicit gaps.

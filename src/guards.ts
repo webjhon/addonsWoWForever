@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import {checkFactionPolicy} from './faction-policy.ts';
 import path from 'node:path';
 import {ROOT,requireName,readJSON} from './core.ts';
 import {verifyProductContract} from './product-quality.ts';
@@ -34,7 +35,8 @@ export function validateBlueprint(b,{draft=false}={}){
  try{requireName(b?.addonName);}catch(e){errors.push(e.message);}
  const cfg=readJSON(path.join(ROOT,'config/wow-version.json'));
  if(b?.interfaceVersion!==cfg.interface)errors.push(`Target must be interface ${cfg.interface}`);
- if(b?.game!=='WoW Forever'||b?.faction!=='Alliance'||b?.purpose!=='leveling')errors.push('Mandatory scope: WoW Forever / Alliance / leveling');
+ if(b?.game!=='WoW Forever'||!['Both','Alliance','Horde'].includes(b?.faction)||b?.purpose!=='leveling')errors.push('Mandatory scope: WoW Forever / Alliance and Horde / leveling');
+ errors.push(...checkFactionPolicy(b,{draft}).errors);
  if(b?.minLevel!==1||b?.maxLevel!==60)errors.push('Mandatory leveling scope 1..60');
  if(!Array.isArray(b?.files)||b.files.length<2)errors.push('At least TOC + Lua file required');
  const seen=new Set();

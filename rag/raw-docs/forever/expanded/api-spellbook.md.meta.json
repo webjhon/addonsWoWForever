@@ -2,8 +2,9 @@
   "source_id": "rag-expanded:api-spellbook",
   "domain": "api",
   "title": "Livro de magias: habilidades disponíveis e build alvo",
-  "faction": "Alliance",
+  "faction": "Neutral",
   "alliance_access": true,
+  "horde_access": true,
   "min_level": 1,
   "max_level": 60,
   "evidence": "STATIC_API_DOCUMENTATION",
@@ -14,7 +15,7 @@
     "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua",
     "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua"
   ],
-  "abstract": "Escopo: Alliance1–60, interface16001. Snapshot documental bebcb6bf309cf41b41bd74f8ca651e6a105b2676. Runtime das funções abaixo permanece UNVERIFIED até teste específico. Não inferir spellID, rank, custo ou nível a partir de nome conhecido de Vanilla. Um assistente de treinamento precisa de dados da build e leituras públicas do livro de magias. Recomendação informativa não executa rotação.",
+  "abstract": "Escopo: Alliance e Horde1–60, interface16001. Snapshot documental bebcb6bf309cf41b41bd74f8ca651e6a105b2676. Runtime das funções abaixo permanece UNVERIFIED até teste específico. Não inferir spellID, rank, custo ou nível a partir de nome conhecido de Vanilla. Um assistente de treinamento precisa de dados da build e leituras públicas do livro de magias. Recomendação informativa não executa rotação.",
   "build": null,
   "note": "Original synthesis. Documentary/gameplay references do not grant global client verification."
 }

@@ -17,3 +17,5 @@ Use ao planejar a prova de utilidade e ao testar uma candidata no jogo. Leia os 
 - Preserve somente recortes relevantes e sem chat/dados de terceiros como evidência de produto. Rotule mocks. Deixe opções e personagem em estado seguro e documentado.
 
 Evidências originais: research/AURANPC/LIVE-SESSION-2026-11-16.md; research/AllianceDungeonTrail/LIVE-TEST.md. A sessão antiga não autoriza controle de um jogo em uma tarefa futura.
+
+Faction coverage: new/revised addons support Alliance and Horde. Plan and record acceptance separately for both, including unknown faction and reload/character changes. Shared rendering/API lessons may be reused; historical Alliance observations do not certify Horde quests, routing or live behavior. Apply docs/FACTION-SUPPORT.md.

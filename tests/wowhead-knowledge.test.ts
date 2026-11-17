@@ -42,7 +42,7 @@ test('IDs require matching individual source and every known field needs provena
  b=pack();b.records[0].source_ids=['whf:source:missing'];assert.throws(()=>validateKnowledgePack(b),/Unknown source/);
  b=pack();b.records[0].field_sources.name=['whf:source:missing'];assert.throws(()=>validateKnowledgePack(b),/Unknown source/);
 });
-test('no Horde, false Alliance access or unearned client verification can be imported',()=>{
+test('unproven faction access and unearned client verification cannot be imported',()=>{
  for(const mutate of [r=>r.faction='Horde',r=>{r.faction='Unknown';r.alliance_access=true;},r=>r.evidence='CONFIRMED_IN_CLIENT',r=>r.build='70938']){
   const b=pack();mutate(b.records[0]);assert.throws(()=>validateKnowledgePack(b));
  }

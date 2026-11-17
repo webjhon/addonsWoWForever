@@ -17,3 +17,5 @@ Use para interface de addon ou navegação. Consulte knowledge/seed-docs/forever
 - Automatize as transições de seleção, pausa/reload, fechar/recuperar e layout por personagem; o teste real precisa validar hit-testing, legibilidade e direção. Mock de Frame não comprova essas propriedades.
 
 Referências de implementação original, para consulta e adaptação: addon-src/AllianceDungeonTrail/{Product,Navigation,UI}.lua; regressões em tests/dungeon-trail.test.ts. Não trate as 27 dungeons do catálogo como 27 percursos testados.
+
+Faction coverage: new/revised addons support Alliance and Horde. Plan and record acceptance separately for both, including unknown faction and reload/character changes. Shared rendering/API lessons may be reused; historical Alliance observations do not certify Horde quests, routing or live behavior. Apply docs/FACTION-SUPPORT.md.

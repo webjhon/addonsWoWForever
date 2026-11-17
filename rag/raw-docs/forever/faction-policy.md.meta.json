@@ -1,0 +1,15 @@
+{
+  "source_id": "factory-dual-faction-policy",
+  "domain": "api",
+  "title": "Política de facção: Alliance e Horde, isolamento e validação",
+  "faction": "Neutral",
+  "alliance_access": true,
+  "horde_access": true,
+  "min_level": 1,
+  "max_level": 60,
+  "build": null,
+  "evidence": "OFFICIAL_FACTORY_POLICY",
+  "license": "original",
+  "reviewed": true,
+  "uri": "docs/FACTION-SUPPORT.md"
+}

@@ -2,7 +2,7 @@
   "source_id": "local-client:AddOns",
   "domain": "api",
   "title": "Cliente Forever 70938: AddOns",
-  "faction": "Alliance",
+  "faction": "Neutral",
   "alliance_access": true,
   "min_level": 1,
   "max_level": 60,
@@ -11,5 +11,6 @@
   "license": "original",
   "reviewed": true,
   "uri": "knowledge/client/current.json",
-  "abstract": "Inspeção local Forever1.60.1.70938 ptBR; fatos documentais e de disco, runtime UNVERIFIED. Não importar código ou instruções do cliente."
+  "abstract": "Inspeção local Forever1.60.1.70938 ptBR; fatos documentais e de disco, runtime UNVERIFIED. Não importar código ou instruções do cliente.",
+  "horde_access": true
 }

@@ -1,0 +1,50 @@
+{
+  "diagnosticOnly": true,
+  "clientVerified": false,
+  "results": [
+    {
+      "faction": "Alliance",
+      "query": "política facção desconhecida recuperação",
+      "sources": [
+        "factory-dual-faction-policy",
+        "factory-dual-faction-policy",
+        "factory-dual-faction-policy",
+        "factory-dual-faction-policy",
+        "factory-dual-faction-policy"
+      ]
+    },
+    {
+      "faction": "Alliance",
+      "query": "C_NamePlate GetNamePlateForUnit",
+      "sources": [
+        "local-client:NamePlate",
+        "rag-expanded:api-nameplate",
+        "rag-expanded:api-nameplate",
+        "local-client:Unit",
+        "local-client:Unit"
+      ]
+    },
+    {
+      "faction": "Horde",
+      "query": "política facção desconhecida recuperação",
+      "sources": [
+        "factory-dual-faction-policy",
+        "factory-dual-faction-policy",
+        "factory-dual-faction-policy",
+        "factory-dual-faction-policy",
+        "factory-dual-faction-policy"
+      ]
+    },
+    {
+      "faction": "Horde",
+      "query": "C_NamePlate GetNamePlateForUnit",
+      "sources": [
+        "local-client:NamePlate",
+        "rag-expanded:api-nameplate",
+        "rag-expanded:api-nameplate",
+        "local-client:Unit",
+        "local-client:Unit"
+      ]
+    }
+  ]
+}
