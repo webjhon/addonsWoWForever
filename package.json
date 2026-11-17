@@ -36,7 +36,9 @@
     "rag:model": "node --experimental-strip-types scripts/rag.ts model",
     "rag:embed": "node --experimental-strip-types scripts/rag.ts embed",
     "rag:status": "node --experimental-strip-types scripts/rag.ts status",
-    "rag:eval": "node --experimental-strip-types evals/rag-retrieval.ts"
+    "rag:eval": "node --experimental-strip-types evals/rag-retrieval.ts",
+    "client:inspect": "node --experimental-strip-types scripts/inspect-client.ts",
+    "client:context": "node --experimental-strip-types scripts/inspect-client.ts --context"
   },
   "dependencies": {
     "ajv": "8.20.0"
