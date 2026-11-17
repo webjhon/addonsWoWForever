@@ -257,13 +257,26 @@
           "status": "UNVERIFIED"
         }
       ]
+    },
+    {
+      "file": "Blizzard_SharedXML/Shared/Scroll/ScrollBox.lua",
+      "bytes": 28659,
+      "sha256": "14edfc5666135cca2bc218f4dbc0416d695d17644999ec4f21147f562d0510a8",
+      "fact": "ScrollBoxListMixin.EnumerateFrames delegates to its view."
+    },
+    {
+      "file": "Blizzard_SharedXML/Shared/Scroll/ScrollBoxListView.lua",
+      "bytes": 27412,
+      "sha256": "62f2e2bd6c6456b80ce5b3134a99b8879e001b45060c00d611b6bcd7f60e8bc9",
+      "fact": "EnumerateFrames returns ipairs(self:GetFrames()): iterator yields index,frame."
     }
   ],
   "uiFacts": {
     "lootRows": "LootFrame.ScrollBox:EnumerateFrames(); row:GetSlotIndex() in current UI; read GetLootSlotInfo returns7/8/9: isQuestItem, questID, isActive",
     "bagButtons": "ContainerFrameUtil_EnumerateContainerFrames, EnumerateValidItems, button:GetBagID()/GetID(); combined bags retain per-button bagID",
     "postHooks": "ContainerFrameItemButtonMixin.UpdateQuestItem and LootFrameElementMixin.Init; rendering is original, hooksecurefunc only",
-    "itemRelation": "Explicit active journal questID; public exact unique QuestTitle tooltip; or independent public isQuestItem AND isActive flags with current active journal. Generic quest classification alone never enough."
+    "itemRelation": "Explicit active journal questID; public exact unique QuestTitle tooltip; or independent public isQuestItem AND isActive flags with current active journal. Generic quest classification alone never enough.",
+    "lootIterator": "for _,frame in LootFrame.ScrollBox:EnumerateFrames() do; verified from local70959 ScrollBoxListView, not a frame-only iterator."
   },
   "rights": "Original factual summaries/signatures only. Raw UI/Lua kept untracked; no third-party UI code redistributed."
 }

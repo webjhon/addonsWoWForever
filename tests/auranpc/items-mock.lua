@@ -4,7 +4,7 @@ TEST.bags={};TEST.bagTips={};TEST.loot={};TEST.lootTips={};TEST.lootRows={};TEST
  C_TooltipInfo.GetLootItem=function(s)return TEST.lootTips[s]end
  function GetLootSlotInfo(s)local r=TEST.loot[s];if r then return nil,nil,1,nil,1,false,r.isQuestItem,r.questID,r.isActive end end
  function GetLootSlotLink(s)local r=TEST.loot[s];return r and r.link end
- LootFrame=CreateFrame('Frame',nil,UIParent);LootFrame.ScrollBox={EnumerateFrames=function()local i=0;return function()i=i+1;return TEST.lootRows[i]end end}
+ LootFrame=CreateFrame('Frame',nil,UIParent);LootFrame.ScrollBox={EnumerateFrames=function()return ipairs(TEST.lootRows)end}
  function bagbutton(b,s,q)
   local f=CreateFrame('Button',nil,UIParent);f.bag=b;f.slot=s;f:SetSize(36,36)
   function f:GetBagID()return self.bag end;function f:GetID()return self.slot end

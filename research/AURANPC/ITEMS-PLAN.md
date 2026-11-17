@@ -22,3 +22,5 @@ Detection, decision, own renderer and frame lifecycle are separated in Items.lua
 - economical-feedback: ADOPTED: existing marks reused and pulse not restarted on every refresh.
 
 No paid guide code, routes, art or DSL incorporated. In-game acceptance remains pending; automated passes are not CLIENT_VERIFIED.
+
+Final source audit: local70959 ScrollBoxListView.EnumerateFrames returns ipairs, yielding index/frame. The production loop and mock both use this contract; all150 tests were rerun after correction and the ZIP regenerated. A frame-only mock would have hidden the failure. Hashes of both ScrollBox sources are recorded in ITEMS-API-EVIDENCE.json.

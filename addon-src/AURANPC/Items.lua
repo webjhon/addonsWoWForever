@@ -154,7 +154,7 @@ function ns.RefreshItems()
     if ns.settings.lootItems and ns.lootOpen and usable(LootFrame) then
         pcall(function()
             local count=0
-            for button in LootFrame.ScrollBox:EnumerateFrames() do
+            for _,button in LootFrame.ScrollBox:EnumerateFrames() do
                 count=count+1;if count>80 then break end
                 if usable(button) then
                     local slot=method(button,'GetSlotIndex')

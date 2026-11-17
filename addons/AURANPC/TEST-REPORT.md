@@ -1,6 +1,6 @@
 # AURANPC 2.1.0 — relatório executado
 
-2026-11-17T21:41:16.736Z, Node v24.18.0. **150/150 testes automatizados aprovados**. Jornada, produto/facção, conjunto completo, evals, doctor e exemplo executados. STATIC_PASSED / MOCK_PASSED. **Cliente real desta versão: NOT_RUN; clientVerified:false.**
+2026-11-17T21:47:17.949Z, Node v24.18.0. **150/150 testes automatizados aprovados**. Jornada, produto/facção, conjunto completo, evals, doctor e exemplo executados. STATIC_PASSED / MOCK_PASSED. **Cliente real desta versão: NOT_RUN; clientVerified:false.**
 
 Implementação: bordas amarelas e exclamações próprias nas bolsas e linhas de loot; pulso opcional no loot, controles independentes e preferências por personagem; Alliance e Horde. Destaque de NPC preservado. Nenhum loot/uso/movimento de itens automático ou efeito no grupo.
 
