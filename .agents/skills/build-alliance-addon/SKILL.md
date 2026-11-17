@@ -21,3 +21,5 @@ For Codex, use the skill file; for ChatGPT Work or a different tool-enabled agen
 
 9. Ensure `## Author: Tonho Contrabando` and call `ns.TonhoBranding:RegisterWindow(frame)` at the first opening (or Show for non-window addons); packager injects reusable art and branding Lua. Confirm credits/splash in built ZIP.
 10. Place code in `addons/<addon>/`, candidate ZIP in `releases/`; make an isolated feature branch, open a pull request for the user with test evidence and screenshots. Do not merge without explicit approval. If PR cannot be opened, say so and provide branch/patch; never quietly stop at a local ZIP.
+
+Before designing **every addon**, apply .agents/skills/apply-reference-patterns/SKILL.md and inspect npm run patterns:context -- "feature description". Consider the original Zygor/RestedXP analysis in knowledge/lessons/reference-patterns.json; record adopted/adapted/not applicable with reasons in the product plan or PR. The LLM path includes this context and the journey records REFERENCE_PATTERN_REVIEW. Static observations never certify runtime APIs; raw market-references are not imported.

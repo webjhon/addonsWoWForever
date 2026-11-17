@@ -1,0 +1,422 @@
+{
+  "schemaVersion": 1,
+  "analyzedAt": "2026-11-16",
+  "status": "STATIC_REFERENCE_ANALYSIS",
+  "clientVerified": false,
+  "reusePolicy": "ORIGINAL_IMPLEMENTATION_ONLY",
+  "sources": [
+    {
+      "id": "zygor",
+      "version": "1.6",
+      "interface": [
+        16001
+      ],
+      "rights": "TOC declara X-License GPL; não tratado como autorização global para guias/arte/dependências. Somente observações funcionais originais publicadas."
+    },
+    {
+      "id": "restedxp",
+      "version": "v4.11.36",
+      "interface": [
+        16001
+      ],
+      "rights": "LICENSE local declara CC BY-NC-SA 4.0. Nenhum código, rota, texto de guia ou arte importado."
+    }
+  ],
+  "snapshots": [
+    {
+      "path": "market-references/zygor/QuestTracking.lua",
+      "sha256": "c623bb9a27825e6670354849b0982c57d9663b2c39e7d418d8ec1fc3bc6bbcfd",
+      "bytes": 21742
+    },
+    {
+      "path": "market-references/restedxp/GuideWindow.lua",
+      "sha256": "11c2b68d03153ca0b076901b9ec85788a69367f5e31016fde5cbbdf1a3426993",
+      "bytes": 127211
+    },
+    {
+      "path": "market-references/zygor/Step.lua",
+      "sha256": "35be39173e11ebb460204c3378bce7e6bb49b258b1855220bbb73a9a2cad14cb",
+      "bytes": 29933
+    },
+    {
+      "path": "market-references/restedxp/GuideLoader.lua",
+      "sha256": "b21a3ccae17d6924ab2b4e7fbd45ce54bfa5666bc85516bf974d3c9b6fc04a3c",
+      "bytes": 61247
+    },
+    {
+      "path": "market-references/zygor/Goal.lua",
+      "sha256": "96f788fd6b7f519a7e7ec248eb2e56e15f829d7b430cb723eabb825e3f3c6e72",
+      "bytes": 192700
+    },
+    {
+      "path": "market-references/restedxp/RXPGuides.lua",
+      "sha256": "1dde7b3e50bfa8fea965866e88f85d6881dba0c08553365fd275abaee04afa08",
+      "bytes": 99992
+    },
+    {
+      "path": "market-references/zygor/GuideMenu.lua",
+      "sha256": "a7a0e71ed53d2f983503cded569233e8b6f3e86a285a32d07ed24dbab25e1da9",
+      "bytes": 31601
+    },
+    {
+      "path": "market-references/restedxp/map.lua",
+      "sha256": "fde153b9b977180a67d25f9fac57f7497db48a3e4ea18439593c5f76b6727a41",
+      "bytes": 59283
+    },
+    {
+      "path": "market-references/zygor/Pointer.lua",
+      "sha256": "f7740dd7aefc1b9a55fa9beb1d6d7402dbc5c0a7026acdd9a96fc6b755189afe",
+      "bytes": 240849
+    },
+    {
+      "path": "market-references/zygor/Tabs.lua",
+      "sha256": "fc5084b4f3043b416c9bf27ea6b6b09745e6951bf8bc4a8ab7d91bc66be7f919",
+      "bytes": 29676
+    },
+    {
+      "path": "market-references/restedxp/SettingsPanel.lua",
+      "sha256": "aefd3cb348d63e5dff7854d20d38c5c3658400e100cf44f0a2ad4213bcf8df25",
+      "bytes": 203932
+    },
+    {
+      "path": "market-references/zygor/ZygorGuidesViewerForever.toc",
+      "sha256": "dde9eb8453c0785fb2b821dd489d2a24fd571e902af1d3420b494affc819d236",
+      "bytes": 999
+    },
+    {
+      "path": "market-references/restedxp/RXPGuides.toc",
+      "sha256": "0c259a9ebe3432011cb3b20eb371f4c30b13612f632c07a69b21f30437643ddd",
+      "bytes": 4448
+    },
+    {
+      "path": "market-references/restedxp/LICENSE",
+      "sha256": "32581f3549b9586c494e2cbe8e52f1354ac43269c9531b6974d564c155a53318",
+      "bytes": 20521
+    },
+    {
+      "path": "market-references/zygor/ErrorLogger.lua",
+      "sha256": "a77107cbe01e3f79de9065079c3d80a8000295024d0acfccd32f3b994db51ee1",
+      "bytes": 6688
+    }
+  ],
+  "patterns": [
+    {
+      "id": "state-authority",
+      "domain": "core",
+      "title": "Sinais, decisão e apresentação separados",
+      "observation": "Zygor atualiza o cache de quests e agenda a atualização do passo/painel; RestedXP agrega conclusão dos elementos ativos antes de avançar.",
+      "adaptation": "Implementar snapshot legível → reconciliador → próxima ação → view. Separar PENDENTE, DESCONHECIDO, CONCLUÍDO e IGNORADO.",
+      "acceptance": "Evento duplicado não avança duas vezes; ausência de dados não conclui objetivo.",
+      "status": "STATIC_REFERENCE_ANALYSIS",
+      "evidence": [
+        {
+          "source": "zygor",
+          "path": "market-references/zygor/QuestTracking.lua",
+          "start": 409,
+          "end": 417
+        },
+        {
+          "source": "restedxp",
+          "path": "market-references/restedxp/GuideWindow.lua",
+          "start": 677,
+          "end": 747
+        }
+      ]
+    },
+    {
+      "id": "conditional-steps",
+      "domain": "guide",
+      "title": "Elegibilidade antes da recomendação",
+      "observation": "Zygor avalia requisitos de raça/classe e condições; RestedXP filtra guias aplicáveis no carregamento.",
+      "adaptation": "Avaliar facção, nível, classe, pré-requisitos e contexto com dados próprios. Não confundir passo inaplicável com quest entregue.",
+      "acceptance": "Personagem inelegível não recebe a ação; requisito desconhecido aparece como desconhecido.",
+      "status": "STATIC_REFERENCE_ANALYSIS",
+      "evidence": [
+        {
+          "source": "zygor",
+          "path": "market-references/zygor/Step.lua",
+          "start": 169,
+          "end": 222
+        },
+        {
+          "source": "restedxp",
+          "path": "market-references/restedxp/GuideLoader.lua",
+          "start": 36,
+          "end": 112
+        }
+      ]
+    },
+    {
+      "id": "parallel-objectives",
+      "domain": "guide",
+      "title": "Objetivos paralelos com uma prioridade principal",
+      "observation": "Ambos mantêm passos persistentes junto da progressão principal, chamados sticky nas referências.",
+      "adaptation": "Mostrar uma próxima ação principal e poucos objetivos ainda relevantes em paralelo; cada um segue seu sinal real.",
+      "acceptance": "Concluir objetivo paralelo não perde o principal; objetivo ausente não permanece indefinidamente.",
+      "status": "STATIC_REFERENCE_ANALYSIS",
+      "evidence": [
+        {
+          "source": "zygor",
+          "path": "market-references/zygor/Step.lua",
+          "start": 716,
+          "end": 748
+        },
+        {
+          "source": "restedxp",
+          "path": "market-references/restedxp/GuideWindow.lua",
+          "start": 686,
+          "end": 747
+        }
+      ]
+    },
+    {
+      "id": "event-lifecycle",
+      "domain": "core",
+      "title": "Inscrever, liberar e limitar trabalho",
+      "observation": "Zygor registra/remove observadores por objetivo; RestedXP limpa callbacks/eventos ao liberar elementos e agenda tarefas por referência.",
+      "adaptation": "Registrar apenas o necessário; cancelar observadores/timers quando desativado ou contexto muda; agrupar rajadas e limitar geometria separada de leitura de quests.",
+      "acceptance": "Trocar guia repetidamente não multiplica callbacks; desativado não continua lendo diário por frame.",
+      "status": "STATIC_REFERENCE_ANALYSIS",
+      "evidence": [
+        {
+          "source": "zygor",
+          "path": "market-references/zygor/Goal.lua",
+          "start": 3847,
+          "end": 3864
+        },
+        {
+          "source": "restedxp",
+          "path": "market-references/restedxp/GuideWindow.lua",
+          "start": 267,
+          "end": 314
+        },
+        {
+          "source": "restedxp",
+          "path": "market-references/restedxp/RXPGuides.lua",
+          "start": 2068,
+          "end": 2105
+        }
+      ]
+    },
+    {
+      "id": "recover-next-action",
+      "domain": "guide",
+      "title": "Retomar a próxima ação válida sem loops",
+      "observation": "Zygor busca próximo passo válido/completável e detecta revisitas no percurso; RestedXP separa progresso e elementos ativos.",
+      "adaptation": "Reconciliar após login/reload/quest feita fora de ordem; usar IDs estáveis, limite de transições e detecção de ciclos. Skip manual muda intenção, não verdade da quest.",
+      "acceptance": "Reload retoma pelo diário; grafo cíclico para com diagnóstico; completar fora de ordem não exige checklist manual.",
+      "status": "STATIC_REFERENCE_ANALYSIS",
+      "evidence": [
+        {
+          "source": "zygor",
+          "path": "market-references/zygor/Step.lua",
+          "start": 676,
+          "end": 706
+        },
+        {
+          "source": "restedxp",
+          "path": "market-references/restedxp/GuideWindow.lua",
+          "start": 677,
+          "end": 747
+        }
+      ]
+    },
+    {
+      "id": "guide-choice",
+      "domain": "guide",
+      "title": "Sugestões contextuais e escolha explícita",
+      "observation": "Zygor apresenta guias sugeridos conforme condição/status; RestedXP remove um guia ativo carregando um guia vazio.",
+      "adaptation": "Distinguir sugerido, escolhido e contexto atual. Permitir trocar/remover guia sem abandonar quests e explicar por que uma sugestão foi feita.",
+      "acceptance": "Troca preserva quests; remover limpa overlays/intenção; eventos não ressuscitam a escolha removida.",
+      "status": "STATIC_REFERENCE_ANALYSIS",
+      "evidence": [
+        {
+          "source": "zygor",
+          "path": "market-references/zygor/GuideMenu.lua",
+          "start": 445,
+          "end": 467
+        },
+        {
+          "source": "restedxp",
+          "path": "market-references/restedxp/GuideLoader.lua",
+          "start": 314,
+          "end": 335
+        }
+      ]
+    },
+    {
+      "id": "navigation-priority",
+      "domain": "navigation",
+      "title": "Destino válido com prioridades explícitas",
+      "observation": "Zygor pode escolher waypoint próximo entre objetivos visíveis elegíveis; RestedXP considera waypoints ativos antes dos de baixa prioridade.",
+      "adaptation": "Escolher destino pela etapa aplicável e prioridade, usando proximidade somente como desempate quando faz sentido. Não substituir boss por entrada nem inventar waypoint.",
+      "acceptance": "Objetivo inaplicável ou já concluído não vence pela proximidade; entrada não vira posição interna.",
+      "status": "STATIC_REFERENCE_ANALYSIS",
+      "evidence": [
+        {
+          "source": "zygor",
+          "path": "market-references/zygor/Step.lua",
+          "start": 764,
+          "end": 803
+        },
+        {
+          "source": "restedxp",
+          "path": "market-references/restedxp/map.lua",
+          "start": 1023,
+          "end": 1056
+        },
+        {
+          "source": "restedxp",
+          "path": "market-references/restedxp/map.lua",
+          "start": 1111,
+          "end": 1146
+        }
+      ]
+    },
+    {
+      "id": "navigation-confidence",
+      "domain": "navigation",
+      "title": "Direção própria e estado indisponível",
+      "observation": "RestedXP calcula orientação/distância a partir de posição/rumo e trata falta de dados ou continente errado.",
+      "adaptation": "Desenhar seta original; mostrar destino e distância quando públicos. Ocultar geometria inválida e oferecer referência textual própria. Rota em grafo exige dados independentes; linha reta não contorna obstáculos.",
+      "acceptance": "Movimento e giro alteram a seta; falta de mapa/rumo elimina direção antiga; chegada não conclui quest.",
+      "status": "STATIC_REFERENCE_ANALYSIS",
+      "evidence": [
+        {
+          "source": "restedxp",
+          "path": "market-references/restedxp/map.lua",
+          "start": 94,
+          "end": 169
+        },
+        {
+          "source": "zygor",
+          "path": "market-references/zygor/Pointer.lua",
+          "start": 73,
+          "end": 96
+        }
+      ]
+    },
+    {
+      "id": "recoverable-ui",
+      "domain": "ui",
+      "title": "Configuração e controles recuperáveis",
+      "observation": "Zygor expõe fechamento de aba; RestedXP permite recuperar posição da seta e configurar escala, bloqueio e passos concluídos.",
+      "adaptation": "Distinguir esconder painel, esconder overlay, pausar e remover plano. Posição/escala/fontes acessíveis, restauração e explicação do estado. Validar hit-testing no jogo.",
+      "acceptance": "Fechar/reabrir e reset funcionam sem reload obrigatório nem abandono de quest; última opção é alcançável.",
+      "status": "STATIC_REFERENCE_ANALYSIS",
+      "evidence": [
+        {
+          "source": "zygor",
+          "path": "market-references/zygor/Tabs.lua",
+          "start": 631,
+          "end": 640
+        },
+        {
+          "source": "restedxp",
+          "path": "market-references/restedxp/map.lua",
+          "start": 1149,
+          "end": 1157
+        },
+        {
+          "source": "restedxp",
+          "path": "market-references/restedxp/SettingsPanel.lua",
+          "start": 331,
+          "end": 349
+        },
+        {
+          "source": "restedxp",
+          "path": "market-references/restedxp/GuideWindow.lua",
+          "start": 191,
+          "end": 191
+        }
+      ]
+    },
+    {
+      "id": "bounded-views",
+      "domain": "ui",
+      "title": "Reutilização com limpeza de contexto",
+      "observation": "Zygor reutiliza abas disponíveis; RestedXP libera vínculo entre frame, elemento, eventos e callbacks.",
+      "adaptation": "Usar pool apenas quando necessário, limpando referência anterior e handlers. Persistir intenção por personagem, não snapshots de conclusão nem callbacks.",
+      "acceptance": "Após reciclagem, clique/evento atua na unidade/guia atual; repetição não aumenta frames sem limite.",
+      "status": "STATIC_REFERENCE_ANALYSIS",
+      "evidence": [
+        {
+          "source": "zygor",
+          "path": "market-references/zygor/Tabs.lua",
+          "start": 161,
+          "end": 186
+        },
+        {
+          "source": "restedxp",
+          "path": "market-references/restedxp/GuideWindow.lua",
+          "start": 302,
+          "end": 314
+        }
+      ]
+    },
+    {
+      "id": "versioned-data",
+      "domain": "core",
+      "title": "Separar mecanismo, dados e compatibilidade",
+      "observation": "RestedXP trata guias com identidade/versão no loader. Os dois TOCs declaram 16001, mas isso não prova cada API em runtime.",
+      "adaptation": "Dados de conteúdo próprios com procedência/build e migração explícita; adaptadores de capacidade. Não importar DSL, guias, APIs antigas ou suposições Classic como compatibilidade Forever.",
+      "acceptance": "Atualização preserva intenção válida, invalida IDs removidos e mantém capacidade não testada como UNVERIFIED.",
+      "status": "STATIC_REFERENCE_ANALYSIS",
+      "evidence": [
+        {
+          "source": "restedxp",
+          "path": "market-references/restedxp/GuideLoader.lua",
+          "start": 128,
+          "end": 195
+        },
+        {
+          "source": "zygor",
+          "path": "market-references/zygor/ZygorGuidesViewerForever.toc",
+          "start": 1,
+          "end": 19
+        },
+        {
+          "source": "restedxp",
+          "path": "market-references/restedxp/RXPGuides.toc",
+          "start": 1,
+          "end": 23
+        }
+      ]
+    },
+    {
+      "id": "economical-feedback",
+      "domain": "ui",
+      "title": "Atualizar só a informação visual que mudou",
+      "observation": "RestedXP evita reescrever distância quando não mudou e condiciona rotação; Zygor agenda atualização da view depois de atualizar o cache.",
+      "adaptation": "Separar frequência visual da frequência do reconciliador; dar destaque à próxima ação sem recriar toda interface a cada evento. Medir, não prometer desempenho por analogia.",
+      "acceptance": "Ticker de geometria não consulta diário; objetivo muda no evento; feedback mantém legibilidade com pulso desligado.",
+      "status": "STATIC_REFERENCE_ANALYSIS",
+      "evidence": [
+        {
+          "source": "restedxp",
+          "path": "market-references/restedxp/map.lua",
+          "start": 139,
+          "end": 167
+        },
+        {
+          "source": "zygor",
+          "path": "market-references/zygor/QuestTracking.lua",
+          "start": 409,
+          "end": 417
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    "Guias, rotas, coordenadas, DSL e textos de terceiros",
+    "Automação de abandono/aceite/entrega, combate ou movimentação",
+    "Telemetria e comunicação de grupo como padrão",
+    "Marca, skin e arte dos produtos",
+    "APIs ou compatibilidade presumidas pelo TOC"
+  ],
+  "caveats": [
+    "Inspeção estática de módulos selecionados; não auditoria completa nem teste dos addons no jogo.",
+    "market-references/zygor/ErrorLogger.lua começa com retorno imediato; presença de funções abaixo não prova execução.",
+    "Skip e etapas inaplicáveis podem avançar o guia das referências; implementação nova deve distinguir isso de conclusão autoritativa da quest."
+  ]
+}

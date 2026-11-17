@@ -1,0 +1,12 @@
+
+> wow-addon-ai-factory@0.1.0 doctor
+> node --experimental-strip-types scripts/factory.ts doctor
+
+{
+  "node": "v24.18.0",
+  "interface": 16001,
+  "docs": 218,
+  "entities": 229,
+  "memories": 1,
+  "apiKeyPresent": false
+}

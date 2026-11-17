@@ -1,0 +1,73 @@
+{
+  "status": "STATIC_PASSED",
+  "stage": {
+    "name": "REFERENCE_PATTERN_REVIEW",
+    "at": "2026-11-17T01:31:57.456Z",
+    "ok": true,
+    "status": "STATIC_REFERENCE_ANALYSIS",
+    "clientVerified": false,
+    "skill": ".agents/skills/apply-reference-patterns/SKILL.md",
+    "considered": [
+      {
+        "id": "state-authority",
+        "relevant": true,
+        "decision": "REQUIRES_PRODUCT_REVIEW"
+      },
+      {
+        "id": "conditional-steps",
+        "relevant": true,
+        "decision": "REQUIRES_PRODUCT_REVIEW"
+      },
+      {
+        "id": "parallel-objectives",
+        "relevant": true,
+        "decision": "REQUIRES_PRODUCT_REVIEW"
+      },
+      {
+        "id": "event-lifecycle",
+        "relevant": true,
+        "decision": "REQUIRES_PRODUCT_REVIEW"
+      },
+      {
+        "id": "recover-next-action",
+        "relevant": true,
+        "decision": "REQUIRES_PRODUCT_REVIEW"
+      },
+      {
+        "id": "guide-choice",
+        "relevant": true,
+        "decision": "REQUIRES_PRODUCT_REVIEW"
+      },
+      {
+        "id": "navigation-priority",
+        "relevant": true,
+        "decision": "REQUIRES_PRODUCT_REVIEW"
+      },
+      {
+        "id": "navigation-confidence",
+        "relevant": true,
+        "decision": "REQUIRES_PRODUCT_REVIEW"
+      },
+      {
+        "id": "recoverable-ui",
+        "relevant": true,
+        "decision": "REQUIRES_PRODUCT_REVIEW"
+      },
+      {
+        "id": "bounded-views",
+        "relevant": true,
+        "decision": "REQUIRES_PRODUCT_REVIEW"
+      },
+      {
+        "id": "versioned-data",
+        "relevant": true,
+        "decision": "REQUIRES_PRODUCT_REVIEW"
+      },
+      {
+        "id": "economical-feedback",
+        "relevant": true,
+        "decision": "REQUIRES_PRODUCT_REVIEW"
+      }
+    ]
+  }
+}

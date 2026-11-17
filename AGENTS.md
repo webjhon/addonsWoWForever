@@ -35,3 +35,5 @@ Local commands: `npm run init`, `npm test`, `npm run doctor`, `npm run search --
 ## Learned live-client skills
 
 Before implementing or revising an addon, route through knowledge/lessons/live-client.json using npm run skills:context -- "feature description". Apply verify-wow-client for acceptance planning; build-wow-ui for panels/navigation; highlight-quest-npcs for NPC/nameplate work. Read the selected SKILL.md and the linked session evidence. Selection is engineering context, not proof of execution or runtime certification. Reproduce applicable failures and turn them into acceptance scenarios; document unavailable client tests rather than simulating a pass.
+
+Before designing **every addon**, apply .agents/skills/apply-reference-patterns/SKILL.md and inspect npm run patterns:context -- "feature description". Consider the original Zygor/RestedXP analysis in knowledge/lessons/reference-patterns.json; record adopted/adapted/not applicable with reasons in the product plan or PR. The LLM path includes this context and the journey records REFERENCE_PATTERN_REVIEW. Static observations never certify runtime APIs; raw market-references are not imported.
