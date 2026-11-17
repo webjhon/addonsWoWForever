@@ -17,7 +17,7 @@
     "rrfK": 60
   },
   "chunking": {
-    "maxCharacters": 1600
+    "maxCharacters": 1200
   },
   "notes": "Model preparation is explicit. Searches never download models or call a paid API automatically. Without local cache, auto mode returns lexical results with an explicit retrieval note."
 }

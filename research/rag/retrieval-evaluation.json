@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "at": "2026-11-17T02:15:18.258Z",
+  "at": "2026-11-17T02:27:48.643Z",
   "modelExecuted": true,
   "note": "Manually chosen engineering/gameplay questions, fixed before first retrieval run. Diagnostic sample, not a guarantee for arbitrary requests.",
   "results": [
@@ -10,7 +10,7 @@
       "hits": 5,
       "recallAt5": 0.35714285714285715,
       "mrrAt5": 0.23214285714285715,
-      "ms": 28,
+      "ms": 14,
       "rows": [
         {
           "id": "secret-guid",
@@ -270,7 +270,7 @@
       "hits": 13,
       "recallAt5": 0.9285714285714286,
       "mrrAt5": 0.7738095238095238,
-      "ms": 36,
+      "ms": 19,
       "rows": [
         {
           "id": "secret-guid",
@@ -538,7 +538,7 @@
       "hits": 14,
       "recallAt5": 1,
       "mrrAt5": 0.9285714285714286,
-      "ms": 1267,
+      "ms": 1303,
       "rows": [
         {
           "id": "secret-guid",

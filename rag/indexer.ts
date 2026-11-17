@@ -3,9 +3,9 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {ROOT,sha,readJSON} from '../src/core.ts';
 import {openDb,upsertDoc} from '../src/db.ts';
-import {embedLocal,MODEL_KEY,validVector} from '../src/embeddings.ts';
+import {embedLocal,MODEL_KEY,validVector,RAG_CONFIG} from '../src/embeddings.ts';
 function files(dir){if(!fs.existsSync(dir))return[];return fs.readdirSync(dir,{withFileTypes:true}).flatMap(x=>x.isDirectory()?files(path.join(dir,x.name)):x.isFile()&&/\.(md|txt)$/i.test(x.name)?[path.join(dir,x.name)]:[]);}
-export function chunkDocument(raw,{title='Document',maxCharacters=1200,context='' }={}){
+export function chunkDocument(raw,{title='Document',maxCharacters=RAG_CONFIG.chunking.maxCharacters,context='' }={}){
  if(!Number.isInteger(maxCharacters)||maxCharacters<200)throw Error('Invalid chunk size');
  const chunks=[];let section='',body='';
  const flush=()=>{if(body.trim())chunks.push(title+(section?' — '+section:'')+(context?'\nContexto: '+context:'')+'\n\n'+body.trim());body='';};

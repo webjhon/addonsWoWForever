@@ -1,7 +1,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {ROOT,DATA_DIR,readJSON,writeJSON} from './core.ts';
-export const EMBEDDING=readJSON(path.join(ROOT,'config/rag.json')).embedding;
+export const RAG_CONFIG=readJSON(path.join(ROOT,'config/rag.json'));
+export const EMBEDDING=RAG_CONFIG.embedding;
+if(!Number.isInteger(RAG_CONFIG.chunking.maxCharacters)||RAG_CONFIG.chunking.maxCharacters<200||!Number.isFinite(RAG_CONFIG.retrieval.rrfK)||RAG_CONFIG.retrieval.rrfK<=0)throw Error('Invalid RAG chunking/fusion configuration');
 export const MODEL_KEY='local:'+EMBEDDING.model+'@'+EMBEDDING.revision+':'+EMBEDDING.dtype+':mean:l2:e5-v1';
 let extractor;
 export function validVector(v,dimensions=EMBEDDING.dimensions){return Array.isArray(v)&&v.length===dimensions&&v.every(x=>typeof x==='number'&&Number.isFinite(x))&&Math.abs(Math.hypot(...v)-1)<.03;}

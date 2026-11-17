@@ -1,5 +1,5 @@
 import {openDb} from './db.ts';
-import {embedLocal,MODEL_KEY,localModelReady,validVector} from './embeddings.ts';
+import {embedLocal,MODEL_KEY,localModelReady,validVector,RAG_CONFIG} from './embeddings.ts';
 // Paid/remote embeddings remain explicit; default retrieval uses local inference only.
 export async function embed(text,model='text-embedding-3-small'){
  const key=process.env.OPENAI_API_KEY;if(!key)throw Error('OPENAI_API_KEY required for explicitly requested remote embeddings');
@@ -8,7 +8,7 @@ export async function embed(text,model='text-embedding-3-small'){
 }
 export function cosine(a,b){if(a.length!==b.length)return null;let dot=0,x=0,y=0;for(let i=0;i<a.length;i++){if(!Number.isFinite(a[i])||!Number.isFinite(b[i]))return null;dot+=a[i]*b[i];x+=a[i]*a[i];y+=b[i]*b[i];}return x>0&&y>0?dot/Math.sqrt(x*y):null;}
 const disallowed=['unknown-license-copy','proprietary-restricted'];
-export async function searchKnowledge(query,{db=null,domain=null,level=1,build=null,limit=8,semantic='auto',embedder=embedLocal,model=MODEL_KEY}={}){
+export async function searchKnowledge(query,{db=null,domain=null,level=1,build=null,limit=8,semantic=RAG_CONFIG.retrieval.semantic,embedder=embedLocal,model=MODEL_KEY}={}){
  if(typeof query!=='string'||!query.trim())return[];if(query.length>4000)throw Error('Query too long');
  if(!Number.isInteger(level)||level<1||level>60)throw Error('Level must be 1..60');if(domain!==null&&!['api','leveling'].includes(domain))throw Error('Invalid domain');
  if(!Number.isInteger(limit)||limit<1||limit>100)throw Error('Invalid result limit');if(![true,false,'auto'].includes(semantic))throw Error('Invalid semantic mode');
@@ -20,14 +20,14 @@ export async function searchKnowledge(query,{db=null,domain=null,level=1,build=n
  const fts=tokens.map(t=>'"'+t.replace(/"/g,'')+'"').join(' OR ');
  let lexical=db.prepare('SELECT d.*,bm25(docs_fts) AS rank FROM docs_fts JOIN docs d ON d.rowid=docs_fts.rowid WHERE docs_fts MATCH ? AND '+scope+' ORDER BY rank,d.id LIMIT 80').all(fts,...params);
  if(!lexical.length)lexical=db.prepare('SELECT d.*,100 AS rank FROM docs d WHERE '+scope+' AND d.content LIKE ? ORDER BY d.id LIMIT 50').all(...params,'%'+query.replace(/[%_]/g,'')+'%');
- const found=new Map(lexical.map((r,i)=>[r.id,{...r,score:1/(60+i+1),lexicalRank:i+1,method:'lexical'}]));
+ const found=new Map(lexical.map((r,i)=>[r.id,{...r,score:1/(RAG_CONFIG.retrieval.rrfK+i+1),lexicalRank:i+1,method:'lexical'}]));
  let note=null;
  const vectors=semantic===false?[]:db.prepare('SELECT d.*,v.vector FROM doc_vectors v JOIN docs d ON d.id=v.doc_id WHERE v.model=? AND v.content_hash=d.hash AND '+scope).all(model,...params);
  if(semantic!==false&&vectors.length){
   if(semantic===true||localModelReady()){
    try{const q=(await embedder([query],{kind:'query'}))[0];if(!Array.isArray(q)||q.some(v=>!Number.isFinite(v))||!q.length)throw Error('Invalid query embedding');
     const ranked=vectors.map(r=>{let v;try{v=JSON.parse(r.vector);}catch{return null;}if(!validVector(v,q.length))return null;const similarity=cosine(q,v);return similarity===null?null:{...r,similarity};}).filter(Boolean).sort((a,b)=>b.similarity-a.similarity||a.id.localeCompare(b.id)).slice(0,80);
-    ranked.forEach((r,i)=>{const previous=found.get(r.id);if(previous){previous.score+=1/(60+i+1);previous.method='hybrid';previous.semanticScore=r.similarity;}else found.set(r.id,{...r,score:1/(60+i+1),semanticScore:r.similarity,method:'semantic'});});
+    ranked.forEach((r,i)=>{const previous=found.get(r.id);if(previous){previous.score+=1/(RAG_CONFIG.retrieval.rrfK+i+1);previous.method='hybrid';previous.semanticScore=r.similarity;}else found.set(r.id,{...r,score:1/(RAG_CONFIG.retrieval.rrfK+i+1),semanticScore:r.similarity,method:'semantic'});});
    }catch(e){if(semantic===true)throw e;note='Local semantic retrieval unavailable; lexical results only';}
   }else note='Local model not prepared; lexical results only (npm run rag:model)';
  }else if(semantic===true)throw Error('No current vectors for requested model/scope; run rag:embed');

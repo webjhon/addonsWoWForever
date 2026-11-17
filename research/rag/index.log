@@ -5,8 +5,8 @@
 {"generated":44,"contracts":33,"dungeons":27}
 {
   status: 'READY_FOR_OFFLINE_TESTS',
-  index: { changed: 69, skipped: 223, vectors: 0, removed: 0 },
-  vectors: { imported: 443, skipped: 25, status: 'IMPORTED_HASH_MATCHED' },
+  index: { changed: 0, skipped: 292, vectors: 0, removed: 0 },
+  vectors: { imported: 468, skipped: 0, status: 'IMPORTED_HASH_MATCHED' },
   curated: { seedVersion: '2026-11-15', entitiesProcessed: 48 },
   wowhead: {
     dataset: 'wowhead-forever',
