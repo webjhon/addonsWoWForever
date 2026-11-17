@@ -1,3 +1,4 @@
+import {disposeEmbedder} from './src/embeddings.ts';
 import path from 'node:path';
 import fs from 'node:fs';
 import {ROOT,readJSON,writeJSON,ensureDir,appendTrace,now,sha} from './src/core.ts';
@@ -53,5 +54,5 @@ export async function executeJourney({blueprintPath,prompt}={}){
 if(process.argv[1] && process.argv[1].endsWith('orchestrator.ts')){
  const isPrompt=process.argv.includes('--prompt');const idx=process.argv.findIndex(x=>x==='--blueprint');
  const opts=isPrompt?{prompt:process.argv.slice(process.argv.indexOf('--prompt')+1).join(' ')}:{blueprintPath:idx>=0?process.argv[idx+1]:undefined};
- executeJourney(opts).then(r=>{console.log(JSON.stringify(r,null,2));if(r.status==='FAILED')process.exitCode=1;}).catch(e=>{console.error(e);process.exitCode=1;});
+ executeJourney(opts).then(r=>{console.log(JSON.stringify(r,null,2));if(r.status==='FAILED')process.exitCode=1;}).catch(e=>{console.error(e);process.exitCode=1;}).finally(disposeEmbedder);
 }

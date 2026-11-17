@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "note": "Manually chosen engineering/gameplay questions, fixed before first retrieval run. Diagnostic sample, not a guarantee for arbitrary requests.",
+  "cases": [
+    {
+      "id": "secret-guid",
+      "query": "Por que o GUID de um NPC continua ilegível fora de combate?",
+      "domain": "api",
+      "sources": [
+        "forever-live-client-lessons-2026-11-16",
+        "rag-expanded:npc-diagnosis",
+        "rag-expanded:api-unit"
+      ],
+      "contains": [
+        "GUID",
+        "secreto"
+      ]
+    },
+    {
+      "id": "detection-vs-render",
+      "query": "A marcação de missão não aparece embora a demonstração desenhe normalmente",
+      "domain": "api",
+      "sources": [
+        "forever-live-client-lessons-2026-11-16",
+        "rag-expanded:npc-diagnosis"
+      ],
+      "contains": [
+        "associa",
+        "demonstra"
+      ]
+    },
+    {
+      "id": "hit-testing",
+      "query": "O X aparece mas não responde quando fica por cima das missões do jogo",
+      "domain": "api",
+      "sources": [
+        "forever-live-client-lessons-2026-11-16",
+        "rag-expanded:ui-hit-testing"
+      ],
+      "contains": [
+        "clique",
+        "ObjectiveTracker"
+      ]
+    },
+    {
+      "id": "stale-arrow-en",
+      "query": "My arrow keeps pointing to the old location after changing continent",
+      "domain": "api",
+      "sources": [
+        "rag-expanded:navigation-confidence",
+        "rag-expanded:api-map"
+      ],
+      "contains": [
+        "direção antiga",
+        "continente",
+        "geometria"
+      ]
+    },
+    {
+      "id": "quest-removed-en",
+      "query": "What happens when a quest disappears from the journal before handing it in?",
+      "domain": "api",
+      "sources": [
+        "rag-expanded:quest-state-machine",
+        "rag-expanded:api-questlog"
+      ],
+      "contains": [
+        "abandon",
+        "MISSING",
+        "entrega"
+      ]
+    },
+    {
+      "id": "save-intent-en",
+      "query": "How can I hide guide panels without losing the selected plan after reload?",
+      "domain": "api",
+      "sources": [
+        "rag-expanded:state-recovery",
+        "rag-expanded:ui-hit-testing",
+        "reference-patterns-zygor-restedxp-2026-11-16"
+      ],
+      "contains": [
+        "pausa",
+        "Pausa",
+        "plano",
+        "intenção"
+      ]
+    },
+    {
+      "id": "xp-uncertainty",
+      "query": "Quantas vezes repetir dungeon para o próximo nível quando a XP por run varia?",
+      "domain": "leveling",
+      "sources": [
+        "rag-expanded:xp-calibration"
+      ],
+      "contains": [
+        "amostra",
+        "XP"
+      ]
+    },
+    {
+      "id": "stockade-giver",
+      "query": "Quais quests do Stockade têm Nikova Raskol como NPC de coleta?",
+      "domain": "leveling",
+      "sources": [
+        "rag-expanded:dungeon-stockade",
+        "whf:source:quest-388"
+      ],
+      "contains": [
+        "Nikova"
+      ]
+    },
+    {
+      "id": "deadmines-turnin",
+      "query": "Como o guia deve tratar quest ativa e entrega em The Deadmines?",
+      "domain": "leveling",
+      "sources": [
+        "rag-expanded:dungeon-deadmines"
+      ],
+      "contains": [
+        "entrega",
+        "diário"
+      ]
+    },
+    {
+      "id": "no-indoor-fabrication",
+      "query": "Entrar na instância prova que o addon sabe onde estão todos os bosses?",
+      "domain": "api",
+      "sources": [
+        "rag-expanded:api-instance",
+        "rag-expanded:navigation-confidence",
+        "rag-expanded:api-map"
+      ],
+      "contains": [
+        "boss",
+        "intern",
+        "entrada"
+      ]
+    },
+    {
+      "id": "event-cleanup-en",
+      "query": "How do I stop old callbacks from accumulating each time the player changes guides?",
+      "domain": "api",
+      "sources": [
+        "rag-expanded:event-performance",
+        "reference-patterns-zygor-restedxp-2026-11-16"
+      ],
+      "contains": [
+        "callback",
+        "observador",
+        "event"
+      ]
+    },
+    {
+      "id": "dialogue-eligibility",
+      "query": "A oferta no diálogo deste NPC garante todas as quests elegíveis da dungeon?",
+      "domain": "api",
+      "sources": [
+        "rag-expanded:api-gossipinfo"
+      ],
+      "contains": [
+        "diálogo",
+        "oferta"
+      ]
+    },
+    {
+      "id": "api-contract",
+      "query": "Quais argumentos e retornos documentados tem C_NamePlate.GetNamePlateForUnit?",
+      "domain": "api",
+      "sources": [
+        "rag-expanded:api-nameplate"
+      ],
+      "contains": [
+        "GetNamePlateForUnit"
+      ]
+    },
+    {
+      "id": "missing-curation",
+      "query": "Shapers Terrace possui todas as quests cadastradas e verificadas no cliente?",
+      "domain": "leveling",
+      "sources": [
+        "rag-expanded:dungeon-shapers"
+      ],
+      "contains": [
+        "Não há quests",
+        "Não há"
+      ]
+    }
+  ]
+}

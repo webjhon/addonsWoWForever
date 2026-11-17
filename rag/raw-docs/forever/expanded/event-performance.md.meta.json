@@ -1,0 +1,17 @@
+{
+  "source_id": "rag-expanded:event-performance",
+  "domain": "api",
+  "title": "Eventos, rajadas e custo de atualização de addons",
+  "faction": "Alliance",
+  "alliance_access": true,
+  "min_level": 1,
+  "max_level": 60,
+  "evidence": "STATIC_REFERENCE_ANALYSIS",
+  "license": "original",
+  "reviewed": true,
+  "uri": "knowledge/lessons/reference-patterns.json",
+  "sources": [],
+  "abstract": "Os padrões de referência analisados sugerem separar cache/reconciliação de desenho, liberar observadores e reutilizar frames com limpeza. Presença de função num arquivo não prova que ela é chamada: ErrorLogger do Zygor analisado retornava antes do restante do módulo. Agrupar rajadas de eventos, limitar ticker visual e cancelar quando oculto/pausado sem necessidade de desenho. Geometria pode atualizar sem reler todo diário. Medir frames, callbacks e consultas após trocar guias repetidamente. Não declarar performance no jogo com base no mock.",
+  "build": null,
+  "note": "Original synthesis. Documentary/gameplay references do not grant global client verification."
+}

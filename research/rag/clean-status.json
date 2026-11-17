@@ -1,0 +1,23 @@
+{
+  "documents": 468,
+  "vectors": 468,
+  "currentVectors": 468,
+  "model": "local:Xenova/multilingual-e5-small@761b726dd34fb83930e26aab4e9ac3899aa1fa78:q8:mean:l2:e5-v1",
+  "dimensions": 384,
+  "localModelReady": false,
+  "retrievalMode": "lexical-fallback",
+  "portableStore": {
+    "schemaVersion": 1,
+    "provider": "local-transformers",
+    "model": "local:Xenova/multilingual-e5-small@761b726dd34fb83930e26aab4e9ac3899aa1fa78:q8:mean:l2:e5-v1",
+    "dimensions": 384,
+    "records": 468,
+    "file": "forever-e5.jsonl.gz",
+    "sha256": "a4844fdb16201b96af0d508b70cc42c71dde317d1ecca068e7da384da0901c32",
+    "contentSetHash": "d86e100c43833a2b178341f4e047b1d27092bc631d70386249fa3bf3405058f6",
+    "format": "gzip-jsonl",
+    "sourceModel": "Xenova/multilingual-e5-small",
+    "revision": "761b726dd34fb83930e26aab4e9ac3899aa1fa78",
+    "clientVerified": false
+  }
+}

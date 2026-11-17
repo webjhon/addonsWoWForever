@@ -12,6 +12,7 @@ CREATE TRIGGER IF NOT EXISTS docs_ai AFTER INSERT ON docs BEGIN INSERT INTO docs
 CREATE TRIGGER IF NOT EXISTS docs_ad AFTER DELETE ON docs BEGIN INSERT INTO docs_fts(docs_fts,rowid,title,content) VALUES('delete',old.rowid,old.title,old.content); END;
 CREATE TRIGGER IF NOT EXISTS docs_au AFTER UPDATE ON docs BEGIN INSERT INTO docs_fts(docs_fts,rowid,title,content) VALUES('delete',old.rowid,old.title,old.content); INSERT INTO docs_fts(rowid,title,content) VALUES(new.rowid,new.title,new.content); END;
 CREATE TABLE IF NOT EXISTS doc_vectors(doc_id TEXT PRIMARY KEY REFERENCES docs(id) ON DELETE CASCADE, model TEXT NOT NULL, vector TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS indexed_files(path TEXT PRIMARY KEY, doc_ids TEXT NOT NULL, fingerprint TEXT NOT NULL);
 CREATE TABLE IF NOT EXISTS entities(id TEXT PRIMARY KEY, kind TEXT NOT NULL, name TEXT NOT NULL, faction TEXT NOT NULL, alliance_access INTEGER NOT NULL DEFAULT 0, min_level INTEGER NOT NULL DEFAULT 1, max_level INTEGER NOT NULL DEFAULT 60, build TEXT, source_id TEXT NOT NULL, evidence TEXT NOT NULL, payload TEXT NOT NULL DEFAULT '{}', updated_at TEXT NOT NULL);
 CREATE INDEX IF NOT EXISTS idx_entity_scope ON entities(kind,faction,alliance_access,min_level,max_level);
 CREATE TABLE IF NOT EXISTS relations(id TEXT PRIMARY KEY, from_id TEXT NOT NULL REFERENCES entities(id), to_id TEXT NOT NULL REFERENCES entities(id), relation TEXT NOT NULL, source_id TEXT NOT NULL, UNIQUE(from_id,to_id,relation));
@@ -22,13 +23,17 @@ CREATE TABLE IF NOT EXISTS test_results(id TEXT PRIMARY KEY, addon TEXT NOT NULL
 `;
 export function openDb(filename=path.join(DATA_DIR,'factory.sqlite')) {
   ensureDir(path.dirname(filename)); const db=new DatabaseSync(filename);
-  db.exec(SCHEMA); db.prepare('INSERT OR IGNORE INTO schema_migrations(version,applied_at) VALUES(1,?)').run(now());
+  db.exec(SCHEMA);
+  if(!db.prepare('PRAGMA table_info(doc_vectors)').all().some(c=>c.name==='content_hash'))db.exec('ALTER TABLE doc_vectors ADD COLUMN content_hash TEXT');
+  db.prepare('INSERT OR IGNORE INTO schema_migrations(version,applied_at) VALUES(1,?)').run(now());
   return db;
 }
 export function upsertDoc(db, doc) {
   if(!doc.id||!doc.source_id||!doc.domain||!doc.title||!doc.content) throw new Error('Document fields missing');
   if(doc.faction==='Horde') throw new Error('Horde data forbidden in operational RAG');
   const h=sha(doc.content);
+  const old=db.prepare('SELECT hash FROM docs WHERE id=?').get(doc.id);
+  if(old&&old.hash!==h)db.prepare('DELETE FROM doc_vectors WHERE doc_id=?').run(doc.id);
   db.prepare(`INSERT INTO docs(id,source_id,domain,title,content,hash,faction,alliance_access,min_level,max_level,build,evidence,license,uri,updated_at)
   VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET source_id=excluded.source_id, domain=excluded.domain,title=excluded.title,content=excluded.content,hash=excluded.hash,faction=excluded.faction,alliance_access=excluded.alliance_access,min_level=excluded.min_level,max_level=excluded.max_level,build=excluded.build,evidence=excluded.evidence,license=excluded.license,uri=excluded.uri,updated_at=excluded.updated_at`).run(
   doc.id,doc.source_id,doc.domain,doc.title,doc.content,h,doc.faction||'Alliance',doc.alliance_access===false?0:1,doc.min_level??1,doc.max_level??60,doc.build||null,doc.evidence||'UNKNOWN',doc.license||'original',doc.uri||null,now());

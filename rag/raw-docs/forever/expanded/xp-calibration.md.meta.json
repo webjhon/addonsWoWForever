@@ -1,0 +1,17 @@
+{
+  "source_id": "rag-expanded:xp-calibration",
+  "domain": "leveling",
+  "title": "Estimativa de runs: XP observada, amostra e incerteza",
+  "faction": "Alliance",
+  "alliance_access": true,
+  "min_level": 1,
+  "max_level": 60,
+  "evidence": "ORIGINAL_ENGINEERING_GUIDANCE",
+  "license": "original",
+  "reviewed": true,
+  "uri": "addon-src/AllianceDungeonTrail/Product.lua",
+  "sources": [],
+  "abstract": "Uma estimativa de quantas runs faltam deve usar XP restante e amostras comparáveis de ganho, com contexto de nível, grupo, dungeon e sessão. Não há número universal de runs. Uma visita curta, reload ou morte pode invalidar a amostra; XP positiva não prova clear. Tratar rollover ao subir de nível uma única vez. Separar bônus/quests quando não forem mensuráveis de modo confiável, ou declarar a mistura. Sem amostras suficientes, apresentar intervalo conservador ou insuficiência; não inventar precisão nem insistir numa dungeon inadequada.",
+  "build": null,
+  "note": "Original synthesis. Documentary/gameplay references do not grant global client verification."
+}

@@ -1,0 +1,20 @@
+{
+  "source_id": "rag-expanded:api-container",
+  "domain": "api",
+  "title": "Inventário e coleta: itens, slots e objetivos",
+  "faction": "Alliance",
+  "alliance_access": true,
+  "min_level": 1,
+  "max_level": 60,
+  "evidence": "STATIC_API_DOCUMENTATION",
+  "license": "original",
+  "reviewed": true,
+  "uri": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ContainerDocumentation.lua",
+  "sources": [
+    "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ContainerDocumentation.lua",
+    "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ContainerDocumentation.lua"
+  ],
+  "abstract": "Escopo: Alliance1–60, interface16001. Snapshot documental bebcb6bf309cf41b41bd74f8ca651e6a105b2676. Runtime das funções abaixo permanece UNVERIFIED até teste específico. Quantidade no inventário e objetivo de quest podem representar coisas distintas. Um item pode pertencer a outra missão, estar no banco ou não ter sido contado ainda. IDs, tipos e ordinais de objetivo precisam de fonte e leitura autoritativa.",
+  "build": null,
+  "note": "Original synthesis. Documentary/gameplay references do not grant global client verification."
+}

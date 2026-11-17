@@ -1,0 +1,35 @@
+
+> wow-addon-ai-factory@0.1.0 doctor
+> node --experimental-strip-types scripts/factory.ts doctor
+
+{
+  "node": "v24.18.0",
+  "interface": 16001,
+  "docs": 468,
+  "entities": 229,
+  "memories": 1,
+  "rag": {
+    "documents": 468,
+    "vectors": 468,
+    "currentVectors": 468,
+    "model": "local:Xenova/multilingual-e5-small@761b726dd34fb83930e26aab4e9ac3899aa1fa78:q8:mean:l2:e5-v1",
+    "dimensions": 384,
+    "localModelReady": true,
+    "retrievalMode": "hybrid-local-when-vectors-match",
+    "portableStore": {
+      "schemaVersion": 1,
+      "provider": "local-transformers",
+      "model": "local:Xenova/multilingual-e5-small@761b726dd34fb83930e26aab4e9ac3899aa1fa78:q8:mean:l2:e5-v1",
+      "dimensions": 384,
+      "records": 468,
+      "file": "forever-e5.jsonl.gz",
+      "sha256": "c07c139f86f382944c87a41961fc477cdb26a6779ba1fd040fbfc30b4b46126b",
+      "contentSetHash": "208781451ab7e00ca79d9c59584db9b884f50bfffa2ab0409d3bf8f60a0ead45",
+      "format": "gzip-jsonl",
+      "sourceModel": "Xenova/multilingual-e5-small",
+      "revision": "761b726dd34fb83930e26aab4e9ac3899aa1fa78",
+      "clientVerified": false
+    }
+  },
+  "apiKeyPresent": false
+}

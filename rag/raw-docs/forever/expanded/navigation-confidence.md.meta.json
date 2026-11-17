@@ -1,0 +1,17 @@
+{
+  "source_id": "rag-expanded:navigation-confidence",
+  "domain": "api",
+  "title": "Navegação útil com mapa ausente e direção em linha reta",
+  "faction": "Alliance",
+  "alliance_access": true,
+  "min_level": 1,
+  "max_level": 60,
+  "evidence": "PARTIAL_CLIENT_TESTED",
+  "license": "original",
+  "reviewed": true,
+  "uri": "research/AllianceDungeonTrail/LIVE-TEST.md",
+  "sources": [],
+  "abstract": "Caminhada curta na cidade alterou distância aproximadamente35→25→15m e a direção ao passar pelo ponto. Isso verifica geometria naquele contexto; não comprova percurso interno, pathfinding ou todas as entradas. Coordenadas de entrada não foram promovidas a posição de boss. Separar seleção do destino, conversão de mapa e desenho. Ao perder dados ou mudar de continente, não manter seta antiga. Mostrar referência textual quando houver. Não concluir missão por chegada. Uso de APIs e dados de posição exige validação por build e contexto.",
+  "build": null,
+  "note": "Original synthesis. Documentary/gameplay references do not grant global client verification."
+}

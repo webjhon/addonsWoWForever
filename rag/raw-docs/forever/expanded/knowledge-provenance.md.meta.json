@@ -1,0 +1,17 @@
+{
+  "source_id": "rag-expanded:knowledge-provenance",
+  "domain": "api",
+  "title": "Dado documental, fato comunitário e observação real",
+  "faction": "Alliance",
+  "alliance_access": true,
+  "min_level": 1,
+  "max_level": 60,
+  "evidence": "OFFICIAL_FACTORY_POLICY",
+  "license": "original",
+  "reviewed": true,
+  "uri": "FACTORY-WORKFLOW.md",
+  "sources": [],
+  "abstract": "Documentação de API descreve contrato. Catálogo comunitário descreve fatos parciais. Teste de jogo comprova apenas o cenário observado. Embeddings e relevância de busca não aumentam o grau de evidência. Não promover UNVERIFIED a SUPPORTED porque uma resposta parece plausível. Cada documento deve expor fonte, revisão/build quando conhecida, domínio, licença e limites. Texto original de síntese não autoriza importar guias pagos. Mudança de documento invalida seu vetor; remoção precisa limpar chunks antigos e vetores, preservando fontes de outros importadores.",
+  "build": null,
+  "note": "Original synthesis. Documentary/gameplay references do not grant global client verification."
+}

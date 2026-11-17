@@ -1,0 +1,17 @@
+{
+  "source_id": "rag-expanded:quest-state-machine",
+  "domain": "api",
+  "title": "Máquina de estados de quests com dados desconhecidos",
+  "faction": "Alliance",
+  "alliance_access": true,
+  "min_level": 1,
+  "max_level": 60,
+  "evidence": "ORIGINAL_ENGINEERING_GUIDANCE",
+  "license": "original",
+  "reviewed": true,
+  "uri": "docs/PROFESSIONAL-INTERACTIVITY.md",
+  "sources": [],
+  "abstract": "Identidade numérica, objetivos atuais e informação de entrega devem ser fontes de verdade independentes do checklist. MISSING não equivale a TURNED_IN; READY não equivale a entrega. Objetivo indisponível não pode ser interpretado como concluído. Desconhecido precisa continuar desconhecido. Reconciliar depois de aceitação, mudança de objetivo, remoção e reload. Eventos podem chegar repetidos ou fora da ordem. Só emitir avanço autoritativo após sinal correspondente. Incluir testes de abandono, falha, segredo, morte, troca de personagem e retorno de API.",
+  "build": null,
+  "note": "Original synthesis. Documentary/gameplay references do not grant global client verification."
+}
