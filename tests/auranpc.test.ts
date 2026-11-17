@@ -64,7 +64,7 @@ test('reload/login reconstructs quests and per-character configuration, caps all
  assert(AURA.stats.visible<=80 and AURA.stats.drawn<=40 and AURA.created<=40)
 `));
 test('out of scope or disabled automatically hides; enemy plate assistance restores local setting',()=>run(`
- accept(7);plate('nameplate1',6);TEST.faction='Horde';fire('PLAYER_ENTERING_WORLD');assert(AURA.stats.drawn==0)
+ accept(7);plate('nameplate1',6);TEST.faction='Unknown';fire('PLAYER_ENTERING_WORLD');assert(AURA.stats.drawn==0)
  TEST.faction='Alliance';TEST.level=61;fire('PLAYER_LEVEL_UP');assert(AURA.stats.drawn==0)
  TEST.level=20;TEST.cvars.nameplateShowEnemies='0';fire('PLAYER_ENTERING_WORLD');assert(TEST.cvars.nameplateShowEnemies=='1' and AURA.stats.drawn==1)
  AURA.settings.enabled=false;AURA.ApplyPlateSetting();AURA.Reconcile();assert(TEST.cvars.nameplateShowEnemies=='0' and AURA.stats.drawn==0)

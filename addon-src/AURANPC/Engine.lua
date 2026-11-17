@@ -19,10 +19,11 @@ ns.IsNumber, ns.IsText = number, text
 function ns.Context()
     local faction = ns.Read(function() return UnitFactionGroup('player') end)
     local level = ns.Read(function() return UnitLevel('player') end)
-    return faction == 'Alliance' and number(level) and level >= 1 and level <= 60
+    return (faction == 'Alliance' or faction == 'Horde') and number(level) and level >= 1 and level <= 60
 end
 function ns.ScanQuests()
     ns.quests, ns.byNPC, ns.titles = {}, {}, {}
+    ns.itemQuests, ns.itemTitles = {}, {}
     ns.questReadable = false
     local count = ns.Read(function() return C_QuestLog.GetNumQuestLogEntries() end)
     if not number(count) or count < 0 or count > 200 then return end
@@ -34,6 +35,11 @@ function ns.ScanQuests()
             local complete = ns.Read(C_QuestLog.IsComplete, id)
             local failed = ns.Read(C_QuestLog.IsFailed, id)
             local objectives = ns.Read(C_QuestLog.GetQuestObjectives, id)
+            if ns.itemQuests and not ns.removed[id] and failed==false then
+                local title=text(info.title) and info.title or ('Quest '..id)
+                ns.itemQuests[id]={id=id,title=title,complete=complete}
+                if ns.itemTitles[title]==nil then ns.itemTitles[title]=id else ns.itemTitles[title]=false end
+            end
             if not ns.removed[id] and complete == false and failed ~= true and type(objectives)=='table' then
                 local quest = {id=id, title=text(info.title) and info.title or ('Quest '..id), needed={}, known={}}
                 local ordinal = {monster=0,item=0,object=0}
@@ -167,6 +173,7 @@ function ns.Reconcile()
         elseif ns.markers[unit] then ns.Release(ns.markers[unit]);ns.markers[unit]=nil end
     end
     ns.stats=s
+    if ns.RefreshItems then ns.RefreshItems() end
     if ns.UpdateHUD then ns.UpdateHUD(first) end
     if ns.UpdateStatus then ns.UpdateStatus() end
 end

@@ -13,7 +13,7 @@
   "rule": "Every new or revised addon supports both factions. Historical exact candidates remain explicitly single-faction until rebuilt; this exception cannot approve changed code.",
   "legacyCandidates": [
     {
-      "file": "research/AURANPC/AURANPC.blueprint.json",
+      "file": "research/AURANPC/history/AURANPC-2.0.1.blueprint.json",
       "addon": "AURANPC",
       "version": "2.0.1",
       "faction": "Alliance",

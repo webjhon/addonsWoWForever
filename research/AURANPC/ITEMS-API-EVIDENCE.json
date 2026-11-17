@@ -1,0 +1,269 @@
+{
+  "observedOn": "2026-11-17",
+  "client": "1.60.1.70959",
+  "interfaceReference": 16001,
+  "product": "wowf",
+  "buildKey": "ad887adcf63b8746155dd40e1930b80f",
+  "cdnKey": "4831465d4b6a7db3302338ab0f1ac231",
+  "extraction": "TACTTool0.2.0-alpha1 local CASC list; restricted network; no game modifications or imported keys",
+  "clientVerified": false,
+  "runtime": "NOT_RUN",
+  "records": [
+    {
+      "file": "Blizzard_UIPanels_Game/Mainline/LootFrame.lua",
+      "sha256": "5603c8befb4fe03fe88d6bcf9b358f0ed66bae2b6cb235786c348f9c057dd1a8",
+      "bytes": 22733,
+      "normalizedSha256": "3e0e992271a5271dab9e856946c28970de772bb146529676ccda2bb9bae085fd"
+    },
+    {
+      "file": "Blizzard_UIPanels_Game/Mainline/ContainerFrame.lua",
+      "sha256": "b6882e54d582645d0b23896ff8f5d5b21fb9c053e3bec0d13288ad4c37bb9358",
+      "bytes": 117977,
+      "normalizedSha256": "f45388202630969c394189bed08658c8559d66f65e0d0865d8b65a7779aa1a05"
+    },
+    {
+      "file": "Blizzard_APIDocumentationGenerated/TooltipInfoDocumentation.lua",
+      "sha256": "0c2184a4ba787a5fbd37646e0f297a6e79a3ac5f60ccbcd07dabcc8048e89718",
+      "bytes": 31341,
+      "normalizedSha256": "0c2184a4ba787a5fbd37646e0f297a6e79a3ac5f60ccbcd07dabcc8048e89718",
+      "selectedContracts": [
+        {
+          "symbol": "C_TooltipInfo.GetBagItem",
+          "arguments": [
+            {
+              "name": "bagIndex",
+              "type": "BagIndex",
+              "nilable": false,
+              "default": null,
+              "conditionalSecret": null,
+              "secret": null,
+              "innerType": null
+            },
+            {
+              "name": "slotIndex",
+              "type": "luaIndex",
+              "nilable": false,
+              "default": null,
+              "conditionalSecret": null,
+              "secret": null,
+              "innerType": null
+            }
+          ],
+          "returns": [
+            {
+              "name": "data",
+              "type": "TooltipData",
+              "nilable": false,
+              "default": null,
+              "conditionalSecret": null,
+              "secret": null,
+              "innerType": null
+            }
+          ],
+          "secretArguments": "AllowedWhenUntainted",
+          "secretReturns": null,
+          "secretReturnsForAspect": null,
+          "hasRestrictions": null,
+          "mayReturnNothing": true,
+          "status": "UNVERIFIED"
+        },
+        {
+          "symbol": "C_TooltipInfo.GetLootItem",
+          "arguments": [
+            {
+              "name": "slot",
+              "type": "luaIndex",
+              "nilable": false,
+              "default": null,
+              "conditionalSecret": null,
+              "secret": null,
+              "innerType": null
+            }
+          ],
+          "returns": [
+            {
+              "name": "data",
+              "type": "TooltipData",
+              "nilable": false,
+              "default": null,
+              "conditionalSecret": null,
+              "secret": null,
+              "innerType": null
+            }
+          ],
+          "secretArguments": "AllowedWhenUntainted",
+          "secretReturns": null,
+          "secretReturnsForAspect": null,
+          "hasRestrictions": null,
+          "mayReturnNothing": true,
+          "status": "UNVERIFIED"
+        }
+      ]
+    },
+    {
+      "file": "Blizzard_APIDocumentationGenerated/ContainerDocumentation.lua",
+      "sha256": "dd3e4741d45720384f814d3f78ce975dab3951458ae894e728ed3aedc8ae56b3",
+      "bytes": 19085,
+      "normalizedSha256": "dd3e4741d45720384f814d3f78ce975dab3951458ae894e728ed3aedc8ae56b3",
+      "selectedContracts": [
+        {
+          "symbol": "C_Container.GetContainerItemInfo",
+          "arguments": [
+            {
+              "name": "containerIndex",
+              "type": "BagIndex",
+              "nilable": false,
+              "default": null,
+              "conditionalSecret": null,
+              "secret": null,
+              "innerType": null
+            },
+            {
+              "name": "slotIndex",
+              "type": "luaIndex",
+              "nilable": false,
+              "default": null,
+              "conditionalSecret": null,
+              "secret": null,
+              "innerType": null
+            }
+          ],
+          "returns": [
+            {
+              "name": "containerInfo",
+              "type": "ContainerItemInfo",
+              "nilable": false,
+              "default": null,
+              "conditionalSecret": null,
+              "secret": null,
+              "innerType": null
+            }
+          ],
+          "secretArguments": "AllowedWhenUntainted",
+          "secretReturns": null,
+          "secretReturnsForAspect": null,
+          "hasRestrictions": null,
+          "mayReturnNothing": true,
+          "status": "UNVERIFIED"
+        },
+        {
+          "symbol": "C_Container.GetContainerItemQuestInfo",
+          "arguments": [
+            {
+              "name": "containerIndex",
+              "type": "BagIndex",
+              "nilable": false,
+              "default": null,
+              "conditionalSecret": null,
+              "secret": null,
+              "innerType": null
+            },
+            {
+              "name": "slotIndex",
+              "type": "luaIndex",
+              "nilable": false,
+              "default": null,
+              "conditionalSecret": null,
+              "secret": null,
+              "innerType": null
+            }
+          ],
+          "returns": [
+            {
+              "name": "questInfo",
+              "type": "ItemQuestInfo",
+              "nilable": false,
+              "default": null,
+              "conditionalSecret": null,
+              "secret": null,
+              "innerType": null
+            }
+          ],
+          "secretArguments": "AllowedWhenUntainted",
+          "secretReturns": null,
+          "secretReturnsForAspect": null,
+          "hasRestrictions": null,
+          "mayReturnNothing": null,
+          "status": "UNVERIFIED"
+        }
+      ]
+    },
+    {
+      "file": "Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua",
+      "sha256": "e637368f36d153f8b432455cfa247d0c67c84996dce8d591bc1eb4d1cd7bc098",
+      "bytes": 36588,
+      "normalizedSha256": "e637368f36d153f8b432455cfa247d0c67c84996dce8d591bc1eb4d1cd7bc098",
+      "selectedContracts": [
+        {
+          "symbol": "C_QuestLog.GetInfo",
+          "arguments": [
+            {
+              "name": "questLogIndex",
+              "type": "luaIndex",
+              "nilable": false,
+              "default": null,
+              "conditionalSecret": null,
+              "secret": null,
+              "innerType": null
+            }
+          ],
+          "returns": [
+            {
+              "name": "info",
+              "type": "QuestInfo",
+              "nilable": true,
+              "default": null,
+              "conditionalSecret": null,
+              "secret": null,
+              "innerType": null
+            }
+          ],
+          "secretArguments": "AllowedWhenUntainted",
+          "secretReturns": null,
+          "secretReturnsForAspect": null,
+          "hasRestrictions": null,
+          "mayReturnNothing": null,
+          "status": "UNVERIFIED"
+        },
+        {
+          "symbol": "C_QuestLog.GetQuestObjectives",
+          "arguments": [
+            {
+              "name": "questID",
+              "type": "number",
+              "nilable": false,
+              "default": null,
+              "conditionalSecret": null,
+              "secret": null,
+              "innerType": null
+            }
+          ],
+          "returns": [
+            {
+              "name": "objectives",
+              "type": "table",
+              "nilable": false,
+              "default": null,
+              "conditionalSecret": null,
+              "secret": null,
+              "innerType": "QuestObjectiveInfo"
+            }
+          ],
+          "secretArguments": "AllowedWhenUntainted",
+          "secretReturns": null,
+          "secretReturnsForAspect": null,
+          "hasRestrictions": null,
+          "mayReturnNothing": true,
+          "status": "UNVERIFIED"
+        }
+      ]
+    }
+  ],
+  "uiFacts": {
+    "lootRows": "LootFrame.ScrollBox:EnumerateFrames(); row:GetSlotIndex() in current UI; read GetLootSlotInfo returns7/8/9: isQuestItem, questID, isActive",
+    "bagButtons": "ContainerFrameUtil_EnumerateContainerFrames, EnumerateValidItems, button:GetBagID()/GetID(); combined bags retain per-button bagID",
+    "postHooks": "ContainerFrameItemButtonMixin.UpdateQuestItem and LootFrameElementMixin.Init; rendering is original, hooksecurefunc only",
+    "itemRelation": "Explicit active journal questID; public exact unique QuestTitle tooltip; or independent public isQuestItem AND isActive flags with current active journal. Generic quest classification alone never enough."
+  },
+  "rights": "Original factual summaries/signatures only. Raw UI/Lua kept untracked; no third-party UI code redistributed."
+}

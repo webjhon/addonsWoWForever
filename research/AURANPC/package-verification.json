@@ -1,12 +1,19 @@
 {
+  "version": "2.1.0",
   "status": "STATIC_PASSED",
   "mockStatus": "MOCK_PASSED",
   "clientVerified": false,
-  "clientTests": "PARTIAL_CLIENT_TESTED",
-  "version": "2.0.1",
+  "clientTests": "NOT_RUN",
+  "historicalClientObservation": "2.0.1 Alliance70938 only",
+  "sourceBuild": "1.60.1.70959",
+  "interfaceReference": 16001,
+  "factions": [
+    "Alliance",
+    "Horde"
+  ],
   "tests": {
-    "passed": 89,
-    "count": 89
+    "count": 150,
+    "passed": 150
   },
   "logs": [
     {
@@ -14,7 +21,7 @@
       "exit": 0
     },
     {
-      "label": "node-tests",
+      "label": "all-tests",
       "exit": 0
     },
     {
@@ -34,7 +41,7 @@
       "exit": 0
     },
     {
-      "label": "final-package-tests",
+      "label": "final-package",
       "exit": 0
     },
     {
@@ -48,14 +55,13 @@
     {
       "label": "preview-complete",
       "exit": 0
+    },
+    {
+      "label": "preview-items",
+      "exit": 0
     }
   ],
-  "zip": "AURANPC-2.0.1-candidate.zip",
-  "zipBytes": 192909,
-  "sha256": "e2ef789215f9a2977e57f45d0deb6ef4632ddc131b0c501d794df8bd35bbbe2c",
-  "interface": 16001,
-  "installedExecutable": "1.60.1.70938",
-  "visuals": "OWN_2D_NAMEPLATE_OVERLAY",
-  "sharedSideEffects": "NONE",
-  "crc32": "PASSED"
+  "zip": "AURANPC-2.1.0-candidate.zip",
+  "sha256": "b43135cc449128d24f37245b189360c22a26ac96859c343e0afd092432b79c7a",
+  "zipBytes": 196336
 }

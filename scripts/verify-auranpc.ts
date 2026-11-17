@@ -1,44 +1,28 @@
-import fs from 'node:fs';
-import path from 'node:path';
-import {spawnSync} from 'node:child_process';
-import assert from 'node:assert/strict';
-import {ROOT,sha,writeJSON} from '../src/core.ts';
-import {executeJourney} from '../orchestrator.ts';
-const dir=path.join(ROOT,'research/AURANPC'),logs=[];
-function run(args:string[],label:string){
- const r=spawnSync(process.execPath,args,{cwd:ROOT,encoding:'utf8',timeout:90000});
- const output=(r.stdout||'')+(r.stderr||'');fs.writeFileSync(path.join(dir,label+'.log'),output);logs.push({label,exit:r.status});
- if(r.error||r.status!==0)throw Error(label+': '+output.slice(-4500));return output;
-}
-async function build(){
- run(['scripts/prepare-auranpc.mjs'],'prepare');
- const j=await executeJourney({blueprintPath:path.join(dir,'AURANPC.blueprint.json')});assert.equal(j.status,'STATIC_PASSED',j.error);
- fs.writeFileSync(path.join(ROOT,'releases/AURANPC-2.0.1-candidate.sha256'),sha(fs.readFileSync(j.result.out))+'  AURANPC-2.0.1-candidate.zip\n');return j;
-}
+import fs from 'node:fs';import path from 'node:path';import {spawnSync} from 'node:child_process';import assert from 'node:assert/strict';
+import {ROOT,sha,writeJSON} from '../src/core.ts';import {executeJourney} from '../orchestrator.ts';
+const dir=path.join(ROOT,'research/AURANPC'),version='2.1.0',filename='AURANPC-'+version+'-candidate.zip',logs=[];
+function run(args,label){const r=spawnSync(process.execPath,args,{cwd:ROOT,encoding:'utf8',timeout:90000}),output=(r.stdout||'')+(r.stderr||'');fs.writeFileSync(path.join(ROOT,'.data','auranpc-'+label+'.log'),output);logs.push({label,exit:r.status});if(r.error||r.status!==0)throw Error(label+': '+output.slice(-3000));return output;}
+async function build(){run(['scripts/prepare-auranpc.mjs'],'prepare');const j=await executeJourney({blueprintPath:path.join(dir,'AURANPC.blueprint.json')});assert.equal(j.status,'STATIC_PASSED',j.error);fs.writeFileSync(path.join(ROOT,'releases',filename.replace('.zip','.sha256')),sha(fs.readFileSync(j.result.out))+'  '+filename+'\n');return j;}
 await build();
-const tests=run(['--experimental-strip-types','--test','--test-reporter=tap',...fs.readdirSync(path.join(ROOT,'tests')).filter(f=>f.endsWith('.test.ts')).map(f=>'tests/'+f)],'node-tests');
-run(['--experimental-strip-types','evals/run-evals.ts'],'factory-evals');
-run(['--experimental-strip-types','scripts/factory.ts','doctor'],'doctor');
-run(['--experimental-strip-types','orchestrator.ts','--blueprint','evals/fixtures/alliance-level-pulse.blueprint.json'],'example');
-const count=Number(tests.match(/# tests (\d+)/)?.[1]),passed=Number(tests.match(/# pass (\d+)/)?.[1]);assert.ok(count>=85&&passed===count);
-const report=`# AURANPC 2.0.1 — testes executados
+const tests=run(['--experimental-strip-types','--test','--test-reporter=tap',...fs.readdirSync(path.join(ROOT,'tests')).filter(f=>f.endsWith('.test.ts')).map(f=>'tests/'+f)],'all-tests');
+run(['--experimental-strip-types','evals/run-evals.ts'],'factory-evals');run(['--experimental-strip-types','scripts/factory.ts','doctor'],'doctor');run(['--experimental-strip-types','orchestrator.ts','--blueprint','evals/fixtures/alliance-level-pulse.blueprint.json'],'example');
+const count=Number(tests.match(/# tests (\d+)/)?.[1]),passed=Number(tests.match(/# pass (\d+)/)?.[1]);assert.ok(count>=150&&count===passed);
+const report=`# AURANPC ${version} — relatório executado
 
-Execução ${new Date().toISOString()}, Node ${process.version}. **${passed}/${count} testes aprovados** no conjunto completo, incluindo 17 testes específicos de comportamento/sintaxe e integridade do pacote. Evals da fábrica, doctor, exemplo e jornada executados. Validadores mantidos integralmente.
+${new Date().toISOString()}, Node ${process.version}. **${passed}/${count} testes automatizados aprovados**. Jornada, produto/facção, conjunto completo, evals, doctor e exemplo executados. STATIC_PASSED / MOCK_PASSED. **Cliente real desta versão: NOT_RUN; clientVerified:false.**
 
-Status: STATIC_PASSED / MOCK_PASSED. **WoW Forever: PARTIAL_CLIENT_TESTED em 16/11/2026.** Em Stockade, personagem Alliance26 parado: versão2.0.0 falhou (GUID/textos secretos); correção usa relação pública de quest e desenhou marcador real que acompanhou NPC andando. Demonstração, reload, créditos, configurações, desativação/reativação e borda sem pulso observados. Sem combate, conclusão/abandono/entrega real, mapa aberto ou teste prolongado; não é aprovação integral CLIENT_VERIFIED. Executável instalado 1.60.1.70938, interface de referência16001; runtime UNVERIFIED.
+Implementação: bordas amarelas e exclamações próprias nas bolsas e linhas de loot; pulso opcional no loot, controles independentes e preferências por personagem; Alliance e Horde. Destaque de NPC preservado. Nenhum loot/uso/movimento de itens automático ou efeito no grupo.
 
-Fengari executa Lua em mock: aceite/objetivos/conclusão/abandono/entrega; ordinais separados por tipo; fallback por título único da própria quest; mortes e saque; placas em movimento via âncora; troca de token e remoções perdidas; combate com placa permitida; placas proibidas/ocultas; GUID/tabelas/campos secretos; reload/GUID; limite80 unidades/40 marcadores; coalescência e ausência de rescan do diário no ticker; som local com cooldown; configuração e restauração de placas. Luaparse valida Lua5.1. Mock não reproduz o renderizador ou modelo de segurança real.
+Fengari executou Lua5.1 pela ordem do TOC: ambas as facções, NPC+item, aceite/abandono/entrega, conclusão e entrega pendente, itens comuns por título público único de quest, iniciador inativo rejeitado, classificação genérica insuficiente, troca de slot/linha/visibilidade, fechamento do loot, controles e pulso desligado com borda sólida, dados secretos/ausentes, frames proibidos, reload e identidade desconhecida/recuperada, descoberta de bolsas padrão/hooks e coalescência sem rescan de quests. Testes anteriores de NPC continuam ativos. Luaparse valida sintaxe. Mock não reproduz renderizador, combate ou taint reais.
 
-Pacote: SHA256, layout de instalação, conteúdo exato do blueprint e fonte, CRC32, autoria, branding central e TGA512x512 verificados por teste executável. As prévias UI-settings/highlight/complete são mocks. live/dungeon-highlight.png é recorte real desta sessão, sem chat/identificadores do personagem.
+Pacote verificado por SHA256/CRC32, comparação integral com blueprint/fontes, autoria, pixel hunter/splash e ícone. A revisão corrigiu a omissão inicial de Items.lua no TOC do gerador: o harness agora carrega pelo TOC e a integridade exige Items.lua antes de Core.lua. Prévias UI-* são mocks, não capturas do jogo.
 
-Revisão crítica: observação automática faz a parte principal; nenhuma marcação manual de progresso. Destaque é desenhado pelo AURANPC, com borda opaca mesmo sem pulso, exclamação e quest. Som é opt-in. Referência ForeverAuras usada apenas para avaliar arquitetura de âncoras/eventos, sem incorporar código/arte GPL. Associações MIT têm proveniência versionada, mas podem divergir de objetivos da fase atual.
+Fontes: CASC local1.60.1.70959, somente leitura. A tentativa inicial com chaves antigas70938 falhou; identidade atual foi conferida e a extração refeita. Manifesto/hashes/contratos em ITEMS-CASC-MANIFEST.txt e ITEMS-API-EVIDENCE.json. Loot coincide com referência anterior após normalizar finais de linha; Container mudou e foram usados métodos presentes na fonte atual. Nenhum código/artes de UI de terceiros incorporado. Padrões adotados: sinais/decisão/view, reconciliação, limpeza e compatibilidade versionada. Roteamento/geometria/DSL de guias não se aplicam.
 
-Limitações materiais: efeito 2D sobre placas públicas, não aura3D; depende de alcance/visibilidade e restrições do cliente, sem promessa100%. Até40 marcadores simultâneos; sobreposição em grupos densos precisa de avaliação real. Fallback de relação pública não identifica questID/nome nem distingue objetivo/saque; usa rótulo genérico sem inventar identidade. Dados cobrem1454 quests/5208 associações comunitárias de criaturas, não todas as quests; sem associação ou tooltip público correspondente, não inventa destaque. Placas amigáveis restritas em dungeon não são contornadas. Demonstração não conta como detecção. Aprovação final exige CLIENT-TEST.md no jogo.
+Limites: UI padrão de loot e bolsas separadas/combinadas; interfaces de terceiros exigem métodos padrão ou adaptador e não foram certificadas. Relação pública por questID ativo, título exato/único ou flags independentes de relação ativa; item classificado como quest não basta. Dados ausentes não geram selo. Auto-loot pode fechar antes do efeito visível. Limites360 overlays/80 linhas; sem promessa100%. Fallback NPC comunitário consulta só quests realmente ativas; associação direta depende do estado do personagem, sem copiar catálogo Alliance para Horde.
+
+Revisão crítica como jogador: os destaques são automáticos, os controles são de configuração e os overlays não habilitam mouse. Clique/drag/tooltip, combate, bolsas combinadas, rolagem, outras UIs, mundo aberto/dungeon e ambas as facções precisam de teste real. Histórico parcial2.0.1 em Alliance70938 permanece em LIVE-TEST.md e não aprova itens/Horde/esta candidata. Checklist em CLIENT-TEST.md. Nenhum CLIENT_VERIFIED fabricado.
 `;
-fs.writeFileSync(path.join(ROOT,'addon-src/AURANPC/TEST-REPORT.md'),report);fs.writeFileSync(path.join(dir,'TEST-REPORT.md'),report);
-const journey=await build();writeJSON(path.join(dir,'journey.json'),journey);
-run(['--experimental-strip-types','--test','tests/auranpc-package.test.ts'],'final-package-tests');
-for(const state of ['settings','highlight','complete'])run(['scripts/preview-auranpc.mjs',state],'preview-'+state);
-const zip=fs.readFileSync(journey.result.out);
-const verification={status:'STATIC_PASSED',mockStatus:'MOCK_PASSED',clientVerified:false,clientTests:'PARTIAL_CLIENT_TESTED',version:'2.0.1',tests:{passed,count},logs,zip:path.basename(journey.result.out),zipBytes:zip.length,sha256:sha(zip),interface:16001,installedExecutable:'1.60.1.70938',visuals:'OWN_2D_NAMEPLATE_OVERLAY',sharedSideEffects:'NONE',crc32:'PASSED'};
-writeJSON(path.join(dir,'package-verification.json'),verification);console.log(JSON.stringify(verification,null,2));
+for(const f of [path.join(ROOT,'addon-src/AURANPC/TEST-REPORT.md'),path.join(dir,'TEST-REPORT.md')])fs.writeFileSync(f,report);
+const final=await build();run(['--experimental-strip-types','--test','tests/auranpc-package.test.ts'],'final-package');for(const state of ['settings','highlight','complete','items'])run(['scripts/preview-auranpc.mjs',state],'preview-'+state);
+const verification={version,status:'STATIC_PASSED',mockStatus:'MOCK_PASSED',clientVerified:false,clientTests:'NOT_RUN',historicalClientObservation:'2.0.1 Alliance70938 only',sourceBuild:'1.60.1.70959',interfaceReference:16001,factions:['Alliance','Horde'],tests:{count,passed},logs,zip:filename,sha256:sha(fs.readFileSync(final.result.out)),zipBytes:fs.statSync(final.result.out).size};writeJSON(path.join(dir,'package-verification.json'),verification);writeJSON(path.join(dir,'journey.json'),{status:final.status,clientVerified:false,stages:final.stages.map(s=>({name:s.name,ok:s.ok,status:s.status||null})),zip:filename});console.log(JSON.stringify(verification,null,2));

@@ -7,10 +7,10 @@ import crypto from 'node:crypto';
 import {ROOT} from '../src/core.ts';
 
 test('Shipped AURANPC ZIP matches tested blueprint, original branding, installation layout and SHA256',()=>{
- const filename='AURANPC-2.0.1-candidate.zip';
+ const filename='AURANPC-2.1.0-candidate.zip';
  const bytes=fs.readFileSync(path.join(ROOT,'releases',filename));
  const hash=crypto.createHash('sha256').update(bytes).digest('hex');
- assert.equal(fs.readFileSync(path.join(ROOT,'releases/AURANPC-2.0.1-candidate.sha256'),'utf8').trim(),hash+'  '+filename);
+ assert.equal(fs.readFileSync(path.join(ROOT,'releases/AURANPC-2.1.0-candidate.sha256'),'utf8').trim(),hash+'  '+filename);
  const entries=new Map<string,Buffer>();let offset=0;
  while(bytes.readUInt32LE(offset)===0x04034b50){
   const size=bytes.readUInt32LE(offset+18),n=bytes.readUInt16LE(offset+26),extra=bytes.readUInt16LE(offset+28);
@@ -27,6 +27,7 @@ test('Shipped AURANPC ZIP matches tested blueprint, original branding, installat
   assert.equal(entries.get('AURANPC/'+f.filename)?.toString('utf8'),expected,'Stale package: '+f.filename);
  }
  const toc=entries.get('AURANPC/AURANPC.toc')!.toString();
+ assert.match(toc,/^Items\.lua$/m);assert.ok(toc.indexOf('Items.lua')<toc.indexOf('Core.lua'));
  assert.match(toc,/## Author: Tonho Contrabando/);assert.ok(toc.indexOf('TonhoBranding.lua')<toc.indexOf('\nData.lua'));
  assert.deepEqual(entries.get('AURANPC/assets/TonhoHunter.tga'),fs.readFileSync(path.join(ROOT,'design-system/branding/TonhoHunter.tga')));
  const meta=JSON.parse(entries.get('AURANPC/FACTORY-VALIDATION.json')!.toString());

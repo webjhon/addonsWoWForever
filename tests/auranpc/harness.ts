@@ -10,7 +10,7 @@ export function run(code:string){
  try{
   exec(fs.readFileSync(path.join(ROOT,'tests/dungeon-trail/mock.lua'),'utf8'),'base mock');
   exec(fs.readFileSync(path.join(ROOT,'tests/auranpc/mock.lua'),'utf8'),'AURANPC mock');
-  for(const f of ['design-system/branding/TonhoBranding.lua',...['Data.lua','Engine.lua','Visuals.lua','Core.lua'].map(f=>'addon-src/AURANPC/'+f)])exec('local function chunk(...)\n'+fs.readFileSync(path.join(ROOT,f),'utf8')+'\nend\nchunk("AURANPC", AURA)',f);
+  for(const f of ['design-system/branding/TonhoBranding.lua',...fs.readFileSync(path.join(ROOT,'addon-src/AURANPC/AURANPC.toc'),'utf8').split(/\r?\n/).map(s=>s.trim()).filter(s=>s.endsWith('.lua')).map(f=>'addon-src/AURANPC/'+f)])exec('local function chunk(...)\n'+fs.readFileSync(path.join(ROOT,f),'utf8')+'\nend\nchunk("AURANPC", AURA)',f);
   exec('fire("PLAYER_LOGIN")','login');exec(code,'scenario');
  }finally{lua.lua_close(L);}
 }

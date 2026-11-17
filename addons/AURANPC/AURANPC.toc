@@ -1,8 +1,8 @@
 ## Interface: 16001
 ## Title: AURANPC
-## Notes: Own local animated per-NPC quest highlights, live objective detection and diagnostics. Alliance leveling 1-60.
+## Notes: Own local animated per-NPC quest highlights, live objective detection and diagnostics. Alliance and Horde leveling 1-60.
 ## Author: Tonho Contrabando
-## Version: 2.0.1
+## Version: 2.1.0
 ## X-Flavor: Forever
 ## IconTexture: Interface\AddOns\AURANPC\assets\Icon.tga
 ## SavedVariables: AURANPCDB
@@ -10,4 +10,5 @@ TonhoBranding.lua
 Data.lua
 Engine.lua
 Visuals.lua
+Items.lua
 Core.lua

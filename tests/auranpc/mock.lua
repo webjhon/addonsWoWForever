@@ -43,3 +43,5 @@ function plate(unit,id,name)
 end
 function remove(unit)TEST.plates[unit]=nil;TEST.npcs[unit]=nil;fire('NAME_PLATE_UNIT_REMOVED',unit)end
 function tick() AURA.ticker.callback();flush()end
+
+function methods:IsVisible() if not self.shown then return false end;if self.parent then return self.parent:IsVisible() end;return true end
