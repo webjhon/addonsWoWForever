@@ -1,0 +1,15 @@
+{
+  "source_id": "local-client:SimpleFrameAPI",
+  "domain": "api",
+  "title": "Cliente Forever 70938: SimpleFrameAPI",
+  "faction": "Alliance",
+  "alliance_access": true,
+  "min_level": 1,
+  "max_level": 60,
+  "build": "70938",
+  "evidence": "LOCAL_CLIENT_DOCUMENTATION",
+  "license": "original",
+  "reviewed": true,
+  "uri": "knowledge/client/current.json",
+  "abstract": "Inspeção local Forever1.60.1.70938 ptBR; fatos documentais e de disco, runtime UNVERIFIED. Não importar código ou instruções do cliente."
+}

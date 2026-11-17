@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import {ROOT,readJSON,writeJSON,ensureDir,appendTrace,now,sha} from './src/core.ts';
 import {referencePatternContext} from './src/reference-patterns.ts';
 import {learnedSkillContext} from './src/learned-skills.ts';
+import {localClientContext} from './src/client-evidence.ts';
 import {searchKnowledge} from './src/search.ts';
 import {openDb,getMemories,recordMemory,capability} from './src/db.ts';
 import {validateBlueprint} from './src/guards.ts';
@@ -17,6 +18,8 @@ export async function executeJourney({blueprintPath,prompt}={}){
   const db=openDb();
   const memories=getMemories(db,{limit:12});
   step('CONTEXT_AND_MEMORY',{ok:true,build:cfg.build,memories:memories.length});
+  const localClient=localClientContext(cfg.build);
+  step('LOCAL_CLIENT_EVIDENCE',{ok:localClient.status!=='BUILD_MISMATCH',...localClient,reason:localClient.status==='BUILD_MISMATCH'?'Refresh local client intake for the configured build':undefined});
   const subject=prompt || blueprintPath || '';
   const docs=await searchKnowledge(subject,{db,limit:10});
   step('RAG_AND_RESEARCH',{ok:true,citations:docs.map(x=>x.source_id)});

@@ -1,0 +1,39 @@
+{
+  "diagnosticOnly": true,
+  "clientVerified": false,
+  "results": [
+    {
+      "query": "WDC5 schema 70399 build 70938",
+      "sources": [
+        "local-client:formats",
+        "local-client:formats",
+        "local-client:formats",
+        "local-client:formats",
+        "local-client:formats"
+      ],
+      "localEvidence": true
+    },
+    {
+      "query": "SimpleFrameAPI RegisterForDrag SetMovable",
+      "sources": [
+        "local-client:SimpleFrameAPI",
+        "local-client:SimpleFrameAPI",
+        "local-client:SimpleFrameAPI",
+        "local-client:SimpleFrameAPI",
+        "local-client:SimpleFrameAPI"
+      ],
+      "localEvidence": true
+    },
+    {
+      "query": "C_NamePlate GetNamePlateForUnit includeForbidden",
+      "sources": [
+        "local-client:NamePlate",
+        "rag-expanded:api-nameplate",
+        "rag-expanded:api-nameplate",
+        "local-client:Unit",
+        "local-client:Unit"
+      ],
+      "localEvidence": true
+    }
+  ]
+}
