@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-17T01:31:53.281Z",
+  "tests": "PASSED",
+  "testFiles": [
+    "tests/alliance-level-pulse.test.ts",
+    "tests/auranpc-package.test.ts",
+    "tests/auranpc.test.ts",
+    "tests/curated-knowledge.test.ts",
+    "tests/diagnostics.test.ts",
+    "tests/dungeon-package.test.ts",
+    "tests/dungeon-trail.test.ts",
+    "tests/factory.test.ts",
+    "tests/knowledge.test.ts",
+    "tests/learned-skills.test.ts",
+    "tests/mcp.test.ts",
+    "tests/reference-patterns.test.ts",
+    "tests/wowhead-knowledge.test.ts"
+  ],
+  "client": "NOT_RUN",
+  "standaloneLua": "NOT_RUN_NO_LUA_INTERPRETER"
+}

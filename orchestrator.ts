@@ -1,6 +1,7 @@
 import path from 'node:path';
 import fs from 'node:fs';
 import {ROOT,readJSON,writeJSON,ensureDir,appendTrace,now,sha} from './src/core.ts';
+import {referencePatternContext} from './src/reference-patterns.ts';
 import {learnedSkillContext} from './src/learned-skills.ts';
 import {searchKnowledge} from './src/search.ts';
 import {openDb,getMemories,recordMemory,capability} from './src/db.ts';
@@ -25,6 +26,8 @@ export async function executeJourney({blueprintPath,prompt}={}){
   state.addon=blueprint.addonName;
   const learned=learnedSkillContext(subject,blueprint);
   step('LEARNED_CLIENT_SKILLS',{ok:true,selected:learned.selected,status:learned.status,clientVerified:false});
+  const patterns=referencePatternContext(subject,blueprint);
+  step('REFERENCE_PATTERN_REVIEW',{ok:true,status:patterns.status,clientVerified:false,skill:patterns.skill,considered:patterns.considered.map(({id,relevant,decision})=>({id,relevant,decision}))});
   const checked=validateBlueprint(blueprint);
   step('SCOPE_AND_GUARDRAILS',{ok:checked.ok,reason:checked.errors.join('; ')});
   const unknown=blueprint.apiEvidence.filter(x=>x.status==='UNVERIFIED'||x.status==='COMMUNITY_UNVERIFIED');
