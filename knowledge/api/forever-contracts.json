@@ -1,0 +1,872 @@
+{
+  "snapshot": "bebcb6bf309cf41b41bd74f8ca651e6a105b2676",
+  "clientVerified": false,
+  "sources": [
+    {
+      "name": "QuestLog",
+      "uri": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua",
+      "sha256": "e637368f36d153f8b432455cfa247d0c67c84996dce8d591bc1eb4d1cd7bc098"
+    },
+    {
+      "name": "Map",
+      "uri": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/MapDocumentation.lua",
+      "sha256": "b73a2ed1d1552c1b38bc59df0a586a0986dfad54991efc905abc87799cecce57"
+    },
+    {
+      "name": "NamePlate",
+      "uri": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/NamePlateDocumentation.lua",
+      "sha256": "1af6fb8f2428211ce696b2af18d09503116a12920d28ca76231bedb72a88292c"
+    },
+    {
+      "name": "SuperTrackManager",
+      "uri": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/SuperTrackManagerDocumentation.lua",
+      "sha256": "4fe3b1216557a520d9c6f653fe8acca2b03fa650d5405869eea819d0010e4884"
+    },
+    {
+      "name": "GossipInfo",
+      "uri": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/GossipInfoDocumentation.lua",
+      "sha256": "22cd6a48eded91316753af2e40624e542a91c728c713636549b7d3a6ef7916a5"
+    },
+    {
+      "name": "Instance",
+      "uri": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/InstanceDocumentation.lua",
+      "sha256": "136d6554c346ce090324ac905e086a149a7b7f6a23193c03262a17a0ee85719f"
+    },
+    {
+      "name": "Unit",
+      "uri": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitDocumentation.lua",
+      "sha256": "93004ac1b260127741471b7861360cdf7536afcb18d4c1db73b7259faa43e61c"
+    },
+    {
+      "name": "SpellBook",
+      "uri": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua",
+      "sha256": "509fabe6d33de10f7166dc71bfb853dc969803d86536acac0833d30b1d0f9179"
+    },
+    {
+      "name": "Container",
+      "uri": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ContainerDocumentation.lua",
+      "sha256": "dd3e4741d45720384f814d3f78ce975dab3951458ae894e728ed3aedc8ae56b3"
+    },
+    {
+      "name": "PetInfo",
+      "uri": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/PetInfoDocumentation.lua",
+      "sha256": "f6fd0e548fa15b7ff1d135215456c027f2e2f3fdeff7fbd3a8b9dbec0a154b04"
+    }
+  ],
+  "records": [
+    {
+      "symbol": "C_QuestLog.GetNumQuestLogEntries",
+      "system": "QuestLog",
+      "arguments": [],
+      "returns": [
+        {
+          "name": "numShownEntries",
+          "type": "number",
+          "nilable": false
+        },
+        {
+          "name": "numQuests",
+          "type": "number",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": null,
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua"
+    },
+    {
+      "symbol": "C_QuestLog.GetInfo",
+      "system": "QuestLog",
+      "arguments": [
+        {
+          "name": "questLogIndex",
+          "type": "luaIndex",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "info",
+          "type": "QuestInfo",
+          "nilable": true
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua"
+    },
+    {
+      "symbol": "C_QuestLog.GetQuestObjectives",
+      "system": "QuestLog",
+      "arguments": [
+        {
+          "name": "questID",
+          "type": "number",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "objectives",
+          "type": "table",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": true,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua"
+    },
+    {
+      "symbol": "C_QuestLog.IsComplete",
+      "system": "QuestLog",
+      "arguments": [
+        {
+          "name": "questID",
+          "type": "number",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "isComplete",
+          "type": "bool",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua"
+    },
+    {
+      "symbol": "C_QuestLog.IsFailed",
+      "system": "QuestLog",
+      "arguments": [
+        {
+          "name": "questID",
+          "type": "number",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "isFailed",
+          "type": "bool",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua"
+    },
+    {
+      "symbol": "C_QuestLog.IsQuestFlaggedCompleted",
+      "system": "QuestLog",
+      "arguments": [
+        {
+          "name": "questID",
+          "type": "number",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "isCompleted",
+          "type": "bool",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua"
+    },
+    {
+      "symbol": "C_QuestLog.UnitIsRelatedToActiveQuest",
+      "system": "QuestLog",
+      "arguments": [
+        {
+          "name": "unit",
+          "type": "UnitToken",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "isRelatedToActiveQuest",
+          "type": "bool",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua"
+    },
+    {
+      "symbol": "C_QuestLog.GetNextWaypoint",
+      "system": "QuestLog",
+      "arguments": [
+        {
+          "name": "questID",
+          "type": "number",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "mapID",
+          "type": "number",
+          "nilable": false
+        },
+        {
+          "name": "x",
+          "type": "number",
+          "nilable": false
+        },
+        {
+          "name": "y",
+          "type": "number",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": true,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua"
+    },
+    {
+      "symbol": "C_QuestLog.GetNextWaypointForMap",
+      "system": "QuestLog",
+      "arguments": [
+        {
+          "name": "questID",
+          "type": "number",
+          "nilable": false
+        },
+        {
+          "name": "uiMapID",
+          "type": "number",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "x",
+          "type": "number",
+          "nilable": false
+        },
+        {
+          "name": "y",
+          "type": "number",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": true,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua"
+    },
+    {
+      "symbol": "C_QuestLog.GetNextWaypointText",
+      "system": "QuestLog",
+      "arguments": [
+        {
+          "name": "questID",
+          "type": "number",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "waypointText",
+          "type": "string",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": true,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua"
+    },
+    {
+      "symbol": "C_Map.GetBestMapForUnit",
+      "system": "Map",
+      "arguments": [
+        {
+          "name": "unitToken",
+          "type": "UnitToken",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "uiMapID",
+          "type": "number",
+          "nilable": true
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/MapDocumentation.lua"
+    },
+    {
+      "symbol": "C_Map.GetPlayerMapPosition",
+      "system": "Map",
+      "arguments": [
+        {
+          "name": "uiMapID",
+          "type": "number",
+          "nilable": false
+        },
+        {
+          "name": "unitToken",
+          "type": "UnitToken",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "position",
+          "type": "vector2",
+          "nilable": true
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/MapDocumentation.lua"
+    },
+    {
+      "symbol": "C_Map.GetWorldPosFromMapPos",
+      "system": "Map",
+      "arguments": [
+        {
+          "name": "uiMapID",
+          "type": "number",
+          "nilable": false
+        },
+        {
+          "name": "mapPosition",
+          "type": "vector2",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "continentID",
+          "type": "number",
+          "nilable": false
+        },
+        {
+          "name": "worldPosition",
+          "type": "vector2",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": true,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/MapDocumentation.lua"
+    },
+    {
+      "symbol": "C_Map.GetMapInfo",
+      "system": "Map",
+      "arguments": [
+        {
+          "name": "uiMapID",
+          "type": "number",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "info",
+          "type": "UiMapDetails",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": true,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/MapDocumentation.lua"
+    },
+    {
+      "symbol": "C_NamePlate.GetNamePlateForUnit",
+      "system": "NamePlate",
+      "arguments": [
+        {
+          "name": "unitToken",
+          "type": "UnitTokenNamePlate",
+          "nilable": false
+        },
+        {
+          "name": "includeForbidden",
+          "type": "bool",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "nameplate",
+          "type": "NamePlateFrame",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/NamePlateDocumentation.lua"
+    },
+    {
+      "symbol": "C_NamePlate.GetNamePlates",
+      "system": "NamePlate",
+      "arguments": [],
+      "returns": [
+        {
+          "name": "nameplates",
+          "type": "table",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": null,
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/NamePlateDocumentation.lua"
+    },
+    {
+      "symbol": "C_SuperTrack.GetSuperTrackedQuestID",
+      "system": "SuperTrackManager",
+      "arguments": [],
+      "returns": [
+        {
+          "name": "questID",
+          "type": "number",
+          "nilable": true
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": null,
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/SuperTrackManagerDocumentation.lua"
+    },
+    {
+      "symbol": "C_SuperTrack.SetSuperTrackedQuestID",
+      "system": "SuperTrackManager",
+      "arguments": [
+        {
+          "name": "questID",
+          "type": "number",
+          "nilable": false
+        }
+      ],
+      "returns": [],
+      "mayReturnNothing": null,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/SuperTrackManagerDocumentation.lua"
+    },
+    {
+      "symbol": "C_SuperTrack.IsSuperTrackingAnything",
+      "system": "SuperTrackManager",
+      "arguments": [],
+      "returns": [
+        {
+          "name": "isSuperTracking",
+          "type": "bool",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": null,
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/SuperTrackManagerDocumentation.lua"
+    },
+    {
+      "symbol": "C_GossipInfo.GetAvailableQuests",
+      "system": "GossipInfo",
+      "arguments": [],
+      "returns": [
+        {
+          "name": "info",
+          "type": "table",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": null,
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/GossipInfoDocumentation.lua"
+    },
+    {
+      "symbol": "C_GossipInfo.GetActiveQuests",
+      "system": "GossipInfo",
+      "arguments": [],
+      "returns": [
+        {
+          "name": "info",
+          "type": "table",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": null,
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/GossipInfoDocumentation.lua"
+    },
+    {
+      "symbol": "GetInstanceInfo",
+      "system": "Instance",
+      "arguments": [],
+      "returns": [
+        {
+          "name": "name",
+          "type": "cstring",
+          "nilable": false
+        },
+        {
+          "name": "instanceType",
+          "type": "cstring",
+          "nilable": false
+        },
+        {
+          "name": "difficultyID",
+          "type": "number",
+          "nilable": false
+        },
+        {
+          "name": "difficultyName",
+          "type": "cstring",
+          "nilable": false
+        },
+        {
+          "name": "maxPlayers",
+          "type": "number",
+          "nilable": false
+        },
+        {
+          "name": "dynamicDifficulty",
+          "type": "number",
+          "nilable": false
+        },
+        {
+          "name": "isDynamic",
+          "type": "bool",
+          "nilable": true
+        },
+        {
+          "name": "instanceID",
+          "type": "number",
+          "nilable": false
+        },
+        {
+          "name": "instanceGroupSize",
+          "type": "number",
+          "nilable": false
+        },
+        {
+          "name": "lfgDungeonID",
+          "type": "number",
+          "nilable": true
+        },
+        {
+          "name": "hasWorldTier",
+          "type": "bool",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": null,
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/InstanceDocumentation.lua"
+    },
+    {
+      "symbol": "IsInInstance",
+      "system": "Instance",
+      "arguments": [],
+      "returns": [
+        {
+          "name": "isInInstance",
+          "type": "bool",
+          "nilable": false
+        },
+        {
+          "name": "instanceType",
+          "type": "cstring",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": null,
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/InstanceDocumentation.lua"
+    },
+    {
+      "symbol": "UnitGUID",
+      "system": "Unit",
+      "arguments": [
+        {
+          "name": "unit",
+          "type": "UnitTokenPvPRestrictedForAddOns",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "result",
+          "type": "WOWGUID",
+          "nilable": true
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitDocumentation.lua"
+    },
+    {
+      "symbol": "UnitLevel",
+      "system": "Unit",
+      "arguments": [
+        {
+          "name": "name",
+          "type": "cstring",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "result",
+          "type": "number",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitDocumentation.lua"
+    },
+    {
+      "symbol": "UnitXP",
+      "system": "Unit",
+      "arguments": [
+        {
+          "name": "unit",
+          "type": "UnitToken",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "result",
+          "type": "number",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitDocumentation.lua"
+    },
+    {
+      "symbol": "UnitXPMax",
+      "system": "Unit",
+      "arguments": [
+        {
+          "name": "unit",
+          "type": "UnitToken",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "result",
+          "type": "number",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitDocumentation.lua"
+    },
+    {
+      "symbol": "UnitFactionGroup",
+      "system": "Unit",
+      "arguments": [
+        {
+          "name": "unitName",
+          "type": "cstring",
+          "nilable": false
+        },
+        {
+          "name": "checkDisplayRace",
+          "type": "bool",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "factionGroupTag",
+          "type": "cstring",
+          "nilable": false
+        },
+        {
+          "name": "localized",
+          "type": "cstring",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitDocumentation.lua"
+    },
+    {
+      "symbol": "UnitIsDeadOrGhost",
+      "system": "Unit",
+      "arguments": [
+        {
+          "name": "unit",
+          "type": "UnitToken",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "result",
+          "type": "bool",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitDocumentation.lua"
+    },
+    {
+      "symbol": "C_SpellBook.GetSpellBookItemInfo",
+      "system": "SpellBook",
+      "arguments": [
+        {
+          "name": "spellBookItemSlotIndex",
+          "type": "luaIndex",
+          "nilable": false
+        },
+        {
+          "name": "spellBookItemSpellBank",
+          "type": "SpellBookSpellBank",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "spellBookItemInfo",
+          "type": "SpellBookItemInfo",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": true,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua"
+    },
+    {
+      "symbol": "C_SpellBook.IsSpellInSpellBook",
+      "system": "SpellBook",
+      "arguments": [
+        {
+          "name": "spellID",
+          "type": "number",
+          "nilable": false
+        },
+        {
+          "name": "spellBank",
+          "type": "SpellBookSpellBank",
+          "nilable": false
+        },
+        {
+          "name": "includeOverrides",
+          "type": "bool",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "isInSpellBook",
+          "type": "bool",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua"
+    },
+    {
+      "symbol": "C_Container.GetContainerNumSlots",
+      "system": "Container",
+      "arguments": [
+        {
+          "name": "containerIndex",
+          "type": "BagIndex",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "numSlots",
+          "type": "number",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": null,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ContainerDocumentation.lua"
+    },
+    {
+      "symbol": "C_Container.GetContainerItemInfo",
+      "system": "Container",
+      "arguments": [
+        {
+          "name": "containerIndex",
+          "type": "BagIndex",
+          "nilable": false
+        },
+        {
+          "name": "slotIndex",
+          "type": "luaIndex",
+          "nilable": false
+        }
+      ],
+      "returns": [
+        {
+          "name": "containerInfo",
+          "type": "ContainerItemInfo",
+          "nilable": false
+        }
+      ],
+      "mayReturnNothing": true,
+      "secretArguments": "AllowedWhenUntainted",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/ContainerDocumentation.lua"
+    }
+  ],
+  "unresolved": [
+    {
+      "requested": "Unit.GetPlayerFacing",
+      "status": "NOT_FOUND_IN_THIS_DOCUMENT",
+      "note": "Not a claim that the API is globally absent or unsupported"
+    },
+    {
+      "requested": "PetInfo.GetPetActionInfo",
+      "status": "NOT_FOUND_IN_THIS_DOCUMENT",
+      "note": "Not a claim that the API is globally absent or unsupported"
+    }
+  ]
+}

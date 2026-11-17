@@ -1,0 +1,52 @@
+
+> wow-addon-ai-factory@0.1.0 init
+> node --experimental-strip-types scripts/setup.ts
+
+{"generated":44,"contracts":33,"dungeons":27}
+{
+  status: 'READY_FOR_OFFLINE_TESTS',
+  index: { changed: 0, skipped: 292, vectors: 0, removed: 0 },
+  vectors: { imported: 468, skipped: 0, status: 'IMPORTED_HASH_MATCHED' },
+  curated: { seedVersion: '2026-11-15', entitiesProcessed: 48 },
+  wowhead: {
+    dataset: 'wowhead-forever',
+    revision: '2026-11-15.1',
+    complete: false,
+    clientVerified: false,
+    counts: {
+      quest: 72,
+      dungeon: 24,
+      zone: 38,
+      npc: 8,
+      item: 4,
+      object: 0,
+      class: 9,
+      profession: 12,
+      pet_family: 9,
+      flight_master: 0,
+      ability: 0
+    },
+    records: 176,
+    operationalRecords: 176,
+    quarantined: [],
+    relations: 124,
+    operationalRelations: 124,
+    sources: 89,
+    missingGameIds: { dungeon: 24, zone: 38, profession: 12, pet_family: 9, class: 9 },
+    unknownRequirements: { quest: 5 },
+    recordsWithIssues: 172,
+    gaps: [
+      'Partial factual catalog, not a copy or exhaustive export of Wowhead. The quest listing reports 6,140 results with a 1,000-display cap; this is not an Alliance denominator.',
+      'No source record or gameplay claim is CLIENT_VERIFIED. Website patch labels do not establish the installed client build.',
+      'No operational coordinates, UI map IDs, flight-master graph, travel costs or spawn timers were obtained.',
+      'No complete quest chains, class/race matrix, spell ranks, recipe database, loot tables or XP formula were imported.',
+      'Alcaz Prison, Blackmaw Hold and Shaper’s Terrace quest coverage remains absent; consult phase availability separately.',
+      'Missing required levels remain null and must not be interpreted as level-1 eligibility.',
+      'Community comments and legacy Classic/Retail text are not authoritative current Forever data.',
+      'Source terms restrict redistribution; no crawler, HTML mirror, screenshots, guide steps or article/comment prose is included.'
+    ],
+    changed: false,
+    hash: '6281300db2407b83d3d06d044ff30db1db2a67766cc924d5211b9a90e7e02201'
+  },
+  note: 'Fixtures are synthetic. Wowhead facts are a partial community reference, never client verification or a complete quest database.'
+}

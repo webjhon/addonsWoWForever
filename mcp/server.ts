@@ -1,3 +1,4 @@
+import {ragStatus} from '../src/rag-status.ts';
 import fs from 'node:fs';
 import path from 'node:path';
 import readline from 'node:readline';
@@ -11,6 +12,7 @@ import {runEvals} from '../evals/run-evals.ts';
 import {knowledgeCoverage,entityContext} from '../knowledge/ingest/wowhead-forever.ts';
 const info={name:'wow-forever-alliance-factory',version:'0.1.0'};
 const toolSpecs=[
+ {name:'get_rag_status',description:'Report indexed documents, hash-current vectors, pinned local model readiness and lexical fallback; never asserts game compatibility',inputSchema:{type:'object',properties:{}}},
  {name:'get_knowledge_coverage',description:'Report factual pack counts, unknown IDs/requirements and unresolved gaps; never asserts completeness or client verification',inputSchema:{type:'object',properties:{}}},
  {name:'get_gameplay_entity',description:'Read an Alliance-accessible entity and both directions of its partial evidence graph; level is planning context, not proof of eligibility',inputSchema:{type:'object',properties:{id:{type:'string'},level:{type:'integer',minimum:1,maximum:60}},required:['id']}},
  {name:'search_wow_api',description:'Search evidence-tracked Forever API documentation (RAG)',inputSchema:{type:'object',properties:{query:{type:'string'},level:{type:'integer'}},required:['query']}},
@@ -28,6 +30,7 @@ const toolSpecs=[
 async function callTool(name,args={}){
  const db=openDb();try{
   switch(name){
+    case 'get_rag_status':return ragStatus({db});
     case 'get_knowledge_coverage':return knowledgeCoverage();
     case 'get_gameplay_entity':return entityContext(db,args.id,{level:args.level??1});
     case 'search_wow_api':return await searchKnowledge(args.query,{db,domain:'api',level:args.level||1});

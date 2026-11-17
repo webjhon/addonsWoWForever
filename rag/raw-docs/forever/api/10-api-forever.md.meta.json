@@ -7,11 +7,11 @@
   "alliance_access": true,
   "min_level": 1,
   "max_level": 60,
-  "evidence": "EXPORTED_FROM_CLIENT",
+  "evidence": "COMMUNITY_UNVERIFIED",
   "license": "original-summary-reference-only",
   "uri": "https://github.com/Atraeau/WoW-Addons/blob/main/docs/api/README.md",
   "source_published": "2026-11-05",
   "curated_at": "2026-11-15",
   "build": null,
-  "note": "Resumo editorial original; não é exportação completa de quest/spell/client API."
+  "note": "Resumo documental de terceiro; não é execução própria no cliente nem confirmação de todas as funções."
 }

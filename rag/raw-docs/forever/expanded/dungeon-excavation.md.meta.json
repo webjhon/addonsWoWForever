@@ -1,0 +1,19 @@
+{
+  "source_id": "rag-expanded:dungeon-excavation",
+  "domain": "leveling",
+  "title": "Excavation Site: Wetlands — quests, contexto e lacunas para Alliance",
+  "faction": "Alliance",
+  "alliance_access": true,
+  "min_level": 1,
+  "max_level": 60,
+  "evidence": "COMMUNITY_UNVERIFIED",
+  "license": "original",
+  "reviewed": true,
+  "uri": "https://news.blizzard.com/en-us/article/24301455/explore-the-new-dungeons-of-world-of-warcraft-forever",
+  "sources": [
+    "https://www.wowhead.com/forever/quest=95772"
+  ],
+  "abstract": "Dungeon: Excavation Site: Wetlands. Faixa de planejamento: 26–31. Região: Wetlands. InstanceID documental: 2998. Fonte de identidade: https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS. A faixa não prova elegibilidade de cada quest ou disponibilidade da fase. Público: Alliance1–60. O plano deve observar nível, quests e instância reais. Confirmar quests aceitas e objetivos no diário. Catálogo de encontros não é mapa geométrico; não há trajetória indoor garantida. Origem das quests: banco factual parcial do Wowhead Forever, não uma base completa nem teste no cliente.",
+  "build": null,
+  "note": "Original synthesis. Documentary/gameplay references do not grant global client verification."
+}

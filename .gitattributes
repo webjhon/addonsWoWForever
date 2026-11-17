@@ -16,3 +16,9 @@ releases/AllianceDungeonTrail*.zip binary
 releases/AllianceDungeonTrail*.png binary
 releases/AllianceDungeonTrail*.sha256 text eol=lf
 research/AllianceDungeonTrail/live/*.png binary
+
+rag/raw-docs/forever/expanded/** text eol=lf
+rag/vector-store/*.gz binary
+rag/vector-store/manifest.json text eol=lf
+rag/corpus-manifest.json text eol=lf
+knowledge/api/*.json text eol=lf

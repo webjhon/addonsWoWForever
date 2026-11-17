@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "generator": "scripts/prepare-rag-corpus.mjs",
+  "policy": "original summaries and typed factual records; no proprietary guide ingestion",
+  "documents": [
+    {
+      "path": "rag/raw-docs/forever/expanded/api-questlog.md",
+      "sha256": "7d9f9e0f3901b742c7c76b9d30228d023bfb3a7aa449f4577a425ecc25ad2f62",
+      "source_id": "rag-expanded:api-questlog"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/api-map.md",
+      "sha256": "7cbc1f5c931a2d5be69c26a5b4afd8f3791903441e246c41bd302481406694cc",
+      "source_id": "rag-expanded:api-map"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/api-nameplate.md",
+      "sha256": "ecacfff58b1cd6c43af2c7b793a86f98ed18473a842bf1d09b00eca0fe2c54fd",
+      "source_id": "rag-expanded:api-nameplate"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/api-supertrackmanager.md",
+      "sha256": "ca18e90a44d889d9fe6060402e96a750c4fab7d44af60b1fd2fdc8ada43c950a",
+      "source_id": "rag-expanded:api-supertrackmanager"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/api-gossipinfo.md",
+      "sha256": "fac7eb82a82c1247a7a31725fabca8821de99b608687a6ed5e95260777eb1678",
+      "source_id": "rag-expanded:api-gossipinfo"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/api-instance.md",
+      "sha256": "342c0580d7f1f087b6785978164f046149dc0481b805ac5f3c2f6993d87c7721",
+      "source_id": "rag-expanded:api-instance"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/api-unit.md",
+      "sha256": "463d691666ef53f6ba5cdba5af37caeace1a86283387aece077f585f4dc2a175",
+      "source_id": "rag-expanded:api-unit"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/api-spellbook.md",
+      "sha256": "16b9697db42a5b5ce9d965c21cb356ef5ad8359dbda6d162468e84b9cdc7f589",
+      "source_id": "rag-expanded:api-spellbook"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/api-container.md",
+      "sha256": "8fc5882b0b343f40f46ed16c7d51c8cd09c840fc5fc7ebf5ee95ada853bb0423",
+      "source_id": "rag-expanded:api-container"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/npc-diagnosis.md",
+      "sha256": "7a145750b1429187502e298d723679e0984f99f925b74e298d969decf29302c2",
+      "source_id": "rag-expanded:npc-diagnosis"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/ui-hit-testing.md",
+      "sha256": "fbda7ae840bf31dd06884112969f7745fb87ad877cd68ab814739dc76cfe2f2b",
+      "source_id": "rag-expanded:ui-hit-testing"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/state-recovery.md",
+      "sha256": "098a6926e594235e332d6566699cc402e78cc9d3d01948572997878727251659",
+      "source_id": "rag-expanded:state-recovery"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/quest-state-machine.md",
+      "sha256": "2ef3c5edc27bd0ce2def86c4a5812b3ca3dd337dc0770f61c80fde3bac0798d4",
+      "source_id": "rag-expanded:quest-state-machine"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/navigation-confidence.md",
+      "sha256": "5b521d72d42b1b5779b7a1e02f49c177d329848635d402b4ef2a997e6545284f",
+      "source_id": "rag-expanded:navigation-confidence"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/event-performance.md",
+      "sha256": "cd2865f5bae78902040aeecbfe4c68ffffc9145722fb080cb525e407360d9edc",
+      "source_id": "rag-expanded:event-performance"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/xp-calibration.md",
+      "sha256": "59b920e469b1e30ff3b496979ea5b8aabc90c1d0def9a33b5a6bdfda27f3a4a2",
+      "source_id": "rag-expanded:xp-calibration"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/knowledge-provenance.md",
+      "sha256": "edbc55709155555d3f4b584aabb768eb212df6522ea14d001866e5db1e39a5ca",
+      "source_id": "rag-expanded:knowledge-provenance"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-thanes.md",
+      "sha256": "8c30c8ffb198d4010988e063680a308d9424d4ca03fc833d46ef2553e8d09166",
+      "source_id": "rag-expanded:dungeon-thanes"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-lordaeron.md",
+      "sha256": "e4d70a486bbda813d5eb0599d8fe716c5a80673b4091e53a742abd80affb30ec",
+      "source_id": "rag-expanded:dungeon-lordaeron"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-deadmines.md",
+      "sha256": "1d1bc209143618df17b69483d47f9e00b0fe4d4a2b7574c39a4606629ccfa6d4",
+      "source_id": "rag-expanded:dungeon-deadmines"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-wailing.md",
+      "sha256": "092c7aaa786d121261418a458fc4fa7031b7eb95e3a42c86a8dcf1bc17beb21f",
+      "source_id": "rag-expanded:dungeon-wailing"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-shadowfang.md",
+      "sha256": "24b6fedfd313217640c46c139cb0d2cdb99c48f7717abb059647a68370ce6f4d",
+      "source_id": "rag-expanded:dungeon-shadowfang"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-blackfathom.md",
+      "sha256": "5bc550d999eb09f9cc81618baed9a09e9b6d000ddb119ae87ee6534354b2c168",
+      "source_id": "rag-expanded:dungeon-blackfathom"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-stockade.md",
+      "sha256": "8cb9d3da642752f5f727d0577986b5546798c070049db256f826cf72a2d098b4",
+      "source_id": "rag-expanded:dungeon-stockade"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-excavation.md",
+      "sha256": "821ff3bddac0a8ea579dc06902fab64c08dacb28a0b03916329e5b596e1c8f9e",
+      "source_id": "rag-expanded:dungeon-excavation"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-dalaran.md",
+      "sha256": "de086581e5c607d6f49f44bb3f0e5e8b6f22abc62ae55f88af765585caca4fdd",
+      "source_id": "rag-expanded:dungeon-dalaran"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-kraul.md",
+      "sha256": "9497e73ab6b6bb6ce185243eaed6dc76d68dc09d038c46692958e56e2c95b4f6",
+      "source_id": "rag-expanded:dungeon-kraul"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-gnomeregan.md",
+      "sha256": "b2f4394da17f09303d84af2d6bf12eb61152ba32aa10e238add5ed4e44270614",
+      "source_id": "rag-expanded:dungeon-gnomeregan"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-scarlet.md",
+      "sha256": "c485892f592dd2247e9cc2feabd010508e1c7be79e224b307d28bf848fee60db",
+      "source_id": "rag-expanded:dungeon-scarlet"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-drowned.md",
+      "sha256": "50e46de4449337397eae26785be94bb0eb62fcd63184750efec22b1cc3385c71",
+      "source_id": "rag-expanded:dungeon-drowned"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-downs.md",
+      "sha256": "e76352510279b60000373c3bf4489f65875311b390cff3cb03f043dd5e554939",
+      "source_id": "rag-expanded:dungeon-downs"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-uldaman.md",
+      "sha256": "ef4e79f64789d1a726ab857327400676a81ccce65475be3711a0280e565ad4dc",
+      "source_id": "rag-expanded:dungeon-uldaman"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-kroldok.md",
+      "sha256": "a3d02533668bd534eba1eccb736b9bfbc237bd292bdefab9db3254f2eb96af8c",
+      "source_id": "rag-expanded:dungeon-kroldok"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-zulfarrak.md",
+      "sha256": "24ad78c9761e62e893b7378e0f46242406a95bb66e92ccb49147a5d40fa0c280",
+      "source_id": "rag-expanded:dungeon-zulfarrak"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-maraudon.md",
+      "sha256": "dbac961f6c7d6c60c44e27922c21ab0f82902e4e4caa17204bb931166001fba2",
+      "source_id": "rag-expanded:dungeon-maraudon"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-alcaz.md",
+      "sha256": "e1ad15ad7480ec1be4f914eefc97b946f942a462ad50b086c91cd03e024c3fd3",
+      "source_id": "rag-expanded:dungeon-alcaz"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-temple.md",
+      "sha256": "9ce336c7b964e239b3b4111a216c91ed945e08bc780e13b4a05d17dcc7fe7ea3",
+      "source_id": "rag-expanded:dungeon-temple"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-depths.md",
+      "sha256": "f416f920c13982180401a0108a343b92478a7bb1a6cc19c6a71272a40d4d5f2a",
+      "source_id": "rag-expanded:dungeon-depths"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-diremaul.md",
+      "sha256": "a5d00ba40820f7779ba038fb70ede62da284f180cf2cbc303cb1e5be0d357356",
+      "source_id": "rag-expanded:dungeon-diremaul"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-blackmaw.md",
+      "sha256": "34807d49df3503b69363d6b7fb6c9eb78be4487e0870fae21f18e67478a94e03",
+      "source_id": "rag-expanded:dungeon-blackmaw"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-lower-spire.md",
+      "sha256": "41eebf64d803869aaed89e23782cef8ba0fbaca93b9b8b209eef12258f825050",
+      "source_id": "rag-expanded:dungeon-lower-spire"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-stratholme.md",
+      "sha256": "cb6252393d3bd61802feda453ae59d44fd38b0cd44e7754847c939c9876008ac",
+      "source_id": "rag-expanded:dungeon-stratholme"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-scholomance.md",
+      "sha256": "7f2c92708d52c76db834ec648a3a13b92b5e591e209e9ee531a2db33576a7615",
+      "source_id": "rag-expanded:dungeon-scholomance"
+    },
+    {
+      "path": "rag/raw-docs/forever/expanded/dungeon-shapers.md",
+      "sha256": "e3a6b315636d9c2cfc35d624e9635542a31f77ec3454717846cfe4efff628b40",
+      "source_id": "rag-expanded:dungeon-shapers"
+    }
+  ]
+}

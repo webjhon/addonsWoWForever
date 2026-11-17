@@ -1,0 +1,17 @@
+{
+  "source_id": "rag-expanded:npc-diagnosis",
+  "domain": "api",
+  "title": "Diagnóstico de destaque: desenhar não é detectar",
+  "faction": "Alliance",
+  "alliance_access": true,
+  "min_level": 1,
+  "max_level": 60,
+  "evidence": "PARTIAL_CLIENT_TESTED",
+  "license": "original",
+  "reviewed": true,
+  "uri": "research/AURANPC/LIVE-SESSION-2026-11-16.md",
+  "sources": [],
+  "abstract": "Na sessão inicial houve 17 quests pendentes e 4 placas, porém nenhuma associação ou marcador. A demonstração desenhava, logo o defeito estava na cadeia de identificação/associação. UnitGUID do alvo era secreto fora de combate; a relação independente C_QuestLog.UnitIsRelatedToActiveQuest retornou true público. A correção desenhou indicação genérica sem inventar questID. Separar observação, associação, seleção e desenho em contadores. Testar NPC movendo, remoção de placa e desligar/ligar. Uma relação booleana autoriza somente texto genérico. Não prometer visibilidade100% nem atribuir a causa sem",
+  "build": null,
+  "note": "Original synthesis. Documentary/gameplay references do not grant global client verification."
+}

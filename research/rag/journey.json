@@ -1,0 +1,56 @@
+{
+  "status": "STATIC_PASSED",
+  "stages": [
+    {
+      "name": "CONTEXT_AND_MEMORY",
+      "ok": true
+    },
+    {
+      "name": "RAG_AND_RESEARCH",
+      "ok": true,
+      "citations": [
+        "whf:source:quest-3101",
+        "whf:source:database",
+        "whf:source:database",
+        "forever-api-index",
+        "whf:source:world-map",
+        "whf:source:database",
+        "factory-wowhead-knowledge-map",
+        "whf:source:world-map",
+        "whf:source:quest-456",
+        "whf:source:database"
+      ]
+    },
+    {
+      "name": "LEARNED_CLIENT_SKILLS",
+      "ok": true,
+      "status": "PARTIAL_CLIENT_TESTED"
+    },
+    {
+      "name": "REFERENCE_PATTERN_REVIEW",
+      "ok": true,
+      "status": "STATIC_REFERENCE_ANALYSIS"
+    },
+    {
+      "name": "SCOPE_AND_GUARDRAILS",
+      "ok": true
+    },
+    {
+      "name": "CAPABILITY_REVIEW",
+      "ok": true
+    },
+    {
+      "name": "PRODUCT_QUALITY_GATE",
+      "ok": true
+    },
+    {
+      "name": "PACKAGING",
+      "ok": true
+    },
+    {
+      "name": "REVIEW_AND_HANDOFF",
+      "ok": true,
+      "status": "STATIC_PASSED"
+    }
+  ]
+}

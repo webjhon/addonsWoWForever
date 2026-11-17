@@ -1,0 +1,20 @@
+{
+  "source_id": "rag-expanded:dungeon-maraudon",
+  "domain": "leveling",
+  "title": "Maraudon — quests, contexto e lacunas para Alliance",
+  "faction": "Alliance",
+  "alliance_access": true,
+  "min_level": 1,
+  "max_level": 60,
+  "evidence": "COMMUNITY_UNVERIFIED",
+  "license": "original",
+  "reviewed": true,
+  "uri": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
+  "sources": [
+    "https://www.wowhead.com/forever/quest=7065",
+    "https://www.wowhead.com/forever/quest=7044"
+  ],
+  "abstract": "Dungeon: Maraudon. Faixa de planejamento: 44–50. Região: Desolace. InstanceID documental: 349. Fonte de identidade: https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS. A faixa não prova elegibilidade de cada quest ou disponibilidade da fase. Público: Alliance1–60. O plano deve observar nível, quests e instância reais. Confirmar quests aceitas e objetivos no diário. Catálogo de encontros não é mapa geométrico; não há trajetória indoor garantida. Origem das quests: banco factual parcial do Wowhead Forever, não uma base completa nem teste no cliente.",
+  "build": null,
+  "note": "Original synthesis. Documentary/gameplay references do not grant global client verification."
+}

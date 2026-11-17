@@ -1,0 +1,23 @@
+{
+  "source_id": "rag-expanded:dungeon-blackfathom",
+  "domain": "leveling",
+  "title": "Blackfathom Deeps — quests, contexto e lacunas para Alliance",
+  "faction": "Alliance",
+  "alliance_access": true,
+  "min_level": 1,
+  "max_level": 60,
+  "evidence": "COMMUNITY_UNVERIFIED",
+  "license": "original",
+  "reviewed": true,
+  "uri": "https://www.method.gg/wow-forever/dungeons/blackfathom-deeps",
+  "sources": [
+    "https://www.wowhead.com/forever/quest=971",
+    "https://www.wowhead.com/forever/quest=1275",
+    "https://www.wowhead.com/forever/quest=1199",
+    "https://www.wowhead.com/forever/quest=1198",
+    "https://www.wowhead.com/forever/quest=1200"
+  ],
+  "abstract": "Dungeon: Blackfathom Deeps. Faixa de planejamento: 24–32. Região: Ashenvale. InstanceID documental: 48. Fonte de identidade: https://wago.tools/db2/Map/csv?build=1.60.1.70938&locale=enUS. A faixa não prova elegibilidade de cada quest ou disponibilidade da fase. Público: Alliance1–60. O plano deve observar nível, quests e instância reais. Confirmar quests aceitas e objetivos no diário. Catálogo de encontros não é mapa geométrico; não há trajetória indoor garantida. Origem das quests: banco factual parcial do Wowhead Forever, não uma base completa nem teste no cliente.",
+  "build": null,
+  "note": "Original synthesis. Documentary/gameplay references do not grant global client verification."
+}

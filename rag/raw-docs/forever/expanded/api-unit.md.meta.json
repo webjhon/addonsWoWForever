@@ -1,0 +1,24 @@
+{
+  "source_id": "rag-expanded:api-unit",
+  "domain": "api",
+  "title": "Personagem e unidades: dados públicos, facção, XP e morte",
+  "faction": "Alliance",
+  "alliance_access": true,
+  "min_level": 1,
+  "max_level": 60,
+  "evidence": "STATIC_API_DOCUMENTATION",
+  "license": "original",
+  "reviewed": true,
+  "uri": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitDocumentation.lua",
+  "sources": [
+    "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitDocumentation.lua",
+    "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitDocumentation.lua",
+    "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitDocumentation.lua",
+    "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitDocumentation.lua",
+    "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitDocumentation.lua",
+    "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitDocumentation.lua"
+  ],
+  "abstract": "Escopo: Alliance1–60, interface16001. Snapshot documental bebcb6bf309cf41b41bd74f8ca651e6a105b2676. Runtime das funções abaixo permanece UNVERIFIED até teste específico. O contrato de uma API documenta forma, não garante que todo valor será público. WoW Forever usa família Mainline; reproduzir chamadas de Classic sem verificar pode falhar. Personagem morto, Horde ou nível fora do escopo requerem estados explícitos.",
+  "build": null,
+  "note": "Original synthesis. Documentary/gameplay references do not grant global client verification."
+}

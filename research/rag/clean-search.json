@@ -1,0 +1,30 @@
+[
+  {
+    "id": "8545df439f37d5a937fd9227",
+    "title": "Placas de identificação e destaque local de NPCs",
+    "content": "Placas de identificação e destaque local de NPCs — Contrato: C_NamePlate.GetNamePlateForUnit\nContexto: Escopo: Alliance1–60, interface16001. Snapshot documental bebcb6bf309cf41b41bd74f8ca651e6a105b2676. Runtime das funções abaixo permanece UNVERIFIED até teste específico. A existência de uma placa não garante identidade pública, tooltip legível ou relação com quest. O efeito próprio pode seguir a placa, mas não é aura 3D em torno do modelo. Não usar raid marks ou mensagens de grupo para obter um destaque individual.\n\nArgumentos: unitToken: UnitTokenNamePlate; includeForbidden: bool. Retornos: nameplate: NamePlateFrame. Pode não retornar valores: não declarado. SecretArguments: AllowedWhenUntainted. Estado de execução: UNVERIFIED. Fonte: https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/NamePlateDocumentation.lua.",
+    "domain": "api",
+    "score": 0.01639344262295082,
+    "method": "lexical",
+    "source_id": "rag-expanded:api-nameplate",
+    "uri": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/NamePlateDocumentation.lua",
+    "build": null,
+    "evidence": "STATIC_API_DOCUMENTATION",
+    "license": "original",
+    "retrievalNote": "Local model not prepared; lexical results only (npm run rag:model)"
+  },
+  {
+    "id": "eb932f50edc68992820d794f",
+    "title": "Placas de identificação e destaque local de NPCs",
+    "content": "Placas de identificação e destaque local de NPCs — Contrato: C_NamePlate.GetNamePlates\nContexto: Escopo: Alliance1–60, interface16001. Snapshot documental bebcb6bf309cf41b41bd74f8ca651e6a105b2676. Runtime das funções abaixo permanece UNVERIFIED até teste específico. A existência de uma placa não garante identidade pública, tooltip legível ou relação com quest. O efeito próprio pode seguir a placa, mas não é aura 3D em torno do modelo. Não usar raid marks ou mensagens de grupo para obter um destaque individual.\n\nArgumentos: nenhum declarado no snapshot. Retornos: nameplates: table. Pode não retornar valores: não declarado. SecretArguments: não declarado. Estado de execução: UNVERIFIED. Fonte: https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/NamePlateDocumentation.lua.",
+    "domain": "api",
+    "score": 0.016129032258064516,
+    "method": "lexical",
+    "source_id": "rag-expanded:api-nameplate",
+    "uri": "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/NamePlateDocumentation.lua",
+    "build": null,
+    "evidence": "STATIC_API_DOCUMENTATION",
+    "license": "original",
+    "retrievalNote": "Local model not prepared; lexical results only (npm run rag:model)"
+  }
+]

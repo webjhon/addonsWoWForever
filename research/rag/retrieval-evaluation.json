@@ -1,0 +1,812 @@
+{
+  "schemaVersion": 1,
+  "at": "2026-11-17T02:27:48.643Z",
+  "modelExecuted": true,
+  "note": "Manually chosen engineering/gameplay questions, fixed before first retrieval run. Diagnostic sample, not a guarantee for arbitrary requests.",
+  "results": [
+    {
+      "name": "previous-corpus-lexical",
+      "queries": 14,
+      "hits": 5,
+      "recallAt5": 0.35714285714285715,
+      "mrrAt5": 0.23214285714285715,
+      "ms": 14,
+      "rows": [
+        {
+          "id": "secret-guid",
+          "hit": true,
+          "rank": 4,
+          "sources": [
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "forever-api-index",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "forever-live-client-lessons-2026-11-16",
+            "forever-live-client-lessons-2026-11-16"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "detection-vs-render",
+          "hit": true,
+          "rank": 2,
+          "sources": [
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "forever-live-client-lessons-2026-11-16",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "forever-api-index",
+            "reference-patterns-zygor-restedxp-2026-11-16"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "hit-testing",
+          "hit": false,
+          "rank": null,
+          "sources": [
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "forever-api-index",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "reference-patterns-zygor-restedxp-2026-11-16"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "stale-arrow-en",
+          "hit": false,
+          "rank": null,
+          "sources": [
+            "community-api-snapshot"
+          ],
+          "methods": [
+            "lexical"
+          ]
+        },
+        {
+          "id": "quest-removed-en",
+          "hit": false,
+          "rank": null,
+          "sources": [
+            "community-api-snapshot",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "reference-patterns-zygor-restedxp-2026-11-16"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "save-intent-en",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "forever-live-client-lessons-2026-11-16",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "forever-live-client-lessons-2026-11-16"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "xp-uncertainty",
+          "hit": false,
+          "rank": null,
+          "sources": [
+            "blizzard-overview",
+            "blizzard-legacy",
+            "blizzard-dungeons",
+            "blizzard-dungeons",
+            "factory-wowhead-knowledge-map"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "stockade-giver",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "whf:source:quest-388",
+            "blizzard-legacy",
+            "blizzard-overview",
+            "blizzard-legacy",
+            "blizzard-hunter-druid"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "deadmines-turnin",
+          "hit": false,
+          "rank": null,
+          "sources": [
+            "blizzard-mage-shaman",
+            "blizzard-warrior-priest",
+            "blizzard-priest-warrior",
+            "blizzard-rogue-warlock",
+            "blizzard-overview"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "no-indoor-fabrication",
+          "hit": false,
+          "rank": null,
+          "sources": [
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "forever-live-client-lessons-2026-11-16",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "forever-api-index",
+            "community-api-snapshot"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "event-cleanup-en",
+          "hit": true,
+          "rank": 2,
+          "sources": [
+            "community-api-snapshot",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "forever-live-client-lessons-2026-11-16"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "dialogue-eligibility",
+          "hit": false,
+          "rank": null,
+          "sources": [
+            "forever-api-index",
+            "forever-live-client-lessons-2026-11-16",
+            "forever-live-client-lessons-2026-11-16",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "forever-api-index"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "api-contract",
+          "hit": false,
+          "rank": null,
+          "sources": [
+            "forever-api-index"
+          ],
+          "methods": [
+            "lexical"
+          ]
+        },
+        {
+          "id": "missing-curation",
+          "hit": false,
+          "rank": null,
+          "sources": [
+            "blizzard-overview",
+            "blizzard-dungeons",
+            "blizzard-overview",
+            "blizzard-overview",
+            "blizzard-rogue-warlock"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "current-lexical",
+      "queries": 14,
+      "hits": 13,
+      "recallAt5": 0.9285714285714286,
+      "mrrAt5": 0.7738095238095238,
+      "ms": 19,
+      "rows": [
+        {
+          "id": "secret-guid",
+          "hit": true,
+          "rank": 2,
+          "sources": [
+            "rag-expanded:api-questlog",
+            "rag-expanded:npc-diagnosis",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "forever-api-index",
+            "rag-expanded:npc-diagnosis"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "detection-vs-render",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "rag-expanded:npc-diagnosis",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "rag-expanded:api-container",
+            "rag-expanded:navigation-confidence"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "hit-testing",
+          "hit": true,
+          "rank": 2,
+          "sources": [
+            "rag-expanded:event-performance",
+            "rag-expanded:ui-hit-testing",
+            "rag-expanded:navigation-confidence",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "forever-api-index"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "stale-arrow-en",
+          "hit": false,
+          "rank": null,
+          "sources": [
+            "community-api-snapshot"
+          ],
+          "methods": [
+            "lexical"
+          ]
+        },
+        {
+          "id": "quest-removed-en",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "rag-expanded:quest-state-machine",
+            "rag-expanded:quest-state-machine",
+            "rag-expanded:quest-state-machine",
+            "community-api-snapshot",
+            "rag-expanded:api-questlog"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "save-intent-en",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "rag-expanded:state-recovery",
+            "rag-expanded:state-recovery",
+            "rag-expanded:state-recovery",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "rag-expanded:quest-state-machine"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "xp-uncertainty",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "rag-expanded:xp-calibration",
+            "rag-expanded:xp-calibration",
+            "rag-expanded:xp-calibration",
+            "blizzard-dungeons",
+            "blizzard-overview"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "stockade-giver",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "rag-expanded:dungeon-stockade",
+            "whf:source:quest-388",
+            "rag-expanded:dungeon-stockade",
+            "rag-expanded:dungeon-stockade",
+            "rag-expanded:dungeon-stockade"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "deadmines-turnin",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "rag-expanded:dungeon-deadmines",
+            "blizzard-warrior-priest",
+            "blizzard-mage-shaman",
+            "rag-expanded:dungeon-deadmines",
+            "rag-expanded:dungeon-deadmines"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "no-indoor-fabrication",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "rag-expanded:api-instance",
+            "rag-expanded:api-nameplate",
+            "forever-live-client-lessons-2026-11-16",
+            "rag-expanded:api-instance",
+            "rag-expanded:api-instance"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "event-cleanup-en",
+          "hit": true,
+          "rank": 2,
+          "sources": [
+            "community-api-snapshot",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "rag-expanded:event-performance",
+            "rag-expanded:event-performance"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "dialogue-eligibility",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "rag-expanded:api-gossipinfo",
+            "rag-expanded:api-gossipinfo",
+            "rag-expanded:api-gossipinfo",
+            "rag-expanded:api-gossipinfo",
+            "rag-expanded:api-gossipinfo"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "api-contract",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "rag-expanded:api-nameplate",
+            "rag-expanded:api-nameplate",
+            "rag-expanded:api-instance",
+            "rag-expanded:api-instance",
+            "rag-expanded:api-instance"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        },
+        {
+          "id": "missing-curation",
+          "hit": true,
+          "rank": 3,
+          "sources": [
+            "blizzard-overview",
+            "blizzard-dungeons",
+            "rag-expanded:dungeon-shapers",
+            "rag-expanded:dungeon-shapers",
+            "rag-expanded:dungeon-shapers"
+          ],
+          "methods": [
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical",
+            "lexical"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "current-hybrid-local",
+      "queries": 14,
+      "hits": 14,
+      "recallAt5": 1,
+      "mrrAt5": 0.9285714285714286,
+      "ms": 1303,
+      "rows": [
+        {
+          "id": "secret-guid",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "rag-expanded:npc-diagnosis",
+            "rag-expanded:npc-diagnosis",
+            "rag-expanded:npc-diagnosis",
+            "rag-expanded:api-gossipinfo",
+            "rag-expanded:state-recovery"
+          ],
+          "methods": [
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid"
+          ]
+        },
+        {
+          "id": "detection-vs-render",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "rag-expanded:npc-diagnosis",
+            "rag-expanded:npc-diagnosis",
+            "rag-expanded:npc-diagnosis",
+            "forever-live-client-lessons-2026-11-16",
+            "reference-patterns-zygor-restedxp-2026-11-16"
+          ],
+          "methods": [
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid"
+          ]
+        },
+        {
+          "id": "hit-testing",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "rag-expanded:ui-hit-testing",
+            "rag-expanded:ui-hit-testing",
+            "rag-expanded:ui-hit-testing",
+            "rag-expanded:event-performance",
+            "rag-expanded:event-performance"
+          ],
+          "methods": [
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid"
+          ]
+        },
+        {
+          "id": "stale-arrow-en",
+          "hit": true,
+          "rank": 2,
+          "sources": [
+            "community-api-snapshot",
+            "rag-expanded:api-map",
+            "rag-expanded:api-map",
+            "rag-expanded:api-map",
+            "rag-expanded:api-map"
+          ],
+          "methods": [
+            "hybrid",
+            "semantic",
+            "semantic",
+            "semantic",
+            "semantic"
+          ]
+        },
+        {
+          "id": "quest-removed-en",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "rag-expanded:quest-state-machine",
+            "rag-expanded:api-questlog",
+            "rag-expanded:quest-state-machine",
+            "rag-expanded:quest-state-machine",
+            "rag-expanded:api-questlog"
+          ],
+          "methods": [
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid"
+          ]
+        },
+        {
+          "id": "save-intent-en",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "rag-expanded:state-recovery",
+            "rag-expanded:state-recovery",
+            "rag-expanded:state-recovery",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "rag-expanded:quest-state-machine"
+          ],
+          "methods": [
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid"
+          ]
+        },
+        {
+          "id": "xp-uncertainty",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "rag-expanded:xp-calibration",
+            "rag-expanded:xp-calibration",
+            "rag-expanded:xp-calibration",
+            "blizzard-warrior-priest",
+            "blizzard-rogue-warlock"
+          ],
+          "methods": [
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid"
+          ]
+        },
+        {
+          "id": "stockade-giver",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "rag-expanded:dungeon-stockade",
+            "rag-expanded:dungeon-stockade",
+            "rag-expanded:dungeon-stockade",
+            "rag-expanded:dungeon-stockade",
+            "rag-expanded:dungeon-stockade"
+          ],
+          "methods": [
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid"
+          ]
+        },
+        {
+          "id": "deadmines-turnin",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "rag-expanded:dungeon-deadmines",
+            "rag-expanded:dungeon-deadmines",
+            "rag-expanded:dungeon-deadmines",
+            "rag-expanded:dungeon-deadmines",
+            "rag-expanded:dungeon-deadmines"
+          ],
+          "methods": [
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid"
+          ]
+        },
+        {
+          "id": "no-indoor-fabrication",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "rag-expanded:api-instance",
+            "rag-expanded:api-instance",
+            "rag-expanded:api-instance",
+            "rag-expanded:api-instance",
+            "rag-expanded:api-instance"
+          ],
+          "methods": [
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid"
+          ]
+        },
+        {
+          "id": "event-cleanup-en",
+          "hit": true,
+          "rank": 2,
+          "sources": [
+            "community-api-snapshot",
+            "rag-expanded:event-performance",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "reference-patterns-zygor-restedxp-2026-11-16",
+            "rag-expanded:event-performance"
+          ],
+          "methods": [
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid"
+          ]
+        },
+        {
+          "id": "dialogue-eligibility",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "rag-expanded:api-gossipinfo",
+            "rag-expanded:api-gossipinfo",
+            "rag-expanded:api-gossipinfo",
+            "rag-expanded:api-gossipinfo",
+            "rag-expanded:api-gossipinfo"
+          ],
+          "methods": [
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid"
+          ]
+        },
+        {
+          "id": "api-contract",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "rag-expanded:api-nameplate",
+            "rag-expanded:api-nameplate",
+            "rag-expanded:api-unit",
+            "rag-expanded:api-unit",
+            "rag-expanded:api-unit"
+          ],
+          "methods": [
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid"
+          ]
+        },
+        {
+          "id": "missing-curation",
+          "hit": true,
+          "rank": 1,
+          "sources": [
+            "rag-expanded:dungeon-shapers",
+            "rag-expanded:dungeon-shapers",
+            "rag-expanded:dungeon-shapers",
+            "rag-expanded:dungeon-shapers",
+            "blizzard-launch"
+          ],
+          "methods": [
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid",
+            "hybrid"
+          ]
+        }
+      ]
+    }
+  ]
+}

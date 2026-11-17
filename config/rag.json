@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "embedding": {
+    "provider": "local-transformers",
+    "model": "Xenova/multilingual-e5-small",
+    "revision": "761b726dd34fb83930e26aab4e9ac3899aa1fa78",
+    "dtype": "q8",
+    "dimensions": 384,
+    "pooling": "mean",
+    "normalize": true,
+    "queryPrefix": "query: ",
+    "passagePrefix": "passage: "
+  },
+  "retrieval": {
+    "semantic": "auto",
+    "fusion": "reciprocal-rank",
+    "rrfK": 60
+  },
+  "chunking": {
+    "maxCharacters": 1200
+  },
+  "notes": "Model preparation is explicit. Searches never download models or call a paid API automatically. Without local cache, auto mode returns lexical results with an explicit retrieval note."
+}

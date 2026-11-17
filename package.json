@@ -31,7 +31,12 @@
     "sources:check": "node --experimental-strip-types tools/check-source-updates.ts",
     "new": "node --experimental-strip-types tools/new-addon.ts",
     "skills:context": "node --experimental-strip-types scripts/factory.ts skills",
-    "patterns:context": "node --experimental-strip-types scripts/factory.ts patterns"
+    "patterns:context": "node --experimental-strip-types scripts/factory.ts patterns",
+    "rag:prepare": "node scripts/prepare-rag-corpus.mjs",
+    "rag:model": "node --experimental-strip-types scripts/rag.ts model",
+    "rag:embed": "node --experimental-strip-types scripts/rag.ts embed",
+    "rag:status": "node --experimental-strip-types scripts/rag.ts status",
+    "rag:eval": "node --experimental-strip-types evals/rag-retrieval.ts"
   },
   "dependencies": {
     "ajv": "8.20.0"
@@ -41,5 +46,8 @@
     "@resvg/resvg-js": "2.6.2",
     "fengari": "0.1.5",
     "luaparse": "0.3.1"
+  },
+  "optionalDependencies": {
+    "@huggingface/transformers": "4.3.2"
   }
 }
