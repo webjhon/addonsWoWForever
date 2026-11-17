@@ -3,7 +3,7 @@
   "domain": "leveling",
   "topic": "boas-praticas",
   "title": "Oportunidades reais de addon de leveling Alliance",
-  "faction": "Alliance",
+  "faction": "Neutral",
   "alliance_access": true,
   "min_level": 1,
   "max_level": 60,
@@ -13,5 +13,6 @@
   "source_published": "2026-10-29",
   "curated_at": "2026-11-15",
   "build": null,
-  "note": "Resumo editorial original; não é exportação completa de quest/spell/client API."
+  "note": "Resumo editorial original; não é exportação completa de quest/spell/client API.",
+  "horde_access": true
 }

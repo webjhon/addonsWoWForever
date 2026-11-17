@@ -1,4 +1,4 @@
-# Produtos reativos para Alliance1–60
+# Produtos reativos para Alliance e Horde1–60
 
 A utilidade precisa ocorrer enquanto o jogador joga. Um índice de dungeons, catálogo de perks ou caderno manual não satisfaz o padrão profissional como produto principal.
 

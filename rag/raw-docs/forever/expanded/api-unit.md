@@ -1,10 +1,10 @@
 # Personagem e unidades: dados públicos, facção, XP e morte
 
-Escopo: Alliance1–60, interface16001. Snapshot documental bebcb6bf309cf41b41bd74f8ca651e6a105b2676. Runtime das funções abaixo permanece UNVERIFIED até teste específico.
+Escopo: Alliance e Horde1–60, interface16001. Snapshot documental bebcb6bf309cf41b41bd74f8ca651e6a105b2676. Runtime das funções abaixo permanece UNVERIFIED até teste específico.
 
 ## Contexto de produto
 
-O contrato de uma API documenta forma, não garante que todo valor será público. WoW Forever usa família Mainline; reproduzir chamadas de Classic sem verificar pode falhar. Personagem morto, Horde ou nível fora do escopo requerem estados explícitos.
+O contrato de uma API documenta forma, não garante que todo valor será público. WoW Forever usa família Mainline; reproduzir chamadas de Classic sem verificar pode falhar. Personagem morto, facção ainda desconhecida ou nível fora do escopo requerem estados explícitos. Alliance e Horde são suportadas; filtrar os dados pela facção real.
 
 ## Reconciliação e falhas
 

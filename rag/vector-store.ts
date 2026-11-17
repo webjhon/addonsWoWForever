@@ -4,10 +4,10 @@ import zlib from 'node:zlib';
 import {ROOT,sha,writeJSON} from '../src/core.ts';
 import {openDb} from '../src/db.ts';
 import {embedLocal,MODEL_KEY,EMBEDDING,validVector,disposeEmbedder} from '../src/embeddings.ts';
-const allowed="alliance_access=1 AND faction IN ('Alliance','Neutral') AND license NOT IN ('proprietary-restricted','unknown-license-copy')";
+const allowed="((alliance_access=1 AND faction IN ('Alliance','Neutral')) OR (horde_access=1 AND faction IN ('Horde','Neutral'))) AND license NOT IN ('proprietary-restricted','unknown-license-copy')";
 export async function populateVectors({db=null,embedder=embedLocal,model=MODEL_KEY,dimensions=EMBEDDING.dimensions,onProgress=null}={}){
  const own=!db;db??=openDb();let created=0;
- try{const rows=db.prepare('SELECT d.* FROM docs d LEFT JOIN doc_vectors v ON v.doc_id=d.id WHERE '+allowed.replaceAll('alliance_access','d.alliance_access').replaceAll('faction','d.faction').replaceAll('license','d.license')+' AND (v.doc_id IS NULL OR v.model<>? OR v.content_hash IS NULL OR v.content_hash<>d.hash) ORDER BY d.id').all(model);
+ try{const rows=db.prepare('SELECT d.* FROM docs d LEFT JOIN doc_vectors v ON v.doc_id=d.id WHERE '+allowed.replaceAll('alliance_access','d.alliance_access').replaceAll('horde_access','d.horde_access').replaceAll('faction','d.faction').replaceAll('license','d.license')+' AND (v.doc_id IS NULL OR v.model<>? OR v.content_hash IS NULL OR v.content_hash<>d.hash) ORDER BY d.id').all(model);
  for(let i=0;i<rows.length;i+=8){const batch=rows.slice(i,i+8),vectors=await embedder(batch.map(d=>d.content),{kind:'passage'});if(vectors.length!==batch.length||vectors.some(v=>!validVector(v,dimensions)))throw Error('Invalid embedding batch');
  db.exec('BEGIN');try{for(let n=0;n<batch.length;n++)db.prepare('INSERT OR REPLACE INTO doc_vectors(doc_id,model,vector,content_hash) VALUES(?,?,?,?)').run(batch[n].id,model,JSON.stringify(vectors[n]),batch[n].hash);db.exec('COMMIT');}catch(e){db.exec('ROLLBACK');throw e;}created+=batch.length;onProgress?.({created,total:rows.length});}
  return {created,model};

@@ -1,11 +1,11 @@
 # Platform-independent factory workflow
 
 ## Goal
-Turn a request into an original, installable addon candidate for WoW Forever, **Alliance only**, leveling 1–60. An external agent may use Codex, ChatGPT Work or another tool-enabled client if it can access the repo and run its commands.
+Turn a request into an original, installable addon candidate for WoW Forever, **Alliance and Horde**, leveling 1–60. An external agent may use Codex, ChatGPT Work or another tool-enabled client if it can access the repo and run its commands.
 
 ## Mandatory gates
 
-1. **Scope**: Alliance 1–60, leveling utility. Reject or narrow out-of-scope requests.
+1. **Scope**: Alliance and Horde 1–60, leveling utility. Reject or narrow out-of-scope requests.
 2. **Source intake**: obtain technical documentation and gameplay references; record provenance, license and build. Do not read private proprietary guide files without authorized rights.
 3. **Research & memory**: query both RAG domains, the structured knowledge bank, recorded decisions and known failures. Use `npm run search -- "query"` or MCP tools.
 4. **Capability check**: classify each critical API as SUPPORTED, SUPPORTED_WITH_LIMITATIONS, UNVERIFIED, UNSUPPORTED or PROHIBITED. Unknown never equals supported.
@@ -33,3 +33,5 @@ Before designing **every addon**, apply .agents/skills/apply-reference-patterns/
 RAG maintenance: run npm run init and npm run rag:status before research. Init materializes the reviewed expanded corpus and imports only hash-matching portable vectors. Neural retrieval requires one explicit npm run rag:model download; searches never download weights or call a paid embedding API automatically. After source changes, rerun init and npm run rag:embed; check npm run rag:eval and preserve documentary/partial evidence status. See rag/README.md.
 
 Local client intake: before design read .agents/skills/inspect-local-client/SKILL.md and run npm run client:context. The journey records LOCAL_CLIENT_EVIDENCE and rejects a known configured-build mismatch. Refresh after a client update. Disk documentation never certifies runtime APIs; see docs/CLIENT-INTAKE.md.
+
+Dual-faction policy (2026-11-17): all new or revised addons use faction:"Both" and the factionSupport contract. Read docs/FACTION-SUPPORT.md and config/faction-policy.json. Detect player faction, isolate faction-specific facts/routes, handle unknown faction safely, and execute acceptance tests for Alliance AND Horde. Historical exact single-faction candidates are preserved by hash, never relabeled as Horde-compatible; any changed candidate must migrate. Legacy neutral/Alliance-accessible knowledge does not imply Horde eligibility. Missing Horde facts remain explicit gaps.

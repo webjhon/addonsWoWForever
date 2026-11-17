@@ -4,7 +4,7 @@ import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 export const ROOT = path.resolve(fileURLToPath(new URL('..', import.meta.url)));
 export const DATA_DIR = process.env.FACTORY_DATA_DIR ? path.resolve(process.env.FACTORY_DATA_DIR) : path.join(ROOT, '.data');
-export const LEVEL_MIN = 1, LEVEL_MAX = 60, FACTION = 'Alliance';
+export const LEVEL_MIN = 1, LEVEL_MAX = 60, FACTION = 'Both';
 export function ensureDir(dir) { fs.mkdirSync(dir, {recursive:true}); return dir; }
 export function readJSON(p, fallback = undefined) { try { return JSON.parse(fs.readFileSync(p,'utf8')); } catch(e) { if(fallback !== undefined && e.code === 'ENOENT') return fallback; throw e; } }
 export function writeJSON(p, data) { ensureDir(path.dirname(p)); const temp=p+'.tmp-'+process.pid; fs.writeFileSync(temp,JSON.stringify(data,null,2)+'\n'); fs.renameSync(temp,p); }

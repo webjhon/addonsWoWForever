@@ -3,20 +3,22 @@ import fs from 'node:fs';
 import path from 'node:path';
 import readline from 'node:readline';
 import {ROOT,readJSON,safeWithin} from '../src/core.ts';
-import {openDb,queryAlliance,getMemories,recordMemory,capability} from '../src/db.ts';
+import {openDb,queryAlliance,queryFaction,getMemories,recordMemory,capability} from '../src/db.ts';
 import {searchKnowledge} from '../src/search.ts';
 import {buildAddon} from '../tools/build-addon.ts';
 import {validateBlueprint} from '../src/guards.ts';
 import {importProbe} from '../src/diagnostics.ts';
 import {runEvals} from '../evals/run-evals.ts';
 import {knowledgeCoverage,entityContext} from '../knowledge/ingest/wowhead-forever.ts';
-const info={name:'wow-forever-alliance-factory',version:'0.1.0'};
+const info={name:'wow-forever-factory',version:'0.1.0'};
+const factionInput={type:'string',enum:['Alliance','Horde']};
 const toolSpecs=[
+ {name:'query_faction_records',description:'Query evidence-scoped Alliance or Horde records; never infer neutral access',inputSchema:{type:'object',properties:{faction:factionInput,kind:{type:'string'},level:{type:'integer'},query:{type:'string'}},required:['faction']}},
  {name:'get_rag_status',description:'Report indexed documents, hash-current vectors, pinned local model readiness and lexical fallback; never asserts game compatibility',inputSchema:{type:'object',properties:{}}},
  {name:'get_knowledge_coverage',description:'Report factual pack counts, unknown IDs/requirements and unresolved gaps; never asserts completeness or client verification',inputSchema:{type:'object',properties:{}}},
- {name:'get_gameplay_entity',description:'Read an Alliance-accessible entity and both directions of its partial evidence graph; level is planning context, not proof of eligibility',inputSchema:{type:'object',properties:{id:{type:'string'},level:{type:'integer',minimum:1,maximum:60}},required:['id']}},
- {name:'search_wow_api',description:'Search evidence-tracked Forever API documentation (RAG)',inputSchema:{type:'object',properties:{query:{type:'string'},level:{type:'integer'}},required:['query']}},
- {name:'search_leveling_knowledge',description:'Search Alliance 1-60 RAG documents',inputSchema:{type:'object',properties:{query:{type:'string'},level:{type:'integer'}},required:['query']}},
+ {name:'get_gameplay_entity',description:'Read an entity accessible to the requested faction and both directions of its partial evidence graph; level is planning context, not proof of eligibility',inputSchema:{type:'object',properties:{id:{type:'string'},faction:factionInput,level:{type:'integer',minimum:1,maximum:60}},required:['id']}},
+ {name:'search_wow_api',description:'Search evidence-tracked Forever API documentation (RAG)',inputSchema:{type:'object',properties:{query:{type:'string'},faction:factionInput,level:{type:'integer'}},required:['query']}},
+ {name:'search_leveling_knowledge',description:'Search faction-filtered leveling 1-60 RAG documents',inputSchema:{type:'object',properties:{query:{type:'string'},faction:factionInput,level:{type:'integer'}},required:['query']}},
  {name:'query_alliance_records',description:'Query structured, faction-filtered Alliance game entities',inputSchema:{type:'object',properties:{kind:{type:'string'},level:{type:'integer'},query:{type:'string'}},required:['kind']}},
  {name:'check_client_capability',description:'Return SUPPORTED/UNVERIFIED/PROHIBITED with provenance',inputSchema:{type:'object',properties:{id:{type:'string'}},required:['id']}},
  {name:'get_project_memory',description:'Read persistent technical decisions and findings',inputSchema:{type:'object',properties:{addon:{type:'string'},kind:{type:'string'}}}},
@@ -32,9 +34,10 @@ async function callTool(name,args={}){
   switch(name){
     case 'get_rag_status':return ragStatus({db});
     case 'get_knowledge_coverage':return knowledgeCoverage();
-    case 'get_gameplay_entity':return entityContext(db,args.id,{level:args.level??1});
-    case 'search_wow_api':return await searchKnowledge(args.query,{db,domain:'api',level:args.level||1});
-    case 'search_leveling_knowledge':return await searchKnowledge(args.query,{db,domain:'leveling',level:args.level||1});
+    case 'get_gameplay_entity':return entityContext(db,args.id,{level:args.level??1,faction:args.faction||'Alliance'});
+    case 'query_faction_records':if(!args.faction)throw Error('Explicit player faction is required');return queryFaction(db,{faction:args.faction,kind:args.kind,level:args.level||1,q:args.query||''});
+    case 'search_wow_api':return await searchKnowledge(args.query,{db,domain:'api',level:args.level||1,faction:args.faction||'Alliance'});
+    case 'search_leveling_knowledge':return await searchKnowledge(args.query,{db,domain:'leveling',level:args.level||1,faction:args.faction||'Alliance'});
     case 'query_alliance_records':return queryAlliance(db,{kind:args.kind,level:args.level||1,q:args.query||''});
     case 'check_client_capability':return capability(db,args.id,readJSON(path.join(ROOT,'config/wow-version.json')).build);
     case 'get_project_memory':return getMemories(db,{addon:args.addon,kind:args.kind});
@@ -74,10 +77,10 @@ export async function dispatch(msg){
    const text=uri==='factory://scope'?fs.readFileSync(path.join(ROOT,'AGENTS.md'),'utf8'):uri==='factory://readiness'?JSON.stringify(readJSON(path.join(ROOT,'config/wow-version.json'))):null;
    if(text===null)throw Error('Unknown resource');return success({contents:[{uri,text,mimeType:uri.endsWith('scope')?'text/markdown':'application/json'}]});
   }
-  if(method==='prompts/list')return success({prompts:[{name:'build-alliance-addon',description:'Follow the tested production journey for Alliance 1-60'}]});
+  if(method==='prompts/list')return success({prompts:[{name:'build-alliance-addon',description:'Follow the tested production journey for Alliance and Horde 1-60'}]});
   if(method==='prompts/get'){
    if(params.name!=='build-alliance-addon')throw Error('Unknown prompt');
-   return success({description:'Alliance leveling addon engineering journey',messages:[{role:'user',content:{type:'text',text:fs.readFileSync(path.join(ROOT,'FACTORY-WORKFLOW.md'),'utf8')}}]});
+   return success({description:'Alliance and Horde leveling addon engineering journey',messages:[{role:'user',content:{type:'text',text:fs.readFileSync(path.join(ROOT,'FACTORY-WORKFLOW.md'),'utf8')}}]});
   }
   if(method==='notifications/cancelled')return null;
   return id===undefined?null:{jsonrpc:'2.0',id,error:{code:-32601,message:'Method not found'}};

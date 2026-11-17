@@ -2,8 +2,9 @@
   "source_id": "rag-expanded:api-gossipinfo",
   "domain": "api",
   "title": "Diálogo de NPC: ofertas de quests e limites de elegibilidade",
-  "faction": "Alliance",
+  "faction": "Neutral",
   "alliance_access": true,
+  "horde_access": true,
   "min_level": 1,
   "max_level": 60,
   "evidence": "STATIC_API_DOCUMENTATION",
@@ -14,7 +15,7 @@
     "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/GossipInfoDocumentation.lua",
     "https://github.com/Gethe/wow-ui-source/blob/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated/GossipInfoDocumentation.lua"
   ],
-  "abstract": "Escopo: Alliance1–60, interface16001. Snapshot documental bebcb6bf309cf41b41bd74f8ca651e6a105b2676. Runtime das funções abaixo permanece UNVERIFIED até teste específico. As ofertas de um diálogo aberto descrevem aquele NPC naquele momento; não são a lista universal de quests possíveis. Distinguir oferta observada, catálogo potencial e quest já no diário. Pré-requisitos desconhecidos não podem virar elegibilidade garantida.",
+  "abstract": "Escopo: Alliance e Horde1–60, interface16001. Snapshot documental bebcb6bf309cf41b41bd74f8ca651e6a105b2676. Runtime das funções abaixo permanece UNVERIFIED até teste específico. As ofertas de um diálogo aberto descrevem aquele NPC naquele momento; não são a lista universal de quests possíveis. Distinguir oferta observada, catálogo potencial e quest já no diário. Pré-requisitos desconhecidos não podem virar elegibilidade garantida.",
   "build": null,
   "note": "Original synthesis. Documentary/gameplay references do not grant global client verification."
 }

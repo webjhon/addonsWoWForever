@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import {accessFlags} from '../src/factions.ts';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {ROOT,sha,readJSON} from '../src/core.ts';
@@ -25,7 +26,7 @@ export async function indexDocuments({withEmbeddings=false,dirs=[path.join(ROOT,
  const roots=dirs.map(d=>path.resolve(d));const manifest=readJSON(path.join(ROOT,'knowledge/sources/manifest.json'),{});
  // Read/validate the full plan before changing prior records.
  const plan=roots.flatMap(files).sort().map(f=>{const rel=path.relative(ROOT,f).replaceAll('\\','/'),raw=fs.readFileSync(f,'utf8'),meta=readJSON(f+'.meta.json',{});
- const allowed=!forbidden.includes(meta.license)&&meta.faction!=='Horde'&&meta.alliance_access!==false&&meta.reviewed!==false&&manifest[meta.source_id]?.reviewed!==false;
+ const allowed=!forbidden.includes(meta.license)&&(accessFlags({...meta,faction:meta.faction||'Alliance'}).alliance||accessFlags({...meta,faction:meta.faction||'Alliance'}).horde)&&meta.reviewed!==false&&manifest[meta.source_id]?.reviewed!==false;
  return {rel,meta,fingerprint:sha(raw+JSON.stringify(meta)),chunks:allowed?chunkDocument(raw,{title:meta.title||path.basename(f),context:meta.abstract||''}):[]};});
  const currentPaths=new Set(plan.map(f=>f.rel));db.exec('BEGIN');
  try{
@@ -38,7 +39,7 @@ export async function indexDocuments({withEmbeddings=false,dirs=[path.join(ROOT,
   if(!old){for(let n=chunks.length;n<10000;n++){const id=sha(rel+':'+n).slice(0,24);if(!db.prepare('SELECT id FROM docs WHERE id=?').get(id))break;db.prepare('DELETE FROM docs WHERE id=?').run(id);removed++;}}
   if(old)for(const id of JSON.parse(old.doc_ids))if(!ids.includes(id)){db.prepare('DELETE FROM docs WHERE id=?').run(id);removed++;}
   for(let n=0;n<chunks.length;n++){const id=ids[n],content=chunks[n],existing=db.prepare('SELECT hash FROM docs WHERE id=?').get(id);
-   if(existing?.hash===sha(content)&&old?.fingerprint===fingerprint)skipped++;else {upsertDoc(db,{id,source_id:meta.source_id||rel,domain:meta.domain||'api',title:meta.title||path.basename(rel),content,faction:meta.faction||'Alliance',alliance_access:meta.alliance_access!==false,min_level:meta.min_level??1,max_level:meta.max_level??60,build:meta.build||null,evidence:meta.evidence||'COMMUNITY_UNVERIFIED',license:meta.license||'original',uri:meta.uri||null});changed++;}
+   if(existing?.hash===sha(content)&&old?.fingerprint===fingerprint)skipped++;else {upsertDoc(db,{id,source_id:meta.source_id||rel,domain:meta.domain||'api',title:meta.title||path.basename(rel),content,faction:meta.faction||'Alliance',alliance_access:meta.alliance_access!==false,horde_access:meta.horde_access===true,min_level:meta.min_level??1,max_level:meta.max_level??60,build:meta.build||null,evidence:meta.evidence||'COMMUNITY_UNVERIFIED',license:meta.license||'original',uri:meta.uri||null});changed++;}
    managedIDs.push(id);
   }
   db.prepare('INSERT OR REPLACE INTO indexed_files(path,doc_ids,fingerprint) VALUES(?,?,?)').run(rel,JSON.stringify(ids),fingerprint);

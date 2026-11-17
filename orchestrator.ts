@@ -1,3 +1,4 @@
+import {checkFactionPolicy} from './src/faction-policy.ts';
 import {disposeEmbedder} from './src/embeddings.ts';
 import path from 'node:path';
 import fs from 'node:fs';
@@ -21,13 +22,16 @@ export async function executeJourney({blueprintPath,prompt}={}){
   const localClient=localClientContext(cfg.build);
   step('LOCAL_CLIENT_EVIDENCE',{ok:localClient.status!=='BUILD_MISMATCH',...localClient,reason:localClient.status==='BUILD_MISMATCH'?'Refresh local client intake for the configured build':undefined});
   const subject=prompt || blueprintPath || '';
-  const docs=await searchKnowledge(subject,{db,limit:10});
-  step('RAG_AND_RESEARCH',{ok:true,citations:docs.map(x=>x.source_id)});
+  const scopedDocs=await Promise.all(['Alliance','Horde'].map(async faction=>({faction,results:await searchKnowledge(subject,{db,limit:10,faction})})));
+  const docs=scopedDocs.flatMap(x=>x.results);
+  step('RAG_AND_RESEARCH',{ok:true,citations:docs.map(x=>x.source_id),byFaction:scopedDocs.map(x=>({faction:x.faction,citations:x.results.map(d=>d.source_id)}))});
   let blueprint,provider=null;
   if(blueprintPath)blueprint=readJSON(path.resolve(blueprintPath));
   else if(prompt){const created=await createBlueprintWithLLM(prompt);blueprint=created.blueprint;provider=created.model;}
   else throw Error('Pass --blueprint PATH or --prompt "description"');
   state.addon=blueprint.addonName;
+  const factionPolicy=checkFactionPolicy(blueprint);
+  step('FACTION_SUPPORT_REVIEW',{...factionPolicy,reason:factionPolicy.errors.join('; ')});
   const learned=learnedSkillContext(subject,blueprint);
   step('LEARNED_CLIENT_SKILLS',{ok:true,selected:learned.selected,status:learned.status,clientVerified:false});
   const patterns=referencePatternContext(subject,blueprint);

@@ -13,9 +13,9 @@ try{
  }else if(command==='export'){
   const dir=ensureDir(path.join(DATA_DIR,'knowledge-exports'));
   const sources=new Map(bundle.manifest.sources.map(s=>[s.id,s]));
-  const text=['WoW Forever / Alliance leveling 1-60','PARTIAL FACTUAL CATALOG. NOT CLIENT_VERIFIED. No copied site prose.',...bundle.records.map(r=>[
+  const text=['WoW Forever / Alliance and Horde leveling 1-60; records retain individual faction eligibility','PARTIAL FACTUAL CATALOG. NOT CLIENT_VERIFIED. No copied site prose.',...bundle.records.map(r=>[
    '\n'+r.id+' | '+r.kind+' | '+r.name,
-   'game_id='+r.game_id+'; patch='+r.patch+'; client_build=UNVERIFIED; evidence='+r.evidence,
+   'faction='+r.faction+'; alliance_access='+r.alliance_access+'; horde_access='+(r.horde_access??'UNKNOWN')+'; game_id='+r.game_id+'; patch='+r.patch+'; client_build=UNVERIFIED; evidence='+r.evidence,
    JSON.stringify(r.facts),
    'Sources: '+r.source_ids.map(id=>sources.get(id).uri).join(' '),
    'Gaps: '+r.issues.join(' ')

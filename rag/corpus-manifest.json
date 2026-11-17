@@ -5,47 +5,47 @@
   "documents": [
     {
       "path": "rag/raw-docs/forever/expanded/api-questlog.md",
-      "sha256": "7d9f9e0f3901b742c7c76b9d30228d023bfb3a7aa449f4577a425ecc25ad2f62",
+      "sha256": "8346372bf7359853299402f05d47b2abc02677b52c9e3c72d267d40c8d7ede14",
       "source_id": "rag-expanded:api-questlog"
     },
     {
       "path": "rag/raw-docs/forever/expanded/api-map.md",
-      "sha256": "7cbc1f5c931a2d5be69c26a5b4afd8f3791903441e246c41bd302481406694cc",
+      "sha256": "230edba94406a4a7a4b2615bb16097e64fafbf37d3621f134ffcee7c8f2c8d80",
       "source_id": "rag-expanded:api-map"
     },
     {
       "path": "rag/raw-docs/forever/expanded/api-nameplate.md",
-      "sha256": "ecacfff58b1cd6c43af2c7b793a86f98ed18473a842bf1d09b00eca0fe2c54fd",
+      "sha256": "200bb6075d68f40c0808e69398a15aec85dec3af5ba5b38723771b958e8ae5ce",
       "source_id": "rag-expanded:api-nameplate"
     },
     {
       "path": "rag/raw-docs/forever/expanded/api-supertrackmanager.md",
-      "sha256": "ca18e90a44d889d9fe6060402e96a750c4fab7d44af60b1fd2fdc8ada43c950a",
+      "sha256": "f38c0c5a3109849c98e30f6cb7b59258dcd37a5e2093e6011b70792f15a7e4d5",
       "source_id": "rag-expanded:api-supertrackmanager"
     },
     {
       "path": "rag/raw-docs/forever/expanded/api-gossipinfo.md",
-      "sha256": "fac7eb82a82c1247a7a31725fabca8821de99b608687a6ed5e95260777eb1678",
+      "sha256": "9d6fe3b7a8e48897e8cb859f2774180ffc856fda22beab1ec9a3f997fde5e9f3",
       "source_id": "rag-expanded:api-gossipinfo"
     },
     {
       "path": "rag/raw-docs/forever/expanded/api-instance.md",
-      "sha256": "342c0580d7f1f087b6785978164f046149dc0481b805ac5f3c2f6993d87c7721",
+      "sha256": "220ac14ed6621f23e0a60ee33d62612f0f1ed47fc6dd759888b94a4c7b49b37d",
       "source_id": "rag-expanded:api-instance"
     },
     {
       "path": "rag/raw-docs/forever/expanded/api-unit.md",
-      "sha256": "463d691666ef53f6ba5cdba5af37caeace1a86283387aece077f585f4dc2a175",
+      "sha256": "5e90081e18114b396faad52837f43dd1b202c473fbc7fd7102427e9aef5ce97b",
       "source_id": "rag-expanded:api-unit"
     },
     {
       "path": "rag/raw-docs/forever/expanded/api-spellbook.md",
-      "sha256": "16b9697db42a5b5ce9d965c21cb356ef5ad8359dbda6d162468e84b9cdc7f589",
+      "sha256": "09a9316e2b91d183070b0ca6d87341de4bd677b9cd678a12bc08b4fc81d2d0ef",
       "source_id": "rag-expanded:api-spellbook"
     },
     {
       "path": "rag/raw-docs/forever/expanded/api-container.md",
-      "sha256": "8fc5882b0b343f40f46ed16c7d51c8cd09c840fc5fc7ebf5ee95ada853bb0423",
+      "sha256": "f15afe69fcd04b9b2c37c3e5995cfa0f82362472ef5544b24888a62856b38996",
       "source_id": "rag-expanded:api-container"
     },
     {

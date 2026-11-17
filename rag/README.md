@@ -30,3 +30,5 @@ Chunks preservam título, seção e resumo contextual. Mudança de conteúdo inv
 O snapshot usa gzip JSONL e manifest SHA256; init rejeita checksum/forma/modelo inválidos antes de escrever. Conteúdo atualizado que não bate com snapshot antigo é ignorado e aparece como lacuna no status até regenerar. Atualizações inválidas de metadados não devem ser usadas como prova de elegibilidade Alliance ou compatibilidade.
 
 Referências técnicas: https://huggingface.co/Xenova/multilingual-e5-small e https://huggingface.co/intfloat/multilingual-e5-small . Motor fixado no package-lock.json. Uso da API de pipeline foi validado com a versão instalada; não depender de uma versão inferida pela documentação online. Nenhum teste de jogo novo é feito por esses comandos.
+
+Desde 17/11/2026, a fábrica atende Alliance e Horde. Use --faction Alliance|Horde nas consultas e declare horde_access independentemente de alliance_access. API/engenharia revisadas podem ser compartilhadas; fichas de quests/rotas Alliance não são promovidas para Horde. A base factual Horde ainda não tem quests com elegibilidade comprovada; a cobertura e docs/FACTION-SUPPORT.md explicitam a lacuna.
