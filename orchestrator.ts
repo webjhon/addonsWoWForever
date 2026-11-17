@@ -1,6 +1,7 @@
 import path from 'node:path';
 import fs from 'node:fs';
 import {ROOT,readJSON,writeJSON,ensureDir,appendTrace,now,sha} from './src/core.ts';
+import {learnedSkillContext} from './src/learned-skills.ts';
 import {searchKnowledge} from './src/search.ts';
 import {openDb,getMemories,recordMemory,capability} from './src/db.ts';
 import {validateBlueprint} from './src/guards.ts';
@@ -22,6 +23,8 @@ export async function executeJourney({blueprintPath,prompt}={}){
   else if(prompt){const created=await createBlueprintWithLLM(prompt);blueprint=created.blueprint;provider=created.model;}
   else throw Error('Pass --blueprint PATH or --prompt "description"');
   state.addon=blueprint.addonName;
+  const learned=learnedSkillContext(subject,blueprint);
+  step('LEARNED_CLIENT_SKILLS',{ok:true,selected:learned.selected,status:learned.status,clientVerified:false});
   const checked=validateBlueprint(blueprint);
   step('SCOPE_AND_GUARDRAILS',{ok:checked.ok,reason:checked.errors.join('; ')});
   const unknown=blueprint.apiEvidence.filter(x=>x.status==='UNVERIFIED'||x.status==='COMMUNITY_UNVERIFIED');

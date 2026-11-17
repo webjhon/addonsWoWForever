@@ -21,3 +21,9 @@ Turn a request into an original, installable addon candidate for WoW Forever, **
 13. **Learning**: save ADR decisions, known failures, test evidence and knowledge gaps. Never convert model output into confirmed fact without external evidence.
 
 A command or MCP client can request work, but the model **cannot bypass the deterministic build gates**. `AGENTS.md` is instructional; validation is enforced by executable code.
+
+## Incorporating real-client learning
+
+Before design, run npm run skills:context -- "feature description" and read selected skills under .agents/skills/. The orchestrator records LEARNED_CLIENT_SKILLS for supplied blueprints; the LLM path receives the selected instructions before generation. The registry validates local skill/evidence paths; it does not certify that an agent followed them. Historical facts are indexed by npm run init in knowledge/seed-docs/forever-live-client-lessons.md, and retain PARTIAL_CLIENT_TESTED scope.
+
+For applicable features, acceptance must include detection versus drawing, secret/unavailable data, real hit-testing over other UI, reload/character recovery, disabling/reenabling and stale-intent cleanup. Use the detailed selected skill, not a blanket requirement to run unrelated scenarios. After a client correction, add the missing regression and rerun the same real scenario. Report separately automated, observed and untested behavior. Final ZIP/installed hashes must correspond to the tested code; subsequent changes require proportional revalidation.

@@ -20,3 +20,5 @@ A instalação padrão não inclui acesso gratuito a API de geração de texto; 
 ## CONTRATO REVISADO: obrigatório para todos os addons
 
 Leia também `docs/PROFESSIONAL-INTERACTIVITY.md` e `docs/TONHO-BRANDING.md`. A fábrica rejeita blueprints sem `interactivity`, fontes de dados reais, resposta automática e teste específico do addon. O gerador insere splash/arte e créditos **Tonho Contrabando**. Trabalhe numa branch e termine abrindo PR com ZIP, código e evidências; não faça merge sem aprovação. Não entregue manual de quests em vez de acompanhamento automático.
+
+Antes de projetar: npm run skills:context -- "descrição do addon". Leia as skills selecionadas e suas evidências. O registro knowledge/lessons/live-client.json liga as lições reais ao circuito; npm run init indexa os fatos no RAG. A seleção não aprova gameplay automaticamente.

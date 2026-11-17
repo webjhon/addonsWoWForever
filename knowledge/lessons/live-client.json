@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "status": "PARTIAL_CLIENT_TESTED",
+  "skills": [
+    {
+      "id": "verify-wow-client",
+      "path": ".agents/skills/verify-wow-client/SKILL.md",
+      "applies": "always",
+      "evidence": [
+        "research/AURANPC/LIVE-SESSION-2026-11-16.md",
+        "research/AllianceDungeonTrail/LIVE-TEST.md"
+      ]
+    },
+    {
+      "id": "build-wow-ui",
+      "path": ".agents/skills/build-wow-ui/SKILL.md",
+      "applies": "ui",
+      "evidence": [
+        "research/AllianceDungeonTrail/LIVE-TEST.md"
+      ]
+    },
+    {
+      "id": "highlight-quest-npcs",
+      "path": ".agents/skills/highlight-quest-npcs/SKILL.md",
+      "applies": "npc",
+      "evidence": [
+        "research/AURANPC/LIVE-SESSION-2026-11-16.md"
+      ]
+    }
+  ]
+}

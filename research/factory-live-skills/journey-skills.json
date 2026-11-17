@@ -1,0 +1,27 @@
+{
+  "status": "STATIC_PASSED",
+  "stage": {
+    "name": "LEARNED_CLIENT_SKILLS",
+    "at": "2026-11-16T18:03:12.701Z",
+    "ok": true,
+    "selected": [
+      {
+        "id": "verify-wow-client",
+        "path": ".agents/skills/verify-wow-client/SKILL.md",
+        "evidence": [
+          "research/AURANPC/LIVE-SESSION-2026-11-16.md",
+          "research/AllianceDungeonTrail/LIVE-TEST.md"
+        ]
+      },
+      {
+        "id": "build-wow-ui",
+        "path": ".agents/skills/build-wow-ui/SKILL.md",
+        "evidence": [
+          "research/AllianceDungeonTrail/LIVE-TEST.md"
+        ]
+      }
+    ],
+    "status": "PARTIAL_CLIENT_TESTED",
+    "clientVerified": false
+  }
+}
