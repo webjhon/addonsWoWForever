@@ -23,7 +23,7 @@ function ns.Context()
 end
 function ns.ScanQuests()
     ns.quests, ns.byNPC, ns.titles = {}, {}, {}
-    ns.itemQuests, ns.itemTitles = {}, {}
+    ns.itemQuests, ns.itemTitles, ns.itemNames = {}, {}, {}
     ns.questReadable = false
     local count = ns.Read(function() return C_QuestLog.GetNumQuestLogEntries() end)
     if not number(count) or count < 0 or count > 200 then return end
@@ -38,6 +38,7 @@ function ns.ScanQuests()
             if ns.itemQuests and not ns.removed[id] and failed==false then
                 local title=text(info.title) and info.title or ('Quest '..id)
                 ns.itemQuests[id]={id=id,title=title,complete=complete}
+                if ns.IndexItemObjectives then ns.IndexItemObjectives(id,objectives) end
                 if ns.itemTitles[title]==nil then ns.itemTitles[title]=id else ns.itemTitles[title]=false end
             end
             if not ns.removed[id] and complete == false and failed ~= true and type(objectives)=='table' then

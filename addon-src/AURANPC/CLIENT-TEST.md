@@ -1,6 +1,6 @@
-# Testes reais pendentes — AURANPC2.1.0
+# Cobertura real e testes pendentes — AURANPC2.1.1
 
-Não executados nesta tarefa. Registrar build, facção, versão/ZIP e UI usada. Verificar separadamente em Alliance e Horde:
+Executados parcialmente em Alliance nível1/ptBR, build70959: bag, mudança de slot, loot real, coleta, reload, configurações e NPCs em mundo aberto. Veja LIVE-ITEMS-TEST.md. Os cenários amplos abaixo continuam pendentes onde não estiverem cobertos pelo relatório; verificar separadamente em Alliance e Horde:
 
 1. Quest aceita com item pendente: abrir loot visível, confirmar !/borda/pulso no item certo, clicar/coletar normalmente e confirmar remoção quando a linha some. Moedas e outros itens sem associação não devem receber efeito.
 2. Bolsas normais e combinadas: item específico e item comum necessário para quest; mover entre slots/bolsas, ordenar e fechar/reabrir. O selo acompanha a nova posição e não fica no item substituto.

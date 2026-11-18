@@ -25,7 +25,7 @@ function GetTime() return TEST.now end
 C_CVar={GetCVar=function(key)return TEST.cvars[key]end,SetCVar=function(key,v)TEST.cvars[key]=v;table.insert(TEST.cvarWrites,{key,v})end}
 C_NamePlate={GetNamePlateForUnit=function(unit)return TEST.plates[unit]end,GetNamePlates=function()local t={};for _,p in pairs(TEST.plates)do t[#t+1]=p end;return t end}
 C_TooltipInfo={GetUnit=function(unit)return TEST.tooltips[unit]end}
-Enum={TooltipDataLineType={QuestTitle=17}}
+Enum={TooltipDataLineType={QuestTitle=17,ItemName=22}}
 SOUNDKIT={RAID_WARNING=1}
 function PlaySound() TEST.sounds=TEST.sounds+1 end
 function SetRaidTarget()error('forbidden shared side effect')end

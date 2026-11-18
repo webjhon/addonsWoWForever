@@ -60,3 +60,15 @@ test('modern bag discovery and post hooks keep overlays on the actual updated bu
  ContainerFrameItemButtonMixin={UpdateQuestItem=function()end};LootFrameElementMixin={Init=function()end};AURA.RefreshItems()
  assert(hooks.UpdateQuestItem and hooks.Init);hooks.UpdateQuestItem(b);flush();assert(marked(b))
 `));
+
+for(const faction of ['Alliance','Horde'])test('Live regression shape for '+faction+': objective name matches bag and loot with nil questID and isActive false',()=>run(setup+`
+ TEST.faction='${faction}';
+ accept(33,'Só louco não come lobo',{{type='item',text='1/8 Carne Dura de Lobo',finished=false}})
+ local b=bagbutton(0,3,{isQuestItem=true,isActive=false})
+ TEST.bagTips['0:3']={lines={{type=22,leftText='Carne Dura de Lobo'},{type=20,leftText='Item de missão'}}}
+ local l=lootrow(1,{name='Carne Dura de Lobo',link='item:101',isQuestItem=true,isActive=false})
+ fire('LOOT_OPENED');assert(marked(b) and marked(l))
+ TEST.objectivesByID[33][1].finished=true;TEST.ready[33]=true;fire('QUEST_LOG_UPDATE');assert(marked(b) and not marked(l))
+ fire('QUEST_REMOVED',33);assert(not marked(b));accept(33,'Só louco não come lobo',{{type='item',text='0/8 Carne Dura de Lobo',finished=false}});TEST.ready[33]=false;fire('QUEST_LOG_UPDATE');assert(marked(b))
+ TEST.bagTips['0:3'].lines[1].leftText={secret=true};fire('BAG_UPDATE_DELAYED');assert(not marked(b))
+`));
