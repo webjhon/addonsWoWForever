@@ -3,6 +3,7 @@ local _, ns = ...
 ns.itemMarks, ns.itemButtons = {}, {}
 ns.itemStats = {bags=0,loot=0,unknown=0,restricted=0}
 ns.itemQuests, ns.itemTitles, ns.clearedLoot = {}, {}, {}
+ns.itemNames = {}
 local MAX_BUTTONS=360
 local function field(t,key)
     if type(t)=='table' and ns.Public(t) then
@@ -24,16 +25,40 @@ local function active(id,kind)
     if kind=='loot' and q.complete~=false then return nil end
     return q
 end
+local function cleanName(value)
+    if not ns.IsText(value) then return nil end
+    return value:gsub('|c%x%x%x%x%x%x%x%x',''):gsub('|r',''):gsub('%s+',' '):gsub('^%s+',''):gsub('%s+$','')
+end
+function ns.IndexItemObjectives(id,objectives)
+    if type(objectives)~='table' or not ns.Public(objectives) then return end
+    for _,obj in ipairs(objectives) do
+        if field(obj,'type')=='item' then
+            local text=field(obj,'text')
+            if ns.IsText(text) then
+                -- Observed Forever ptBR: "1/8 Carne Dura de Lobo". Also handle the
+                -- explicit name: progress layout; never use fuzzy substring matching.
+                local name=cleanName(text:gsub('^%s*%d+%s*/%s*%d+%s+',''):gsub(':%s*%d+%s*/%s*%d+%s*$',''))
+                if name and name~='' then
+                    ns.itemNames[name]=ns.itemNames[name] or {}
+                    table.insert(ns.itemNames[name],{id=id,finished=field(obj,'finished')})
+                end
+            end
+        end
+    end
+end
 function ns.ItemMatch(info,tooltip,kind)
     if not ns.questReadable then return nil,'unknown' end
     local id=field(info,'questID')
     -- A known starter for an unaccepted quest must never inherit a generic badge.
     if ns.IsNumber(id) and id>0 then return active(id,kind) end
+    local name=cleanName(field(info,'name'))
     local lines=field(tooltip,'lines')
     if type(lines)=='table' then
         local titleType=Enum and Enum.TooltipDataLineType and Enum.TooltipDataLineType.QuestTitle
         for i,line in ipairs(lines) do
             if i>80 then break end
+            local itemNameType=Enum and Enum.TooltipDataLineType and Enum.TooltipDataLineType.ItemName
+            if itemNameType and field(line,'type')==itemNameType then name=cleanName(field(line,'leftText')) or name end
             if titleType and field(line,'type')==titleType then
                 local title=field(line,'leftText')
                 local quest=ns.IsText(title) and ns.itemTitles[title]
@@ -41,6 +66,10 @@ function ns.ItemMatch(info,tooltip,kind)
                 if q then return q end
             end
         end
+    end
+    for _,objective in ipairs(name and ns.itemNames[name] or {}) do
+        local quest=active(objective.id,kind)
+        if quest and (kind~='loot' or objective.finished==false) then return quest end
     end
     -- Independent, public live flags: generic quest classification alone is insufficient.
     if field(info,'isQuestItem')==true and field(info,'isActive')==true then
@@ -107,7 +136,7 @@ function ns.InstallItemHooks()
 end
 local function discoverBags()
     if type(ContainerFrameUtil_EnumerateContainerFrames)~='function' then return end
-    pcall(function()
+    local ok=pcall(function()
         local count=0
         for _,container in ContainerFrameUtil_EnumerateContainerFrames() do
             if usable(container) then
@@ -118,6 +147,11 @@ local function discoverBags()
             end
         end
     end)
+    ns.itemAdapterFailed=not ok
+end
+function ns.ItemDiagnostics()
+    local function count(t) local n=0;for _ in pairs(t or {}) do n=n+1 end;return n end
+    print('AURANPC itens | quests '..count(ns.itemQuests)..' | nomes '..count(ns.itemNames)..' | botoes '..count(ns.itemButtons)..' | bolsas '..ns.itemStats.bags..' | loot '..ns.itemStats.loot..' | adaptador '..(ns.itemAdapterFailed and 'falhou' or 'OK'))
 end
 local function show(button,kind,match)
     local mark=ns.itemMarks[button] or ns.NewItemMark(button,kind)
@@ -160,8 +194,8 @@ function ns.RefreshItems()
                     local slot=method(button,'GetSlotIndex')
                     if integer(slot,1,200) and not ns.clearedLoot[slot] then
                         local info=ns.Read(function()
-                            local _,_,_,_,_,_,isQuestItem,questID,isActive=GetLootSlotInfo(slot)
-                            return {isQuestItem=isQuestItem,questID=questID,isActive=isActive}
+                            local _,name,_,_,_,_,isQuestItem,questID,isActive=GetLootSlotInfo(slot)
+                            return {name=name,isQuestItem=isQuestItem,questID=questID,isActive=isActive}
                         end)
                         local link=ns.Read(function() return GetLootSlotLink(slot) end)
                         if ns.IsText(link) and link:find('item:',1,true) then

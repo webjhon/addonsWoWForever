@@ -1,2 +1,2 @@
-Version 2.1.0 - Candidate package created by WoW Addon AI Factory.
+Version 2.1.1 - Candidate package created by WoW Addon AI Factory.
 Client-side verification pending.

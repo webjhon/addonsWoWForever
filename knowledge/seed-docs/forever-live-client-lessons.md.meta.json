@@ -1,11 +1,11 @@
 {
   "source_id": "forever-live-client-lessons-2026-11-16",
-  "title": "Falhas e acertos observados no cliente Forever70938",
+  "title": "Falhas e acertos observados no Forever70938 e70959 (escopo parcial)",
   "domain": "api",
   "faction": "Neutral",
   "license": "original",
   "evidence": "PARTIAL_CLIENT_TESTED",
-  "build": 70938,
+  "build": null,
   "uri": "knowledge/seed-docs/forever-live-client-lessons.md",
   "alliance_access": true,
   "horde_access": true

@@ -1,10 +1,17 @@
 {
-  "version": "2.1.0",
+  "version": "2.1.1",
   "status": "STATIC_PASSED",
   "mockStatus": "MOCK_PASSED",
   "clientVerified": false,
-  "clientTests": "NOT_RUN",
-  "historicalClientObservation": "2.0.1 Alliance70938 only",
+  "clientTests": "PARTIAL_CLIENT_TESTED",
+  "liveEvidence": "research/AURANPC/LIVE-ITEMS-EVIDENCE.json",
+  "liveScope": {
+    "build": 70959,
+    "faction": "Alliance",
+    "locale": "ptBR",
+    "level": 1,
+    "location": "Northshire open world"
+  },
   "sourceBuild": "1.60.1.70959",
   "interfaceReference": 16001,
   "factions": [
@@ -12,8 +19,8 @@
     "Horde"
   ],
   "tests": {
-    "count": 150,
-    "passed": 150
+    "count": 152,
+    "passed": 152
   },
   "logs": [
     {
@@ -61,7 +68,7 @@
       "exit": 0
     }
   ],
-  "zip": "AURANPC-2.1.0-candidate.zip",
-  "sha256": "3ca4e775737c6d1eeca261c052496bc55b79baa4025fca7f4092fbffe8428787",
-  "zipBytes": 196336
+  "zip": "AURANPC-2.1.1-candidate.zip",
+  "sha256": "301c35daa762aafc846c9f33df56a7c84369185f0d542c2c7981c3de27e125bf",
+  "zipBytes": 199561
 }

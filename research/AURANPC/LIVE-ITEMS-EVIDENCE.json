@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-18",
+  "version": "2.1.1",
+  "status": "PARTIAL_CLIENT_TESTED",
+  "clientVerified": false,
+  "build": 70959,
+  "interface": 16001,
+  "locale": "ptBR",
+  "faction": "Alliance",
+  "level": 1,
+  "quest": 33,
+  "item": "Carne Dura de Lobo",
+  "observedQuestInfo": {
+    "isQuestItem": true,
+    "questID": null,
+    "isActive": false
+  },
+  "tooltipTypes": [
+    22,
+    20
+  ],
+  "objective": "1/8 Carne Dura de Lobo",
+  "passed": [
+    "bag-badge",
+    "slot-move",
+    "real-loot-badge",
+    "ordinary-loot-unmarked",
+    "collect-and-clear",
+    "bag-stack-3",
+    "reload",
+    "settings-open-close",
+    "bag-toggle-off-on",
+    "npc-markers"
+  ],
+  "notRun": [
+    "Horde",
+    "dungeon",
+    "combined-bags",
+    "quest-turn-in",
+    "delete-reaccept",
+    "long-session",
+    "taint-audit"
+  ],
+  "report": "research/AURANPC/LIVE-SESSION-2026-11-18.md"
+}

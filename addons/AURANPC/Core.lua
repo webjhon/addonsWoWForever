@@ -71,5 +71,6 @@ SlashCmdList.AURANPC=function(input)
     if not ns.settings then print('AURANPC: personagem indisponível.');return end
     if input=='test' then ns.Demo()
     elseif input=='status' then ns.UpdateStatus();print('AURANPC: '..ns.status:GetText())
+    elseif input=='items' then ns.RefreshItems();ns.ItemDiagnostics()
     elseif ns.window:IsShown() then ns.window:Hide() else ns.window:Show() end
 end

@@ -2,7 +2,7 @@ TEST.bags={};TEST.bagTips={};TEST.loot={};TEST.lootTips={};TEST.lootRows={};TEST
  C_Container={GetContainerItemInfo=function(b,s)return TEST.bags[b..':'..s]end,GetContainerItemQuestInfo=function(b,s)local r=TEST.bags[b..':'..s];return r and r.quest end}
  C_TooltipInfo.GetBagItem=function(b,s)return TEST.bagTips[b..':'..s]end
  C_TooltipInfo.GetLootItem=function(s)return TEST.lootTips[s]end
- function GetLootSlotInfo(s)local r=TEST.loot[s];if r then return nil,nil,1,nil,1,false,r.isQuestItem,r.questID,r.isActive end end
+function GetLootSlotInfo(s)local r=TEST.loot[s];if r then return nil,r.name,1,nil,1,false,r.isQuestItem,r.questID,r.isActive end end
  function GetLootSlotLink(s)local r=TEST.loot[s];return r and r.link end
  LootFrame=CreateFrame('Frame',nil,UIParent);LootFrame.ScrollBox={EnumerateFrames=function()return ipairs(TEST.lootRows)end}
  function bagbutton(b,s,q)

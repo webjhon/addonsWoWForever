@@ -1,0 +1,50 @@
+{
+  "version": "2.1.1",
+  "build": 70959,
+  "status": "EXACT_MATCH",
+  "note": "Final installed Lua/TOC equal generated package. Live-tested source differs only by CRLF/LF normalization; no semantic change after observation.",
+  "records": [
+    {
+      "file": "AURANPC.toc",
+      "packagedSha256": "5b2a1bd7394293dde19d72139118bc0512cc723922848d696b22508e74930717",
+      "installedSha256": "5b2a1bd7394293dde19d72139118bc0512cc723922848d696b22508e74930717",
+      "bytesEqual": true
+    },
+    {
+      "file": "Core.lua",
+      "packagedSha256": "658d0317cecac0255bd34f9fa8a4925a22b32ba0d4355aeb6cdcb40a0b061a8a",
+      "installedSha256": "658d0317cecac0255bd34f9fa8a4925a22b32ba0d4355aeb6cdcb40a0b061a8a",
+      "bytesEqual": true
+    },
+    {
+      "file": "Data.lua",
+      "packagedSha256": "ab0d8a7f1e1cc634cbb5be8e95323b016aa630d5a2a44d67bf43fe2d6f5e2fc9",
+      "installedSha256": "ab0d8a7f1e1cc634cbb5be8e95323b016aa630d5a2a44d67bf43fe2d6f5e2fc9",
+      "bytesEqual": true
+    },
+    {
+      "file": "Engine.lua",
+      "packagedSha256": "59149b932726f137de9bc73a22ba06350dd876425755d8d91d3851e5b06f41fc",
+      "installedSha256": "59149b932726f137de9bc73a22ba06350dd876425755d8d91d3851e5b06f41fc",
+      "bytesEqual": true
+    },
+    {
+      "file": "Items.lua",
+      "packagedSha256": "5e07e0fe0f7593935d344a1cad1f72fb07438b4ec0bfaaefac5159db5c2ac979",
+      "installedSha256": "5e07e0fe0f7593935d344a1cad1f72fb07438b4ec0bfaaefac5159db5c2ac979",
+      "bytesEqual": true
+    },
+    {
+      "file": "TonhoBranding.lua",
+      "packagedSha256": "c3e981941ec3aa2840b45e2d1028f0ea2d9ba29c64ebaa66c24c7a083eadbdcf",
+      "installedSha256": "c3e981941ec3aa2840b45e2d1028f0ea2d9ba29c64ebaa66c24c7a083eadbdcf",
+      "bytesEqual": true
+    },
+    {
+      "file": "Visuals.lua",
+      "packagedSha256": "5666c7b07cff5b0504cd2918cf5fed002b0e199d886188322d6a51e97c6e8cf8",
+      "installedSha256": "5666c7b07cff5b0504cd2918cf5fed002b0e199d886188322d6a51e97c6e8cf8",
+      "bytesEqual": true
+    }
+  ]
+}

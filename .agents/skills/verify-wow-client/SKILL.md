@@ -19,3 +19,10 @@ Use ao planejar a prova de utilidade e ao testar uma candidata no jogo. Leia os 
 Evidências originais: research/AURANPC/LIVE-SESSION-2026-11-16.md; research/AllianceDungeonTrail/LIVE-TEST.md. A sessão antiga não autoriza controle de um jogo em uma tarefa futura.
 
 Faction coverage: new/revised addons support Alliance and Horde. Plan and record acceptance separately for both, including unknown faction and reload/character changes. Shared rendering/API lessons may be reused; historical Alliance observations do not certify Horde quests, routing or live behavior. Apply docs/FACTION-SUPPORT.md.
+
+## Item objectives and installed artifacts (70959, 2026-11-18)
+
+- An active required item can have questID=nil and isActive=false, and no QuestTitle tooltip line. Compare a public exact ItemName with current public item objectives; do not equate generic quest classification with an active quest. Preserve unknown/secret handling and remove stale matches after quest changes. Regress with the actual observed fields, not idealized questID fixtures only.
+- Install the generated addons directory/ZIP, including its injected branding TOC. Source TOCs omit generated modules by design. Compare installed Lua/TOC hashes to the generated artifact before interpreting failures.
+- Auto-loot may hide the window before visual inspection. Temporarily change the setting only for testing, restore it and verify. Test collection and cleanup as well as appearance. If item deletion also abandons a quest, record the consequence before proceeding.
+- Scoped evidence: research/AURANPC/LIVE-SESSION-2026-11-18.md (Alliance, ptBR, open world only).
