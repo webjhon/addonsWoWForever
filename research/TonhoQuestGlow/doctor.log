@@ -1,0 +1,71 @@
+
+> wow-addon-ai-factory@0.1.0 doctor
+> node --experimental-strip-types scripts/factory.ts doctor
+
+{
+  "factionPolicy": {
+    "schemaVersion": 1,
+    "effectiveFrom": "2026-11-17",
+    "defaultFaction": "Both",
+    "supportedPlayerFactions": [
+      "Alliance",
+      "Horde"
+    ],
+    "levelRange": [
+      1,
+      60
+    ],
+    "rule": "Every new or revised addon supports both factions. Historical exact candidates remain explicitly single-faction until rebuilt; this exception cannot approve changed code.",
+    "legacyCandidates": [
+      {
+        "file": "research/AURANPC/history/AURANPC-2.0.1.blueprint.json",
+        "addon": "AURANPC",
+        "version": "2.0.1",
+        "faction": "Alliance",
+        "sha256": "c10bef077e155f16a8955e87e4e3b9e1710cd8988ae5d525ce99cfc185335f22",
+        "status": "HISTORICAL_SINGLE_FACTION",
+        "hordeRuntime": "NOT_TESTED",
+        "migration": "REQUIRED_BEFORE_NEXT_REVISION"
+      },
+      {
+        "file": "research/AllianceDungeonTrail/AllianceDungeonTrail.blueprint.json",
+        "addon": "AllianceDungeonTrail",
+        "version": "3.1.0",
+        "faction": "Alliance",
+        "sha256": "166a53bf671610b1cf67a04f48c717a8c74320edf30c8ff99c550029d81e109a",
+        "status": "HISTORICAL_SINGLE_FACTION",
+        "hordeRuntime": "NOT_TESTED",
+        "migration": "REQUIRED_BEFORE_NEXT_REVISION"
+      }
+    ]
+  },
+  "node": "v24.18.0",
+  "interface": 16001,
+  "docs": 590,
+  "entities": 229,
+  "memories": 2,
+  "rag": {
+    "documents": 590,
+    "vectors": 590,
+    "currentVectors": 590,
+    "model": "local:Xenova/multilingual-e5-small@761b726dd34fb83930e26aab4e9ac3899aa1fa78:q8:mean:l2:e5-v1",
+    "dimensions": 384,
+    "localModelReady": false,
+    "retrievalMode": "lexical-fallback",
+    "portableStore": {
+      "schemaVersion": 1,
+      "provider": "local-transformers",
+      "model": "local:Xenova/multilingual-e5-small@761b726dd34fb83930e26aab4e9ac3899aa1fa78:q8:mean:l2:e5-v1",
+      "dimensions": 384,
+      "records": 590,
+      "file": "forever-e5.jsonl.gz",
+      "sha256": "5c765a1b88665b7e2e330c3d6d8db6cacff5d88c027f1cfc8869bf4243cf28ee",
+      "contentSetHash": "825041f6db5c635741f7c6879280a3efafd9313e77fdc46641722818086c9039",
+      "format": "gzip-jsonl",
+      "sourceModel": "Xenova/multilingual-e5-small",
+      "revision": "761b726dd34fb83930e26aab4e9ac3899aa1fa78",
+      "clientVerified": false
+    }
+  },
+  "apiKeyPresent": false
+}

@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-18",
+  "addon": "Tonho QuestGlow1.0.0",
+  "client": "Forever70959, ptBR, Alliance, open world",
+  "origin": "Real client captures, cropped only. No AI-generated/reconstructed game scene; private chat/player names excluded.",
+  "files": [
+    {
+      "file": "01-settings.png",
+      "caption": "Settings and independent controls; final help text after reload",
+      "crop": [
+        678,
+        250,
+        580,
+        600
+      ],
+      "sha256": "18fdcf43e145f9d53c6f5433e786d3a19f3313184fc22dd0c691d8e7eab6ee0d"
+    },
+    {
+      "file": "02-credits.png",
+      "caption": "Original pixel hunter and Tonho Contrabando credits",
+      "crop": [
+        745,
+        355,
+        448,
+        280
+      ],
+      "sha256": "c273935378783f27df8376672b2014c5131238e264eb379f0655aba8dfa24b32"
+    },
+    {
+      "file": "03-quest-npc.png",
+      "caption": "Live moving wolf associated with active quest, during manual combat",
+      "crop": [
+        995,
+        250,
+        300,
+        400
+      ],
+      "sha256": "c9bfd14cb595ecc639a60ea1458c820b06f0d986af990683e259a990ae171254"
+    },
+    {
+      "file": "04-quest-loot.png",
+      "caption": "Quest meat highlighted; ordinary loot unmarked",
+      "crop": [
+        1090,
+        500,
+        220,
+        205
+      ],
+      "sha256": "8b762add825d3e5e2e0d3076059e44e3cd5bd4fb0fad2e057da64b7008492d5e"
+    },
+    {
+      "file": "05-quest-bag.png",
+      "caption": "Required wolf meat stack with yellow exclamation badge",
+      "crop": [
+        1725,
+        680,
+        190,
+        320
+      ],
+      "sha256": "9bc60ffc281549272f802ade263bbbf7e4dea2c2340707fdbcf3c24956b280ed"
+    },
+    {
+      "file": "06-loot-after-collection.png",
+      "caption": "Quest item collected; stale highlight removed from loot window",
+      "crop": [
+        1090,
+        500,
+        220,
+        205
+      ],
+      "sha256": "026adf3e55b67df906bed404130f94409b809a285151b5379f3fd17140e4319b"
+    }
+  ]
+}

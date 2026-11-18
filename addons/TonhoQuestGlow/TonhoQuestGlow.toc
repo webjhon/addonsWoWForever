@@ -1,0 +1,16 @@
+## Interface: 16001
+## Title: Tonho QuestGlow
+## Notes: Highlights quest NPCs, quest loot and required items in your bags.
+## Author: Tonho Contrabando
+## Version: 1.0.0
+## X-Flavor: Forever
+## X-Category: Quests & Leveling
+## X-Website: https://github.com/webjhon/addonsWoWForever
+## IconTexture: Interface\AddOns\TonhoQuestGlow\assets\Icon.tga
+## SavedVariables: TonhoQuestGlowDB
+TonhoBranding.lua
+Data.lua
+Engine.lua
+Visuals.lua
+Items.lua
+Core.lua

@@ -15,6 +15,14 @@ export function buildAddon(blueprintFile,{allowCandidate=true}={}){
  const check=spawnSync(process.execPath,['--experimental-strip-types','--test',proof.testFile],{cwd:ROOT,encoding:'utf8',timeout:90000});
  if(check.error||check.status!==0)throw new Error('Addon-specific acceptance tests FAILED: '+(check.stderr||check.stdout||String(check.error)).slice(-2500));
  if(b.factionSupport?.testFile&&b.factionSupport.testFile!==proof.testFile){const factionCheck=spawnSync(process.execPath,['--experimental-strip-types','--test',b.factionSupport.testFile],{cwd:ROOT,encoding:'utf8',timeout:90000});if(factionCheck.error||factionCheck.status!==0)throw Error('Faction acceptance tests FAILED: '+(factionCheck.stderr||factionCheck.stdout).slice(-2500));}
+ const publicPackage=b.distribution==='public';
+ const publicDocs=new Set(['README.md','LICENSE.md','THIRD-PARTY.md','CHANGELOG.md']);
+ const sourceTocContent=b.files.find(f=>f.filename===b.addonName+'.toc').content;
+ const runtimeFiles=new Set(sourceTocContent.split(/\r?\n/).map(x=>x.trim()).filter(x=>x&&!x.startsWith('#')));
+ if(publicPackage){
+  for(const f of b.files)if(f.filename!==b.addonName+'.toc'&&!runtimeFiles.has(f.filename)&&!publicDocs.has(f.filename))throw Error('Non-distribution file in public package: '+f.filename);
+  for(const required of publicDocs)if(!b.files.some(f=>f.filename===required))throw Error('Public package requires '+required);
+ }
  const addon=path.join(ROOT,'addons',b.addonName), destination=path.join(ROOT,'dist',b.addonName);
  if(fs.existsSync(addon)) fs.rmSync(addon,{recursive:true,force:true});ensureDir(addon);
  for(const file of b.files){const target=safeWithin(addon,file.filename);ensureDir(path.dirname(target));fs.writeFileSync(target,file.content,'utf8');}
@@ -25,20 +33,22 @@ export function buildAddon(blueprintFile,{allowCandidate=true}={}){
  toc=toc.replace(/^##\s*Author:.*$/mi,'## Author: Tonho Contrabando');
  toc=toc.replace(/(^##[^\n]*\r?\n(?:##[^\n]*\r?\n)*)/m, '$1TonhoBranding.lua\n');
  fs.writeFileSync(sourceToc,toc,'utf8');
- fs.copyFileSync(path.join(shared,'TonhoBranding.lua'),path.join(addon,'TonhoBranding.lua'));
+ let branding=fs.readFileSync(path.join(shared,'TonhoBranding.lua'),'utf8');
+ if(publicPackage)branding=branding.replace('-- Tonho Contrabando: shared brand splash, injected by the factory, do not remove.','-- Tonho Contrabando: opening credits.');
+ fs.writeFileSync(path.join(addon,'TonhoBranding.lua'),branding);
  const brandedAssets=ensureDir(path.join(addon,'assets'));
  fs.copyFileSync(path.join(shared,'TonhoHunter.tga'),path.join(brandedAssets,'TonhoHunter.tga'));
  const assetDir=ensureDir(path.join(addon,'assets'));
  const art=generateAddonArt(b.addonName,assetDir,path.join(ROOT,'releases'));
- fs.writeFileSync(path.join(addon,'README.txt'),`WoW Forever / ${b.faction} / leveling 1-60\nAddon: ${b.addonName}\nVersion: ${b.version||'0.1.0'}\nInstall folder: _forever_/Interface/AddOns/${b.addonName}\nCandidate build: verification on a live Forever client is still required.\n`);
- fs.writeFileSync(path.join(addon,'CHANGELOG.txt'),`Version ${b.version||'0.1.0'} - Candidate package created by WoW Addon AI Factory.\nClient-side verification pending.\n`);
+ if(!publicPackage)fs.writeFileSync(path.join(addon,'README.txt'),`WoW Forever / ${b.faction} / leveling 1-60\nAddon: ${b.addonName}\nVersion: ${b.version||'0.1.0'}\nInstall folder: _forever_/Interface/AddOns/${b.addonName}\nCandidate build: verification on a live Forever client is still required.\n`);
+ if(!publicPackage)fs.writeFileSync(path.join(addon,'CHANGELOG.txt'),`Version ${b.version||'0.1.0'} - Candidate package created by WoW Addon AI Factory.\nClient-side verification pending.\n`);
  if(fs.existsSync(destination))fs.rmSync(destination,{recursive:true,force:true});fs.cpSync(addon,destination,{recursive:true});
  // A reproducible packaging artifact is NOT evidence of success inside WoW.
  const status='STATIC_PASSED';
  const report={addon:b.addonName,status,clientVerified:false,productQuality:{...proof,acceptanceTests:'PASSED'},credits:'Tonho Contrabando',branding:'First-open splash via namespace registration',interface:b.interfaceVersion,at:now(),scope:'WoW Forever / '+b.faction+' / 1-60',factionSupport:checkFactionPolicy(b),apiEvidence:b.apiEvidence,disclaimer:'Client in-game validation not performed. Verify icon and API use before CurseForge publication.'};
- writeJSON(path.join(destination,'FACTORY-VALIDATION.json'),report);
+ writeJSON(publicPackage?path.join(ROOT,'research',b.addonName,'BUILD-VALIDATION.json'):path.join(destination,'FACTORY-VALIDATION.json'),report);
  const releases=ensureDir(path.join(ROOT,'releases'));
- const zip=createZip(destination,path.join(releases,b.addonName+'-'+(b.version||'0.1.0')+'-candidate.zip'),b.addonName);
+ const zip=createZip(destination,path.join(releases,b.addonName+'-'+(b.version||'0.1.0')+(publicPackage?'.zip':'-candidate.zip')),b.addonName);
  appendTrace('addon-built',{addon:b.addonName,status,files:zip.files,zip: path.relative(ROOT,zip.out)});
  return {...zip,status,addon,destination,marketingIcon:art.png,productQuality:{...proof,acceptanceTests:'PASSED'}};
 }

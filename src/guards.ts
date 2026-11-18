@@ -33,6 +33,7 @@ export function scanLua(content){
 export function validateBlueprint(b,{draft=false}={}){
  const errors=[];
  try{requireName(b?.addonName);}catch(e){errors.push(e.message);}
+ if(b?.distribution!==undefined&&!['candidate','public'].includes(b.distribution))errors.push('Unknown distribution profile');
  const cfg=readJSON(path.join(ROOT,'config/wow-version.json'));
  if(b?.interfaceVersion!==cfg.interface)errors.push(`Target must be interface ${cfg.interface}`);
  if(b?.game!=='WoW Forever'||!['Both','Alliance','Horde'].includes(b?.faction)||b?.purpose!=='leveling')errors.push('Mandatory scope: WoW Forever / Alliance and Horde / leveling');

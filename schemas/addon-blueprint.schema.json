@@ -250,6 +250,14 @@
           "pattern": "^tests/[A-Za-z0-9_.-]+\\.test\\.ts$"
         }
       }
+    },
+    "distribution": {
+      "type": "string",
+      "enum": [
+        "candidate",
+        "public"
+      ],
+      "description": "Packaging hygiene only; never implies client verification or publication."
     }
   },
   "allOf": [

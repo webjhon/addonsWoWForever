@@ -1,0 +1,403 @@
+
+> wow-addon-ai-factory@0.1.0 example
+> node --experimental-strip-types orchestrator.ts --blueprint evals/fixtures/alliance-level-pulse.blueprint.json
+
+{
+  "startedAt": "2026-11-18T19:08:14.148Z",
+  "stages": [
+    {
+      "name": "CONTEXT_AND_MEMORY",
+      "at": "2026-11-18T19:08:14.160Z",
+      "ok": true,
+      "build": null,
+      "memories": 2
+    },
+    {
+      "name": "LOCAL_CLIENT_EVIDENCE",
+      "at": "2026-11-18T19:08:14.168Z",
+      "ok": true,
+      "status": "DISK_EVIDENCE_ONLY",
+      "clientVerified": false,
+      "buildMatches": null,
+      "identity": {
+        "product": "wowf",
+        "version": "1.60.1.70938",
+        "build": 70938,
+        "buildKey": "3627b099867bfde3e37a17cf44f69cdc",
+        "cdnKey": "3363ac656da5f261cdc675ab28b2744c"
+      },
+      "locales": {
+        "textLocale": "ptBR",
+        "audioLocale": "ptBR"
+      },
+      "apiDocuments": [
+        {
+          "file": "QuestLogDocumentation.lua",
+          "sha256": "e637368f36d153f8b432455cfa247d0c67c84996dce8d591bc1eb4d1cd7bc098",
+          "referenceHashMatches": true
+        },
+        {
+          "file": "MapDocumentation.lua",
+          "sha256": "b73a2ed1d1552c1b38bc59df0a586a0986dfad54991efc905abc87799cecce57",
+          "referenceHashMatches": true
+        },
+        {
+          "file": "NamePlateDocumentation.lua",
+          "sha256": "1af6fb8f2428211ce696b2af18d09503116a12920d28ca76231bedb72a88292c",
+          "referenceHashMatches": true
+        },
+        {
+          "file": "SuperTrackManagerDocumentation.lua",
+          "sha256": "4fe3b1216557a520d9c6f653fe8acca2b03fa650d5405869eea819d0010e4884",
+          "referenceHashMatches": true
+        },
+        {
+          "file": "GossipInfoDocumentation.lua",
+          "sha256": "22cd6a48eded91316753af2e40624e542a91c728c713636549b7d3a6ef7916a5",
+          "referenceHashMatches": true
+        },
+        {
+          "file": "InstanceDocumentation.lua",
+          "sha256": "136d6554c346ce090324ac905e086a149a7b7f6a23193c03262a17a0ee85719f",
+          "referenceHashMatches": true
+        },
+        {
+          "file": "UnitDocumentation.lua",
+          "sha256": "93004ac1b260127741471b7861360cdf7536afcb18d4c1db73b7259faa43e61c",
+          "referenceHashMatches": true
+        },
+        {
+          "file": "SpellBookDocumentation.lua",
+          "sha256": "509fabe6d33de10f7166dc71bfb853dc969803d86536acac0833d30b1d0f9179",
+          "referenceHashMatches": true
+        },
+        {
+          "file": "ContainerDocumentation.lua",
+          "sha256": "dd3e4741d45720384f814d3f78ce975dab3951458ae894e728ed3aedc8ae56b3",
+          "referenceHashMatches": true
+        },
+        {
+          "file": "PetInfoDocumentation.lua",
+          "sha256": "f6fd0e548fa15b7ff1d135215456c027f2e2f3fdeff7fbd3a8b9dbec0a154b04",
+          "referenceHashMatches": true
+        },
+        {
+          "file": "CVarDocumentation.lua",
+          "sha256": "7e99fe35756236ecf6d723ff755edaefd7c41007ef53f58d48e2d2f6899296b1",
+          "referenceHashMatches": null
+        },
+        {
+          "file": "AddOnsDocumentation.lua",
+          "sha256": "8535c5ab5e2a2a4f2ad9e14a355a619d4e12fa2b975e28bda01da6eb6580db75",
+          "referenceHashMatches": null
+        },
+        {
+          "file": "SimpleFrameAPIDocumentation.lua",
+          "sha256": "c00bc77ee27f8fd81ba8b8d1bfd85fbd0ad817b22457adbe5adca6876a1d604a",
+          "referenceHashMatches": null
+        },
+        {
+          "file": "SimpleFrameScriptObjectAPIDocumentation.lua",
+          "sha256": "09c85f7ee160d6f4d39765ba92a93ccd112d9e578b48d6f99b79f65e2ec42b1d",
+          "referenceHashMatches": null
+        },
+        {
+          "file": "SimpleRegionAPIDocumentation.lua",
+          "sha256": "f311fdf12572f2a32df67c3a0cd11195bc699a6f3872dd69f8300cd542bcfbd0",
+          "referenceHashMatches": null
+        },
+        {
+          "file": "SimpleTextureAPIDocumentation.lua",
+          "sha256": "453c789239e9432546367ccafef7836cac497856306233d948e70e1f803d3b13",
+          "referenceHashMatches": null
+        },
+        {
+          "file": "SimpleTextureBaseAPIDocumentation.lua",
+          "sha256": "e4ccf4dbc0458473f5f31f69986e7aa12171bfa7359a32f7b884b2edfd6bff00",
+          "referenceHashMatches": null
+        },
+        {
+          "file": "AddOnProfilerDocumentation.lua",
+          "sha256": "a43d1e6dcf099c9118ef1c01fdeaab66787feb4adb8daf897888f73f24545489",
+          "referenceHashMatches": null
+        }
+      ],
+      "tableSchemas": [
+        {
+          "file": "map.db2",
+          "schemaTag": "WOWSTATIC_1_60_1_70399",
+          "layoutHash": 3560635075
+        },
+        {
+          "file": "chrclasses.db2",
+          "schemaTag": "WOWSTATIC_1_60_1_70399",
+          "layoutHash": 2949230786
+        },
+        {
+          "file": "chrraces.db2",
+          "schemaTag": "WOWSTATIC_1_60_1_70399",
+          "layoutHash": 1329907606
+        },
+        {
+          "file": "creaturefamily.db2",
+          "schemaTag": "WOWSTATIC_1_60_1_70399",
+          "layoutHash": 2145635239
+        },
+        {
+          "file": "spellname.db2",
+          "schemaTag": "WOWSTATIC_1_60_1_70399",
+          "layoutHash": 2016339745
+        },
+        {
+          "file": "skillline.db2",
+          "schemaTag": "WOWSTATIC_1_60_1_70399",
+          "layoutHash": 1734549884
+        }
+      ],
+      "instruction": "Read .agents/skills/inspect-local-client/SKILL.md. Disk metadata does not certify runtime API access, coordinates, navigation or quest progression. On build mismatch refresh intake before relying on these facts."
+    },
+    {
+      "name": "RAG_AND_RESEARCH",
+      "at": "2026-11-18T19:08:17.665Z",
+      "ok": true,
+      "citations": [
+        "factory-dual-faction-policy",
+        "whf:source:world-map",
+        "forever-api-index",
+        "whf:source:world-map",
+        "whf:source:quest-456",
+        "factory-dual-faction-policy",
+        "whf:source:npc-234",
+        "factory-wowhead-knowledge-map",
+        "whf:source:world-map",
+        "local-client:formats",
+        "factory-dual-faction-policy",
+        "forever-addon-publication-2026-11-18",
+        "local-client:Unit",
+        "local-client:Instance",
+        "forever-api-index",
+        "local-client:PetInfo",
+        "factory-dual-faction-policy",
+        "local-client:SimpleTextureBaseAPI",
+        "community-api-snapshot",
+        "factory-dual-faction-policy"
+      ],
+      "byFaction": [
+        {
+          "faction": "Alliance",
+          "citations": [
+            "factory-dual-faction-policy",
+            "whf:source:world-map",
+            "forever-api-index",
+            "whf:source:world-map",
+            "whf:source:quest-456",
+            "factory-dual-faction-policy",
+            "whf:source:npc-234",
+            "factory-wowhead-knowledge-map",
+            "whf:source:world-map",
+            "local-client:formats"
+          ]
+        },
+        {
+          "faction": "Horde",
+          "citations": [
+            "factory-dual-faction-policy",
+            "forever-addon-publication-2026-11-18",
+            "local-client:Unit",
+            "local-client:Instance",
+            "forever-api-index",
+            "local-client:PetInfo",
+            "factory-dual-faction-policy",
+            "local-client:SimpleTextureBaseAPI",
+            "community-api-snapshot",
+            "factory-dual-faction-policy"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FACTION_SUPPORT_REVIEW",
+      "at": "2026-11-18T19:08:17.693Z",
+      "ok": true,
+      "errors": [],
+      "status": "DUAL_FACTION_CANDIDATE",
+      "faction": "Both",
+      "clientVerified": false,
+      "reason": ""
+    },
+    {
+      "name": "LEARNED_CLIENT_SKILLS",
+      "at": "2026-11-18T19:08:17.736Z",
+      "ok": true,
+      "selected": [
+        {
+          "id": "verify-wow-client",
+          "path": ".agents/skills/verify-wow-client/SKILL.md",
+          "evidence": [
+            "research/AURANPC/LIVE-SESSION-2026-11-16.md",
+            "research/AllianceDungeonTrail/LIVE-TEST.md",
+            "research/AURANPC/LIVE-SESSION-2026-11-18.md"
+          ]
+        },
+        {
+          "id": "build-wow-ui",
+          "path": ".agents/skills/build-wow-ui/SKILL.md",
+          "evidence": [
+            "research/AllianceDungeonTrail/LIVE-TEST.md"
+          ]
+        }
+      ],
+      "status": "PARTIAL_CLIENT_TESTED",
+      "clientVerified": false
+    },
+    {
+      "name": "REFERENCE_PATTERN_REVIEW",
+      "at": "2026-11-18T19:08:17.753Z",
+      "ok": true,
+      "status": "STATIC_REFERENCE_ANALYSIS",
+      "clientVerified": false,
+      "skill": ".agents/skills/apply-reference-patterns/SKILL.md",
+      "considered": [
+        {
+          "id": "state-authority",
+          "relevant": true,
+          "decision": "REQUIRES_PRODUCT_REVIEW"
+        },
+        {
+          "id": "conditional-steps",
+          "relevant": true,
+          "decision": "REQUIRES_PRODUCT_REVIEW"
+        },
+        {
+          "id": "parallel-objectives",
+          "relevant": true,
+          "decision": "REQUIRES_PRODUCT_REVIEW"
+        },
+        {
+          "id": "event-lifecycle",
+          "relevant": true,
+          "decision": "REQUIRES_PRODUCT_REVIEW"
+        },
+        {
+          "id": "recover-next-action",
+          "relevant": true,
+          "decision": "REQUIRES_PRODUCT_REVIEW"
+        },
+        {
+          "id": "guide-choice",
+          "relevant": true,
+          "decision": "REQUIRES_PRODUCT_REVIEW"
+        },
+        {
+          "id": "navigation-priority",
+          "relevant": true,
+          "decision": "REQUIRES_PRODUCT_REVIEW"
+        },
+        {
+          "id": "navigation-confidence",
+          "relevant": true,
+          "decision": "REQUIRES_PRODUCT_REVIEW"
+        },
+        {
+          "id": "recoverable-ui",
+          "relevant": true,
+          "decision": "REQUIRES_PRODUCT_REVIEW"
+        },
+        {
+          "id": "bounded-views",
+          "relevant": true,
+          "decision": "REQUIRES_PRODUCT_REVIEW"
+        },
+        {
+          "id": "versioned-data",
+          "relevant": true,
+          "decision": "REQUIRES_PRODUCT_REVIEW"
+        },
+        {
+          "id": "economical-feedback",
+          "relevant": true,
+          "decision": "REQUIRES_PRODUCT_REVIEW"
+        }
+      ]
+    },
+    {
+      "name": "SCOPE_AND_GUARDRAILS",
+      "at": "2026-11-18T19:08:17.771Z",
+      "ok": true,
+      "reason": ""
+    },
+    {
+      "name": "CAPABILITY_REVIEW",
+      "at": "2026-11-18T19:08:17.775Z",
+      "ok": true,
+      "unknownApis": [
+        "UnitFactionGroup",
+        "UnitLevel",
+        "UnitXP",
+        "UnitXPMax"
+      ],
+      "clientVerificationRequired": true
+    },
+    {
+      "name": "PRODUCT_QUALITY_GATE",
+      "at": "2026-11-18T19:08:19.205Z",
+      "ok": true,
+      "proof": {
+        "ok": true,
+        "errors": [],
+        "signals": [
+          "level",
+          "xp"
+        ],
+        "reactiveEvents": [
+          "PLAYER_XP_UPDATE",
+          "PLAYER_LEVEL_UP"
+        ],
+        "scenarios": 3,
+        "testFile": "tests/alliance-level-pulse.test.ts",
+        "acceptanceTests": "PASSED"
+      }
+    },
+    {
+      "name": "PACKAGING",
+      "at": "2026-11-18T19:08:19.207Z",
+      "ok": true,
+      "zip": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\tonho-questglow\\releases\\AllianceLevelPulse-0.1.0-candidate.zip"
+    },
+    {
+      "name": "REVIEW_AND_HANDOFF",
+      "at": "2026-11-18T19:08:19.209Z",
+      "ok": true,
+      "status": "STATIC_PASSED",
+      "clientVerified": false
+    }
+  ],
+  "status": "STATIC_PASSED",
+  "addon": "AllianceLevelPulse",
+  "result": {
+    "out": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\tonho-questglow\\releases\\AllianceLevelPulse-0.1.0-candidate.zip",
+    "files": 8,
+    "bytes": 186398,
+    "status": "STATIC_PASSED",
+    "addon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\tonho-questglow\\addons\\AllianceLevelPulse",
+    "destination": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\tonho-questglow\\dist\\AllianceLevelPulse",
+    "marketingIcon": "C:\\Users\\João Carlos\\Documents\\Codex\\2026-11-15\\github-plugin-github-openai-curated-remote\\work\\tonho-questglow\\releases\\AllianceLevelPulse-icon.png",
+    "productQuality": {
+      "ok": true,
+      "errors": [],
+      "signals": [
+        "level",
+        "xp"
+      ],
+      "reactiveEvents": [
+        "PLAYER_XP_UPDATE",
+        "PLAYER_LEVEL_UP"
+      ],
+      "scenarios": 3,
+      "testFile": "tests/alliance-level-pulse.test.ts",
+      "acceptanceTests": "PASSED"
+    }
+  },
+  "provider": null,
+  "finishedAt": "2026-11-18T19:08:19.217Z"
+}

@@ -1,0 +1,13 @@
+✔ Public QuestGlow installer contains only runtime, user docs and required licenses; matches source and SHA (140.6239ms)
+✔ Public distribution never bypasses interactive, faction, authorship or API validation (148.7531ms)
+✔ Public packager rejects accidental internal files before replacing the shipped addon (173.128ms)
+✔ Release knowledge routes on publication intent or explicit public packaging (153.5392ms)
+✔ A Lua Release method does not falsely trigger publication workflow (33.1105ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 954.8501
