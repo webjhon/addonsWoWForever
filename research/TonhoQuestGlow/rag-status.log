@@ -1,0 +1,27 @@
+
+> wow-addon-ai-factory@0.1.0 rag:status
+> node --experimental-strip-types scripts/rag.ts status
+
+{
+  "documents": 597,
+  "vectors": 597,
+  "currentVectors": 597,
+  "model": "local:Xenova/multilingual-e5-small@761b726dd34fb83930e26aab4e9ac3899aa1fa78:q8:mean:l2:e5-v1",
+  "dimensions": 384,
+  "localModelReady": true,
+  "retrievalMode": "hybrid-local-when-vectors-match",
+  "portableStore": {
+    "schemaVersion": 1,
+    "provider": "local-transformers",
+    "model": "local:Xenova/multilingual-e5-small@761b726dd34fb83930e26aab4e9ac3899aa1fa78:q8:mean:l2:e5-v1",
+    "dimensions": 384,
+    "records": 597,
+    "file": "forever-e5.jsonl.gz",
+    "sha256": "c55b9a6e09d0bc3fac89f88008f4725afada3dfdcbf81c5758c66981115485e0",
+    "contentSetHash": "0edf7e59c9956ddad7a63a376074c3b1da0170acd3309880f4518f4ea29da827",
+    "format": "gzip-jsonl",
+    "sourceModel": "Xenova/multilingual-e5-small",
+    "revision": "761b726dd34fb83930e26aab4e9ac3899aa1fa78",
+    "clientVerified": false
+  }
+}

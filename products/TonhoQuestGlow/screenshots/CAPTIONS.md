@@ -1,0 +1,6 @@
+- **01-settings.png** — Settings and independent controls; final help text after reload.
+- **02-credits.png** — Original pixel hunter and Tonho Contrabando credits.
+- **03-quest-npc.png** — Live moving wolf associated with active quest, during manual combat.
+- **04-quest-loot.png** — Quest meat highlighted; ordinary loot unmarked.
+- **05-quest-bag.png** — Required wolf meat stack with yellow exclamation badge.
+- **06-loot-after-collection.png** — Quest item collected; stale highlight removed from loot window.

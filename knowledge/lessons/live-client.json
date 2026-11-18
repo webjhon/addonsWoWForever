@@ -27,6 +27,14 @@
       "evidence": [
         "research/AURANPC/LIVE-SESSION-2026-11-16.md"
       ]
+    },
+    {
+      "id": "publish-wow-addon",
+      "path": ".agents/skills/publish-wow-addon/SKILL.md",
+      "applies": "release",
+      "evidence": [
+        "products/TonhoQuestGlow/DEPLOYMENT-CONTEXT.md"
+      ]
     }
   ]
 }

@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-18",
+  "addon": "TonhoQuestGlow1.0.0",
+  "allMatch": true,
+  "files": [
+    {
+      "file": "assets/Icon.tga",
+      "packagedSHA256": "2b789ca2f90798f488c35890d9f6a9613d52d026c7a22464428f963b9a248919",
+      "installedSHA256": "2b789ca2f90798f488c35890d9f6a9613d52d026c7a22464428f963b9a248919"
+    },
+    {
+      "file": "assets/TonhoHunter.tga",
+      "packagedSHA256": "781475408675635ee3268540a206da79b43af10b8df552d68c8661c790d3d49f",
+      "installedSHA256": "781475408675635ee3268540a206da79b43af10b8df552d68c8661c790d3d49f"
+    },
+    {
+      "file": "CHANGELOG.md",
+      "packagedSHA256": "4b7ac213f774af736fd34024bcd7c587b74248f48c9b831497bb8fbdbb9ffeae",
+      "installedSHA256": "4b7ac213f774af736fd34024bcd7c587b74248f48c9b831497bb8fbdbb9ffeae"
+    },
+    {
+      "file": "Core.lua",
+      "packagedSHA256": "97fb682a7d0c7eaa96c119f0ec3af1835701fb4e71d22cdf7603b17c67944678",
+      "installedSHA256": "97fb682a7d0c7eaa96c119f0ec3af1835701fb4e71d22cdf7603b17c67944678"
+    },
+    {
+      "file": "Data.lua",
+      "packagedSHA256": "ab0d8a7f1e1cc634cbb5be8e95323b016aa630d5a2a44d67bf43fe2d6f5e2fc9",
+      "installedSHA256": "ab0d8a7f1e1cc634cbb5be8e95323b016aa630d5a2a44d67bf43fe2d6f5e2fc9"
+    },
+    {
+      "file": "Engine.lua",
+      "packagedSHA256": "59149b932726f137de9bc73a22ba06350dd876425755d8d91d3851e5b06f41fc",
+      "installedSHA256": "59149b932726f137de9bc73a22ba06350dd876425755d8d91d3851e5b06f41fc"
+    },
+    {
+      "file": "Items.lua",
+      "packagedSHA256": "6af04436abd61991aacdff24b9f7c78da9cf768c16cb97a0fd58a51aa4a2488f",
+      "installedSHA256": "6af04436abd61991aacdff24b9f7c78da9cf768c16cb97a0fd58a51aa4a2488f"
+    },
+    {
+      "file": "LICENSE.md",
+      "packagedSHA256": "e05484149da4262108ee4a4d10e780c610229558ecbee35dda5372590c25afdd",
+      "installedSHA256": "e05484149da4262108ee4a4d10e780c610229558ecbee35dda5372590c25afdd"
+    },
+    {
+      "file": "README.md",
+      "packagedSHA256": "a11ded564bcab7ec971c956691e41e027d74223cf98f9e03f0e4583b225a9e86",
+      "installedSHA256": "a11ded564bcab7ec971c956691e41e027d74223cf98f9e03f0e4583b225a9e86"
+    },
+    {
+      "file": "THIRD-PARTY.md",
+      "packagedSHA256": "dc72ca6a0e8687dcfc65ba0a3998e2ceed5e666ee90c9117aebfa36a15b59ff2",
+      "installedSHA256": "dc72ca6a0e8687dcfc65ba0a3998e2ceed5e666ee90c9117aebfa36a15b59ff2"
+    },
+    {
+      "file": "TonhoBranding.lua",
+      "packagedSHA256": "289c7f604f3b738cce9908048182522bc8d51b7f76d8ddd8bb82fb1c7a978dc3",
+      "installedSHA256": "289c7f604f3b738cce9908048182522bc8d51b7f76d8ddd8bb82fb1c7a978dc3"
+    },
+    {
+      "file": "TonhoQuestGlow.toc",
+      "packagedSHA256": "289ba92d275b64efe9f3f4e0b64c01a1ef0648841bb2e6a20cc304169e640401",
+      "installedSHA256": "289ba92d275b64efe9f3f4e0b64c01a1ef0648841bb2e6a20cc304169e640401"
+    },
+    {
+      "file": "Visuals.lua",
+      "packagedSHA256": "f7d8b584f095c0e687d925ce35a56052a4a3592f9915ada0bfeb6c28e724f94d",
+      "installedSHA256": "f7d8b584f095c0e687d925ce35a56052a4a3592f9915ada0bfeb6c28e724f94d"
+    }
+  ]
+}

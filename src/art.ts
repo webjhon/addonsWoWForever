@@ -8,7 +8,7 @@ const TABLE=crcTable();
 function crc(bytes){let c=0xffffffff;for(const b of bytes)c=TABLE[(c^b)&255]^(c>>>8);return(c^0xffffffff)>>>0;}
 function pngChunk(type,data){const name=Buffer.from(type);const block=Buffer.alloc(8+data.length+4);block.writeUInt32BE(data.length,0);name.copy(block,4);data.copy(block,8);block.writeUInt32BE(crc(Buffer.concat([name,data])),8+data.length);return block;}
 function drawArt(name,size){
- if(name==='AURANPC')return pixelAuraNPC(size);
+ if(name==='AURANPC'||name==='TonhoQuestGlow')return pixelAuraNPC(size);
  if(name==='AllianceDungeonTrail')return pixelDungeonTrail(size);
  const seed=crypto.createHash('sha256').update(name).digest();
  const accent=[76+seed[0]%75,128+seed[1]%75,175+seed[2]%70];
@@ -120,3 +120,5 @@ export function generateAddonArt(name,assetDir,marketingDir){
  }
  return {tga,png};
 }
+
+export function generateMarketingIcon(name,out,size=400){if(!Number.isInteger(size)||size<32||size>1024)throw Error("Invalid marketing size");ensureDir(path.dirname(out));writePng(out,drawArt(name,size),size);return out;}

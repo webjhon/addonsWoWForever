@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "note": "Manually chosen engineering/gameplay questions, fixed before first retrieval run. Diagnostic sample, not a guarantee for arbitrary requests.",
+  "note": "Manually chosen engineering/gameplay questions, fixed before first retrieval run. Diagnostic sample, not a guarantee for arbitrary requests. Publication benchmark case added before its retrieval evaluation on2026-11-18.",
   "cases": [
     {
       "id": "secret-guid",
@@ -184,6 +184,19 @@
       "contains": [
         "Não há quests",
         "Não há"
+      ]
+    },
+    {
+      "id": "publication-benchmark",
+      "query": "Como preparar ZIP público para CurseForge sem dados da fábrica e medir memória do addon no cliente?",
+      "domain": "api",
+      "sources": [
+        "forever-addon-publication-2026-11-18"
+      ],
+      "contains": [
+        "benchmark",
+        "memória",
+        "CurseForge"
       ]
     }
   ]

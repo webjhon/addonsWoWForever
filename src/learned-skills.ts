@@ -8,9 +8,10 @@ export function learnedSkillContext(subject='',blueprint=null,{root=ROOT,registr
  const text=[subject,blueprint?.addonName,blueprint?.description,blueprint?.notes,blueprint?.apiNamespacesUsed?.join(' '),...(blueprint?.files??[]).filter(f=>/\.lua$/i.test(f.filename)).map(f=>f.content)].filter(Boolean).join(' ');
  const npc=/\b(?:auranpc|npc|npcs|nameplate|nameplates|C_NamePlate)\b/i.test(text);
  const ui=npc||/CreateFrame|GetPlayerFacing|C_Map|\b(?:ui|interface|painel|janela|seta|flecha|tracker|navega[çc][aã]o|arrow|navigation|dungeon|dungeons|guia|guide)\b/i.test(text);
+ const release=/\b(?:deploy|release|curseforge|benchmark|publication|distribution)\b|publica[çc][aã]o|distribui[çc][aã]o/i.test([subject,blueprint?.distribution==='public'?'public distribution':''].join(' '));
  const ids=new Set();
  const all=data.skills.map(s=>{
-  if(!s.id||ids.has(s.id)||!['always','ui','npc'].includes(s.applies)||!Array.isArray(s.evidence)||!s.evidence.length)throw Error('Invalid skill entry');
+  if(!s.id||ids.has(s.id)||!['always','ui','npc','release'].includes(s.applies)||!Array.isArray(s.evidence)||!s.evidence.length)throw Error('Invalid skill entry');
   ids.add(s.id);
   const p=safeWithin(root,s.path);if(!s.path.startsWith('.agents/skills/')||!s.path.endsWith('/SKILL.md'))throw Error('Invalid skill path');
   const instructions=fs.readFileSync(p,'utf8').replace(/\r\n/g,'\n');
@@ -18,6 +19,6 @@ export function learnedSkillContext(subject='',blueprint=null,{root=ROOT,registr
   for(const evidence of s.evidence)if(!fs.statSync(safeWithin(root,evidence)).isFile())throw Error('Missing evidence: '+evidence);
   return {...s,instructions};
  });
- const selected=all.filter(s=>s.applies==='always'||s.applies==='ui'&&ui||s.applies==='npc'&&npc);
+ const selected=all.filter(s=>s.applies==='always'||s.applies==='ui'&&ui||s.applies==='npc'&&npc||s.applies==='release'&&release);
  return {status:data.status,clientVerified:false,selected:selected.map(({id,path,evidence})=>({id,path,evidence})),instructions:selected.map(s=>'SKILL '+s.id+' ('+s.path+')\n'+s.instructions).join('\n\n')};
 }

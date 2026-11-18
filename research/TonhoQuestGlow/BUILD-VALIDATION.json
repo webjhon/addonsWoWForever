@@ -1,0 +1,351 @@
+{
+  "addon": "TonhoQuestGlow",
+  "status": "STATIC_PASSED",
+  "clientVerified": false,
+  "productQuality": {
+    "ok": true,
+    "errors": [],
+    "signals": [
+      "character",
+      "level",
+      "quests",
+      "combat",
+      "inventory"
+    ],
+    "reactiveEvents": [
+      "PLAYER_LEVEL_UP",
+      "QUEST_ACCEPTED",
+      "QUEST_LOG_UPDATE",
+      "QUEST_WATCH_UPDATE",
+      "QUEST_REMOVED",
+      "QUEST_TURNED_IN",
+      "NAME_PLATE_UNIT_ADDED",
+      "NAME_PLATE_UNIT_REMOVED",
+      "PLAYER_REGEN_ENABLED",
+      "CVAR_UPDATE",
+      "PLAYER_LOGOUT",
+      "LOOT_OPENED",
+      "LOOT_CLOSED",
+      "LOOT_SLOT_CLEARED",
+      "LOOT_SLOT_CHANGED",
+      "BAG_UPDATE_DELAYED",
+      "BAG_OPEN",
+      "BAG_CLOSED",
+      "BAG_CONTAINER_UPDATE",
+      "ITEM_DATA_LOAD_RESULT"
+    ],
+    "scenarios": 3,
+    "testFile": "tests/tonho-questglow.test.ts",
+    "acceptanceTests": "PASSED"
+  },
+  "credits": "Tonho Contrabando",
+  "branding": "First-open splash via namespace registration",
+  "interface": 16001,
+  "at": "2026-11-18T18:49:40.165Z",
+  "scope": "WoW Forever / Both / 1-60",
+  "factionSupport": {
+    "ok": true,
+    "errors": [],
+    "status": "DUAL_FACTION_CANDIDATE",
+    "faction": "Both",
+    "clientVerified": false
+  },
+  "apiEvidence": [
+    {
+      "symbol": "C_QuestLog.UnitIsRelatedToActiveQuest",
+      "status": "CONFIRMED_IN_CLIENT",
+      "source": "Forever1.60.1.70938, 2026-11-16, Stockade, public relation true despite secret GUID/text; own marker observed following NPC. See LIVE-SESSION-2026-11-16.md"
+    },
+    {
+      "symbol": "CreateFrame",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "UnitGUID",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "UnitName",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "UnitLevel",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "UnitFactionGroup",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "UnitIsDeadOrGhost",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "InCombatLockdown",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "GetTime",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "issecretvalue",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "issecrettable",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "C_NamePlate.GetNamePlates",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "C_NamePlate.GetNamePlateForUnit",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "C_TooltipInfo.GetUnit",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "Enum.TooltipDataLineType.QuestTitle",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "Enum.TooltipDataLineType.ItemName",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "C_QuestLog.GetNumQuestLogEntries",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "C_QuestLog.GetInfo",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "C_QuestLog.GetQuestObjectives",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "C_QuestLog.IsComplete",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "C_QuestLog.IsFailed",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "C_CVar.GetCVar",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "C_CVar.SetCVar",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "C_Timer.After",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "C_Timer.NewTicker",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "PlaySound",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "SOUNDKIT.RAID_WARNING",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "Frame.IsForbidden",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "Frame.CreateAnimationGroup",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "C_Container.GetContainerItemInfo",
+      "status": "UNVERIFIED",
+      "source": "research/AURANPC/ITEMS-API-EVIDENCE.json (local client1.60.1.70959; disk/UI source verified; disk evidence; scoped Alliance70959 live observations in LIVE-ITEMS-EVIDENCE.json)"
+    },
+    {
+      "symbol": "C_Container.GetContainerItemQuestInfo",
+      "status": "UNVERIFIED",
+      "source": "research/AURANPC/ITEMS-API-EVIDENCE.json (local client1.60.1.70959; disk/UI source verified; disk evidence; scoped Alliance70959 live observations in LIVE-ITEMS-EVIDENCE.json)"
+    },
+    {
+      "symbol": "C_TooltipInfo.GetBagItem",
+      "status": "UNVERIFIED",
+      "source": "research/AURANPC/ITEMS-API-EVIDENCE.json (local client1.60.1.70959; disk/UI source verified; disk evidence; scoped Alliance70959 live observations in LIVE-ITEMS-EVIDENCE.json)"
+    },
+    {
+      "symbol": "C_TooltipInfo.GetLootItem",
+      "status": "UNVERIFIED",
+      "source": "research/AURANPC/ITEMS-API-EVIDENCE.json (local client1.60.1.70959; disk/UI source verified; disk evidence; scoped Alliance70959 live observations in LIVE-ITEMS-EVIDENCE.json)"
+    },
+    {
+      "symbol": "GetLootSlotInfo",
+      "status": "UNVERIFIED",
+      "source": "research/AURANPC/ITEMS-API-EVIDENCE.json (local client1.60.1.70959; disk/UI source verified; disk evidence; scoped Alliance70959 live observations in LIVE-ITEMS-EVIDENCE.json)"
+    },
+    {
+      "symbol": "GetLootSlotLink",
+      "status": "UNVERIFIED",
+      "source": "research/AURANPC/ITEMS-API-EVIDENCE.json (local client1.60.1.70959; disk/UI source verified; disk evidence; scoped Alliance70959 live observations in LIVE-ITEMS-EVIDENCE.json)"
+    },
+    {
+      "symbol": "hooksecurefunc",
+      "status": "UNVERIFIED",
+      "source": "research/AURANPC/ITEMS-API-EVIDENCE.json (local client1.60.1.70959; disk/UI source verified; disk evidence; scoped Alliance70959 live observations in LIVE-ITEMS-EVIDENCE.json)"
+    },
+    {
+      "symbol": "PLAYER_LOGIN",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "PLAYER_ENTERING_WORLD",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "PLAYER_LEVEL_UP",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "QUEST_ACCEPTED",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "QUEST_LOG_UPDATE",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "QUEST_WATCH_UPDATE",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "QUEST_REMOVED",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "QUEST_TURNED_IN",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "NAME_PLATE_UNIT_ADDED",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "NAME_PLATE_UNIT_REMOVED",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "PLAYER_REGEN_ENABLED",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "CVAR_UPDATE",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "PLAYER_LOGOUT",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    },
+    {
+      "symbol": "LOOT_OPENED",
+      "status": "UNVERIFIED",
+      "source": "research/AURANPC/ITEMS-API-EVIDENCE.json (local client1.60.1.70959; disk/UI source verified; disk evidence; scoped Alliance70959 live observations in LIVE-ITEMS-EVIDENCE.json)"
+    },
+    {
+      "symbol": "LOOT_CLOSED",
+      "status": "UNVERIFIED",
+      "source": "research/AURANPC/ITEMS-API-EVIDENCE.json (local client1.60.1.70959; disk/UI source verified; disk evidence; scoped Alliance70959 live observations in LIVE-ITEMS-EVIDENCE.json)"
+    },
+    {
+      "symbol": "LOOT_SLOT_CLEARED",
+      "status": "UNVERIFIED",
+      "source": "research/AURANPC/ITEMS-API-EVIDENCE.json (local client1.60.1.70959; disk/UI source verified; disk evidence; scoped Alliance70959 live observations in LIVE-ITEMS-EVIDENCE.json)"
+    },
+    {
+      "symbol": "LOOT_SLOT_CHANGED",
+      "status": "UNVERIFIED",
+      "source": "research/AURANPC/ITEMS-API-EVIDENCE.json (local client1.60.1.70959; disk/UI source verified; disk evidence; scoped Alliance70959 live observations in LIVE-ITEMS-EVIDENCE.json)"
+    },
+    {
+      "symbol": "BAG_UPDATE_DELAYED",
+      "status": "UNVERIFIED",
+      "source": "research/AURANPC/ITEMS-API-EVIDENCE.json (local client1.60.1.70959; disk/UI source verified; disk evidence; scoped Alliance70959 live observations in LIVE-ITEMS-EVIDENCE.json)"
+    },
+    {
+      "symbol": "BAG_OPEN",
+      "status": "UNVERIFIED",
+      "source": "research/AURANPC/ITEMS-API-EVIDENCE.json (local client1.60.1.70959; disk/UI source verified; disk evidence; scoped Alliance70959 live observations in LIVE-ITEMS-EVIDENCE.json)"
+    },
+    {
+      "symbol": "BAG_CLOSED",
+      "status": "UNVERIFIED",
+      "source": "research/AURANPC/ITEMS-API-EVIDENCE.json (local client1.60.1.70959; disk/UI source verified; disk evidence; scoped Alliance70959 live observations in LIVE-ITEMS-EVIDENCE.json)"
+    },
+    {
+      "symbol": "BAG_CONTAINER_UPDATE",
+      "status": "UNVERIFIED",
+      "source": "research/AURANPC/ITEMS-API-EVIDENCE.json (local client1.60.1.70959; disk/UI source verified; disk evidence; scoped Alliance70959 live observations in LIVE-ITEMS-EVIDENCE.json)"
+    },
+    {
+      "symbol": "ITEM_DATA_LOAD_RESULT",
+      "status": "UNVERIFIED",
+      "source": "research/AURANPC/ITEMS-API-EVIDENCE.json (local client1.60.1.70959; disk/UI source verified; disk evidence; scoped Alliance70959 live observations in LIVE-ITEMS-EVIDENCE.json)"
+    },
+    {
+      "symbol": "ADDON_LOADED",
+      "status": "UNVERIFIED",
+      "source": "https://github.com/Gethe/wow-ui-source/tree/bebcb6bf309cf41b41bd74f8ca651e6a105b2676/Interface/AddOns/Blizzard_APIDocumentationGenerated (Forever 2026-11-13). See research/AURANPC/API-CAPABILITIES.json; installed 1.60.1.70938 runtime NOT_RUN. Other runtime claims UNVERIFIED; partial Alliance70959 observations in LIVE-SESSION-2026-11-18.md."
+    }
+  ],
+  "disclaimer": "Client in-game validation not performed. Verify icon and API use before CurseForge publication."
+}

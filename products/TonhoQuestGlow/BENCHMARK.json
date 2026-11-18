@@ -1,0 +1,99 @@
+{
+  "date": "2026-11-18",
+  "status": "PARTIAL_CLIENT_TESTED",
+  "addon": "TonhoQuestGlow",
+  "version": "1.0.0",
+  "client": {
+    "version": "1.60.1",
+    "build": 70959,
+    "interface": 16001,
+    "locale": "ptBR",
+    "faction": "Alliance",
+    "level": 2,
+    "location": "Northshire, open world"
+  },
+  "method": "UpdateAddOnMemoryUsage then GetAddOnMemoryUsage for named addon; KiB attributed Lua memory, not process RSS/VRAM",
+  "legacyBaseline": {
+    "identity": "AURANPC2.1.1",
+    "unit": "KiB attributed by GetAddOnMemoryUsage",
+    "samples": [
+      {
+        "time": 9297.991,
+        "kib": 7670.8515625,
+        "fps": 24.089128494263
+      },
+      {
+        "time": 9307.962,
+        "kib": 7792.0546875,
+        "fps": 25.117736816406
+      },
+      {
+        "time": 9317.985,
+        "kib": 7900.625,
+        "fps": 25.359254837036
+      },
+      {
+        "time": 9327.988,
+        "kib": 8009.1953125,
+        "fps": 24.24732208252
+      },
+      {
+        "time": 9337.963,
+        "kib": 8095.9404296875,
+        "fps": 24.16918182373
+      },
+      {
+        "time": 9347.961,
+        "kib": 8224.8115234375,
+        "fps": 25.112482070923
+      }
+    ]
+  },
+  "newInstallation": {
+    "legacyAddonDisabled": true,
+    "cold": {
+      "intervalSeconds": 10,
+      "samplesKiB": [
+        2025.4599609375,
+        2109.5234375,
+        2205.3515625,
+        2294.578125,
+        2384.5078125,
+        2468.90625
+      ]
+    },
+    "representativeUse": {
+      "intervalSeconds": 30,
+      "samplesKiB": [
+        3662.5576171875,
+        3907.4638671875,
+        3621.865234375,
+        6000.759765625,
+        7687.509765625,
+        8035.50390625,
+        8956.7021484375,
+        9269.412109375
+      ],
+      "scenes": [
+        "settings",
+        "bag",
+        "movement",
+        "beginning of combat"
+      ],
+      "visiblePlates": "variable; not fixed"
+    }
+  },
+  "cpuProfiling": "NOT_RUN; scriptProfile=0",
+  "processRSS": "NOT_MEASURED",
+  "decision": "No demonstrated material memory cost; preserve approved algorithms and functionality. Different warm-up and GC states prohibit a percentage improvement claim.",
+  "limits": [
+    "brief sample, not long soak",
+    "no Horde or dungeon benchmark",
+    "22-minute desktop control stall before final samples; no continuous observation claimed",
+    "final proportional revalidation changed help text only"
+  ],
+  "temporarySettingsRestored": {
+    "autoInteract": "0",
+    "autoLootDefault": "1"
+  }
+}
