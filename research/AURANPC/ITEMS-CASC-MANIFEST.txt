@@ -1,0 +1,7 @@
+Interface/AddOns/Blizzard_UIPanels_Game/Mainline/LootFrame.lua
+Interface/AddOns/Blizzard_UIPanels_Game/Mainline/ContainerFrame.lua
+Interface/AddOns/Blizzard_APIDocumentationGenerated/TooltipInfoDocumentation.lua
+Interface/AddOns/Blizzard_APIDocumentationGenerated/ContainerDocumentation.lua
+Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua
+Interface/AddOns/Blizzard_SharedXML/Shared/Scroll/ScrollBox.lua
+Interface/AddOns/Blizzard_SharedXML/Shared/Scroll/ScrollBoxListView.lua

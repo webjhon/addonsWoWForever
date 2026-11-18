@@ -1,5 +1,5 @@
 local _, ns = ...
-local defaults={enabled=true,pulse=true,sound=false,banner=true,plates=true,scale=1,offset=10}
+local defaults={enabled=true,pulse=true,sound=false,banner=true,plates=true,scale=1,offset=10,lootItems=true,bagItems=true,itemPulse=true}
 function ns.ApplyPlateSetting()
     if not ns.settings then return end
     if ns.Read(function() return InCombatLockdown() end) ~= false then return end
@@ -31,17 +31,19 @@ function ns.Login()
     if not settings.opened then settings.opened=true;ns.window:Show() end
 end
 ns.events=CreateFrame('Frame')
-local events={'PLAYER_LOGIN','PLAYER_ENTERING_WORLD','PLAYER_LEVEL_UP','QUEST_ACCEPTED','QUEST_LOG_UPDATE','QUEST_WATCH_UPDATE','QUEST_REMOVED','QUEST_TURNED_IN','NAME_PLATE_UNIT_ADDED','NAME_PLATE_UNIT_REMOVED','PLAYER_REGEN_ENABLED','CVAR_UPDATE','PLAYER_LOGOUT'}
+local events={'PLAYER_LOGIN','PLAYER_ENTERING_WORLD','PLAYER_LEVEL_UP','QUEST_ACCEPTED','QUEST_LOG_UPDATE','QUEST_WATCH_UPDATE','QUEST_REMOVED','QUEST_TURNED_IN','NAME_PLATE_UNIT_ADDED','NAME_PLATE_UNIT_REMOVED','PLAYER_REGEN_ENABLED','CVAR_UPDATE','PLAYER_LOGOUT','LOOT_OPENED','LOOT_CLOSED','LOOT_SLOT_CLEARED','LOOT_SLOT_CHANGED','BAG_UPDATE_DELAYED','BAG_OPEN','BAG_CLOSED','BAG_CONTAINER_UPDATE','ITEM_DATA_LOAD_RESULT','ADDON_LOADED'}
 for _,event in ipairs(events) do ns.events:RegisterEvent(event) end
 ns.events:SetScript('OnEvent',function(_,event,...)
     if event=='PLAYER_LOGIN' then ns.Login();return end
     if not ns.settings then return end
+    if ns.ItemEvent then ns.ItemEvent(event,...) end
     if event=='PLAYER_LOGOUT' then
         if ns.ticker then ns.ticker:Cancel();ns.ticker=nil end
         if ns.plateLease and ns.Read(function() return InCombatLockdown() end)==false then
             if ns.Read(function() return C_CVar.GetCVar('nameplateShowEnemies') end)=='1' then pcall(function() C_CVar.SetCVar('nameplateShowEnemies',ns.plateLease) end) end
         end
         return
+    elseif event=='LOOT_OPENED' or event=='LOOT_CLOSED' or event=='LOOT_SLOT_CLEARED' or event=='LOOT_SLOT_CHANGED' or event=='BAG_UPDATE_DELAYED' or event=='BAG_OPEN' or event=='BAG_CLOSED' or event=='BAG_CONTAINER_UPDATE' or event=='ITEM_DATA_LOAD_RESULT' or event=='ADDON_LOADED' then return
     elseif event=='NAME_PLATE_UNIT_REMOVED' then ns.Drop(...);ns.Schedule(false);return
     elseif event=='NAME_PLATE_UNIT_ADDED' then ns.Add(...);ns.Schedule(false);return
     elseif event=='QUEST_TURNED_IN' or event=='QUEST_REMOVED' then

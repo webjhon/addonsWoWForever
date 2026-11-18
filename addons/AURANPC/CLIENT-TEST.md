@@ -1,11 +1,12 @@
-# Validação no Forever — teste parcial executado
+# Testes reais pendentes — AURANPC2.1.0
 
-Detecção e renderização corrigidas, movimento natural de NPC, reload e opções já observados em Stockade70938; ver LIVE-TEST.md. Os demais cenários abaixo permanecem pendentes. Primeiro use `/auranpc test`: conferir borda fixa, pulso, exclamação, texto e desaparecimento após 10s. Abra `/auranpc`: ajustar escala/altura para seu conjunto de placas. Não confundir demonstração com detecção.
+Não executados nesta tarefa. Registrar build, facção, versão/ZIP e UI usada. Verificar separadamente em Alliance e Horde:
 
-Com uma quest aceita de abate/coleta e objetivo pendente, aproxime NPCs correspondentes ao ar livre, de frente, com placas visíveis. Confira contador **Desenhados**, compare NPCs da quest e outros NPCs. Mova a câmera e observe o NPC andando. Mate/saqueie até terminar um objetivo: somente NPCs desse objetivo devem deixar de destacar. Abandone/entregue: não pode sobrar marcador.
-
-Repita em dungeon durante combate, com e sem addon de placas. Confira erros Lua/taint e ausência de marcação compartilhada com colegas. Quest sem mapeamento só pode usar tooltip se o título real for público e único. Se placas forem proibidas, deve informar restrição e não desenhar errado.
-
-Faça `/reload`, retome a quest, troque personagem: não deve importar progresso alheio. Desligue auxílio de placas e confirme restauração da preferência anterior. Troque pulso/faixa/som e ajuste posição. Em grupos densos, avaliar sobreposição e consumo de CPU; não garantir legibilidade sem esse teste.
-
-Registrar build/interface por `/dump GetBuildInfo()`, quest ID, NPC ID se público, dungeon/área, addon de placas, `/auranpc status`, erro Lua e resultado observado. Somente depois promover a CLIENT_VERIFIED.
+1. Quest aceita com item pendente: abrir loot visível, confirmar !/borda/pulso no item certo, clicar/coletar normalmente e confirmar remoção quando a linha some. Moedas e outros itens sem associação não devem receber efeito.
+2. Bolsas normais e combinadas: item específico e item comum necessário para quest; mover entre slots/bolsas, ordenar e fechar/reabrir. O selo acompanha a nova posição e não fica no item substituto.
+3. Objetivo completo: selo de bolsa permanece enquanto a quest está aceita e aguarda entrega; loot adicional deixa de ser destacado. Abandonar ou entregar remove o selo, inclusive com outras quests ainda ativas.
+4. Item que inicia quest ainda não aceita e item de missão abandonada: não marcar apenas pela classificação genérica. Aceitar/reaceitar atualiza a relação.
+5. /reload, troca de personagem e identidade desconhecida: preferências por personagem corretas; progresso relido do diário; sem selos antigos. Testar os três controles novos e desativação geral.
+6. Combate, clique/tooltip/drag do item, rolagem do loot, UI em escala diferente e modo combinado: overlays não capturam mouse nem quebram a janela. Conferir secret values/frames proibidos e ausência de erros/taint.
+7. Retestar NPC real em mundo aberto e dungeon, inclusive movimento, relação pública, pulso e desligar/reativar. Demonstração visual não valida associação.
+8. Addons de bolsas/loot de terceiros exigem cenário separado. Não declarar compatibilidade por inferência de nomes ou por sucesso na UI padrão.
